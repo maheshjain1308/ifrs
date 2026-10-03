@@ -1,0 +1,129 @@
+@page {
+  size: 170mm 240mm;
+  margin: 22mm 18mm 24mm 22mm;
+  @bottom-center { content: counter(page); font: 8.5pt "Liberation Sans", sans-serif; color: #5b6475; }
+}
+@page :left {
+  margin-left: 18mm; margin-right: 22mm;
+  @top-left { content: string(booktitle); font: 7.5pt "Liberation Sans", sans-serif; color: #8a93a5; letter-spacing: .12em; text-transform: uppercase; border-bottom: .4pt solid #cfd5e2; padding-bottom: 2mm; width: 100%; }
+}
+@page :right {
+  margin-left: 22mm; margin-right: 18mm;
+  @top-right { content: string(chtitle); font: 7.5pt "Liberation Sans", sans-serif; color: #8a93a5; letter-spacing: .08em; text-transform: uppercase; border-bottom: .4pt solid #cfd5e2; padding-bottom: 2mm; width: 100%; text-align: right; }
+}
+@page cover { margin: 0; background: #0f2447; @top-left{content:none} @top-right{content:none} @bottom-center{content:none} }
+@page :blank { @top-left{content:none} @top-right{content:none} @bottom-center{content:none} }
+@page blank { @top-left{content:none} @top-right{content:none} @bottom-center{content:none} }
+@page front { @bottom-center { content: counter(page, lower-roman); font: 8.5pt "Liberation Sans", sans-serif; color: #5b6475; } }
+@page frontnohead { @top-left{content:none} @top-right{content:none} @bottom-center{content:none} }
+@page part { margin: 0; background: #12305f; @top-left{content:none} @top-right{content:none} @bottom-center{content:none} }
+@page chapfirst { @top-left{content:none} @top-right{content:none} }
+
+:root { --navy:#12305f; --teal:#1f7a8c; --amber:#c98a12; --ink:#1c2230; --muted:#5b6475; --rule:#cfd5e2; }
+html { font-family: "Liberation Serif", "DejaVu Serif", serif; font-size: 10.3pt; line-height: 1.5; color: var(--ink); hyphens: auto; }
+body { margin: 0; }
+p { margin: 0 0 .62em; text-align: justify; orphans: 3; widows: 3; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+a { color: inherit; text-decoration: none; }
+.bookmark { string-set: booktitle "IPO — The Complete Guide to Going Public in India"; }
+
+/* ---------- cover ---------- */
+.cover { page: cover; height: 240mm; position: relative; color: #fff; font-family: "Liberation Sans", sans-serif; }
+.cover .band { position: absolute; left: 0; right: 0; top: 0; height: 12mm; background: #c98a12; }
+.cover .mark { position: absolute; left: 22mm; top: 48mm; font-size: 120pt; font-weight: bold; letter-spacing: .06em; line-height: 1; }
+.cover .rule { position: absolute; left: 22mm; top: 100mm; width: 38mm; height: 2.2mm; background: #c98a12; }
+.cover .ttl { position: absolute; left: 22mm; right: 22mm; top: 110mm; font-size: 24pt; line-height: 1.2; font-weight: bold; }
+.cover .sub { position: absolute; left: 22mm; right: 26mm; top: 142mm; font-size: 12pt; line-height: 1.45; color: #d6dcec; }
+.cover .base { position: absolute; left: 22mm; right: 22mm; bottom: 20mm; font-size: 8.8pt; line-height: 1.5; color: #aeb8d3; border-top: .5pt solid #4b5f8c; padding-top: 4mm; }
+
+/* ---------- front matter ---------- */
+.titlepage { page: frontnohead; text-align: center; padding-top: 54mm; font-family: "Liberation Sans", sans-serif; break-after: page; }
+.titlepage .big { font-size: 64pt; font-weight: bold; color: var(--navy); letter-spacing: .08em; line-height: 1; }
+.titlepage .t2 { font-size: 17pt; font-weight: bold; margin-top: 6mm; color: var(--ink); }
+.titlepage .t3 { font-size: 10.5pt; color: var(--muted); margin-top: 5mm; line-height: 1.5; }
+.titlepage hr { width: 30mm; border: 0; border-top: 1.6pt solid var(--amber); margin: 10mm auto; }
+.legalpage { page: frontnohead; font-size: 8.6pt; line-height: 1.45; color: #3a4252; padding-top: 18mm; break-after: page; }
+.legalpage h3 { font: bold 9.5pt "Liberation Sans", sans-serif; color: var(--navy); margin: 6mm 0 1.5mm; }
+.frontsec { page: front; }
+.frontsec h1 { font: bold 22pt "Liberation Sans", sans-serif; color: var(--navy); margin: 0 0 8mm; padding-bottom: 3mm; border-bottom: 1.4pt solid var(--amber); string-set: chtitle content(); }
+.frontsec h2 { font: bold 12.5pt "Liberation Sans", sans-serif; color: var(--navy); margin: 6mm 0 2mm; }
+.frontstart { break-before: right; }
+
+/* ---------- TOC ---------- */
+.toc a { display: block; }
+.toc .tp { font: bold 10.5pt "Liberation Sans", sans-serif; color: #fff; background: var(--navy); padding: 1.4mm 3mm; margin: 4.5mm 0 1.6mm; break-after: avoid; }
+.toc .tc { font: bold 9.2pt "Liberation Sans", sans-serif; margin: 1.6mm 0 .2mm; color: var(--ink); break-after: avoid; }
+.toc .ts { font: 8.2pt "Liberation Sans", sans-serif; margin: 0 0 0 7mm; color: #4a5365; line-height: 1.38; }
+.toc .tc::after, .toc .ts::after, .toc .tp::after { content: leader('.') target-counter(attr(href), page); }
+.toc .tp::after { content: "   ·   page " target-counter(attr(href), page); font-weight: normal; font-size: 8.5pt; }
+.toc .tc::after { float: none; color: var(--muted); }
+.toc .ta { font: bold 9.2pt "Liberation Sans", sans-serif; margin: 1.6mm 0 .2mm; }
+.toc .ta::after { content: leader('.') target-counter(attr(href), page); color: var(--muted); }
+
+/* ---------- part pages ---------- */
+.partpage { page: part; height: 240mm; color: #fff; font-family: "Liberation Sans", sans-serif; position: relative; break-before: right; break-after: page; }
+.partpage .pn { position: absolute; left: 22mm; top: 70mm; font-size: 11pt; letter-spacing: .3em; text-transform: uppercase; color: #e5b94f; }
+.partpage h1 { position: absolute; left: 22mm; right: 22mm; top: 82mm; font-size: 34pt; line-height: 1.12; margin: 0; string-set: parttitle content(); }
+.partpage .pd { position: absolute; left: 22mm; right: 30mm; top: 132mm; font-size: 11.5pt; line-height: 1.5; color: #d6dcec; }
+.partpage .bar { position: absolute; left: 22mm; top: 124mm; width: 30mm; height: 2mm; background: #c98a12; }
+
+/* ---------- chapters ---------- */
+.chapter { break-before: right; }
+.chap-head { page: chapfirst; margin-bottom: 7mm; padding-top: 12mm; }
+.chap-num { font: bold 9.5pt "Liberation Sans", sans-serif; letter-spacing: .28em; text-transform: uppercase; color: var(--amber); }
+.chapter h1 { font: bold 25pt/1.15 "Liberation Sans", sans-serif; color: var(--navy); margin: 3mm 0 3mm; string-set: chtitle content(); }
+.chap-sub { font: italic 11.5pt/1.45 "Liberation Serif", serif; color: var(--muted); margin: 0 0 5mm; padding-bottom: 5mm; border-bottom: 1.4pt solid var(--amber); text-align: left; }
+.inthis { background: #f1f4fa; border-left: 3pt solid var(--navy); padding: 3.5mm 5mm 2.5mm; margin: 0 0 6mm; break-inside: avoid; }
+.inthis h4 { font: bold 8.5pt "Liberation Sans", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--navy); margin: 0 0 1.6mm; }
+.inthis ul { margin: 0; padding-left: 4.5mm; font-size: 9.4pt; line-height: 1.4; }
+.inthis li { margin-bottom: .6mm; }
+h2 { font: bold 14pt/1.25 "Liberation Sans", sans-serif; color: var(--navy); margin: 7mm 0 2.4mm; break-after: avoid; }
+h3 { font: bold 11pt/1.3 "Liberation Sans", sans-serif; color: var(--teal); margin: 5mm 0 1.6mm; break-after: avoid; }
+h4 { font: bold 9.6pt "Liberation Sans", sans-serif; color: var(--ink); margin: 3.5mm 0 1mm; break-after: avoid; }
+ul, ol { margin: 0 0 .7em; padding-left: 6mm; }
+li { margin-bottom: .3em; text-align: justify; }
+ul.tight li { margin-bottom: .1em; }
+
+/* callouts */
+.box { margin: 4mm 0 5mm; padding: 3.2mm 4.5mm 2.2mm; border-radius: 1.2mm; break-inside: auto; font-size: 9.6pt; line-height: 1.45; }
+.box .bt { break-after: avoid; font: bold 8.4pt "Liberation Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 1.4mm; }
+.box p { margin: 0 0 .45em; }
+.box ul, .box ol { margin: 0 0 .45em; }
+.keybox { background: #eaf3f5; border-left: 3pt solid var(--teal); } .keybox .bt { color: var(--teal); }
+.example { background: #eef6ec; border-left: 3pt solid #4c9a3f; } .example .bt { color: #3c7f31; }
+.note { background: #fbf4e3; border-left: 3pt solid var(--amber); } .note .bt { color: #9b6a08; }
+.update { background: #f3eefa; border-left: 3pt solid #7b57b3; } .update .bt { color: #6a4799; }
+.warn { background: #fbecec; border-left: 3pt solid #b8403a; } .warn .bt { color: #a03630; }
+.box.long { break-inside: auto; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; margin: 3.5mm 0 5mm; font: 8.7pt/1.38 "Liberation Sans", sans-serif; }
+caption { caption-side: top; text-align: left; font: bold 8.8pt "Liberation Sans", sans-serif; color: var(--navy); padding-bottom: 1.6mm; }
+th { background: var(--navy); color: #fff; text-align: left; padding: 1.7mm 2.2mm; font-weight: bold; vertical-align: bottom; }
+td { padding: 1.6mm 2.2mm; border-bottom: .4pt solid var(--rule); vertical-align: top; }
+tbody tr:nth-child(even) td { background: #f6f8fc; }
+tr { break-inside: avoid; }
+td.num, th.num { text-align: right; }
+td.c, th.c { text-align: center; }
+table.cmp td:first-child { font-weight: bold; color: var(--navy); width: 24%; }
+thead { display: table-header-group; }
+
+/* figures */
+figure { margin: 4.5mm 0 5.5mm; break-inside: avoid; text-align: center; }
+figure svg { width: 100%; height: auto; }
+figcaption { font: 8.4pt "Liberation Sans", sans-serif; color: var(--muted); text-align: left; margin-top: 1.5mm; }
+figcaption b { color: var(--navy); }
+
+/* misc */
+.q { font: bold 10pt "Liberation Sans", sans-serif; color: var(--navy); margin: 4mm 0 .6mm; break-after: avoid; }
+.a { margin: 0 0 .5em; }
+.src { font: italic 8.2pt "Liberation Serif", serif; color: var(--muted); }
+.pull { font: italic 12pt/1.4 "Liberation Serif", serif; color: var(--navy); border-left: 2.4pt solid var(--amber); padding: 1mm 0 1mm 5mm; margin: 5mm 0; }
+.chk li { list-style: none; position: relative; padding-left: 5.5mm; margin-left: -6mm; }
+.chk li::before { content: "☐"; position: absolute; left: 0; font-family: "DejaVu Sans", sans-serif; color: var(--navy); }
+.ans { font-size: 9.6pt; border-top: .4pt dashed var(--rule); padding-top: 1.4mm; margin-top: 1.4mm; color: #28402f; }
+.pb { break-before: page; }
+
+.box p, .box li { orphans: 2; widows: 2; }
+.inthis h4 { break-after: avoid; }
