@@ -1,6 +1,6 @@
 # Chapter 3: Case: Lumen Therapeutics, Valuing a Biotech Pipeline
 
-*Type: Case. Prerequisites: Volume 1, Chapters 6 (NPV), 8 (uncertainty and real options), 10 (CAPM) and 11 (WACC); Volume 2, the chapters on valuation of growth and venture-stage companies. Lumen Therapeutics, its people, its programs and every figure in this chapter are fictional and illustrative. No real company, trial result, regulatory statistic or market datum is intended or reproduced.*
+*Type: Case. Prerequisites: Volume 1, Chapters 6 (NPV), 8 (uncertainty and real options), 10 (CAPM) and 11 (WACC); Volume 2, the chapters on advanced valuation. Lumen Therapeutics, its people, its programs and every figure in this chapter are fictional and illustrative. No real company, trial result, regulatory statistic or market datum is intended or reproduced.*
 
 ## The Situation
 

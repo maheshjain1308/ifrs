@@ -187,15 +187,9 @@ Seed and Series A Preferred each carry a 1x non-participating liquidation prefer
 | **Median** | **24%** | **44%** | **3.55x** |
 | **Mean** | **24%** | **43%** | **3.72x** |
 
-### Exhibit 8: Precedent acquisitions of private robotics companies (fictional)
+### Exhibit 8: Precedent acquisitions (fictional)
 
-| Acquirer / target | Year | Target revenue growth | EV / trailing revenue |
-|---|---:|---:|---:|
-| Alder Industrial / Fleetline Robotics | 2024 | 41% | 3.8x |
-| Meridian Logistics / SortBot | 2025 | 25% | 2.9x |
-| Tessell Group / GripWorks | 2025 | 52% | 5.2x |
-| Pioneer Systems / LiftLogic | 2026 | 12% | 2.2x |
-| **Median** | | | **3.35x** |
+Four precedent acquisitions of private robotics companies in 2024 to 2026 were struck at 2.2x to 5.2x trailing revenue, with a median of 3.35x.
 
 ### Exhibit 9: The board's exit scenarios (for use in the negotiation analysis)
 
@@ -256,7 +250,7 @@ If the plan is met, the board expects to raise a $30.0 million Series C in 2028 
 
 **Ambiguity in the pool language.** Both term sheets require an "unallocated" pool equal to a stated percentage of post-money fully diluted shares. Aldergate's counsel confirmed that the 600,000 existing unallocated shares count toward the target. Brightwater's term sheet is silent. Students should use the interpretation that the existing unallocated shares count toward the target in both cases, and discuss the other interpretation in class.
 
-**Ambiguity in option data.** The option ledger shows 1,000,000 outstanding options with an average strike price of $1.40, but individual strikes range from $0.40 to $3.10, and about 35 percent are unvested. For the exit analysis, assume that all outstanding options vest and are exercised at the average strike price if, and only if, the common per-share value exceeds $1.40, and that exercise proceeds are added to the amount available to distribute. Unallocated pool shares are cancelled at exit and receive nothing. The 60,000 warrants held by the venture lender are ignored.
+**Ambiguity in option data.** Outstanding options (1,000,000) have an average strike of $1.40, though strikes range from $0.40 to $3.10 and about 35 percent are unvested. For the exit analysis, assume all vest and exercise at $1.40 if, and only if, the common per-share value exceeds $1.40, with exercise proceeds added to distributable value. Unallocated pool shares are cancelled at exit, and the lender's 60,000 warrants are ignored.
 
 **Venture debt.** Harbor Lending must consent in a sale; management assumes it will, and Exhibit 9 values are net of debt.
 

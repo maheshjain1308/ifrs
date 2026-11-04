@@ -12,7 +12,7 @@ Meridian would be larger than anything Helios had attempted. The engineering stu
 
 ### The people
 
-Marguerite Okonkwo-Hale, the chief executive, was an engineer and a believer in scale: "cell manufacturing is a learning business, and whoever makes the most cells learns fastest." She wanted to approve all 30 GWh in December. Raman was more cautious: every earlier Helios plant had run over budget and late, and the first plant's cell price had fallen by about a third in five years. Lena Bergström, senior vice president for strategy, had negotiated the term sheet and favoured Phase 1 now with an option on Phase 2. Tomasz Wierzba, vice president of manufacturing, owned the learning-curve and ramp-up assumptions. Priya Anand, the treasurer, owned the funding plan and the bank covenant. Dr. Nasrin Kaveh, who chaired the audit committee, had told Raman she would oppose any plan that endangered the covenant.
+Marguerite Okonkwo-Hale, the chief executive, was an engineer and a believer in scale: "cell manufacturing is a learning business, and whoever makes the most cells learns fastest." She wanted to approve all 30 GWh in December. Raman was more cautious: every earlier Helios plant had run over budget and late, and the first plant's cell price had fallen by about a third in five years. Lena Bergström, strategy chief, had negotiated the term sheet and favoured Phase 1 with an option on Phase 2. Tomasz Wierzba, manufacturing vice president, owned the learning-curve assumptions. Priya Anand, the treasurer, owned the funding plan and covenant. Dr. Nasrin Kaveh, audit committee chair, would oppose any plan that endangered the covenant.
 
 ### The decision
 
@@ -34,7 +34,7 @@ The board had to answer three connected questions: whether to commit to Phase 1 
 
 ## Financial Data
 
-The tables below are the complete data pack that Dev Raman's team assembled for the board. All amounts are in $M unless stated. Where a table presents management's assumptions, students should treat them as given, with the caveats in the next section.
+The tables below are the complete data pack that Dev Raman's team assembled for the board. All amounts are in $M unless stated. Treat management's assumptions as given, with the caveats in the next section.
 
 ### Table 1: Helios consolidated income statement
 
@@ -101,7 +101,7 @@ The plant is depreciated for tax purposes on a straight-line basis over ten year
 | 14 | 85% | 67.3 | 30.0 | 139.5 | 12.8 | 153.4 |
 | 15 | 85% | 65.3 | 28.8 | 142.3 | 12.8 | 166.2 |
 
-Capacity is 15 GWh a year, so output equals 15 times utilisation. Cell price starts at $97.0 per kWh in Year 2 and falls by 3% a year; materials start at $49.0 per kWh and fall by 4% a year as the supply chain matures. Fixed cash operating costs start at $110M in Year 2 and rise 2% a year. Selling, general and administrative cost is 3% of revenue. Conversion cost follows an 85% learning curve with a cost of $36 per kWh for the first GWh of cumulative output at the site. In any year the average conversion cost is the average of the curve over that year's output, so a year's cost falls as cumulative output grows through the year (the details are the subject of Question 3).
+Cell price starts at $97.0 per kWh in Year 2 and falls by 3% a year; materials start at $49.0 per kWh and fall by 4% a year as the supply chain matures. Fixed cash operating costs start at $110M in Year 2 and rise 2% a year. Selling, general and administrative cost is 3% of revenue. Conversion cost follows an 85% learning curve with a cost of $36 per kWh for the first GWh of cumulative output at the site. In any year the average conversion cost is the average of the curve over that year's output, so a year's cost falls as cumulative output grows through the year (the details are the subject of Question 3).
 
 ### Table 5: Comparable companies and market data
 
@@ -144,7 +144,7 @@ Debt betas may be assumed to be zero. The hurdle rate Helios used in the past wa
 | New equity (private placement) | 210 |
 | Total sources | 1,540 |
 
-Total uses are $1,540M (plant $1,500M plus land $40M), which equals total sources. The bank term loan and the equity placement have not been priced. The $500M development loan and the $180M grant are conditional on the provincial package.
+Total uses are $1,540M (plant $1,500M plus land $40M), which equals total sources. The loan and grant are conditional on the provincial package.
 
 ### Table 8: Scenario definitions (Calder & Voss and Helios management)
 
@@ -207,11 +207,11 @@ Net debt after the Phase 1 funding plan would exceed today's level while plant E
 
 ### Exhibit G: Volatility and rivals
 
-For the Phase 2 option the consultants offered volatility of 25% (long-run pack-price volatility), 35% (listed manufacturers' equity volatility, adjusted for leverage) and 45% (spot cell prices in the last shortage). Raman chose 35%. Calder & Voss also note that announced rival plants would, if all built, add roughly twice the demand growth of the next three years, which is why Phase 2 output is assumed to sell at spot at a discount to Phase 1.
+For the Phase 2 option the consultants offered volatility of 25% (long-run pack-price volatility), 35% (listed manufacturers' equity volatility, adjusted for leverage) and 45% (spot cell prices in the last shortage). Raman chose 35%. Rival plants announced in the region explain why Phase 2 output is assumed to sell at spot at a discount.
 
 ## Assignment Questions
 
-Answer all ten questions. Use year-end cash flows, defend your treatment of ambiguous items and state every added assumption. Show calculations, not only results. Use the discount rate from Question 1 (rounded to one decimal) throughout.
+Answer all ten questions, defend your treatment of ambiguous items and show calculations. Use the Question 1 discount rate (rounded to one decimal) throughout.
 
 **Question 1: Cost of capital.** Unlever each comparable's beta, average the results, relever at the target structure, and estimate the project's cost of equity and WACC. Explain why Helios's own beta and capital structure are the wrong inputs and why the untraced 10% hurdle should be retired.
 
@@ -271,7 +271,7 @@ Two 90-minute sessions. Preparation: Questions 1 to 3.
 | Orrin Electrochem | 1.61 | 1 + 0.76 × 0.55 = 1.4180 | 1.1354 |
 | Tamsin Materials Group | 1.09 | 1 + 0.74 × 0.25 = 1.1850 | 0.9198 |
 
-The simple average is 1.14 and the median is 1.16. Tamsin is a materials supplier, with less operating leverage than the pure cell makers, so a reader might drop it or weight it less; doing so lifts the average to about 1.19. The solutions use the average of all five, 1.14.
+The simple average is 1.14 and the median is 1.16. Tamsin is a materials supplier and a reader might drop it (average 1.19; Alternative Answers). 
 
 **Step 2: relever.** The target debt/(debt + equity) is 30%, so debt/equity is 0.30 / 0.70 = 0.4286.
 
@@ -363,7 +363,7 @@ Year 0 shows 940 (900 plant + 40 land). In Year 15 the FCF includes the $120M sa
 
 The PV of Year 0 and Year 1 outlays is 940 + 600 / 1.102 = $1,484.5M, and the PV of all later flows is $947.2M, so the NPV is 947.2 − 1,484.5 = −$537.3M.
 
-**Interpretation.** On its own, the plant earns an IRR of 4.6%, well below the 10.2% cost of capital. A plant that returns less than its cost of capital destroys value. Students should notice that the undiscounted payback of 10.9 years is mathematically recoverable but economically meaningless because the discounted payback never occurs. The reason is visible in the schedule: EBITDA peaks at $224M on a $1,540M outlay, a 14.5% pre-tax cash yield, while the price falls 3% a year. The conclusion is that **Meridian is not an economically viable unsubsidised business at these prices and costs**, so the case must turn on the subsidies, the learning curve and the options, which is exactly what the next questions examine.
+**Interpretation.** On its own, the plant earns an IRR of 4.6%, well below the 10.2% cost of capital. A plant that returns less than its cost of capital destroys value. Payback of 10.9 years is meaningless because discounted payback never occurs: EBITDA peaks at $224M on a $1,540M outlay, a 14.5% pre-tax cash yield, while price falls 3% a year. The conclusion is that **Meridian is not an economically viable unsubsidised business at these prices and costs**, so the case must turn on the subsidies, the learning curve and the options, which is exactly what the next questions examine.
 
 ### Question 3 solution: The learning curve
 
@@ -435,7 +435,7 @@ E[NPV] = 0.70 × 114.7 + 0.30 × (−185.3) = 80.3 − 55.6 = $24.7M
 
 The break-even probability is 114.7 / 300.0 = 38%, not far above Bergström's unverifiable 30%. The risk bites when the plant is operating and Helios has least flexibility.
 
-**(d) Share from subsidies.** Unsubsidised NPV is −$537M and subsidised NPV +$115M, so subsidies contribute $652M and **all of the positive NPV comes from government support**; 73% of that support (475 / 652) is the production credit, which is subject to review. Subsidies are not free: they are paid for the commitment, but the board should know how much value rests on a statute.
+**(d) Share from subsidies.** Unsubsidised NPV is −$537M and subsidised NPV +$115M, so subsidies contribute $652M and **all of the positive NPV comes from government support**; 73% of that support (475 / 652) is the production credit, which is subject to review. The board should know how much value rests on a statute.
 
 ### Question 5 solution: Tax effects
 
@@ -480,7 +480,7 @@ Five-year depreciation adds only $8M and 15-year costs $27M. Early deductions cr
 | Discount rate | +1 pt | 24 | -1 pt | 215 | 191 |
 | Fixed opex | +15% | 21 | -15% | 208 | 187 |
 
-Learning, price path and utilisation have swings above $400M. Discount rate, capex and fixed cost, which management argues over most, matter least; students should ask whether a 10% capex overrun is more likely than a 90% learning rate.
+Learning, price path and utilisation have swings above $400M. Discount rate, capex and fixed cost, which management argues over most, matter least.
 
 **(b) Break-even values.** NPV is zero at an initial price of $94.6 per kWh, only 2.5% below the $97.0 base, and at steady-state utilisation of 80.2% against 85% in the base. Without subsidies the price must be 11.9% above the base.
 
@@ -533,7 +533,7 @@ C  = 948.8 × 0.4926 − 1,153.0 × 0.2661 = 467.4 − 306.8 = $160.6M
 | 2 | 1,911 / 949 / 471 | 662 / 21 / 0 |
 | 3 | 2,711 / 1,346 / 669 / 332 | 1,411 / 46 / 0 / 0 |
 
-Year 3 payoffs, top to bottom, are 1,411 / 46 / 0 / 0; discounting at e^(−0.04) with probabilities q and 1 − q gives $145M. Three steps are coarse; 200 steps give $161M, matching the formula. The plant is built only in the two best states.
+Year 3 payoffs, top to bottom, are 1,411 / 46 / 0 / 0; discounting at e^(−0.04) with probabilities q and 1 − q gives $145M. 200 steps give $161M, matching the formula. The plant is built only in the two best states.
 
 **(c) Volatility.**
 
@@ -545,7 +545,7 @@ Year 3 payoffs, top to bottom, are 1,411 / 46 / 0 / 0; discounting at e^(−0.04
 | 40% | 193 |
 | 45% | 226 |
 
-**(d) Interpretation.** Static NPV of −$23M says building in Year 3 loses money at expected prices, but Helios need not build. If prices are high it builds and captures the upside; if low it walks away and loses only the holding cost. The loss is truncated at zero, and the $161M is the value of that truncation, so Phase 1 with the option is worth $115M + $161M = $275M. The formula assumes no pre-emption by competitors and a single volatility, though price, utilisation and learning risks differ.
+**(d) Interpretation.** Static NPV of −$23M says building in Year 3 loses money at expected prices, but Helios need not build. If prices are high it builds and captures the upside; if low it walks away and loses only the holding cost. The loss is truncated at zero, and the $161M is the value of that truncation, so Phase 1 with the option is worth $115M + $161M = $275M.
 
 ### Question 8 solution: Phase it or build it all now?
 
@@ -570,7 +570,7 @@ Year 3 payoffs, top to bottom, are 1,411 / 46 / 0 / 0; discounting at e^(−0.04
 | Price -10% | (372) | (758) | (372) | (656) | 284 |
 | Price +10% | 562 | 832 | 832 | 1,154 | (322) |
 
-If prices are 10% to 15% low, phasing is worth $284M to $549M more; if 10% high, building now is worth $322M more. With near-symmetric payoffs, the covenant breach decides: **build Phase 1 and hold Phase 2 as an option**. The answer changes if lenders give covenant relief or non-recourse project debt, if rival capacity is clearly delayed, or if Helios can place equity at a premium. Repeal risk also favours phasing, since unbuilt capacity loses no credit.
+If prices are 10% to 15% low, phasing is worth $284M to $549M more; if 10% high, building now is worth $322M more. With near-symmetric payoffs, the covenant breach decides: **build Phase 1 and hold Phase 2 as an option**. The answer changes if lenders give covenant relief or non-recourse project debt, or if rival capacity is clearly delayed. Repeal risk also favours phasing.
 
 ### Question 9 solution: Financing and APV
 
@@ -596,7 +596,7 @@ A market-rate loan would be worth $57M (tax shield only), so $111M is the subsid
 
 The unlevered NPV is slightly below the WACC figure because the unlevered rate (10.26%) exceeds the WACC (10.17%), which embeds a debt tax shield. The APV is **$277M**.
 
-**(c) Should it count?** Yes in principle, since the loan exists only because Meridian is built. But the unlevered NPV is already positive, so the loan is not what makes the project acceptable and must not rescue a negative one. The conditions (build start by 31 March 2027, 900 jobs by Year 3, no change of control) carry costs and default risk. And the loan counts once only: it cannot also be treated as cheap debt in the WACC.
+**(c) Should it count?** Yes in principle, since the loan exists only because Meridian is built. But the unlevered NPV is already positive, so the loan is not what makes the project acceptable and must not rescue a negative one. The conditions (build start by 31 March 2027, 900 jobs, no change of control) carry costs and default risk, and the loan counts once only, not also as cheap debt in the WACC.
 
 ### Question 10 solution: Recommendation
 
@@ -614,7 +614,7 @@ The probability-weighted NPV is $60M with the credit intact and −$238M with it
 
 ### Sensitivity discussion
 
-Value is concentrated in a few drivers: a 2.5% price shortfall or a learning rate of 87% erases the subsidised NPV, and a 30% repeal probability brings expected value to about zero. The drivers are also correlated: an oversupply that cuts price tends to coincide with weak utilisation and slower learning, so the downside scenario is more plausible than one-at-a-time swings suggest. And flexibility is worth most near the strike: Phase 2 is almost at the money, so its value responds strongly to volatility, the one input nobody can observe. Instructors should ask which of 25%, 35% and 45% students trust, and why.
+Value is concentrated in a few drivers: a 2.5% price shortfall or a learning rate of 87% erases the subsidised NPV, and a 30% repeal probability brings expected value to about zero. The drivers are also correlated: an oversupply that cuts price tends to coincide with weak utilisation and slower learning, so the downside scenario is more plausible than one-at-a-time swings suggest. And flexibility is worth most near the strike: Phase 2 is almost at the money, so its value responds strongly to volatility, the one input nobody can observe.
 
 ### Common student errors
 
@@ -624,13 +624,12 @@ Value is concentrated in a few drivers: a 2.5% price shortfall or a learning rat
 4. **Ignoring the tax-loss mechanics,** either giving the project an immediate tax refund or forgetting that salvage is taxed in full.
 5. **Treating subsidies as certain,** or as additive without checking taxability; presenting the subsidised NPV without the unsubsidised one.
 6. **Reporting payback as evidence of value** when discounted payback never occurs.
-7. **Computing the option on the static NPV (−23)** instead of on the PV of the operating flows (949).
-8. **Counting the loan twice,** once through a lower WACC and again as a subsidy.
-9. **Choosing between phasing and building now on NPV alone,** ignoring the covenant.
+7. **Computing the option on the static NPV (−23)** instead of the PV of operating flows (949), or **counting the loan twice.**
+8. **Choosing between phasing and building now on NPV alone,** ignoring the covenant.
 
 ### Alternative defensible answers
 
-The model solution recommends Phase 1 with an option, but a well-argued case can be made for other answers. **Build all 30 GWh now** is defensible on pure value (it exceeds phasing by $27M to $42M at 35% volatility and by more if volatility is below 39%), but only if the covenant can be amended and about $874M of equity found. **Decline** is defensible if the board regards the 30% repeal probability as too low, since at 38% the expected NPV is negative, or if it will not rely on a learning rate that sits at the edge of the confidence interval. **Use a different discount rate**: a student who removes Tamsin from the comparables obtains an asset beta near 1.19 and a WACC near 10.4%, which lowers NPV by about $24M but does not change the ranking of alternatives. A student who treats the credit as taxable (the 40% case in counsel's opinion) finds a project worth about $2M, so the decision becomes one of negotiation, not valuation. The grading standard should reward a clear decision rule, correct mechanics and honest treatment of what is uncertain, not agreement with any single figure.
+The model solution recommends Phase 1 with an option, but a well-argued case can be made for other answers. **Build all 30 GWh now** is defensible on pure value (it exceeds phasing by $27M to $42M at 35% volatility and by more if volatility is below 39%), but only if the covenant can be amended and about $874M of equity found. **Decline** is defensible if the board regards the 30% repeal probability as too low, since at 38% the expected NPV is negative, or if it will not rely on a learning rate that sits at the edge of the confidence interval. **Use a different discount rate**: a student who removes Tamsin from the comparables obtains an asset beta near 1.19 and a WACC near 10.4%, which lowers NPV by about $24M but does not change the ranking of alternatives. A student who treats the credit as taxable (the 40% case in counsel's opinion) finds a project worth about $2M, so the decision becomes one of negotiation, not valuation. Reward a clear decision rule, correct mechanics and honest treatment of uncertainty, not agreement with any single figure.
 
 ### Board recommendation memo
 
@@ -652,5 +651,5 @@ The model solution recommends Phase 1 with an option, but a well-argued case can
 
 **Next sixty days.** Obtain the Class 3 cost estimate and a fixed-price contract for at least 70% of plant cost to address overrun risk. Complete the covenant negotiation. Secure the Phase 2 land and permit reservation at no more than the holding cost assumed here.
 
-**Risks not captured.** Construction delay and overrun, chemistry change, rival capacity and the political cycle. The board should regard the recommended structure as buying a position in a business that may be worth building, at a cost that is partly paid by the Province, not as a project that pays for itself.
+**Risks not captured.** Construction delay and overrun, chemistry change, rival capacity and the political cycle. The structure buys a position in a business that may be worth building, partly paid for by the Province.
 

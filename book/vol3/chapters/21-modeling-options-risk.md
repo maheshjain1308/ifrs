@@ -28,7 +28,7 @@ numpy >= 1.24    scipy >= 1.10    pandas >= 2.0
 
 Listings 21.3 and 21.6 import the Black-Scholes function defined in Listing 21.2. To reproduce them, save the `bs` function from Listing 21.2 (everything above the first `print`) into a file called `bsmodel.py` in the same folder.
 
-A note on conventions. Throughout, S is the spot price, K the strike, r the continuously compounded risk-free rate, q the continuous dividend yield, sigma the annualised volatility and T the time to expiry in years. All rates are continuously compounded unless the text says otherwise. Greeks are reported in the units traders use: vega per one percentage point of volatility, theta per calendar day and rho per one percentage point of the interest rate.
+Conventions: S is the spot price, K the strike, r the continuously compounded risk-free rate, q the continuous dividend yield, sigma the annualised volatility and T the time to expiry in years. All rates are continuously compounded unless the text says otherwise. Greeks are reported in the units traders use: vega per one percentage point of volatility, theta per calendar day and rho per one percentage point of the interest rate.
 
 ## Section 21.1: From Volume 1 to Code, a Quick Bridge
 
@@ -117,48 +117,16 @@ Two further observations. The American put exceeds the European put by about 0.5
 
 ### Excel Pattern for the Binomial Tree
 
-A binomial tree is a natural spreadsheet exercise because each cell depends on two cells to its right. For a five-step tree with inputs placed in named cells `S`, `K`, `r`, `q`, `sigma`, `T` and `n`, a workable layout is:
-
-```
-B1: dt   = T / n
-B2: u    = EXP(sigma * SQRT(dt))
-B3: d    = 1 / u
-B4: p    = (EXP((r - q) * dt) - d) / (u - d)
-B5: disc = EXP(-r * dt)
-
-Stock price lattice (columns = time steps 0..n, rows = number of down moves 0..n):
-  Cell in row j, column i (valid when j <= i):   = S * u^(i - j) * d^j
-
-Terminal option values (column n):
-  Call:  = MAX(stockcell - K, 0)
-  Put:   = MAX(K - stockcell, 0)
-
-Backward induction (column i, row j), European:
-  = disc * (p * value_to_the_right_same_row + (1 - p) * value_to_the_right_next_row)
-
-Backward induction, American put:
-  = MAX( disc * (p * right_same + (1 - p) * right_below), K - stockcell )
-```
-
-The formulas copy across and down once the anchoring is right. Anchor p and the discount factor with `$` references, and add a cell computing `=ABS(tree_price - BS_price)` as a convergence check.
-
+With named cells S, K, r, q, sigma, T and n, put dt = T/n, u = EXP(sigma*SQRT(dt)), d = 1/u, p = (EXP((r-q)*dt)-d)/(u-d) and disc = EXP(-r*dt) in a header block. The stock lattice cell in column i, row j (j ≤ i) is `= S*u^(i-j)*d^j`. Terminal values are `=MAX(stock-K,0)` (call) or `=MAX(K-stock,0)` (put). Backward induction is `= disc*(p*right_same_row + (1-p)*right_next_row)`, and for an American put `= MAX(that, K - stockcell)`. Anchor p and disc with `$` references, and add `=ABS(tree_price - BS_price)` as a convergence check.
 ## Section 21.3: Black-Scholes and the Greeks
 
 ### From Formula to Function
 
-The Black-Scholes-Merton formula is a closed-form solution, so a function that implements it runs in microseconds and can be called inside loops that revalue a portfolio tens of thousands of times. The function in Listing 21.2 returns the price and the principal sensitivities in one call. Computing d1 and d2 once and reusing them for every Greek is both faster and less error-prone than writing a separate function for each.
+The Black-Scholes formula is closed-form, so a function implementing it can be called inside loops that revalue a portfolio tens of thousands of times. Listing 21.2 returns the price and principal sensitivities in one call, computing d1 and d2 once.
 
 The Greeks are partial derivatives of the option price:
 
-```
-Delta  Δ = ∂V/∂S           call: e^(−qT)·N(d1)               put: −e^(−qT)·N(−d1)
-Gamma  Γ = ∂²V/∂S²         e^(−qT)·n(d1) / (S·σ·√T)          (same for call and put)
-Vega   ν = ∂V/∂σ           S·e^(−qT)·n(d1)·√T                 (same for call and put)
-Theta  Θ = ∂V/∂t           call: −S·e^(−qT)·n(d1)·σ/(2√T) − r·K·e^(−rT)·N(d2) + q·S·e^(−qT)·N(d1)
-Rho    ρ = ∂V/∂r           call: K·T·e^(−rT)·N(d2)           put: −K·T·e^(−rT)·N(−d2)
-```
-
-Here N is the standard normal cumulative distribution and n its density. Delta is the number of shares that offset a small move in the underlying. Gamma is the rate at which delta itself changes, and so measures how often a delta hedge needs adjusting. Vega is the exposure to the market's volatility assumption, theta the daily cost of holding the option as time passes, and rho the exposure to interest rates.
+Delta Δ = ∂V/∂S (call e^(−qT)N(d1)); Gamma Γ = ∂²V/∂S² = e^(−qT)n(d1)/(Sσ√T); Vega ν = ∂V/∂σ = S e^(−qT)n(d1)√T; Theta Θ = ∂V/∂t; Rho ρ = ∂V/∂r. Delta is the shares that offset a small move, gamma how fast delta changes, vega the exposure to volatility, theta the daily cost of time and rho the interest-rate exposure.
 
 **Listing 21.2: Black-Scholes-Merton price and Greeks with finite-difference verification**
 
@@ -257,7 +225,7 @@ Finite-difference check
 
 The at-the-money one-year call is worth 12.336 on a spot of 100, which is 12.3% of the underlying: with 25% volatility and a year to run, the option is expensive because there is a great deal of time value. The put is worth 7.459. The difference of 4.877 is exactly S − K·e^(−rT), confirming put-call parity to five decimals.
 
-Delta of the call is 0.6274, not 0.5. Students are often surprised that an at-the-money call has a delta above one half. The reason is visible in d1 = 0.325: the formula's d1 includes the drift term (r + σ²/2)·T, which tilts the distribution so that the exercise probability under the share's own measure is above 50%. The put delta is −0.3726, which equals the call delta minus one, again a parity result.
+Delta of the call is 0.6274, not 0.5, because d1 = 0.325 includes the drift term (r + σ²/2)·T; the put delta of −0.3726 is the call delta minus one.
 
 Gamma of 0.01514 means that for a one-dollar rise in the share price the call's delta rises by about 0.015. The across-spot table shows the characteristic shape: gamma is largest near the strike (0.0177 at a spot of 90 and 0.0151 at 100 for this one-year option) and falls away in both directions. Vega per one point of volatility is 0.378, so if implied volatility rises from 25% to 26% the call gains about 0.38. Theta of −0.0199 per day means the option loses roughly two cents a day to time decay.
 
@@ -285,9 +253,9 @@ In `NORM.S.DIST(x, cumulative)`, TRUE returns N(x) and FALSE the density n(x); m
 
 ### What the Greeks Mean in Money
 
-A seller of a call who wants no exposure to the share price holds Δ shares against each option sold, financing the purchase by borrowing. As the share moves, delta changes, and the seller trades to keep the hedge in line. In the idealised Black-Scholes world rebalancing is continuous and the hedged position earns exactly the risk-free rate, so the seller's profit is zero in every state of the world. In practice rebalancing is discrete, and the residual risk is the cost of that discreteness. The simulation in Listing 21.3 measures it.
+A seller of a call who wants no exposure to the share price holds Δ shares against each option sold, financing the purchase by borrowing. As the share moves, delta changes, and the seller trades to keep the hedge in line. In the idealised Black-Scholes world rebalancing is continuous and the hedged position earns exactly the risk-free rate, so the seller's profit is zero in every state of the world. In practice rebalancing is discrete; Listing 21.3 measures the residual risk.
 
-The experiment sells one call at the Black-Scholes price, buys delta shares financed at the risk-free rate, and rebalances n times to the new Black-Scholes delta. At expiry the hedger delivers on the option, if exercised, and counts what is left. Prices are simulated with a real-world drift of 8% a year, deliberately different from the risk-free rate of 5%, to show that the hedge does not depend on the real-world drift. That is the empirical content of the claim that expected returns do not enter the option price.
+The experiment sells one call at the Black-Scholes price, buys delta shares financed at the risk-free rate, and rebalances n times to the new Black-Scholes delta. At expiry the hedger delivers on the option, if exercised, and counts what is left. Prices are simulated with a real-world drift of 8% a year, deliberately different from the risk-free rate of 5%, to show that the hedge does not depend on the real-world drift.
 
 **Listing 21.3: Delta-hedging a short call with discrete rebalancing**
 
@@ -339,7 +307,7 @@ Premium received per option: 12.3360
 
 ### Interpretation
 
-The mean profit is near zero at every rebalancing frequency: 0.027 with a single hedge (that is, no rebalancing after the initial position), and 0.001 with daily rebalancing. This is the central result. The seller collected 12.336 and, on average, spent exactly that much replicating the option, regardless of the 8% real-world drift. The mean is slightly positive because the simulated drift exceeds the risk-free rate and the unhedged-between-trades position is long the share; the effect is small and shrinks as rebalancing increases.
+The mean profit is near zero at every rebalancing frequency: 0.027 with a single hedge (that is, no rebalancing after the initial position), and 0.001 with daily rebalancing. This is the central result. The seller collected 12.336 and, on average, spent exactly that much replicating the option, regardless of the 8% real-world drift. The small positive mean shrinks as rebalancing increases.
 
 The standard deviation is what changes. With a single hedge the standard deviation of profit and loss per option is 7.61, which is more than 60% of the premium. Quarterly rebalancing (four times) cuts it to 4.07, monthly (12 times) to 2.39, weekly (52 times) to 1.20 and daily (252 times) to 0.55. Each time the number of rebalances is multiplied by about four, the standard deviation falls by about a factor of two. This is the square-root law: hedging error scales with 1/√n. It also gives the practical cost-benefit rule. Moving from weekly to daily rebalancing multiplies trading by almost five and cuts risk by a little over half; whether that is worthwhile depends on transaction costs, which this simulation ignores.
 
@@ -461,11 +429,11 @@ VaR(α) = z_α · σ_p                     (zero-mean assumption)
 ES(α)  = σ_p · n(z_α) / (1 − α)
 ```
 
-The covariance matrix is built from volatilities and correlations as Σ_ij = ρ_ij·σ_i·σ_j. A subtle benefit of the closed form is that portfolio risk can be decomposed exactly. The Euler allocation gives each position's component VaR as x_i · (Σx)_i / σ_p · z_α, and the components sum to total VaR. This is the number a risk committee needs to decide which exposure to cut.
+The covariance matrix is Σ_ij = ρ_ij·σ_i·σ_j. The closed form also decomposes risk exactly: the Euler component VaR of position i is x_i·(Σx)_i/σ_p·z_α, and components sum to total VaR.
 
 ### Monte Carlo
 
-Monte Carlo simulation generates random factor changes with the desired covariance and revalues the portfolio. To turn independent standard normal draws z into correlated draws, multiply by the Cholesky factor L of the covariance matrix, where Σ = LL'. Then L·z has covariance Σ. For fat tails, replace the normal draws with scaled Student-t draws. The scaling divides by √(ν/(ν − 2)) so that the variance remains equal to one and volatilities keep their meaning.
+Monte Carlo simulation draws random factor changes and revalues the portfolio. Multiplying independent normal draws by the Cholesky factor L (Σ = LL') gives correlated draws; for fat tails use Student-t draws divided by √(ν/(ν − 2)) so variance stays at one.
 
 **Listing 21.5: Variance-covariance and Monte Carlo VaR, convergence, fat-tailed draws and component VaR**
 
@@ -832,9 +800,9 @@ Second, the mean outcome depends on the assumed drift. With zero drift the forwa
 
 ### Why Backtest
 
-A VaR number is a prediction: on 1% of days the loss should exceed it. Backtesting compares those predictions with what happened. An exception is a day on which the realised loss exceeds the VaR forecast. If the model is right, the number of exceptions in n days is binomial with parameters n and 1% for a 99% VaR. Too many exceptions show the model understates risk; too few show it is overly conservative and ties up capital or limits unnecessarily.
+A VaR number is a prediction: on 1% of days the loss should exceed it. An exception is a day on which it does; for a correct 99% model the number of exceptions in n days is binomial(n, 1%). The Kupiec proportion-of-failures test formalises this.
 
-The Kupiec proportion-of-failures test formalises this. With x exceptions in n days and a nominal exception probability p, the likelihood-ratio statistic is:
+With x exceptions in n days and a nominal exception probability p, the likelihood-ratio statistic is:
 
 ```
 LR = −2 · ln[ (1−p)^(n−x) · p^x ] + 2 · ln[ (1−x/n)^(n−x) · (x/n)^x ]
@@ -996,7 +964,7 @@ Exercise 21.8: delta-hedge 100,000 calls (S=100,K=100,r=5%,sigma=25%,T=1): share
 
 A share trades at 40 and in one year will be either 50 (u = 1.25) or 32 (d = 0.80). The continuously compounded risk-free rate is 4%. Price a one-year European call struck at 42, and give the replicating portfolio.
 
-**Solution.** The risk-neutral probability is p* = (e^0.04 − 0.80)/(1.25 − 0.80) = (1.040811 − 0.80)/0.45 = 0.5351. The call pays 50 − 42 = 8 in the up state and 0 in the down state (32 is below the strike). Value: C = e^(−0.04)·[0.5351 × 8 + 0.4649 × 0] = 0.960789 × 4.2808 = 4.1132. The replicating portfolio holds Δ = (8 − 0)/(40 × 0.45) = 0.4444 shares, financed by borrowing 0.4444 × 40 − 4.1132 = 13.6646. Check: 0.4444 × 40 − 13.6646 = 4.1132. The listing confirms the numbers.
+**Solution.** p* = (e^0.04 − 0.80)/0.45 = 0.5351; the call pays 8 up and 0 down, so C = e^(−0.04) × 0.5351 × 8 = 4.1132. Δ = 8/(40 × 0.45) = 0.4444 shares, financed by borrowing 0.4444 × 40 − 4.1132 = 13.6646.
 
 ### Exercise 21.2: Implied Volatility
 
