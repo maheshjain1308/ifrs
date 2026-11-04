@@ -461,3 +461,50 @@ She also notes two cautions. The cash-flow forecasts of Alpha rely on a continui
 3. Under the $10 million limit, which portfolio would you recommend? Show why the PI ranking does not give the best answer here, and explain what the budget limit implies about the opportunity cost of capital.
 4. Discuss how you would test the robustness of the recommendation, including the risk that Alpha's volume assumptions are optimistic, and whether the firm should seek additional funding for the projects left out.
 
+## Key Takeaways
+
+- NPV measures the wealth a project creates in today's dollars; it uses all cash flows, respects the time value of money, is additive across projects, and is the benchmark against which other criteria are judged.
+- Project cash flows must be incremental, after-tax and free of financing charges; sunk costs are ignored and opportunity costs, working capital and side effects are included.
+- The IRR is the discount rate that sets NPV to zero; for conventional, independent projects it gives the same accept/reject decision as NPV.
+- IRR fails in several situations: multiple or nonexistent IRRs with sign changes in the cash flows, projects that resemble borrowing, an unrealistic reinvestment assumption, and conflicts among mutually exclusive projects.
+- MIRR restores a single answer by compounding inflows at a stated reinvestment rate and discounting outflows at a financing rate, but it remains a rate and so is not a cure for scale conflicts.
+- Payback and discounted payback measure speed of recovery and exposure; they ignore cash flows after the cutoff and can reject valuable long-lived projects, so they are better used as risk indicators than as decision rules.
+- The profitability index measures value per dollar invested and is useful for rationing capital, but it can mislead for mutually exclusive projects and for indivisible projects.
+- Among mutually exclusive projects, choose the highest NPV (or the highest equivalent annual annuity when lives differ), or take the larger or later project if its incremental IRR exceeds the cost of capital.
+- The crossover rate is the IRR of the difference between two projects' cash flows; below it, the longer-duration project has the higher NPV.
+- Under capital rationing with indivisible projects, enumerate or optimize over feasible portfolios to maximize total NPV; a PI ranking may leave budget unused and miss the best combination.
+
+## Review Questions
+
+1. Explain why the NPV rule maximizes shareholder wealth, and why shareholders with different consumption preferences would still agree on it.
+2. What is meant by "incremental" cash flows? Give three examples of items that should be included and three that should be excluded when estimating them.
+3. Under what conditions do the NPV and IRR rules give the same accept/reject decision for an independent project? Illustrate with an NPV profile.
+4. Why can a project have more than one IRR? What determines the maximum number of IRRs, and how should a manager decide whether to accept such a project?
+5. Explain the reinvestment-rate assumption implicit in NPV and in IRR. Which is more defensible, and why?
+6. Describe how the MIRR is calculated. What problems does it solve and what problems does it leave unsolved?
+7. List three weaknesses of the payback rule and describe a situation in which a payback cutoff might nevertheless be reasonable.
+8. Why does the profitability index sometimes give the wrong ranking for mutually exclusive projects? When is it a useful tool?
+9. What is the crossover rate? Explain why IRR and NPV rank two projects differently when the cost of capital is below it.
+10. Distinguish soft from hard capital rationing. Why might a PI ranking fail to identify the optimal set of projects when projects are indivisible?
+
+## Problems
+
+1. **NPV, IRR and payback.** A project costs $80,000 and returns $25,000, $30,000, $35,000 and $28,000 in years 1 to 4. The cost of capital is 9 percent. Compute NPV, IRR and payback period. Should the project be accepted?
+2. **NPV and IRR.** A project requires $500 now and returns $200, $250 and $300 in years 1, 2 and 3. Compute the NPV at 12 percent and the IRR.
+3. **MIRR.** A project has cash flows −$1,000, +$400, +$450 and +$500 in years 0 to 3. The IRR is 15.98 percent. Compute the MIRR using a reinvestment rate of 8 percent, and the NPV at 8 percent. Why do the MIRR and IRR differ?
+4. **Capital rationing.** At a 10 percent cost of capital, the NPVs and outlays of five independent projects are (outlay in $ million, NPV in $ million): A (120, 29.21), B (100, 42.64), C (80, 44.34), D (150, 71.89), E (60, 5.51). The budget is $300 million. Compute the PI of each project and find the portfolio that maximizes NPV.
+5. **Scale.** Two mutually exclusive projects at a 10 percent cost of capital: Small costs $200 and returns $90 per year for 4 years; Large costs $600 and returns $230 per year for 4 years. Compute NPV and IRR of each, the incremental IRR, and state which to choose.
+6. **Unequal lives.** Machine M1 costs $30,000 and returns $12,000 per year for 3 years; Machine M2 costs $45,000 and returns $11,000 per year for 6 years. The cost of capital is 9 percent and each can be replaced indefinitely. Compute NPV and EAA of each, and choose.
+7. **Nonconventional cash flows.** A project has cash flows −$200, +$500 and −$310 in years 0, 1 and 2. Find the IRRs, compute the NPV at 10 percent, 12 percent, 20 percent and 25 percent, and state the range of discount rates for which the project is acceptable.
+8. **Payback measures.** A project costs $60,000 and returns $20,000, $25,000, $30,000, $10,000 and $10,000 in years 1 to 5. The cost of capital is 10 percent. Compute payback, discounted payback and NPV. If the firm's cutoff is 2.5 years, what do the two payback rules say?
+
+### Answers to Selected Problems
+
+1. PV of inflows = 25,000/1.09 + 30,000/1.09² + 35,000/1.09³ + 28,000/1.09⁴ = 22,936 + 25,250 + 27,026 + 19,836 = 95,049 (from unrounded values), so NPV = $15,049. IRR = 17.05 percent. Cumulative cash flows are −55,000, −25,000, +10,000, so payback = 2 + 25,000/35,000 = 2.71 years. Accept (NPV > 0, IRR > 9 percent).
+2. PV = 200/1.12 + 250/1.2544 + 300/1.404928 = 178.57 + 199.30 + 213.53 = 591.40; NPV = $91.40. IRR = 21.65 percent.
+3. Terminal value at year 3 = 400 × 1.08² + 450 × 1.08 + 500 = 466.56 + 486.00 + 500 = 1,452.56. MIRR = (1,452.56/1,000)^(1/3) − 1 = 13.25 percent. NPV at 8 percent = $153.09. The MIRR is lower than the IRR (15.98 percent) because it assumes reinvestment at 8 percent instead of at the IRR; it still exceeds 8 percent, consistent with a positive NPV.
+4. PIs: A 1.243, B 1.426, C 1.554, D 1.479, E 1.092. Ranking by PI: C, D, B, A, E; C (80) + D (150) = 230, B (100) does not fit, A (120) does not fit, E (60) fits, giving C + D + E at 290 with NPV 44.34 + 71.89 + 5.51 = $121.74 million (121.75 with unrounded NPVs). Checking alternatives (C + D = 116.23; A + B + C = 116.20; B + D = 114.53) confirms that C + D + E is best.
+5. Small: NPV = 90 × 3.1699 − 200 = $85.29; IRR = 28.49 percent. Large: NPV = 230 × 3.1699 − 600 = $129.07; IRR = 19.60 percent. Incremental flows: −400, then +140 per year for 4 years; incremental NPV = $43.78; incremental IRR = 14.96 percent, above 10 percent. Choose Large (higher NPV), despite its lower IRR.
+6. M1: NPV = 12,000 × 2.5313 − 30,000 = $375.54; EAA = 375.54/2.5313 = $148.36. M2: NPV = 11,000 × 4.4859 − 45,000 = $4,345.10; EAA = 4,345.10/4.4859 = $968.61. Choose M2 (higher EAA and higher NPV).
+7. Solving −200 + 500x − 310x² = 0 with x = 1/(1+r) gives x = 0.8786 and 0.7343, so IRRs are 13.82 percent and 36.19 percent. NPV at 10 percent = −1.65; at 12 percent = −0.70; at 20 percent = +1.39; at 25 percent = +1.60. The project is acceptable only for discount rates between about 13.8 and 36.2 percent; the IRR rule alone is ambiguous.
+8. Cumulative cash flows: −40,000, −15,000, +15,000, so payback = 2 + 15,000/30,000 = 2.5 years. PVs: 18,182; 20,661; 22,539; 6,830; 6,209. Cumulative PV after year 2 = −21,157, so discounted payback = 2 + 21,157/22,539 = 2.94 years. NPV = 18,182 + 20,661 + 22,539 + 6,830 + 6,209 − 60,000 = $14,422. With a 2.5-year cutoff, ordinary payback is exactly at the cutoff (accept or marginal), while discounted payback (2.94 years) fails; yet the NPV is clearly positive.

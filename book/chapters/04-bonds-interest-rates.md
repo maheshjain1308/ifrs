@@ -440,3 +440,154 @@ The company's own borrowing cost is unaffected by this change in the market valu
 
 For the issuer the spread is a function of leverage, coverage, asset quality and market conditions. Actions that reduce spreads include lowering debt, extending maturities to remove clustering of refinancing, offering collateral or seniority, accepting covenants, and building a reputation for conservative financial policy. Each has costs: lower leverage forgoes tax shields; covenants limit flexibility; and collateral drains the pool of unencumbered assets. The efficient choice depends on the trade-offs developed in the chapters on capital structure.
 
+## 4.7 Inflation-Linked Bonds
+
+### 4.7.1 How they work
+
+A conventional bond promises fixed nominal payments, so its real value is exposed to inflation. An **inflation-linked bond** adjusts its cash flows for realised inflation so that the investor's purchasing power is preserved. The best-known examples are U.S. Treasury Inflation-Protected Securities (TIPS) and the index-linked gilts of the United Kingdom, but many governments and some corporations and utilities issue them. Design details vary, but the typical TIPS structure is:
+
+- The **principal is multiplied by an index ratio**, the current consumer-price index divided by the index at issuance.
+- The **coupon rate is fixed and real**; each coupon equals that rate times the *inflation-adjusted* principal at the coupon date.
+- At maturity the holder receives the adjusted principal, and in the U.S. design not less than the original principal (a deflation floor on redemption).
+
+The quoted yield on such a bond is a **real yield**: the yield to maturity of the real cash flows, measured in purchasing-power units. The nominal return depends on realised inflation:
+
+```
+(1 + nominal return) = (1 + real yield) × (1 + realised inflation)
+```
+
+**Example 4.11 – Cash flows of an inflation-linked bond.** An investor buys a five-year inflation-linked bond with $1,000 original principal and a 1.5% real coupon, paid annually. Inflation turns out to be a constant 3.0% a year.
+
+| Year | Index ratio | Adjusted principal | Coupon (1.5% × adjusted principal) |
+|---|---|---|---|
+| 1 | 1.0300 | $1,030.00 | $15.45 |
+| 2 | 1.0609 | $1,060.90 | $15.91 |
+| 3 | 1.0927 | $1,092.73 | $16.39 |
+| 4 | 1.1255 | $1,125.51 | $16.88 |
+| 5 | 1.1593 | $1,159.27 | $17.39 |
+
+At maturity the holder receives $1,159.27 of principal plus the final coupon of $17.39. The nominal coupons rise steadily, and the redemption amount compensates for the cumulative inflation of 15.93%. The holder's nominal return is approximately (1.015)(1.03) − 1 = 4.545% per year, which is the real coupon rate compounded with inflation. A conventional bond with a fixed 4.5% coupon would have paid $45 every year and returned $1,000, and would have lost to the indexed bond if inflation had averaged more than about 3%.
+
+(Check: coupon in year 4 is 1.5% × $1,125.51 = $16.88; year 5, 1.5% × $1,159.27 = $17.39.)
+
+### 4.7.2 Real yields and breakeven inflation
+
+Comparing a conventional government bond with an indexed bond of the same maturity yields the market's implied expectation of inflation, the **breakeven inflation rate**:
+
+```
+Breakeven inflation = (1 + nominal yield) / (1 + real yield) − 1  ≈  nominal yield − real yield
+```
+
+This is the Fisher equation (Chapter 3) applied to market yields. If the 10-year nominal yield is 4.5% and the 10-year real yield is 1.8%, breakeven inflation is 1.045 / 1.018 − 1 = **2.652%** (the simple difference gives 2.7%). An investor who believes inflation will average more than 2.65% should prefer the indexed bond; one who thinks it will be lower should hold the nominal bond. The breakeven rate is not a pure inflation forecast. It also includes an *inflation risk premium* (compensation to nominal bondholders for inflation uncertainty), which raises it, and a *liquidity premium* on indexed bonds, which depresses the real-yield side of the comparison and thereby raises the breakeven again. Interpreting breakeven rates as forecasts therefore requires caution.
+
+The price of an indexed bond is the present value of its real cash flows at the real yield, multiplied by the index ratio. For a five-year bond with a 1.5% real coupon and a real yield of 1.2%, the real price per $1,000 of original principal is $1,014.47 per unit of index ratio. The bond trades above par because its coupon exceeds the real yield.
+
+### 4.7.3 Who benefits, and the risks
+
+For investors, indexed bonds hedge inflation risk: pension funds with inflation-linked liabilities, retirees wanting a steady real income, and diversified portfolios all benefit. Indexed bonds are not riskless, though. Their real yields move, so a rise in real yields lowers their prices, and with long maturities the real-rate duration is substantial. Realised inflation affects cash flows with a lag, because of the index publication lag. In some markets, taxation of the inflation accrual can create "phantom income": taxable income that is not received in cash until maturity.
+
+For issuers, the trade-off is the reverse. An issuer whose revenues track inflation, such as a regulated utility whose tariffs are adjusted annually or a toll-road operator whose tolls are indexed, can match its liabilities to its revenues and avoid a mismatch. It may also save the inflation risk premium that investors build into nominal yields. An issuer whose revenues are fixed in nominal terms faces the danger of an inflation surprise, as Tessellate's board worried: servicing costs rise but revenues do not.
+
+**Table 4.6 – Nominal versus inflation-linked funding for an issuer (3.1% real yield; illustrative inflation outcomes)**
+
+| Average inflation | All-in nominal cost of indexed bond | Cost of 6.4% fixed bond | Indexed cheaper? |
+|---|---|---|---|
+| 1.0% | 4.13% | 6.40% | Yes |
+| 2.0% | 5.16% | 6.40% | Yes |
+| 2.5% | 5.68% | 6.40% | Yes |
+| 3.2% | 6.40% | 6.40% | Break-even |
+| 4.0% | 7.22% | 6.40% | No |
+| 5.0% | 8.26% | 6.40% | No |
+
+(Cost = 1.031 × (1 + inflation) − 1.) The breakeven inflation for Tessellate is 1.064 / 1.031 − 1 = 3.20%. For a revenue stream that is itself indexed, the comparison is misleading, because higher inflation raises revenue as well as cost; what matters is the *real* margin, which is the same under all inflation outcomes if the structure is matched.
+
+## 4.8 Managerial Implications
+
+Bond markets are not just a source of funds. They are a source of information and a place where several of the firm's risks are priced. The main managerial takeaways of the chapter are as follows.
+
+**Cost of debt.** The correct cost of debt for valuation is the current market yield on the firm's debt (the YTM on comparable-risk, comparable-maturity bonds), not the coupon on the debt it issued years ago. In the weighted-average cost of capital the cost of debt is then adjusted for the tax deductibility of interest.
+
+**Maturity and refinancing.** A firm with long-lived assets that funds with short-term debt bears refinancing risk: when a large block of debt matures, the firm must refinance at whatever rate and spread prevail then. Spreading maturities ("laddering") reduces this exposure. Extending maturity costs the term premium, but buys certainty.
+
+**Interest-rate exposure.** Duration provides the language for managing the sensitivity of debt and pension liabilities to rate changes. Firms can alter exposure by choosing fixed versus floating-rate debt, by using swaps to convert one to the other, or by matching the duration of pension assets to that of the liabilities.
+
+**Credit rating as a strategic variable.** Rating thresholds affect the investor base, the cost of debt and access to commercial paper markets. Managers may deliberately hold lower leverage than the tax-optimal level to preserve a rating, a decision that should be explicit and justified.
+
+**Reading the market.** The yield curve and breakeven inflation provide market-based evidence on rate and inflation expectations for use in planning. Credit spreads on the firm's own bonds and on its peers' provide an early warning of changing investor perceptions.
+
+**Matching principle.** A recurring theme is to match the characteristics of liabilities with those of assets and revenues: maturity, rate type (fixed or floating), currency and inflation linkage. Mismatches are not always wrong, but they should be taken deliberately and measured.
+
+## Case Study: Tessellate Power's Financing Choice
+
+*Illustrative case. Tessellate Power is a fictional company.*
+
+Tessellate Power generates and sells electricity to about 900,000 customers under a regulatory framework in which tariffs are reset annually to reflect a measure of consumer-price inflation, with a lag of one year. The company has $2.1 billion of debt outstanding, with a weighted average maturity of 6.5 years and a weighted average coupon of 4.8%. It is rated BBB by one agency and Baa2 by another. The company's principal covenant is a limit on net debt to earnings before interest, tax, depreciation and amortisation (EBITDA).
+
+The board has approved a $400 million wind and storage project. The treasurer, Anil Desmarais, must choose between three structures that investment bankers have priced on the same day.
+
+- **Option A**: 5-year fixed-rate bond, 5.3% annual coupon, issued at par.
+- **Option B**: 15-year fixed-rate bond, 6.4% annual coupon, issued at par.
+- **Option C**: 15-year inflation-linked bond, real coupon 3.1%, principal indexed to consumer prices.
+
+The government yield curve that day shows a 5-year yield of 4.0%, a 15-year yield of 4.6% and a 15-year real (inflation-linked government) yield of 1.9%. Thus the credit spreads implied are 130 bp for Option A and 180 bp for Option B, and 120 bp for Option C measured on a real basis. The bankers note that the spread for Option B is wider partly because of the longer exposure to Tessellate's credit and because the BBB rating is only one notch above the investment-grade boundary.
+
+Anil gathers more information. Tessellate's cash flows are expected to be flat in real terms for the first six years, since the project ramps up slowly, and then to rise as the project reaches full capacity. The company's EBITDA is about 70% regulated and indexed, and 30% from merchant sales whose prices are volatile and have no inflation link. Existing debt is mostly fixed-rate and nominal, with a modest maturity wall of $600 million due in year 5. If the company were downgraded to BB+, Anil estimates that spreads on all new issuance would widen by at least 150 bp, and several large investors would sell.
+
+The bankers' view is that the 5-year bond is cheapest now, but they warn that refinancing the whole $400 million in five years would coincide with the $600 million maturity wall, so that $1 billion would need to be refinanced in one year. The chief executive prefers Option B because "we can fix the cost for 15 years and forget about it." The head of risk argues for Option C, noting that regulated revenues are indexed, and that Option C reduces the interest-rate mismatch. But the chief financial officer fears that inflation, which averaged 2.5% in the recent past, could be volatile and that a serious spike would raise the nominal burden on the 30% of cash flow that is not indexed.
+
+Anil's analysts also compute that, at a 6.4% yield, a 15-year 6.4% bond would have a modified duration of about 9.4, whereas the 5-year bond at 5.3% would have a duration of about 4.3. A 100 bp rise in market yields would lower the market value of the 15-year bond by roughly 9.4%, but, because Tessellate intends to hold the debt to maturity and not mark it to market, the effect would show up only in disclosures and in the opportunity cost of having locked in the rate. The analysts also point out that the all-in cost of Option C is 5.7% in nominal terms if inflation averages 2.5%, and exceeds 6.4% if inflation averages more than 3.2%.
+
+**Discussion questions**
+
+1. Compute the breakeven inflation rate on the government curve (15-year nominal 4.6%, 15-year real 1.9%) and on Tessellate's own bonds (Options B and C). What does the comparison imply about whether Tessellate is buying inflation protection cheaply or dearly, and which components of breakeven (expected inflation, inflation risk premium, liquidity) might explain the difference?
+2. Assess the refinancing risk of Option A given the maturity wall in year 5. Propose a debt-maturity profile (a mix of the three options or an alternative) that spreads refinancing risk, and discuss the cost of that choice using the shape of the yield curve and the term premium.
+3. Using the information on revenue (70% indexed, 30% merchant), discuss how well each option matches Tessellate's cash flows. How might the firm hedge the remaining mismatch, and how would you decide between the hedge and a simpler fixed-rate structure?
+4. The downgrade threshold is a close constraint. How should the potential for a downgrade influence the choice, and what disclosures or financial policies (such as leverage targets) might Tessellate adopt to protect its investment-grade rating? Estimate the added annual interest cost on $400 million of a 150 bp widening.
+
+## Key Takeaways
+
+- A bond is the present value of its coupons (an annuity) and principal (a lump sum), discounted at the market yield; the coupon rate is a label fixed at issue while the yield moves with the market.
+- Bond prices and yields move in opposite directions; a bond sells at a premium, par or discount according to whether its coupon is above, equal to or below its yield, and its price is pulled toward par as maturity approaches.
+- YTM is the bond's internal rate of return if held to maturity, with full payment and reinvestment of coupons at the YTM itself. Realised returns differ when rates change, and for risky bonds promised yields exceed expected yields.
+- Quoted bond prices are clean prices; the buyer pays the dirty price, equal to the clean price plus accrued interest.
+- Macaulay duration is the present-value-weighted average time to cash flows; modified duration (D / (1 + y)) gives the approximate percentage price change per unit change in yield. Duration rises with maturity and falls with coupon and yield.
+- Convexity captures the curvature of the price–yield relationship and improves the duration estimate for large rate moves; investors value positive convexity and the options embedded in callable bonds can make it negative.
+- Immunisation sets asset duration equal to the liability horizon (and present values equal) so that price and reinvestment effects offset; it requires rebalancing and protects only against parallel shifts.
+- The term structure is described by spot rates, and forward rates implied by the spot curve are the market-implied marginal cost of extending maturity; slopes reflect rate expectations, term premia and segmentation.
+- A credit spread compensates for expected loss, a risk premium and illiquidity; the rating scale's investment-grade boundary is a practical constraint on issuers because many institutional investors cannot hold speculative-grade debt.
+- Inflation-linked bonds pay a real yield on an inflation-adjusted principal; the difference between nominal and real yields (the breakeven rate) reflects expected inflation plus risk and liquidity premia, and indexed funding is attractive mainly when the issuer's revenues are themselves indexed.
+
+## Review Questions
+
+1. Why must the price of a fixed-rate bond fall when market yields rise? Explain in terms of present values.
+2. A bond has a coupon of 7% and a yield of 5%. Will it trade at par, at a premium or at a discount? What will happen to its price if its yield remains at 5% until maturity?
+3. Explain the difference between clean and dirty prices. Why do bond markets quote clean prices?
+4. List the three assumptions underlying the YTM calculation. Which is most likely to be violated, and what is the consequence for a long-dated, high-coupon bond?
+5. Why is duration a better measure of interest-rate risk than maturity? Under what conditions does duration equal maturity?
+6. Explain why convexity is valuable to a bondholder. Why can a callable bond exhibit negative convexity?
+7. Describe how a company with a known future liability could immunise it. What are the limitations of the technique?
+8. Define a forward rate and explain how it is derived from spot rates. What does it mean if the forward rate is above the expected future spot rate?
+9. Distinguish expected loss from the credit spread. Why is the risk-neutral default probability higher than the real-world default probability?
+10. Explain how breakeven inflation is calculated from nominal and real yields, and why it should not be read as a pure forecast of inflation.
+
+## Problems
+
+1. **Bond pricing.** A $1,000 face value bond has a 7% annual coupon and six years to maturity. Compute its price at yields of (a) 8% annual, (b) 8% bond-equivalent with semi-annual coupons, and (c) 6% annual.
+2. **YTM.** A five-year bond with a 6% annual coupon sells for $1,080. Compute its yield to maturity.
+3. **Duration and convexity.** A four-year bond with an 8% annual coupon is priced at a 7% yield. Compute (a) its price, (b) its Macaulay duration, (c) its modified duration and convexity, and (d) the estimated price change for a yield increase of 50 basis points, with and without the convexity adjustment, together with the exact change.
+4. **Spot and forward rates.** The zero-coupon spot rates are 2.0% (1 year), 2.8% (2 years) and 3.4% (3 years). Compute (a) the price of a three-year zero-coupon bond with face value $1,000, (b) the forward rates f₁,₂ and f₂,₃, and (c) the price of a three-year 4% annual-coupon bond.
+5. **Credit spread.** A one-year government zero yields 3.5%, and a one-year corporate zero yields 5.9%. If recovery in default is 50%, compute the risk-neutral default probability. What is the spread, and how does it compare with PD × LGD?
+6. **Inflation-linked bond.** The 10-year nominal yield is 5.2% and the 10-year real yield is 2.1%. (a) Compute breakeven inflation. (b) An inflation-linked bond has an original principal of $1,000 and a 2.0% real annual coupon; if inflation is 2.5% each year, what is the principal and coupon in year 2?
+7. **Immunisation.** A firm owes $2,000,000 in five years. The yield is 6% for all maturities. Design a portfolio of 2-year and 8-year zero-coupon bonds that is immunised: compute the present value of the liability and the amount to invest in each bond.
+8. **Portfolio and zero-coupon duration.** A portfolio holds 40% of its value in a bond with a modified duration of 3.2 and 60% in a bond with a modified duration of 7.5. (a) Compute the portfolio modified duration. (b) Estimate the percentage change in portfolio value if yields rise by 75 basis points. (c) Compute the price of a 10-year zero-coupon bond at a 5% yield, and the percentage change if the yield rises to 5.5%.
+
+### Answers to Selected Problems
+
+1. (a) **$953.77**. (b) Semi-annual coupons of $35 for 12 periods at 4%: **$953.07**. (c) **$1,049.17**.
+2. YTM = **4.193%**.
+3. (a) **$1,033.87**. (b) Macaulay duration **3.585 years**. (c) Modified duration **3.350**; convexity **15.06**. (d) Duration only: −3.350 × 0.005 × 1,033.87 = **−$17.32**; with convexity: **−$17.12**; exact: price at 7.5% = $1,016.75, a change of **−$17.13**.
+4. (a) $1,000 / 1.034³ = **$904.56**. (b) f₁,₂ = 1.028² / 1.02 − 1 = **3.606%**; f₂,₃ = 1.034³ / 1.028² − 1 = **4.611%**. (c) $40/1.02 + $40/1.028² + $1,040/1.034³ = **$1,017.81**.
+5. q = (1 − 1.035/1.059) / 0.5 = **4.533%**. Spread = 5.9% − 3.5% = 2.4% (240 bp); PD × LGD = 4.533% × 0.5 = 2.266%, close to the spread.
+6. (a) 1.052 / 1.021 − 1 = **3.036%**. (b) Year 2 principal = $1,000 × 1.025² = **$1,050.63**; coupon = 2% × $1,050.63 = **$21.01**.
+7. PV of liability = $2,000,000 / 1.06⁵ = **$1,494,516.35**. Weight in the 2-year zero: (8 − 5)/(8 − 2) = 0.5, so **$747,258.17** in each.
+8. (a) 0.4 × 3.2 + 0.6 × 7.5 = **5.78**. (b) ≈ −5.78 × 0.0075 = **−4.34%**. (c) Price = $1,000 / 1.05¹⁰ = **$613.91**; at 5.5% the price falls by about **4.64%** (duration approximation: −4.76%).

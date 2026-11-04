@@ -292,3 +292,194 @@ Value is almost linear in volatility for at-the-money options, which is why a ro
 
 The model's flaws are well understood: volatility is not constant and jumps occur; markets have transaction costs and cannot trade continuously; interest rates vary; American features and dividends complicate matters. Despite this, the model remains the benchmark language of derivatives markets, mainly because deviations are managed by quoting a *different implied volatility* for each strike. In corporate settings, where options are valued for accounting or pay design, its inputs (especially the volatility over long horizons) deserve judgment, and the sensitivity of the result to them should be tested.
 
+## 18.5 The Greeks and Hedging
+
+### 18.5.1 Sensitivities
+
+The **Greeks** are partial derivatives of the option price with respect to its inputs. They tell a trader or risk manager how the value will change when the market moves, and so how to hedge. For a European call on a stock with dividend yield q (set q = 0 if none), with φ(x) denoting the standard normal density:
+
+| Greek | Meaning | Call | Put |
+|---|---|---|---|
+| Delta Δ | ∂V/∂S | e^(−qT) N(d₁) | e^(−qT) [N(d₁) − 1] |
+| Gamma Γ | ∂²V/∂S² | e^(−qT) φ(d₁) / (S σ √T) | same as call |
+| Vega ν | ∂V/∂σ | S e^(−qT) φ(d₁) √T | same as call |
+| Theta Θ | ∂V/∂t | −S e^(−qT) φ(d₁) σ / (2√T) − r K e^(−rT) N(d₂) + q S e^(−qT) N(d₁) | −S e^(−qT) φ(d₁) σ / (2√T) + r K e^(−rT) N(−d₂) − q S e^(−qT) N(−d₁) |
+| Rho ρ | ∂V/∂r | K T e^(−rT) N(d₂) | −K T e^(−rT) N(−d₂) |
+
+*Delta* is the hedge ratio and the approximate probability (in the risk-neutral world) of finishing in the money. Call deltas run from 0 to 1 and put deltas from −1 to 0. *Gamma* measures the curvature: how fast delta changes. It is highest for at-the-money options close to expiry. *Vega* is sensitivity to volatility (conventionally quoted per one percentage point). *Theta* is time decay: the option loses time value as expiry approaches, and long option holders "pay" theta daily while writers collect it. Positive gamma and negative theta go together: the holder benefits from large moves and pays for the privilege through time decay. *Rho* is interest-rate sensitivity and is usually the least important for short-dated equity options.
+
+A useful relationship (for a delta-hedged portfolio, derived from the Black-Scholes equation) is Θ + r S Δ + ½ σ² S² Γ = r V. For a delta-neutral position this reduces to Θ ≈ −½ σ² S² Γ: the daily time decay received by the seller of options is compensation for the gamma risk borne.
+
+### 18.5.2 Delta hedging
+
+A market maker who sells a call can hedge by buying Δ shares per option. The position's value is then insensitive to small moves in S. But as S moves, Δ changes (gamma), so the hedge must be *rebalanced*. Profit or loss arises from the gap between realized volatility and the volatility priced into the option: the hedged option seller who sold at 30 percent implied volatility makes money if the stock subsequently realizes less than 30 percent. In practice, rebalancing is discrete, transaction costs matter, and volatility itself moves (vega risk), so the hedge is imperfect. Large books are hedged in aggregate: net delta, gamma, and vega limits are set by risk managers.
+
+**Example 18.6 – Greeks of an at-the-money option and delta-gamma hedging.** An at-the-money call has S = K = $100, T = 0.5, r = 5 percent, σ = 30 percent, no dividends.
+
+*Step 1: d₁ and d₂.* d₁ = [0 + (0.05 + 0.045) × 0.5] / (0.30 × 0.707107) = 0.0475 / 0.212132 = 0.2239; d₂ = 0.2239 − 0.2121 = 0.0118.
+
+*Step 2: price.* N(d₁) = 0.5886, N(d₂) = 0.5047. Ke^(−rT) = 97.531. C = 100 × 0.5886 − 97.531 × 0.5047 = 58.86 − 49.22 = **$9.63**.
+
+*Step 3: Greeks.* φ(0.2239) = 0.3894 (the standard normal density at 0.2239).
+- Delta = N(d₁) = **0.5886**.
+- Gamma = 0.3894 / (100 × 0.30 × 0.7071) = 0.3894 / 21.213 = **0.01834** per $1.
+- Vega = 100 × 0.3894 × 0.7071 = **27.54** per 1.00 of volatility, or $0.275 per vol point (the exact computation gives 27.51 and 0.2751).
+- Theta ≈ **−$10.71 per year**, or about −$0.0294 per calendar day.
+- Rho = K T e^(−rT) N(d₂) = 100 × 0.5 × 0.9753 × 0.5047 = **24.61** per 1.00, or $0.246 per percentage point of rate.
+
+*Step 4: hedging a short position.* A bank sells 10,000 calls on 100 shares... for simplicity treat each as one share. It sells 10,000 calls (10,000 shares of exposure), and buys 10,000 × 0.5886 = **5,886 shares** to be delta neutral.
+
+*Step 5: a $2 move.* Suppose the stock rises to $102. The call reprices to $10.848 (a rise of $1.213 per call), so the loss on 10,000 short calls is $12,133. The 5,886 shares gain 5,886 × 2 = $11,772. Net loss: **$361**. A delta-only estimate of the call change is 0.5886 × 2 = 1.177. The delta-gamma estimate adds ½ × 0.01834 × 2² = 0.0367, giving 1.214, close to the actual 1.213. The residual loss of $361 is gamma: a short-gamma position loses whichever way the stock moves.
+
+*Step 6: rebalancing.* New delta ≈ 0.5886 + 0.01834 × 2 = 0.6253, so the bank needs 6,253 shares: buy about **367 more** at $102 (buying after the rise, selling after a fall, "buy high, sell low" being the cost of being short gamma).
+
+*Step 7: other exposures.* A one-point rise in implied volatility raises each call by $0.275, a loss of about $2,751 for the bank. One day of decay earns the bank 10,000 × 0.0294 = about **$294**, which is the compensation for bearing gamma and vega risk.
+
+### 18.5.3 Using Greeks in corporate risk management
+
+Corporate treasurers rarely run option books, but they use the Greeks conceptually. The cost of a currency collar can be set so that the delta of the sold option and bought option nearly offset in premium terms. The effective hedge ratio of a protective put is its delta, not 1. Sizing a hedge program with options requires deciding whether the exposure should be protected against rate or price moves *at expiry* (use the option's payoff) or *during the life* (account for delta and mark-to-market). And whenever a firm sells options (callable debt, embedded customer options), it should recognize that it is short gamma and vega and incurs valuation volatility under fair-value accounting.
+
+## 18.6 Employee Stock Options
+
+### 18.6.1 Features and incentive logic
+
+An **employee stock option** (ESO) gives an employee the right to buy company shares at a fixed exercise price, usually set at the market price on the grant date, for a period of up to ten years. Typical features:
+
+- **Vesting**: the option cannot be exercised for a period (cliff or graded, e.g., four years). Employees who leave before vesting forfeit unvested options.
+- **Non-transferability**: ESOs cannot be sold or hedged freely, unlike traded options. A risk-averse, under-diversified employee will usually value them less than a diversified investor would, and will exercise early to lock in gains.
+- **Dilution**: exercise creates new shares (or uses treasury shares), so the proceeds are the strike, but the value given up is the market price. The existing shareholders bear the dilution.
+
+The incentive argument is that a manager with options benefits from share price appreciation and, because of the convex payoff, from *volatility* as well. This can align interests with those of shareholders, but it can also encourage risk taking (a convex payoff gives a manager an incentive to raise risk) and short-term focus. Design devices to counter this include longer vesting, holding requirements, performance-conditioned vesting, and strike prices indexed to peers or set above market.
+
+### 18.6.2 Valuation and expensing
+
+Under IFRS 2 and the corresponding US standard (ASC 718), equity-settled share-based payments are measured at the **grant-date fair value** and recognized as an expense over the vesting period, adjusted for the number of options expected to vest. Because employee options are not traded, firms use an option pricing model (Black-Scholes-Merton or a lattice) with these adaptations:
+
+1. Use the **expected life** of the option, not the contractual term, to reflect early exercise, which is typically triggered at some multiple of the strike or at departure.
+2. Adjust the expected number of options for **forfeitures** during vesting.
+3. Use an **expected volatility** that considers historical volatility and implied volatility of traded options, if available, and the term structure.
+4. Include **expected dividends** (as a yield q).
+
+Strictly, the Black-Scholes value ignores dilution. If the firm has N shares and issues M options, an exercised option increases the share count, so the holder shares the gain with others. A simple adjustment multiplies the standard value by N / (N + M) (the dilution factor) when the market has already priced the options.
+
+The question asked by the compensation committee is whether the cost to shareholders equals the value to the employee. In general, it does not: the cost to the firm (fair value) is typically higher than the employee's subjective value because of non-diversification and non-tradability. This wedge is a reason that firms sometimes prefer restricted stock or performance shares for senior staff and options for broad-based start-up grants where cash is scarce.
+
+**Example 18.7 – Valuing and expensing an executive option grant.** Meridian Biosystems grants 1,000,000 options at-the-money: S = K = $40. Expected life is 5 years (the contractual term is 10); expected volatility is 30 percent; the risk-free rate is 4 percent; the dividend yield is 1 percent. Vesting is graded straight-line over 4 years, and forfeitures are expected to remove 8 percent of the options. There are 50 million shares outstanding.
+
+*Step 1: d₁.* ln(40 / 40) = 0. (r − q + σ²/2) T = (0.04 − 0.01 + 0.045) × 5 = 0.075 × 5 = 0.375. σ√T = 0.30 × 2.23607 = 0.670820. d₁ = 0.375 / 0.670820 = **0.5590**.
+
+*Step 2: d₂.* 0.5590 − 0.6708 = **−0.1118**.
+
+*Step 3: normal probabilities.* N(d₁) = 0.7119, N(d₂) = 0.4555.
+
+*Step 4: discount factors.* e^(−qT) = e^(−0.05) = 0.951229; e^(−rT) = e^(−0.20) = 0.818731.
+
+*Step 5: value per option.* C = 40 × 0.951229 × 0.7119 − 40 × 0.818731 × 0.4555 = 27.088 − 14.918 = **$12.17**.
+
+*Step 6: total fair value.* Expected vesting options = 1,000,000 × 0.92 = 920,000. Total = 920,000 × 12.17 = **$11.20 million**.
+
+*Step 7: annual expense.* Straight-line over 4 years: 11.20 / 4 = **$2.80 million** per year in the income statement (a non-cash charge; the offset is credited to equity). True-up adjustments occur if actual forfeitures differ.
+
+*Step 8: dilution adjustment (informational).* 12.17 × 50 / 51 = $11.93 per option.
+
+*Step 9: sensitivities.* The result is quite sensitive to the inputs, as the table shows.
+
+**Table 18.4 – Value per option for the Meridian grant under alternative assumptions (S = K = $40, r = 4%, q = 1%).**
+
+| Volatility | Expected life | Value per option |
+|---|---|---|
+| 20% | 5 years | $9.26 |
+| 25% | 5 years | $10.71 |
+| 30% | 3 years | $9.40 |
+| 30% | 4 years | $10.89 |
+| 30% | 5 years | $12.17 |
+| 30% | 6 years | $13.30 |
+| 35% | 5 years | $13.61 |
+| 40% | 5 years | $15.03 |
+
+An error of ten volatility points shifts the expense by more than 20 percent, so documentation of how volatility and life were chosen is part of good governance and audit readiness. Note also that the expense is fixed at grant date: if the stock later falls and the options go underwater, the expense is not reversed (unless the performance or service conditions fail), which has led some boards to reprice options, a controversial act because it rewards failure.
+
+### 18.6.3 Design issues and the tax and governance context
+
+Tax treatment varies by jurisdiction (incentive stock options, qualified plans, and so on) and affects the form and timing of grants. Governance issues include "spring-loading" (grants made before good news), backdating (illegal when undisclosed), and overhang (options outstanding as a percentage of shares). Shareholder-approved plans, independent compensation committees, and transparent disclosure of valuation assumptions reduce these concerns.
+
+## 18.7 Corporate Securities as Options
+
+### 18.7.1 Equity as a call on the firm's assets
+
+Merton (1974) observed that the capital structure of a firm with a single zero-coupon debt issue can be described in option terms. Let V be the value of the firm's assets and D the face value of debt due at date T. At T:
+
+- If V_T > D, creditors are paid in full, and shareholders keep V_T − D.
+- If V_T < D, shareholders walk away (limited liability); creditors receive V_T.
+
+So the equity payoff is max(V_T − D, 0): a **call option on the firm's assets with strike D**. The debt payoff is D − max(D − V_T, 0): a risk-free bond *minus* a put option on the assets. Thus
+
+```
+E = Call(V, D, T, r, σ_V)
+Debt = V − E = D e^(−rT) − Put(V, D, T, r, σ_V)
+```
+
+These relationships are put-call parity applied to the firm. They produce several managerial insights.
+
+1. **Risk shifting.** Equity is a call; calls rise in value with volatility. Shareholders therefore gain, at the expense of creditors, when the firm shifts into riskier assets, an incentive that grows as leverage rises. This is the "asset substitution" problem, and explains covenants.
+2. **The credit spread is the price of a put.** The yield on risky debt exceeds the risk-free rate by an amount that compensates creditors for being short a put on the firm's assets. Credit models used by banks and rating agencies are built on this framework.
+3. **Shareholders hold an option value even in distress.** A firm with V < D can still have positive equity value, as long as there is time and volatility. This explains why equity does not fall to zero at the point of technical insolvency, and why equity holders resist early liquidation.
+4. **Equity beta rises with leverage** because the delta of a call is less than one but its elasticity (percentage change in E per percentage change in V) exceeds one: β_E = β_V × Δ × (V/E).
+
+**Example 18.8 – Equity and debt valued with the Merton model.** A firm has asset value V = $120 million, a single zero-coupon bond with face value D = $80 million due in T = 2 years, asset volatility σ = 30 percent, and risk-free rate r = 4 percent.
+
+*Step 1: d₁.* ln(120 / 80) = ln(1.5) = 0.405465. (r + σ²/2)T = (0.04 + 0.045) × 2 = 0.17. Numerator 0.575465. σ√T = 0.30 × 1.414214 = 0.424264. d₁ = **1.3564**.
+
+*Step 2: d₂.* 1.3564 − 0.4243 = **0.9321**.
+
+*Step 3: probabilities.* N(d₁) = 0.9125; N(d₂) = 0.8244.
+
+*Step 4: PV of debt face.* 80 × e^(−0.08) = 80 × 0.923116 = $73.849 million.
+
+*Step 5: equity.* E = 120 × 0.9125 − 73.849 × 0.8244 = 109.50 − 60.88 = **$48.62 million**.
+
+*Step 6: debt.* D₀ = 120 − 48.62 = **$71.38 million**.
+
+*Step 7: credit yield.* y = −ln(71.38 / 80) / 2 = −ln(0.89225) / 2 = 0.11400 / 2 = **5.70 percent**, a spread of **1.70 percent** over the risk-free rate. The risk-neutral probability of default is 1 − N(d₂) = 17.6 percent.
+
+*Step 8: parity check.* The embedded put value is 73.849 − 71.38 = **$2.47 million**, so the creditors' payoff is a risk-free bond worth $73.85 million less a $2.47 million put.
+
+*Step 9: risk shifting.* The firm replaces assets with riskier assets of the same value, raising σ to 45 percent. Recomputing gives E = $53.61 million and debt value $66.39 million, with a yield of 9.33 percent. Shareholders gain $4.99 million and creditors lose exactly that amount, even though firm value V did not change. This is the transfer of wealth that creditors guard against with covenants and security.
+
+### 18.7.2 Convertible bonds and warrants
+
+A **convertible bond** is a straight bond plus a call option on the issuer's shares, exercisable by giving up the bond. A **warrant** is a call option issued by the company itself, with dilution when exercised. Valuation separates the pieces:
+
+```
+Convertible value ≈ Straight-bond value + (Conversion ratio × Option value) [adjusted for call provisions, credit risk, and dilution]
+```
+
+The conversion option lets issuers pay a lower coupon (the buyer is paid partly in an option) and reduces the agency costs of debt, because the option offsets the risk-shifting incentive described above: if managers take extra risks, the convertible holder participates through the option.
+
+**Example 18.9 – Decomposing a convertible bond.** A fictional issuer sells a five-year convertible with face value $1,000 and a 3 percent annual coupon. Each bond converts into 20 shares (conversion price $50). The stock trades at $40, volatility is 30 percent, the risk-free rate is 4 percent, no dividends are paid. A comparable straight bond of the same issuer would yield 6 percent.
+
+*Step 1: straight bond value.* PV of coupons: 30 × [1 − 1.06^(−5)] / 0.06 = 30 × 4.21236 = $126.37. PV of face: 1,000 / 1.06⁵ = 1,000 / 1.338226 = $747.26. Total **$873.63**.
+
+*Step 2: option per share.* S = 40, K = 50, T = 5, r = 4 percent, σ = 30 percent. ln(40 / 50) = −0.223144. (0.04 + 0.045) × 5 = 0.425. Numerator 0.201856. σ√T = 0.670820. d₁ = 0.3009; d₂ = −0.3699. N(d₁) = 0.6182; N(d₂) = 0.3557. PV of strike = 50 × 0.818731 = 40.937. C = 40 × 0.6182 − 40.937 × 0.3557 = 24.73 − 14.56 = **$10.17**.
+
+*Step 3: option per bond.* 20 × 10.17 = **$203.36**.
+
+*Step 4: convertible value.* 873.63 + 203.36 = **$1,076.99**, about 107.7 percent of par.
+
+*Interpretation.* The issuer pays 3 percent instead of 6 percent. The 3-percent coupon saving on a $1,000 bond has a present value of $126.37 (the difference between the straight bond at a 6 percent coupon, $1,000, and its value here, $873.63), and investors pay $203.36 for the option: the market value of the conversion right exceeds the "interest saving" because the convertible's price is $1,077 and not $1,000. Issuers should note that the apparent cheapness of convertible financing is the cost of giving up upside; the "true" cost of the bond includes the option's value.
+
+(Technical note: the five-year straight bond at 6 percent with a 3 percent coupon is worth $873.63; if it had paid a 6 percent coupon, it would have been worth $1,000.)
+
+### 18.7.3 Other embedded options
+
+Many corporate instruments embed options: **callable bonds** (the issuer holds a call, so the bond is worth less than a straight bond: callable = straight − call), **putable bonds**, prepayment options in mortgages, **loan commitments** (the lender writes a put and a call), guarantees (a put on the guaranteed asset), and **rights issues** (short-dated calls). The pricing methods of this chapter apply with modification.
+
+## 18.8 Practical Guidance for Managers
+
+1. **Distinguish value from payoff.** An option's market value includes time value; do not equate it with the intrinsic value at today's price. An at-the-money option is not worthless.
+2. **Volatility is the key assumption.** Compare historical, implied, and peer volatility, and run sensitivities. When valuing long-dated corporate options, the term structure of volatility matters.
+3. **Use parity as a sanity check.** If a quoted call, put, stock price, and strike do not satisfy parity, there is an error or a market friction (borrow cost, dividends, early exercise).
+4. **Recognize options in contracts.** Whenever a contract gives one party a right without an obligation (an extension, a termination, a price cap, a conversion), it has an option value that should be priced, not ignored.
+5. **Hedge with understanding.** Know the delta, gamma, and vega of any option position, and the accounting implications (hedge accounting, fair-value changes, and disclosure requirements).
+6. **Do not mistake the model for the market.** Black-Scholes is a quoting convention and an approximation; model risk is real, particularly for long maturities, thinly traded underlyings, and exotic features.
+

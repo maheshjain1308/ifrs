@@ -314,3 +314,122 @@ An 8 percent haircut on operating cash flows reduces NPV by 38.6 percent ($52.4m
 ### 24.6.3 Financing abroad and hedging
 
 Foreign projects can be financed with local-currency debt, which creates a natural hedge for local cash flows and reduces transfer risk, albeit at the local interest rate, which reflects local inflation. Hedging the transaction exposure for committed flows (forwards, options, cross-currency swaps) is common; hedging long-dated economic exposure is difficult and costly, and often it is more effective to shape the operating footprint (matching currencies of costs and revenues, local sourcing, pricing flexibility). The value of hedging to shareholders is limited unless it reduces expected taxes, distress costs or underinvestment, which is the same logic as the corporate risk management discussion earlier in this book.
+
+## 24.7 Strategic Synthesis: The Future of Corporate Finance
+
+### 24.7.1 One value framework for many decisions
+
+Throughout this book, every decision has been judged by its effect on the present value of cash flows available to capital providers. The topics in this chapter are extensions of the same logic, not departures from it. A compact way to see this is the value-driver formula for a firm growing at a constant rate g, with a return on new invested capital (RONIC) and a cost of capital WACC:
+
+```
+Value = NOPAT₁ × (1 − g / RONIC) / (WACC − g)
+```
+
+NOPAT₁ is next year's net operating profit after tax, and the fraction g / RONIC is the share of profit reinvested to sustain growth. Growth creates value only when RONIC exceeds WACC; when RONIC equals WACC, growth is neutral and value equals NOPAT₁ / WACC.
+
+**Example 24.10 – Which lever matters? A value-driver comparison.** A firm has NOPAT₁ = $120m, g = 3 percent, RONIC = 12 percent and WACC = 9 percent. Invested capital is $1,000m.
+
+Step 1 (base): Reinvestment rate = 3 / 12 = 25 percent; free cash flow = 120 × 0.75 = $90m; value = 90 / (0.09 − 0.03) = 90 / 0.06 = **$1,500m**, or 1.5 times invested capital.
+
+Step 2 (lower cost of capital): Suppose better governance, disclosure and a broader investor base reduce WACC by 25 bp to 8.75 percent. Value = 90 / (0.0875 − 0.03) = 90 / 0.0575 = **$1,565m**, an increase of $65m (4.3 percent).
+
+Step 3 (higher returns on new capital): Suppose the firm's electrification and digital investments lift RONIC to 15 percent at an unchanged WACC of 9 percent. Reinvestment = 3 / 15 = 20 percent; FCF = 120 × 0.80 = $96m; value = 96 / 0.06 = **$1,600m**, an increase of $100m (6.7 percent).
+
+Step 4 (both): FCF $96m at WACC 8.75 percent: 96 / 0.0575 = **$1,670m**, an increase of $170m (11.3 percent).
+
+Neither lever is free: a lower WACC from "ESG" labels is hard to prove and may be offset by lower expected returns to investors, whereas a higher RONIC requires actual projects that earn more than their capital cost. The example also shows why capital allocation discipline dominates: a three-point rise in return on new capital is worth more than a quarter-point fall in the discount rate. The tools of this book (NPV, WACC, capital structure, payout, M&A discipline, risk management) are the means by which a firm identifies and executes the investments behind the RONIC.
+
+### 24.7.2 Decision checklist for the finance leader
+
+| Question | Tool from this book | Typical failure |
+|---|---|---|
+| Does the investment earn more than its risk-adjusted cost of capital? | NPV, IRR, real options, scenario analysis | Ignoring strategic or carbon costs; using one discount rate for all projects |
+| Is the financing structure compatible with the cash-flow risk? | Capital structure trade-off, coverage tests, stress tests | Sizing debt on average, not downside, cash flow |
+| Are managers' incentives aligned with long-run value? | Governance, pay design, board oversight | Pay metrics that can be manipulated |
+| Is the project exposed to currency, political or technology risk? | Parity-consistent budgeting, cash-flow adjustment, hedging | Mixing currencies in discount rates |
+| Is the claimed sustainability benefit verifiable? | Frameworks, KPIs, external assurance | Labels without commitments |
+| Will separation or combination create value after costs? | SOTP, synergy valuation, tax analysis | Counting gross benefits without dis-synergies |
+| What is the right response if things go wrong? | Contingent plans, liquidity runway, restructuring options | Late action |
+
+### 24.7.3 Trends that will shape the profession
+
+Several developments are likely to change what finance leaders do, though their timing and form are uncertain.
+
+- **Disclosure convergence.** Sustainability reporting standards are being developed and adopted in many jurisdictions, moving ESG data toward audited, comparable information. This should reduce rating disagreement and greenwashing, and increase the finance function's responsibility for non-financial data.
+- **Data and automation.** Machine learning in forecasting, credit decisions, fraud detection and treasury operations is raising the productivity of finance teams. It also creates model risk: the controller's job increasingly includes validating algorithms.
+- **Real-time and tokenized settlement.** Faster payment rails and tokenized assets may compress working capital cycles and reduce settlement risk, shifting the focus of treasury from float management to liquidity and counterparty risk across many rails.
+- **Private capital.** The growth of private equity and private credit has expanded financing options for firms that avoid public markets, and shifted some corporate governance and restructuring dynamics to negotiated, less transparent settings.
+- **Geopolitics and supply-chain fragmentation.** Tariffs, sanctions and reshoring raise the importance of scenario-based international budgeting and structural hedges.
+- **Climate and energy transition.** Capital intensity, carbon prices, and the physical risk of assets will increasingly be reflected in costs of capital, insurance and asset values.
+
+The core skill remains judgment under uncertainty. Models quantify, but the quality of assumptions, the incentives of those who produce the forecasts, and the willingness to act on unwelcome results determine whether a firm creates value.
+
+## Case Study: Verdane Materials and the Sustainable Expansion Decision
+
+*(Fictional company and figures, for teaching purposes only.)*
+
+Verdane Materials is a listed specialty-chemicals and building-materials group with $4.5 billion revenue, EBITDA of $720 million, net debt of $1.8 billion (2.5 times EBITDA) and an investment-grade rating one notch above the cut-off. The company has a market capitalization of $5.4 billion and a dual-class structure in which the founding family holds 9 percent of the capital but 31 percent of the votes. The board has eleven directors, of whom six are independent; the CEO is also the chair. The long-term incentive plan pays out 70 percent on three-year EPS growth, which has been supported by $600 million of buybacks in two years.
+
+Verdane's largest plant, in a coastal region, emits 1.2 million tons of CO2 a year, accounting for 40 percent of group emissions. The management team proposes an $800 million conversion to low-carbon heat and an electric kiln, financed with a $600 million green bond and $200 million of internal cash. The conversion will lower annual energy and carbon cost by an estimated $58 million after tax at a carbon price of $70 per ton rising 5 percent a year; at a carbon price of zero the saving is only $14 million a year, because electricity costs more than gas. The plant is expected to operate for 20 years. Verdane's WACC is 8.5 percent. The sustainability team argues that two of its largest customers have indicated a preference for low-carbon inputs and may switch within three years if no progress is made; the sales team estimates the value at risk at $25 million a year of EBITDA contribution.
+
+Meanwhile the company is considering a plant of similar scale in an emerging market where it would serve rapidly growing construction demand. The plant would cost the equivalent of $500 million and would generate local-currency cash flows. The local currency has depreciated about 4 percent annually against the dollar over the past decade, and local inflation runs 3 percentage points above US inflation. The government has twice delayed dividend payments abroad. A local partner proposes a joint venture with 40 percent ownership.
+
+Finally, the CFO has been approached by a fintech firm offering a dynamic-discounting and embedded-financing platform for Verdane's 4,000 distributors, which would free perhaps $90 million of working capital and generate fee income of $6 million. Verdane's credit committee is concerned about being responsible for customer credit losses and about data security. At the same time, several customers have asked about paying in a dollar stablecoin, citing lower cross-border fees.
+
+The board is divided. Some directors favor accelerating the low-carbon conversion in order to qualify as a leader in sustainable finance. Others note that the leverage target would leave little headroom for the foreign plant and that the share price could suffer if capital expenditure exceeds $1.2 billion over two years. A large pension investor has indicated that it will vote against the remuneration report unless EPS is replaced by return on invested capital and relative TSR.
+
+**Discussion questions**
+
+1. Evaluate the $800 million conversion. Compute the NPV of the savings with and without a carbon price (using the data provided, approximate the annual after-tax saving at 20-year horizon, ignoring customer effects) and then add the value of the customer risk. What break-even carbon price or customer retention probability does the decision require? How should the green bond be assessed independently of the project?
+2. Design a revised long-term incentive plan for the CEO. Which metrics and weights would you propose, what vesting period and clawback provisions, and how would you deal with the risk that a ROIC target discourages the conversion project?
+3. Assess the emerging-market plant. Explain how to value it in USD using parity relationships, how to adjust for dividend repatriation risk, and what role the joint venture should play. How would you check that the local discount rate you use is consistent with inflation forecasts?
+4. Evaluate the governance structure, including the dual-class shares, the combined CEO/chair role and the buyback-heavy EPS plan. What changes would you recommend, and how would you sequence them given the pension investor's threat? Should Verdane adopt the fintech platform or the stablecoin proposal, and what questions would you require answered first?
+
+## Key Takeaways
+
+- ESG matters to valuation through identifiable channels: cash flows, risk and discount rates, financing access and franchise value. Begin with financial materiality by industry.
+- An internal carbon price turns a regulatory risk into a cash-flow assumption; it can reverse project rankings, and break-even carbon prices are more useful than point forecasts.
+- Green bonds are ordinary credit obligations with earmarked proceeds; any greenium is typically small and must be weighed against reporting and verification costs.
+- Sustainability-linked bonds rely on ambitious targets and meaningful step-ups; weak targets and small penalties turn them into labels.
+- Governance mechanisms respond to agency problems between managers and shareholders, and between controlling and minority shareholders; stronger takeover defenses and control enhancements require stronger independent oversight.
+- Executive pay should link to long-run, hard-to-manipulate measures such as ROIC and relative TSR, with long vesting, shareholding requirements and clawbacks; options reward volatility.
+- Black-Scholes values an at-the-money five-year option at roughly 30 percent of the share price at typical parameters, but executives value options at less than fair value because they cannot diversify.
+- Fintech changes unit costs, information and distribution; payments are a scale game with thin per-transaction margins and high operating leverage.
+- Digital assets should be evaluated with questions about the problem solved, risk allocation, custody, accounting and exit; stablecoin issuer profits are a leveraged function of interest rates.
+- International capital budgeting must use consistent currencies: discount foreign cash flows at foreign rates or convert at parity-consistent forwards and discount at home rates; adjust cash flows for political risk rather than inflating the discount rate.
+- Value ultimately depends on return on new capital relative to the cost of capital; governance, sustainability and technology matter to the extent they raise returns, lower risk or both.
+
+## Review Questions
+
+1. Explain the four channels through which ESG factors can affect firm value. Why is the "cost of capital" argument for green firms ambiguous?
+2. What is financial materiality, and why does it differ by industry? Give examples.
+3. How does an internal carbon price work in capital budgeting, and what are its main limitations?
+4. Compare green bonds and sustainability-linked bonds. Which has greater risk of greenwashing and why?
+5. What determines whether a greenium is large enough to justify labeling costs?
+6. Describe three mechanisms of corporate governance and one weakness of each.
+7. Why do dual-class share structures create governance concerns, and what are the arguments in their favor?
+8. Why does an option-heavy compensation plan encourage risk-taking? How can a committee mitigate this?
+9. What are the economic advantages and risks of stablecoins for corporate treasury and cross-border payments?
+10. Why is discounting foreign currency cash flows at a home-currency rate wrong, and how do the two consistent methods avoid the error?
+
+## Problems
+
+1. **Green bond value.** A firm issues a $300m 7-year green bond with a greenium of 8 bp. Reporting and verification cost $0.10m a year and set-up cost is $0.12m at issue. Discount at 4.5 percent. Compute the net present value of the label.
+2. **SLB step-up.** A $1,000m SLB pays an extra 20 bp coupon in years 4 to 8 if a KPI target tested at the end of year 3 is missed. The probability of missing is 50 percent; the discount rate is 5 percent. Compute the expected present value of the step-up cost today.
+3. **Carbon-adjusted NPV.** A project costs $20m and yields $4.5m a year after tax for 8 years, with emissions of 25,000 tons a year charged at a flat $80 per ton. The discount rate is 10 percent. Compute the NPV before and after the carbon charge.
+4. **Option valuation.** Using Black-Scholes, value a 4-year at-the-money call with S = K = $40, σ = 35 percent, r = 3 percent and no dividends.
+5. **Performance shares.** A plan with a target of 30,000 shares pays 50 percent at the 25th percentile and 100 percent at the 50th percentile (linear in between, zero below the 25th). The firm ranks at the 40th percentile and the price at vesting is $45. Compute payout percentage, shares earned and value.
+6. **International NPV.** Spot is 1.10 USD per EUR. USD and EUR risk-free rates are 5 percent and 3 percent. A EUR project has cash flows of −100, +60 and +70 (years 0 to 2) at a EUR discount rate of 8 percent. Compute the 1- and 2-year forward rates, the equivalent USD discount rate under the international Fisher relationship, the NPV in EUR, and verify in USD.
+7. **Payments.** Average ticket is $80. A facilitator charges 2.6 percent + $0.25. Costs per transaction are interchange 1.55 percent of ticket, network 0.12 percent, processing $0.09, fraud 0.07 percent of ticket and support $0.04. Fixed costs are $30m. Compute contribution per transaction and break-even transaction count.
+8. **Stablecoin issuer.** Reserves are $5,000m at a 3.5 percent yield, 20 percent of reserve income is shared with distributors, and operating costs are $40m. Compute pre-tax profit, and the reserve yield at which profit equals zero.
+
+### Answers to Selected Problems
+
+1. Annual saving = 300 × 0.0008 = $0.24m; annuity factor (7 years, 4.5%) = 6.0021... let us compute: (1 − 1.045^−7)/0.045 = 5.8927. PV savings = 0.24 × 5.8927 = $1.414m; PV reporting = 0.10 × 5.8927 = $0.589m; NPV = 1.414 − 0.589 − 0.12 = **$0.705m**.
+2. Annual step-up = 1,000 × 0.002 = $2.0m, paid in years 4 to 8. Value at end of year 3 = 2.0 × 4.3295 = $8.659m; discount to today: 8.659 / 1.05³ = 8.659 / 1.157625 = $7.480m; expected cost = 0.5 × 7.480 = **$3.74m**.
+3. Annuity factor (8 years, 10%) = 5.3349. NPV before carbon = −20 + 4.5 × 5.3349 = **$4.007m**. Carbon charge = 25,000 × 80 = $2.0m a year; PV = 2.0 × 5.3349 = $10.670m. NPV after = 4.007 − 10.670 = **−$6.66m**.
+4. d1 = [0 + (0.03 + 0.06125) × 4] / (0.35 × 2) = 0.365 / 0.70 = 0.5214; d2 = −0.1786; N(d1) = 0.6990, N(d2) = 0.4291 (approximately); C = 40 × 0.6990 − 40 × e^(−0.12) × 0.4291 = 27.96 − 15.22 = **about $12.73** (precise computation gives 12.73).
+5. Interpolation: 50 + (40 − 25)/(50 − 25) × 50 = 50 + 30 = **80 percent**; shares = 24,000; value = 24,000 × 45 = **$1,080,000**.
+6. F1 = 1.10 × 1.05 / 1.03 = 1.1214; F2 = 1.10 × (1.05/1.03)² = 1.1431. USD rate = 1.08 × 1.05 / 1.03 − 1 = 10.10 percent. NPV in EUR = −100 + 60/1.08 + 70/1.08² = −100 + 55.556 + 60.014 = 15.570, or **$17.13m** at spot. In USD: −110 + 67.28/1.1010 + 80.02/1.1010² = −110 + 61.11 + 66.02 = **$17.13m** (approximately, same to rounding).
+7. Revenue = 0.026 × 80 + 0.25 = $2.33; cost = 1.24 + 0.096 + 0.09 + 0.056 + 0.04 = $1.522; contribution = **$0.808** (1.01 percent of ticket); break-even = 30,000,000 / 0.808 = **37.1 million transactions**.
+8. Gross income = 5,000 × 3.5% = $175m; distribution = $35m; profit = 175 − 35 − 40 = **$100m**. Break-even yield y: 0.8 × 5,000 × y = 40, so y = **1.0 percent**.
