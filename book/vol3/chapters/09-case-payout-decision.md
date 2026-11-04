@@ -40,9 +40,9 @@ Quantra operates in the industrial analytics and edge-computing segment, which s
 
 **Cyclicality with a recurring core.** Subscription and support revenue is sticky, with gross retention in the low nineties, and carries gross margins above 80 percent. Appliance and services revenue is lumpy: customers defer refresh cycles when capital budgets tighten, and a pause in the cycle can shave 10 to 15 percent off total revenue in a single year while operating costs, particularly research and development, are largely fixed. This asymmetry is why Ms. Raman-Duval insists on testing every payout commitment against a downside year, not merely a base case. It also explains why Quantra's EBIT margin has ranged from roughly 9 percent in a trough year to above 15 percent in a peak year.
 
-**Low capital intensity, high cash accumulation.** Capital expenditure runs at about 4.7 percent of revenue, and amortization of acquired intangibles, rather than physical depreciation, is a large non-cash charge. Free cash flow therefore exceeds net income by a comfortable margin, and cash builds quickly unless it is deployed. The industry's historical answer has been acquisitions of small analytics firms, but integration risk and price discipline have left many peers with idle cash and a growing set of activist shareholders.
+**Low capital intensity, high cash accumulation.** Capital expenditure runs at about 4.7 percent of revenue, and free cash flow exceeds net income by a comfortable margin, so cash builds quickly unless it is deployed. Small analytics acquisitions have been the industry's usual answer, but integration risk has left many peers with idle cash and activist shareholders.
 
-**Peer payout practice has diverged.** Among the five listed peers shown later in this chapter, one pays no dividend and relies exclusively on repurchases, two combine a low-yield dividend with continuous buybacks, and two pay a high-yield dividend with little or no repurchase. There is no single industry norm. Investors in the sector therefore sort themselves into clienteles: growth-oriented funds that prefer reinvestment and buybacks, income-oriented funds and retail holders that prefer dividends, and event-driven investors who want large, lumpy returns of capital.
+**Peer payout practice has diverged.** Of the five listed peers shown later, one pays no dividend and relies on repurchases, two combine a low dividend with buybacks, and two pay high dividends with little repurchase. Investors sort into clienteles: growth funds that prefer buybacks, income funds and retail holders that prefer dividends, and event-driven investors who want lumpy returns of capital.
 
 **Regulatory and tax environment (stylized).** For the purposes of this case, the jurisdiction taxes qualified dividends received by taxable individuals at 24 percent and long-term capital gains at 20 percent. Tax-exempt institutions and employee retirement plans pay neither tax. Foreign institutions suffer a 15 percent withholding tax on dividends and are not taxed on capital gains. Mutual funds and ETFs are tax-transparent, and their end-investors, a mix of taxable and tax-deferred accounts, face blended effective rates of 12 percent on dividends and 8 percent on gains. The corporate tax rate is 21 percent. The jurisdiction also levies a 1 percent excise tax on the value of net share repurchases, payable by the company, and a special-purpose "offshore cash" regime under which cash moved from foreign subsidiaries to the parent is subject to a 5 percent leakage cost. Dividends and repurchases are both permitted from retained earnings, and the company has ample distributable reserves.
 
@@ -337,14 +337,14 @@ D = 1,391.4
 
 The first-order shortcut, 1,500 - 30 - 80 = 1,390, is accurate to within $2 million. The adjusted excess cash is therefore about **$1,390 million** on the refinancing reading.
 
-*March 2027 maturity.* If the $400 million notes are repaid from cash, the Treasurer's gross excess falls to 1,100 before the other adjustments, and to about 990 after leakage and the earn-out. This is not a computational difference but a choice among claimants: $400 million either goes to shareholders (and the debt is refinanced) or goes to bondholders (and shareholders get less). The comparison:
+*March 2027 maturity.* If the $400 million notes are repaid from cash, the gross excess falls to 1,100 before the other adjustments (about 990 after leakage and the earn-out). This is a choice among claimants, not a computational difference: $400 million goes either to shareholders (debt refinanced) or to bondholders.
 
 | Reading | Distribution to shareholders | Gross debt after | Cash after Verdana | Net debt after |
 |---|---|---|---|---|
 | A: refinance the notes | 1,390 | 1,200 | 880 | 320 |
 | B: repay the notes | 990 | 800 | 880 | (80) |
 
-Reading B leaves Quantra with net cash; reading A leaves a small net debt. The difference matters for the rating but is slight, given a 6.0 percent refinancing cost against 4.8 percent earned on cash; reading A costs about 0.012 x 400 x 0.79 = $4 million a year after tax relative to reading B in carry. The committee should adopt reading A and clearly record that the figure is *net of* the March 2027 refinancing.
+Reading B leaves net cash; reading A leaves a small net debt (0.28x EBITDA). Given a 6.0 percent refinancing cost against 4.8 percent earned on cash, reading A costs about 0.012 x 400 x 0.79 = $4 million a year after tax in carry. The committee should adopt reading A and record that the figure is net of the March 2027 refinancing.
 
 **(b) Covenants and rating guardrail.** After distributing 1,390 and paying leakage of 30, cash at the 31 December 2026 balance date is 2,600 - 1,390 - 30 = 1,180, falling to 880 after the Verdana payment in Q1 2027.
 
@@ -355,7 +355,7 @@ Reading B leaves Quantra with net cash; reading A leaves a small net debt. The d
 | EBIT / interest expense | 860 / 60 = 14.3x | 950 / 60 = 15.8x | 4.0x (covenant) |
 | Gross debt capacity at 2.5x | 2,900 (headroom 1,700) | 3,175 (headroom 1,975) | |
 
-All tests pass with very large margins in the base case. The right lesson is that the base case is not the binding case; Question 9 repeats the test in the downside.
+All tests pass comfortably in the base case; the base case is not the binding case, and Question 9 repeats the test in the downside.
 
 **(c) Cumulative cash available over FY2027E and FY2028E.** Start with cash of 2,600 and add free cash flow before distributions of 986.7 for FY2027E and 1,067.1 for FY2028E (Exhibit 4). Subtract Verdana (300) and the earn-out (80). The ending floor at 31 December 2028 is 10 percent of FY2028E revenue (683.7) plus the 200 buffer = 883.7.
 
@@ -363,7 +363,7 @@ All tests pass with very large margins in the base case. The right lesson is tha
 2,600.0 + 986.7 + 1,067.1 - 300 - 80 - 883.7 = 3,390.1
 ```
 
-Quantra can therefore distribute about **$3,390 million** over the two years with no new debt, before leakage and ignoring the interest lost on distributed cash. Allowing gross debt of 1.0x FY2028E EBITDA (1,379) adds 1,379 - 1,200 = 179 of new debt, for **$3,569 million**. Because the regular dividend (about $160 million a year) and the continuing $200 million program are inside this total, incremental capacity above the current policy is about 3,390 - 2 x 360 = $2,670 million. The question for the committee is therefore one of timing and form, not of whether the capacity exists. The interest lost on distributed cash is modest: each $1,000 million distributed reduces annual net income by about $38 million (1,000 x 4.8% x 0.79).
+Quantra can therefore distribute about **$3,390 million** over two years with no new debt, before leakage and ignoring interest lost on distributed cash. Allowing gross debt of 1.0x FY2028E EBITDA (1,379) adds 179 of new debt for **$3,569 million**. Net of the regular dividend and continuing program (2 x 360 = 720), incremental capacity is about $2,670 million. The question is timing and form, not whether capacity exists.
 
 ### Solution to Question 2: The Modigliani-Miller benchmark
 
@@ -375,7 +375,7 @@ Quantra can therefore distribute about **$3,390 million** over the two years wit
 
 **(b) Prices.** Ex-dividend price: $40.50 (a fall of exactly $7.50). Post-repurchase price: $48.00 (unchanged). The distinction is crucial: the *per-share price drop* is a feature of the dividend, not a loss of value. A student who reads "the price falls 15.6 percent" as a loss has confused price with wealth.
 
-**(c) What the benchmark omits.** Taxes (dividends are taxed immediately, gains only on sale and only on the gain portion, Question 5); information (a repurchase at a price that differs from intrinsic value transfers wealth, Question 4, and may signal, Question 6); agency (cash in managers' hands is subject to wasteful spending, which supports distribution of excess cash in either form, but compensation tied to EPS biases managers toward repurchases, Question 8); and transaction costs (a holder who wants cash from a repurchase-only policy must sell and pay trading costs, while a holder who wants no cash under a dividend policy must reinvest and pay costs, which supports clienteles).
+**(c) What the benchmark omits.** Taxes (Question 5); information, because a repurchase away from intrinsic value transfers wealth (Question 4) and may signal (Question 6); agency, because EPS-linked pay biases managers toward repurchases (Question 8); and transaction costs, which support clienteles.
 
 ### Solution to Question 3: EPS accretion
 
@@ -461,7 +461,7 @@ Sample calculations: founders, dividend 0.24 x 7.50 = 1.80; tender 0.20 x (54 - 
 
 **(c) Ex-dividend price drop.** If the marginal investor is a taxable individual, a price drop equals the dividend scaled by (1 - 0.24) / (1 - 0.20) = 0.95, so the price falls $7.125 to about $40.875, not $7.50 to $40.50. The stock falls less than the dividend because holders value a dollar of price at $0.80 after tax but a dollar of dividend at $0.76.
 
-**(d) Winners and losers.** The founders, who hold 14 percent with basis $1.50, are hurt most by a dividend: $1.80 of tax per share held. If they never sell and the stylized code forgives gains at death, the effective tax cost of a buyback to the family is zero, so they strongly prefer a repurchase, and an even larger one raises their stake from 14.0 to 16.2 percent. Tax-exempt holders (32 percent) are indifferent. Foreign institutions prefer the repurchase because the withholding is avoided. Income-seeking retail holders may prefer the dividend for convenience, but the tax difference ($1.80 vs $0.50) more than covers the cost of selling 0.156 share, which at a 10 basis point trading cost is about $0.01 per share held. A dividend-growth mandate would value an uninterrupted regular dividend, so the regular dividend should not be sacrificed.
+**(d) Winners and losers.** The founders (basis $1.50) are hurt most by a dividend, $1.80 of tax per share held. If gains are forgiven at death, a repurchase costs the family nothing, so they strongly prefer it, and it raises their stake from 14.0 to 16.2 percent. Tax-exempt holders are indifferent; foreign holders prefer the repurchase to avoid withholding. Income-seeking retail holders save $1.30 of tax per share held under a tender, far more than the roughly $0.01 cost of selling 0.156 share. A dividend-growth mandate values an uninterrupted regular dividend, which should not be sacrificed.
 
 ### Solution to Question 6: Signaling and dividend policy
 
@@ -530,7 +530,7 @@ The tender pays a higher premium for certainty and speed, and it gives Meridian 
 
 Payout for status quo: 25 + (3.96 - 3.80) / 0.20 x 75 = 85 percent. If the open-market program runs evenly from February to June, the average weighted shares are 200 - 28.41 x (8.5 / 12) = 179.88 and lost interest is 56.88 x 0.7083 = 40.29, so EPS = 751.4 / 179.88 = $4.18 and the payout is about 189 percent, or $4.53 million. The conclusion survives.
 
-**(b) The problem.** Two actions with identical shareholder value (Question 2) differ by $4.8 million in executive pay. The plan rewards EPS that is created by shrinking the share count, which is exactly what Question 3(b) showed to be unrelated to value. A director who wants a dividend is asking executives to forgo their entire bonus.
+**(b) The problem.** Two actions with identical shareholder value (Question 2) differ by $4.8 million in executive pay. The plan rewards EPS created by shrinking the share count, which Question 3(b) showed is unrelated to value.
 
 **(c) Neutralization.** Add back the after-tax interest on cash used and restore repurchased shares at the weighted-average timing, so EPS is measured on the pre-distribution capital base: (734.8 + 56.88) / (171.59 + 28.41) = 791.7 / 200 = **$3.96** in every option. Alternatives: pay on free cash flow per share with a capital charge, or on return on invested capital (which is unaffected by distributions). The Compensation Committee should adopt neutralization before the board announces the decision, or the choice will look self-interested.
 
@@ -544,7 +544,7 @@ Payout for status quo: 25 + (3.96 - 3.80) / 0.20 x 75 = 85 percent. If the open-
 | Downside | 496.8 | 388.0 | 678.0 | 816.8 | 3.8x | 1.8x |
 | Severe | 306.0 | 237.3 | 557.3 | 626.0 | 3.1x | 1.5x |
 
-Net income base: (950.2 + 112 - 60) x 0.79 - 45.50 = 746.2. FCF = net income + 320 + 220 - 280 + working capital effect (for the base case the increase of 45 cancels with the 1.2 of... we use the Exhibit 4 convention of -45 in the base case). The dividend is covered more than three times in every case, so the hybrid is robust, and there is room to maintain a smaller flexible buyback.
+Base net income is (950.2 + 112 - 60) x 0.79 - 45.50 = 746.2; free cash flow adds 320 of D&A and 220 of stock-based compensation, and deducts capex of 280 and the working capital effect (an increase of 45 in the base case, releases of 30 and 60 in the stress cases). The dividend is covered at least three times in every case, so the hybrid is robust and leaves room for a smaller flexible buyback.
 
 **(b) Meridian's program.** Gross debt 2,200, interest expense 60 + 64 = 124.
 
@@ -554,15 +554,15 @@ Net income base: (950.2 + 112 - 60) x 0.79 - 45.50 = 746.2. FCF = net income + 3
 | Downside | 2,200 / 816.8 = **2.69x (breach)** | 496.8 / 124 = 4.01x (0.2 percent headroom) | 1.3x |
 | Severe | 2,200 / 626.0 = **3.51x (breach)** | 306.0 / 124 = **2.47x (covenant breach)** | 1.8x |
 
-(Net debt uses cash of 1,100 for simplicity.) Meridian's proposal leaves no margin for a refresh pause of the kind the industry has experienced and could trigger a rating review in the downside and an event of default in the severe case. The leverage in Quantra's current structure (1,200 of debt) would have gross leverage of 1.5x and 1.9x in those same cases and interest cover of 8.3x and 5.1x.
+(Net debt uses cash of 1,100 for simplicity.) Meridian's proposal leaves no margin for a refresh pause: it triggers a rating review in the downside and a covenant default in the severe case. The current structure (1,200 of debt) shows gross leverage of 1.5x and 1.9x and interest cover of 8.3x and 5.1x in the same cases.
 
-**(c) Flexible framework.** (i) A regular dividend at 25 percent of normalized EPS, grown with earnings, sized so that it is covered at least three times by severe-case FCF. (ii) Repurchases as the residual: each year, 60 percent of FCF after dividends and committed acquisitions (for FY2027E base: (961 - 178) x 60 percent = about $470 million), reduced when the share price is above 90 percent of the intrinsic value range. (iii) A gross-debt-to-EBITDA range of 0.8x to 1.5x through the cycle, tested at downside-case EBITDA. (iv) Special dividends only when cash exceeds the target for two successive years.
+**(c) Flexible framework.** (i) A regular dividend at about 25 percent of normalized EPS, covered at least three times by severe-case FCF. (ii) Repurchases as the residual: about 60 percent of FCF after dividends and committed acquisitions (FY2027E base: (961 - 178) x 60 percent, about $470 million), reduced when the price exceeds 90 percent of the intrinsic range. (iii) A gross leverage range of 0.8x to 1.5x tested at downside EBITDA. (iv) Special dividends only when cash exceeds target for two successive years.
 
 ### Solution to Question 10: Recommendation
 
 The recommended structure (the hybrid, run as a package): (1) a **$1,200 million modified Dutch auction tender offer** at $52 to $58, launched immediately after the 28 January earnings release; (2) a **regular dividend increase to $0.25 per quarter**; (3) retention of the balance of the adjusted excess, about $175 million, as a flexible reserve for opportunistic repurchases below $52 and for the Verdana earn-out; (4) a committed **gross leverage range of 0.8x to 1.5x**; and (5) neutralized EPS in the bonus plan.
 
-**Why this form.** Tender: tax efficiency (Question 5), credible signal (Question 6), certainty and speed, and it gives Meridian an exit. The $1,200 million size: it leaves the adjusted excess intact after the $12 million excise tax and about $16 million of repatriation leakage (repatriation of 1,200 x 1.01 + 300 + 400 + 100 - 1,700 = 312, times 5 percent). It also respects the sell-side median of $54, so the expected gain is nearly zero without a premium for the $58 case. At V = $58 and P = $55, stayers gain (58 x 200 - 1,200) / 178.18 = $58.37, or 0.6 percent; at V = $44 they lose 3.1 percent; the package is robust to the main uncertainty because the dividend increase and the leverage range carry the benefit that does not depend on valuation. FY2027E pro forma EPS is 746.2 / 178.18 = $4.19, 5.8 percent above the 3.96 status quo.
+**Why this form.** The tender is tax-efficient (Question 5), a credible signal (Question 6), fast and certain, and gives Meridian an exit. The $1,200 million size leaves a reserve of about $175 million of the adjusted $1,390 million after the $12 million excise tax and about $16 million of repatriation leakage (1,200 x 1.01 + 300 + 400 + 100 - 1,700 = 312 repatriated, at 5 percent). At V = $58 and P = $55, stayers gain (58 x 200 - 1,200) / 178.18 = $58.37, or 0.6 percent; at V = $44 they lose 3.1 percent. The package is robust to the main uncertainty because the dividend increase and the leverage range deliver benefits that do not depend on valuation. FY2027E pro forma EPS is 746.2 / 178.18 = $4.19, 5.8 percent above the $3.96 status quo.
 
 ### Sensitivity discussion
 
@@ -575,30 +575,25 @@ The recommended structure (the hybrid, run as a package): (1) a **$1,200 million
 | 4.8% | 11.0 | 9.2 | 7.3 | 6.3 | 5.3 | 4.3 |
 | 6.0% | 8.6 | 6.8 | 5.0 | 4.1 | 3.0 | 2.1 |
 
-Accretion remains positive across the grid, which confirms Question 3(b): it is never the binding constraint. *Value* is driven by P minus V (Question 4). *Taxes*: the $122 million tender advantage shrinks if founders tender (their tax per share held rises) and widens if they do not. *Debt cost and cyclicality* determine whether Meridian's proposal is feasible, because the downside breaches at 2.69x.
+Accretion stays positive across the grid, confirming Question 3(b). *Value* is driven by P minus V (Question 4). The $122 million *tax* advantage of the tender shrinks if founders tender. *Debt cost and cyclicality* decide whether Meridian's proposal is feasible, since the downside breaches at 2.69x.
 
 ### Common student errors
 
 1. Calling the dividend "dilutive" and the buyback "accretive" as if EPS were value, or applying the old P/E to the new EPS.
 2. Ignoring foregone interest, so that accretion appears to be 15.6 percent (the share count reduction) rather than 7.3 percent.
-3. Treating the stock price drop on the ex-dividend date as a loss.
 4. Forgetting that the repurchase price premium is paid by stayers, and sizing the program at the market price.
 5. Taking Treasurer's excess cash at face value without the offshore, earn-out and maturity adjustments.
-6. Comparing taxes at the statutory rates only, forgetting that the capital gains tax is on the gain, not the proceeds.
 7. Reading the Dutch auction as a pay-as-bid auction: all accepted shares get the uniform clearing price.
 8. Testing leverage only in the base case.
-9. Assuming a signal exists without asking who finds it costly to mimic.
-10. Using intrinsic value of $58 as a fact.
-
 ### Alternative defensible answers
 
-*A pure buyback ($1,500 million).* Defensible if the committee holds firm to V = $58 and accepts a thinner dividend story; it maximizes tax efficiency and flexibility. The weakness: the premium paid, the commitment problem, and the bonus problem.
+*A pure buyback ($1,500 million).* Defensible if the committee holds to V = $58 and accepts a thinner dividend story; weaknesses are the premium, the commitment problem and the bonus problem.
 
-*A special dividend.* Defensible if the committee believes the shares are fairly priced or believes the buyback would mainly benefit an activist who bought at $41; it avoids the value-transfer risk. The weakness: a $122 million higher tax bill, and the founders' strong opposition.
+*A special dividend.* Defensible if the committee believes the shares are fairly priced; it avoids value-transfer risk, but costs $122 million more tax and the founders oppose it.
 
-*Meridian's proposal.* Defensible only for a company with far less cyclicality. A staged version (a 1.5x ceiling, with half deployed in 2027 and half in 2028 subject to the downside test) is a reasonable compromise: debt of 1,740 gives downside leverage of 1,740 / 816.8 = 2.13x and interest cover of 496.8 / 94.6 = 5.3x.
+*Meridian's proposal.* Defensible only for a far less cyclical company. A staged version with a 1.5x ceiling (debt of 1,740) gives downside leverage of 1,740 / 816.8 = 2.13x and interest cover of 496.8 / 94.6 = 5.3x.
 
-*Hold the cash for acquisitions.* Defensible only with a specific pipeline; the cash earns 3.79 percent after tax against a 7.5 percent earnings yield, which is a visible drag, and the board's record on acquisitions is limited.
+*Hold the cash for acquisitions.* Defensible only with a specific pipeline; cash earns 3.79 percent after tax against a 7.5 percent earnings yield.
 
 ### Board-style recommendation memorandum
 
@@ -617,6 +612,6 @@ Accretion remains positive across the grid, which confirms Question 3(b): it is 
 
 **Meridian.** We recommend engaging constructively. The package returns $1,200 million within weeks, gives Meridian a liquid exit at a gain of about $14 per share, and sets a leverage range with a ceiling of 1.5x. We do not recommend the $2,500 million debt-financed program: it breaches the 2.5x rating guardrail (2.69x) and is at the edge of the interest cover covenant (4.01x) in our downside case, for a gain in EPS of only 3.2 points beyond the cash-funded version.
 
-**Risks.** The clearing price could be higher than $55 (at $58, stayers' gain at V = $58 is nil); the Brandt litigation could use $150 million of the buffer; a deep refresh pause would test the dividend, which remains covered 3.1 times in our severe case.
+**Risks.** The clearing price could reach $58 (stayers' gain at V = $58 is then nil); the Brandt litigation could use $150 million of the buffer; a deep refresh pause tests the dividend, which remains covered 3.1 times in our severe case.
 
 **Decision requested.** Approve the package, authorize the Treasurer to refinance the March 2027 notes, and ask the Compensation Committee to adopt neutralized EPS before announcement.

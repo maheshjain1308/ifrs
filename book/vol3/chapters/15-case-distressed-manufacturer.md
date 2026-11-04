@@ -249,11 +249,9 @@ The following facts surfaced in the two weeks before the board meeting. Some sha
 
 **Exhibit G: The Brannoch bid.** Brannoch Drive Systems has offered $185 million in cash for substantially all of Rollan's assets, assuming trade payables incurred in the ordinary course after filing and the collective agreement, but not the pension liability or prepetition unsecured debt. Brannoch has asked for a break-up fee of 3 percent of the price and expense reimbursement of up to $1.5 million if it is outbid. Management believes the likelihood of an overbid is 40 percent and that an overbid would clear at about $210 million.
 
-**Exhibit H: Environmental and tax matters.** The Teague foundry has a historic soil contamination issue. A consultant estimates remediation at $3 million to $9 million. This is included in "other long-term liabilities" at $4.0 million and is not a priority claim. Separately, the company has about $60 million of federal net operating losses, but a debt-for-equity exchange that transfers more than half of the equity may limit their use; the tax value is excluded from all valuations in this chapter.
+**Exhibit H: Environmental, tax and preference matters.** The Teague foundry has historic soil contamination; a consultant estimates remediation at $3 million to $9 million, and $4.0 million is accrued within other long-term liabilities. The company has about $60 million of federal net operating losses, but a debt-for-equity exchange transferring more than half the equity may limit their use; their value is excluded from all valuations here. In the 90 days before a filing Rollan paid $9.2 million to unsecured creditors outside the ordinary course, of which counsel believes about half is recoverable; recoveries are excluded from the base waterfalls.
 
-**Exhibit I: Potential preference claims.** In the 90 days before a filing, Rollan paid $9.2 million to unsecured creditors outside the ordinary course, including a $2.1 million prepayment to a captive insurer. Counsel believes about half is recoverable. Recoveries would flow to the estate and are not included in the base waterfalls.
-
-**Exhibit J: Management incentives.** The compensation committee has proposed a key employee retention plan costing $1.5 million and a management incentive plan of 8 percent of new equity, to be granted after emergence. Both are likely to be challenged by the unsecured creditors' committee.
+**Exhibit I: Management incentives.** The compensation committee proposes a $1.5 million key employee retention plan and a management incentive plan of 8 percent of new equity, granted after emergence. Both are likely to be challenged by an unsecured creditors' committee.
 
 **Ambiguities students must handle.**
 
@@ -410,20 +408,7 @@ The core business is roughly cash-neutral over the quarter; the cash crisis is a
 
 Sum PV FCF 65.7; terminal FCF 20.69; TV 222.2; PV TV 136.1; EV 201.8; DF4.5 0.6127
 
-| Management case | 2027E | 2028E | 2029E | 2030E | 2031E |
-|---|---:|---:|---:|---:|---:|
-| Revenue | 405.0 | 424.0 | 445.0 | 465.0 | 484.0 |
-| EBITDA | 32.4 | 40.3 | 46.7 | 53.5 | 58.1 |
-| Less D&A | (23.0) | (22.0) | (22.0) | (21.0) | (21.0) |
-| EBIT | 9.4 | 18.3 | 24.7 | 32.5 | 37.1 |
-| Cash tax at 25% | (2.3) | (4.6) | (6.2) | (8.1) | (9.3) |
-| Capex | (15.0) | (16.0) | (17.0) | (18.0) | (19.0) |
-| Working capital cash effect (20% of revenue change) | 1.4 | (3.8) | (4.2) | (4.0) | (3.8) |
-| Free cash flow | 16.4 | 15.9 | 19.3 | 23.4 | 26.0 |
-| Discount factor (mid-year) | 0.9470 | 0.8494 | 0.7618 | 0.6832 | 0.6127 |
-| PV of FCF | 15.6 | 13.5 | 14.7 | 16.0 | 15.9 |
-
-Sum PV FCF 75.7; terminal FCF 26.01; TV 279.3; PV TV 171.1; EV 246.8; DF4.5 0.6127
+The management case is computed the same way: free cash flow of 16.4, 15.9, 19.3, 23.4 and 26.0 in 2027E to 2031E, PV of those flows $75.7 million, terminal FCF $26.01 million, terminal value $279.3 million and PV of terminal value $171.1 million.
 
 *Step 2: results.* The lender case gives an enterprise value of **$201.8 million** (PV of 2027E-2031E free cash flow $65.7 million plus PV of terminal value $136.1 million; terminal value is 67.5 percent of the total). The management case gives **$246.8 million** ($75.7 million plus $171.1 million; terminal value 69.3 percent). The implied terminal value multiples are 4.76 times and 4.81 times terminal-year EBITDA, well below the trading median of 6.65 times, so the DCF is conservative in its exit assumption. That conservatism is deliberate: the capitalised terminal free cash flow reflects a business that still carries capex near depreciation and a cyclical margin, and the comps are healthier, less leveraged companies.
 

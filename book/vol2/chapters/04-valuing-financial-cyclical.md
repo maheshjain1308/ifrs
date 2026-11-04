@@ -372,9 +372,46 @@ NAV per share is compared to the share price through **P/NAV**. Each asset is va
 
 *Interpretation.* The share trades at a 13 percent discount to NAV. Several facts qualify this reading. First, the leverage of NAV to price is high: the equity of 3,150 is only 58 percent of gross asset value, so a 10 percent fall in the risked asset value (548) lowers NAV by 17 percent. Second, 1,725 (32 percent) of gross value rests on the two development projects and exploration, which carry execution risk that the weights only approximate. Third, premium P/NAV multiples (1.0 or above) are normally paid to companies with a growth pipeline and a record of delivering on time and budget, and discounts to those with a record of overruns; a P/NAV of 0.87 may be fair for a company with poor delivery history. Fourth, NAV measures static asset value and treats the pipeline as discrete projects; it does not capture the value of management's ability to find and develop new assets, or the cost of replacing depleted reserves, so a "going-concern" premium is arguable for good operators.
 
+### Pitfalls of NAV
+
+NAV rests on the price deck, the discount rate and the risk weights, each a judgment. Use one consistent method across producing and development assets, avoid double counting exploration value already in a project NPV, and do not combine a spot-price NAV with a P/NAV multiple derived from historical premiums. State the deck, discount rate and weights, and show NAV at the consensus deck, at spot and at a conservative deck.
+
+## 4.7 Sum-of-the-Parts Valuation
+
+### When and why
+
+A diversified company is a portfolio of businesses with different growth, margins, risk and capital intensity, and a single multiple applied to consolidated earnings averages these differences away. **Sum-of-the-parts (SOTP)** valuation values each business on the multiple or DCF appropriate to its own peers, adds the values, deducts items that belong to the group as a whole, and compares the resulting equity value with market capitalization. The gap is the **conglomerate discount** (or premium).
+
+### The mechanics
+
+1. **Segment** the group so that each part has an identifiable peer group and separable financials.
+2. **Value each part** by EV/EBITDA, EV/EBIT or P/E of comparable pure-plays (adjusted for size, growth and margin), by DCF where the profile is unusual, or by NAV for resource segments.
+3. **Sum** the segment enterprise values.
+4. **Deduct corporate costs**, capitalized at an appropriate multiple. The cost of running the center belongs to no segment, and omitting it is the most common SOTP error.
+5. **Deduct net debt, unfunded pensions (after tax) and minority interests**; add equity-accounted associates and non-core assets.
+6. **Compare** with market capitalization and ask why a discount exists and whether it is justified.
+
+**Example 4.8 – SOTP for a conglomerate.** Karst Industries has four segments. Corporate costs are 95 million a year, capitalized at 8.5 times. Net debt is 3,200 and the pension deficit is 450 before tax (tax rate 25 percent). There are 200 million shares and market capitalization is 5,400. Amounts in millions.
+
+| Segment | EBITDA | Peer EV/EBITDA | Enterprise value |
+|---|---|---|---|
+| Industrial Automation | 420 | 11.0x | 4,620 |
+| Specialty Chemicals | 310 | 8.0x | 2,480 |
+| Consumer Brands | 260 | 9.5x | 2,470 |
+| Legacy Distribution | 150 | 5.5x | 825 |
+| **Total segments** | **1,140** | **9.12x (blended)** | **10,395** |
+
+*Group adjustments.* Capitalized corporate costs: 95 × 8.5 = 807.5. After-tax pension deficit: 450 × 0.75 = 337.5. Net debt: 3,200.
+
+*Equity value.* 10,395 − 807.5 − 3,200 − 337.5 = **6,050** million, or 30.25 per share.
+
+*Comparison with the market.* Market capitalization of 5,400 is 27.00 per share. The market's discount to SOTP is 1 − 5,400 / 6,050 = 10.7 percent (SOTP is 12.0 percent above the price). The market-implied enterprise value is 5,400 + 3,200 + 337.5 = 8,937.5, or 7.84 times segment EBITDA; the SOTP enterprise value net of corporate costs is 9,587.5, or 8.41 times.
+
+*Interpretation.* A 10.7 percent discount may be wholly explained by what the SOTP omits. (1) **Capital allocation inefficiency**: if cash from strong segments funds weak ones, value is destroyed, and the discount measures it. (2) **Multiples that do not transfer**: peers are larger or purer and carry liquidity and focus premiums, so 11.0x may be generous for a division with half the margin of its best peer. (3) **Separation costs**: break-up triggers tax, dis-synergies in shared services and one-time costs that can absorb 3 to 5 percent of value. (4) **Opacity**: investors discount segment results they cannot verify. The actionable question for the board or an activist is whether the discount exceeds the realizable cost of separation; if separation costs 4 percent of SOTP and executes cleanly, the net gain is about 6 percent, and hidden cross-subsidies would reduce it.
+
 ### Pitfalls
 
-The recurring errors are omitting capitalized corporate costs, using peer multiples for a structurally weaker segment, ignoring pensions, leases and minorities, and treating SOTP as achievable when separation costs, tax and loss of scale are ignored. As a check, compare the implied blended multiple (9.1x here) with that of focused peers, and ask why the group should be worth more in pieces.
+The recurring errors are omitting capitalized corporate costs, using peer multiples for a structurally weaker segment, ignoring pensions, leases and minorities, and treating SOTP as achievable when separation costs, tax and loss of scale are ignored. As a check, compare the implied blended multiple (9.1x) with that of focused peers and ask why the group should be worth more in pieces.
 
 ## 4.8 Integrating the Methods
 
