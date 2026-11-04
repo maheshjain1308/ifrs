@@ -1,75 +1,36 @@
 # Chapter 1: Case: Helios Cell, a Battery Gigafactory Decision
 
-*Illustrative case. Helios Cell Technologies, its people, its lenders, the Province of Ardmore, and every number in this chapter are fictional and were constructed for teaching. No figure should be read as an estimate of any real company, market, or government program. Units: $M means millions of US dollars; GWh means gigawatt-hours of cell capacity; because one GWh equals one million kWh, an output in GWh multiplied by a price in $/kWh gives revenue in $M directly.*
-
-*This case draws on Volume 1, Chapter 6 (NPV and investment criteria), Chapter 7 (capital budgeting), Chapter 8 (uncertainty and real options), Chapter 11 (cost of capital) and Chapter 14 (debt financing), and on Volume 2 where it treats adjusted present value and option valuation.*
+*Illustrative case. Helios Cell Technologies, its people, its lenders, the Province of Ardmore and every number in this chapter are fictional and were constructed for teaching. Units: $M means millions of US dollars; GWh means gigawatt-hours of cell capacity. Because one GWh is one million kWh, output in GWh multiplied by a price in $/kWh gives revenue in $M directly. The case draws on Volume 1, Chapters 6 to 8, 11 and 14, and on Volume 2 for adjusted present value and options.*
 
 ## The Situation
 
-On the morning of 4 November 2026, Dev Raman, the chief financial officer of Helios Cell Technologies Inc., opened a folder labelled "Project Meridian" and found, at the top, a two-page term sheet from the Province of Ardmore. It was the third revision. The Province would support a new lithium-ion cell plant at Port Alder, a deep-water industrial site on its northern coast, with a capital grant, a production credit, a property-tax abatement and a low-interest development loan. The offer expired on 31 January 2027. The Helios board would meet on 15 December 2026, and Raman had to bring it a recommendation.
+On 4 November 2026, Dev Raman, chief financial officer of Helios Cell Technologies Inc., opened a folder labelled "Project Meridian" and found at the top the third revision of a term sheet from the Province of Ardmore. The Province would support a new lithium-ion cell plant at Port Alder, a deep-water industrial site on its northern coast, with a capital grant, a production credit, a property-tax abatement and a low-interest development loan. The offer expired on 31 January 2027. The Helios board would meet on 15 December 2026, and Raman had to bring it a recommendation.
 
-Helios Cell Technologies is a mid-sized cell manufacturer headquartered in Marlow Bay. It makes prismatic lithium-ion cells for two markets: stationary energy storage (containers of batteries used by electricity utilities and large commercial sites) and commercial electric vehicles such as buses, delivery vans and port equipment. Its two existing plants, Brightwater (8 GWh a year, commissioned eight years ago) and Corrin Valley (5 GWh a year, commissioned four years ago), ran at high utilisation through 2026. The company reported revenue of $3,210M and EBITDA of $545M for the financial year ending 31 December 2026 (an estimate, since the books had not closed), and its shares traded at $20.00, giving an equity market value of about $6,100M on 305 million shares.
+Helios, headquartered in Marlow Bay, makes prismatic lithium-ion cells for stationary energy storage (battery containers for utilities and large commercial sites) and for commercial electric vehicles such as buses, delivery vans and port equipment. Its two plants, Brightwater (8 GWh a year, eight years old) and Corrin Valley (5 GWh, four years old), ran at high utilisation through 2026. The company expected revenue of $3,210M and EBITDA of $545M for 2026, and its shares traded at $20.00, an equity value of about $6,100M on 305 million shares.
 
-Project Meridian would be larger than anything Helios had done. The engineering study called for a 15 GWh cell plant at Port Alder in two phases. Phase 1 was a 15 GWh plant costing $1,500M, spent $900M in the first year of construction and $600M in the second. Cells would start to come off the line in the third calendar year of the project. Phase 2 was a further 15 GWh of capacity, bringing the site to 30 GWh, at an estimated cost of $1,300M if started three years after Phase 1 and $1,248M (a 4% discount for placing both orders together) if committed with Phase 1. Helios did not need to decide Phase 2 now, but it had to decide whether to reserve the land, power connection and permits for it, and whether to build it up front.
+Meridian would be larger than anything Helios had attempted. The engineering study called for a 15 GWh plant (Phase 1) costing $1,500M, spent $900M in the first year of construction and $600M in the second, with the first cells off the line in the third year. Phase 2 was a further 15 GWh, taking the site to 30 GWh, at $1,300M if started three years after Phase 1 or $1,248M (a 4% discount for ordering together) if committed with Phase 1. Helios did not have to decide Phase 2 now, but it did have to decide whether to reserve the land, power connection and permits for it, and whether to build it at once.
 
 ### The people
 
-Marguerite Okonkwo-Hale, the chief executive, was an engineer by training and a believer in scale. She had joined Helios when it had one plant and she liked to say that "cell manufacturing is a learning business: the company that makes the most cells learns the fastest, and the company that learns the fastest wins". She wanted to approve the full 30 GWh site in December.
-
-Dev Raman, the CFO, was more cautious. He had noticed that every previous Helios plant had come in over budget and behind schedule, and that the first plant's cell prices had fallen by roughly a third in its first five years of operation. He had asked his team to build a proper discounted cash flow model before anyone spoke about strategy.
-
-Lena Bergström, senior vice president for strategy, had negotiated the Ardmore term sheet and favoured Phase 1 now with an option on Phase 2. Tomasz Wierzba, vice president of manufacturing, owned the learning-curve assumptions and the ramp-up schedule. Priya Anand, the treasurer, was responsible for the funding plan and for the covenants in the company's bank facilities. Dr. Nasrin Kaveh, chair of the audit committee, had told Raman that she would not support any plan that put the company's leverage covenant at risk.
+Marguerite Okonkwo-Hale, the chief executive, was an engineer and a believer in scale: "cell manufacturing is a learning business, and whoever makes the most cells learns fastest." She wanted to approve all 30 GWh in December. Raman was more cautious: every earlier Helios plant had run over budget and late, and the first plant's cell price had fallen by about a third in five years. Lena Bergström, senior vice president for strategy, had negotiated the term sheet and favoured Phase 1 now with an option on Phase 2. Tomasz Wierzba, vice president of manufacturing, owned the learning-curve and ramp-up assumptions. Priya Anand, the treasurer, owned the funding plan and the bank covenant. Dr. Nasrin Kaveh, who chaired the audit committee, had told Raman she would oppose any plan that endangered the covenant.
 
 ### The decision
 
-The board had to answer three connected questions.
+The board had to answer three connected questions: whether to commit to Phase 1 on the terms offered; whether to build Phase 2 now or hold it as an option to be exercised in three years; and what conditions to attach. Beneath them lay a fourth, which Raman felt he owed the directors: how much of the project's apparent value came from subsidies, and how secure were they?
 
-1. Should Helios commit to Phase 1 of Project Meridian on the terms offered by the Province?
-2. If so, should it also build Phase 2 now, or hold Phase 2 as an option to be exercised in three years?
-3. What conditions, if any, should the board attach to the commitment?
-
-The board had a fourth, quieter question, which Raman felt he owed the directors: how much of the apparent value of the project came from subsidies, and how secure were those subsidies?
-
-### Key dates
-
-| Date | Event |
-| :--- | :--- |
-| 4 November 2026 | Third revision of Ardmore term sheet received |
-| 20 November 2026 | Final engineering cost estimate (Class 3) due |
-| 1 December 2026 | Pre-read for directors circulated |
-| 15 December 2026 | Board meeting; decision on Meridian |
-| 31 January 2027 | Provincial offer lapses unless a binding memorandum is signed |
-| January 2027 (Year 0) | Land purchase and first construction payments if approved |
-
-Throughout the case, "Year 0" is the date of commitment, January 2027. Cash flows after Year 0 are assumed to occur at year end. Year 1 is 2028 and construction ends in that year, so first production comes in Year 2 (2029).
+"Year 0" is the date of commitment, January 2027. Later cash flows occur at year end. Construction ends in Year 1 (2028) and first production comes in Year 2 (2029).
 
 ## Industry Context
 
-### Demand
+**Demand.** Cell demand is driven by the shift of road vehicles to electric drive, now spreading from cars to buses and trucks, and by stationary storage used by grids to absorb solar and wind output. Both are growing quickly and both are policy-sensitive. The consultants Helios hired (a fictional firm, Calder & Voss) gave a low, central and high demand view, and the gap between low and high was larger than the central growth rate. A model that treats demand as known misleads.
 
-Demand for lithium-ion cells is driven by two forces that are both policy-sensitive. The first is the transition of road vehicles from combustion engines to electric drive, which has been fastest in cars and is now spreading to buses and trucks. The second is the growth of stationary storage, which electricity grids use to store solar and wind output and to relieve congestion. Both markets have been growing quickly from a small base, but forecasts differ widely. The consultants Helios commissioned (a fictional firm, Calder & Voss) gave a central view, a low view and a high view of cell demand, and the spread between low and high was larger than the central growth rate. Any model that treats future demand as known is deceptive, and the case asks students to resist that temptation.
+**Price.** Cell prices have fallen for a decade because of lower raw-material prices, process improvement, larger plants and new capacity. Declines arrive in steps, when a capacity surplus coincides with a fall in metal prices, and pause in shortages. A manufacturer's margin is the gap between a falling price and a falling cost, and survivors are those whose costs fall faster. Brightwater earned a high margin in its third year and a modest one in its eighth.
 
-### Price dynamics
+**Costs and learning.** A cell plant has three cost layers. Materials (active materials, electrolyte, separators, foils) are about half the early selling price and largely pass through from commodity markets. Conversion costs (labour, energy, consumables, scrap) fall as operators learn. Fixed cash costs (supervision, engineering, insurance) do not vary with volume, which is why utilisation matters so much. The manufacturing literature describes conversion cost with an experience curve: each doubling of cumulative output cuts unit cost by a fixed fraction. A learning rate of 85% means cost after a doubling is 85% of cost before. The curve runs on cumulative output across the site, so Phase 2 would inherit Phase 1's experience.
 
-Cell prices have fallen for a decade, driven by three things: lower raw-material prices after an early shortage, process improvements and larger plants, and the entry of new capacity, especially in Asia. Price declines are not a smooth line. They arrive in steps when a surplus of capacity coincides with a fall in metal prices, and they pause when a shortage appears. A manufacturer's margin is the gap between a falling price and a falling cost, and the survivors are those whose costs fall faster. Helios's own history shows the pattern: its Brightwater plant earned a high margin in its third year and a modest one by its eighth.
+**Policy support.** Governments competing for plants offer grants, production credits, tax abatements and subsidised loans. Their value is large relative to the plant's margin and they carry political risk that private contracts do not: a credit is legislated, and legislatures change course. The Ardmore credit statute is subject to review in 2031.
 
-### Cost structure and the learning curve
-
-A cell plant has three cost layers. Materials (cathode and anode active material, electrolyte, separators, foils) are about half of the selling price in the early years and are largely passed through from commodity markets, though the plant's yield (the proportion of cells that pass quality tests) determines how much material is wasted. Conversion costs (labour, energy, consumables, maintenance and the scrap cost of poor yield) fall with experience as operators learn. Fixed cash operating costs (supervision, engineering, plant overheads, insurance) do not vary with volume and are the reason utilisation matters so much.
-
-The manufacturing literature describes conversion cost with an experience curve: each time cumulative output doubles, unit conversion cost falls by a fixed fraction. A learning rate of 85% means that cost after a doubling is 85% of the cost before. Helios's manufacturing group estimates 85% for the Meridian technology, and notes that the estimate came from its own two plants plus industry anecdote. Because the curve is driven by cumulative output across the whole company site, a second phase at Port Alder would benefit from experience gained in Phase 1, and Phase 1 would benefit from any early volume of Phase 2.
-
-### Policy support
-
-Governments competing for battery plants have offered four main instruments: grants toward construction cost, production credits paid per kWh of cells sold, tax abatements and subsidised loans. Their value to the company is large relative to the plant's margin, which is why the case treats them carefully. They also carry a political risk that private contracts do not: a production credit is legislated, and legislatures can change course. The Province's term sheet promises its credit for eight years of production, but the enabling statute is subject to review in 2031.
-
-### Competition
-
-Three competitor groups matter to Helios. Large vertically integrated Asian producers set the global price trend. Two established North American producers are expanding. A number of start-ups have announced plants but not all will be financed. Helios's advantage is a technology licence for a high-energy-density chemistry, an anchor customer commitment from a bus manufacturer (described under Complications) and a relationship with the Province. Its disadvantage is scale: at 15 GWh Meridian would still be small by global standards, and at 30 GWh it would be mid-sized.
-
-### Capital intensity
-
-A gigafactory is one of the most capital-intensive manufacturing assets. The Meridian Phase 1 cost per unit of annual capacity is $100M per GWh. Plants typically take about two years to build, then ramp up over three to four years, so the project spends heavily for two years and earns little for the next two or three. This shape, a long dip in cash flow followed by a long plateau, makes the net present value of a cell plant very sensitive to the discount rate, to the speed of ramp-up and to the price path in the plateau years.
+**Capital intensity.** Phase 1 costs $100M per GWh of annual capacity. A plant takes two years to build and three to four to ramp, so cash flow dips for years before a long plateau. That shape makes NPV very sensitive to the discount rate, the speed of ramp-up and the price path in the plateau years. Helios's edge is a licence for a high-density chemistry, an anchor-customer letter and the Province's goodwill; its weakness is scale, since 15 GWh is small by global standards.
 
 ## Financial Data
 
@@ -210,15 +171,15 @@ Total uses are $1,540M (plant $1,500M plus land $40M), which equals total source
 
 ## Complications and Exhibits
 
-Real decisions arrive with untidy data. The following exhibits, assembled by Raman's staff over the last week of October, raise problems that students must decide how to handle. None of them has a single correct answer, and the Teaching Note says how each is treated in the model solution.
+Real decisions arrive with untidy data. The exhibits below, assembled by Raman's staff in late October, raise problems students must decide how to handle. None has a single correct answer; the Teaching Note gives the model treatment.
 
 ### Exhibit A: Costs that may or may not be relevant
 
-The team has recorded the following items against Project Meridian. Helios has already paid a consultant $22M for site studies, geotechnical work and permit applications. The corporate finance department allocates $14M a year of head-office cost to every business unit in proportion to revenue; the Meridian share would be $14M a year once the plant is running, but the head-office headcount would not change. The land at Port Alder will be bought for $40M; the Province has said it would repurchase the land at cost at any time, which management has taken to mean that land can be recovered in Year 15 at cost. Brightwater, Helios's existing plant, serves some of the same customers, and the marketing director thinks Meridian might take $18M a year of Brightwater's contribution between Years 2 and 6, but Brightwater is full and he agrees the sales could be replaced from a waiting list.
+Helios has already paid a consultant $22M for site studies and permits. Head office allocates $14M a year to the Meridian unit in proportion to revenue, but head-office headcount would not change. The land will be bought for $40M; the Province will repurchase it at cost at any time, which management takes to mean Year 15 recovery at cost. The marketing director thinks Meridian might take $18M a year of Brightwater's contribution in Years 2 to 6, but Brightwater is full and sales could be replaced from a waiting list.
 
 ### Exhibit B: Learning data from Brightwater
 
-Wierzba's group supplied the observed conversion cost at Brightwater during its first four years of production. Meridian's technology is newer and its first-GWh cost is lower, but he believes the rate of learning is comparable.
+Wierzba supplied the average conversion cost at Brightwater during its first four years. Meridian's newer technology has a lower first-GWh cost, but he believes the rate of learning is comparable. Management's 85% was rounded down from a first look at these data.
 
 | Cumulative output at Brightwater (GWh) | Average conversion cost ($/kWh) |
 | ---: | ---: |
@@ -228,31 +189,25 @@ Wierzba's group supplied the observed conversion cost at Brightwater during its 
 | 12.0 | 26.9 |
 | 24.0 | 22.6 |
 
-Management's 85% learning rate was rounded down by Wierzba from a first look at these data. Students may want to estimate the rate themselves.
+### Exhibit C: Tax counsel's open questions
 
-### Exhibit C: Tax counsel's two views
-
-Helios's tax counsel gave a written opinion with two open questions. First, whether the production credit is taxable income to Helios when received (counsel thinks "probably not", with 60% confidence). Second, whether the capital grant reduces the depreciable basis of the plant (counsel thinks "yes" under general principles but notes that the enabling statute is silent). The base-case model assumes the credit is not taxable and the grant does reduce the depreciable basis, and the CFO would like to know how much this matters.
+Counsel could not say whether the production credit is taxable income when received ("probably not", 60% confidence), or whether the capital grant reduces the depreciable basis of the plant ("yes" under general principles, but the statute is silent). The base case assumes the credit is not taxable and the grant does reduce basis. The CFO wants to know how much this matters.
 
 ### Exhibit D: Policy risk
 
-The Province's production credit statute comes up for legislative review in 2031, which is Year 4 of the project. The opposition party has said it would "review the cost-effectiveness" of the credit. Bergström's view is that the credit is more likely than not to survive, and she gives a 30% chance that it is repealed or sharply curtailed after the review for production from Year 5 onward. Grants and the abatement are contractual and are not subject to the review, and the development loan is a contract with the provincial development bank. Students should model repeal as a loss of the credit for all production from Year 5 onward and use the 30% probability, while recognising that no one can know it.
+The credit statute is reviewed in 2031, Year 4 of the project, and the opposition has promised to "review the cost-effectiveness" of the credit. Bergström gives a 30% chance that the credit is repealed or sharply curtailed for production from Year 5 onward. The grant, abatement and loan are contractual and not subject to review. Students should model repeal as loss of the credit for all production from Year 5 on, with probability 30%, while recognising that no one can know it.
 
 ### Exhibit E: Anchor customer
 
-Northgate Coachworks, a bus manufacturer, has signed a non-binding letter of intent to buy 4 GWh a year from Meridian for five years at a price no lower than $90 per kWh (flat). The letter has no penalty for either party. The sales team treats it as validation of demand. The base-case model does not include it. Students should consider its value but should not simply add it to the cash flows.
+Northgate Coachworks, a bus maker, has signed a non-binding letter of intent to buy 4 GWh a year for five years at a price no lower than $90 per kWh, with no penalty to either side. Sales treats it as validation. The base case ignores it.
 
 ### Exhibit F: The covenant
 
-Priya Anand reports that pro forma net debt after the Phase 1 funding plan would be above today's level, while EBITDA from the plant would be negative in Year 2. She has asked the banks for a construction holiday on the covenant but has no written commitment. Students should compute the pro forma leverage ratio under Phase 1 and under a decision to build all 30 GWh immediately.
+Net debt after the Phase 1 funding plan would exceed today's level while plant EBITDA is negative in Year 2. Anand has asked the banks for a construction holiday on the covenant but has no written commitment.
 
-### Exhibit G: Volatility estimates
+### Exhibit G: Volatility and rivals
 
-For the real-option analysis the consultants offered 25% as a low estimate (based on the long-run volatility of battery pack prices), 35% as a point estimate (based on listed battery manufacturers' equity volatility, adjusted for leverage) and 45% as a high estimate (based on spot cell prices during the last supply shortage). Raman has chosen 35% but wants to know how the answer changes.
-
-### Exhibit H: Capacity commitments from rivals
-
-Calder & Voss note that three announced plants in the region would, if all built, add roughly twice the demand growth expected in the next three years. This is the main reason Phase 2 output is assumed to sell on spot contracts at a discount to Phase 1 prices. If the rivals' plants are delayed, prices might hold; if they are all built, prices may fall faster than the base 3% a year.
+For the Phase 2 option the consultants offered volatility of 25% (long-run pack-price volatility), 35% (listed manufacturers' equity volatility, adjusted for leverage) and 45% (spot cell prices in the last shortage). Raman chose 35%. Calder & Voss also note that announced rival plants would, if all built, add roughly twice the demand growth of the next three years, which is why Phase 2 output is assumed to sell at spot at a discount to Phase 1.
 
 ## Assignment Questions
 

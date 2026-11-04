@@ -412,3 +412,60 @@ Exhibit D, run-rate SBC. Removing $14.2 million of accelerated vesting and the $
 
 Exhibit E, billing terms. About $17 million of FY2026 free cash flow came from the one-time move to annual billing. Free cash flow on a repeatable basis is $117.9 million (21.1 percent of revenue), the headline rule of 40 falls to 51.1, and the SBC-adjusted rule of 40 to 31.6. The 3 percent discount also removes about $2.6 million a year of subscription revenue permanently. This one-time benefit is not wrong, since the cash is real, but it should not be capitalized at a multiple. It is a pull-forward of future cash.
 
+#### Solution 5: Cost of capital
+
+Unlevered beta equals levered beta divided by (1 + (1 minus 23%) times D/E). For Halcyon Cloud, 1.20 divided by (1 + 0.77 times 0.03) is 1.173. The six unlevered betas are 1.173, 0.989, 1.231, 1.350, 0.852, and 1.107, with an average of 1.117 (median 1.140).
+
+Cirrus's diluted share count at $56.00 is 101.4 basic plus 6.2 RSUs plus 8.4 times (1 minus 21.50/56.00), or 5.174 million net option shares, a total of 112.774 million. Market capitalization is $6,315.4 million. Debt of $175.0 million gives D/E of 2.77 percent. Relevered beta is 1.117 times (1 + 0.77 times 0.0277), or 1.141. The cost of equity is 4.2% + 1.141 times 4.5%, or 9.33 percent. The after-tax cost of debt is 6.2% times 0.77, or 4.77 percent, and the weight of debt is 175.0 divided by (6,315.4 + 175.0), or 2.70 percent. WACC is 0.973 times 9.334% + 0.027 times 4.774%, which is 9.21 percent. The coupon of 0.5 percent is irrelevant to the cost of debt, since the note's low coupon is paid for by the conversion option. Using the coupon would understate WACC by roughly 0.1 point. Because the market price is itself an input, there is mild circularity, which is immaterial here. **Adopt 9.21 percent.**
+
+#### Solution 6: Base-case forecast
+
+The base case adjusts management's plan in four ways, each tied to evidence. Growth starts at 26.0 percent rather than 27.0 because the cohort data (Solution 1) show that FY2027 requires 21 to 37 percent more new-customer ARR and because the first quarter was soft, and it fades more quickly to 9.0 percent in FY2036 rather than 10.0 percent. Non-GAAP margin reaches 37.0 percent in FY2036, not 41.0 percent, because no peer combines more than 33 percent with growth above 10 percent (Exhibit C), and the sales-and-marketing efficiency decline argues against the plan's decline to 22 percent of revenue. SBC falls to 9.5 percent, not 9.0 percent. Capital expenditure, depreciation, working capital, and the tax assumptions are management's. The downside case, used in Solution 7, models loss of Ostrava, continued deterioration in new-customer cohorts, and growth fading to 6 percent.
+
+Each year: revenue equals prior revenue times (1 + growth); GAAP EBIT equals revenue times (non-GAAP margin minus SBC percentage); cash tax is 23 percent of EBIT after using the NOL; FCFF equals EBIT minus tax, plus depreciation (3.0 percent), minus capex (3.5 percent), plus 15 percent of incremental revenue. For FY2027: revenue is 559.5 times 1.26, or 705.0; EBIT is 705.0 times (19.0% minus 18.0%), or 7.0; no tax because the NOL absorbs it (NOL falls from 260.0 to 253.0); depreciation is 21.2, capex is 24.7, and the working-capital inflow is 0.15 times (705.0 minus 559.5), or 21.8. FCFF is 7.0 + 21.2 - 24.7 + 21.8 = 25.3.
+
+Table S6. Base case free cash flow to the firm ($ millions)
+
+| Year | Growth | Revenue | Non-GAAP margin | SBC % | GAAP EBIT | Cash tax | FCFF | Discount factor | PV of FCFF |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2027 | 26.0% | 705.0 | 19.0% | 18.0% | 7.0 | 0.0 | 25.3 | 1.0450 | 24.3 |
+| FY2028 | 23.5% | 870.6 | 21.5% | 16.5% | 43.5 | 0.0 | 64.0 | 1.1413 | 56.1 |
+| FY2029 | 21.0% | 1,053.5 | 24.5% | 15.0% | 100.1 | 0.0 | 122.2 | 1.2464 | 98.1 |
+| FY2030 | 19.0% | 1,253.6 | 27.0% | 14.0% | 163.0 | 12.3 | 174.4 | 1.3612 | 128.1 |
+| FY2031 | 17.0% | 1,466.7 | 29.5% | 13.0% | 242.0 | 55.7 | 211.0 | 1.4866 | 141.9 |
+| FY2032 | 15.0% | 1,686.8 | 31.5% | 12.0% | 328.9 | 75.7 | 277.8 | 1.6235 | 171.1 |
+| FY2033 | 13.0% | 1,906.0 | 33.0% | 11.0% | 419.3 | 96.4 | 346.2 | 1.7730 | 195.3 |
+| FY2034 | 11.5% | 2,125.2 | 34.5% | 10.5% | 510.1 | 117.3 | 415.0 | 1.9363 | 214.3 |
+| FY2035 | 10.0% | 2,337.8 | 36.0% | 10.0% | 607.8 | 139.8 | 488.2 | 2.1146 | 230.9 |
+| FY2036 | 9.0% | 2,548.2 | 37.0% | 9.5% | 700.7 | 161.2 | 558.4 | 2.3094 | 241.8 |
+The NOL is exhausted in FY2030 (cash tax of 12.3 against EBIT of 163.0). GAAP EBIT margin rises from 1.0 percent in FY2027 to 27.5 percent in FY2036. FCFF as a percentage of revenue rises from 3.6 percent to 21.9 percent. Management's case (Table S7) is built the same way with its own inputs and reaches revenue of $2,933.5 million and FCFF of $748.1 million in FY2036, compared with $2,548.2 million and $558.4 million in the base case.
+
+Table S7. Management case free cash flow to the firm ($ millions)
+
+| Year | Growth | Revenue | Non-GAAP margin | SBC % | GAAP EBIT | Cash tax | FCFF | Discount factor | PV of FCFF |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2027 | 27.0% | 710.6 | 19.5% | 18.0% | 10.7 | 0.0 | 29.8 | 1.0450 | 28.5 |
+| FY2028 | 25.0% | 888.2 | 22.5% | 16.5% | 53.3 | 0.0 | 75.5 | 1.1413 | 66.2 |
+| FY2029 | 23.0% | 1,092.5 | 26.0% | 15.0% | 120.2 | 0.0 | 145.4 | 1.2464 | 116.6 |
+| FY2030 | 21.0% | 1,321.9 | 29.0% | 14.0% | 198.3 | 28.2 | 197.9 | 1.3612 | 145.4 |
+| FY2031 | 19.0% | 1,573.1 | 31.5% | 12.5% | 298.9 | 68.7 | 260.0 | 1.4866 | 174.9 |
+| FY2032 | 17.0% | 1,840.5 | 34.0% | 11.5% | 414.1 | 95.2 | 349.8 | 1.6235 | 215.5 |
+| FY2033 | 15.0% | 2,116.6 | 36.0% | 10.5% | 539.7 | 124.1 | 446.4 | 1.7730 | 251.8 |
+| FY2034 | 13.0% | 2,391.7 | 38.0% | 10.0% | 669.7 | 154.0 | 545.0 | 1.9363 | 281.5 |
+| FY2035 | 11.5% | 2,666.8 | 39.5% | 9.5% | 800.0 | 184.0 | 644.0 | 2.1146 | 304.5 |
+| FY2036 | 10.0% | 2,933.5 | 41.0% | 9.0% | 938.7 | 215.9 | 748.1 | 2.3094 | 324.0 |
+#### Solution 7: Discounted cash flow
+
+Flows arrive mid-year, so the discount factor for FY2027 is 1.0921 raised to the power 0.5, which is 1.0450, and for FY2036 is 1.0921 raised to the power 9.5, which is 2.3094. The terminal value uses the Gordon formula on the FY2037 cash flow, computed as follows for the base case. FY2037 revenue is 2,548.2 times 1.035, or 2,637.3. EBIT at the FY2036 margin of 27.5 percent is 725.3, and NOPAT at a 23 percent tax rate is 558.5. Depreciation is 79.1, capex is set at 1.10 times depreciation (87.0), because a growing firm must invest slightly more than it depreciates, and working-capital inflow is 0.15 times 89.1, or 13.4. Terminal FCFF is 558.5 + 79.1 - 87.0 + 13.4 = 563.9. Terminal value is 563.9 divided by (9.21% minus 3.5%), which is 9,876.1. Because the Gordon formula values flows one period before the first flow, and the first terminal flow (FY2037) arrives at time 10.5, the terminal value sits at time 9.5 and is discounted by 2.3094, giving a present value of 4,276.5. The sum of present values of explicit flows is 1,501.9, so the enterprise value is 5,778.4.
+
+The bridge to equity adds cash of 489.8 and subtracts the notes at face value of 175.0 (the notes are out of the money since the value per share is below $92.00): equity value is 5,778.4 + 489.8 - 175.0 = 6,093.2. Per-share value requires iteration because the option dilution depends on the price. At $54.08 the net option shares are 8.4 times (1 minus 21.50/54.08), or 5.061 million. Diluted shares are 101.4 + 6.2 + 5.061 = 112.661 million, and 6,093.2 divided by 112.661 is $54.08, which is the fixed point.
+
+Table S9. Scenario valuation summary ($ millions except per share; shares in millions)
+
+| Case | Weight | FY2036 revenue | PV of FY27-36 FCFF | PV of terminal value | Enterprise value | Equity value | Diluted shares | Value per share |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Downside | 20% | 1,706.4 | 684.3 | 1,832.5 | 2,516.8 | 2,831.6 | 109.05 | $25.97 |
+| Base | 55% | 2,548.2 | 1,501.9 | 4,276.5 | 5,778.4 | 6,093.2 | 112.66 | $54.08 |
+| Management | 25% | 2,933.5 | 1,908.7 | 5,721.0 | 7,629.7 | 7,944.5 | 113.42 | $70.04 |
+The probability-weighted value is 0.20 times $25.97 plus 0.55 times $54.08 plus 0.25 times $70.04, or **$52.45 per share**. The management case yields $70.04, which is 4.4 percent above the offer, and the base case is 18.7 percent below it. Note the asymmetry: the downside is $28 below base but the management upside is only $16 above it, so the probability-weighted value sits below the base.
+

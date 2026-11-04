@@ -363,7 +363,7 @@ Marlow Industrial's annual bonus has a target of $1.5 million. Payout is 0% if E
 
 *Step 3: Erroneously awarded amount.* $2.50 million – $1.125 million = $1.375 million, recoverable on a pre-tax basis. If the executive's combined tax rate was 40%, she retained $1.50 million after tax on the original bonus, so the after-tax cost of repayment to her is $1.375 million less any tax relief she can obtain (recovering a tax deduction in a later year is possible in some jurisdictions but is not guaranteed). Her net after-tax bonus on a correct calculation would have been 0.6 × $1.125 million = $0.675 million.
 
-*Step 4: Interpretation.* The restatement of less than 5% in EPS ($0.35 on $3.20, 10.9%) in fact removes 55% of the bonus because of the steepness of the payout curve ($2.50 million to $1.125 million, a 55% reduction). Steep payout schedules amplify the incentive to manage earnings near thresholds and make the consequences of restatement large. A board should expect the effects when reviewing the plan: gradual curves and multi-year averaging reduce both the temptation and the cost of recovery.
+*Step 4: Interpretation.* A restatement that lowers EPS by about 11% ($0.35 on $3.20) removes 55% of the bonus ($2.50 million to $1.125 million) because of the steepness of the payout curve. Steep payout schedules amplify the incentive to manage earnings near thresholds and make the consequences of restatement large. A board should expect the effects when reviewing the plan: gradual curves and multi-year averaging reduce both the temptation and the cost of recovery.
 
 ### 10.6.3 Limits of clawbacks
 

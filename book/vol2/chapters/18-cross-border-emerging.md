@@ -301,3 +301,121 @@ PV = 25 × [1 ÷ 1.15 + 1 ÷ 1.15² + 1 ÷ 1.15³ + 1 ÷ 1.15⁴] = 25 × 2.8550
 - **Plan for parallel-market dynamics.** Where there are multiple rates, ensure that accounting, tax and legal advice is clear about the rates applicable to each transaction, since misuse can expose the company to regulatory sanctions.
 - **Negotiate protections at entry.** Agreements with the host government, investment-promotion agencies or central bank may include assurances of convertibility, which can also be insured.
 - **Recognize contagion.** Controls rarely appear in isolation: when currency reserves run low, controls, price caps, forced conversion of export proceeds, and discriminatory taxes often arrive together. The scenarios should be consistent.
+
+## 18.6 Joint Ventures and Local Partners
+
+### Why Joint Ventures
+
+Foreign investors enter emerging markets through wholly owned greenfield investment, acquisition of a local firm, a minority stake, a contractual alliance (licensing, franchising, distribution), or a **joint venture (JV)** with a local partner. JVs are chosen for four reasons: *regulatory* (many countries cap foreign ownership in sectors such as telecoms, banking, media, retail, mining), *access* (the partner brings customers, distribution, licenses, land, and political relationships), *risk sharing* (sharing capital at risk in an uncertain market), and *learning* (the foreign firm gets market knowledge). The costs are shared control, conflicts over strategy and dividends, risk of technology leakage, and the possibility that the partner becomes a competitor once it has learned the business.
+
+### The Economics and Governance of a JV
+
+A JV is incomplete contracting in its most stressful form: the partners must agree ex ante on a business whose outcomes and the partners' interests change over time. The main design questions are:
+
+- **Ownership and control.** Economic ownership (share of cash flows) and control (board seats, veto rights, management appointments) need not coincide. A minority investor can hold *reserved matters* (veto rights over budget, capital increases, related-party transactions, changes of strategy, new debt, dividend policy, sale of assets, and appointment of the CEO and CFO) that protect its investment without majority ownership. Consolidation of the JV for accounting depends on control as defined by IFRS 10 / ASC 810, and so affects reported leverage and covenants.
+- **Contributions.** In-kind contributions (land, licenses, brands, technology) must be valued, and disagreements over valuation of non-cash contributions are a classic source of later conflict.
+- **Funding obligations.** Who must provide additional capital if the JV needs it? Dilution formulae for the partner that does not contribute protect the others but can be used opportunistically to squeeze out a cash-constrained partner (a particular danger when a foreign partner faces capital controls or the local partner faces a banking crisis).
+- **Dividend policy.** Local partners often prefer reinvestment (to grow the JV and their position) while the foreign partner needs cash flows to the parent. A minimum payout rule can reduce conflict.
+- **Related-party transactions.** Fees, royalties and transfer prices between the JV and its partners are the principal channels through which value can be shifted from one partner to the other. They require clear arm's-length rules and approval by the unconflicted directors.
+- **Deadlock resolution.** For 50/50 or veto-heavy structures, provisions for resolving deadlock (escalation, mediation, shotgun clauses or buy-sell) are essential.
+- **Exit and transfer.** Rights of first refusal, tag-along and drag-along rights, lock-ups, and put and call options determine how each party can leave and at what price.
+
+### Local Partner Dynamics
+
+The local partner is simultaneously the foreign investor's greatest asset and greatest risk. The following patterns recur:
+
+1. **Asymmetric information.** The partner knows the local market, the regulators and the true state of the books; the investor does not. Due diligence on the partner, including its reputation, ownership, political exposure and other businesses, is as important as diligence on the target.
+2. **Misaligned time horizons and objectives.** A family business may value control and succession over return on capital; a foreign strategic investor values consolidated market share and global brand protection.
+3. **Hold-up and opportunism.** Once the foreign investor has committed capital and transferred know-how, its bargaining position weakens (the obsolescing bargain again, at the level of the partner). The partner may demand renegotiation, divert corporate opportunities to its other businesses, or compete using the transferred know-how.
+4. **Tunneling.** Controlling shareholders may extract value through related-party transactions, asset sales at off-market prices, loans on favorable terms, or preferential dealing with affiliates. Tunneling is a central agency problem in markets with concentrated ownership and pyramid structures, and the minority protections in local law may be weak.
+5. **Political connection as a double-edged asset.** A partner with strong political ties may speed licenses and protect the business from adverse treatment, but is exposed to changes of government and may expose the investor to anti-corruption liability.
+6. **Evolution of the relationship.** Partnerships frequently begin with the foreign partner needing the local partner for access, and end with the local partner needing the foreign partner much less, as it acquires capabilities. Many JVs end in a buy-out by one partner. It is therefore wise to design the exit at the start.
+
+### Valuation Issues for JV Stakes
+
+The value of a minority or JV stake is not a simple pro rata share of enterprise value. Adjustments include a *discount for lack of control* (if the stake carries no control over dividends, strategy or sale) and a *discount for lack of marketability* (restricted transferability), partially offset by the value of negotiated rights (vetoes, put options, tag-along). The magnitude of these adjustments depends on the governance terms: a stake with strong protective rights is worth more than one without.
+
+Put and call options between partners are significant contingent claims. A put option written by the foreign partner allowing the local partner to sell its stake at a pre-agreed price is a contingent liability; if the strike is a floor price, the put is deep in the money precisely when the business has done badly, and the foreign partner will have to pay the most when it is least able to. The value of such options can be estimated with the option methods of Volume 1, Chapter 18.
+
+**Example 18.5 – Fee leakage and the value of a put option in a JV.**
+Part 1: Management fee. Solano holds 49 percent of a JV in Aurelia and the local partner holds 51 percent. The JV's pre-fee, pre-tax profit is $100 million, the local tax rate is 25 percent, and Solano proposes a management fee of $15 million per year payable to it, taxed in its hands at 21 percent (net of credits, simplified).
+
+Without fee: JV net income = 100 × 0.75 = 75.0; Solano's share 0.49 × 75.0 = **36.75**; partner's share 0.51 × 75.0 = **38.25**.
+
+With fee: JV pre-tax profit = 85; net income = 85 × 0.75 = 63.75; Solano's share of dividends = 0.49 × 63.75 = 31.24; Solano's fee after tax = 15 × 0.79 = 11.85; total to Solano = **43.09**. Partner's share = 0.51 × 63.75 = **32.51**.
+
+Solano gains 43.09 − 36.75 = **$6.34 million**; the partner loses 38.25 − 32.51 = **$5.74 million**. The joint gain of $0.60 million equals the net tax effect: the fee saves 15 × 0.25 = 3.75 of local tax and costs 15 × 0.21 = 3.15 of home tax.
+
+*Interpretation:* the fee mostly transfers value from the local partner to Solano; it is, in effect, the foreign partner collecting 100 percent of $15 million but bearing only 49 percent of its cost to the JV (the partner bears the other 51 percent). A local partner who understands this will insist on a cap, on arm's-length benchmarking of the fee, and on approval by a majority of the unconflicted directors. Fees which are really payment for services performed and costs incurred are legitimate; fees that exceed those values are a hidden dividend and a likely source of future conflict.
+
+Part 2: Put option. The local partner (51 percent) holds a put option to sell its stake to Solano in three years at a floor price of $300 million. Business value at that time is 7.5 times JV EBITDA; the stake is worth 0.51 × 7.5 × EBITDA. Assume EBITDA scenarios of $50 million (probability 0.15), $65 million (0.25), $80 million (0.40) and $100 million (0.20).
+
+Stake values: 0.51 × 7.5 × 50 = 191.25; × 65 = 248.63; × 80 = 306.00; × 100 = 382.50. Put payoffs max(300 − value, 0): **108.75**, **51.38**, 0, 0. Expected payoff = 0.15 × 108.75 + 0.25 × 51.375 = 16.31 + 12.84 = **$29.16 million**. PV at 10 percent over 3 years: 29.16 ÷ 1.331 = **$21.9 million**.
+
+*Interpretation:* the put is a $21.9 million liability that does not appear in the purchase price but belongs in the valuation of Solano's position. Solano must also ask whether it will have the financial capacity, and the legal ability to move funds across the border, to honor the put in the scenario (low EBITDA, possibly a currency crisis) in which it is exercised. This *wrong-way* correlation between the exercise of the option and the investor's ability to pay is the main danger of floor-priced puts.
+
+### Table 18.2 – Entry Mode Comparison
+
+| Entry mode | Control | Capital at risk | Speed | Local knowledge | Key risks |
+|---|---|---|---|---|---|
+| Greenfield (wholly owned) | Full | High | Slow | Must build | Political risk, hold-up by government, slow ramp-up |
+| Acquisition of local company | Full or majority | High | Fast | Inherited with the target | Integration, hidden liabilities, governance of target |
+| Joint venture | Shared | Moderate | Medium | Partner provides | Partner conflict, tunneling, exit disputes |
+| Minority stake | Limited | Moderate | Fast | Partner-led | Lack of control, valuation, exit |
+| Licensing / franchising | None over operations | Low | Fast | Licensee | Leakage of IP, quality control, limited upside |
+| Export / distributor | Limited | Low | Fast | Distributor | Dependence, thin margins, channel conflict |
+
+## 18.7 Capital Structure and Financing in Emerging Markets
+
+### Why Emerging-Market Capital Structure Differs
+
+Volume 1, Chapter 15 developed the trade-off theory, pecking-order theory and agency perspectives on capital structure for developed markets. In emerging markets the same forces act, but the constraints and costs differ.
+
+- **Shallow and short-term debt markets.** Corporate bond markets in local currency are small, with short maturities; banks dominate and prefer collateral and short tenors. Firms often face a trade-off between short-term local borrowing (refinancing risk) and long-term hard-currency borrowing (currency risk).
+- **High local interest rates.** Local-currency borrowing costs include expected inflation and depreciation, as well as the sovereign risk premium; the local rate may look expensive relative to dollar debt.
+- **Volatile cash flows and higher costs of distress.** Macroeconomic volatility raises the probability of distress at any leverage; weaker insolvency systems (slow, uncertain, favorable to insiders or to creditors, depending on the country) raise the cost of distress. The trade-off theory therefore points to *lower* target leverage, for a given tax shield.
+- **Concentrated ownership and group structures.** Family and business-group ownership, pyramid structures and cross-holdings are common. Controlling shareholders may prefer debt to equity issuance to avoid dilution of control, and intra-group financing may substitute for weak external markets, with internal capital markets that can either support or exploit weaker members.
+- **Information and governance problems.** Opaque accounting and weak creditor rights make lenders demand collateral and short maturity, and make equity investors demand a higher premium. Firms with strong governance (ADR listings, international auditors, foreign institutional investors) obtain better terms.
+- **Tax shield variations.** Interest deductibility is often constrained by thin-capitalization rules, caps on deductible interest, withholding taxes on cross-border interest and inflation-related distortions.
+- **Dollarization.** Many emerging-market firms borrow in dollars or euros because it is cheaper or available at longer tenors, creating the *currency mismatch* risk on balance sheets with local-currency revenues.
+
+### The Currency of Debt
+
+The choice between local-currency and hard-currency debt is the crucial capital structure decision in emerging markets. Hard-currency debt looks cheaper because the nominal interest rate is lower, but the apparent saving is compensation for expected depreciation. Over any horizon, the borrower will pay less in hard-currency terms to the extent the local currency depreciates *less than* the interest differential implies, and more if it depreciates more. The break-even depreciation rate for a one-period loan is:
+
+```
+d* = (1 + k_local) ÷ (1 + k_hard) − 1
+```
+
+If the actual depreciation exceeds d*, hard-currency debt turns out more expensive. Interest rate parity implies that a *hedged* hard-currency loan (using a forward or cross-currency swap) costs approximately the local rate, apart from market frictions. The unhedged choice is therefore a bet on the exchange rate, with downside concentrated in the states of the world in which the firm is already stressed: depreciation tends to come with recessions, falling local revenues and credit tightening (*wrong-way* risk). That asymmetry is why the currency-mismatch problem has been a recurring feature of emerging-market crises, and why a risk-neutral comparison of expected costs understates the true cost of unhedged foreign-currency debt.
+
+**Example 18.6 – Local versus hard-currency debt.**
+Aurelia Refrescos can borrow the equivalent of $100 million in US dollars at 7.0 percent, or in local currency at 14.0 percent. Spot is LC 20 per dollar. Local inflation is 9 percent, US inflation 2.5 percent. Operating cash flow (EBIT) is LC 300 million per year, EBITDA is LC 400 million, and the debt is LC 2,000 million at spot.
+
+Step 1 – Break-even depreciation: 1.14 ÷ 1.07 − 1 = **6.54 percent** per year. If the local currency depreciates by less than 6.54 percent a year, dollar debt costs less than local debt in local-currency terms.
+
+Step 2 – Expected cost under PPP depreciation. The PPP-implied depreciation is 1.09 ÷ 1.025 − 1 = 6.34 percent. The expected local-currency cost of the dollar loan is 1.07 × 1.0634 − 1 = **13.79 percent**, close to the 14.0 percent of the local loan (the difference is the market's friction and credit spread). In expectation, the two loans cost almost the same: the dollar loan's low coupon is not a free lunch.
+
+Step 3 – Stress test. With a dollar loan, interest in dollars is $7 million per year. Consider coverage and leverage in local currency terms after depreciation of the local currency against the dollar:
+
+| Local-currency depreciation | Spot (LC/$) | Interest (LC m) | EBIT cover | Debt (LC m) | Debt / EBITDA |
+|---|---|---|---|---|---|
+| 0% | 20 | 140 | 2.14x | 2,000 | 5.0x |
+| 10% | 22 | 154 | 1.95x | 2,200 | 5.5x |
+| 20% | 24 | 168 | 1.79x | 2,400 | 6.0x |
+| 40% | 28 | 196 | 1.53x | 2,800 | 7.0x |
+| 60% | 32 | 224 | 1.34x | 3,200 | 8.0x |
+
+(Assuming revenues and EBITDA stay constant in local currency. If depreciation is accompanied by a recession, the cover is lower still, and if inputs are imported, the cost base rises with depreciation.)
+
+Step 4 – Interpretation. A 60 percent depreciation, comparable to the largest observed in emerging-market crises, raises leverage from 5.0 to 8.0 times EBITDA and lowers interest cover from 2.14 to 1.34 times, even before any operating deterioration. With the local loan at 14 percent (interest LC 280 million, cover 300 ÷ 280 = 1.07x at the start) the firm is more strained at the outset, but its liabilities do not increase with depreciation. The choice is between a high fixed cost with no wrong-way exposure and a lower cost with convex downside.
+
+*Managerial implication:* match the currency of debt to the currency of cash flows unless the firm earns hard-currency revenues (exporters), has natural offsets (dollar-priced inputs sold at dollar-linked prices), or has hedged. A beverage company selling in local currency should hold local-currency debt for the base of its capital structure, using hard-currency debt only up to the amount of its natural dollar exposure, or when hedged and the hedge cost is acceptable. Parent guarantees and cross-currency swaps can allow access to cheaper hard-currency funds while transferring the currency risk to the party better able to bear it.
+
+### Other Capital Structure Considerations
+
+- **Equity versus debt for the subsidiary.** Parent funding of a subsidiary can be in equity (repatriation by dividends or capital reduction) or in intercompany loans (interest deductible, principal repayable without withholding tax, but subject to thin-capitalization rules and regulatory registration). The mix is a tax and control decision that must follow the repatriation analysis of Section 18.5.
+- **Local partners and local debt.** Borrowing locally gives a political hedge: a government is less likely to seize a business that is a major borrower from local banks; the mix of local creditors and employees makes expropriation more costly.
+- **Multilateral and development institutions.** Development finance institutions provide long-tenor loans and equity, often at better terms than commercial markets, and provide a degree of political protection. They require compliance with environmental and social standards.
+- **Equity issuance and listing.** A local listing can improve valuation and provide an exit route but exposes the firm to local market volatility; an international listing signals governance quality at the cost of compliance.
+- **Target leverage.** Higher volatility, higher cost of distress and more difficult refinancing all argue for lower target leverage than for a comparable developed-market firm; stress tests should include a currency shock, an interest-rate shock and a revenue shock simultaneously.

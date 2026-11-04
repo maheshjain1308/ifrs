@@ -286,3 +286,142 @@ Answer each question in turn and show every calculation. Where you make an assum
 
 10. **Recommendation.** Write a one-page board recommendation for the 20 November meeting. State what the board should do, what it should say to each constituency, which triggers should cause a change of course, and what the next three weeks should look like.
 
+## Teaching Note and Full Solutions
+
+### Learning Objectives
+
+After working through this case, students should be able to:
+
+1. Diagnose whether a company is in economic distress, financial distress, or both, using leverage, coverage, decremental margin and the comparison of going-concern and liquidation values.
+2. Build and interpret a thirteen-week direct cash flow forecast, identify the dates on which liquidity binds, and separate operating from financing-driven cash burn.
+3. Value a distressed business with a DCF under conflicting forecasts, triangulate with multiples, and explain why market prices of debt do not translate directly into enterprise value.
+4. Construct a liquidation analysis and an absolute-priority waterfall, identify the fulcrum security, and show how process costs and priming new money change who is in the money.
+5. Explain why out-of-court restructurings fail (unanimity requirements, holdouts, cross-defaults) and how a prepackaged Chapter 11 plan overcomes them.
+6. Size and price DIP financing, and evaluate a roll-up and its distributional effects among lenders.
+7. Test a plan against the best-interests-of-creditors standard, assess feasibility of the exit capital structure, and compute recoveries by class.
+8. Compare restructuring paths by probability-weighted recovery, break-even success probability and option value, and write a recommendation that deals with all stakeholders.
+
+### Suggested Class Plan (90 minutes)
+
+| Minutes | Segment | Questions | Teaching purpose |
+|---:|---|---|---|
+| 0-10 | Cold open: the thirteen-week forecast on the screen. "It is 4 November. What do you tell the board?" | 2 | Establish urgency; separate operating from financing burn |
+| 10-25 | Diagnosis and valuation: is this business worth saving? | 1, 3 | Economic versus financial distress; DCF sensitivity |
+| 25-40 | Waterfall: who is in the money, who is the fulcrum? | 4 | Priority, collateral, liquidation floor |
+| 40-55 | The out-of-court option and why it is hard | 5 | Holdouts, sacred rights, exit consents |
+| 55-70 | DIP, roll-up and plan value | 6, 7 | Superpriority, cost of capital in distress, feasibility |
+| 70-80 | Stakeholders and path choice: pension, vendors, sponsor, Brannoch | 8, 9 | Break-even probability, option value of the market check |
+| 80-90 | Board vote: each team recommends and defends | 10 | Judgement under uncertainty |
+
+Instructors may split the class into five teams: management, the Term Loan ad hoc group, the noteholder group, the sponsor and the union and pension trustee. Each team prepares only its own recovery and negotiating position for the first sixty minutes, then the class convenes as the board. The tensions this creates among groups are more instructive than a single "right" answer.
+
+### Solutions
+
+All results below were computed with Python and are rounded to one decimal place (percentages to one decimal place, multiples to two) unless stated. Small differences from hand calculation arise from rounding of intermediate values.
+
+#### Question 1: Diagnosis
+
+*Step 1: leverage.* Funded debt is ABL $38.0 + Term Loan $178.5 + Notes $120.0 = $336.5 million.
+
+```
+Total debt / reported EBITDA   = 336.5 / 29.7  = 11.33x
+Total debt / Adjusted EBITDA   = 336.5 / 38.0  =  8.86x
+Net debt / Adjusted EBITDA     = (336.5 - 14.2) / 38.0 = 322.3 / 38.0 = 8.48x
+First-lien net debt            = 38.0 + 178.5 - 14.2 = 202.3
+First-lien net / Adjusted      = 202.3 / 38.0  =  5.32x   (covenant: 4.25x)
+First-lien net / reported      = 202.3 / 29.7  =  6.81x
+First-lien net / lender-adj.   = 202.3 / 34.7  =  5.83x
+```
+
+*Step 2: first-lien covenant test.* At 4.25 times, the EBITDA needed to comply is 202.3 / 4.25 = $47.6 million. Even on management's $38.0 million, the shortfall is $9.6 million, or 20 percent. On reported EBITDA the shortfall is $17.9 million. The covenant is breached on every definition; there is no accounting argument that cures it.
+
+*Step 3: coverage.* Cash interest is $32.3 million; scheduled amortisation is $1.8 million; capex $15.0 million; cash taxes $0.8 million.
+
+```
+EBITDA / cash interest              = 29.7 / 32.3 = 0.92x  (Adjusted: 38.0 / 32.3 = 1.18x)
+(EBITDA - capex) / cash interest    = 14.7 / 32.3 = 0.46x
+Fixed charge coverage (reported)    = (29.7 - 15.0 - 0.8) / (32.3 + 1.8) = 13.9 / 34.1 = 0.41x
+Fixed charge coverage (Adjusted)    = (38.0 - 15.0 - 0.8) / 34.1 = 22.2 / 34.1 = 0.65x
+Fixed charge coverage (lender-adj.) = (34.7 - 15.0 - 0.8) / 34.1 = 18.9 / 34.1 = 0.55x
+```
+
+The covenant minimum is 1.10 times. Even management's most generous figure is barely over half of it. Cash interest exceeds EBITDA less capex by $17.6 million a year.
+
+*Step 4: decremental margin.*
+
+```
+Change in revenue FY2024 to LTM  = 412.0 - 468.0 = -56.0
+Change in EBITDA                 = 29.7 - 62.4   = -32.7
+Decremental margin               = 32.7 / 56.0   = 58.4%
+```
+
+By sub-period: from FY2024 to FY2025 revenue fell 27.0 and EBITDA fell 18.3 (62.4 - 44.1), a decremental margin of 67.8 percent; from FY2025 to the LTM period revenue fell 29.0 and EBITDA fell 14.4 (44.1 - 29.7), a decremental margin of 49.7 percent. The average over the whole period is 58.4 percent. This is the signature of a high fixed-cost business: roughly 58 cents of every lost revenue dollar disappeared from EBITDA.
+
+*Step 5: economic versus financial distress.* The evidence points to both.
+
+- *Economic distress* is real: gross margin has fallen from 26.1 to 22.0 percent, EBITDA has halved, and the company has lost pricing power with OEM customers. The business needs operational repair (cost take-out, footprint rationalisation) regardless of how it is financed.
+- *Financial distress* is dominant: the business's going-concern value (about $205 million, Question 3) is well above its liquidation value (about $141 million net, Question 4), so it is worth more alive than dead. But the debt of $336.5 million is 164 percent of that value. At a sustainable 4.0 times leverage on 2028E lender-case EBITDA of $34.7 million the business can carry about $138.8 million of debt; excess debt is therefore about $197.7 million. No amount of operating improvement within a reasonable period closes that gap.
+
+*Implication.* Because going-concern value exceeds liquidation value and the problem is mainly the balance sheet, the right answer is reorganisation, not liquidation. Because the business also needs operating repair, the restructuring must come with new money and a credible operating plan, not merely a debt swap. A restructuring that fixes only the capital structure (Option A at 6.1 times 2027E EBITDA, Question 5) leaves the company exposed to a second filing.
+
+#### Question 2: Liquidity runway
+
+*Step 1: find the breaches.* Ending cash by week (Table 5): 12.8, 14.7, 13.1, 9.9, **7.8**, 2.0, **(0.5)**, (0.2), (4.3), (9.7), (12.3), (11.6), (13.9).
+
+- Cash first falls below the $8.0 million minimum in **week 5** (week ending 11 December, cash $7.8 million).
+- Cash first turns negative in **week 7** (week ending 25 December, cash negative $0.5 million), following the Notes coupon in week 6.
+- The runway is therefore about **four to five weeks** to the operating minimum and about **six to seven weeks** to zero. Roughly four of those weeks are before the 4 December expiry of the forbearance agreement.
+
+*Step 2: decompose the burn.* Cumulative net cash flow over 13 weeks is negative $28.1 million.
+
+```
+Operating cash flow (receipts - payroll - vendors - opex and taxes):
+  93.4 - 23.8 - 56.1 - 14.1 = -0.6
+Capex                        =  -3.9
+Debt service                 = -11.1  (Term Loan 4.5 + Notes 5.7 + ABL 0.9)
+Pension                      =  -6.0
+Professional fees            =  -6.5
+Total                        = -28.1
+Non-operating burn           = 27.5 / 28.1 = 97.9% of the total
+```
+
+The core business is roughly cash-neutral over the quarter; the cash crisis is almost entirely created by debt service, the pension contribution and the advisers. That is further evidence of financial rather than operating distress, and it explains why a standstill on debt service would cure most of the immediate problem.
+
+*Step 3: would the ABL have been enough?* To keep $8.0 million of minimum cash the company would need to draw (8.0 minus ending cash) in each week. The peak requirement is in week 13: 8.0 - (-13.9) = **$21.9 million**. Against availability of $24.0 million, headroom would be only **$2.1 million** at week 13. The ABL is, however, unavailable: the default blocks draws. Also, availability is not static; it moves with the borrowing base. Each $1 of lower eligible receivables cuts availability by about $0.85 (at an 85 percent advance rate). Receipts are falling, so a decline of just $2.5 million in eligible receivables would eliminate the headroom. Even in the best case, the ABL merely postpones the problem past February.
+
+*Step 4: the vendor-terms effect.* If vendor payments had stayed at $3.9 million a week, the 13-week total would have been 13 x 3.9 = $50.7 million rather than $56.1 million, a difference of $5.4 million. Ending cash at week 13 would have been negative $8.5 million rather than negative $13.9 million. The funding requirement to restore the $8.0 million minimum would have been $16.5 million rather than $21.9 million. Tightening vendor terms thus explains 5.4 / 21.9 = **24.7 percent** of the peak shortfall. This is a classic distress spiral: the weaker the credit looks, the more cash it needs, which makes it look weaker. It is also the reason that a credible, early announcement of a financing solution is worth more than its direct cost.
+
+#### Question 3: Valuation
+
+*Step 1: discounted cash flow.* Free cash flow equals EBITDA minus cash taxes at 25 percent of positive EBIT, minus capex, minus the increase in net working capital (20 percent of the change in revenue). Mid-year discounting at 11.5 percent. The terminal value uses the 2031E free cash flow grown at 2.0 percent: TV = FCF2031 x (1 + g) / (WACC - g).
+
+| Lender case | 2027E | 2028E | 2029E | 2030E | 2031E |
+|---|---:|---:|---:|---:|---:|
+| Revenue | 395.0 | 408.0 | 420.0 | 432.0 | 445.0 |
+| EBITDA | 27.7 | 34.7 | 39.9 | 43.2 | 46.7 |
+| Less D&A | (23.0) | (22.0) | (22.0) | (21.0) | (21.0) |
+| EBIT | 4.7 | 12.7 | 17.9 | 22.2 | 25.7 |
+| Cash tax at 25% | (1.2) | (3.2) | (4.5) | (5.6) | (6.4) |
+| Capex | (14.0) | (15.0) | (16.0) | (16.0) | (17.0) |
+| Working capital cash effect (20% of revenue change) | 3.4 | (2.6) | (2.4) | (2.4) | (2.6) |
+| Free cash flow | 15.9 | 13.9 | 17.0 | 19.3 | 20.7 |
+| Discount factor (mid-year) | 0.9470 | 0.8494 | 0.7618 | 0.6832 | 0.6127 |
+| PV of FCF | 15.0 | 11.8 | 13.0 | 13.2 | 12.7 |
+
+Sum PV FCF 65.7; terminal FCF 20.69; TV 222.2; PV TV 136.1; EV 201.8; DF4.5 0.6127
+
+| Management case | 2027E | 2028E | 2029E | 2030E | 2031E |
+|---|---:|---:|---:|---:|---:|
+| Revenue | 405.0 | 424.0 | 445.0 | 465.0 | 484.0 |
+| EBITDA | 32.4 | 40.3 | 46.7 | 53.5 | 58.1 |
+| Less D&A | (23.0) | (22.0) | (22.0) | (21.0) | (21.0) |
+| EBIT | 9.4 | 18.3 | 24.7 | 32.5 | 37.1 |
+| Cash tax at 25% | (2.3) | (4.6) | (6.2) | (8.1) | (9.3) |
+| Capex | (15.0) | (16.0) | (17.0) | (18.0) | (19.0) |
+| Working capital cash effect (20% of revenue change) | 1.4 | (3.8) | (4.2) | (4.0) | (3.8) |
+| Free cash flow | 16.4 | 15.9 | 19.3 | 23.4 | 26.0 |
+| Discount factor (mid-year) | 0.9470 | 0.8494 | 0.7618 | 0.6832 | 0.6127 |
+| PV of FCF | 15.6 | 13.5 | 14.7 | 16.0 | 15.9 |
+
+Sum PV FCF 75.7; terminal FCF 26.01; TV 279.3; PV TV 171.1; EV 246.8; DF4.5 0.6127
+
