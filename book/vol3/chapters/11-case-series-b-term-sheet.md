@@ -8,7 +8,7 @@ On the morning of Tuesday, November 3, 2026, Priya Raman closed her laptop in th
 
 Priya is the cofounder and chief executive officer of Nimbus Robotics, Inc. She holds the chair of a four-person board. Her cofounder, Tomás Vidal, is the chief technology officer. The two founded the company in 2021, after Priya spent seven years running operations at a regional third-party logistics provider and Tomás spent six years in a university lab building grasping and manipulation systems. Their thesis was simple and, at the time, unfashionable: that warehouse picking robots would only reach mid-sized distributors if the customer did not have to buy them. Nimbus therefore sells its pick-and-place robot cells in two ways. A customer can buy the hardware outright, or, more commonly now, the customer can sign a three-to-five-year Robots-as-a-Service (RaaS) agreement and pay a monthly fee per deployed cell that bundles hardware, software, remote monitoring, and field service.
 
-That choice of model explains the company's financing history and its current predicament. RaaS revenue is attractive: it is recurring, it has high lifetime value, and it makes customers sticky. But RaaS also means that Nimbus pays for the robot up front, builds it, ships it, installs it, and then collects the cost back over years. The faster the company grows, the more cash it consumes. By the end of September 2026, Nimbus had 41 customers, about 620 robot cells deployed, trailing twelve-month revenue of roughly $22 million, and $8.4 million in cash. The monthly net burn, including debt amortization, was running near $1.2 million and rising. Management's own model, which the board had reviewed in October, showed cash falling below the $3.0 million minimum-cash covenant in the company's venture debt facility in February 2027.
+That choice of model explains the company's financing history. RaaS revenue is recurring and sticky, but Nimbus pays for each robot up front and collects the cost over years, so faster growth consumes more cash. By the end of September 2026, Nimbus had 41 customers, about 620 robot cells deployed, trailing twelve-month revenue of roughly $22 million, and $8.4 million in cash. Monthly net burn, including debt amortization, was near $1.2 million and rising. Management's model showed cash falling below the $3.0 million minimum-cash covenant in the company's venture debt facility in February 2027.
 
 Nimbus was therefore not negotiating from a position of strength. It was, however, negotiating from a position of momentum. Revenue had grown 109 percent in fiscal 2025 and was on track to grow about 87 percent in fiscal 2026. Net revenue retention among RaaS customers was 128 percent. Two large customers had signed expansion orders in the third quarter. In September, Priya had allowed an introductory conversation with a growth-stage investor she had met at a logistics conference, and by mid-October two funds were competing.
 
@@ -299,8 +299,7 @@ After working through this case, students should be able to:
 5. Evaluate term sheets under uncertainty using probability-weighted outcomes and a simple risk-aversion adjustment, and test conclusions against alternative probability assumptions.
 6. Apply broad-based weighted-average and full-ratchet anti-dilution formulas and trace their effect on founder ownership.
 7. Size an option pool from a hiring plan rather than from a convention.
-8. Connect financing terms to the operating plan, in particular runway, covenants, and the probability of a down round.
-9. Communicate a negotiation recommendation to a board with divided interests.
+8. Connect financing terms to the operating plan and communicate a recommendation to a divided board.
 
 ### Suggested class plan (90 minutes)
 
@@ -313,7 +312,7 @@ After working through this case, students should be able to:
 | 1:05 to 1:15 | Q7, Q8, Q9: pool sizing, anti-dilution, runway (assign as pre-work or discuss briefly) | Show the second-order terms |
 | 1:15 to 1:30 | Q10: students pitch recommendations; instructor reveals the sensitivity findings and repoll | Close the loop; compare to the opening poll |
 
-Instructors with a 60-minute slot can assign Questions 1, 2, 7, 8, and 9 as pre-work and spend the session on Questions 3 to 6 and 10. The waterfall is best done with a spreadsheet. A reference Python function is described at the end of the solution to Question 3.
+Instructors with 60 minutes can assign Questions 1, 2, 7, 8, and 9 as pre-work.
 
 ### Solution to Question 1: price and capitalization
 
@@ -375,14 +374,7 @@ The step-up from the Series A price of $5.00 is 1.56x for Aldergate and 1.90x fo
 
 ### Solution to Question 3: the waterfall
 
-**Method.** The waterfall proceeds in four steps.
-
-1. Add the option exercise proceeds (1,000,000 × $1.40 = $1.4 million) to the exit value if the common per-share price exceeds $1.40, and treat the options as outstanding common shares. Otherwise ignore them.
-2. Pay the senior preference. Under Aldergate it is $40.0 million to the Series B. Under Brightwater it is 1.5 × $40.0 million = $60.0 million.
-3. Pay the Series A ($13.0 million) and Seed ($3.0 million) preferences pari passu, but only for those series that do not convert.
-4. Distribute the remainder per share among common stock, options, converted preferred, and (under Brightwater) the Series B on an as-converted basis, until the Series B reaches the participation cap of $120.0 million in total.
-
-Each non-participating series converts if and only if the common per-share value exceeds its original issue price (Seed $2.50, Series A $5.00, Aldergate Series B $7.8182) when it converts. We solve for the consistent set of conversion decisions.
+**Method.** (1) Add option exercise proceeds (1,000,000 x $1.40 = $1.4 million) to the exit value if the common per-share price exceeds $1.40. (2) Pay the senior preference: $40.0 million (Aldergate) or 1.5 x $40.0 = $60.0 million (Brightwater). (3) Pay Series A ($13.0 million) and Seed ($3.0 million) preferences pari passu for any series that does not convert. (4) Distribute the remainder per share among common, options, converted preferred, and (Brightwater) the participating Series B on an as-converted basis, until the Series B reaches its $120.0 million total cap. A non-participating series converts if and only if the common per-share value exceeds its original price (Seed $2.50, Series A $5.00, Aldergate Series B $7.8182); we solve for the consistent set of decisions.
 
 **Exit of $45 million.**
 Aldergate: the Series B takes its $40.0 million preference. The remaining $5.0 million goes to Series A and Seed pari passu in proportion to their preferences ($13.0 million and $3.0 million): Series A gets $5.0 × 13/16 = $4.06 million and Seed gets $0.94 million. Common receives nothing.
@@ -396,13 +388,12 @@ Brightwater: the Series B takes its $60.0 million preference first. Series A and
 The Series B receives 69 percent of the proceeds with 23.8 percent of the shares.
 
 **Exit of $300 million.**
-Aldergate: all series convert, since the per-share value, $301.4 / 16,116,279 = $18.70, exceeds every conversion price. (The shares are 11,000,000 plus 5,116,279 Series B.) Priya receives $59.85 million, Tomás $48.62 million, early employees $7.48 million, options $17.30 million, Series A $48.62 million, Seed $22.44 million, and the Series B $95.68 million.
-Brightwater: the Series B takes its $60.0 million preference and participates. Participation would give the Series B $60.0 million plus 4,211,332 × the per-share value. The cap limits total proceeds to $120.0 million, so the participation is limited to $60.0 million. The cap binds if the per-share value would exceed $60.0 / 4.211332 = $14.25. With the cap binding, the Series B receives $120.0 million, and the remaining $301.4 - $120.0 = $181.4 million is shared by the other 11,000,000 as-converted shares, $16.49 per share. The Series B would convert only if its as-converted value exceeded $120.0 million, which requires a per-share value of $28.50. At $300 million, as-converted value is $301.4 / 15,211,332 × 4,211,332 = $83.4 million, far below $120.0 million, so it does not convert.
-Priya receives 3,200,000 × $16.49 = $52.77 million, Tomás $42.88 million, early employees $6.60 million, options $15.09 million, Series A $42.88 million (converted), Seed $19.79 million (converted). Founders: $108.47 million under Aldergate versus $95.65 million under Brightwater.
+Aldergate: all series convert; the per-share value is $301.4 / 16,116,279 = $18.70. Priya receives $59.85 million, Tomás $48.62 million, options $17.30 million, Series A $48.62 million, Seed $22.44 million, and the Series B $95.68 million.
+Brightwater: the Series B takes its $60.0 million preference and participates, but participation is limited to $120.0 - $60.0 = $60.0 million, which binds once the per-share value exceeds $60.0 / 4.211332 = $14.25. With the cap binding, the Series B receives $120.0 million and the other 11,000,000 as-converted shares split $301.4 - $120.0 = $181.4 million, or $16.49 per share. The Series B would convert only if its as-converted value exceeded $120.0 million (a per-share value of $28.50); at $300 million that value is $83.4 million, so it does not. Priya receives $52.77 million and Tomás $42.88 million. Founders: $108.47 million (Aldergate) versus $95.65 million (Brightwater).
 
 **Exit of $520 million.**
-Aldergate: all convert; per-share value is $521.4 / 16,116,279 = $32.35. Priya receives $103.53 million, Tomás $84.12 million, and the Series B $165.52 million.
-Brightwater: the as-converted value of the Series B is per-share value × 4,211,332. If it converts, the per-share value is $521.4 / 15,211,332 = $34.28, and the Series B receives $144.35 million, which is more than the $120.0 million cap, so it converts. Priya receives $109.69 million, Tomás $89.12 million, and the Series B $144.35 million. Founders: $187.64 million under Aldergate versus $198.81 million under Brightwater.
+Aldergate: all convert at $521.4 / 16,116,279 = $32.35 per share; Priya receives $103.53 million and Tomás $84.12 million.
+Brightwater: if the Series B converts, the per-share value is $521.4 / 15,211,332 = $34.28 and it receives $144.35 million, more than the $120.0 million cap, so it converts. Priya receives $109.69 million and Tomás $89.12 million. Founders: $187.64 million (Aldergate) versus $198.81 million (Brightwater).
 
 **Combined founder proceeds across exit values ($ millions):**
 
@@ -456,7 +447,7 @@ E* = $376.6 million
 
 At $376.6 million the founders receive $136.04 million under either term sheet (check: 5.8 × 378.0 / 16.116279 = 136.04). Remarkably, the Series B receives exactly $120.0 million under both at that point, so the other holders receive identical amounts. Above $376.6 million, Brightwater is better for the founders. The advantage is small: $3.9 million at $400 million, $11.2 million at $520 million, and $21.4 million at $1 billion.
 
-**Conversion thresholds.** The Aldergate Series B converts when the common per-share value reaches its $7.8182 conversion price: with all series converted, $7.8182 × 16,116,279 = $126.0 million of total distributable value, or an exit of $126.0 - $1.4 = about $124.6 million. The Brightwater Series B converts when its as-converted share exceeds $120.0 million, which requires a per-share value of $120.0 / 4,211,332 = $28.50 and a distributable value of $28.50 × 15,211,332 = $433.5 million, or an exit of about $432 million.
+**Conversion thresholds.** Aldergate's Series B converts at an exit of about $124.6 million (all converted: $7.8182 x 16,116,279 = $126.0 million less $1.4 million option cash). Brightwater's converts at about $432 million (per-share value $120.0 / 4,211,332 = $28.50; $28.50 x 15,211,332 = $433.5 million less $1.4 million).
 
 **Where Aldergate's advantage peaks.** The founders' advantage under Aldergate is largest in the zone of modest outcomes. It is about $19.5 million at $100 million, peaks at about $21.0 million at an exit near $124.5 million (just where Aldergate's Series B converts), and is still $19.6 million at $150 million and $12.8 million at $300 million. The mid-range exits of $80 to $250 million cost the founders $17 to $21 million under Brightwater.
 
@@ -558,7 +549,7 @@ With the right-sized pool, the Series B price would be $140.0 million / 17,430,0
 
 Brightwater's 14 percent pool is 5.1 points larger than needed. If Brightwater's pool were 10 percent, the founders' ownership would be 34.90 percent, 2.11 points higher than at 14 percent.
 
-**Economic cost if the pool is unused.** Unallocated pool shares are cancelled at exit, so the true cost of an oversized pool is not the lost ownership points, but the lower Series B price, which gives the Series B more shares. In the plan scenario ($520 million, all series converted), the founders would receive $189.24 million under a right-sized Aldergate pool (8.32 percent), compared with $187.64 million with the 10 percent pool, a difference of only $1.60 million. Under Brightwater with a right-sized pool, founders would receive $203.09 million at $520 million versus $198.81 million, a difference of $4.28 million. The 14 percent pool costs real money mainly because it lowers the price at which Brightwater buys, not because the pool is wasted. Tomás's instinct to treat the pool as free if unused is therefore half right: unused pool shares disappear at exit, but the price paid for them does not come back.
+**Economic cost if the pool is unused.** Unallocated shares are cancelled at exit, so the true cost of an oversized pool is the lower Series B price, which gives the Series B more shares. At the $520 million plan exit, founders would receive $189.24 million under a right-sized Aldergate pool versus $187.64 million (a $1.60 million difference), and $203.09 million under a right-sized Brightwater pool versus $198.81 million ($4.28 million). Unused pool shares disappear at exit, but the price paid for them does not come back.
 
 **Smaller pool with a later top-up.** A 6 percent pool under Aldergate's structure (pool 1,008,734 shares; price $8.3273; founders 34.50 percent) covers about 70 percent of the 24-month need, roughly 17 months of hiring, and gives founders 2.11 more points at closing. The risk is a pre-money pool top-up demanded by the Series C investor when the company's leverage may be weaker. A reasonable position is a pool sized to 12 to 18 months of hiring (about 7 to 8 percent), with the plan documented for the investor.
 

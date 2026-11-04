@@ -200,7 +200,7 @@ Value to Calder           = 205.9 + 963.2          = 1,169.1
 Cost of the carve-out     = 1,204 − 1,169.1        =  34.9 (2.9% of Consumer equity)
 ```
 
-The transaction costs 34.9 million, equal to 14.5 percent of the 240.8 million of fair value sold. If the discount closes after listing, as the market learns about the company, the retained stake could re-rate and recover the 24.1 million discount on the retained shares' mark; the gross spread of 10.8 is a permanent cost. This is why carve-outs are most valuable when there is a specific reason to sell now: to fund a high-return investment, to reduce a costly debt load, or to create the price discovery needed for a later spin.
+The transaction costs 34.9 million, equal to 14.5 percent of the 240.8 million of fair value sold. The 24.1 million discount is a transfer to new investors that may or may not be recovered through re-rating of the retained stake, while the 10.8 million spread is permanent. Carve-outs are therefore most valuable when there is a specific reason to sell now: to fund a high-return investment, to retire costly debt, or to create the price discovery needed for a later spin.
 
 ### 20.4.2 Split-offs
 
@@ -343,3 +343,145 @@ Redemption gives each holder a put option on the stock at the trust value, and t
 ### 20.6.5 Regulation and the post-boom market
 
 After a surge in 2020 and 2021, the SPAC market contracted sharply, with many mergers completed at prices that later fell well below 10.00 and many SPACs liquidating without a deal. Regulators in the United States responded with an accounting statement in 2021 that led many SPACs to treat their warrants as liabilities measured at fair value, and with rules adopted later that sought to align disclosure and liability for SPAC mergers more closely with those of IPOs, including provisions on projections and on the sponsor's compensation and conflicts. The market continues to evolve, and specific provisions should be checked against current rules. The managerial lesson is general: any structure that gives a party a valuable option at negligible cost produces an investor base that exercises the option, and the cost falls on whoever supplies the cash.
+
+## 20.7 Dual-Class Share Structures
+
+### 20.7.1 The structure and the wedge
+
+A **dual-class** (or multi-class) structure issues shares with unequal voting rights. The usual form gives founders or insiders a class with several votes per share (often ten) while public investors hold a class with one vote, or in some cases none. Cash-flow rights (dividends, liquidation) are typically equal per share. The consequence is a **wedge** between control and ownership: insiders can hold a majority of votes while owning a minority of the economic claims.
+
+If a fraction f of the total shares carries v votes per share and is held by the insider, and the remainder carries one vote per share, the insider's voting share is:
+
+```
+Voting share = v·f / (v·f + (1 − f))
+Economic share = f
+Wedge = Voting share − Economic share
+```
+
+The economic ownership needed for 50 percent of votes is f = 1 / (v + 1): about 9.09 percent when v = 10.
+
+**Example 20.8 – Voting power and the private-benefits threshold.** After going public, the founder's company has 100 million shares: 20 million Class B (10 votes each, all held by the founder) and 80 million Class A (1 vote each, public).
+
+```
+Total votes   = 20 × 10 + 80 × 1 = 280 million
+Voting share  = 200 / 280        = 71.4%
+Economic share = 20 / 100        = 20.0%
+Wedge         = 71.4% − 20.0%    = 51.4 percentage points
+```
+
+If the founder sells Class B shares until she holds 10 million (converting the rest to Class A on transfer, a typical feature), then f = 0.10: votes = 10 × 10 + 90 = 190; voting share = 100 / 190 = 52.6 percent, still a majority from a 10 percent economic stake. She loses majority control when f < 9.09 percent: at f = 0.0909, voting share = 0.909 / (0.909 + 0.9091) = 50.0 percent.
+
+*Incentive effect.* Suppose the founder can take an action that gives her private benefits of 1 million but costs the firm x million of value. She bears only her economic share f of the cost. She prefers the action if f × x < 1, that is, x < 1/f.
+
+```
+f = 20%:  x < 5.0 million   (she will destroy up to 5 of firm value to gain 1)
+f = 10%:  x < 10.0 million
+f = 100%: x < 1.0 million   (she internalizes everything)
+```
+
+At f = 15 percent (a 15 million Class B stake) her threshold is 1 / 0.15 = 6.67. The fall in her economic stake therefore *raises* the amount of value she is willing to destroy for a unit of private benefit, while her voting power (which makes her immune to a takeover or a shareholder vote) stays high. This is the agency-cost argument against large wedges; it implicitly assumes that private benefits are material and that she will take value-reducing actions, which is far from universal.
+
+### 20.7.2 The debate
+
+**Arguments for.** *Long-term vision:* founders insulated from quarterly pressure and activist campaigns can invest in projects with a long payoff and a story that the market does not yet appreciate (consistent with the theory of Stein on myopic investors and with the view that founders have private information about their vision). *Founder-specific human capital:* when a founder's skill is the firm's main asset, protecting control can protect value (a point associated with Aghion and Bolton's work on control rights). *Voluntary and priced:* investors know the structure at the IPO, so any entrenchment cost should be reflected in the IPO price, and many such firms have performed well. *Takeover bargaining:* a concentrated holder can bargain for a higher takeover price (but also can refuse a premium offer).
+
+**Arguments against.** *Agency costs and entrenchment:* the wedge reduces accountability, as in Example 20.8. *Value effects:* research by Gompers, Ishii and Metrick on US dual-class firms found that firm value tended to fall as the wedge between votes and cash-flow rights widened, though they, like others, acknowledged issues of causality. *Governance fragility over time:* the founder who designed the structure may not be the one who runs the company decades later, and the structure may pass control to heirs or successors without the original justification (Bebchuk and Kastiel argued against *perpetual* dual-class structures on this ground). *Exclusion from certain indices or restrictions by some investors* have, at various times, made dual-class shares less attractive to some funds; index-provider policies on multi-class shares have changed over time.
+
+**What the evidence says.** The evidence is mixed. Some studies find positive effects in the early years after the IPO, particularly for innovative firms, and negative effects as time passes and the founder's vision becomes less distinctive, a pattern that supports the design of *sunset provisions*. No honest summary can claim that dual-class structures are uniformly good or bad; the relevant questions are about *design*.
+
+### 20.7.3 Design features that matter
+
+- **Sunset clauses.** A *time-based* sunset converts high-vote shares to ordinary shares after a set number of years; an *event-based* sunset converts them when the founder leaves, dies, becomes incapacitated, or falls below a minimum economic stake; a *transfer-based* provision converts shares on sale or gift (other than to permitted family vehicles).
+- **Minimum economic ownership.** High-vote shares convert automatically if the holder's economic stake falls below a threshold (say 10 percent), limiting the wedge.
+- **Coattail provisions.** In a takeover, all classes must receive equal consideration, preventing a control premium for the high-vote class only.
+- **Independent directors and approval rights.** Class A shareholders elect a minimum number of directors, or related-party transactions need a majority-of-the-minority vote.
+- **Limits on voting rights.** Some exchanges and regulators permit weighted voting rights only subject to conditions on the ratio, on eligible holders and on sunset or independent governance rules. Several Asian exchanges began permitting weighted voting rights in the late 2010s, subject to such conditions, and rules in other markets have evolved as well, so conditions should be checked locally.
+- **Non-voting shares.** A class with no vote at all raises the wedge even higher and is controversial among institutional investors.
+
+### 20.7.4 Valuing the vote
+
+If voting rights carried no value, both classes would trade at the same price. In practice the high-vote class often trades at a modest premium, which is a market-based estimate of the value of control. Care is needed: the premium also reflects differences in liquidity and conversion rights. Where the vote premium is large, it indicates that controlling shareholders can extract private benefits; where it is small, it suggests the market is not worried (Zingales; Nenova). For an acquirer, the structure means the deal can be approved only with the controller's consent, so the control holder's willingness to sell, and the price relative to public holders, are central to the negotiation.
+
+## 20.8 Choosing the Route: A Managerial Framework
+
+Table 20.1 summarizes how the alternatives compare on the dimensions most often decisive.
+
+| Route | Cash raised | Cost profile | Control retained | Key risk |
+|---|---|---|---|---|
+| Asset sale | Yes (after tax) | Tax on gain; transaction costs | None over the business | Tax leakage; buyer certainty |
+| Spin-off | No (except via pre-spin debt) | One-time separation costs; dis-synergies | Shareholders own both | Flowback pressure; stranded costs |
+| Equity carve-out | Yes (minority) | IPO discount and spread | Parent keeps control | Governance conflicts |
+| IPO | Yes | Spread plus underpricing (about 20% or more of proceeds in Example 20.5) | Founder control with dual-class | Market window; price risk |
+| Direct listing | Limited or none | Low fees; pricing risk | High | No committed capital |
+| SPAC | Depends on redemptions | Promote and warrants (about 70% of gross cash in Example 20.6 at 50% redemptions) | Negotiated | High redemptions; sponsor incentives |
+
+A practical sequence for a CFO is: (1) establish the *objective* (raise cash, create a pure play, achieve control, gain speed); (2) estimate the *value* of each route net of tax and costs, as in Examples 20.1 to 20.7; (3) test *robustness* to market conditions, since many routes depend on windows of investor appetite; (4) design *governance* to deal with the conflicts each route creates (controlling shareholders, sponsors, spun-off companies' takeover defences); and (5) plan *communication and execution*, including investor days, transition services and separation of IT and finance functions. Boards should resist the temptation to select a route merely because it is fashionable in a given year.
+
+## Case Study: Halvorsen Mobility
+
+*(Illustrative scenario. Halvorsen Mobility and all people and figures are fictional.)*
+
+Halvorsen Mobility is a privately held developer of electric delivery vehicles and charging software, founded eight years ago by Ingrid Halvorsen, who owns 62 percent of the shares. The remaining shares are held by employees (10 percent) and three venture investors (28 percent). The company has revenue of 420 million, growing 40 percent per year, negative free cash flow of 90 million, and cash of 130 million, enough for about 18 months. It needs 350 million of new capital over the next two years to build a second plant and scale software.
+
+Three routes are on the table. Bankers propose an IPO of 17.5 million shares at 20 (350 million primary), with a gross spread of 6 percent, other costs of 7 million and, based on comparable recent IPOs, an expected first-day return of 18 percent. A SPAC sponsor offers a merger at an agreed pre-money equity value of 1.6 billion (160 million shares at 10.00) in a SPAC with 25 million public shares and a 250 million trust, founder shares of 6.25 million, 8.33 million public warrants and 7 million private warrants (strike 11.50), a deferred underwriting fee of 8.75 million, and expected transaction costs of 18 million. The sponsor will arrange a PIPE of 100 million at 10.00 per share, but has warned that redemptions in recent comparable deals have exceeded 70 percent. A third adviser proposes a direct listing, which would raise no primary capital unless the exchange permits it, but would cost about 20 million in fees.
+
+Ingrid also wants to control the company after listing. She proposes a dual-class structure: all her shares become Class B with ten votes each, public shares carrying one vote, with no sunset clause. The venture investors accept the structure only if a ten-year sunset and automatic conversion on transfer are included. Meanwhile an anchor institution that is willing to buy 100 million of shares in the IPO has told the bankers that it will not participate in a company with perpetual dual-class stock.
+
+The board also notes a trade-off in the software business: management believes a subsidiary, Halvorsen Charge, whose revenues are largely recurring, could be valued by software investors at a much higher multiple than the vehicle business and could be spun or carved out after the listing. They are unsure whether the investors who buy the vehicle business would accept a later carve-out of the most valuable part.
+
+Finally, the CFO has noticed that the SPAC sponsor would receive founder shares equal to about 20 percent of the post-IPO SPAC shares (6.25 million shares of 31.25 million) for a nominal price, and private warrants that cost 7 million. She wants to know what the true cost of capital of the SPAC route is.
+
+**Discussion Questions**
+
+1. Compute the total cost of the IPO (spread, expenses and money left on the table) as a percentage of the 350 million raised. Compare it with the direct listing at 20 million, and determine how far below fair value the opening price would have to be for the direct listing to cost as much as the IPO.
+2. For the SPAC, compute the net cash delivered and the number of shares outstanding at 0 percent and 70 percent redemptions with the 100 million PIPE, and the net cash per share. Show how the sponsor's economics (6.25 million founder shares, 7 million of private warrants) change the cost of capital as redemptions rise. What changes to the structure would you negotiate?
+3. Ingrid holds 62 percent of the company. If she converts all her shares to Class B and the post-IPO share count is the pre-IPO count plus the new IPO shares, compute her economic ownership and voting power after the IPO. What combination of sunset provisions, coattails and director rights would you propose to reconcile her wish for control with the anchor investor's objection?
+4. Discuss the proposed later separation of Halvorsen Charge. Which route (spin, carve-out, sale) would you recommend, what information would you provide to IPO investors now, and what tax and governance issues does the dual-class structure create for a later carve-out?
+
+## Key Takeaways
+
+- Separations create value only if the business is worth more to someone else, or on its own, than inside the parent after dis-synergies, stranded costs and one-time costs; a headline conglomerate discount is a gross, not a net, figure.
+- In Calder's sum-of-the-parts, a 600 million gross discount shrinks to a 306 million net gain, and the equity gain (12.75 percent) is larger than the enterprise gain (7.8 percent) because of leverage.
+- Tax basis drives the sale-versus-spin choice: a taxable sale must clear a price hurdle equal to the tax cost, whereas a qualifying spin can avoid corporate tax but restricts later transactions.
+- The logic of tax-free spin-offs is that they are genuine reorganizations rather than disguised sales or dividends; the conditions (control, active business, business purpose, continuity, limits on subsequent acquisitions) differ by jurisdiction and must be verified with tax counsel.
+- Spin-offs require deliberate allocation of debt, basis, pensions and contracts, and often suffer temporary flowback selling.
+- Equity carve-outs raise cash and create a market price while retaining control, but impose IPO costs and a controlled-company governance conflict.
+- IPOs impose spread plus underpricing, which together can cost a fifth or more of proceeds; direct listings reduce explicit costs but offer no committed capital and carry pricing risk.
+- SPAC economics are driven by the promote, warrants and redemptions; at high redemptions the effective cost of cash can far exceed that of an IPO, and sponsors profit even when public holders lose.
+- Dual-class structures create a wedge between votes and cash-flow rights; the evidence is mixed, and design features (sunsets, coattails, minimum stakes, independent directors) determine whether they protect vision or entrench control.
+- The choice among routes should follow from the objective, a value comparison net of tax and costs, robustness to market conditions and a governance design that addresses the conflicts each route creates.
+
+## Review Questions
+
+1. List four motivations for corporate separation and four costs that may offset them.
+2. Why does tax basis matter so much in the sale-versus-spin decision? Derive the sale price that makes a taxable sale equivalent to a tax-free spin.
+3. In general terms, why do many tax systems allow spin-offs to be tax-free, and what kinds of conditions do they impose?
+4. Why is the "conglomerate discount" a gross rather than a net measure of value creation from separation? What adjustments are needed?
+5. What is flowback, and how should management interpret weak early trading after a spin?
+6. Compare a spin-off, an equity carve-out and a split-off in terms of cash raised, control and tax treatment.
+7. Explain underpricing in IPOs and why a direct listing avoids part, but not all, of that cost.
+8. Describe the roles of the founder shares, warrants, trust account and redemption right in a SPAC. Why do redemptions raise the effective cost of cash to the target?
+9. Why does the sponsor profit at a post-merger price far below 10.00? What changes to the structure address this?
+10. Define the wedge in a dual-class structure and summarize two arguments for and two against such structures. What are sunset provisions?
+
+## Problems
+
+1. **Sale versus spin.** A subsidiary has a tax basis of 400 million. A buyer offers 1,500 million in cash; the tax rate on gains is 21 percent. A tax-free spin would deliver stand-alone value of 1,350 million. Compute the after-tax proceeds of the sale, which route is better, and the sale price that would equate the two routes.
+2. **Sum of the parts.** A conglomerate has Division A with EBITDA 200 (peer multiple 8x) and Division B with EBITDA 120 (peer multiple 11x); its current enterprise value is 2,500, net debt 1,000 and 80 million shares. Separation causes dis-synergies of 10 EBITDA (capitalize at 9x) and one-time costs of 60. Compute the SOTP, the gross discount, net enterprise gain, and value per share before and after.
+3. **Basis allocation.** A shareholder holds one share with a tax basis of 30. After a spin-off, the continuing company trades at 40 and the spun-off company at 20 per original share. Allocate basis and compute the gain if she sells the spun-off share at 25.
+4. **SPAC net cash.** A SPAC has 10 million public shares at 10.00 (trust 100 million), founder shares of 2.5 million, no PIPE, a deferred fee of 3.5 million and other costs of 6 million. The target's pre-money equity value is 400 million (40 million shares at 10.00). With 70 percent redemptions, compute net cash, total shares, and value per share ignoring warrants.
+5. **Sponsor payoff.** The sponsor in Problem 4 owns 2.5 million founder shares (cost 25,000) and 3 million private warrants (cost 1.00 each). If the post-merger share price is 8.00 and each warrant is worth 1.00, compute the sponsor's value and profit, and the share price at which the founder shares alone break even.
+6. **Dual-class.** A company has 100 million shares, of which 15 million are Class B with 10 votes held by the founder, and 85 million are Class A with one vote. Compute the founder's economic and voting shares, the wedge, and the value-destruction threshold x < 1/f for a unit of private benefit.
+7. **IPO versus direct listing.** An IPO sells 10 million shares at 25; the gross spread is 5.5 percent, other expenses 4 million, and the first-day return 18 percent. A direct listing costs 14 million. Compute the total IPO cost and the percentage of proceeds, and the saving from the direct listing at fair opening price.
+8. **Warrant dilution.** Using Black-Scholes, value a warrant with S = 10, K = 11.50, T = 5 years, r = 4 percent, σ = 35 percent. Compute the value of 12 million warrants.
+
+### Answers to Selected Problems
+
+1. Tax = 0.21 × (1,500 − 400) = 231; after-tax proceeds = 1,269. The spin (1,350) is better by 81. Equivalence price P solves P − 0.21(P − 400) = 1,350, so 0.79P + 84 = 1,350 and P = 1,602.5.
+2. SOTP = 200 × 8 + 120 × 11 = 1,600 + 1,320 = 2,920; gross discount = 2,920 − 2,500 = 420. Net EV = 2,920 − 90 − 60 = 2,770; gain = 270 (10.8% of 2,500). Equity before = 1,500 → 18.75 per share; after = (2,770 − 1,000) / 80 = 22.13 per share.
+3. Total value = 60; weights 2/3 and 1/3; basis 20.00 (continuing) and 10.00 (spun-off). Sale of the spun-off share at 25 gives gain 15.00.
+4. Public shares remaining = 3.0 million; trust cash = 30.0; net cash = 30 − 3.5 − 6 = 20.5. Total shares = 3 + 2.5 + 40 = 45.5 million. Value per share = (400 + 20.5) / 45.5 = 9.24.
+5. Sponsor value = 2.5 × 8 + 3 × 1.00 = 20 + 3 = 23.0 million; investment = 3.025 million; profit = 19.975 million. Founder shares alone break even at 3.025 / 2.5 = 1.21 per share.
+6. Economic share = 15%; votes = 150 / (150 + 85) = 63.8%; wedge = 48.8 points; threshold 1 / 0.15 = 6.67 (she acts if x < 6.67 per unit of private benefit).
+7. Gross proceeds 250; spread 13.75; other 4.0; money left on table 0.18 × 250 = 45.0; total 62.75 = 25.1% of proceeds. Direct listing at fair opening price costs 14.0; saving = 48.75.
+8. d1 = [ln(10/11.5) + (0.04 + 0.06125) × 5] / (0.35 × 2.2361) = (−0.13976 + 0.50625) / 0.78262 = 0.4683; d2 = −0.3143; N(d1) = 0.6802, N(d2) = 0.3766; warrant = 10 × 0.6802 − 11.5 × e^(−0.2) × 0.3766 = 6.802 − 9.4155 × 0.3766 = 6.802 − 3.546 = 3.26. Value of 12 million warrants = about 39.1 million.

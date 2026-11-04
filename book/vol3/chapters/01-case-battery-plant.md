@@ -299,7 +299,7 @@ WACC = E/V × ke + D/V × kd × (1 − t)
 
 The equity part contributes 8.59 points and the after-tax debt part 1.57 points. For use in Question 9, the unlevered cost of capital is 4.0% + 1.1388 × 5.5% = 10.26%.
 
-**Why not Helios's own inputs?** Helios's present structure is about 13% debt to total capital (930 / (6,100 + 930)), and its beta reflects mature plants at Brightwater and Corrin Valley with regulated-looking utility customers and contracted volumes. Meridian is a single-site greenfield plant selling into a falling-price market. The right discount rate depends on the risk of the project's cash flows, not on the name of the company that undertakes it (Volume 1, Chapter 11). The target 30% leverage is a project-appropriate structure, not Helios's current one. **The 10% hurdle** has no traceable derivation, and a 0.2-point difference is small here, but an untraced hurdle rate gives no guidance when risk differs across projects, and it hides the fact that this project is riskier than average. A more careful instructor will note that 10.2% might even be low for a greenfield cell plant, and that raising it by a point lowers NPV by about $90M (Question 6).
+**Why not Helios's own inputs?** Helios is about 13% debt-financed, and its beta reflects mature plants with contracted volumes. Meridian is a greenfield single-site plant in a falling-price market. The discount rate depends on the risk of the project's cash flows, not on the sponsor's name (Volume 1, Chapter 11), and 30% is a project-appropriate structure. The 10% hurdle has no traceable derivation. It is close here, but an untraced hurdle gives no guidance when risk differs across projects, and each added point of discount rate costs about $90M of NPV (Question 6).
 
 ### Question 2 solution: Base-case cash flows without subsidies
 
@@ -407,11 +407,11 @@ The average cost falls from $31.88 in Year 2 to $21.34 in Year 3 and $14.75 in Y
 
 At the base rate of 85%, NPV with subsidies is $115M. Each one-point worsening of the learning rate removes about $(52)M of NPV (reading the sign as a loss). At the regression estimate of 86.3% the NPV is $45M, and at 87.1% the NPV is about $1M, so the subsidised project breaks even at a learning rate of roughly 87%. Without subsidies, even an 80% learning rate leaves NPV at $(537)M less than zero.
 
-**(d) Why the learning rate may be overstated and how the board should use it.** Those who sponsor a project own its assumptions, and a faster learning rate is the cheapest way to improve the numbers. The estimate comes from one plant, in an earlier technology, in a period when yields improved for reasons unrelated to cumulative volume. Learning also requires stable operations, a labour force that stays and a technology that does not change; a switch of chemistry resets the curve. The board should treat 85% as the optimistic end of a range of 85% to 90% and insist on milestones (yield and conversion cost at fixed cumulative volumes) that would reveal slippage early. The sensitivity also supports a management incentive tied to learning milestones, not just to commissioning dates.
+**(d) Overstatement and use.** Sponsors own their assumptions, and a faster learning rate is the cheapest way to improve the numbers. The estimate comes from one plant, an earlier technology and a period when yields improved for other reasons; a change of chemistry would reset the curve. The board should treat 85% as the optimistic end of a range of 85% to 90% and tie management incentives to yield and conversion-cost milestones at fixed cumulative volumes.
 
 ### Question 4 solution: Subsidies
 
-**(a) Value of each instrument.** Each case is the base model with one instrument switched on:
+**(a) Value of each instrument** (base model with one instrument switched on).
 
 | Case | NPV ($M) | Increment vs none |
 | :--- | ---: | ---: |
@@ -423,19 +423,19 @@ At the base rate of 85%, NPV with subsidies is $115M. Each one-point worsening o
 | All three together | 115 | 652 |
 | Interaction (all - sum) |  | (1) |
 
-Reading the table: the capital grant adds $143M. The production credit adds $475M (the present value of the credit cash flows is $475M; the NPV increment is the same to the nearest million because the credit is not taxed and its timing interacts only slightly with the loss carry-forward). The abatement adds $35M (its after-tax present value is lower than the $44M pre-tax-flow figure, because the abated property tax is a deductible expense whose saving is taxed). The three instruments together are worth $652M. The sum of the individual effects is $653M, which differs from the combined effect by $1M. This interaction arises because taxable income changes when more than one instrument is on, and so the timing of loss utilisation changes. The capital grant reduces the depreciable basis, which lowers depreciation and slightly increases tax; the abatement increases taxable income; both effects change how quickly the loss carry-forward is used.
+The grant adds $143M, the production credit $475M (equal to its present value of $475M, since it is untaxed) and the abatement $35M (less than the $44M pre-tax present value because the saved property tax is deductible). Together they add $652M. The $1M interaction arises because the grant lowers depreciation and the abatement raises taxable income, which changes how fast losses are used.
 
-**(b) Tax ambiguities.** If the production credit is taxable, NPV falls from $115M to $2M, a loss of about $113M; the tax treatment of one line item is the difference between a project that creates value and one that merely breaks even. If the grant does not reduce depreciable basis, the NPV rises to $136M, a gain of about $21M. The board should therefore not approve the project until tax counsel has resolved the credit question, ideally through an advance ruling or a statutory clarification.
+**(b) Tax ambiguities.** If the credit is taxable, NPV falls from $115M to $2M, a loss of $113M: one line of tax law separates value creation from break-even. If the grant does not reduce depreciable basis, NPV rises to $136M. The board should require tax counsel's resolution of the credit question, ideally an advance ruling, before approval.
 
-**(c) Repeal risk.** If the credit is lost for production from Year 5 onward, the NPV is $(185)M, a loss of $300M relative to the intact case. The expected NPV with a 30% chance of repeal is:
+**(c) Repeal risk.** If the credit is lost from Year 5, NPV is $(185)M, $300M lower. The expected NPV at 30% is
 
 ```
 E[NPV] = 0.70 × 114.7 + 0.30 × (−185.3) = 80.3 − 55.6 = $24.7M
 ```
 
-The break-even probability of repeal is 114.7 / (114.7 + 185.3) = 38.2%, so any probability of repeal above about 38% makes the expected NPV negative. This is above Bergström's 30% but not by a wide margin, and the 30% is a judgement that nobody can verify. The credit is also an asymmetric risk: it only matters if the plant is in operation when the statute is reviewed, which is exactly when Helios will have the least flexibility.
+The break-even probability is 114.7 / 300.0 = 38%, not far above Bergström's unverifiable 30%. The risk bites when the plant is operating and Helios has least flexibility.
 
-**(d) Share of value from subsidies.** The unsubsidised NPV is −$537M and the subsidised NPV is +$115M. Subsidies contribute $652M. Without them, the project would destroy $537M of value. The subsidised value is just 18% of the subsidy value (115 / 652). In other words, **the whole of the project's positive NPV comes from government support, and 73% of that support comes from one instrument, the production credit, that is subject to legislative review.** Students should resist the conclusion that subsidies are "free": they are payments the Province makes in return for the commitment, and a rational firm accepts them only while the project remains worth building, but a board should know how much of the value rests on a statute.
+**(d) Share from subsidies.** Unsubsidised NPV is −$537M and subsidised NPV +$115M, so subsidies contribute $652M and **all of the positive NPV comes from government support**; 73% of that support (475 / 652) is the production credit, which is subject to review. Subsidies are not free: they are paid for the commitment, but the board should know how much value rests on a statute.
 
 ### Question 5 solution: Tax effects
 

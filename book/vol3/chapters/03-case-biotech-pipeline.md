@@ -550,3 +550,42 @@ Cash paths use the Table 3.9 assumptions. Option I: net proceeds 250 x 0.945 = 2
 Deal B pays $32.0 million more than Deal A if the trial fails; Deal A pays $91.5 million more if the drug is approved. At a 50-50 chance, A is better; B is better only if the board believes the Phase III probability is below about 29 percent (solving 0.285 as the Phase III probability x at which -32.0(1 - x) - 21.5(0.1x) + 91.5(0.9x) = 0). Deal A gives up $238.0 million of retained value in the approval state in return for $136.4 million of certain value in the failure state.
 
 **Choice.** Deal A, after negotiation, in preference to the raise or Deal B. It leaves covenant headroom, costs $0.76 per share in rNPV against a $1.78 dilution cost of the raise, and keeps the US franchise.
+
+#### Question 10: Board recommendation
+
+A strong answer recommends Deal A after renegotiation (see the memo below), quantifies each ask, states the valuation range, names the program to slow, and lists reversal triggers. Values per ask: each $10 million of upfront is worth $6.5 million; one point on every royalty tier $6.0 million; raising cost share from 35 to 50 percent $16.8 million; a Corvane non-compete or reversion right is unpriced and should be treated as insurance against the competing asset in Exhibit 6.
+
+### Sensitivity Discussion
+
+Value per share is most exposed to peak sales and Phase III probability (about $3.6 to $3.9 per share each for the ranges tested), then to the discount rate and launch timing ($2.2 to $2.8). The pricing-policy haircut costs only $0.38 per share because it applies to two plateau years. The benchmark probabilities cost $1.46. The market price of $14.50 sits inside the range created by simply moving two inputs to reasonable alternatives, so the stock is not obviously mispriced. The deal decision, by contrast, is insensitive to the University's clause and sensitive to the Phase III probability only below about 29 percent.
+
+### Common Student Errors
+
+* Discounting success-case flows at a venture rate and then also multiplying by probabilities.
+* Charging scheduled rather than probability-weighted development spending, which understates rNPV.
+* Applying the cumulative approval probability to development costs that occur before the gate.
+* Presenting the $18.42 expected value as a forecast of the share price, rather than as a weighted average of $5.35 and $31.80.
+* Comparing the deal with $18.42 rather than with the feasible alternative, the dilutive raise.
+* Treating the upfront as fully retained, forgetting that 18 percent goes to the University.
+* Omitting the licensor's 3 percent on ex-US sales after the rights are licensed, or applying the royalty step-down to milestones.
+* Forgetting to deduct corporate G&A and the loan in the sum of the parts.
+
+### Alternative Defensible Answers
+
+A class may reasonably use the benchmark probabilities (LUM-101 falls to $607.7 million and equity to $16.97 per share), a rate of 10 or 12 percent, mid-year discounting, or explicit use of the tax-loss carry-forward, which raises every value. A risk-averse board may prefer Deal B for its larger certain cash ($213.2 million against $180.8 million for Deal A before tax) if it believes the Phase III probability is below about 29 percent. A board that believes the stock is cheap might raise a smaller amount and keep global rights; even at a no-discount issue price of $14.50 the raise yields $17.39 per share, below Deal A's $17.66, so the case for retention rests on a belief that rNPV is materially understated. A CEO may reasonably choose retention with a staged raise after the 2027 LUM-205 readout, but must accept a covenant waiver conversation.
+
+### Board Recommendation Memo
+
+**To:** Board of Directors, Lumen Therapeutics, Inc. **From:** Finance. **Date:** 5 November 2026. **Re:** LUM-101 ex-US licensing and 2028 funding (illustrative).
+
+**Recommendation.** Accept the Corvane structure (Deal A), conditional on the three improvements below, and do not raise equity now. Continue all three programs through their next gates.
+
+**Why.** On a risk-adjusted basis Lumen is worth $1,142.1 million, or $18.42 per share (range $15.28 to $20.32 at discount rates of 13 to 10 percent), but that value is bimodal: $31.80 if LUM-101 is approved, about $5 if Phase III fails (probability 50.5 percent including filing rejection). With no action Lumen breaches its $100 million covenant in Q3 2028, before the Phase III result. An equity raise at $12.00 transfers about $110 million of value to new investors. Deal A costs $47.2 million of rNPV against retention, about $0.76 per share, but delivers certain after-tax value of $136.4 million in the failure state, keeps cash at $227.3 million at the end of 2028, and leaves the United States, 60 percent of sales, with Lumen. It is worth $1.02 per share more than the raise and $0.48 more than Deal B.
+
+**Negotiate.** (1) Upfront to $190 million or more: worth about $25.9 million. (2) Cost share to 50 percent: worth $16.8 million. (3) A non-compete or reversion right over Corvane's competing Phase II asset. Secure the University's written confirmation of its reading of Sublicense Income before signing.
+
+**Message to the market.** Publish the rNPV range with the outcome distribution, not a point estimate.
+
+**What would change our view.** A Phase III probability below 29 percent (favoring Deal B); a Corvane refusal of any reversion or diligence protection; an equity window that prices at or above $14.50 with low costs and a belief that rNPV is understated; or a negative rival readout that lifts peak sales toward $1,800 million, which raises the cost of giving away ex-US rights.
+
+**If cash tightens.** Slow LUM-310 first, then the platform; protect the 2027 LUM-205 readout.
