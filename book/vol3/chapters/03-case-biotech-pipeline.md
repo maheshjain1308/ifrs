@@ -432,6 +432,130 @@ Market enterprise value of $562.0 million is 69.8 percent of the model's net ope
 
 * **(a) Uniform scaling.** Multiplying every stage probability by 0.901 (so LUM-101's Phase III becomes 49.6 percent and its filing 81.1 percent) lowers equity value to $899.0 million.
 * **(b) LUM-101 Phase III alone.** Holding all else fixed, a Phase III probability of 38.5 percent for LUM-101 reproduces the price.
-* **(c) Discount rate.** A discount rate of 13.6 percent applied to every program, to the platform-free G&A deduction and to the cash reproduces the price. Equity values per share at other rates are $22.48 at 9 percent, $20.32 at 10, $18.42 at 11, $16.75 at 12 and $15.28 at 13.
+* **(c) Discount rate.** A discount rate of 13.6 percent applied to all program cash flows and to the G&A deduction reproduces the price. Equity values per share at other rates are $22.48 at 9 percent, $20.32 at 10, $18.42 at 11, $16.75 at 12 and $15.28 at 13.
 
 None of the three is obviously unreasonable, which is the point. The market is pricing a mix of lower probabilities, a higher rate and financing dilution risk that the model has not yet charged for. The financing charge is quantified in Question 9.
+
+#### Question 5: Discount rate versus probability
+
+**Table 3.16: Discount rate and probability (US$ millions)**
+
+| Measure | LUM-101 | LUM-205 | LUM-310 |
+|---|---:|---:|---:|
+| Unrisked NPV at 11% (success case, all costs certain) | 1,527.8 | 1,100.2 | 564.8 |
+| rNPV at 11% | 698.0 | 139.8 | 52.6 |
+| Single discount rate on unrisked flows that equals the rNPV | 18.9% | 24.9% | 25.0% |
+| rNPV at 15% | 451.2 | 60.4 | 13.1 |
+| rNPV at 20% | 259.2 | 6.6 | (10.9) |
+
+The venture-style rate that replicates the explicit-probability answer is not one number: it is about 19 percent for a Phase III asset and 25 percent for earlier-stage assets, because the risk that a rate must mimic differs by stage and the rate does not capture the fact that development costs are avoided on failure. Applying a flat 20 percent to unrisked flows would misvalue all three programs, and applying a 20 percent rate together with explicit probabilities, as in the last row, charges for technical failure twice and values LUM-310 below zero.
+
+Is any argument for a rate above 11 percent defensible? Yes, but it is an argument about systematic risk, not technical risk: a financing-risk premium (the covenant), a premium for estimation error in peak sales, or a rate that recognizes that some regulatory and pricing risks are correlated with the economy of healthcare payers. These arguments support a rate of 12 to 13 percent, and Question 4(c) shows that 13.6 percent is what the market's price implies. The discount rate should not be used to price whether the Phase III trial works.
+
+#### Question 6: Sensitivity and outcomes
+
+**Table 3.17: LUM-101 sensitivity (US$ millions, per diluted share)**
+
+| Case | LUM-101 rNPV | Change in rNPV | Change per share (US$) |
+|---|---:|---:|---:|
+| Base | 698.0 | | |
+| Phase III probability 40% | 477.1 | (220.9) | (3.56) |
+| Phase III probability 70% | 919.0 | 221.0 | 3.56 |
+| Peak sales $1,000M | 456.3 | (241.7) | (3.90) |
+| Peak sales $1,800M | 939.2 | 241.2 | 3.89 |
+| Discount rate 13% | 561.2 | (136.8) | (2.21) |
+| Discount rate 9% | 869.2 | 171.2 | 2.76 |
+| Launch delayed one year (patent expiry unchanged) | 555.1 | (142.9) | (2.31) |
+| Pricing-policy haircut (Exhibit 4: 15% price cut on 2039 and 2040 sales) | 674.7 | (23.3) | (0.38) |
+| Benchmark probabilities (50% and 88%) | 607.7 | (90.3) | (1.46) |
+
+Each ten points of Phase III probability moves LUM-101 by $147.4 million, or $2.38 per share, because the approval-state value of $1,527.8 million plus the avoided costs is multiplied by 0.10 x 0.90 plus the filing cost effect. The break-even Phase III probability, at which LUM-101's rNPV is zero, is 7.6 percent. Running the pivotal trial is therefore justified at any plausible probability; what is uncertain is the value of the franchise, not whether to continue.
+
+**Three outcomes.** Equity value outside LUM-101 is LUM-205 139.8 + LUM-310 52.6 + platform 45.0 - G&A 130.3 + cash 412.0 - loan 75.0 = 444.1.
+
+**Table 3.18: Outcomes for LUM-101 (US$ millions, per share)**
+
+| Outcome | Probability | LUM-101 value | Equity value | Per diluted share (US$) |
+|---|---:|---:|---:|---:|
+| Phase III fails (development costs of $90M and $75M only) | 45.0% | (112.1) | 332.0 | 5.35 |
+| Phase III succeeds, filing rejected (adds $50M filing cost) | 5.5% | (141.0) | 303.1 | 4.89 |
+| Approved (unrisked NPV) | 49.5% | 1,527.8 | 1,971.9 | 31.80 |
+| **Probability-weighted** | **100%** | **698.0** | **1,142.1** | **18.42** |
+
+The $18.42 expected value is not a price the stock will ever trade at on the day after the data: it is $5.35 with 45 percent probability and $31.80 with 49.5 percent. That is the answer to Ms. Okafor-Lang's question, and the reason a financing plan must survive the failure state.
+
+#### Question 7: The value of staging
+
+**Table 3.19: Value of the option to stop (US$ millions)**
+
+| Program | rNPV with gating | rNPV if all scheduled cost were spent regardless | Option value |
+|---|---:|---:|---:|
+| LUM-101 | 698.0 | 685.0 | 13.0 |
+| LUM-205 | 139.8 | 26.5 | 113.3 |
+| LUM-310 | 52.6 | (3.1) | 55.7 |
+
+Without the right to stop, LUM-310 would be worth less than zero and LUM-205 only a fifth of its value. The option matters most when probability of failure at early gates is high and downstream spending is large relative to value: LUM-205 has $240.0 million of Phase III spending behind a 34 percent Phase IIb gate. For LUM-101 the only gated spending is the $50.0 million filing stage, so the option is small. If cash runs short, compare rNPV with the spending through the next gate: LUM-101 698.0 / 165.0 = 4.2; LUM-205 139.8 / 55.0 = 2.5; LUM-310 52.6 / 32.0 = 1.6. LUM-310, then the platform, then LUM-205 should be slowed first, but slowing LUM-205 destroys the 2027 readout, which is valuable information.
+
+#### Question 8: Valuing Deal A
+
+**US-only business.** Sales are 60 percent of the base case (peak $840.0 million, with every ramp percentage applied to that figure). COGS and royalty, lifecycle R&D and sales and marketing use the same percentages as before; the floor is $55.0 million. Development cost is unchanged. The rNPV of the US-only business is **$364.3 million**, so retained ex-US rights are worth 698.0 - 364.3 = $333.8 million.
+
+**The deal.** The University takes 18 percent of the upfront payment and milestones, so Lumen keeps 82 percent. Cost reimbursements are not shared. Royalties are net of the University's 3 percent of ex-US net sales. Royalty step-downs halve the rates from 2041.
+
+* Upfront: 150.0 x 0.82 = 123.0 at Year 0; after tax 97.2.
+* Cost share: 35% x 90.0 = 31.5 (2027) and 35% x 75.0 = 26.25 (2028), both certain. After tax and discounting: 31.5 x 0.79 x 0.9009 = 22.4; 26.25 x 0.79 x 0.8116 = 16.8; total 39.2.
+* Phase III milestone: 60.0 x 0.82 x 0.55 = 27.06 at 2028; x 0.79 x 0.8116 = 17.4.
+* Authorization milestone: 50.0 x 0.82 x 0.495 = 20.30 at 2030; x 0.79 x 0.6587 = 10.6.
+* Sales milestones: $100M is earned in 2033 (ex-US sales of $302.4M exceed $300M): 100 x 0.82 x 0.495 = 40.59; x 0.79 x 0.4817 = 15.4. $150M is earned in 2036 (sales of $543.2M exceed $500M): 150 x 0.82 x 0.495 = 60.89; x 0.79 x 0.3522 = 16.9. Total 32.4.
+* Royalties (Table 3.20): 89.9 present value.
+
+**Table 3.20: Deal A royalty stream (US$ millions)**
+
+| Year | Ex-US sales | Gross royalty | After step-down | University 3% | Net to Lumen | x 0.495 | PV after tax |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 2030 | 28.0 | 4.5 | 4.5 | 0.8 | 3.6 | 1.8 | 0.9 |
+| 2031 | 84.0 | 13.4 | 13.4 | 2.5 | 10.9 | 5.4 | 2.5 |
+| 2032 | 179.2 | 28.7 | 28.7 | 5.4 | 23.3 | 11.5 | 4.9 |
+| 2033 | 302.4 | 50.5 | 50.5 | 9.1 | 41.4 | 20.5 | 7.8 |
+| 2034 | 414.4 | 72.9 | 72.9 | 12.4 | 60.4 | 29.9 | 10.3 |
+| 2035 | 492.8 | 90.3 | 90.3 | 14.8 | 75.5 | 37.4 | 11.5 |
+| 2036 | 543.2 | 102.4 | 102.4 | 16.3 | 86.1 | 42.6 | 11.9 |
+| 2037 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 11.1 |
+| 2038 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 10.0 |
+| 2039 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 9.0 |
+| 2040 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 8.1 |
+| 2041 | 252.0 | 40.4 | 20.2 | 7.6 | 12.6 | 6.3 | 1.0 |
+| 2042-2044 | 229.6 | 36.8 | 18.4 | 6.9 | 11.5 | 5.7 | 0.8 |
+
+At peak, gross royalty is 16% x 250 + 20% x 200 + 24% x 110 = 40.0 + 40.0 + 26.4 = 106.4, an effective 19.0 percent of $560.0 million.
+
+**Total.** Deal items are worth 97.2 + 39.2 + 17.4 + 10.6 + 32.4 + 89.9 = **$286.6 million**. Lumen's value under Deal A is 364.3 + 286.6 = $650.9 million, against $698.0 million from retention: **Deal A costs $47.2 million of rNPV ($0.76 per share).** The upfront payment at which Deal A matches retention is $222.8 million, because each extra $10 million of upfront adds $6.5 million (10 x 0.82 x 0.79).
+
+**The University's clause.** Under the second reading (18 percent of royalties received, instead of 3 percent of ex-US sales), net royalties are 82 percent of gross; the deal total is $285.6 million, a reduction of $1.0 million, because 18 percent of the effective 19 percent royalty is close to the 3 percent sales royalty it replaces at this royalty level. Under the third reading, which also takes 18 percent of the cost reimbursement, the cost share loses 0.18 x 39.2 = $7.1 million. The clause matters mostly through the upfront ($27.0 million pre-tax to the University) and is not a reason to reject Deal A.
+
+#### Question 9: Funding choices
+
+**Table 3.21: Funding options**
+
+| Option | Closing cash 2027 | Closing cash 2028 | Covenant ($100M) | Equity value per share (US$) |
+|---|---:|---:|---|---:|
+| No action | 226.4 | 35.3 | Breach in Q3 2028 | 18.42 on paper; not achievable |
+| I: $250M raise at $12.00, 5.5% costs | 472.1 | 290.8 | Met | 16.64 |
+| II: Deal A | 385.8 | 227.3 (276.5 if Phase III milestone is paid) | Met | 17.66 |
+| III: Deal B | 448.1 | 265.9 | Met | 17.18 |
+
+Cash paths use the Table 3.9 assumptions. Option I: net proceeds 250 x 0.945 = 236.25, opening cash 648.25, 2027 closing = 648.25 - 167.0 - 28.0 - 7.1 + 0.04 x 648.25 = 472.1. Option II: Lumen receives 123.0 upfront and reimbursements of 31.5 and 26.25. Option III: 260 x 0.82 = 213.2 upfront.
+
+**Per-share values.** Option I issues 250 / 12.00 = 20.83 million shares. Post-money equity value is 1,142.1 + 236.25 = 1,378.4 million over 82.83 million shares = $16.64, a dilution of $1.78 per original share, or $110.4 million of value transferred to new investors. Option II: (1,142.1 - 47.2) / 62.0 = $17.66. Option III: Deal B total is 364.3 + 256.9 = 621.2, a loss of $76.9 million against retention: (1,142.1 - 76.9) / 62.0 = $17.18. The right comparison is therefore not $18.42, which the covenant makes infeasible, but $16.64: the deal is worth $1.02 per share more than the raise.
+
+**State-contingent payoffs.** After-tax present values of deal payments by outcome:
+
+| Outcome | Probability | Deal A | Deal B | Value of retained ex-US rights |
+|---|---:|---:|---:|---:|
+| Phase III fails | 45.0% | 136.4 | 168.4 | 0 |
+| Succeeds, filing rejected | 5.5% | 168.0 | 189.5 | 0 |
+| Approved | 49.5% | 436.3 | 344.8 | 674.3 |
+
+Deal B pays $32.0 million more than Deal A if the trial fails; Deal A pays $91.5 million more if the drug is approved. At a 50-50 chance, A is better; B is better only if the board believes the Phase III probability is below about 26 percent (the point where 0.505 x 32.0 shifts against 0.495 x 91.5 is at an approval probability of 26 percent, assuming the filing stage is passed with 90 percent probability). Deal A gives up $238.0 million of retained value in the approval state in return for $136.4 million of certain value in the failure state.
+
+**Choice.** Deal A, after negotiation, in preference to the raise or Deal B. It leaves covenant headroom, costs $0.76 per share in rNPV against a $1.78 dilution cost of the raise, and keeps the US franchise.

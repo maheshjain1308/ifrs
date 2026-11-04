@@ -181,10 +181,6 @@ Step 4 – The common error: discount the local-currency cash flows at the dolla
 
 *Interpretation:* the 30 percent error is not exotic; it arises in practice whenever a spreadsheet-based model "converts at the spot rate" to avoid forecasting the exchange rate. The correct response to uncertainty about exchange rates is to hold the parity-consistent forecast as a base case and then run scenarios of real depreciation, not to ignore depreciation.
 
-### Real Versus Nominal, and Hyperinflation
-
-In high-inflation economies the cleanest approach may be to value in *real* terms (cash flows in constant local currency, discounted at the real local rate) or to value in a stable hard currency from the outset. For hyperinflationary economies, accounting rules require inflation-adjusted statements, and managers should take care that reported earnings in local currency, which are often distorted by inflation (inventory gains, monetary losses), are not used uncritically as the base of the forecast.
-
 ### Currency Risk: Hedging or Pricing?
 
 A forecast exchange rate is an *expectation*; the *risk* around it is separate. Corporate hedging of long-dated emerging-market currency exposure is costly and sometimes impossible. The forward rate implied by interest differentials reflects the expected depreciation, but liquid forwards seldom extend beyond one to three years in many emerging markets, and cross-currency swaps may be available only for a few tenors. Strategic exposures (the value of the business in dollars) are rarely hedged financially; they are managed through *natural hedges*: pricing in or indexing prices to hard currency where possible, sourcing inputs locally, matching the currency of debt to the currency of cash flows, and diversifying across countries.
@@ -293,14 +289,7 @@ PV = 25 × [1 ÷ 1.15 + 1 ÷ 1.15² + 1 ÷ 1.15³ + 1 ÷ 1.15⁴] = 25 × 2.8550
 
 *Interpretation:* cash and subsidiary cash flows should not be valued at face value when controls apply. The haircut is the combined cost of delay and risk, and it grows if the release schedule is uncertain. When a target holds large trapped cash balances, the buyer should price them at the haircut value, not the balance sheet value (a common difference between the headline "net cash" and the economic one).
 
-### Strategies for Managing Controls
-
-- **Limit local cash.** Repatriate frequently, use fees and royalties where allowed, and minimize idle balances in controlled currencies.
-- **Reinvest locally.** If cash must remain, choose investments that fit the strategic plan rather than letting trapped cash sit in low-return local deposits. Some firms use trapped cash for local acquisitions, which may be value-creating if the target is sound, but which may also tempt managers into poor investments because the cash is "free".
-- **Use local debt as an offset.** Funds trapped locally can be used to repay local debt instead of paying down parent-level debt; net the two for assessing exposure.
-- **Plan for parallel-market dynamics.** Where there are multiple rates, ensure that accounting, tax and legal advice is clear about the rates applicable to each transaction, since misuse can expose the company to regulatory sanctions.
-- **Negotiate protections at entry.** Agreements with the host government, investment-promotion agencies or central bank may include assurances of convertibility, which can also be insured.
-- **Recognize contagion.** Controls rarely appear in isolation: when currency reserves run low, controls, price caps, forced conversion of export proceeds, and discriminatory taxes often arrive together. The scenarios should be consistent.
+In practice, managers limit idle local cash, repatriate frequently through every legitimate channel, use trapped balances to repay local debt or fund sound local investments (not merely because the cash is there), and recognize that controls rarely appear alone: price caps, forced conversion of export proceeds and discriminatory taxes often arrive together, so scenarios should be consistent.
 
 ## 18.6 Joint Ventures and Local Partners
 
@@ -412,13 +401,10 @@ Step 4 – Interpretation. A 60 percent depreciation, comparable to the largest 
 
 *Managerial implication:* match the currency of debt to the currency of cash flows unless the firm earns hard-currency revenues (exporters), has natural offsets (dollar-priced inputs sold at dollar-linked prices), or has hedged. A beverage company selling in local currency should hold local-currency debt for the base of its capital structure, using hard-currency debt only up to the amount of its natural dollar exposure, or when hedged and the hedge cost is acceptable. Parent guarantees and cross-currency swaps can allow access to cheaper hard-currency funds while transferring the currency risk to the party better able to bear it.
 
-### Other Capital Structure Considerations
 
-- **Equity versus debt for the subsidiary.** Parent funding of a subsidiary can be in equity (repatriation by dividends or capital reduction) or in intercompany loans (interest deductible, principal repayable without withholding tax, but subject to thin-capitalization rules and regulatory registration). The mix is a tax and control decision that must follow the repatriation analysis of Section 18.5.
-- **Local partners and local debt.** Borrowing locally gives a political hedge: a government is less likely to seize a business that is a major borrower from local banks; the mix of local creditors and employees makes expropriation more costly.
-- **Multilateral and development institutions.** Development finance institutions provide long-tenor loans and equity, often at better terms than commercial markets, and provide a degree of political protection. They require compliance with environmental and social standards.
-- **Equity issuance and listing.** A local listing can improve valuation and provide an exit route but exposes the firm to local market volatility; an international listing signals governance quality at the cost of compliance.
-- **Target leverage.** Higher volatility, higher cost of distress and more difficult refinancing all argue for lower target leverage than for a comparable developed-market firm; stress tests should include a currency shock, an interest-rate shock and a revenue shock simultaneously.
+### Other Considerations
+
+Parent funding can be equity (repatriated by dividends or capital reduction) or intercompany loans (deductible interest, principal returned without withholding, subject to thin-capitalization rules), a choice that must follow the repatriation analysis of Section 18.5. Local borrowing offers a political hedge, since a government is less likely to seize a major borrower from local banks; multilateral lenders provide long tenors and some protection. Because volatility, distress costs and refinancing difficulty are higher, target leverage should generally be lower than for a developed-market peer, and stress tests should combine currency, interest-rate and revenue shocks.
 
 ## Case Study: Danube Grid Services in Karvania
 

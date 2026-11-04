@@ -501,7 +501,7 @@ Table S11. Base-case value per share: terminal non-GAAP margin shift (rows) agai
 | +0 pts | $48.08 | $50.84 | $54.08 | $57.95 | $62.64 |
 | +3 pts | $51.44 | $54.49 | $58.07 | $62.34 | $67.51 |
 | +6 pts | $54.79 | $58.13 | $62.05 | $66.72 | $72.39 |
-Each 50 basis points of WACC moves value by about $5 to $6 per share, and each 50 basis points of terminal growth by about $3.5 to $4. A three-point change in terminal margin moves value by about $4. Only the combination of a WACC of about 8.25 percent with terminal growth of 3.5 percent or more, or a 4.5 percent terminal growth rate with a 8.75 percent WACC, brings the base case to the offer.
+Each 50 basis points of WACC moves value by about $5 to $6 per share, and each 50 basis points of terminal growth by about $3 to $4. A three-point change in terminal margin moves value by about $4. Only the combination of a WACC of about 8.25 percent with terminal growth of 3.5 percent or more, or a 4.5 percent terminal growth rate with a 8.75 percent WACC, brings the base case to the offer.
 
 Adding back SBC. If SBC is added back to free cash flow in every year and the terminal value, and the share count is not adjusted for future issuance:
 
@@ -543,7 +543,7 @@ Football field (value per share):
 | 52-week trading range | $41.00 | $63.00 | |
 | **Tessara offer** | | | **$66.50** |
 
-The reconciliation: the DCF base case ($54.08) sits about 4 percent below the comparables because the market paid for SBC-heavy growth as if SBC were free and because it values the company's growth optimistically; the DCF's probability-weighted value is lower still. The market approach is a measure of what other investors pay today, not of intrinsic value, and the committee should treat it as an upper cross-check on the base case, not as independent confirmation of the offer.
+The reconciliation: the DCF base case ($54.08) sits about 8 percent below the comparables' midpoint of $58.74 because the market paid for SBC-heavy growth as if SBC were free and because it values the company's growth optimistically; the DCF's probability-weighted value is lower still. The market approach is a measure of what other investors pay today, not of intrinsic value, and the committee should treat it as an upper cross-check on the base case, not as independent confirmation of the offer.
 
 #### Solution 10: Recommendation
 
@@ -562,7 +562,7 @@ Four variables dominate the valuation. The first is the discount rate: 9.21 perc
 1. Computing NRR from blended totals and missing the cohort-by-cohort deterioration. Students who report "NRR of about 110 percent, stable" have not read the cohort triangle.
 2. Computing LTV with the textbook formula, margin divided by churn, or with net retention above 100 percent for ten years, producing LTV/CAC above 5 without noting that expansion is not free.
 3. Using the rule of 40 on one definition and calling Cirrus "best in class."
-4. Adding SBC back in the DCF and then also using the diluted share count at today's price. This is the double standard in reverse: no cost in cash flows and no cost in shares.
+4. Adding SBC back in the DCF while counting only today's options and RSUs in the share count, so that all future issuance is free.
 5. Counting SBC as an expense and also increasing the share count for future grants. This double counts. Only existing options and RSUs should be added to the share count.
 6. Applying the treasury stock method at the offer price in one place and at the DCF value in another, or counting all 8.4 million options as shares.
 7. Treating the convertible as converted at a price below $92.00.
@@ -572,7 +572,7 @@ Four variables dominate the valuation. The first is the discount rate: 9.21 perc
 
 ### Alternative Defensible Answers
 
-Several different recommendations can be defended. A student who accepts management's plan, perhaps because of the March offsite model or because the held-out upside is large, can argue for rejecting $66.50 and countering above $75, relying on the management DCF of $70.04, the 34 percent mean premium, and the holders who see "north of $70." Anselm Okafor's position is a variant of this. A student who stresses the first-quarter flash, Ostrava, and the cohort deterioration can reasonably recommend accepting the offer now, on the grounds that a certain $66.50 is well above any risk-adjusted standalone value and that Tessara might withdraw. A third answer is to run a short, limited market check with Redcliff and others before responding. The grade should reward the quality of the reasoning: whether SBC is treated consistently, whether the terminal value is tested, and whether the recommendation follows from the evidence rather than from the first number computed.
+Several different recommendations can be defended. A student who accepts management's plan, perhaps because of the March offsite model or because the upside is large, can argue for rejecting $66.50 and countering above $75, relying on the management DCF of $70.04, the 34 percent mean premium, and the holders who see "north of $70." Anselm Okafor's position is a variant of this. A student who stresses the first-quarter flash, Ostrava, and the cohort deterioration can reasonably recommend accepting the offer now, on the grounds that a certain $66.50 is well above any risk-adjusted standalone value and that Tessara might withdraw. A third answer is to run a short, limited market check with Redcliff and others before responding. The grade should reward the quality of the reasoning: whether SBC is treated consistently, whether the terminal value is tested, and whether the recommendation follows from the evidence rather than from the first number computed.
 
 ### Board-Style Recommendation Memorandum
 

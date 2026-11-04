@@ -130,7 +130,7 @@ If the bank holds its CET1 target constant, equity must grow at the same rate as
 
 ### Capital requirements and the cost of regulation
 
-Higher capital requirements reduce ROE for a given return on risk-weighted assets, and hence value, unless the cost of equity falls proportionally (a Modigliani-Miller argument that holds only partly in the presence of deposit insurance, tax shields on debt and implicit guarantees). To measure the effect, write earnings as a return on RWA: ROE = (NI/RWA) / CET1. In steady state:
+Higher capital requirements reduce ROE for a given return on risk-weighted assets, and hence value, unless the cost of equity falls proportionally (a Modigliani-Miller argument that holds only partly given deposit insurance and implicit guarantees). Writing ROE = (NI/RWA) / CET1, the steady-state value per unit of RWA is:
 
 ```
 Value per unit of RWA = (NI/RWA − g × CET1) / (rₑ − g)
@@ -146,11 +146,11 @@ Each percentage point of additional CET1 reduces equity value by about 1,067 mil
 
 ### Credit cycle, provisions and normalization
 
-Bank earnings are procyclical: provisions are low at the top and high after a downturn. Using current ROE overstates value at the peak and understates it at the trough. Normalize provisions to a through-the-cycle loss rate (for instance, the average of annual credit losses over a full cycle, scaled to the current loan mix), and use that to compute normalized ROE. Credit-quality indicators (non-performing loan ratios, coverage ratios, loan concentration) help judge whether reported provisions are adequate; an under-provisioned bank has overstated book value and ROE. Where book value itself is doubtful, adjust it for unrecognized losses, for example by marking the securities portfolio to market and by examining unrealized losses on held-to-maturity holdings, which are not in reported equity but would reduce regulatory capital in a stress.
+Bank earnings are procyclical: provisions are low at the top and high after a downturn, so current ROE overstates value at the peak and understates it at the trough. Normalize provisions to a through-the-cycle loss rate scaled to the current loan mix, and examine coverage and concentration to judge whether reported provisions are adequate. Where book value is doubtful, adjust it for unrecognized losses such as unrealized losses on held-to-maturity securities, which are not in reported equity but would reduce capital in a stress.
 
 ### Other financial firms
 
-Asset managers and exchanges are valued on earnings and fee-related cash flow, as their capital needs are small and enterprise-style DCF works with care. Broker-dealers and lenders with significant balance sheets resemble banks and are best valued by P/B-ROE. For specialty lenders and finance companies, the funding mix matters: a lender funded by securitization is more like an industrial firm with captive finance, and the method should follow the funding. In all cases the principle is to identify which liabilities are operating and which are financing.
+Asset managers and exchanges have small capital needs and can be valued on fee-related earnings and cash flow. Broker-dealers and lenders with large balance sheets resemble banks and are valued by P/B-ROE. In every case, ask which liabilities are operating inputs and which are financing.
 
 ## 4.3 Valuing Insurers
 
@@ -240,15 +240,11 @@ Normalization has a risk: the cycle may have structurally changed. A decade of l
 | Trough (year 4) | 225 | 14.0x | 3,150 | 1.50 |
 | Normalized | 1,321.8 | 6.0x | 7,930.8 | 49.31 |
 
-*Interpretation.* Trough EBITDA of 225 is below depreciation of 700, an EBIT of −475: no P/E exists. If an investor valued the firm on trailing EBITDA at 6 times, equity would be 6 × 225 − 3,000 < 0, an absurd result for a firm that earns 621.8 of EBIT in an average year. Valuing at the peak with a low multiple gives 88.80, which is high because the multiple is applied to peak earnings, but even the "low" multiple of 4.5 is not conservative enough relative to the mid-cycle multiple of 6 on normalized earnings. The correct comparison is between the normalized value (49.31) and the market price: if the stock trades at 20 in the trough, the market is pricing a permanent decline, or the leverage (net debt of 3,000, 13 times trough EBITDA) is feared. Note that the normalized value is highly sensitive to the margin and multiple: a mid-cycle margin of 12 percent rather than 15.1 percent lowers normalized EBITDA to 1,048.8 and per-share equity to 32.9.
+*Interpretation.* Trough EBITDA of 225 is below depreciation of 700 (EBIT of −475), so no P/E exists, and valuing the firm at 6 times trough EBITDA gives 6 × 225 − 3,000 < 0 for a company that earns 621.8 of EBIT in an average year. Peak EBITDA at even a low multiple gives 88.80, well above the mid-cycle value, because the multiple is applied to earnings that will not last. The relevant comparison is between the normalized value (49.31) and the market price: if the stock trades at 20 at the trough, the market is pricing a permanent decline or fearing the leverage (net debt of 3,000 is 13 times trough EBITDA). The result is sensitive to inputs: a mid-cycle margin of 12 percent instead of 15.1 percent lowers normalized EBITDA to 1,048.8 and equity per share to 32.9.
 
 ### Leverage and the survival constraint
 
-Cyclical firms with high leverage face a **survival** problem that normalized value alone does not capture. Net debt of 3,000 is 2.3 times normalized EBITDA, comfortable on average but 13 times trough EBITDA. If covenant breaches or a refinancing wall arrive at the trough, equity may be wiped out or diluted before the cycle turns. The equity of a levered cyclical is therefore an option on the cycle (Volume 1, Chapter 18; Chapter 15 on distress costs): its value exceeds the DCF of expected cash flows when downside is protected by limited liability and is lower when distress costs and forced equity raises are included. Practitioners test the balance sheet against a **downside cycle** (two years at trough margins), compute liquidity and covenant headroom, and assess the probability of an equity raise at depressed prices. Firms that manage cyclicality well keep through-the-cycle leverage low, hold liquidity, and invest counter-cyclically; investors should reward that strategy with a lower discount rate.
-
-### Choosing the multiple
-
-Mid-cycle multiples come from the same normalization applied to peers: compute each peer's EV divided by its own normalized EBITDA (or EV/invested capital for a return-on-capital cross-check) rather than the current-year multiple. A scatter of EV/invested capital against normalized ROIC minus WACC gives a theory-based benchmark: firms earning ROIC above WACC through the cycle deserve premiums to invested capital, and firms earning below it, discounts. For firms at the bottom of the cost curve, the through-the-cycle ROIC may exceed WACC; for high-cost producers it will not, and the normalized value may be below book or replacement cost.
+Net debt of 3,000 is 2.3 times normalized EBITDA but 13 times trough EBITDA. If a covenant breach or refinancing wall arrives at the trough, equity may be wiped out or diluted before the cycle turns, so the equity of a levered cyclical is an option on the cycle (Volume 1, Chapter 15 on distress costs and Chapter 18 on options). Practitioners test the balance sheet against a downside cycle (two years at trough margins), compute liquidity and covenant headroom, and judge the probability of an equity raise at depressed prices. Mid-cycle multiples should come from peers on the same basis (EV divided by each peer's normalized EBITDA) and be cross-checked against EV/invested capital plotted against normalized ROIC minus WACC.
 
 ## 4.5 Commodity Producers: Price Decks, Project Value and Uncertainty
 
@@ -264,7 +260,7 @@ Futures prices are risk-adjusted market expectations for the near term and are a
 
 ### Operating leverage and the sensitivity of value
 
-A mine has low variable costs relative to price, and fixed costs and capital are large, so a small price change produces a large change in cash flow. In the example below a 6 percent change in the copper price changes value by nearly 50 percent. The key sensitivity tools are:
+A mine has low variable costs relative to price, and fixed costs and capital are large, so a small price change produces a large change in cash flow. In the example below a 6.7 percent change in the copper price (0.25 on 3.75) changes value by nearly 50 percent. The key sensitivity tools are:
 
 - **Price sensitivity table**, which shows NPV at several price decks, and the **break-even price** at which NPV is zero.
 - **Cost-curve position.** A producer in the lowest quartile of the cost curve survives price troughs and earns excess returns in booms; a high-cost producer is the marginal supplier and has little margin of safety.
@@ -331,17 +327,15 @@ for t in range(1, T + 1):
 npv_opt, npv_no = pv - 1500, pv_no - 1500
 ```
 
-*Output.* Mean NPV without the option: 1,108.5. Mean NPV with the option: 1,132.0. Value of the curtailment option: 23.4. Distribution of NPV with the option: 5th percentile −632.1; 25th 289.2; median 1,036.6; 75th 1,865.9; 95th 3,236.6. The probability that NPV is negative is 17.0 percent with the option and 17.7 percent without it. Without the option the 5th percentile is −744.0.
+*Output.* Mean NPV without the option: 1,108.5. Mean NPV with the option: 1,132.0. Value of the curtailment option: 23.4. Distribution of NPV with the option: 5th percentile −632.1; 25th 289.2; median 1,036.6; 75th 1,865.9; 95th 3,236.6. The probability that NPV is negative is 17.0 percent with the option and 17.75 percent without it. Without the option the 5th percentile is −744.0.
 
-*Interpretation.* Three observations follow. First, the simulated mean NPV (1,108) exceeds the deterministic-deck NPV (930) because the deck anchors the long-run *median* price at 3.75 and a lognormal price has a mean above its median (by exp(σ²/2) in the stationary distribution, about 3.5 percent here) and because tax and cash flow are convex in price; the analyst must decide whether the deck represents the median or the mean, and use the same convention throughout. Second, the curtailment option adds only 23 (2 percent of value) here because a low-cost mine rarely needs to shut; for a high-cost mine the option would be worth far more, and ignoring it is a typical reason why DCF understates marginal producers. Third, the distribution is wide: the interquartile range is 1,577 and the 5th-to-95th range spans more than 3,800, so a single NPV conveys false precision. A capital-allocation decision should be tested against the downside, not only the mean.
+*Interpretation.* Three observations follow. First, the simulated mean NPV (1,108) exceeds the deterministic-deck NPV (930) because the deck anchors the long-run *median* price at 3.75 and a lognormal price has a mean above its median (by exp(v/2), where v = σ²/(2κ) is the stationary variance of the log price; about 3.5 percent here) and because tax and cash flow are convex in price; the analyst must decide whether the deck represents the median or the mean, and use the same convention throughout. Second, the curtailment option adds only 23 (2 percent of value) here because a low-cost mine rarely needs to shut; for a high-cost mine the option would be worth far more, and ignoring it is a typical reason why DCF understates marginal producers. Third, the distribution is wide: the interquartile range is 1,577 and the 5th-to-95th range spans more than 3,800, so a single NPV conveys false precision. A capital-allocation decision should be tested against the downside, not only the mean.
 
-### Reserves, depletion and the life of the asset
+### Reserves, depletion and fiscal regimes
 
-Resource firms hold depleting assets. Valuation requires a **production profile** by year, constrained by **reserves** (the economically recoverable portion, classified by confidence as proven, probable and possible) and **resources** (the broader geological endowment, with lower confidence of economic recovery). Reserve estimates depend on the price: a higher price converts resources into reserves by lowering the cut-off grade. The analyst should model cut-off grade, grade decline, strip ratio or well decline, and **sustaining capital**, and should not treat a mine or field as a perpetuity. Terminal value is generally zero (or a closure liability): rehabilitation and decommissioning obligations must be provisioned as negative cash flows at the end of life, discounted. A common error is to apply a growth perpetuity to a depleting asset; for a company, the equivalent is the replacement of reserves, which requires exploration spending that must be in the forecast.
+Resource firms hold depleting assets, so valuation requires a production profile constrained by reserves (economically recoverable, classified as proven, probable or possible) rather than a perpetuity. Reserves depend on the price, since a higher price lowers the cut-off grade and converts resources into reserves. Model grade decline, sustaining capital and closure and decommissioning liabilities as negative cash flows at end of life; terminal value is generally zero. Replacing depleted reserves requires exploration spending that belongs in the forecast.
 
-### Fiscal regimes and country risk
-
-Royalties, severance taxes, windfall taxes and state participation take a large and price-dependent share of cash flows in the resource sector. A royalty on revenue raises the break-even price; a profit-based tax shares the downside; a windfall tax caps the upside. The after-tax value must model the actual fiscal terms, and **sovereign risk** (the possibility of expropriation, changes in terms, or export limits) is typically handled by adjusting cash flows in scenarios or by using a country premium in the discount rate, following the guidance of Chapter 3 that probabilities of idiosyncratic events belong in the cash flows and only systematic risk in the discount rate.
+Royalties, severance and windfall taxes and state participation take a large, price-dependent share of cash flow: a royalty on revenue raises the break-even price, a profit-based tax shares the downside and a windfall tax caps the upside. Sovereign risk is handled through scenario cash flows (expropriation, changed terms) rather than the discount rate, following the principle of Chapter 3 that idiosyncratic events belong in the cash flows.
 
 ## 4.6 Net Asset Value for Resource Companies
 
@@ -376,48 +370,11 @@ NAV per share is compared to the share price through **P/NAV**. Each asset is va
 
 *P/NAV.* If the share price is 5.50, market capitalization is 2,750 and P/NAV = 5.50 / 6.30 = 0.87. At a P/NAV of 0.8 the price would be 5.04; at 1.2, 7.56.
 
-*Interpretation.* The share trades at a 13 percent discount to NAV. Several facts qualify this reading. First, the leverage of NAV to price is high: the equity of 3,150 is only 58 percent of gross asset value, so a 10 percent fall in the risked asset value (548) lowers NAV by 17 percent. Second, 1,575 (29 percent) of gross value rests on the two development projects and exploration, which carry execution risk that the weights only approximate. Third, premium P/NAV multiples (1.0 or above) are normally paid to companies with a growth pipeline and a record of delivering on time and budget, and discounts to those with a record of overruns; a P/NAV of 0.87 may be fair for a company with poor delivery history. Fourth, NAV measures static asset value and treats the pipeline as discrete projects; it does not capture the value of management's ability to find and develop new assets, or the cost of replacing depleted reserves, so a "going-concern" premium is arguable for good operators.
-
-### Pitfalls of NAV
-
-NAV depends on the price deck, the discount rate and the risk weights, each of which is a judgment, and the sum of these judgments can mislead. Asset NPVs computed at different discount rates for producing and development assets should be checked against a single consistent method. Double counting arises when an exploration value is included along with the reserves or resources in a project NPV. Sell-side practice of using a spot-price or optimistic deck for NAV, then applying a P/NAV multiple derived from historical premiums, mixes two inconsistent conventions. The remedy is to state the deck, state the discount rate and risk weights, and show NAV at the consensus deck, at spot and at a conservative deck.
-
-## 4.7 Sum-of-the-Parts Valuation
-
-### When and why
-
-A diversified company is a portfolio of businesses with different growth, margins, risk and capital intensity. A single multiple applied to consolidated earnings averages away these differences. **Sum-of-the-parts (SOTP)** valuation values each business on the multiple or DCF appropriate to its own peer group, adds the values, deducts items that belong to the group as a whole (corporate costs, net debt, pensions, minorities), and arrives at an equity value that can be compared with the market capitalization. The gap is the **conglomerate discount** (or premium).
-
-### The mechanics
-
-1. **Segment** the group so that each part has an identifiable peer group and separable financials. Allocate shared costs only where economically justified.
-2. **Value each part**: by EV/EBITDA, EV/EBIT or P/E of comparable pure-play companies (adjusted for size, growth and margin), or by DCF for businesses with unusual profiles, or by NAV for resource segments.
-3. **Sum** the enterprise values of the segments.
-4. **Deduct corporate costs**, capitalized at an appropriate multiple (the cost of running the center belongs to nobody and must reduce group value; omitting it is the most common SOTP error).
-5. **Deduct net debt, unfunded pensions (after tax), minority interests and other claims**; add the value of equity-accounted associates and non-core assets.
-6. **Compare** to market capitalization; examine why a discount exists, and whether it is justified.
-
-**Example 4.8 – SOTP for a conglomerate.** Karst Industries has four segments, with segment EBITDA (millions), and the EV/EBITDA multiples of the relevant pure-play peers are as follows. Corporate costs are 95 million a year, to be capitalized at 8.5 times. Net debt is 3,200; the pension deficit is 450 before tax, with a 25 percent tax rate. There are 200 million shares and the market capitalization is 5,400.
-
-| Segment | EBITDA | Peer multiple | Enterprise value |
-|---|---|---|---|
-| Industrial Automation | 420 | 11.0x | 4,620 |
-| Specialty Chemicals | 310 | 8.0x | 2,480 |
-| Consumer Brands | 260 | 9.5x | 2,470 |
-| Legacy Distribution | 150 | 5.5x | 825 |
-| **Total segments** | **1,140** | **9.12x (blended)** | **10,395** |
-
-*Group adjustments.* Capitalized corporate costs: 95 × 8.5 = 807.5. After-tax pension deficit: 450 × (1 − 0.25) = 337.5. Net debt: 3,200.
-
-*Equity value.* 10,395 − 807.5 − 3,200 − 337.5 = **6,050** million, or 30.25 per share.
-
-*Comparison with the market.* Market capitalization of 5,400 implies a price of 27.00 per share. The discount of the market to SOTP is 1 − 5,400 / 6,050 = 10.7 percent, equivalently the SOTP is 12.0 percent above the price. The market-implied enterprise value is 5,400 + 3,200 + 337.5 = 8,937.5, or 7.84 times segment EBITDA of 1,140 (8.41 times if corporate costs are deducted from the SOTP enterprise value: (10,395 − 807.5)/1,140).
-
-*Interpretation.* A 10.7 percent discount is within the range typically observed for diversified groups and may be wholly explained by factors the SOTP omits. (1) **Corporate center and capital allocation inefficiency**: if the group invests cash from strong segments into weak ones, value is destroyed; a discount may measure this. (2) **Multiples that do not transfer**: the peers are larger or purer and carry liquidity and focus premiums; the multiples for Industrial Automation (11.0x) may be generous for a division with half the margin of the best peer. (3) **Tax leakage and separation costs**: breaking up the group triggers taxes, dis-synergies (shared services, purchasing) and one-time costs, which can easily absorb 3 to 5 percent of value. (4) **Information asymmetry**: segment reporting may be opaque, and investors discount what they cannot verify. The actionable question for an activist or the board is whether a discount of 10.7 percent exceeds the realizable cost of a separation. If separation costs 4 percent of SOTP and executes cleanly, the net gain is roughly 6 percent, but if the segments carry hidden cross-subsidies the real gain may be less, and the discount may be informed rather than irrational.
+*Interpretation.* The share trades at a 13 percent discount to NAV. Several facts qualify this reading. First, the leverage of NAV to price is high: the equity of 3,150 is only 58 percent of gross asset value, so a 10 percent fall in the risked asset value (548) lowers NAV by 17 percent. Second, 1,725 (32 percent) of gross value rests on the two development projects and exploration, which carry execution risk that the weights only approximate. Third, premium P/NAV multiples (1.0 or above) are normally paid to companies with a growth pipeline and a record of delivering on time and budget, and discounts to those with a record of overruns; a P/NAV of 0.87 may be fair for a company with poor delivery history. Fourth, NAV measures static asset value and treats the pipeline as discrete projects; it does not capture the value of management's ability to find and develop new assets, or the cost of replacing depleted reserves, so a "going-concern" premium is arguable for good operators.
 
 ### Pitfalls
 
-The recurring errors are: omitting capitalized corporate costs; using peer multiples for a segment that is structurally weaker; double-counting synergies or cash; ignoring pensions, leases and minorities; applying EV multiples to segments that include equity-accounted income; and treating the SOTP value as achievable when separation costs, tax and the loss of scale are ignored. As a check, compare the implied blended multiple (9.1x here) with the multiple of the best-matched integrated peers, and ask why the group should be worth more in pieces than a competitor that is similar but focused.
+The recurring errors are omitting capitalized corporate costs, using peer multiples for a structurally weaker segment, ignoring pensions, leases and minorities, and treating SOTP as achievable when separation costs, tax and loss of scale are ignored. As a check, compare the implied blended multiple (9.1x here) with that of focused peers, and ask why the group should be worth more in pieces.
 
 ## 4.8 Integrating the Methods
 

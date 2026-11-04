@@ -367,7 +367,7 @@ The rationale is genuine: the best companies in a fund may need more time to com
 | Exit value ($M) | Profit above $380M | Carry ($M) | Net multiple to CV investors | Net IRR (3 years) |
 |---|---|---|---|---|
 | 380 | 0 | 0.0 | 1.00x | 0.0% |
-| 450 | 70 | 7.0 | 1.17x | 5.3% |
+| 450 | 70 | 7.0 | 1.17x | 5.2% |
 | 520 | 140 | 14.0 | 1.33x | 10.0% |
 | 650 | 270 | 35.0 | 1.62x | 17.4% |
 | 800 | 420 | 65.0 | 1.93x | 24.6% |
