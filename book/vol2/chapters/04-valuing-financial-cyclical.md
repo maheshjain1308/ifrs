@@ -426,3 +426,73 @@ The approaches in this chapter share a discipline: identify what generates value
 
 In practice, a holding such as Linden's three positions requires three different models with one common principle: the market price should be decomposed into what it implies about the unobservable driver (the fade in ROE, the position in the cycle, the long-run price, the multiple for the parts) and compared with an independent view of that driver. Reverse-engineering the market's assumption is more informative than producing another point estimate.
 
+## Case Study
+
+*Illustrative case; Meridian Financial Group is fictional.*
+
+Meridian Financial Group owns three businesses: Meridian Bank, a regional commercial lender with 62 billion of loans; Meridian Re, a property-casualty insurer; and Meridian Minerals, a 49 percent-owned copper and zinc producer that Meridian consolidates through a joint venture agreement. The board is evaluating an unsolicited approach from an investor who proposes to buy the whole group at a 20 percent premium to the current price, and an activist shareholder has argued that the group should be split into three.
+
+Meridian Bank has equity of 5.5 billion, RWA of 46 billion, CET1 of 12.0 percent, and a return on equity that has averaged 13.2 percent over the last eight years but reached 17 percent last year because loan-loss provisions were at a cyclical low of 0.15 percent of loans, against a through-the-cycle average of 0.55 percent. Its cost of equity is 10 percent, it trades at 1.4 times book, and regulators are considering raising the CET1 requirement by one percentage point.
+
+Meridian Re has equity of 1.6 billion and writes 2.1 billion of premiums. Its combined ratio was 93 percent last year, 96 percent the year before and 104 percent in the year of a major hurricane; the five-year average is 99 percent. It holds reserves of 3.0 billion invested at 4.2 percent. Reserve releases contributed 3 points of improvement to last year's combined ratio, and an external actuary has questioned the adequacy of reserves in a long-tail liability line.
+
+Meridian Minerals produces 190 thousand tonnes of copper equivalent a year from two mines in the lowest-cost half of the global cost curve, with a cash cost equal to 65 percent of the long-run price assumed in the board's deck. It also holds a development project (feasibility complete, permits pending) whose unrisked NPV is 1.1 billion, and an exploration portfolio. The mines have 11 and 14 years of reserve life. Net debt of the minerals division is 0.9 billion. The royalty regime in its main jurisdiction is under review and a windfall tax has been proposed.
+
+Group corporate costs are 120 million per year. The group has net debt (excluding the bank's funding) of 1.4 billion and an unfunded pension deficit of 380 million before tax. Group shares trade at 1.15 times consolidated book. Management says that the minerals division is "worth far more than the market gives credit for," while the activist says the bank and insurer are "being valued as if returns were at their peak."
+
+The investor's bid price implies a premium multiple on last year's consolidated earnings, which were boosted by low provisions, a benign catastrophe year and a copper price near the top of its range. The board has asked for an independent valuation and a recommendation.
+
+**Discussion questions**
+
+1. Explain how you would value Meridian Bank using both residual income and a dividend model with a CET1 constraint. How would you normalize last year's ROE, and what would a one-point rise in CET1 do to value if the return on RWA is unchanged?
+2. Evaluate Meridian Re's last three years of combined ratios. Which combined ratio would you use to normalize earnings, how would you treat the reserve releases, and what P/B would a normalized ROE justify?
+3. Describe how you would build a price deck and NAV for Meridian Minerals, including how to risk-weight the development project, treat the royalty and windfall-tax risk, and reflect the 49 percent ownership.
+4. Design a sum-of-the-parts valuation for the group. Which corporate costs, pension and net-debt adjustments are needed, how should the conglomerate discount be interpreted, and how would you advise the board on the bid and on the break-up proposal?
+
+## Key Takeaways
+
+- Banks and insurers should be valued through equity, because deposits, claims reserves and other liabilities are operating inputs; enterprise-value DCF and WACC do not apply.
+- The P/B-ROE relationship, P/B = (ROE − g) / (rₑ − g), links valuation to the return earned on equity, and residual income places most value in book plus near-term excess returns.
+- A bank's distributable cash flow is net income less the equity it must retain to hold its CET1 ratio as RWA grows; capital requirements are therefore a first-order driver of value.
+- Through-the-cycle provisions and combined ratios, not current ones, determine normalized ROE; reserve adequacy and catastrophe loads matter for insurers.
+- Float is valuable only if its cost (underwriting loss over float) is below what the invested funds can earn; a few points of combined ratio swing ROE and justified P/B dramatically.
+- For cyclical firms, value normalized (mid-cycle) earnings with mid-cycle multiples; trailing P/E is highest at the trough and lowest at the peak, and leverage can turn the trough into insolvency.
+- Commodity valuation begins with a price deck anchored to futures in the near term and to the marginal cost of supply in the long run; value is highly sensitive to the price and cost position, so report break-even prices.
+- Simulation of mean-reverting prices quantifies the distribution of NPV and the value of operating flexibility such as curtailment, but results depend on whether the deck represents the median or the mean.
+- NAV sums risk-weighted asset values less corporate costs and net debt; P/NAV must be read against delivery record, leverage and the deck used.
+- SOTP requires capitalized corporate costs, pensions and net debt; a conglomerate discount is only an opportunity if it exceeds the cost of separation and is not explained by capital misallocation or non-transferable multiples.
+
+## Review Questions
+
+1. Why is it conceptually wrong to compute free cash flow to the firm for a bank, and what should be valued instead?
+2. Explain the P/B-ROE relationship and what it implies for two banks with the same P/B but different ROE.
+3. In a residual-income model, why is a terminal value less critical than in a dividend model?
+4. How does the CET1 requirement constrain the dividend a bank can pay while growing, and why do higher requirements lower value?
+5. What is float, how is its cost measured, and when does it create value for an insurer?
+6. Why do reserve releases and catastrophe-free years distort an insurer's combined ratio, and how should an analyst normalize them?
+7. Explain why a cyclical stock's P/E ratio is typically highest at the trough of the cycle.
+8. List three methods of estimating normalized earnings and one situation in which normalization would be misleading.
+9. Why can a price deck anchored to spot prices overvalue a mine, and what should anchor the long-run price?
+10. Give two reasons why an apparent conglomerate discount may not be an arbitrage opportunity.
+
+## Problems
+
+1. **Justified P/B.** A bank has ROE of 12 percent, growth of 3 percent and a cost of equity of 9 percent. Compute the justified P/B. If book equity is 5,000, what is the equity value, and what ROE would justify a P/B of 1.0?
+2. **Residual income.** A firm has book equity of 100, expected ROE of 16 percent next year and a cost of equity of 10 percent; assume all earnings are paid out so book value stays at 100, and residual income decays with persistence ω = 0.5 each year. Compute residual income for year 1 and the equity value.
+3. **Capital constraint.** A bank has RWA of 50,000, earns 1.5 percent of RWA, has a cost of equity of 10 percent and grows 5 percent a year in steady state. Compute equity value (as value per unit of RWA, total, and P/B) with CET1 at 11 percent, and the value if CET1 rises to 13 percent.
+4. **Insurer ROE.** An insurer has premiums of 500, equity of 400, float of 600, investment yield of 5 percent, tax of 20 percent and a combined ratio of 97 percent. Compute net income, ROE and the cost of float. What combined ratio gives a 10 percent ROE?
+5. **Normalization.** A cyclical firm's EBITDA over five years was 800, 1,100, 1,500, 600 and 400. Mid-cycle EV/EBITDA is 7.0, net debt is 2,500 and there are 50 shares. Compute normalized EBITDA, enterprise value and value per share.
+6. **Price deck.** A mine produces 100 units a year for three years at a cash cost of 60; prices in years 1 to 3 are 90, 80 and 70; capex is 4,000 at time zero; ignore tax; the discount rate is 10 percent. Compute NPV and the flat break-even price.
+7. **NAV.** Asset NPVs are 800 (producing, 100 percent), 500 (feasibility, 60 percent) and 300 (pre-feasibility, 30 percent). Corporate costs capitalized are 150, net debt is 400 and there are 100 shares. Compute NAV per share and the share price at a P/NAV of 0.80.
+8. **Sum of the parts.** Segment EBITDA of 100, 60 and 40 are valued at 10x, 7x and 6x. Corporate costs of 15 are capitalized at 8x, net debt is 500 and there are 50 shares. Compute SOTP value per share and the discount if market capitalization is 800.
+
+### Answers to Selected Problems
+
+1. P/B = (12 − 3) / (9 − 3) = 1.5; equity value = 7,500. A P/B of 1.0 requires ROE = cost of equity = 9 percent.
+2. RI₁ = (0.16 − 0.10) × 100 = 6. Value = 100 + 6 / (1.10 − 0.50) = 100 + 10 = 110.
+3. Value per unit of RWA = (1.5% − 5% × 11%) / (10% − 5%) = 0.95% / 5% = 19.0 percent, i.e. 9,500; equity = 5,500, P/B = 1.73. With CET1 at 13 percent: (1.5% − 0.65%) / 5% = 17.0 percent, i.e. 8,500; equity = 6,500, P/B = 1.31.
+4. Underwriting profit = 500 × 0.03 = 15; investment income = (400 + 600) × 5% = 50; pre-tax 65; net income 52; ROE 13.0 percent. Cost of float = −15 / 600 = −2.5 percent. For ROE 10 percent: net income 40, pre-tax 50, underwriting result 0, combined ratio 100 percent.
+5. Average EBITDA = 4,400 / 5 = 880; EV = 6,160; equity = 3,660; per share = 73.2.
+6. Cash flows 3,000, 2,000, 1,000. PV = 2,727.3 + 1,652.9 + 751.3 = 5,131.5; NPV = 1,131.5. Break-even flat price: 4,000 / (100 × 2.4869) + 60 = 76.1.
+7. NAV = 800 + 300 + 90 − 150 − 400 = 640; 6.40 per share; price at P/NAV 0.80 = 5.12.
+8. EV = 1,000 + 420 + 240 = 1,660; less corporate costs 120 and net debt 500 gives 1,040; 20.80 per share. Market capitalization of 800 (16.00 per share) is a 23.1 percent discount to SOTP.

@@ -262,7 +262,7 @@ The following facts surfaced in the two weeks before the board meeting. Some sha
 
 ## Assignment Questions
 
-Answer each question in turn and show every calculation. Where you make an assumption, state it. Unless told otherwise, use the data in Tables 1 to 10 and Exhibits A to J.
+Answer each question in turn and show every calculation. Where you make an assumption, state it. Unless told otherwise, use the data in Tables 1 to 10 and Exhibits A to I.
 
 1. **Diagnosis.** Compute leverage, interest coverage and fixed charge coverage on both reported and Adjusted EBITDA, test the two covenants, and calculate the decremental margin between FY2024 and the LTM period. Is Rollan suffering from economic distress, financial distress, or both? What does the answer imply for the choice between reorganisation and liquidation?
 
@@ -583,4 +583,122 @@ The same pattern at the other two values:
 | 245 | 81.6% | 83.8% | 76.4% |
 
 Observations: a roll-up is a zero-sum transfer within the class; the damage to non-participants is largest in the downside; the transfer is smaller when the class is nearly fully repaid; and offering the roll-up to every Term Loan lender pro rata removes the transfer entirely. That is why Table 9 offers participation to all lenders "on request", and why the CLOs, who cannot lend new money, will object. A court will ask whether the roll-up is necessary to obtain the financing and whether the terms are fair to non-participants.
+
+#### Question 7: Plan value
+
+*Step 1: reorganised value and senior claims (base case).* Option B assumes a 3 percent loss of value from the filing: 205 x 0.97 = **$198.8 million** (unrounded $198.85 million). Claims that rank ahead of the Term Loan are:
+
+```
+ABL (prepetition, continues as exit ABL)       38.0
+DIP new-money term loan (converts to exit TL)  40.0
+Administrative and priority claims at emergence 12.0
+  (accrued professional fees 6.0; section 503(b)(9) goods 4.0; cure costs 2.0)
+Total senior claims                            90.0
+Value available to Term Loan and below = 198.8 - 90.0 = 108.8
+```
+
+Term Loan recovery before any gift is 108.8 / 181.0 = **60.1 percent**.
+
+*Step 2: the plan capital structure.* The administrative claims are funded from the exit ABL. The Term Loan receives a $45.0 million takeback loan plus equity.
+
+```
+Exit ABL           = 38.0 + 12.0 = 50.0
+Exit term loan (DIP conversion)  = 40.0
+Takeback term loan to prepetition lenders = 45.0
+Total exit debt                  = 135.0
+Equity value = 198.8 - 135.0     =  63.8
+Term Loan lenders: 45.0 + 95% x 63.8 = 45.0 + 60.7 = 105.7  ->  105.7 / 181.0 = 58.4%
+Unsecured pool (Notes 125.2 + trade 36.0 + other 14.0 = 175.2):
+                   5% x 63.8 = 3.2   ->  1.8% (Notes: 2.3 on 125.2 = 1.8%)
+```
+
+The plan therefore transfers $3.2 million of value from the Term Loan lenders to the unsecured creditors, which is the 5 percent "gift" that buys their votes. Under the absolute priority rule the notes should receive nothing; the gift is lawful only if it is part of a consensual plan, or is justified as a settlement of claims and challenges. Equity is allocated before dilution by the 8 percent management incentive plan.
+
+*Step 3: the three values.*
+
+| Enterprise value (pre-haircut) | 175 | 205 | 245 |
+|---|---:|---:|---:|
+| Reorganised value (x 0.97) | 169.8 | 198.8 | 237.7 |
+| Senior claims | 90.0 | 90.0 | 90.0 |
+| Value to Term Loan and below | 79.8 | 108.8 | 147.7 |
+| Term Loan recovery before gift | 44.1% | 60.1% | 81.6% |
+| Equity value (after 135.0 debt) | 34.8 | 63.8 | 102.7 |
+| Term Loan value (45.0 + 95% equity) | 78.0 | 105.7 | 142.5 |
+| Term Loan recovery after gift | 43.1% | 58.4% | 78.7% |
+| Unsecured value (5% equity) | 1.7 | 3.2 | 5.1 |
+| Unsecured recovery | 1.0% | 1.8% | 2.9% |
+
+*Step 4: feasibility.* Exit debt of $135.0 million is 4.87 times 2027E lender-case EBITDA, 3.89 times 2028E and 4.17 times 2027E management-case EBITDA. Interest at the stated rates is 50.0 x 7.7% + 40.0 x 12.3% + 45.0 x 9.8% = 3.85 + 4.92 + 4.41 = **$13.2 million**.
+
+```
+EBITDA / interest, 2027E lender case          = 27.7 / 13.2 = 2.10x
+(EBITDA - capex) / interest                   = 13.7 / 13.2 = 1.04x
+FCF before interest / interest                = 15.9 / 13.2 = 1.21x
+```
+
+The structure is feasible but tight in the lender case in the first year; it improves as margins recover (2028E lender free cash flow before interest is $13.9 million, a coverage of 1.05 times, so the plan should allow a PIK election on the takeback loan for the first two years). Contrast Option A, where leverage was 6.1 times and interest coverage 0.97 times.
+
+*Step 5: best-interests test.* Each holder in an impaired class who does not vote for the plan must receive at least what it would receive in a liquidation. Term Loan liquidation recovery is 51.3 percent (Question 4). Setting the plan's pre-gift Term Loan recovery equal to that: (EV x 0.97 - 90.0) / 181.0 = 0.513, so EV x 0.97 = 92.9 + 90.0 = 182.9 and **EV = $188.6 million**. Below that value, a dissenting Term Loan lender could argue that the plan fails the test. At $175 million, the Term Loan recovers 43.1 to 44.1 percent, below 51.3 percent: the low case fails the best-interests test. This is an important finding: the low end of the valuation range is not a feasible plan value at all, because lenders would rather liquidate (or sell) than take it. That leads directly to Question 9's option-value point.
+
+#### Question 8: Critical stakeholders
+
+*Pension.* Retaining the plan costs $6.0 million a year. The present value of seven years of $6.0 million:
+
+```
+at 6%: 6.0 x [1 - 1.06^-7] / 0.06 = 33.5
+at 7%: 6.0 x [1 - 1.07^-7] / 0.07 = 32.3
+at 8%: 6.0 x [1 - 1.08^-7] / 0.08 = 31.2
+```
+
+These are below the $45.0 million accounting deficit because the plan's assets are expected to earn a return, and below the $62.0 million termination-basis claim. If the plan were terminated, the insurer's claim of $62.0 million would join an unsecured pool of 175.2 + 62.0 = $237.2 million and would recover 62.0 x 3.19 / 237.2 = about **$0.8 million**, or 1.3 percent. Retention thus preserves roughly $32 million of present-value funding commitment (plus the associated benefits to 1,100 participants) at the price of about $6 million a year of cash, which is already inside the forecast EBITDA. Termination would not save the company anything near $62 million of cash: it would trigger a union grievance, risk strikes and customer concerns, and the claim itself recovers almost nothing. The correct recommendation is to retain the plan and negotiate a funding schedule.
+
+*Critical vendors.* The $18.0 million owed to critical vendors is general unsecured debt that would recover about 1.8 percent. Paying 100 percent costs $10.0 million in cash during the case and $8.0 million through reinstated terms. The test is whether the cost is smaller than the value lost if supply stopped. Harlan Forge is sole-source, qualification of an alternative takes 9 to 12 months, and Table 5 already shows the company being squeezed. A week of lost forging deliveries stops the Dunmere line, which is about $7.9 million of weekly revenue. Paying the critical vendors is clearly worth it, provided the payment is conditioned on customary trade terms for the period of the case and limited to those who are truly critical. Students often over-allocate: a vendor is critical only if it cannot be replaced at a lower cost than the claim.
+
+*Sponsor.* Under absolute priority the equity gets nothing, because even at $245 million the Term Loan is not paid in full once costs are deducted. The sponsor's only legitimate levers are (a) new money, (b) the threat of delay and litigation and (c) the possibility that the lenders prefer an out-of-court deal that avoids cost. The $15 million of new equity requested for 15 percent of the equity in Exhibit E values the equity at $100 million post-money, but the base-case equity value after debt is $34.9 million (Option A) or $63.8 million (Option B). The sponsor is thus asking to buy at a price far above intrinsic value; the lenders' 5 percent offer for $15 million is not crazy either, because the sponsor receives 5 percent of $34.9 million, about $1.7 million, without investing. The right conclusion is that the sponsor should receive a small consensual gift (up to 5 percent) in return for a support agreement, and no more.
+
+#### Question 9: Choosing among the options
+
+*Step 1: recoveries to the Term Loan lenders at each value.* Using the formulas and values already derived:
+
+| Enterprise value | Option A success | Option A failure (files later) | Option B (prepack) | Option C: no overbid | Option C: overbid |
+|---:|---:|---:|---:|---:|---:|
+| 175 | 57.8% | 36.0% | 43.1% | 53.9% | 63.3% |
+| 205 | 72.2% | 50.5% | 58.4% | 53.9% | 63.3% |
+| 245 | 91.5% | 69.9% | 78.7% | 53.9% | 63.3% |
+
+Notes. *Option A failure path:* value falls to 205 x 0.97 x 0.95 = $188.9 million, senior claims rise to 38.0 + 45.0 + 12.0 = $95.0 million, so the recovery is (188.9 - 95.0) / 181.0 = 51.9 percent before the 5 percent gift; after the gift and the equity-only residual it is 50.5 percent. *Option C:* price is market-determined: with no overbid the buyer pays $185.0 million, with an overbid $210.0 million. Costs are 4 percent of price; if overbid, the stalking horse is paid a break-up fee of 3 percent of $185.0 million ($5.55 million) plus $1.5 million of expenses. Senior claims are ABL 38.0, DIP 30.0 and administrative 12.0 = $80.0 million.
+
+```
+C, no overbid: 185.0 x 0.96 = 177.6 ; 177.6 - 80.0 = 97.6 ; 97.6 / 181.0 = 53.9%
+C, overbid:    210.0 x 0.96 - (5.55 + 1.5) = 201.6 - 7.05 = 194.55 ; 194.55 - 80.0 = 114.55 ; / 181.0 = 63.3%
+C, expected (60/40): 0.6 x 53.9 + 0.4 x 63.3 = 57.7%
+```
+
+*Step 2: break-even probability for Option A at the base case.* Let p be the probability that the exchange succeeds. Expected recovery = p x 72.2 + (1 - p) x 50.5. Setting this equal to Option B's 58.4:
+
+```
+p x 72.2 + (1 - p) x 50.5 = 58.4
+p x (72.2 - 50.5) = 58.4 - 50.5
+p = 7.9 / 21.7 = 36.1%
+```
+
+Management's honest estimate of the probability of unanimous Term Loan consent plus a 95 percent noteholder tender is 25 to 35 percent given the CLO constraint. Expected recovery at p = 30 percent is 0.30 x 72.2 + 0.70 x 50.5 = **57.0 percent**, below Option B's 58.4 percent. Break-even is therefore above management's own estimate: the out-of-court path is not worth attempting alone.
+
+*Step 3: probability-weighted over values (25 / 50 / 25 percent).*
+
+```
+Option B:  0.25 x 43.1 + 0.50 x 58.4 + 0.25 x 78.7 = 10.8 + 29.2 + 19.7 = 59.6%
+Option A (p = 30%): 0.25 x 0.3(57.8) + ... = 58.3%
+Option C:  57.7% (price does not depend on the EV scenario)
+```
+
+(For Option A the three values are 0.3 x 57.8 + 0.7 x 36.0 = 42.5; 57.0; and 0.3 x 91.5 + 0.7 x 69.9 = 76.4; weighted 0.25 x 42.5 + 0.5 x 57.0 + 0.25 x 76.4 = 58.3.)
+
+The expected recoveries are very close: 59.6, 58.3 and 57.7 percent. The ranking is therefore decided by variance, speed and optionality rather than by the mean. Option B has the widest spread (43.1 to 78.7 percent); Option C has the narrowest (53.9 to 63.3 percent), because the price is set by the market.
+
+*Step 4: value of the market check.* If the lenders can run a sale as a floor, they would choose Option C's no-overbid recovery of 53.9 percent in the low case rather than Option B's 43.1 percent. The expected recovery from "prepack with a sale floor" is 0.25 x 53.9 + 0.50 x 58.4 + 0.25 x 78.7 = **62.3 percent**, which is 2.7 points (about $4.9 million on a $181.0 million claim) higher than the plain prepack. The stalking-horse bid is a put option on the business at $185 million, and it is worth about $4.9 million. This is why the recommendation uses it as leverage in the prepack negotiations rather than as the primary strategy.
+
+#### Question 10: Recommendation
+
+The recommended memorandum follows the sections on sensitivity and common errors below.
 

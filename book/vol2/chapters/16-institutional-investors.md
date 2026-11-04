@@ -29,7 +29,7 @@ Answering requires several tools: the economics of DB and DC promises, the mecha
 
 An **institutional investor** manages pooled capital on behalf of beneficiaries, with a mandate shaped by obligations or objectives rather than by the personal preferences of an individual. The most important lesson of this chapter is that **the liability, or spending objective, defines what is "risky" for the investor**. For an individual saving for retirement, volatility of wealth is the risk. For a pension fund with long-dated, inflation-linked promises, the risk is that assets fall short of liabilities, which can happen even when assets rise, if liabilities rise faster. For an endowment, the risk is failure to maintain purchasing power while sustaining a spending stream. For a sovereign fund the objective may be stabilising a budget, saving resource revenue for future generations, or funding a pension reserve.
 
-The consequence is that standard portfolio theory (Markowitz, Volume 1, Chapter 9) must be adapted: the relevant optimisation is over **surplus** (assets minus liabilities) or the funding ratio, and the relevant "risk-free asset" is not Treasury bills but the asset that matches the liabilities.
+The consequence is that standard portfolio theory (Markowitz, Volume 1) must be adapted: the relevant optimisation is over **surplus** (assets minus liabilities) or the funding ratio, and the relevant "risk-free asset" is not Treasury bills but the asset that matches the liabilities.
 
 ### 16.1.2 Main types
 
@@ -205,3 +205,204 @@ The rebuttal is that **expected returns are not guaranteed**. If the premium is 
 > **Common mistake 2.** Treating a funding ratio above 100 percent as safe. A plan at 105 percent with a large unhedged duration gap can slip below 90 percent in a bad year for rates. The right question is the *distribution* of the ratio, not its point estimate.
 >
 > **Common mistake 3.** Assuming a high expected return reduces the cost of pensions. It reduces the *expected* cost, at the price of greater variance and a possible shift of the burden to other stakeholders.
+
+## 16.4 Liability-Driven Investing
+
+### 16.4.1 The idea
+
+**Liability-driven investing (LDI)** is the practice of structuring the plan's assets so that their value moves with the liabilities, thereby stabilising the funding ratio. It splits the portfolio into two parts. A **liability-hedging portfolio** (long-duration government and high-grade corporate bonds, inflation-linked bonds, interest-rate and inflation swaps) is designed to replicate the liability's sensitivity to rates and inflation. A **return-seeking portfolio** (equities, private markets, credit, real assets) is designed to earn the excess return needed to close the deficit and pay for future accruals. The plan chooses how much risk to run in the second part, and then removes as much as it wishes of the unrewarded interest-rate and inflation risk in the first.
+
+The logic follows from Section 16.3: the liability has a duration, so interest-rate exposure is an unrewarded risk unless the plan is paid to bear it. Hedging it is not market timing; it is the removal of a mismatch.
+
+### 16.4.2 Duration, DV01 and hedge ratios
+
+The key sensitivities are:
+
+```
+Modified duration D = (1/P) × Σ t × CF_t / (1 + y)^t  /  (1 + y)
+DV01 = P × D × 0.0001      (value change for a 1 bp fall in yield)
+Hedge ratio = DV01 of assets / DV01 of liabilities
+```
+
+DV01 is the money change for one basis point and is the practical way to compare assets and liabilities, because it accounts for size. A plan with assets of 520 and liabilities of 564 needs the **dollar** duration of its assets to approach the liability's, not simply the same percentage duration. This is why an underfunded plan with a duration-matched asset portfolio still has an uncovered liability exposure: assets are smaller than liabilities, so a 1 percent move in the liability is larger in money terms than a 1 percent move in the assets.
+
+Typical hedging policies set a **target hedge ratio** (for example 50 percent today, rising toward 100 percent as the funding ratio improves) and may hedge interest rates and inflation separately. Many plans use **triggers** or glide paths: as funding improves, risk assets are sold and hedges added, locking in gains.
+
+### 16.4.3 Instruments
+
+Physical bonds provide matching exposure but require capital that could otherwise be in return-seeking assets. **Interest-rate swaps** (paying floating, receiving fixed) give duration exposure with little cash outlay, and **inflation swaps** give inflation exposure. **Repurchase agreements** let a plan lever a gilt or Treasury portfolio. The efficient design, with a sizeable overlay on top of a modest bond portfolio, frees capital for return-seeking assets, but at the price of **collateral and liquidity risk**. A fall in yields creates swap gains, a rise in yields creates swap losses that must be met with cash collateral. If yields jump, the plan needs liquid assets immediately, and may have to sell other holdings into a falling market. The UK gilt market in September 2022 provided a vivid illustration: rapid yield increases triggered large collateral calls on leveraged LDI portfolios, forcing asset sales that pushed yields still higher until the central bank intervened. The lesson, accepted since by regulators, is to hold a **liquidity buffer** sized to withstand a large yield shock and to stress-test the combined position.
+
+**Example 16.4 – Sizing an LDI swap overlay.** Using Example 16.3 at a 5 percent discount rate: liabilities 563.76, assets 520 (funding ratio 92.2 percent). The assets are 60 percent equities (no interest-rate sensitivity assumed) and 40 percent bonds (208) with modified duration 8. A 20-year receiver swap has modified duration 12.46 (same as a 20-year par bond at 5 percent).
+
+*Step 1: Liability DV01.* Liability modified duration = 10.02, so DV01 = 563.76 × 10.02 × 0.0001 = **0.565**. (A 1 bp fall in yield raises liabilities by 0.565 million.)
+
+*Step 2: Asset DV01.* 208 × 8.0 × 0.0001 = **0.166**.
+
+*Step 3: Hedge ratio.* 0.166 / 0.565 = **29.4 percent**. The plan is 70 percent unhedged on rates.
+
+*Step 4: DV01 needed to reach 100 percent.* 0.565 − 0.166 = 0.399.
+
+*Step 5: Swap notional.* 0.399 / (12.46 × 0.0001) = **319.9 million** of receive-fixed swaps (about 61 percent of assets as notional, with minimal initial cash).
+
+*Step 6: Outcomes for a 100 bp move* (equities held constant; asset effects approximated linearly):
+
+| Scenario | Liabilities | Assets, unhedged | Funding ratio, unhedged | Assets with swaps | Funding ratio, hedged |
+|---|---|---|---|---|---|
+| Start | 563.76 | 520.00 | 92.2% | 520.00 | 92.2% |
+| Rates −100 bp | 624.88 | 536.64 | 85.9% | 576.50 | 92.3% |
+| Rates +100 bp | 511.33 | 503.36 | 98.4% | 463.50 | 90.6% |
+
+The swap gains 39.86 when rates fall (319.9 × 12.46 × 1%) and loses 39.86 when they rise.
+
+*Step 7: Collateral requirement.* In the +100 bp scenario the swaps lose 39.86 million, or 7.7 percent of assets, which must be funded in cash (collateral) over a short horizon.
+
+*Interpretation.* The hedged funding ratio stays within about 90.6 to 92.3 percent, against 85.9 to 98.4 percent unhedged. The hedge **removes upside as well as downside** (the plan gives up the gain from a rate rise) and demands liquid collateral of nearly 8 percent of assets for a 100 bp shock. The small residual drift in the hedged case (92.3 percent at −100 bp vs 90.6 at +100 bp) arises from convexity: the liability's convexity exceeds a linear swap position's. A real design would add liquidity buffers and rebalance the hedge as yields move.
+
+### 16.4.4 Longevity and inflation
+
+Interest rates are not the only liability risk. **Longevity risk**: if members live longer than assumed, liabilities increase and no market asset hedges the exposure cheaply. Instruments include **buy-ins** (the plan buys an insurance policy that pays the benefits of specified members), **buy-outs** (the insurer takes on liabilities and the sponsor exits), and **longevity swaps**. **Inflation risk** arises where benefits are indexed; inflation-linked bonds and inflation swaps hedge much of it, though caps and floors in the benefit rules complicate the match.
+
+## 16.5 Asset Allocation for Liability-Bearing Investors
+
+### 16.5.1 From asset-only to surplus optimisation
+
+The classical mean-variance problem (Markowitz) chooses weights to maximise expected return for a given portfolio variance. For a plan, the right objective is the **surplus** (or the funding ratio), whose variance includes the covariance between assets and liabilities. Sharpe and Tint's surplus optimisation recasts the problem in terms of a portfolio return and a liability return; the key formula for the variance of the funding ratio's change is approximately:
+
+```
+Var(FR change) ≈ FR² × [ σ_A² + σ_L² − 2 ρ σ_A σ_L ] 
+```
+
+where σ_A and σ_L are the volatilities of asset and liability returns and ρ is their correlation. For a plan with a modest deficit, **the minimum-risk portfolio is the liability-matching portfolio**, not a cash or short-bond portfolio. Equities, which have a low correlation with liabilities, add a lot of surplus risk for the same portfolio volatility. The planner's problem is to decide how much surplus risk (the "risk budget") the sponsor can tolerate, then to maximise expected surplus return per unit of risk.
+
+### 16.5.2 Setting the risk budget
+
+The risk budget depends on three things. The **funding ratio and the sponsor's covenant**: a poorly funded plan with a weak sponsor has little capacity for risk, while a well-funded plan with a strong sponsor can take risk because the sponsor can fund a shortfall. The **plan's maturity** (the ratio of retirees to active members and the proportion of cash outflow to assets) which determines liquidity needs and the horizon over which risk can be recovered. And **stakeholder preferences**: trustees, sponsor, regulator, members.
+
+Practical frameworks include **funding-ratio glide paths** (reduce risk as the funding ratio rises toward a target, such as full funding on a buy-out basis), **surplus-at-risk or funding-ratio-at-risk limits** (for example, the 95th percentile one-year loss in the funding ratio must not exceed a set amount), and **journey-plan** models that simulate paths to a long-term target.
+
+### 16.5.3 Simulation: how much risk is worth taking?
+
+Closed-form formulas can only go so far, because liabilities, rates and equities interact through time, contributions arrive, and decisions depend on state variables. Most plans therefore use stochastic simulation.
+
+**Example 16.5 – Funding-ratio simulation under three policies.** Consider a stylised plan starting with assets 0.90 per unit of liabilities, with liability duration 10. Interest rates follow a mean-reverting process (starting at 4.5 percent, long-run level 4.5 percent, speed 0.15 a year, volatility 0.8 percentage points a year). Liabilities earn the prevailing yield less duration times the change in rates. Equity returns have mean 7.5 percent and volatility 16 percent, with a correlation of −0.2 with the rate shock (equities tend to fall when rates rise). Conventional bonds have duration 8; the liability-matching portfolio has duration 10 and earns 0.2 percent above the liability return. The sponsor contributes 2 percent of initial liabilities each year. We simulate 100,000 paths over 10 years (computed with Python; seed 7).
+
+**Table 16.4 – Simulated funding ratio after 10 years**
+
+| Policy | Mean | Median | 5th pct | 95th pct | P(FR < 1.0) | P(FR < 0.8) | Std dev |
+|---|---|---|---|---|---|---|---|
+| A: 60% equity, 40% conventional bonds, unhedged | 1.274 | 1.230 | 0.784 | 1.913 | 22.4% | 5.8% | 0.350 |
+| B: 40% equity, 60% bonds, 80% of the bond sleeve liability-matched | 1.209 | 1.190 | 0.883 | 1.600 | 16.7% | 1.4% | 0.219 |
+| C: 25% equity, 75% liability-matched | 1.160 | 1.153 | 0.958 | 1.388 | 10.2% | 0.1% | 0.131 |
+
+*Reading the results.* Policy A has the highest expected funding ratio (1.274) but also the widest distribution: its 5th percentile is 78 percent funded, and there is a 5.8 percent chance of ending below 80 percent funded. Policy C gives up about 11 points of expected funding ratio (1.274 to 1.160), but cuts the standard deviation from 0.350 to 0.131 and the probability of ending below 80 percent from 5.8 percent to 0.1 percent. Policy B sits in between. Note that even Policy C has a 10 percent chance of a funding ratio below 100 percent after 10 years, because the starting deficit is 10 percent, the contribution is modest, and the liability-matched assets earn only a small premium over liabilities.
+
+*Interpretation.* There is no "right" policy without a view of the sponsor's capacity for contributions and the cost of failure. If the sponsor can afford deficit contributions and values the upside, A may be justified; if a bad outcome would breach covenants or threaten the firm, B or C is more appropriate. The simulation's value is that it makes the trade-off between expected funding and tail risk explicit. Its limitation is that the answers depend entirely on the assumed correlations and premia: in a model where equities earn a lower premium or correlate more with rate falls, the ordering shifts.
+
+### 16.5.4 Alternatives, illiquidity and diversification
+
+Most large plans also hold private equity, real estate, infrastructure (Chapter 15), private credit and hedge funds. The case for them is diversification and a possible illiquidity premium; the concerns are fees, valuation lags (reported volatility understates true risk), **illiquidity at precisely the time collateral or benefit payments are needed**, and the difficulty of rebalancing. A plan that is a long way from maturity can bear illiquidity; a plan with growing cash outflow and an LDI overlay cannot hold unlimited illiquid assets. A useful discipline is to classify assets by *liquidity under stress* and to ensure the liquid portion can cover collateral and benefit needs for a defined period under a severe scenario.
+
+## 16.6 Endowments and Foundations
+
+### 16.6.1 The objective: intergenerational equity
+
+An endowment exists in perpetuity and must serve current and future beneficiaries equally. Its objective is to **maximise the real, sustainable spending stream** while preserving the real value of the corpus. The fundamental tension is between today's spending (the university's budget depends on distributions) and tomorrow's capital. There are no external liabilities in the pension sense, but there are **implicit liabilities**: the budget share the endowment funds, and the donors' expectation that the capital will last.
+
+The required real return is approximately the spending rate plus the cost of investment management plus the excess of higher-education cost inflation over general inflation. With a 5 percent spending rate, 0.5 percent investment costs and inflation in the institution's costs of 2.5 percent, the required nominal return is about 8 percent: a demanding hurdle that drives the search for equity and alternative exposure.
+
+### 16.6.2 The endowment model
+
+The **endowment model**, associated with David Swensen's management of the Yale endowment and popularised through the 1990s and 2000s, rests on several claims. First, a **long horizon and absence of near-term liabilities** allow the investor to bear illiquidity and volatility, and so to earn the associated premia. Second, a heavy **equity orientation**, since equities have provided the highest long-run real returns. Third, **diversification away from traditional marketable assets** into private equity, venture capital, real assets and absolute-return strategies, where skilled manager selection might add value. Fourth, a **governance structure** with a small, expert investment committee and a long-tenured staff able to make unconventional decisions and to access top managers.
+
+The critiques are also instructive. Manager selection, not asset-class exposure, accounts for much of the model's performance, and access to top managers is scarce, so the model is hard to replicate at smaller institutions. Valuation smoothing in private assets understates risk. The 2008 financial crisis exposed **liquidity risk**: endowments with large unfunded private-market commitments and falling public holdings faced a "denominator effect," with illiquid assets forming an inflated share of a shrunken portfolio, while still owing capital calls and budget distributions. Some endowments sold assets at poor prices or cut budgets; the lesson is to size illiquid commitments against stressed liquidity, not just average liquidity. A simpler alternative, often called a **reference-portfolio** approach (used publicly by some sovereign funds), benchmarks the actual portfolio against a low-cost mix of equities and bonds and requires active risk to be justified against it.
+
+### 16.6.3 Spending rules
+
+A naive rule, spending a fixed percentage of current market value each year, makes distributions as volatile as markets; a rule that spends a fixed real amount, regardless of market value, risks depleting the fund. Most institutions therefore use a **smoothing rule**. The best-known is a weighted average of last year's spending (grown by inflation) and a target percentage of current market value:
+
+```
+Spending_t = w × Spending_(t−1) × (1 + inflation) + (1 − w) × s × MarketValue_(t−1)
+```
+
+where w is the smoothing weight (for example 0.8) and s the long-run spending rate (for example 5 percent). Variants use a moving average of market value over three to five years.
+
+**Example 16.6 – A smoothing spending rule versus a fixed 5 percent rule.** An endowment starts with a market value of 1,000. Year-1 spending is 45. Inflation is 2.5 percent. Smoothing weight w = 0.8, spending rate s = 5 percent. Returns over five years are +12%, −20%, +8%, +10%, +6%. Spending occurs at the start of each year; the balance then earns the return.
+
+*Step 1: Smoothing rule, year 1.* Spending 45; market value after = (1000 − 45) × 1.12 = 1,069.60.
+
+*Step 2: Year 2.* Spending = 0.8 × 45 × 1.025 + 0.2 × 0.05 × 1,069.60 = 36.90 + 10.70 = **47.60**. Market value = (1,069.60 − 47.60) × 0.80 = 817.60.
+
+*Step 3: Year 3.* Spending = 0.8 × 47.60 × 1.025 + 0.01 × 817.60 = 39.03 + 8.18 = **47.21**. Market value = (817.60 − 47.21) × 1.08 = 832.03.
+
+*Step 4: Years 4 and 5.* Spending 47.03 and 47.20; market values 863.50 and 865.28.
+
+*Step 5: Fixed 5 percent rule.* Spending is 50.0, 53.2 (5% of 1,064.0), 40.4 (5% of 808.6), 41.5 and 43.4; ending market value 873.07.
+
+| Year | Return | Smoothing rule spending | Fixed 5% rule spending |
+|---|---|---|---|
+| 1 | +12% | 45.00 | 50.00 |
+| 2 | −20% | 47.60 | 53.20 |
+| 3 | +8% | 47.21 | 40.43 |
+| 4 | +10% | 47.03 | 41.48 |
+| 5 | +6% | 47.20 | 43.35 |
+
+*Interpretation.* After the 20 percent crash, the fixed rule forces spending to fall by 24 percent (53.2 to 40.4), exactly when the university's needs for support are greatest. The smoothing rule changes spending by less than 1 percent. The price is that spending runs ahead of the market for a time (it is above 5 percent of market value in years 3 to 5), which depletes capital slightly: the smoothing rule's ending value (865.28) is below the fixed rule's (873.07). The smoothing rule thus trades capital preservation in the short run for budget stability, which is usually the right trade for an institution that must run a payroll.
+
+## 16.7 Sovereign Wealth Funds
+
+### 16.7.1 Types and purposes
+
+A **sovereign wealth fund (SWF)** is a state-owned investment fund, typically funded from commodity revenue, fiscal surpluses or foreign-exchange reserves. Classification by purpose is more useful than by name:
+
+- **Stabilisation funds** smooth budgets against commodity-price swings; they need liquidity and low risk.
+- **Savings or intergenerational funds** convert finite resource wealth into a permanent financial asset; they have a long horizon and can take equity and illiquid risk.
+- **Development funds** invest in domestic economic development, which blurs commercial and policy objectives.
+- **Pension reserve funds** pre-fund future public pension liabilities; they resemble large pension plans.
+- **Reserve investment corporations** manage excess foreign-exchange reserves for higher return.
+
+### 16.7.2 Investment and governance issues
+
+SWFs combine the long horizon of endowments with unusual size, which creates market-impact and liquidity constraints and often leads to indexing-style core holdings with active satellites. Their distinctive questions are governance questions: who decides the spending rule (the finance ministry, the fund board), how withdrawals are linked to fiscal rules, how transparent the fund is, whether its investments are commercial or political, and how conflicts are managed. The **Santiago Principles** (2008), a voluntary set of generally accepted principles and practices agreed by SWFs, address legal framework, governance and accountability, and investment and risk-management practices. Funds that tie withdrawals to a fiscal rule based on the expected real return of the fund, and that publish their investment reference portfolio and results, are widely regarded as having strong governance; funds without such rules face the risk that the capital is drawn down for short-term fiscal needs.
+
+For corporate leaders, SWFs matter as large, patient co-investors and acquirers. They often invest alongside private equity and infrastructure sponsors (Chapter 15), buy minority stakes in listed companies, and are active in real-estate and private-market co-investment. Because of national-security and foreign-investment screening, their approach to governance and disclosure can affect a transaction's regulatory path.
+
+## 16.8 Implications for Corporate Sponsors
+
+### 16.8.1 The pension plan as part of the corporate balance sheet
+
+For the sponsor, a DB plan is economically a **debt-like liability coupled with a risky asset portfolio**. The net deficit is a claim ahead of shareholders (the sponsor must eventually fund it, often with tax deductibility), and the volatility of the deficit is a source of earnings and credit risk. Analysts and rating agencies therefore adjust: they add the deficit (usually after tax) to net debt, and they adjust EBITDA or cash flow for the service cost and deficit repair payments.
+
+**Example 16.7 – Adjusting leverage and equity value for a pension deficit.** Return to Greyfield (Opening Vignette): EBITDA 300; net financial debt 600; operating enterprise value (before pension) 2,000; pension liabilities 1,100; plan assets 800; tax rate 25 percent; liability duration 14.
+
+*Step 1: Pre-tax and after-tax deficit.* Deficit = 1,100 − 800 = 300; after tax (contributions are deductible) = 300 × (1 − 0.25) = **225**.
+
+*Step 2: Funding ratio.* 800 / 1,100 = 72.7 percent.
+
+*Step 3: Adjusted leverage.* Reported net debt / EBITDA = 600 / 300 = 2.0x. Adjusted (with after-tax deficit) = (600 + 225) / 300 = **2.75x**. Using the pre-tax deficit gives 3.0x.
+
+*Step 4: Equity value.* Ignoring the deficit: 2,000 − 600 = 1,400. Deducting the after-tax deficit: 2,000 − 600 − 225 = **1,175**, an effective 16 percent reduction in equity value, even though the pension liability does not appear in financial debt.
+
+*Step 5: Deficit repair cash cost.* Spreading 300 over 10 years at a 5 percent rate gives a level payment of 300 × 0.05 / (1 − 1.05⁻¹⁰) = 38.85 a year pre-tax, or 29.14 after tax: about 10 percent of EBITDA for a decade.
+
+*Step 6: Rate shock.* If the discount rate falls 50 bp, the liability rises by roughly 1,100 × 14 × 0.5% = 77, so the deficit increases from 300 to about 377 (and the after-tax deficit to about 283), adjusted leverage from 2.75x to about 2.94x, with assets unchanged. If half the interest-rate risk were hedged, the increase would be about half as large.
+
+*Interpretation.* The deficit consumes 225 of equity value and lifts leverage by three-quarters of a turn; a half-point fall in discount rates, the sort of move that occurs in a normal year, adds almost another fifth of a turn. That is why lenders, rating agencies and acquirers treat the plan as debt, and why the board should evaluate pension decisions alongside capital structure.
+
+### 16.8.2 Strategic options for the sponsor
+
+A sponsor facing a large DB exposure has a menu of options, whose costs and benefits differ.
+
+- **Fund the deficit faster**, with cash or with assets such as property or a contingent asset arrangement. This reduces risk but uses cash. It may be tax-efficient, since contributions are generally deductible. Sponsors sometimes borrow to fund the plan (a debt-for-pension swap), which is value-neutral before tax effects but lowers risk for members.
+- **Reduce the risk of the plan assets** through LDI and de-risking, trading expected return for lower variance (Section 16.5). This is the cheapest way to cut deficit volatility.
+- **Close the plan** to new entrants or to future accrual, replacing it with a DC arrangement. This halts growth in exposure but does not remove legacy liabilities.
+- **Transfer risk to an insurer.** A buy-in covers a portion of liabilities with an insurance policy; a buy-out removes them from the sponsor. The price is typically higher than the accounting liability (the insurer discounts at a lower rate and loads for capital and profit), so completing a buy-out often requires a cash contribution above the reported deficit, but leaves the sponsor free of longevity and investment risk.
+- **Liability management exercises**, such as enhanced transfer values or pension increase exchanges, which offer members a capital sum in lieu of future benefits, must be handled with care for fairness and regulatory reasons.
+- **Negotiate the contribution schedule and security**, balancing the trustees' demand for contributions against the sponsor's capital needs. The relationship between the strength of the sponsor's covenant and the plan's risk is two-way: a stronger sponsor can support a riskier plan.
+
+### 16.8.3 Valuation and M&A implications
+
+In valuation (Volume 1, Chapter 21) the pension deficit should be treated as a debt-like item in the bridge from enterprise value to equity value, after tax, with careful attention to the discount rate used and to whether the deficit is calculated on a market-consistent basis. In M&A and LBO transactions (Volume 1, Chapters 22 and 23), the pension plan can be a deal issue: buyers will demand a price adjustment, or a funding commitment, and will examine the trustees' power to demand additional contributions on a change of control. Because leveraged buyers cannot support highly volatile liabilities, an LBO often leads to a rapid de-risking or insurance transaction. Finally, **ratings and covenants**: sponsors should check how the lender treats pension deficits in covenant definitions, since an unexpected fall in rates can trigger a technical breach.
+
+### 16.8.4 What managers should ask
+
+Managers should ask five questions about any DB exposure: what is the funding ratio on a market-consistent basis; what is the interest-rate, inflation and longevity sensitivity of the deficit; what is the distribution of the deficit over the next three to five years (not only the expected level); what contributions might be required under adverse outcomes and can the firm afford them; and which risk-transfer or de-risking options are available and at what price. These questions make the pension plan a managed risk instead of a surprise.

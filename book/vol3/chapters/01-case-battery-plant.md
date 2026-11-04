@@ -80,7 +80,7 @@ Helios's bank facilities carry one financial covenant: net debt must not exceed 
 | Provincial capital grant (12% of plant cost, paid in Year 1) | – | (180) | (180) |
 | Net outlay | 940 | 420 | 1,360 |
 
-The plant is depreciated for tax purposes on a straight-line basis over ten years starting in Year 2. At the end of Year 15 the plant is assumed to be sold for 8% of its original cost and the land for its purchase price. Net working capital is 12% of revenue and is recovered in full at the end of Year 15. The corporate tax rate is 25%. Tax losses can be carried forward without expiry and can offset up to 80% of taxable income in any later year.
+The plant is depreciated for tax purposes on a straight-line basis over ten years starting in Year 2. At the end of Year 15 the plant is assumed to be sold for 8% of its original cost and the land for its purchase price. Net working capital is 12% of revenue and is recovered in full at the end of Year 15. The corporate tax rate is 25%. Meridian will be held in a ring-fenced subsidiary, as the Province requires, so its losses cannot be set against Helios's other profits. They can be carried forward without expiry and can offset up to 80% of taxable income in any later year.
 
 ### Table 4: Management's Phase 1 operating forecast
 
@@ -436,4 +436,192 @@ E[NPV] = 0.70 × 114.7 + 0.30 × (−185.3) = 80.3 − 55.6 = $24.7M
 The break-even probability of repeal is 114.7 / (114.7 + 185.3) = 38.2%, so any probability of repeal above about 38% makes the expected NPV negative. This is above Bergström's 30% but not by a wide margin, and the 30% is a judgement that nobody can verify. The credit is also an asymmetric risk: it only matters if the plant is in operation when the statute is reviewed, which is exactly when Helios will have the least flexibility.
 
 **(d) Share of value from subsidies.** The unsubsidised NPV is −$537M and the subsidised NPV is +$115M. Subsidies contribute $652M. Without them, the project would destroy $537M of value. The subsidised value is just 18% of the subsidy value (115 / 652). In other words, **the whole of the project's positive NPV comes from government support, and 73% of that support comes from one instrument, the production credit, that is subject to legislative review.** Students should resist the conclusion that subsidies are "free": they are payments the Province makes in return for the commitment, and a rational firm accepts them only while the project remains worth building, but a board should know how much of the value rests on a statute.
+
+### Question 5 solution: Tax effects
+
+**(a) Loss schedule (base case, with subsidies).**
+
+| Year | Taxable income before NOL | NOL used | NOL balance end | Cash tax |
+| :--- | ---: | ---: | ---: | ---: |
+| 2 | (165) | 0 | 165 | 0 |
+| 3 | (30) | 0 | 195 | 0 |
+| 4 | 60 | 48 | 147 | 3 |
+| 5 | 98 | 78 | 69 | 5 |
+| 6 | 100 | 69 | 0 | 8 |
+| 7 | 98 | 0 | 0 | 24 |
+
+Losses of $165M in Year 2 and $30M in Year 3 build a balance of $195M. In Year 4 only 80% of taxable income of $60M, or $48M, can be offset, and the balance is exhausted in Year 6. Full cash tax starts in Year 7, so the plant pays tax of $3M, $5M and $8M in Years 4 to 6 in place of $15M, $25M and $25M.
+
+**(b) Depreciation alternatives.**
+
+| Tax depreciation | NPV with subsidies | Change vs base | Peak NOL balance |
+| :--- | ---: | ---: | ---: |
+| Straight-line 5 years | 122 | 8 | 597.1 |
+| Straight-line 10 years (base) | 115 | 0 | 194.9 |
+| Straight-line 15 years | 88 | (27) | 120.6 |
+| Immediate expensing (1 year) | 112 | (2) | 1,352.6 |
+
+Five-year depreciation adds only $8M and 15-year depreciation costs $27M. Faster depreciation is worth little because the plant has no taxable profit to shield in its early years: deductions create losses, which the 80% rule makes slow to use. Under immediate expensing the loss balance reaches $1,353M and the NPV is actually lower than with five-year depreciation, because the loss is then used over many years. The lesson is that **a deduction is worth its tax rate only when there is income to absorb it**. The value of tax timing is largest for a profitable taxpayer and is small in a ring-fenced start-up.
+
+**(c) No 80% limit.** If losses could offset 100% of taxable income, NPV is $115M, a change of about $1M: the limit matters little because losses are used up within three years of turning profitable. A larger effect comes from the ring-fence. If Meridian's losses could be set against Helios's other profits (group relief), NPV would be $124M, $10M higher.
+
+### Question 6 solution: Sensitivity and scenarios
+
+**(a) Tornado (with subsidies; base NPV $115M).** Each input is varied alone.
+
+| Variable | Adverse case | NPV | Favourable case | NPV | Swing |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Learning rate | 90% | (186) | 80% | 334 | 520 |
+| Annual price decline | 4% | (115) | 2% | 358 | 473 |
+| Initial price level (p0) | -5% | (118) | +5% | 339 | 457 |
+| Steady-state utilisation | 76.5% | (91) | 93.5% (cap 100%) | 319 | 410 |
+| Materials cost level | +5% | 0 | -5% | 228 | 228 |
+| Phase 1 capex | +10% | 4 | -10% | 224 | 220 |
+| Discount rate | +1 pt | 24 | -1 pt | 215 | 191 |
+| Fixed opex | +15% | 21 | -15% | 208 | 187 |
+
+The learning rate, the price path and utilisation are the three variables with swings above $400M. The discount rate, capex and fixed cost, which management argues over most, matter least. The result is partly an artefact of the ranges tested, so the instructor should ask students whether a +10% capex overrun (which still leaves NPV positive at $4M) is more or less likely than a 90% learning rate.
+
+**(b) Break-even values.** Holding other inputs at base, NPV is zero at an initial price of $94.6 per kWh, only 97.5% of the $97.0 base, so a **2.5% price shortfall** erases the entire subsidised value. NPV is zero at steady-state utilisation of 80.2%, against 85% in the base case. Without subsidies the price must be about 11.9% higher than the base to break even.
+
+**(c) Scenarios.**
+
+| Scenario | Probability | NPV no subsidy | NPV with subsidy | IRR with subsidy |
+| :--- | ---: | ---: | ---: | ---: |
+| Upside | 25% | 105 | 776 | 17.7% |
+| Base | 50% | (537) | 115 | 11.5% |
+| Downside | 25% | (1,409) | (765) | -1.9% |
+
+The probability-weighted NPV with subsidies is $60M (0.25 × 776 + 0.50 × 115 + 0.25 × (−765)), with a standard deviation of $548M, nearly ten times the mean. The downside loses 6.7 times the base value and the upside gains 6.7 times as much. **The expected value is modest relative to its dispersion**, so the decision is a bet on managing the price, learning and utilisation drivers. The board can manage utilisation and learning through contracts, milestones and hiring; it cannot manage the price path except through offtake contracts.
+
+### Question 7 solution: The Phase 2 option
+
+**(a) Incremental cash flows.** The cash flows with Phase 2 (capex at the end of Year 3, output from Year 4) minus the cash flows without it include the shared learning, the 15% price discount, the extra fixed cost and the change in tax.
+
+| Year | Incremental volume | Incr. EBITDA | Incr. cash tax | Incr. capex | Incr. FCF | Discount factor | PV |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | 0.0 | 0 | 0 | 0 | 0 | 1.0000 | 0 |
+| 1 | 0.0 | 0 | 0 | 0 | 0 | 0.9074 | 0 |
+| 2 | 0.0 | 0 | 0 | 0 | 0 | 0.8234 | 0 |
+| 3 | 0.0 | 0 | 0 | 1,300 | (1,300) | 0.7472 | (971) |
+| 4 | 7.5 | 35 | (3) | 0 | 37 | 0.6781 | 25 |
+| 5 | 11.2 | 113 | (1) | 0 | 185 | 0.6153 | 114 |
+| 6 | 12.8 | 149 | (2) | 0 | 259 | 0.5584 | 144 |
+| 7 | 12.8 | 155 | (11) | 0 | 287 | 0.5067 | 146 |
+| 8 | 12.8 | 157 | 7 | 0 | 271 | 0.4598 | 125 |
+| 9 | 12.8 | 156 | 7 | 0 | 270 | 0.4172 | 113 |
+| 10 | 12.8 | 154 | 6 | 0 | 151 | 0.3786 | 57 |
+| 11 | 12.8 | 151 | 5 | 0 | 149 | 0.3436 | 51 |
+| 12 | 12.8 | 147 | 4 | 0 | 145 | 0.3118 | 45 |
+| 13 | 12.8 | 142 | 3 | 0 | 142 | 0.2829 | 40 |
+| 14 | 12.8 | 137 | 34 | 0 | 106 | 0.2567 | 27 |
+| 15 | 12.8 | 132 | 59 | 0 | 265 | 0.2330 | 62 |
+
+The static NPV of Phase 2 at 10.2% is $(23)M: the PV of the post-capex flows is **$949M** and the PV of the $1,300M capex at the end of Year 3 is $971M. On a static basis Phase 2 is marginally unattractive.
+
+**(b) Option valuation.** The option is a European call on an underlying asset worth S = $949M today, with strike X = $1,300M at T = 3 years, a risk-free rate of 4% and volatility of 35%.
+
+```
+PV(X)  = 1,300 × e^(−0.04 × 3) = 1,153.0
+d1 = [ln(948.8 / 1,153.0) + (0.04 + 0.5 × 0.35²) × 3] / (0.35 × √3)  ... see note
+```
+
+Using the equivalent form with PV(X): d1 = [ln(S / PV(X)) + 0.5σ²T] / (σ√T) = [−0.1948 + 0.1838] / 0.6062 = -0.0185, and d2 = d1 − 0.6062 = -0.6247. Then N(d1) = 0.4926 and N(d2) = 0.2661.
+
+```
+C = S × N(d1) − PV(X) × N(d2)
+  = 948.8 × 0.4926 − 1,153.0 × 0.2661
+  = 467.4 − 306.8
+  = $160.6M
+```
+
+**Binomial lattice (three annual steps).** With σ = 35% and Δt = 1, u = e^0.35 = 1.4191, d = 1/u = 0.7047, and the risk-neutral probability q = (e^0.04 − d)/(u − d) = 0.4705.
+
+| Year | Project value S (top to bottom) | Option value |
+| :--- | :--- | :--- |
+| 0 | 949 | 145 |
+| 1 | 1,346 / 669 | 310 / 9 |
+| 2 | 1,911 / 949 / 471 | 662 / 21 / 0 |
+| 3 | 2,711 / 1,346 / 669 / 332 | 1,411 / 46 / 0 / 0 |
+
+At Year 3 the payoffs are 1,411 / 46 / 0 / 0 (top to bottom). Working back with discount factor e^(−0.04): the value at Year 0 is $145M. Three steps is coarse; refining the lattice to 200 steps gives $161M, which agrees with the formula. Students should report the formula value, about $161M, and use the lattice to explain the logic: the plant is built only in the two best states.
+
+**(c) Volatility.**
+
+| Volatility | Option value ($M) |
+| :--- | ---: |
+| 25% | 96 |
+| 30% | 128 |
+| 35% | 161 |
+| 40% | 193 |
+| 45% | 226 |
+
+Each 5 points of volatility adds about $32M. Because the option is near the money, value is close to proportional to σ.
+
+**(d) Interpretation.** The static NPV of −$23M says that building Phase 2 in Year 3 is a loss at expected prices. But Helios does not have to build it. If prices turn out high it builds and captures most of the upside; if they turn out low it walks away and loses only the cost of holding the permit and land. A negative static NPV combined with volatility yields positive option value because the loss is truncated at zero. The $161M is the value of that truncation and must be added to the value of Phase 1 as a flexibility premium: $115M + $161M = $275M. Two cautions: the formula assumes the option cannot be pre-empted by competitors, and it assumes the project value follows a single volatility, when in fact the volatility of cell prices, utilisation and learning are different.
+
+### Question 8 solution: Phase it or build it all now?
+
+**(a) All now.** Both phases are committed at once, with Phase 2 capex of $1,248M paid at the end of Year 1 and output from Year 2. NPV is **$302M** and IRR is 12.13%, which is $187M above Phase 1 alone.
+
+**(b) Comparison.** Phase 1 plus the option is worth $275M by Black–Scholes and $260M by the three-step lattice. Building everything now is worth more by $27M to $42M. The cost of waiting (two years of margin, the lost 4% discount and delayed learning) is nearly as large as the value of flexibility. The two are equal at a volatility of about **39%**, inside the consultants' 25% to 45% range, so the answer is sensitive to a number that cannot be known.
+
+**(c) Covenant.** Pro forma net debt after Phase 1 is 520 + 500 + 350 + 300 = $1,670M (new loans of $850M plus $300M of cash used), or 1,670 / 545 = 3.06 times EBITDA. Building Phase 2 now adds $1,248M, to $2,918M, or **5.35 times**, far above the 3.75 limit (maximum net debt of 3.75 × 545 = $2,044M). Phase 2 could be funded without breaching only with about $874M of new equity (1,248 − 374), around 14% of Helios's market value.
+
+| Case | Pro forma net debt ($M) | Existing EBITDA ($M) | Net debt / EBITDA | Covenant |
+| :--- | ---: | ---: | ---: | ---: |
+| Today | 520 | 545 | 0.95 | 3.75x |
+| Phase 1 financed per sources table | 1,670 | 545 | 3.06 | 3.75x |
+| Build all 30 GWh now (extra debt-funded capex $1,248M) | 2,918 | 545 | 5.35 | 3.75x |
+
+**(d) Price outcomes** (with subsidies; "phased" assumes Helios commits to Phase 2 at Year 3 only when it adds value).
+
+| Price scenario | Phase 1 only | Phase 1 + Phase 2 at yr 3 | Phased (best choice) | Build all now | Phased minus all-now |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Base | 115 | 92 | 115 | 302 | (187) |
+| Price -15% | (665) | (1,244) | (665) | (1,214) | 549 |
+| Price -10% | (372) | (758) | (372) | (656) | 284 |
+| Price +10% | 562 | 832 | 832 | 1,154 | (322) |
+
+If prices come in 10% to 15% low, phasing is worth $284M to $549M more than building all now. If prices come in 10% higher, building now is worth $322M more. The payoffs are nearly symmetric in dollars, so with equal odds the decision depends on risk appetite and on constraints. The covenant breach, not the NPV difference, decides the question: **build Phase 1, hold Phase 2 as an option**. The recommendation would change if lenders gave covenant relief or project-level debt outside the covenant, if rival capacity looked certain to be delayed (raising Phase 2 pricing), or if Helios could place equity at a premium. The policy risk reinforces phasing: if the credit is repealed, the capacity not yet built does not lose it.
+
+### Question 9 solution: Financing and APV
+
+**(a) Value of the development loan.** Myers's method values a loan as proceeds minus the PV of after-tax payments, discounted at the pre-tax market rate (7%), since the payments are as certain as the borrower's own debt. The loan is drawn at the end of Year 1; the after-tax interest is 500 × 2.5% × 0.75 = $9.375M a year for Years 2 to 11; principal of $500M is repaid at the end of Year 11.
+
+```
+PV of proceeds (Year 1)       = 500 / 1.07                    = 467.3
+PV of after-tax interest      = 9.375 × annuity (Years 2-11)  =  61.5
+PV of principal               = 500 / 1.07^11                 = 237.5
+NPV of loan                   = 467.3 − 61.5 − 237.5          = $168.3M
+```
+
+Of this, $57M would arise from the interest tax shield on a loan at the market rate, and $111M is the subsidy in the 4.5-point rate gap.
+
+**(b) APV.**
+
+| Component | $M |
+| :--- | ---: |
+| Base-case NPV at WACC 10.2% (Question 4) | 115 |
+| Base-case NPV at unlevered cost of capital 10.26% | 109 |
+| + NPV of state loan (Myers, discounted at 7%) | 168 |
+| APV | 277 |
+
+The unlevered NPV of $109M is slightly below the $115M WACC-based figure, because the 10.26% unlevered rate is above the 10.17% WACC and the WACC embeds a 30% debt tax shield not separately counted here. Adding the loan gives an APV of **$277M**.
+
+**(c) Should the loan count?** In principle yes, because it is a real transfer to Helios that exists only because Meridian is built, so its value belongs in the project's APV. In practice, three cautions apply. The unlevered project already has positive NPV, so the loan is not what makes the project acceptable, and it should not be used to rescue a project with a negative unlevered NPV. The conditions (a build start by 31 March 2027, 900 jobs by Year 3, no change of control) have real costs, including a limit on takeovers and the risk of default if jobs targets are missed. And the loan counts only once: it cannot also be treated as the cheap debt component of the WACC. A defensible answer values the loan separately, as here, and treats its value as a financing benefit to be negotiated, not as operating value.
+
+### Question 10 solution: Recommendation
+
+**(a) Scenario values with repeal risk.**
+
+| Scenario | NPV credit intact | NPV credit repealed after year 4 |
+| :--- | ---: | ---: |
+| Upside | 776 | 461 |
+| Base | 115 | (185) |
+| Downside | (765) | (1,041) |
+
+The expected NPV with the credit intact is $60M and with the credit repealed it is $(238)M. With a 30% probability of repeal the probability-weighted NPV is 0.70 × 60.1 + 0.30 × (−237.7) = **$(29)M**, approximately zero. The project, as an operating investment, is a coin flip. The value of Meridian therefore lies in the items outside the operating DCF: the Phase 2 option (+$161M by formula) and the subsidised loan (+$168M) together are worth $329M, which turns a project with an expected value of about −$29M into one with roughly +$300M, provided the loan and the Phase 2 option are real and can be secured.
+
+**(b) Anchor customer.** The letter is non-binding, so it is not a contract and its price floor of $90 is not a hedge. Since Year 2 price is $97 and the base-case price falls 3% a year, $90 is the base forecast for Year 4, so the floor protects against a faster-than-expected decline only after Year 4. Helios should convert the letter into a take-or-pay contract with a floor, because contracting 4 of 12.75 GWh (31%) for five years would remove part of the price risk the tornado identified as the second-largest. The price Northgate would demand for a firm commitment is a lower, flatter price, so the value of the contract is the reduction in risk, not the average price.
 

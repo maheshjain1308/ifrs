@@ -528,3 +528,90 @@ Interpretation. The square-root aggregation says that diversification is powerfu
 | Typical hedging tools | Swaps, caps, floors, securitization | Swaps, reinsurance, cat bonds |
 
 A financial conglomerate (like Lakeshore Financial) must also manage *double leverage* (debt raised at the holding company and injected as equity into subsidiaries) and *contagion* between subsidiaries, and regulators often impose group-level supervision for that reason.
+
+## 8.8 Managerial Implications: Capital Allocation, Payout, and Governance
+
+### 8.8.1 Capital as the scarce resource
+
+For a financial institution the binding constraint on growth is typically capital, not cash. This changes the toolkit of Volume 1. Capital budgeting (Chapters 6 and 7) becomes *capital allocation*: each business line, product, and client relationship is evaluated by risk-adjusted return on the regulatory and economic capital it consumes (Example 8.7). Cost of capital (Chapter 11) becomes a hurdle rate applied to allocated equity. Payout policy (Chapter 16) becomes a *capital plan*: dividends and buybacks are permitted only if projected capital ratios under stress remain above requirements (Example 8.8). Finally, mergers (Chapter 22) among financial institutions are shaped by regulatory approval and by the capital implications of combining balance sheets.
+
+A sound capital-allocation framework has four elements: (i) a consistent measure of risk-based capital for each business; (ii) transfer pricing of funding and liquidity costs to businesses so that cheap deposits and costly wholesale funding are credited and charged appropriately; (iii) a hurdle rate that reflects the cost of equity; and (iv) incentives that reward risk-adjusted rather than raw profit. Without these, managers are paid for growth in high-spread, high-risk lines, and the bank accumulates risk in its tail.
+
+### 8.8.2 Governance, incentives, and the real lessons of failures
+
+Bank and insurer failures typically share a short list of causes: concentration in one asset class or funding source; growth outpacing controls; duration or liquidity mismatches justified by accounting classification; reserves or provisions set optimistically; and incentive systems that rewarded short-term earnings. The common thread is that *the accounting result and the economic result diverged and the board did not ask why*. For an MBA leader the practical checklist is: demand both earnings-based and economic-value views of rate risk; ask what depositors or policyholders could do in the worst week; check the quality of reserves and provisions against independent estimates; insist that limits be expressed as a percentage of capital and be enforced; and tie compensation to risk-adjusted outcomes with deferral and clawback.
+
+### 8.8.3 Summary
+
+Financial institutions earn money by bearing risks that customers wish to shed: maturity transformation, credit risk, and insurance risk. Regulation constrains these risks through capital and liquidity requirements that are broadly similar in principle across banks and insurers, and different in detail. Good management consists of understanding the economics behind the regulatory ratios, measuring risks in more than one way, pricing for the capital consumed, and holding buffers above the minimum that reflect the bank's own judgment about tail events.
+
+## Case Study
+
+**Tidewater Mutual Group: Growth, Duration, and Capital**
+
+*Illustrative case; Tidewater Mutual Group is fictional.*
+
+Tidewater Mutual Group is a regional financial group consisting of Tidewater Bank, a commercial bank with $30 billion of assets, and Tidewater Life, a life insurer with $8 billion of invested assets. The group is listed, and its chief executive, Priya Raman, has promised shareholders a return on equity of 12 percent within two years. Current group ROE is 8.5 percent.
+
+The bank's growth strategy centres on commercial real estate and small-business lending, where margins are 150 basis points higher than on residential mortgages. Commercial real estate loans carry a risk weight of 100 percent under the standardized approach, against 35 percent for mortgages, so growth consumes capital quickly. The bank's CET1 ratio is 11.2 percent against a requirement, including buffers, of 8.5 percent. The treasury department notes that 65 percent of the bank's deposits are retail, 25 percent are corporate operational deposits, and 10 percent are non-operational deposits from a small number of large corporate and municipal clients, which have been growing as the bank offered above-market rates to fund loan growth. The bank's LCR is 112 percent. The securities portfolio, 20 percent of assets, has an average duration of 5.5 years and unrealized losses equal to 18 percent of CET1; most securities are classified as held to maturity.
+
+Tidewater Life sells fixed annuities with a guaranteed crediting rate of 3.25 percent for five years, followed by renewal rates. It has grown annuity sales rapidly by offering a rate 40 basis points above competitors. The investment portfolio has a duration of 6.0 years against a liability duration of 8.5 years, and the CIO reaches for yield by buying longer-dated private credit, which is illiquid. The economic solvency ratio is 148 percent against an internal target of 150 percent and a regulatory trigger of 100 percent. Lapse rates on annuities have risen from 4 to 7 percent as customers shop for higher rates. The company's actuary reports that if lapse rates reach 12 percent, the insurer would be forced to sell illiquid assets at a discount to meet withdrawals.
+
+The group CFO, Marcus Delgado, has prepared a plan: raise commercial real estate lending by 25 percent over two years, increase annuity sales by 30 percent, buy back $150 million of stock, and finance the buyback with a holding-company debt issue, which would downstream proceeds as equity to subsidiaries. A stress test conducted by the risk team under a scenario of rising rates, falling property prices and a 15 percent rise in unemployment shows the bank's CET1 ratio falling to 7.9 percent and the insurer's solvency ratio falling to 104 percent; the test does not model the interaction between deposit outflows and securities losses, nor between lapses and asset sales.
+
+The board's risk committee chair, Elena Voss, is uneasy. "Every number in this plan passes a regulatory test today," she says. "My question is what happens in a bad week, not a bad year."
+
+**Discussion questions**
+
+1. Compute, using the data given, the approximate additional RWA and CET1 needed for a 25 percent increase in commercial real estate lending if commercial real estate is currently 20 percent of the bank's assets (assume 100 percent risk weight). Does the plan still leave the bank above its 8.5 percent requirement after the buyback?
+2. Identify the liquidity and interest-rate vulnerabilities in the bank's deposit and securities positions. Which metrics beyond the LCR would you ask for, and what would reverse stress tests look like?
+3. Explain the duration mismatch at Tidewater Life, the interaction between lapses and asset illiquidity, and propose a hedging and product-design response. How would you test whether growth in annuities is value-creating after the cost of capital?
+4. Evaluate the holding-company debt issue and buyback (double leverage). Which stakeholders are exposed, and what would you recommend to the board?
+
+## Key Takeaways
+
+- Banks and insurers are leveraged intermediaries whose balance sheets generate their income; ROE equals ROA times the equity multiplier, and a high ROE may reflect low capital or low provisions rather than quality.
+- Net interest margin depends on asset yields, funding costs, and deposit betas; naive repricing gaps can have the wrong sign once deposit behavior is modelled.
+- Earnings-based and economic-value measures of interest-rate risk answer different questions; a bank can show rising NII and falling economic value at the same time.
+- Maturity transformation creates run risk; the LCR and NSFR set minimum buffers and structural funding ratios but are not predictions, and uninsured, concentrated deposits behave differently from granular retail balances.
+- Basel-style capital is built from tiers (CET1, AT1, Tier 2), risk-weighted assets, buffers, and a leverage-ratio backstop; falling into the buffer restricts distributions even before the minimum is breached.
+- The IRB formula derives from a single-factor model: capital is the conditional default rate at a high confidence level, less expected loss, scaled by LGD; the capital charge is concave in PD, and capital should be priced into loans through RAROC.
+- Stress tests project losses, revenue, and RWA under adverse scenarios; RWA inflation and the omission of liquidity feedback are common blind spots.
+- Insurers earn underwriting profit and investment income on the float; because reserves are a multiple of equity, small reserve errors have large effects on earnings, and the tail factor is a major judgment.
+- Life insurers face duration mismatch, lapse, and longevity risk; solvency regimes aggregate risk modules with correlations to a 99.5 percent one-year standard, and diversification vanishes as correlation rises.
+- Capital is the scarce resource of financial institutions: allocate it by risk-adjusted return, plan payouts from stressed capital rather than current ratios, and keep buffers above regulatory minima.
+
+## Review Questions
+
+1. Why is leverage a product feature of banks rather than only a financing choice? How does deposit insurance change the Modigliani-Miller logic?
+2. Decompose ROE for a bank into spread, non-interest income, cost, provisions, tax, and leverage. Which components are most cyclical?
+3. Explain why a bank with a negative contractual one-year repricing gap might benefit from rising rates. What assumptions are crucial?
+4. Distinguish NII-at-risk from economic value of equity. Give an example of a balance sheet for which they give opposite signals.
+5. Describe the Diamond-Dybvig argument for bank runs. How do deposit insurance, the LCR, and central-bank facilities each address it, and what do they leave open?
+6. What is the difference between the LCR and the NSFR? Why are both needed?
+7. Why does the IRB capital charge subtract expected loss? What role does the asset correlation play?
+8. Give two reasons the leverage ratio is retained alongside risk-weighted requirements.
+9. Why do insurers' combined ratios understate or overstate profitability? What should an analyst check about reserves?
+10. Explain how square-root aggregation of risk modules works and why diversification credit is controversial.
+
+## Problems
+
+1. **Profitability.** A bank has earning assets of 70,000 yielding 6.0 percent and interest-bearing liabilities costing 1,960 in total. Non-interest income is 500, operating expense 1,500, provisions 250, tax rate 20 percent, total assets 80,000, equity 6,000. Compute NIM, net income, ROA, and ROE.
+2. **Capital ratio.** Exposures: corporate loans 40,000 (100 percent weight), mortgages 30,000 (35 percent), sovereign bonds 20,000 (0 percent), interbank deposits 10,000 (20 percent), other assets 5,000 (100 percent). CET1 capital is 6,900 and the requirement including buffers is 8.0 percent. Compute RWA, CET1 ratio, excess capital, and the additional 100-percent-weight lending capacity.
+3. **LCR.** HQLA consist of 12,000 of Level 1 assets and 4,000 of Level 2A assets (85 percent recognition). Expected outflows are 18,000 and expected inflows are 6,000 (subject to a 75 percent cap on outflows). Compute the LCR.
+4. **Repricing gap.** Rate-sensitive assets within one year are 30,000 and rate-sensitive liabilities 38,000. Compute the change in NII for +150 basis points and for −50 basis points.
+5. **Duration gap.** Assets are 50,000 with modified duration 4.0; liabilities are 46,000 with modified duration 1.5; equity is 4,000. Compute the duration gap and the change in the market value of equity for a +100 basis point shift, and express it as a percentage of equity.
+6. **ASRF.** For PD = 2.0 percent, LGD = 45 percent, ρ = 0.15, and confidence 99.9 percent, compute the capital charge K and risk weight. What RWA does a 200 million exposure generate?
+7. **Insurer ROE.** Earned premium is 800, loss ratio 68 percent, expense ratio 28 percent, investments 2,400 at 3.5 percent, tax rate 21 percent, equity 700. Compute the combined ratio and ROE. Then compute ROE if there is 40 of adverse prior-year reserve development.
+8. **Solvency aggregation.** An insurer has market risk SCR of 300 and insurance risk SCR of 200 with correlation 0.25 and no other charges. Own funds are 520. Compute the SCR, the solvency ratio, and the ratio if the correlation were 1.0.
+
+### Answers to Selected Problems
+
+1. Interest income = 70,000 × 6.0% = 4,200; NII = 4,200 − 1,960 = 2,240; NIM = 2,240 / 70,000 = 3.20 percent. Pre-tax profit = 2,240 + 500 − 1,500 − 250 = 990; tax = 198; net income = 792. ROA = 792 / 80,000 = 0.99 percent; ROE = 792 / 6,000 = 13.2 percent.
+2. RWA = 40,000 + 30,000 × 0.35 + 0 + 10,000 × 0.20 + 5,000 = 40,000 + 10,500 + 2,000 + 5,000 = 57,500. CET1 ratio = 6,900 / 57,500 = 12.0 percent. Required = 0.08 × 57,500 = 4,600; excess = 2,300. Maximum RWA = 6,900 / 0.08 = 86,250; additional capacity = 28,750.
+3. HQLA = 12,000 + 0.85 × 4,000 = 15,400. Inflows are below 75 percent × 18,000 = 13,500, so net outflows = 12,000. LCR = 15,400 / 12,000 = 128.3 percent.
+4. Gap = −8,000. For +150 bp: −8,000 × 1.5% = −120. For −50 bp: +40.
+5. D_gap = 4.0 − 1.5 × (46,000 / 50,000) = 4.0 − 1.38 = 2.62 years. ΔE ≈ −2.62 × 50,000 × 0.01 = −1,310, which is 32.75 percent of equity.
+6. Φ⁻¹(0.02) = −2.0537; numerator = −2.0537 + 0.3873 × 3.0902 = −0.8568; divided by 0.92195 = −0.9294; Φ = 0.1763. K = 0.45 × (0.1763 − 0.02) = 0.0703 (7.03 percent). Risk weight = 12.5 × 7.03% = 87.9 percent. RWA = 0.879 × 200 = 175.9 million.
+7. Combined ratio = 96 percent; underwriting profit = 32; investment income = 84; pre-tax = 116; net = 116 × 0.79 = 91.6; ROE = 13.1 percent. With 40 adverse development: underwriting = −8; pre-tax = 76; net = 60.0; ROE = 8.6 percent.
+8. SCR = √(300² + 200² + 2 × 0.25 × 300 × 200) = √(90,000 + 40,000 + 30,000) = √160,000 = 400. Ratio = 520 / 400 = 130 percent. With correlation 1.0, SCR = 500 and the ratio is 104 percent.

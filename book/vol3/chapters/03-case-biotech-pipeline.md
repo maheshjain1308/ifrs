@@ -17,13 +17,13 @@ Lumen has 58.4 million shares outstanding, and 62.0 million on a diluted basis o
 
 The people around the table matter, because each of them wants something different from the answer.
 
-**Dr. Priya Raman (CEO)** wants to keep LUM-101 whole. She believes the oral convenience and the biomarker selection will make it a franchise drug, and she is wary of handing away half the world on terms that cap the upside.
+**Dr. Priya Raman (CEO)** wants to keep LUM-101 whole, believing oral convenience and biomarker selection will make it a franchise drug.
 
-**Marcus Feldt (CFO)** is a former equity analyst. He wants a funded company, a covenant that is not in play, and a valuation framework that the board can defend to shareholders who will ask why the stock trades below the sum of the parts. He has asked for a risk-adjusted net present value of every program and an honest comparison of the three ways to fund 2028: an equity raise, the Corvane deal, or the Vantex deal.
+**Marcus Feldt (CFO)**, a former equity analyst, wants a funded company, a covenant out of play, and a defensible valuation. He has asked for a risk-adjusted NPV of every program and an honest comparison of three ways to fund 2028: an equity raise, the Corvane deal or the Vantex deal.
 
-**Dr. Helen Ostrow (chief medical officer)** owns the probability estimates. She has argued, with data, that LUM-101's biomarker enrichment justifies a Phase III success probability above the usual benchmark for oncology. Her critics, including the board's independent science adviser, think she is anchoring on a small Phase II cohort.
+**Dr. Helen Ostrow (chief medical officer)** owns the probability estimates and argues that biomarker enrichment justifies a LUM-101 Phase III probability above the oncology benchmark. The board's science adviser thinks she is anchoring on a small Phase II cohort.
 
-**Tomas Beringer (head of business development)** negotiated the Corvane term sheet and the Vantex counter-proposal. He knows that Corvane also owns a competing late-stage compound and worries, quietly, about what a partner with a competing asset will prioritize.
+**Tomas Beringer (head of business development)** negotiated both term sheets and worries about what a partner with a competing asset will prioritize.
 
 **Ellen Okafor-Lang (board chair)** is a former pharmaceutical executive. She will not accept a recommendation that treats an expected value as a forecast, and she has said so in advance: "Tell me what each choice is worth in the world where the trial works, and in the world where it does not."
 
@@ -41,11 +41,7 @@ Drug development is a sequence of experiments that mostly fail. A compound enter
 
 **Partnering is the industry's financing and risk-sharing technology.** Small companies rarely have the capital to run global Phase III programs and build global commercial organizations. They license regional or global rights to larger partners in exchange for a package: an upfront payment (certain), development, regulatory and sales milestones (contingent), royalties on partner sales (contingent and long-dated), and sometimes a share of development cost. The seller gives up upside in the successful state in return for cash and risk transfer in every state. Whether that trade is attractive depends on the probability of success, on the company's cost of external capital, and on whether the alternative to the deal is a dilutive equity raise at a depressed price. Terms are complicated by upstream obligations: academic licensors usually hold a right to a share of sublicense income, and the exact wording of that share can matter.
 
-**Market valuation of clinical-stage companies.** Clinical-stage biotech equities often trade at enterprise values far below the rNPV of their pipelines, and sometimes far above. Part of the gap is the market's use of more conservative probabilities, part is a higher discount rate, and part is the dilution investors anticipate when a company must raise money before its data arrive. A good analyst treats the gap as information: what probability or discount rate would the market have to be using to justify today's price?
-
-**Accounting context.** Under both US GAAP and IFRS, research costs are expensed as incurred, so a pipeline has little or no balance-sheet value. Lumen's balance sheet therefore shows cash and a loan but nothing for the three programs. Book equity of $327.6 million says almost nothing about worth. This is a case where the entire valuation must come from forward-looking cash flow analysis, and where price-to-book and earnings multiples are meaningless because earnings are negative.
-
-**Policy and competition.** Two exogenous forces recur in pipeline valuation. The first is competitive: a rival's readout can change the market a drug will enter. The second is pricing policy: in this case's fictional jurisdiction, government price negotiation can begin for small-molecule drugs earlier in their commercial life than for biologics, which affects the effective exclusivity of an oral compound like LUM-101 relative to an antibody like LUM-205. The case does not ask you to model the policy explicitly, but the Complications section gives you a data point on it.
+**Market valuation of clinical-stage companies.** Clinical-stage equities often trade far from the rNPV of their pipelines. The gap reflects more conservative probabilities, higher discount rates and anticipated dilution when a company must raise money before its data arrive. A good analyst asks what probability or rate the price implies. Under both US GAAP and IFRS research costs are expensed, so the balance sheet shows almost nothing for the pipeline and the whole valuation must be forward-looking.
 
 ## Financial Data
 
@@ -237,13 +233,11 @@ For the valuation in this chapter, ex-US sales equal 40 percent of the global sa
 
 **Exhibit 6: Corvane's competing asset.** Corvane has a Phase II compound aimed at the same genetic subtype, acquired two years ago. The term sheet obliges Corvane to use "commercially reasonable efforts" to commercialize LUM-101 ex-US but contains no non-compete and no minimum-sales or reversion right. Mr. Beringer believes a reversion right would be worth more to Lumen than a point of royalty but has not priced it.
 
-**Exhibit 7: Tax losses.** Lumen has about $780 million of accumulated tax losses that will shelter early profits. The base models in this chapter apply a 21 percent tax rate on operating profit and credit a 21 percent tax shield on development spending, which assumes the company can use the losses of one program against the profits of another and ignores timing. Management's view is that the effect on value is positive but modest and should be treated as a refinement.
+**Exhibit 7: Tax losses.** Lumen has about $780 million of accumulated tax losses. The models here ignore their timing benefit and apply a 21 percent rate to operating profit, with a 21 percent shield on development spending, as if losses in one program offset profits in another.
 
 **Exhibit 8: Equity market access.** The company's bankers advise that an underwritten follow-on of $250 million could be priced at $12.00 per share, a discount of about 17 percent to the last close, with gross underwriting spread and costs of 5.5 percent. They caution that a larger raise, or a raise priced after the market learns of a covenant problem, would price lower.
 
 **Exhibit 9: Structure of the deal cases.** In Deal A and Deal B, ex-US sales are 40 percent of global sales and are booked by the partner. Lumen's retained US business is 60 percent of global LUM-101 sales. Lumen bears the 14 percent of US sales as cost of goods and royalty, the 4 percent lifecycle R&D charge on US sales, and sales and marketing at the same percentages as in Table 3.6, but with the first-four-years floor reduced from $70 million to $55 million because Lumen no longer needs an ex-US commercial team. Under a deal Lumen continues to bear 3 percent of ex-US net sales as licensor royalty to the University of Calder.
-
-**Exhibit 10: A note on the market's behavior.** Over the last twelve months Lumen's stock has traded as low as $9.80 and as high as $21.30. The high followed a positive conference presentation of LUM-101's Phase II data, and the low followed a covenant-related question on an analyst call. The CFO observes that "the price moves with the market's view of our financing risk at least as much as with its view of our science."
 
 ## Assignment Questions
 
@@ -406,7 +400,7 @@ Operating profits are taken from Table 3.7. For LUM-205 they are multiplied by 0
 
 **rNPV of LUM-310 = -60.3 + 112.8 = $52.6 million.**
 
-**Interpretation.** LUM-205 is worth $139.8 million despite a 17.7 percent approval probability because the success case is large (commercial PV of $1,305.4 million), the cumulative weight on that case, 0.177, still delivers $231.7 million, and the risk-adjusted development cost is only $91.9 million rather than $350.0 million scheduled. LUM-310's commercial case is half the size, it starts nine years out so each dollar is discounted by about 0.39 or less, and it must clear four gates. Its small positive value depends on the assumption that its late-stage cost of $120.0 million is spent only 27.7 percent of the time.
+**Interpretation.** LUM-205 is worth $139.8 million despite a 17.7 percent approval probability because its success case is large (commercial PV $1,305.4 million) and risk-adjusted development cost is only $91.9 million rather than $350.0 million. LUM-310's success case is half the size, starts nine years out (discount factors of 0.39 or less) and must clear four gates.
 
 #### Question 4: Sum of the parts and the market
 
@@ -450,7 +444,7 @@ None of the three is obviously unreasonable, which is the point. The market is p
 
 The venture-style rate that replicates the explicit-probability answer is not one number: it is about 19 percent for a Phase III asset and 25 percent for earlier-stage assets, because the risk that a rate must mimic differs by stage and the rate does not capture the fact that development costs are avoided on failure. Applying a flat 20 percent to unrisked flows would misvalue all three programs, and applying a 20 percent rate together with explicit probabilities, as in the last row, charges for technical failure twice and values LUM-310 below zero.
 
-Is any argument for a rate above 11 percent defensible? Yes, but it is an argument about systematic risk, not technical risk: a financing-risk premium (the covenant), a premium for estimation error in peak sales, or a rate that recognizes that some regulatory and pricing risks are correlated with the economy of healthcare payers. These arguments support a rate of 12 to 13 percent, and Question 4(c) shows that 13.6 percent is what the market's price implies. The discount rate should not be used to price whether the Phase III trial works.
+Is any argument for a rate above 11 percent defensible? Yes, but about systematic risk, not technical risk: financing-risk, estimation-error or payer-correlation premia support 12 to 13 percent, and Question 4(c) shows the market implies 13.6 percent. The rate should not price whether the trial works.
 
 #### Question 6: Sensitivity and outcomes
 
@@ -469,7 +463,7 @@ Is any argument for a rate above 11 percent defensible? Yes, but it is an argume
 | Pricing-policy haircut (Exhibit 4: 15% price cut on 2039 and 2040 sales) | 674.7 | (23.3) | (0.38) |
 | Benchmark probabilities (50% and 88%) | 607.7 | (90.3) | (1.46) |
 
-Each ten points of Phase III probability moves LUM-101 by $147.4 million, or $2.38 per share, because the approval-state value of $1,527.8 million plus the avoided costs is multiplied by 0.10 x 0.90 plus the filing cost effect. The break-even Phase III probability, at which LUM-101's rNPV is zero, is 7.6 percent. Running the pivotal trial is therefore justified at any plausible probability; what is uncertain is the value of the franchise, not whether to continue.
+Each ten points of Phase III probability moves LUM-101 by $147.4 million, or $2.38 per share, because the change equals 0.10 x (0.90 x 1,668.8 - 28.9), where 1,668.8 is the unrisked present value of LUM-101 commercial cash flow and 28.9 is the present value of the after-tax filing cost. The break-even Phase III probability, at which LUM-101's rNPV is zero, is 7.6 percent. Running the pivotal trial is therefore justified at any plausible probability; what is uncertain is the value of the franchise, not whether to continue.
 
 **Three outcomes.** Equity value outside LUM-101 is LUM-205 139.8 + LUM-310 52.6 + platform 45.0 - G&A 130.3 + cash 412.0 - loan 75.0 = 444.1.
 
@@ -494,7 +488,7 @@ The $18.42 expected value is not a price the stock will ever trade at on the day
 | LUM-205 | 139.8 | 26.5 | 113.3 |
 | LUM-310 | 52.6 | (3.1) | 55.7 |
 
-Without the right to stop, LUM-310 would be worth less than zero and LUM-205 only a fifth of its value. The option matters most when probability of failure at early gates is high and downstream spending is large relative to value: LUM-205 has $240.0 million of Phase III spending behind a 34 percent Phase IIb gate. For LUM-101 the only gated spending is the $50.0 million filing stage, so the option is small. If cash runs short, compare rNPV with the spending through the next gate: LUM-101 698.0 / 165.0 = 4.2; LUM-205 139.8 / 55.0 = 2.5; LUM-310 52.6 / 32.0 = 1.6. LUM-310, then the platform, then LUM-205 should be slowed first, but slowing LUM-205 destroys the 2027 readout, which is valuable information.
+Without the right to stop, LUM-310 would be worth less than zero and LUM-205 only a fifth of its value, because LUM-205 has $240.0 million of Phase III spending behind a 34 percent gate. For LUM-101 the only gated spending is the $50.0 million filing stage. If cash runs short, compare rNPV with spending through the next gate: LUM-101 698.0 / 165.0 = 4.2; LUM-205 139.8 / 55.0 = 2.5; LUM-310 52.6 / 32.0 = 1.6. Slow LUM-310 and the platform first; slowing LUM-205 forfeits the valuable 2027 readout.
 
 #### Question 8: Valuing Deal A
 
@@ -514,16 +508,13 @@ Without the right to stop, LUM-310 would be worth less than zero and LUM-205 onl
 | Year | Ex-US sales | Gross royalty | After step-down | University 3% | Net to Lumen | x 0.495 | PV after tax |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2030 | 28.0 | 4.5 | 4.5 | 0.8 | 3.6 | 1.8 | 0.9 |
-| 2031 | 84.0 | 13.4 | 13.4 | 2.5 | 10.9 | 5.4 | 2.5 |
-| 2032 | 179.2 | 28.7 | 28.7 | 5.4 | 23.3 | 11.5 | 4.9 |
+| 2031-2032 | 263.2 | 42.1 | 42.1 | 7.9 | 34.2 | 16.9 | 7.4 |
 | 2033 | 302.4 | 50.5 | 50.5 | 9.1 | 41.4 | 20.5 | 7.8 |
 | 2034 | 414.4 | 72.9 | 72.9 | 12.4 | 60.4 | 29.9 | 10.3 |
 | 2035 | 492.8 | 90.3 | 90.3 | 14.8 | 75.5 | 37.4 | 11.5 |
 | 2036 | 543.2 | 102.4 | 102.4 | 16.3 | 86.1 | 42.6 | 11.9 |
 | 2037 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 11.1 |
-| 2038 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 10.0 |
-| 2039 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 9.0 |
-| 2040 | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 8.1 |
+| 2038-2040 (each year) | 560.0 | 106.4 | 106.4 | 16.8 | 89.6 | 44.4 | 10.0, 9.0, 8.1 |
 | 2041 | 252.0 | 40.4 | 20.2 | 7.6 | 12.6 | 6.3 | 1.0 |
 | 2042-2044 | 229.6 | 36.8 | 18.4 | 6.9 | 11.5 | 5.7 | 0.8 |
 
@@ -556,6 +547,6 @@ Cash paths use the Table 3.9 assumptions. Option I: net proceeds 250 x 0.945 = 2
 | Succeeds, filing rejected | 5.5% | 168.0 | 189.5 | 0 |
 | Approved | 49.5% | 436.3 | 344.8 | 674.3 |
 
-Deal B pays $32.0 million more than Deal A if the trial fails; Deal A pays $91.5 million more if the drug is approved. At a 50-50 chance, A is better; B is better only if the board believes the Phase III probability is below about 26 percent (the point where 0.505 x 32.0 shifts against 0.495 x 91.5 is at an approval probability of 26 percent, assuming the filing stage is passed with 90 percent probability). Deal A gives up $238.0 million of retained value in the approval state in return for $136.4 million of certain value in the failure state.
+Deal B pays $32.0 million more than Deal A if the trial fails; Deal A pays $91.5 million more if the drug is approved. At a 50-50 chance, A is better; B is better only if the board believes the Phase III probability is below about 29 percent (solving 0.285 as the Phase III probability x at which -32.0(1 - x) - 21.5(0.1x) + 91.5(0.9x) = 0). Deal A gives up $238.0 million of retained value in the approval state in return for $136.4 million of certain value in the failure state.
 
 **Choice.** Deal A, after negotiation, in preference to the raise or Deal B. It leaves covenant headroom, costs $0.76 per share in rNPV against a $1.78 dilution cost of the raise, and keeps the US franchise.

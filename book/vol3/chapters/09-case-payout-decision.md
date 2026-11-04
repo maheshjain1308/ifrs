@@ -560,9 +560,9 @@ Base net income is (950.2 + 112 - 60) x 0.79 - 45.50 = 746.2; free cash flow add
 
 ### Solution to Question 10: Recommendation
 
-The recommended structure (the hybrid, run as a package): (1) a **$1,200 million modified Dutch auction tender offer** at $52 to $58, launched immediately after the 28 January earnings release; (2) a **regular dividend increase to $0.25 per quarter**; (3) retention of the balance of the adjusted excess, about $175 million, as a flexible reserve for opportunistic repurchases below $52 and for the Verdana earn-out; (4) a committed **gross leverage range of 0.8x to 1.5x**; and (5) neutralized EPS in the bonus plan.
+The recommended structure (the hybrid, run as a package): (1) a **$1,200 million modified Dutch auction tender offer** at $52 to $58, launched immediately after the 28 January earnings release; (2) a **regular dividend increase to $0.25 per quarter**; (3) retention of the balance, about $190 million, as a flexible reserve for opportunistic repurchases below $52 and for the Verdana earn-out; (4) a committed **gross leverage range of 0.8x to 1.5x**; and (5) neutralized EPS in the bonus plan.
 
-**Why this form.** The tender is tax-efficient (Question 5), a credible signal (Question 6), fast and certain, and gives Meridian an exit. The $1,200 million size leaves a reserve of about $175 million of the adjusted $1,390 million after the $12 million excise tax and about $16 million of repatriation leakage (1,200 x 1.01 + 300 + 400 + 100 - 1,700 = 312 repatriated, at 5 percent). At V = $58 and P = $55, stayers gain (58 x 200 - 1,200) / 178.18 = $58.37, or 0.6 percent; at V = $44 they lose 3.1 percent. The package is robust to the main uncertainty because the dividend increase and the leverage range deliver benefits that do not depend on valuation. FY2027E pro forma EPS is 746.2 / 178.18 = $4.19, 5.8 percent above the $3.96 status quo.
+**Why this form.** The tender is tax-efficient (Question 5), a credible signal (Question 6), fast and certain, and gives Meridian an exit. The $1,200 million size leaves a reserve of about $190 million of the Treasurer's $1,500 million after the $80 million earn-out, the $12 million excise tax and about $16 million of repatriation leakage (1,200 x 1.01 + 300 + 400 + 100 - 1,700 = 312 repatriated, at 5 percent). At V = $58 and P = $55, stayers gain (58 x 200 - 1,200) / 178.18 = $58.37, or 0.6 percent; at V = $44 they lose 3.1 percent. The package is robust to the main uncertainty because the dividend increase and the leverage range deliver benefits that do not depend on valuation. FY2027E pro forma EPS is 746.2 / 178.18 = $4.19, 5.8 percent above the $3.96 status quo.
 
 ### Sensitivity discussion
 
@@ -602,7 +602,7 @@ Accretion stays positive across the grid, confirming Question 3(b). *Value* is d
 **Date:** 2 December 2026
 **Subject:** Return of excess cash; recommendation for decision on 9 December
 
-**Recommendation.** Approve a $1,200 million modified Dutch auction tender offer ($52 to $58, launching after the 28 January release), raise the regular dividend 25 percent to $0.25 per quarter, retain about $175 million as a flexible repurchase reserve, adopt a through-the-cycle gross leverage range of 0.8x to 1.5x, and neutralize capital-return effects in the FY2027 bonus plan.
+**Recommendation.** Approve a $1,200 million modified Dutch auction tender offer ($52 to $58, launching after the 28 January release), raise the regular dividend 25 percent to $0.25 per quarter, retain about $190 million as a flexible repurchase reserve, adopt a through-the-cycle gross leverage range of 0.8x to 1.5x, and neutralize capital-return effects in the FY2027 bonus plan.
 
 **Cash available.** The Treasurer's $1,500 million excess is $1,390 million after the offshore leakage and the Verdana earn-out, on the basis that the March 2027 notes are refinanced. We recommend deploying $1,200 million now.
 
