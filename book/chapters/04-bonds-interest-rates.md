@@ -301,3 +301,142 @@ A third condition, that asset convexity exceed liability convexity, guarantees t
 
 In every scenario the surplus is non-negative: the barbell portfolio has higher convexity than the single-maturity liability, so it is ahead after any parallel shift. The portfolio must be rebalanced as time passes and yields change, since durations drift. Immunisation also fails when the yield curve changes shape rather than moving in parallel, which is why practitioners use key-rate durations or cash-flow matching (a **dedicated portfolio** whose coupons and maturities match the liability schedule) when exactness is needed.
 
+## 4.5 The Term Structure of Interest Rates
+
+### 4.5.1 Spot rates and the yield curve
+
+So far we have used a single yield to discount all of a bond's cash flows. But the market does not charge the same rate for money lent for one year as for ten. The **term structure of interest rates** describes how yields vary with maturity. The **yield curve** plots the YTM of otherwise comparable bonds (typically government securities) against their maturities.
+
+The cleanest building block is the **spot rate** sₜ, the yield on a zero-coupon bond maturing at date t. A cash flow at date t should be discounted at sₜ, not at some blended YTM:
+
+```
+P = Σ CFₜ / (1 + sₜ)ᵗ
+```
+
+The YTM of a coupon bond is a complicated average of the spot rates applicable to its individual payments, weighted by their present values. Two bonds with identical maturities and different coupons will therefore have different YTMs when the curve is not flat (the "coupon effect"), even though they are priced from the same spot curve. Spot rates are not directly observable beyond the bills market, but they can be extracted ("bootstrapped") from the prices of coupon bonds and strips.
+
+### 4.5.2 Forward rates
+
+A **forward rate** is the interest rate, implied by today's spot curve, for a loan that starts at a future date. Consider two ways to invest $1 for two years: buy a two-year zero at s₂, or buy a one-year zero at s₁ and reinvest the proceeds for a second year at the rate f₁,₂ agreed today. To rule out riskless arbitrage the two must produce the same result:
+
+```
+(1 + s₂)² = (1 + s₁)(1 + f₁,₂)      →      f₁,₂ = (1 + s₂)² / (1 + s₁) − 1
+```
+
+In general, the forward rate between dates t − 1 and t is
+
+```
+f(t−1, t) = (1 + sₜ)ᵗ / (1 + s(t−1))^(t−1) − 1
+```
+
+and the forward rate for a multi-period loan starting at date a and ending at date b is [(1 + s_b)^b / (1 + s_a)^a]^(1/(b−a)) − 1. Forward rates are the marginal cost of extending maturity: they show what the market charges for the *additional* year of borrowing. When the spot curve rises, forward rates lie above spot rates; when it falls, forwards lie below.
+
+**Example 4.8 – From spot rates to forwards and bond prices.** The government zero-coupon curve is: 1-year 3.0%, 2-year 3.5%, 3-year 4.0%, 4-year 4.4%.
+
+*Step 1 – discount factors.* 1/1.03 = 0.970874; 1/1.035² = 0.933511; 1/1.04³ = 0.888996; 1/1.044⁴ = 0.841779.
+
+*Step 2 – one-year forward rates.*
+- f₁,₂ = 1.035² / 1.03 − 1 = 1.071225 / 1.03 − 1 = **4.002%**.
+- f₂,₃ = 1.04³ / 1.035² − 1 = 1.124864 / 1.071225 − 1 = **5.007%**.
+- f₃,₄ = 1.044⁴ / 1.04³ − 1 = 1.188023 / 1.124864 − 1 = **5.609%**.
+- Three-year forward rate starting in one year: [(1.044⁴) / 1.03]^(1/3) − 1 = (1.153420)^(1/3) − 1 = **4.871%**.
+
+*Step 3 – price a 4-year 5% annual-coupon bond off the curve.* P = 50 × 0.970874 + 50 × 0.933511 + 50 × 0.888996 + 1,050 × 0.841779 = 48.54 + 46.68 + 44.45 + 883.87 = **$1,023.54**.
+
+*Step 4 – its YTM.* The single rate that discounts the bond's flows to $1,023.54 is **4.346%**. This is lower than the 4-year spot rate (4.4%) because the YTM averages in the lower short-term spot rates through the coupon payments.
+
+A manager who wants to lock in a rate today for borrowing that will start in one year can ask a bank for a forward-rate agreement, or construct the position from zero-coupon bonds; the cost is the forward rate, here 4.871% for three years.
+
+### 4.5.3 Why the curve slopes: three theories
+
+**The pure expectations theory.** Forward rates are unbiased predictions of future spot rates. An upward-sloping curve means the market expects short rates to rise; a downward-sloping one means it expects them to fall. If this were the whole story, investors would be indifferent between a long bond and a rolled-over series of short ones. The theory is elegant, but empirically forward rates tend to exceed subsequently realised spot rates, on average, which suggests that something else is also priced.
+
+**Liquidity preference (term premium).** Investors dislike price risk, and long bonds are more volatile than short ones (higher duration). Investors therefore require a premium, the *term premium*, to hold long bonds, while borrowers are willing to pay it to lock in long-term funds. Forward rates equal expected future spot rates *plus* a term premium that rises with maturity. This explains why yield curves are upward-sloping more often than not.
+
+**Market segmentation and preferred habitat.** Different investors have natural maturities: pension funds and life insurers want long assets to match long liabilities; money-market funds want short ones. In the pure segmentation view, each maturity has its own supply and demand. The preferred-habitat variant, developed by Modigliani and Sutch, allows investors to move out of their habitat if the extra return is sufficient, so arbitrage links the segments but imperfectly. Central bank asset purchases, which remove long bonds from the market, are a modern example of a segmentation effect on the curve.
+
+In practice the curve embodies all three: expectations of the central bank's policy path, term premia for duration risk, and supply-and-demand pressures in particular maturities.
+
+**Table 4.4 – Common yield-curve shapes and their usual interpretation**
+
+| Shape | Description | Usual interpretation | Managerial implication |
+|---|---|---|---|
+| Normal (upward-sloping) | Long yields above short yields | Expected rate rises and/or positive term premium | Short-term funding is cheaper now, but refinancing risk is higher |
+| Flat | Similar yields across maturities | Transition; mixed expectations | Little yield sacrifice for extending maturity |
+| Inverted | Short yields above long yields | Expected rate cuts, often tight policy; historically associated with slowdowns | Long-term funding may be attractive; short-term investments earn more |
+| Humped | Medium maturities highest | Expected rate rise followed by fall | Medium-term borrowing is the most expensive point |
+
+An **inverted** curve gets attention because it has often preceded economic slowdowns, but it should be treated as one input into a forecast, not as a mechanical prediction.
+
+### 4.5.4 Using the curve in corporate decisions
+
+The term structure bears on managers in several concrete ways. First, project cash flows at different horizons should in principle be discounted using rates for matching maturities, though in practice a single risk-adjusted rate is usually applied. Second, the shape of the curve guides the maturity decision for borrowing: the extra yield for extending from 5 to 15 years is the term premium plus expected rate rises, and the forward rate is the benchmark against which any view of future rates should be tested. Anil's 110-basis-point premium is worth paying for a 15-year bond only if the firm values the removal of refinancing risk more than the expected saving from borrowing short and rolling over. Third, for any floating-rate liability, the forward curve gives the expected path of interest cost, and the swap market can fix it.
+
+## 4.6 Credit Risk, Spreads and Ratings
+
+### 4.6.1 Yield as risk-free rate plus credit spread
+
+A government bond in its own currency is treated as free of default risk. A corporate bond is not. The extra yield that investors demand over a comparable government bond is the **credit spread**:
+
+```
+Corporate yield = Risk-free yield (same maturity) + Credit spread
+```
+
+The spread compensates for (i) **expected loss** from default, equal to the probability of default (PD) times the loss given default (LGD = 1 − recovery rate), (ii) a **risk premium** for bearing uncertainty about default and spread changes, which investors cannot fully diversify, particularly in recessions when defaults cluster, and (iii) in some markets a **liquidity premium**, since corporate bonds trade less than government bonds, and sometimes a tax effect. A rough rule is
+
+```
+Spread ≈ PD × LGD + risk premium + liquidity premium
+```
+
+Therefore the promised yield on a risky bond overstates its expected return. An investor who buys a bond with a 250-basis-point spread should not expect to earn 250 bp more than the government, since part of the spread is the expected cost of default.
+
+**Example 4.9 – Extracting default probability from a spread.** A one-year zero-coupon government bond yields 4.0%. A one-year zero-coupon bond from Tessellate Power yields 6.5% and recovers 40% of face value in default. What default probability is implied (the risk-neutral probability)? How much of the 250 bp spread is expected loss if the analyst's own estimate of the true default probability is 2.0%?
+
+*Step 1 – no-arbitrage condition.* In a risk-neutral setting the expected payoff of the corporate bond must be worth the same as the government bond. Payoff per $1 of face value: $1 with probability 1 − q, $0.40 with probability q. Setting the expected payoff discounted at the risk-free rate equal to the corporate price (1/1.065):
+
+(1 − q) + 0.40 q = 1.04 / 1.065 = 0.976526
+
+*Step 2 – solve.* 1 − 0.60 q = 0.976526, so q = 0.023474 / 0.60 = **3.912%**.
+*Step 3 – compare with the simple rule.* PD × LGD = 3.912% × 0.60 = 2.347%, which is close to the actual 2.5% spread (the difference arises from discounting).
+*Step 4 – decompose with the analyst's estimate.* If the true default probability is 2.0%, expected loss is 2.0% × 0.60 = 1.20% (120 bp). The remaining spread of about 130 bp is a premium for risk and illiquidity. The risk-neutral probability exceeds the real-world probability because investors are risk-averse and want compensation for default risk that is correlated with bad economic states.
+
+The distinction matters in practice: to value a bond, use the market's risk-neutral probability, which is embedded in the price; to estimate the expected return on a bond portfolio, use the real-world probability.
+
+### 4.6.2 Credit ratings
+
+Credit-rating agencies (Standard & Poor's, Moody's and Fitch are the best known) publish opinions on the creditworthiness of issuers and individual bonds. Ratings are ordinal categories, not precise probabilities, and they reflect the agency's judgement about the issuer's business risk, financial leverage, cash-flow coverage, liquidity, covenants and, for bonds, seniority. The scale runs from the highest quality to default.
+
+**Table 4.5 – Structure of long-term credit rating scales**
+
+| Category | S&P / Fitch | Moody's | General meaning | Market segment |
+|---|---|---|---|---|
+| Highest quality | AAA | Aaa | Extremely strong capacity to meet obligations | Investment grade |
+| High quality | AA | Aa | Very strong capacity | Investment grade |
+| Upper medium | A | A | Strong, but more exposed to adverse conditions | Investment grade |
+| Lower medium | BBB | Baa | Adequate capacity; adverse conditions may weaken it | Investment grade (lowest tier) |
+| Speculative | BB | Ba | Faces major uncertainties | High yield ("junk") |
+| Highly speculative | B | B | Vulnerable; currently able to pay | High yield |
+| Substantial risk | CCC and below | Caa and below | Currently vulnerable; reliant on favourable conditions | High yield / distressed |
+| Default | D (S&P) | C (Moody's, in the lowest category) | Payment default or bankruptcy filing | Defaulted |
+
+Each category from AA to CCC is subdivided with modifiers (+/− at S&P and Fitch; 1, 2, 3 at Moody's). The boundary between BBB−/Baa3 and BB+/Ba1 is the key line between **investment grade** and **speculative grade**. It is more than a label: many pension funds, insurers and index funds have mandates that restrict them to investment-grade debt, so a downgrade across that line (a "fallen angel") can force selling, widen spreads sharply and raise the issuer's cost of capital across all its borrowing. Managers therefore treat the investment-grade boundary as a constraint on capital structure, and often target a rating that leaves some headroom.
+
+Several cautions apply. Ratings lag market information, so bond spreads often move before rating changes. Ratings are through-the-cycle opinions and are therefore smoother than market-implied credit risk. Rating agencies were widely criticised for the high ratings assigned to certain structured securities before the financial crisis of 2007–2009, a reminder that ratings are fallible opinions and not guarantees. Investors should use them alongside market spreads and their own analysis.
+
+### 4.6.3 Spread risk and spread duration
+
+Spreads change over time, typically widening in recessions and narrowing in expansions. For a holder of corporate bonds, a spread move is another source of price risk, added to the movement in government yields. The sensitivity of a bond's price to its spread is approximated by its **spread duration**, which for a fixed-rate bond is close to its modified duration.
+
+**Example 4.10 – Spread widening.** Tessellate has a 7-year bond with a 5% annual coupon. The government 7-year yield is 4.0% and the bond's spread is 250 bp, giving a yield of 6.5%. The market becomes nervous about the sector, and the spread widens by 100 bp to 350 bp while government yields are unchanged.
+
+*Step 1 – price at 6.5%.* Annuity factor = (1 − 1.065⁻⁷) / 0.065 = (1 − 0.643506) / 0.065 = 5.484; PV of coupons = $50 × 5.484 = $274.20; PV of principal = $1,000 × 0.643506 = $643.51. Price = **$917.73**.
+*Step 2 – price at 7.5%.* Price = **$867.58**.
+*Step 3 – change.* −$50.15, or −5.46%.
+*Step 4 – check against duration.* Modified duration at 6.5% = 5.66, so the approximate change is −5.66% × 1 = −5.66%, or −$51.9 (convexity makes the actual loss slightly smaller).
+
+The company's own borrowing cost is unaffected by this change in the market value of the bond if it holds to maturity, but a widening spread signals a higher cost on any new issue, and affects the fair value of any liabilities the firm marks to market.
+
+### 4.6.4 Managing credit risk as an issuer
+
+For the issuer the spread is a function of leverage, coverage, asset quality and market conditions. Actions that reduce spreads include lowering debt, extending maturities to remove clustering of refinancing, offering collateral or seniority, accepting covenants, and building a reputation for conservative financial policy. Each has costs: lower leverage forgoes tax shields; covenants limit flexibility; and collateral drains the pool of unencumbered assets. The efficient choice depends on the trade-offs developed in the chapters on capital structure.
+

@@ -126,3 +126,169 @@ The results are summarised in the following table, ordered by the size of the sw
 | Fixed costs | 952,963 | 1,356,697 | 403,734 | −17.5% |
 
 **Interpretation.** Price is by far the most important variable: a 10% fall in price takes the project from +$1.15 million to −$0.36 million. This is the effect of *operating leverage*: because costs are largely independent of price, every dollar of price decline falls straight through to profit. Unit variable cost is second, and volume third; fixed costs and even the size of the investment matter much less. The managerial implication is clear. Spend the research budget on pricing power and competitive response, and negotiate hard on variable costs, rather than shaving the capital budget. Note that the ranking would change if the plausible range for volume were ±40% while price were known within ±3%; the table depends on the ranges chosen, not only on the model's structure.
+
+## 8.3 Scenario Analysis
+
+### 8.3.1 Moving variables together
+
+Scenario analysis addresses the main weakness of sensitivity analysis by changing several inputs *simultaneously* in a internally consistent story. A typical set has three scenarios: a pessimistic (downside), a base and an optimistic (upside) case. Each scenario is a coherent narrative about the future, not just a set of numbers: "a recession cuts demand, the competitor undercuts our price, and input costs rise." The consistency of the story matters, because it is the correlation among inputs that drives the extremes.
+
+Scenarios may be assigned subjective probabilities, which allow a probability-weighted expected NPV and a measure of dispersion:
+
+```
+Expected NPV = Σ pᵢ × NPVᵢ
+σ(NPV)       = √[ Σ pᵢ × (NPVᵢ − Expected NPV)² ]
+```
+
+### 8.3.2 Building good scenarios
+
+Several practical principles apply. First, tie scenarios to *drivers* of the business, such as regulation, technology adoption or competitor behaviour, instead of arbitrary percentage shocks. Second, avoid making the worst case an implausible catastrophe or the best case a fantasy; the point is to cover the plausible range. Third, include management responses where plausible, as the firm will not mechanically continue a failing project. Fourth, resist giving excessive precision to the probabilities: they are judgemental, and the exercise is more valuable for what it reveals about the structure of risk than for the arithmetic.
+
+The weakness of scenario analysis is that it considers only a handful of discrete outcomes, whereas reality offers a continuum. It also depends on the analyst's ability to imagine the relevant scenarios. Scenario planning exercises in practice often miss the event that actually occurs, which is why they complement but do not replace simulation.
+
+**Example 8.2 – Three scenarios for the Cirrus project.**
+
+The product team defines three scenarios.
+
+| Input | Pessimistic | Base | Optimistic |
+|---|---|---|---|
+| Units per year | 70,000 | 100,000 | 130,000 |
+| Price ($) | 54 | 60 | 64 |
+| Variable cost ($) | 38 | 35 | 33 |
+| Fixed cash cost ($) | 900,000 | 800,000 | 750,000 |
+| Probability | 25% | 50% | 25% |
+
+*Pessimistic.* Contribution = 70,000 × (54 − 38) = 1,120,000. EBIT = 1,120,000 − 900,000 − 800,000 = −580,000. Assuming the firm can use the loss against profits elsewhere, tax is −174,000, so net operating profit = −406,000 and OCF = −406,000 + 800,000 = 394,000. NPV = −4,000,000 + 394,000 × 3.604776 = **−$2,579,718**.
+
+*Base.* NPV = **$1,154,830** (from Section 8.1).
+
+*Optimistic.* Contribution = 130,000 × (64 − 33) = 4,030,000. EBIT = 4,030,000 − 750,000 − 800,000 = 2,480,000. After-tax = 1,736,000. OCF = 2,536,000. NPV = −4,000,000 + 2,536,000 × 3.604776 = **$5,141,712**.
+
+*Expected value and dispersion.*
+
+```
+Expected NPV = 0.25 × (−2,579,718) + 0.50 × 1,154,830 + 0.25 × 5,141,712
+             = −644,930 + 577,415 + 1,285,428 = $1,217,913
+
+Variance = 0.25 × (−3,797,631)² + 0.50 × (−63,083)² + 0.25 × (3,923,799)²
+         ≈ 3.6055×10¹² + 0.0020×10¹² + 3.8492×10¹² = 7.4567×10¹²
+σ(NPV)   ≈ $2,730,667
+```
+
+The project has a positive expected NPV of about $1.22 million but a standard deviation of about $2.73 million, more than twice the expected value. There is a 25% chance (the probability assigned to the pessimistic story) of losing $2.58 million. Contrast this with the sensitivity analysis: the scenario spread is far wider than the ±10% swings, because the scenarios combine adverse moves in price, volume and costs. A board that considered only the base case would see a comfortable project; a board that sees the scenarios must ask whether the company can absorb a $2.6 million loss and whether anything can be done to reduce its probability.
+
+## 8.4 Break-Even Analysis
+
+### 8.4.1 Three break-even concepts
+
+Break-even analysis asks: how bad can things get before the project fails? It reports the value of one input at which a performance measure just reaches its threshold. Three kinds of break-even are used in capital budgeting, and distinguishing them avoids a classic confusion.
+
+- **Accounting break-even** is the sales level at which accounting profit (EBIT or net income) is zero. At that level the project covers all operating costs and depreciation, but earns nothing for its capital.
+- **Cash break-even** is the sales level at which operating cash flow is zero. Because depreciation is non-cash, this level is lower than the accounting break-even. A project at cash break-even covers its cash costs but never recovers its investment. (The standard textbook convention assumes no tax credit on losses here, so that OCF equals EBITDA.)
+- **Financial break-even** is the sales level at which NPV is zero, so the project earns exactly the required return. This is the economically meaningful one and it is always higher than the accounting break-even for a project with positive investment, because it also requires a return on the capital tied up.
+
+The formulas, with Q the volume, P price, v unit variable cost, FC fixed cash costs, D depreciation and T the tax rate, are:
+
+```
+Accounting break-even:  Q = (FC + D) / (P − v)
+Cash break-even:        Q = FC / (P − v)                         (OCF = EBITDA = 0)
+Financial break-even:   Q = [ FC + D + (EOCF − D) / (1 − T) ] / (P − v)
+   where EOCF = I / Annuity factor(r, n) is the equivalent annual operating cash flow needed for NPV = 0
+```
+
+Break-even points can also be computed for price, variable cost or any other input, holding the rest constant. The distance between the base-case value and the break-even point is a **margin of safety**, often expressed as a percentage.
+
+### 8.4.2 Operating leverage
+
+Fixed costs magnify the effect of sales changes on profit. The **degree of operating leverage (DOL)** measures this:
+
+```
+DOL = Contribution / EBIT = % change in EBIT / % change in sales
+```
+
+For Cirrus, DOL = 2,500,000 / 900,000 = 2.78: a 1% change in volume changes EBIT by 2.78%. High operating leverage means a large profit when volumes are high and a rapid collapse when they fall. It also means that break-even is closer to the base case. Capital-intensive and technology-heavy projects, such as chemical plants, airlines or software with large development costs, generally have high operating leverage, and their managers should look at the margin of safety closely.
+
+**Example 8.3 – Break-even points for the Cirrus project.**
+
+Fixed cash costs are $800,000, depreciation is $800,000, unit contribution is P − v = $25 and the required annual operating cash flow for NPV = 0 is found as follows.
+
+*Accounting break-even.* Q = (800,000 + 800,000) / 25 = **64,000 units**. At this volume EBIT is zero, OCF = depreciation = $800,000 and the NPV is −4,000,000 + 800,000 × 3.604776 = **−$1,116,179**. The project is accounting-profitable and still destroys over a million dollars of value, a vivid illustration that accounting break-even is not a safe criterion.
+
+*Cash break-even.* Q = 800,000 / 25 = **32,000 units**. At this volume OCF is zero and NPV = **−$4,000,000**: the firm loses the entire investment.
+
+*Financial break-even.* The annual OCF required for NPV = 0 is 4,000,000 / 3.604776 = $1,109,639. Since OCF = EBIT × (1 − T) + D, the required EBIT is (1,109,639 − 800,000) / 0.70 = $442,341. Then contribution required is EBIT + FC + D = 442,341 + 800,000 + 800,000 = $2,042,341, so
+
+```
+Q = 2,042,341 / 25 = 81,694 units
+```
+
+The margin of safety on volume is (100,000 − 81,694) / 100,000 = **18.3%**.
+
+*Other break-evens (holding other inputs at base).*
+
+| Variable | Base value | Break-even (NPV = 0) | Margin of safety |
+|---|---|---|---|
+| Units per year | 100,000 | 81,694 | 18.3% |
+| Price per unit | $60.00 | $55.42 | 7.6% |
+| Variable cost per unit | $35.00 | $39.58 | 13.1% |
+| Fixed cash costs | $800,000 | $1,257,659 | 57.2% |
+
+The table reinforces the sensitivity analysis. The project can lose almost 18% of volume or almost 13% of cost-side slack but only 7.6% of price before value is destroyed, while the fixed cost has a very thick cushion. The three break-even definitions for volume (32,000, 64,000 and 81,694 units) are ordered cash < accounting < financial, and only the last answers the question the board is really asking.
+
+## 8.5 Monte Carlo Simulation
+
+### 8.5.1 The concept
+
+Sensitivity analysis varies one input; scenario analysis a handful of combinations. **Monte Carlo simulation** takes the idea to its natural conclusion: it specifies a probability distribution for each uncertain input, draws a random value from each, computes the project's NPV for that draw, and repeats this thousands of times. The collection of NPVs is an empirical probability distribution of project value. The method is named after the casino and is attributed to work on numerical problems in the 1940s, but its logic is just repeated sampling.
+
+The steps are:
+
+1. **Build the deterministic model** with all inputs on separate lines (as in Chapter 7).
+2. **Choose the uncertain inputs** (the ones the sensitivity analysis shows matter) and assign each a distribution: normal for quantities with symmetrical errors, triangular for variables where the analyst can state a minimum, most likely and maximum, lognormal for strictly positive variables with a right skew, and so on.
+3. **Specify correlations** among the inputs, because variables that move together make extreme outcomes more likely than independent draws suggest.
+4. **Run many trials** (typically thousands). In each, draw every uncertain input, compute the cash flows and the NPV.
+5. **Analyse the output:** the mean and standard deviation of NPV, the probability that NPV is negative, percentiles, and a histogram. Rank the inputs by their correlation with NPV to see which uncertainty drives the result.
+
+In pseudo-code:
+
+```
+for trial = 1 to N:
+    units = draw Normal(100,000; 20,000), floored at 0
+    price = draw Triangular(min 52, mode 60, max 66)
+    vcost = draw Triangular(min 32, mode 35, max 41)
+    fixed = draw Normal(800,000; 60,000)
+    OCF   = ((units × (price − vcost) − fixed − 800,000) × 0.70) + 800,000
+    NPV[trial] = −4,000,000 + OCF × 3.604776
+report mean(NPV), stdev(NPV), share of trials with NPV < 0, percentiles
+```
+
+### 8.5.2 Strengths and cautions
+
+Simulation can handle many inputs, skewed distributions, non-linear relationships and path-dependent rules (for example, "if cumulative sales fall below a threshold, cut capacity"). Its output speaks in the language of risk: "there is a one-in-three chance of a loss." But it is no better than its inputs. The main cautions are these.
+
+- **Garbage in, garbage out.** The distributions are subjective, and an elaborate simulation can lend a false sense of precision to guesses. Document why each distribution was chosen.
+- **Correlation is hard to specify and easy to omit.** Assuming independence generally understates the spread of outcomes, because in practice good and bad years cluster.
+- **Fat tails.** Normal distributions understate the probability of extreme events. If the real risk includes rare disasters, choose distributions that allow them.
+- **Misleading discounting.** The simulation's mean NPV should be computed with a discount rate that reflects only market risk; using a high "risk-adjusted" rate on top of a simulation that already includes the project's variability double-counts risk.
+- **It cannot choose for you.** The result is a distribution, not a decision. The firm must still decide how much risk it can bear.
+
+**Example 8.4 – A simulation of the Cirrus project.**
+
+Cirrus's analysts specify these distributions for the uncertain inputs, drawn independently: units per year Normal(mean 100,000; σ 20,000) floored at zero; price Triangular(52, 60, 66); variable cost Triangular(32, 35, 41); fixed cash costs Normal(800,000; 60,000). Depreciation, the tax rate and the discount rate are fixed. A 10,000-trial simulation (random seed 42 in a standard numerical library) produced the results below. Because this is a random sample, a rerun with a different seed would produce slightly different figures; the pattern, not the third digit, is what matters.
+
+| Statistic | Result |
+|---|---|
+| Mean NPV | $727,072 |
+| Standard deviation of NPV | $1,481,661 |
+| 5th percentile | −$1,560,379 |
+| 25th percentile | −$300,039 |
+| Median | $641,708 |
+| 75th percentile | $1,672,323 |
+| 95th percentile | $3,307,583 |
+| Probability NPV < 0 | 32.4% |
+| Probability NPV < −$1,000,000 | 11.4% |
+| Probability NPV > $2,000,000 | 18.9% |
+
+*Why is the mean below the deterministic NPV of $1,154,830?* The triangular distributions are skewed against the firm: the average price is (52 + 60 + 66)/3 = $59.33 and the average variable cost is (32 + 35 + 41)/3 = $36.00, so the expected unit margin is $23.33 rather than $25. With 100,000 expected units, the expected contribution is about $2.33 million, not $2.5 million, which alone lowers NPV by about $0.43 million. This is a general point: NPV evaluated at the *expected* inputs is not always the *expected* NPV when distributions are asymmetric, and the simulation's mean is the better estimate of expected value if the distributions are sound.
+
+*What drives the risk?* The correlation of each input draw with the resulting NPV across the trials is approximately 0.80 for units, 0.49 for price, −0.32 for variable cost and −0.09 for fixed costs. In the sensitivity analysis price had the largest effect per 10% move, but under realistic uncertainty ranges, volume (with a 20% standard deviation) dominates, while price (a narrow triangular range) comes second. The two tools answer different questions: sensitivity asks what the model is most sensitive to, simulation asks what matters given how uncertain we actually are. A manager should keep both in mind. It is also noteworthy that a project with a deterministic NPV of +$1.15 million has a probability of about 32% of destroying value once the uncertainty is acknowledged.

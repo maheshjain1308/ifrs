@@ -380,3 +380,102 @@ Z = 1.2(0.15) + 1.4(0.20) + 3.3(0.10) + 0.6(1.10) + 1.0(0.90)
 Z = 0.18 + 0.28 + 0.33 + 0.66 + 0.90 = **2.35**
 
 The firm is in the grey zone. A decline in the market value of its equity to 0.60 of liabilities would reduce the fourth term from 0.66 to 0.36 and Z to 2.05, which indicates the sensitivity of such models to equity prices. Scoring models are screening tools and are no substitute for analysis of cash flow, competitive position and liquidity.
+
+## 14.7 Debt Capacity
+
+**Debt capacity** is the amount of debt a firm can carry while retaining its desired credit standing, covenant compliance and strategic flexibility. It is not a single number; it is the smallest value produced by several constraints, tested under stress.
+
+### 14.7.1 Approaches
+
+1. **Leverage constraint.** Maximum Debt/EBITDA consistent with the target rating or the covenant, adjusted for the cycle. Capital-intensive and cyclical firms need lower multiples than stable service firms.
+2. **Coverage constraint.** Maximum interest such that EBITDA (or EBIT) divided by interest meets a minimum. Because interest equals debt times the rate, debt capacity under this constraint falls as interest rates rise.
+3. **Cash-flow (DSCR) constraint.** Maximum debt service such that cash flow available for debt service divided by scheduled debt service is at least a target (for example, 1.5x), and the debt that this service supports given the tenor and rate.
+4. **Asset-coverage constraint.** Debt not exceeding some fraction of the liquidation value of assets, relevant for secured lending.
+5. **Strategic and trade-off view.** The tax shield from more debt must be weighed against expected costs of distress, loss of flexibility and the option value of unused capacity. Firms with valuable growth options or volatile cash flows deliberately hold *financial slack*: borrowing capacity held in reserve.
+
+### 14.7.2 Stress testing
+
+A firm should compute capacity on **downside cash flows**, not on the plan. Reduce EBITDA by an amount that is plausible in a recession in the industry (for example, the peak-to-trough decline in the last cycle), apply higher interest rates if the debt is floating, and check that (a) covenants hold, (b) liquidity is sufficient to meet obligations without new external funding, and (c) maturities are not clustered in a window when refinancing could be difficult.
+
+**Example 14.9 – Estimating debt capacity.**
+Kestrel has EBITDA of $120 million and can borrow at 8.0%. Its covenants and policies are: Debt/EBITDA ≤ 4.00x; EBITDA/interest ≥ 4.00x (the internal policy for an investment-grade profile); and a minimum DSCR of 1.50x. Cash flow available for debt service (CFADS) is expected to be $90 million. New debt would be repaid in level annual payments over seven years. Existing debt is $100 million.
+
+Step 1: Leverage constraint. Maximum debt = 4.00 × 120 = $480 million.
+
+Step 2: Coverage constraint. Maximum interest = 120 / 4.00 = $30 million. At 8.0%, maximum debt = 30 / 0.08 = **$375 million**.
+
+Step 3: DSCR constraint. Maximum annual debt service = 90 / 1.50 = $60 million. The present value of seven level payments of $60 million at 8.0% = 60 × [(1 − 1.08^(−7)) / 0.08] = 60 × 5.2064 = **$312.4 million**.
+
+Step 4: Debt capacity is the minimum of the three: **$312.4 million** (the DSCR constraint binds). Incremental capacity over existing debt = 312.4 − 100 = $212.4 million, compared with a funding need of $180 million. The expansion is affordable, with roughly $32 million of slack.
+
+Step 5: Stress test. Suppose EBITDA falls 30% to $84 million and CFADS falls 30% to $63 million. With debt of $280 million after drawing the full $180 million: leverage = 280 / 84 = 3.33x (passes 4.00x). Interest at 8.0% = $22.4 million; coverage = 84 / 22.4 = 3.75x (just below the 4.00x policy but the covenant is not breached if the legal minimum is lower). DSCR depends on debt service; if service on $280 million over seven years is 280 / 5.2064 = $53.8 million, DSCR = 63 / 53.8 = 1.17x, which is thin but above 1.0x. Kestrel could service its debt in the downturn, but with little room for further adverse events.
+
+Step 6: Interest tax shield. Debt of $280 million at 8.0% and a 25% tax rate gives a first-year tax shield of 0.25 × 22.4 = $5.6 million, worth up to 0.25 × 280 = $70 million in present value if the debt were permanent and the rate were the discount rate. Against that, a modest further increase in debt would use up slack that has option value in a downturn.
+
+The result frames the decision. Capacity is a ceiling, not a target. A policy such as "borrow to 70% of capacity" provides a buffer and keeps flexibility for acquisitions or downturns.
+
+### 14.7.3 Managerial guidelines
+
+- Match debt service to cash flow patterns: seasonal or cyclical firms should avoid heavy amortization and back-ended refinancing wall.
+- Stagger maturities to avoid concentration: a "ladder" reduces refinancing risk.
+- Maintain committed liquidity (undrawn revolver and cash) sized to cover at least twelve months of obligations in a stress scenario.
+- Hedge floating-rate exposure to the extent coverage cannot absorb a rate shock.
+- Link debt policy to the strategy: companies with large growth opportunities should be conservative; stable cash generators can carry more.
+- Remember agency problems on both sides: managers may prefer less debt (protecting their human capital), while high-leverage structures can discipline waste. Observe the evidence in the firm's own history rather than apply an industry rule blindly.
+
+## 14.8 Securitization: An Overview
+
+**Securitization** converts a pool of illiquid financial assets (loans, receivables, leases) into tradable securities backed by the pool's cash flows. The originator sells the assets to a **special purpose vehicle (SPV)**, a legally separate entity designed to be "bankruptcy remote" from the originator. The SPV funds the purchase by issuing securities, which are repaid from collections on the pool. Common underlying assets include residential mortgages (mortgage-backed securities), auto loans, credit-card receivables, trade receivables, equipment leases and corporate loans (collateralized loan obligations, or CLOs).
+
+### 14.8.1 Why securitize?
+
+- **Funding based on asset quality rather than originator credit.** A high-quality pool can be financed more cheaply than the originator's unsecured debt, if the structure is truly isolated from the originator's risk.
+- **Diversification of funding sources.** Access to capital markets investors, and not only bank balance sheets.
+- **Balance-sheet and capital management.** If the transfer meets the derecognition criteria under the accounting standards and regulatory rules (including a true sale and transfer of risks and rewards), assets leave the originator's balance sheet. Under IFRS 9 and IFRS 10, however, retained exposure or control may require the originator to continue to recognize the assets or consolidate the SPV.
+- **Risk transfer and tailored securities.** The structure can offer investors different risk-return profiles.
+
+### 14.8.2 Structure and credit enhancement
+
+The main feature is **tranching**: the SPV issues securities of different seniority. Losses on the pool are allocated from the bottom up.
+
+- **Equity (first-loss) tranche.** Absorbs the first losses and receives residual cash flow; often retained by the originator to align incentives ("skin in the game").
+- **Mezzanine tranches.** Absorb losses after the equity tranche is exhausted.
+- **Senior tranches.** Protected by the subordination below them, and therefore receive the highest credit ratings.
+
+Other forms of **credit enhancement** include **overcollateralization** (the pool exceeds the securities issued), **excess spread** (the pool's interest income exceeds the securities' interest and fees, and the excess is trapped to absorb losses), reserve accounts, guarantees, and triggers that redirect cash flows to senior tranches if performance deteriorates.
+
+**Example 14.10 – Loss allocation in a tranched structure.**
+An SPV holds a pool of $500 million of loans and issues three tranches: Senior $400 million (80%), Mezzanine $60 million (12%) and Equity $40 million (8%). Consider three loss scenarios for the pool (ignoring recoveries timing and excess spread).
+
+Scenario A: Pool losses of 5% = $25 million. Equity absorbs all $25 million (62.5% of the equity tranche). Mezzanine and senior suffer no loss.
+
+Scenario B: Pool losses of 12% = $60 million. Equity absorbs its full $40 million (100%). The remaining $20 million falls on the mezzanine (33.3% of that tranche). Senior suffers no loss.
+
+Scenario C: Pool losses of 25% = $125 million. Equity loses $40 million, mezzanine loses $60 million (100% each), and the remaining $25 million falls on the senior tranche, a loss of 25 / 400 = 6.25%.
+
+**Table 14.5 – Tranche losses by scenario ($ millions)**
+
+| Tranche | Size | Scenario A (pool loss 5%) | Scenario B (12%) | Scenario C (25%) |
+|---|---|---|---|---|
+| Senior | 400 | 0 | 0 | 25 (6.25%) |
+| Mezzanine | 60 | 0 | 20 (33.3%) | 60 (100%) |
+| Equity | 40 | 25 (62.5%) | 40 (100%) | 40 (100%) |
+| Total loss | 500 | 25 | 60 | 125 |
+
+The senior tranche has 20% of subordination beneath it, so it is hit only if the pool's losses exceed 20%. The mezzanine tranche is exposed once losses exceed 8% and is wiped out at 20%. Whether the senior tranche is "safe" depends entirely on the distribution of pool losses and on correlation: if loans default together, the probability of extreme losses is much higher than the independent-default assumption implies.
+
+### 14.8.3 Risks and lessons
+
+Securitization is a useful tool, but its history includes significant failures. The main lessons:
+
+- **Model risk and correlation.** Ratings depended on assumptions about default correlation and house prices that failed in the 2007-2009 crisis. Senior tranches of pools of subprime mortgages suffered losses they were rated not to suffer.
+- **Misaligned incentives (originate to distribute).** When originators sell loans and keep no risk, they may lower underwriting standards. Regulators now commonly require risk retention.
+- **Complexity and opacity.** Re-securitizations (securities backed by tranches of other securitizations) multiplied complexity and made valuation depend on models rather than observable cash flows.
+- **Liquidity and funding runs.** Structures financed with short-term paper and liquidity backstops proved fragile when market confidence evaporated.
+- **Reputational and legal risk.** Even where legal separation exists, originators may feel obliged to support their vehicles.
+
+For a corporate CFO, securitization is most often relevant for trade receivables or equipment loans, where the pool is granular, short-dated and well understood. Disciplined use means clear true-sale analysis, realistic stress assumptions, an understanding of consolidation and covenant treatment, and the capacity to continue to fund if the market is closed.
+
+### 14.8.4 Choosing among sources: a synthesis
+
+Returning to Kestrel: the $180 million expansion has an average asset life of 20 years for the quarry and rail, and 7 to 10 years for the trucks. A sensible package might combine (i) a $100 million ten-year senior note, matching the long-lived assets and fixing most of the cost; (ii) a $60 million amortizing bank term loan with a covenant-light structure for the equipment, repayable as the assets earn; (iii) a lease for the trucks if the NAL is positive after residual-value risk; and (iv) an undrawn revolver of $75 million for liquidity. A convertible might make sense only if management believes the shares are undervalued and the firm has a clear case for dilution tolerance. Securitization of receivables could be held in reserve as a contingent source of funding. The total should fit inside the lowest constraint from Example 14.9, with a buffer.

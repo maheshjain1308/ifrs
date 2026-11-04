@@ -190,7 +190,7 @@ Step 5: C = 50 × 0.95123 × 0.7119 − 50 × 0.81873 × 0.4555 = 33.86 − 18.6
 
 Step 6: Grant value = 200,000 × 15.21 = **$3.04m**.
 
-An equivalent economic grant in restricted stock units would be 3.04m / 50 = 60,800 units, ignoring the dividend (RSUs receive or accrue dividends; the option does not). The key managerial insights: an at-the-money option is worth about 30 percent of the share price at these parameters, so it is a levered bet on the share price; the value rises with volatility (at σ = 40 percent it is worth more), which means options reward risk-taking and are not neutral about strategic choices such as leverage or an acquisition that raises volatility; and they pay nothing if the share price falls, so they do not protect shareholders against poor performance in a falling market for the shares but do provide upside if the entire market rises. Executives compare an option's *value to them*, which is lower than the Black-Scholes fair value because they are undiversified and cannot hedge, with the *cost to the company*.
+An equivalent economic grant in restricted stock units would be 3.04m / 50 = 60,800 units, ignoring the dividend (RSUs receive or accrue dividends; the option does not). The key managerial insights: an at-the-money option is worth about 30 percent of the share price at these parameters, so it is a levered bet on the share price; the value rises with volatility (at σ = 40 percent it is worth more), which means options reward risk-taking and are not neutral about strategic choices such as leverage or an acquisition that raises volatility; and they pay nothing if the share price ends below the strike, yet they also pay for market-wide gains that the executive did not cause, which is the argument for indexed or relative-performance designs. Executives compare an option's *value to them*, which is lower than the Black-Scholes fair value because they are undiversified and cannot hedge, with the *cost to the company*.
 
 **Example 24.5 – A relative TSR performance share plan.** The CEO receives a target grant of 40,000 performance shares vesting after three years. The payout is 0 percent below the 25th percentile of peer TSR, 50 percent at the 25th percentile, 100 percent at the median, 150 percent at the 75th percentile and 200 percent at or above the 90th; payout is interpolated linearly between points. The company finishes at the 62nd percentile and the share price at vesting is $58.
 
@@ -207,3 +207,110 @@ The grant-date target value (40,000 × $50 = $2.0m) rose to $2.88m because of th
 ### 24.4.4 Say-on-pay, ratios and the political context
 
 Many jurisdictions give shareholders an advisory or binding vote on pay. CEO-to-median-worker pay ratios are disclosed in some regimes. These measures create transparency but not necessarily moderation; they have been accused of encouraging benchmarking that increases pay. A defensible committee process includes using independent consultants, tying pay to a clear strategy, testing payout under multiple scenarios (including the worst case) before approval, and explaining outcomes to shareholders in plain language.
+
+## 24.5 Fintech, Payments and Digital Assets
+
+This section is deliberately conceptual. Technologies and regulation in this area change quickly; the aim is to give finance leaders a durable framework for evaluating proposals rather than a snapshot of products.
+
+### 24.5.1 What fintech changes in the economics of finance
+
+Financial services perform a few core functions: moving value (payments), pooling and allocating capital (lending, investing), managing risk (insurance, hedging) and producing information (credit assessment, price discovery). Fintech firms apply software, data and new distribution channels to these functions. They typically compete on one of four dimensions: lower unit cost through automation and API-based integration; better information, for example credit decisions using transaction or cash-flow data; superior user experience and distribution embedded in a non-financial product ("embedded finance"); and regulatory or structural arbitrage, which is the least durable. For a corporate finance leader, the implications fall into four areas: treasury and working capital, financing sources, customer-facing business models and risk management.
+
+**Treasury and working capital.** Real-time payments, virtual accounts, automated reconciliation and API connectivity reduce float, reduce days sales outstanding by speeding collection, and enable dynamic discounting and supply chain finance. The value of faster cash can be computed directly: a firm with $2.4 billion revenue and 45 days sales outstanding that reduces DSO by 3 days releases 2,400 × 3 / 365 = $19.7m of cash, which at a 6 percent cost of funds is worth $1.18m annually.
+
+**Financing sources.** Marketplace lenders, invoice platforms and revenue-based financing offer alternatives to bank credit for small and mid-sized firms. They can provide faster decisions but sometimes at higher all-in cost, and their funding can be pro-cyclical: platforms funded by wholesale investors may cut volume in a downturn. A treasurer should compare all-in annual percentage cost, including fees, and examine the reliability of the funding source.
+
+### 24.5.2 Payments economics
+
+Card payments involve several parties: the cardholder, the issuing bank, the card network, the acquiring bank or processor and the merchant. The merchant pays a **merchant discount rate** (MDR), usually a percentage of the transaction plus a fixed fee. Of this, the largest piece is **interchange**, paid to the issuer; the network charges assessment and processing fees; the acquirer or payment facilitator retains the remainder as its **net take**. Regulation of interchange differs by country, so the margin structure of the same business varies across markets. Payment facilitators aggregate small merchants and charge blended pricing (e.g., 2.9 percent plus a fixed fee), earning a spread over the underlying costs; they also bear fraud, chargeback and compliance risk.
+
+**Example 24.6 – Unit economics of a payment facilitator.** A facilitator charges 2.9 percent + $0.30 per transaction on an average ticket of $50. Its costs per transaction are: interchange 1.65 percent of ticket; network and assessment fees 0.13 percent; processing and gateway cost $0.10; fraud and chargeback losses 0.08 percent of ticket; support and servicing $0.05. Fixed annual operating costs (technology, compliance, staff) are $40m.
+
+Step 1: Revenue per transaction = 0.029 × 50 + 0.30 = 1.45 + 0.30 = **$1.75**.
+
+Step 2: Variable cost per transaction = 0.0165 × 50 + 0.0013 × 50 + 0.10 + 0.0008 × 50 + 0.05 = 0.825 + 0.065 + 0.10 + 0.04 + 0.05 = **$1.08**.
+
+Step 3: Contribution per transaction = 1.75 − 1.08 = **$0.67**, which is 1.34 percent of the ticket (67 cents on $50).
+
+Step 4: Break-even volume = 40,000,000 / 0.67 = **59.7 million transactions per year**, equivalent to $2.99 billion of annual payment volume.
+
+The model displays the main strategic characteristics of payments: tiny margins per transaction, high operating leverage (profit explodes after break-even), and heavy scale economies and network effects. Competition erodes the take rate, so sustainable advantage comes from lower cost, better risk management, bundled software or lending, or distribution. A 20 bp reduction in the take rate on a $50 ticket reduces contribution by $0.10 (15 percent of contribution), which would raise break-even volume by 17.5 percent. Strategically, a company deciding whether to build, partner with or buy a payments capability should model volume ramp-up, take-rate compression, fraud losses and regulatory capital, and compare the value created against the cost of simply using a third-party processor.
+
+### 24.5.3 Embedded finance and fintech lending
+
+Embedded finance integrates financial services into non-financial platforms: a marketplace offering working capital loans to sellers on the basis of sales data, or a manufacturer offering financing at the point of sale. The economic logic is that the platform has better information (cash flow visibility, ability to collect through the sales stream) and distribution at near-zero marginal acquisition cost. The risks are credit losses that arrive in downturns, balance sheet funding needs, regulatory perimeter (lending, deposit and consumer protection rules) and reputational spillovers. A corporate offering customer financing should decide whether to hold the receivables (earning the spread but bearing credit and funding risk) or sell them to a financial partner (earning fees but giving up the economics), and should evaluate the effect on its own leverage and rating if the receivables stay on its balance sheet.
+
+### 24.5.4 Digital assets, stablecoins and tokenization
+
+Digital assets are claims recorded on distributed ledgers. Several categories deserve different treatment.
+
+- **Cryptocurrencies without an issuer** (for example, those with fixed algorithmic supply) have no cash flows, so their value rests on expectations of future demand. A corporate treasury holding such assets takes price risk akin to a speculative commodity, with accounting, custody and regulatory implications. Holding volatile assets as treasury reserves conflicts with the usual principle that corporate liquidity should be safe and liquid.
+- **Stablecoins** are tokens designed to hold a stable value relative to a currency, usually backed by reserve assets (cash, short-term government securities). Their reliability depends on reserve quality, redemption rights, legal clarity, custody and the integrity of the issuer. They can enable faster, cheaper cross-border settlement, which may help corporate payments and treasury across time zones. Risks include runs if redemption is questioned, regulatory change, counterparty failure and limited legal recourse.
+- **Tokenized assets**, such as tokenized money-market funds, bonds or deposits, represent traditional claims on a ledger. The potential benefits are faster settlement (reducing counterparty and capital costs), programmability and fractional ownership. These are improvements to market plumbing, not new sources of value in themselves; the underlying credit and legal rights remain what matter.
+- **Central bank digital currencies (CBDCs)** are digital forms of central bank money under study or pilot in many jurisdictions; their design (retail versus wholesale, interest, limits) is still evolving.
+- **Decentralized finance (DeFi)** replaces intermediaries with smart contracts. Its risks include coding errors, governance capture, oracle failures and weak consumer protection, and its relevance to the corporate sector is currently limited.
+
+Whatever the technology, a CFO should test a digital-asset proposal with five questions. What problem does it solve better than existing rails? Who bears credit, legal and operational risk? How are assets custodied and audited? What is the regulatory and accounting treatment? And what is the exit route if the technology or counterparty fails?
+
+**Example 24.7 – Reserve economics of a stablecoin issuer.** A fiat-backed stablecoin issuer has $10 billion of tokens outstanding, fully backed by short-term government securities yielding 4.0 percent. It pays 25 percent of reserve income to distribution partners (exchanges and wallets), and incurs operating and compliance costs of $60m a year.
+
+Step 1: Gross reserve income = 10,000m × 4.0% = **$400m**.
+
+Step 2: Distribution payments = 25% × 400 = **$100m**.
+
+Step 3: Operating costs = $60m.
+
+Step 4: Pre-tax profit = 400 − 100 − 60 = **$240m**, a 2.4 percent margin on reserves.
+
+Step 5: Rate sensitivity. If yields fall to 2.0 percent, gross income = $200m, distribution (25 percent) = $50m, and profit = 200 − 50 − 60 = **$90m**, a decline of 62.5 percent for a 50 percent decline in yields.
+
+The issuer's profit is therefore essentially a leveraged bet on short-term interest rates, with fixed operating costs and distribution-sharing, and it carries run risk on a balance sheet whose liabilities are redeemable at par on demand. Anyone assessing such a business, or considering using its tokens in payments, should evaluate the reserve composition and liquidity, redemption mechanics, regulatory status and the cyclical sensitivity of earnings.
+
+### 24.5.5 Cyber, operational and model risk
+
+Fintech increases dependence on software, data and third parties. Operational resilience (cloud outages, vendor failure), cybersecurity (fraud, ransomware, account takeover), data privacy and algorithmic bias in credit models are core risks that sit in the finance function's remit. Controls include concentration limits on critical vendors, tested contingency arrangements, segregation of duties for payment authorization, multi-factor authentication, and model governance with independent validation and monitoring for drift.
+
+## 24.6 International Capital Budgeting
+
+### 24.6.1 Two consistent methods
+
+When a firm invests abroad, the cash flows are earned in a foreign currency while shareholders think in the home currency. There are two internally consistent ways to compute the NPV.
+
+- **Method 1 (foreign currency approach):** forecast the foreign currency cash flows, discount at the foreign-currency cost of capital, and convert the resulting NPV to the home currency at the spot exchange rate.
+- **Method 2 (home currency approach):** convert each foreign currency cash flow to home currency at the forecast (forward-equivalent) exchange rate for its date, and discount at the home-currency cost of capital.
+
+The two agree when exchange rates follow the parity relationships. Under interest rate parity, the forward rate is F_t = S × [(1 + r_foreign)/(1 + r_home)]^t when exchange rates are quoted as foreign per home unit; and under relative purchasing power parity, expected exchange rates move with inflation differentials. The discount rates are linked by the international Fisher relationship:
+
+```
+(1 + r_foreign) = (1 + r_home) × (1 + i_foreign) / (1 + i_home)
+```
+
+where r denotes the nominal cost of capital and i expected inflation. In practice, the parity relationships hold only approximately, especially over short horizons, and a project's currency risk is a business risk that depends on whether its costs and revenues are in the same currency, how prices adjust, and the competitive structure.
+
+**Example 24.8 – A project in Country Z.** A US company evaluates a plant in Country Z (currency ZED, quoted ZED per USD). Spot is 5.00. Expected inflation is 4.5 percent in Country Z and 2.5 percent in the US. The US-dollar cost of capital for this project is 9 percent. Expected ZED cash flows (millions) are: year 0 −1,000; year 1 +350; year 2 +400; year 3 +450; year 4 +450.
+
+Step 1: Fisher: ZED cost of capital = 1.09 × (1.045 / 1.025) − 1 = 1.09 × 1.019512 − 1 = **11.13 percent**.
+
+Step 2 (Method 1): NPV in ZED = −1,000 + 350/1.1113 + 400/1.1113² + 450/1.1113³ + 450/1.1113⁴ = −1,000 + 314.9 + 323.9 + 327.9 + 295.1 ≈ **ZED 261.9m**. In USD at spot 5.00: 261.9 / 5.00 = **$52.4m**.
+
+Step 3 (Method 2): Expected ZED per USD each year = 5.00 × (1.045/1.025)^t = 5.000, 5.098, 5.197, 5.298, 5.402. USD cash flows: −1,000/5.000 = −200.0; 350/5.098 = 68.66; 400/5.197 = 76.97; 450/5.298 = 84.93; 450/5.402 = 83.31. Discount at 9 percent: −200.0 + 62.99 + 64.78 + 65.58 + 59.02 = **$52.4m**.
+
+The two methods agree, as they must when parity holds. An analyst who discounted the ZED cash flows at the USD rate of 9 percent would compute a ZED NPV of about 324.0m, or $64.8m at spot, overstating value by $12.4m (24 percent) because it ignores the currency depreciation that offsets high local inflation. The error of discounting weak-currency flows at a strong-currency rate is among the most common in international budgeting.
+
+### 24.6.2 Political risk, repatriation and taxes
+
+Cash flows to the parent differ from cash flows of the project because of withholding taxes, restrictions on remittances (blocked funds), transfer pricing, and possible expropriation or contract renegotiation. Best practice is to adjust the cash flows rather than inflating the discount rate arbitrarily, because discount-rate premiums compound over time and penalize distant cash flows more than the underlying risk justifies. Adjustment methods include scenario analysis with probabilities, insurance (political risk insurance, multilateral guarantees), structuring (local debt, joint ventures with local partners, staged investment), and negotiating contractual protections such as stabilization clauses and international arbitration. Diversification does not reduce the risk if the risk is systematic to the parent's own operations; the correlation with the home market matters when using CAPM, and some firms use a country risk premium, estimated from sovereign spreads scaled for equity volatility, but these estimates are crude.
+
+**Example 24.9 – Adjusting cash flows for repatriation risk.** Suppose management believes that, in expectation, only 92 percent of the ZED operating cash flows in Example 24.8 will reach the parent after withholding taxes, delays and negotiated concessions, while the initial investment is unaffected.
+
+Step 1: Adjusted flows: 350 × 0.92 = 322; 400 × 0.92 = 368; 450 × 0.92 = 414; 450 × 0.92 = 414.
+
+Step 2: Present values at 11.127 percent: 322/1.1113 = 289.7; 368/1.2350 = 298.0; 414/1.3724 = 301.7; 414/1.5251 = 271.5; sum = 1,160.9.
+
+Step 3: NPV = 1,160.9 − 1,000 = ZED 160.9m; in USD at spot, **$32.2m**.
+
+An 8 percent haircut on operating cash flows reduces NPV by 38.6 percent ($52.4m to $32.2m) because the project has high operating leverage in the sense that the initial investment is fixed. The project remains positive, but the margin of safety is thinner. The same analysis can find a break-even haircut: NPV hits zero when the PV of operating inflows equals 1,000, i.e., when the haircut reaches 1 − 1,000/1,261.8 = 20.7 percent.
+
+### 24.6.3 Financing abroad and hedging
+
+Foreign projects can be financed with local-currency debt, which creates a natural hedge for local cash flows and reduces transfer risk, albeit at the local interest rate, which reflects local inflation. Hedging the transaction exposure for committed flows (forwards, options, cross-currency swaps) is common; hedging long-dated economic exposure is difficult and costly, and often it is more effective to shape the operating footprint (matching currencies of costs and revenues, local sourcing, pricing flexibility). The value of hedging to shareholders is limited unless it reduces expected taxes, distress costs or underinvestment, which is the same logic as the corporate risk management discussion earlier in this book.

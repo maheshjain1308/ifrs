@@ -271,3 +271,113 @@ The arbitrageur was correct about value but wrong about timing, and leverage con
 ### 12.4.2 Evidence of apparent mispricing under frictions
 
 Several well-known episodes are presented as evidence of limits to arbitrage. Closed-end funds frequently trade at discounts or premiums to the net asset value of their holdings, even though the holdings are observable. Dual-listed companies that share cash flows under a fixed formula have at times traded at prices that deviated from the formula, and bound together only slowly. During the late-1990s technology boom, certain subsidiaries that had been partially listed traded for more than the parent that held a controlling share, implying that the rest of the parent's operations had negative value, an apparent violation of limited liability that was hard to arbitrage because the subsidiary shares were difficult to borrow. These cases are instructive because they show mispricing in settings where fundamental value is transparent, and they trace failures of arbitrage to concrete frictions.
+
+## 12.5 Behavioral Finance: How Real Decision-Makers Depart from the Textbook
+
+Behavioral finance combines the limits to arbitrage with a second pillar: evidence from psychology that investors, and managers, systematically depart from the fully rational, utility-maximizing agent of classical theory. If those departures are correlated across many investors, and arbitrage is limited, prices can be pushed away from fundamentals.
+
+### 12.5.1 Prospect theory
+
+Kahneman and Tversky's prospect theory, developed from experiments, describes how people evaluate risky choices. Three features matter for finance. People evaluate outcomes relative to a *reference point* (often the purchase price or current wealth), not in terms of final wealth. They are *loss averse*: a loss hurts more than an equivalent gain pleases, commonly by a factor of about two in experiments. And they are risk-averse over gains but risk-seeking over losses, so they may gamble to avoid realizing a loss. Applied to investing, loss aversion helps explain the *disposition effect*, the tendency to sell winning stocks too early and hold losers too long, which is contrary to the tax advantage of realizing losses.
+
+### 12.5.2 Principal biases
+
+Table 12.4 summarizes the best-known biases, their effects on investors, and their parallel effects on managers.
+
+**Table 12.4 – Common biases and their managerial analogues**
+
+| Bias | Description | Investor consequence | Managerial consequence | Possible safeguard |
+|---|---|---|---|---|
+| Overconfidence | Overestimating the precision of one's knowledge and ability | Excessive trading; underdiversification | Overinvestment; overpaying for acquisitions; narrow forecast ranges | Reference-class forecasting; post-audits |
+| Anchoring | Over-reliance on an initial number | Slow updating of price targets | Budgets and forecasts stick to last year's figures | Independent estimates before sharing anchors |
+| Confirmation bias | Seeking evidence that supports prior views | Ignoring bad news | Selective use of data to support a favored project | Devil's-advocate review |
+| Representativeness | Judging by resemblance to a stereotype; ignoring base rates | Extrapolating recent growth; chasing winners | Assuming a new venture will resemble the best success stories | Base-rate data on similar projects |
+| Loss aversion / sunk cost | Pain of loss outweighs equal gain; reluctance to realize losses | Disposition effect | Escalation of commitment to failing projects | Pre-set stop criteria; rule of ignoring sunk costs |
+| Mental accounting | Treating money differently by label | Separate "safe" and "speculative" pots | Treating cash windfalls or "free" retained earnings as costless | Single-pool cost of capital |
+| Herding | Following the crowd | Momentum, bubbles | Imitating competitors' investments and acquisitions | Independent valuation |
+| Framing | Decisions change with presentation | Different choices on equivalent gambles | Project approval depends on how costs and benefits are packaged | Standardized decision templates |
+
+### 12.5.3 Sentiment and its effect on prices
+
+*Investor sentiment* is a broad term for the optimism or pessimism of the marginal investor not justified by fundamentals. Baker and Wurgler, among others, documented that returns on speculative, hard-to-value stocks (young, unprofitable, high-volatility firms) are predictably lower following high-sentiment periods and higher following low-sentiment periods, while stable, easy-to-value stocks are less affected. The pattern fits the logic of limits to arbitrage: sentiment matters most where valuation is subjective and arbitrage costly.
+
+*Heuristics and extrapolation.* Many investors project recent earnings growth into the future (representativeness) while the empirical record shows that extreme growth tends to mean-revert. A stock with several consecutive years of rapid growth is priced as though the growth will continue, and it disappoints on average. Models by Barberis, Shleifer, and Vishny, and by Daniel, Hirshleifer, and Subrahmanyam, formalize how underreaction to some news (conservatism) can coexist with overreaction to patterns of news (extrapolation), generating both momentum and long-horizon reversal.
+
+### 12.5.4 Rational responses and the debate
+
+Defenders of efficiency argue that the biases are well documented in laboratory settings but may not survive in markets, where competition, learning, and incentives weed out costly errors, and that behavioral explanations are too flexible: with enough biases, any pattern can be rationalized after the fact. Behavioralists reply that the same is true of rational models with enough risk factors, and that behavioral theories make specific, falsifiable predictions, such as the pattern of sentiment effects across stocks. Most scholars now treat the two approaches as complementary: markets are largely efficient in the sense that prices are hard to beat, while psychology and frictions explain some departures and episodes.
+
+## 12.6 Behavioral Biases in Corporate Decisions
+
+Managers are as subject to psychological forces as investors, but with larger stakes and weaker feedback. Two aspects matter most: biased forecasts in capital budgeting, and biased judgments in mergers and financing.
+
+### 12.6.1 The winner's curse in project selection
+
+When a firm chooses the best-looking projects from a large pool of uncertain estimates, the selected projects are disproportionately those whose estimates are too optimistic. This *selection bias*, or winner's curse, makes the average realized NPV of selected projects fall short of their estimated NPV, even if forecasts are unbiased on average.
+
+**Example 12.7 – Shrinking an estimated NPV.**
+
+A firm evaluates many projects. Suppose true NPVs across projects are distributed normally with mean 0 and standard deviation $10 million, and each project's estimated NPV equals true NPV plus an independent forecasting error with mean 0 and standard deviation $10 million. The best Bayesian estimate of true NPV given an estimate of E is:
+
+```
+E[true NPV | estimate] = estimate × σ²true / (σ²true + σ²error)
+                       = estimate × 100 / (100 + 100) = 0.5 × estimate
+```
+
+A project with an estimated NPV of $12 million is expected to deliver only 0.5 × 12 = $6 million. A project that is just barely positive on paper, such as one with an estimate of +$2 million, has an expected true NPV of $1 million, and given that the standard deviation of the posterior is √(100 × 100 / 200) = $7.07 million, there is roughly a 44 percent chance that it actually destroys value. Projects chosen from the top of a ranking are less valuable than they appear. The remedy is to shrink forecasts toward base rates of similar past projects (reference-class forecasting), to demand a margin of safety in the hurdle, and to audit actual outcomes against forecasts so that the error variance can be estimated.
+
+If forecast errors are larger relative to true dispersion, the shrinkage is more severe. With error standard deviation of $20 million (variance 400), the shrinkage factor becomes 100 / (100 + 400) = 0.20, and the $12 million estimate is worth only $2.4 million in expectation.
+
+### 12.6.2 Overconfidence, optimism, and mergers
+
+Overconfident managers overestimate their ability to create value from acquisitions, underestimate integration risk, and believe their firm's stock is undervalued, which makes them reluctant to issue equity and more likely to finance acquisitions with internal cash or debt. Roll's *hubris hypothesis* proposes that acquirers systematically overpay because the managers' valuation includes errors, and the winner of a competitive bid is the one with the most optimistic error. The finding that acquirers on average earn roughly zero abnormal returns around announcements while targets earn large gains is consistent with this account, though also with competitive markets for corporate control. Managers of overconfident firms also tend to invest more, and their investment is more sensitive to internal cash flow.
+
+### 12.6.3 Escalation of commitment
+
+Sunk costs are irrelevant to decisions, yet managers frequently continue to fund failing projects because stopping would require admitting a mistake. The cure is institutional: reviews by people who did not sponsor the original project, explicit abandonment criteria set at approval, and incentive systems that do not penalize reporting bad news early.
+
+## 12.7 Bubbles, Crashes, and Valuation Discipline
+
+### 12.7.1 What is a bubble?
+
+A *bubble* is a sustained deviation of price from fundamental value, typically accompanied by rapid price appreciation, widespread optimism, heavy trading, and an extrapolative narrative ("this time is different"). Because fundamental value is not observed, bubbles can be identified with confidence only afterward. History offers numerous episodes in which prices of an asset class rose dramatically and then fell sharply: the Dutch tulip mania of the 1630s, the South Sea Company in 1720, the technology boom and bust around 2000, and the housing and credit boom ending in 2007 to 2008. Scholars disagree on how many of these were pure irrationality; some argue the rise was explicable by rational expectations of high growth that did not materialize.
+
+Several mechanisms are cited for how bubbles survive. Limits to arbitrage allow rational traders to wait rather than bet against the trend, because shorting is risky and costly (Section 12.4). Rational traders may even "ride the bubble," anticipating that others will keep buying. Positive feedback trading, where rising prices attract more buyers, extrapolating past returns, amplifies the swing. Leverage and credit expansion supply the funds. Financial innovation and new-era narratives supply the justification. And the incentives of professionals, who are judged against peers and who may lose clients if they stand aside while competitors profit, reward herding.
+
+### 12.7.2 Using valuation arithmetic to test a price
+
+Even without knowing the "true" value, a manager can ask what a price implies. The Gordon growth model, P = D1 / (r − g), can be solved for the growth rate that the price requires.
+
+**Example 12.8 – Implied growth and a two-stage valuation.**
+
+A stock trades at $120. Next year's dividend is expected to be $2.40, and the required return is 9 percent.
+
+*Implied perpetual growth:*
+
+```
+g = r − D1 / P = 9.0% − 2.40 / 120 = 9.0% − 2.0% = 7.0%
+```
+
+A perpetual dividend growth rate of 7 percent is well above the long-run growth rate of most economies, so the price demands that the firm outgrow the economy forever. If a more plausible long-run growth rate of 4 percent applies, the value is:
+
+```
+P = 2.40 / (0.09 − 0.04) = 2.40 / 0.05 = $48.00
+```
+
+The price is 2.5 times the value implied by plausible growth. Now allow for an extended high-growth period: dividends grow 12 percent per year for years 2 to 5 (D1 = 2.40), then 4 percent forever.
+
+*Dividends:* D1 = 2.400; D2 = 2.688; D3 = 3.011; D4 = 3.372; D5 = 3.776.
+
+*Present value of years 1 to 5 at 9%:* 2.400/1.09 + 2.688/1.09² + 3.011/1.09³ + 3.372/1.09⁴ + 3.776/1.09⁵ = 2.202 + 2.263 + 2.325 + 2.389 + 2.454 = $11.63.
+
+*Terminal value at year 5:* D6 = 3.776 × 1.04 = 3.928; P5 = 3.928 / 0.05 = $78.55. Present value: 78.55 / 1.09⁵ = 78.55 / 1.5386 = $51.05.
+
+```
+P0 = 11.63 + 51.05 = $62.68
+```
+
+Even with five years of 12 percent growth, the stock is worth about $63, roughly half the quoted price. A price of $120 requires either much longer or faster growth, or a much lower required return, than ordinary assumptions allow. This does not prove a bubble, because the inputs are uncertain, but it quantifies how much optimism the market price embeds and invites the question whether management shares it.
+
+### 12.7.3 Lessons for firms that find themselves inside a bubble
+
+A firm whose shares are inflated faces temptation: issue equity at attractive prices, make acquisitions with overvalued stock, expand capacity to justify the valuation, and reward executives in stock options that pay off from the rise. All of these can be harmful if the bubble bursts. The disciplined response is to separate value from price: estimate intrinsic value with explicit cash-flow forecasts, maintain the cost of capital and hurdle rates that would apply without the bubble (do not lower hurdle rates because the stock is high), and limit leverage so the firm survives the bust.

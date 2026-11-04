@@ -308,3 +308,214 @@ So `Cash flow ≈ 42.4 + 75.7 × (USD per EUR)`, with R² of about 0.98 in this 
 
 The practical implication is that economic exposure is managed mainly through *strategy*: locating plants in the currency areas where sales occur, choosing suppliers with costs in the same currency as revenues, financing foreign operations in local currency, and adjusting pricing. Financial hedges can buy time (as in the layered program) but cannot permanently protect a firm whose cost structure is structurally misaligned with its revenue base.
 
+## 20.5 Exchange Rate Relationships
+
+Exchange rates are determined by trade flows, capital flows, expectations and policy. Over short horizons they are very hard to predict; over longer horizons and in terms of arbitrage, a set of *parity relationships* provide discipline. We quote exchange rates as the domestic-currency price of one unit of foreign currency (USD per EUR). With that convention, a rising rate means the foreign currency appreciates.
+
+### 20.5.1 Covered interest rate parity (CIP)
+
+Covered interest rate parity states that the forward exchange rate is determined by the spot rate and the interest rate differential. An investor can invest domestically, or convert to foreign currency, invest abroad, and lock in the conversion back with a forward contract. If both routes are riskless, they must give the same return:
+
+```
+(1 + i_d · t) = (S / F) · (1 + i_f · t)      ⟹      F = S · (1 + i_d · t) / (1 + i_f · t)
+```
+
+where i_d is the domestic interest rate, i_f the foreign rate, t the period as a fraction of a year (using simple interest for periods up to a year; for longer periods use compounding), S and F quoted as domestic per foreign. The currency with the higher interest rate trades at a **forward discount**; the currency with the lower interest rate trades at a forward premium. The forward rate is *not* a forecast of the future spot rate; it is a no-arbitrage price based on interest rate differentials, and CIP holds closely (apart from stresses in funding markets, when cross-currency basis spreads widen) because deviations can be arbitraged with very low risk.
+
+### Example 20.6 – Pricing a forward rate with CIP
+
+*The spot rate is 1.0800 USD per EUR. The six-month USD interest rate is 5.0 percent per year and the six-month EUR rate is 3.0 percent per year (simple interest). Find the six-month forward rate.*
+
+```
+F = 1.0800 × (1 + 0.05 × 0.5) / (1 + 0.03 × 0.5)
+  = 1.0800 × 1.025 / 1.015
+  = 1.0800 × 1.009852
+  = 1.09064
+```
+
+The euro trades at a forward premium of 1.09064 − 1.0800 = 0.01064 USD per EUR, about 0.985 percent over six months (1.97 percent annualized), approximately the interest differential of 2 percentage points per year. These "forward points" (106 points in the quotation convention where one point is 0.0001) are the price of carrying one currency instead of the other, not a prediction that the euro will rise.
+
+### Example 20.7 – Covered interest arbitrage
+
+*Using the data in Example 20.6, a bank quotes the six-month forward at 1.0950, above the parity value of 1.09064. Show how to exploit this with a 1,000,000 dollar borrowing.*
+
+The forward price of euros (1.0950) is too high relative to parity, so sell euros forward and finance by borrowing dollars:
+
+1. Borrow USD 1,000,000 for six months at 5 percent per year; at maturity the repayment is 1,000,000 × 1.025 = USD 1,025,000.
+2. Convert at spot: 1,000,000 / 1.0800 = EUR 925,926.
+3. Invest the euros at 3 percent per year for six months: 925,926 × 1.015 = EUR 939,815.
+4. Sell EUR 939,815 forward at 1.0950: receive USD 939,815 × 1.0950 = USD 1,029,097.
+5. Repay the loan: USD 1,025,000. Profit = 1,029,097 − 1,025,000 = **USD 4,097** per million borrowed, with no exposure to the exchange rate and no investment of own funds.
+
+Arbitrageurs doing this would push spot up, forward down, euro interest down, and dollar interest up until the profit disappears. Therefore corporate treasurers should expect a bank's forward quotes to follow CIP closely, and any difference beyond a reasonable dealer margin is a negotiation point.
+
+### 20.5.2 Purchasing power parity (PPP)
+
+The **law of one price** says that identical tradable goods should cost the same in different countries when prices are converted at the market exchange rate, otherwise arbitrageurs would buy where cheap and sell where dear. **Absolute PPP** extends this to price levels: S = P_d / P_f. **Relative PPP** says that the percentage change in the exchange rate equals the inflation differential:
+
+```
+S_t = S₀ · [(1 + π_d) / (1 + π_f)]^t
+```
+
+where π_d and π_f are domestic and foreign annual inflation rates. A country with higher inflation should see its currency depreciate.
+
+The empirical record is that PPP is a weak guide in the short run (deviations last for years because of nontradable goods, transport costs, tariffs, pricing-to-market and capital flows), but a better guide over long horizons, especially for large inflation differentials. It is useful to a manager in three ways: as a *benchmark of valuation* (is a currency far from its PPP level?), as a *basis for long-horizon planning* when forward markets do not exist, and as a *warning* that a high-inflation location will probably experience currency depreciation that offsets any apparent cost advantage.
+
+### Example 20.8 – Relative PPP and real exchange rate
+
+*Spot is 1.08 USD per EUR. Expected annual inflation is 3 percent in the United States and 2 percent in the euro area. (a) What does relative PPP predict for the rate after one year and after three years? (b) A basket of goods costs USD 6.00 in the US and EUR 5.20 in the euro area. What is the absolute PPP rate and the real exchange rate?*
+
+(a) One year:
+
+```
+S₁ = 1.08 × (1.03 / 1.02) = 1.08 × 1.009804 = 1.0906
+```
+
+The euro is expected to appreciate by about 0.98 percent per year against the dollar.
+
+Three years:
+
+```
+S₃ = 1.08 × (1.03 / 1.02)³ = 1.08 × 1.029707 = 1.1121
+```
+
+(b) The absolute PPP rate = 6.00 / 5.20 = 1.1538 USD per EUR. The actual rate of 1.08 is lower than 1.1538, so the euro is undervalued relative to PPP by 1.08/1.1538 − 1 = −6.4 percent. The real exchange rate is
+
+```
+q = S · P_f / P_d = 1.08 × 5.20 / 6.00 = 0.936
+```
+
+A real rate below 1 means that euro-area goods are about 6.4 percent cheaper than US goods when measured in a common currency, a source of competitive advantage for euro-area producers *if* the basket is representative. The interest differential (5 percent versus 3 percent) in Example 20.6 and the inflation differential (3 percent versus 2 percent) here are both roughly consistent with the dollar being the weaker currency in the long run, though the forward rate is by itself no forecast.
+
+### 20.5.3 The international Fisher effect and uncovered parity
+
+The **Fisher effect** states that nominal interest rates equal the real rate plus expected inflation. If real rates are equal across countries, interest differentials reflect inflation differentials: `(1 + i_d) / (1 + i_f) = (1 + π_d) / (1 + π_f)`. Together with relative PPP, this gives the **international Fisher effect** or **uncovered interest parity** (UIP): the expected change in the spot rate equals the interest differential. In its pure form the expected future spot rate would equal the forward rate. The empirical evidence has shown otherwise: high-interest-rate currencies have often not depreciated as UIP predicts, which is why the "carry trade" (borrowing in low-rate currencies to invest in high-rate ones) has delivered positive average returns punctuated by sharp crashes. For corporate managers, the lesson is that forward rates are not unbiased predictors, that a hedge at the forward rate is a fair-value transaction rather than an advantageous or disadvantageous one, and that policy should not depend on forecasting currencies.
+
+| Relationship | Statement | Basis | Reliability | Use for the manager |
+|---|---|---|---|---|
+| Covered interest parity | F/S = (1 + i_d)/(1 + i_f) | Riskless arbitrage | Very high (except in funding stress) | Price and sanity-check forwards; money market hedges equal forwards |
+| Relative PPP | ΔS ≈ π_d − π_f | Goods arbitrage | Weak short run, better long run | Long-horizon planning, valuation benchmarks |
+| Fisher effect | i ≈ r + π | Real-rate equalization | Moderate | Interpret interest differentials as inflation expectations |
+| Uncovered interest parity | E[ΔS] ≈ i_d − i_f | Expectations; risk-neutral investors | Poor over short horizons | Do not assume forwards forecast spot |
+
+*Table 20.4 – Parity relationships.*
+
+## 20.6 Hedging Foreign Exchange Exposure
+
+### 20.6.1 The set of instruments for transaction exposure
+
+Suppose Verdant Bay will receive EUR 5 million in six months from a euro-area customer. The treasurer has three main alternatives for locking in or bounding the dollar value:
+
+1. **Forward contract.** Sell EUR 5 million forward to a bank at the six-month forward rate.
+2. **Money market hedge.** Borrow the present value of the euros today, convert at spot, invest the dollars; use the euro receipt to repay the loan.
+3. **Currency option.** Buy a put option on euros, which guarantees a minimum dollar value while preserving the upside.
+
+A fourth alternative is to stay unhedged, which is a conscious decision to bear the risk.
+
+### Example 20.9 – Forward and money market hedge compared
+
+*Verdant Bay expects EUR 5,000,000 in six months. Spot is 1.0800; the six-month USD rate is 5 percent and the EUR rate is 3 percent per year (simple). Compute the dollar proceeds with (a) the forward hedge and (b) the money market hedge. (c) Compare with the unhedged conversion at today's spot.*
+
+(a) Forward rate from Example 20.6: 1.09064. Proceeds = 5,000,000 × 1.09064 = USD 5,453,202.
+
+(b) Money market hedge:
+
+```
+Step 1: Borrow euros whose repayment at six months equals the receipt:
+        PV = 5,000,000 / (1 + 0.03 × 0.5) = 5,000,000 / 1.015 = EUR 4,926,108
+Step 2: Convert to dollars at spot:
+        4,926,108 × 1.0800 = USD 5,320,197
+Step 3: Invest dollars at 5% for six months:
+        5,320,197 × 1.025 = USD 5,453,202
+Step 4: At month 6, the EUR 5,000,000 receipt repays the euro loan.
+```
+
+The result, USD 5,453,202, is identical to the forward hedge, as covered interest parity requires. In practice the two differ slightly because of bid-ask spreads, differences between deposit and borrowing rates, and credit lines used.
+
+(c) Selling the euros at today's spot would give 5,000,000 × 1.08 = 5,400,000 but is not available (the cash arrives in six months). The extra 53,202 from the hedges (5,453,202 − 5,400,000) is the forward premium, which compensates for the higher dollar interest rate: it is not a free gain. If the spot rate in six months were 1.10, the unhedged outcome would be 5,500,000; if 1.05, it would be 5,250,000. The hedge removes this variability: the outcome is 5,453,202 whatever the rate.
+
+### 20.6.2 Options
+
+A **currency put option** on euros gives the holder the right to sell euros at the strike price. For an exporter with euro receivables, buying a put sets a floor for the dollar value while retaining the benefit of a stronger euro, at the price of the premium. The same economics applies to importers with euro payables, who buy calls.
+
+### Example 20.10 – Hedging with a put option
+
+*Verdant Bay buys a six-month put option on EUR 5,000,000 with a strike of 1.0800 for a premium of 0.0200 USD per EUR. The USD interest rate is 5 percent per year (simple), so the premium is financed for six months. Compute the net proceeds for several spot rates at maturity, compare with the forward hedge of Example 20.9 and find the break-even rate.*
+
+Premium paid today = 0.0200 × 5,000,000 = USD 100,000. Future value at six months = 100,000 × 1.025 = USD 102,500.
+
+Net proceeds = 5,000,000 × max(S_T, 1.0800) − 102,500.
+
+| Spot in six months | Unhedged (USD) | Forward hedge (USD) | Put option, net of premium (USD) |
+|---|---|---|---|
+| 1.00 | 5,000,000 | 5,453,202 | 5,297,500 |
+| 1.05 | 5,250,000 | 5,453,202 | 5,297,500 |
+| 1.08 | 5,400,000 | 5,453,202 | 5,297,500 |
+| 1.11 | 5,550,000 | 5,453,202 | 5,447,500 |
+| 1.15 | 5,750,000 | 5,453,202 | 5,647,500 |
+| 1.20 | 6,000,000 | 5,453,202 | 5,897,500 |
+
+*Table 20.5 – Outcomes of alternative hedging strategies for a EUR 5 million receivable.*
+
+Calculation checks: at 1.00 and 1.05 and 1.08 the option's floor of 1.0800 applies: 5,400,000 − 102,500 = 5,297,500. At 1.11: 5,550,000 − 102,500 = 5,447,500. At 1.15: 5,750,000 − 102,500 = 5,647,500. At 1.20: 6,000,000 − 102,500 = 5,897,500.
+
+The option guarantees at least 5,297,500, which is 155,702 less than the forward (5,453,202 − 5,297,500). In return it offers unlimited upside. The break-even spot rate at which the option outcome equals the forward outcome solves
+
+```
+5,000,000 × S − 102,500 = 5,453,202   ⟹   S = 5,555,702 / 5,000,000 = 1.1111
+```
+
+If the euro ends above 1.1111 the option beats the forward; below it, the forward is better. The choice depends on the treasurer's view of the distribution of outcomes and, more importantly, on the objective. Options are valuable when the exposure itself is uncertain (a bid that may not be won: with a forward, failure to win the contract leaves an open position that could lose, while the option's loss is limited to the premium) or when the firm wants to avoid regret.
+
+### 20.6.3 Collars and other structures
+
+A **collar** (or range forward) combines a purchased put with a sold call, so the premium received on the call finances the put. The exporter has a floor and a cap on the effective rate; between them the firm participates in the market.
+
+### Example 20.11 – A zero-cost collar
+
+*Verdant Bay buys a six-month put with strike 1.0600 and sells a call with strike 1.1200 on EUR 5,000,000. The premiums are equal, so the collar has zero cost. Find the net proceeds for the spot rates of Table 20.5.*
+
+Net proceeds = 5,000,000 × min(max(S_T, 1.06), 1.12).
+
+```
+S_T = 1.00:  5,000,000 × 1.06 = 5,300,000   (put exercised)
+S_T = 1.05:  5,000,000 × 1.06 = 5,300,000
+S_T = 1.08:  5,000,000 × 1.08 = 5,400,000   (neither exercised)
+S_T = 1.11:  5,000,000 × 1.11 = 5,550,000
+S_T = 1.15:  5,000,000 × 1.12 = 5,600,000   (call exercised against the firm)
+S_T = 1.20:  5,000,000 × 1.12 = 5,600,000
+```
+
+Proceeds are constrained to the band 5,300,000 to 5,600,000, a range of 300,000 compared with 1,000,000 for the unhedged position over the same scenarios. The collar costs nothing up front, and gives a floor (5,300,000) only slightly below the net floor of the single put (5,297,500), but surrenders gains above 1.12. The sold call is an obligation that could lose money for the firm in a rising euro scenario, though it is offset by the gain on the underlying receivable. Because sold options can be considered speculative, policy must permit them only when matched against an underlying exposure.
+
+### 20.6.4 Choosing among hedges
+
+| Instrument | Cost | Protection | Upside retained | Best used when |
+|---|---|---|---|---|
+| Forward | Zero premium; embedded forward points | Complete at a fixed rate | None | Exposure certain in amount and date; objective is certainty |
+| Money market hedge | Borrowing and lending spreads | Complete | None | No forward market available for the currency or maturity; credit lines in place |
+| Purchased option | Upfront premium | Floor at strike | Full | Exposure uncertain (bids, forecasts); desire to retain upside |
+| Collar | Zero or low | Floor and cap | Partial | Wants to limit cost and keep some participation |
+| Natural or operational hedge | Often low | Partial, long-lasting | Depends | Structural exposures; first line of defense |
+| No hedge | None | None | Full | Exposure immaterial, or offset elsewhere, or deliberate risk-taking within policy |
+
+*Table 20.6 – Comparison of FX hedging approaches.*
+
+### 20.6.5 Practical issues in FX hedging
+
+- **Forecast risk.** A hedge of a forecast that fails to materialize leaves a speculative position. Use lower ratios for uncertain forecasts or use options.
+- **Opportunity cost and regret.** If the hedge shows a "loss" relative to spot at settlement, the underlying receivable shows a matching gain. Report the combined position.
+- **Currency of competitors.** Hedging transaction exposure for a year does not protect market share if rivals' costs are in a currency that has weakened. The hedge buys time.
+- **Cross-hedging.** Where forward markets do not exist for a currency, a related currency (a proxy) may be used, creating basis risk; the minimum-variance approach of Chapter 19 applies.
+- **Cash and credit.** Forwards use credit lines at banks. Option premiums are paid in cash up front. Margin and collateral requirements should be budgeted.
+- **Accounting.** Forwards and options hedging forecast foreign-currency cash flows can be designated as cash flow hedges, with the forward points or option time value accounted for as costs of hedging, as described in Chapter 19.
+- **Tax.** The tax treatment of hedging gains and losses may differ across jurisdictions; check before finalizing.
+
+## 20.7 Integrating Currency, Interest Rate and Liquidity Risk
+
+A multinational should treat its exposures as a portfolio. Currency exposures from sales, costs, intercompany loans and foreign debt may partially offset; interest rate exposures on foreign-currency debt are linked to currency exposure through the interest rate differentials that drive forward points; and liquidity risk links them all, because hedges that are economically perfect can still demand cash on a bad day.
+
+An integrated approach has four steps. First, build a *map of exposures* by currency, tenor and type, netting where legal and operationally feasible. Second, estimate a *measure of risk* of the net portfolio (VaR for treasury positions; cash-flow-at-risk or earnings-at-risk for operating exposures), including stress scenarios that move currencies, rates and credit spreads together. Third, *compare the risk to appetite*, expressed in terms of covenants, ratings thresholds and investment capacity. Fourth, *choose the cheapest effective responses*, starting with operational and natural hedges, followed by financing in matching currencies, and finally financial derivatives sized according to the hedging policy.
+
+Reporting should answer simple questions: What is our net exposure by currency this quarter and next year? What portion is hedged and at what average rate? What would a 10 percent move in each currency do to EBIT and to net debt to EBITDA? How much cash might we need to post if rates move adversely by a given stress amount? And how does our actual hedged result compare with the benchmarks decided in advance? When Marcus Lindqvist presents answers to these questions to the audit and risk committee, risk management becomes a management discipline rather than a collection of trades.
+
