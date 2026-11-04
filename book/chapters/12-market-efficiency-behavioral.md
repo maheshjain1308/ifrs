@@ -381,3 +381,134 @@ Even with five years of 12 percent growth, the stock is worth about $63, roughly
 ### 12.7.3 Lessons for firms that find themselves inside a bubble
 
 A firm whose shares are inflated faces temptation: issue equity at attractive prices, make acquisitions with overvalued stock, expand capacity to justify the valuation, and reward executives in stock options that pay off from the rise. All of these can be harmful if the bubble bursts. The disciplined response is to separate value from price: estimate intrinsic value with explicit cash-flow forecasts, maintain the cost of capital and hurdle rates that would apply without the bubble (do not lower hurdle rates because the stock is high), and limit leverage so the firm survives the bust.
+
+## 12.8 Implications for Financial Managers
+
+### 12.8.1 A practical stance: trust prices, verify claims
+
+The evidence supports a pragmatic position. For large, liquid, widely followed firms, market prices are an unbiased-enough estimate of value that managers should be skeptical of their own ability to out-guess them, and should regard a persistent belief that "the market is wrong" as a hypothesis requiring evidence. Yet markets are not infallible, and for hard-to-value firms, in times of high sentiment, or when arbitrage is costly, prices may deviate meaningfully from value. The right stance is therefore calibrated: assume the market price is informative, treat deviations as possible, and design decisions that do not depend on guessing the direction of mispricing.
+
+### 12.8.2 Financing and the market-timing temptation
+
+If prices can deviate from value, then financing choices are no longer neutral. When a firm issues shares that are overvalued, existing shareholders gain at the expense of new ones; when it repurchases undervalued shares, continuing shareholders gain at the expense of those who sell. Survey and empirical evidence suggest firms issue equity after periods of high returns and repurchase after low ones, consistent with attempts to time the market; Baker and Wurgler argue that cumulative timing has lasting effects on capital structure.
+
+**Example 12.9 – Wealth transfers from repurchases and issuances when price differs from value.**
+
+Alder Instruments (a fictional firm) has 100 million shares outstanding. Management's best estimate of intrinsic equity value is $5,000 million ($50 per share), while the market price is $40.
+
+*(a) Repurchase of undervalued shares.* The firm spends $400 million to buy back shares at $40:
+
+```
+Shares repurchased = 400 / 40 = 10 million
+Remaining shares   = 90 million
+Intrinsic value of equity after buyback = 5,000 − 400 = 4,600
+Intrinsic value per remaining share     = 4,600 / 90 = $51.11
+```
+
+Continuing shareholders gain $1.11 per share, or 90 × 1.11 = $100 million, and the sellers lose exactly $100 million (10 million shares × the $10 gap between value and price). The buyback is a wealth transfer from sellers to stayers equal to the mispricing times the shares retired. If the shares had been fairly priced at $50, repurchasing 8 million shares for $400 would leave 4,600 / 92 = $50.00 per share: no gain.
+
+*(b) Issuance of overvalued shares.* Suppose instead the intrinsic value is $30 per share ($3,000 million) while the price is $40, and the firm issues $400 million of equity:
+
+```
+New shares issued = 400 / 40 = 10 million; total shares = 110 million
+Intrinsic value after issue = 3,000 + 400 = 3,400
+Intrinsic value per share   = 3,400 / 110 = $30.91
+```
+
+Existing holders' per-share value rises from $30.00 to $30.91, a gain of $0.91 × 100 = $91 million, borne by the new investors who paid $40 for $30.91 of value. The lessons are symmetric. But note the practical constraints: the intrinsic value is the manager's estimate, not a fact; investors know managers have information and may infer overvaluation from an equity issue (which is why share prices on average fall on announcement of seasoned equity offerings); and managers with a stake in the firm, short horizons, or biased judgment may misjudge the gap. A firm that repeatedly "times" the market on the basis of unreliable views may destroy value instead.
+
+### 12.8.3 Capital budgeting under potential mispricing
+
+A key practical principle is that firms should evaluate projects on fundamentals and use a discount rate based on risk rather than adjusting it to current market conditions. Three consequences follow.
+
+*Do not lower the hurdle rate because the stock is rising.* A high share price does not make the capital cheaper in an opportunity cost sense; the cost of capital as defined in Chapter 11 reflects the long-run expected return required for risk. Managers who think of equity as cheap when the price is high tend to over-invest at the top.
+
+*Do not invest merely to please the market.* Catering theories suggest managers may adopt policies, such as paying dividends or adopting fashionable strategies, because investors reward them temporarily. Where this reflects genuine mispricing, a long-term shareholder is better served by decisions based on NPV; where it signals information, the effect is legitimate. Managers need to know which.
+
+*Beware of the tail of the distribution.* If mispricing is in the direction of overvaluation, an NPV-driven firm will still sometimes find that the cheapest source of capital is new equity; issuing then and holding the proceeds in safe assets, if the investment pipeline is empty, is a defensible response and preserves flexibility.
+
+### 12.8.4 Communication, disclosure, and investor relations
+
+If prices respond to information quickly but investors have limited attention, managers have an interest in clear, timely, and credible disclosure that reduces information asymmetry and the discount for uncertainty. Event-study evidence on announcements shows that the market responds to genuinely new information. Evidence on accounting manipulation shows that markets are partially but not completely fooled by earnings management; reputational damage when manipulation is discovered is large. Managers should aim to provide information that is hard for competitors to replicate but that helps investors forecast, avoiding earnings guidance that creates short-term pressure, and ensure that incentive pay is tied to long-term performance rather than the short-run share price.
+
+### 12.8.5 Governance against managerial biases
+
+Because the managers' own biases are a larger practical problem than market inefficiency for most firms, governance mechanisms matter. These include forecasting from outside views and base rates, mandatory post-audits of large investments, separation of project sponsorship from approval, red-team reviews of acquisitions, scenario analysis with explicit downside planning, and compensation that rewards long-run value creation. Each is a response to the bias of a particular kind identified in Table 12.4. Managers can learn from behavioral finance by treating it first as a diagnosis of their own decision processes, and only second as a guide to exploiting others.
+
+## Case Study: Greenfield Components Considers a Share Buyback
+
+*This case is fictional and illustrative; all figures are invented for teaching purposes.*
+
+Greenfield Components is a supplier of precision parts to the automotive industry, listed on a national exchange. It has 80 million shares outstanding, trading at $25, giving a market capitalization of $2.0 billion. The firm has $350 million of cash beyond operating needs and $600 million of debt, which is at a comfortable leverage level.
+
+Eight months ago, the share price was $38. Over that period, the auto sector sold off sharply on concerns about electric-vehicle disruption. Analysts' consensus target price dropped from $40 to $27, with a few downgrades to "sell." Greenfield's own order backlog, however, has risen 6 percent over the period, and the firm has begun to win contracts for components used in electric vehicles that now account for 12 percent of backlog, up from 4 percent.
+
+Greenfield's chief executive, Mirela Costa, has been a vocal bull about the firm's strategy. Last month she purchased $2 million of stock personally, and she is pushing the board to authorize a $300 million buyback. The chief financial officer, Elias Brandt, supports returning some cash but cautions about the logic: "We have been wrong about timing before. Two years ago we issued $200 million of equity at $36 to fund a plant that we now think was oversized, and we have not fully used the capacity. Today, we believe the stock is undervalued by 30 percent. I am not certain our confidence is justified; I know it is hard to distinguish conviction from wishful thinking."
+
+An internal team prepared a discounted cash flow valuation, with a base-case equity value of $3.0 billion ($37.50 per share). They acknowledge that the forecast depends heavily on the pace of conversion to electric-vehicle components. In a downside scenario, where the conversion is slower and margins compress, equity value is $1.7 billion ($21.25 per share); in an upside scenario it is $4.0 billion ($50 per share). The team assigns probabilities of 30 percent to the downside, 50 percent to the base case, and 20 percent to the upside, giving an expected equity value of $2.81 billion ($35.13 per share) (0.30 × 1.7 + 0.50 × 3.0 + 0.20 × 4.0). The team also notes that its previous forecasts of the three prior years exceeded actual results by an average of about 15 percent.
+
+A board member, a retired investment manager, raises questions. "The market has priced in the headwinds. What do we know that thousands of investors with access to the same filings do not? And if the stock is cheap, are we better off spending the money on a bolt-on acquisition, or on the capacity that EV customers want?" Another director notes that executive bonuses are tied in part to earnings per share, which a buyback would raise mechanically, and asks whether that creates a conflict.
+
+The treasurer adds a practical complication. Greenfield's shares are moderately liquid. A $300 million repurchase would be about 15 percent of market capitalization and, executed over six months, would probably move the price upward, implying an average price above the current $25. And if the downside scenario materialized after the buyback, the firm would have less cash to absorb it.
+
+### Discussion Questions
+
+1. Compute the expected value per share under the team's scenario weights, then adjust it for the team's historical forecast optimism (15 percent). Using the adjusted value, estimate the gain or loss per continuing share from a $300 million buyback at an average price of $27. How sensitive is your answer to the assumptions?
+2. Which behavioral biases might be affecting Mirela, Elias, and the internal team? Classify each using Table 12.4 and suggest governance practices to counter them.
+3. Interpret the CEO's personal share purchase and the broader market's reaction to the buyback announcement using the semi-strong-form framework. What would an event study of the announcement test, and how would you separate "information" from "mispricing correction"?
+4. Evaluate alternatives to the buyback (acquisition, capacity expansion, special dividend, debt reduction) from the standpoint of value, risk, and signaling. Does the EPS-linked bonus plan create a conflict, and what change would you recommend?
+
+## Key Takeaways
+
+- The efficient market hypothesis claims that prices reflect available information so that no strategy earns abnormal returns after costs and risk. It comes in weak, semi-strong, and strong forms, defined by the information set.
+- All tests of efficiency are joint tests of the information hypothesis and an asset-pricing model; a pattern in returns cannot by itself distinguish mispricing from unmodeled risk.
+- Event studies measure the price reaction to news using abnormal returns relative to a model such as the market model; they are the standard tool for judging the value impact of corporate actions and for testing the speed of price adjustment.
+- Anomalies such as momentum, value, and post-earnings drift are well documented, but many shrink after publication, and data snooping makes new discoveries suspect; demand stricter statistical thresholds for newly found patterns.
+- Arbitrage is limited by fundamental risk, noise-trader risk, short-selling constraints, transaction costs, and the incentives of leveraged intermediaries, so mispricing can persist without implying easy profits.
+- Investors and managers exhibit systematic biases, including overconfidence, anchoring, loss aversion, herding, and representativeness, that affect trading, forecasting, and capital allocation.
+- The winner's curse means that projects chosen for their high estimated NPVs are on average worth less than estimated; shrink estimates toward base rates and audit outcomes.
+- When price and intrinsic value diverge, repurchases and issuances transfer wealth between continuing and exiting or entering shareholders, but managers' estimates of intrinsic value are fallible and the market reads the action as a signal.
+- Test any extreme price by asking what growth or discount rate it implies; do not lower the hurdle rate because the share price is high.
+- The practical stance is to trust market prices as informative, evaluate projects on fundamentals with risk-based discount rates, guard against one's own biases through governance, and avoid decisions that depend on being smarter than the market.
+
+## Review Questions
+
+1. State the three forms of the efficient market hypothesis and give an example of a strategy ruled out by each.
+2. What is the joint hypothesis problem, and why does it prevent a decisive test of market efficiency?
+3. Explain why a statistically significant autocorrelation in daily returns does not necessarily imply a profitable trading strategy.
+4. Describe the steps in an event study. Why is a market model used rather than raw returns?
+5. Why are long-horizon event studies less reliable than short-horizon ones?
+6. Distinguish three interpretations of an apparent anomaly. What evidence would help choose among them?
+7. Explain the multiple-testing problem and how a Bonferroni correction addresses it.
+8. List the main limits to arbitrage and explain how each can allow mispricing to persist.
+9. How does loss aversion contribute to the disposition effect and to escalation of commitment in firms?
+10. Under what conditions would a share repurchase create value for continuing shareholders, and what risks does a manager face in judging that condition is met?
+
+## Problems
+
+**Problem 12.1.** A stock's market model has α = 0.03 percent per day and β = 1.25. On an announcement day, the market return is 1.2 percent and the stock return is 3.2 percent. Compute the expected return and the abnormal return.
+
+**Problem 12.2.** The abnormal returns on three consecutive days around an event are +0.8%, +1.9%, and −0.5%. The residual standard deviation of the market model is 1.1 percent per day. Compute the CAR and its t-statistic (assume independence across days).
+
+**Problem 12.3.** An event study of 36 firms finds a mean CAR of 2.4 percent with cross-sectional standard deviation of 6.0 percent. Compute the t-statistic. Is the mean CAR significant at the 5 percent level (critical value about 2.03)?
+
+**Problem 12.4.** A researcher examines 20 independent signals at the 5 percent level, none of which has real predictive power. (a) What is the probability that at least one appears significant? (b) What per-test significance level restores a 5 percent overall error rate under the Bonferroni correction?
+
+**Problem 12.5.** A firm has 60 million shares and an intrinsic equity value of $3,000 million ($50 per share). The market price is $40. It repurchases $200 million of stock at $40. Compute the number of shares retired, the intrinsic value per remaining share, and the total gain to continuing shareholders.
+
+**Problem 12.6.** A stock trades at $80, with an expected next-year dividend of $2.00 and a required return of 8 percent. (a) Compute the perpetual growth rate implied by the price. (b) Compute the stock's value if long-run growth is 3.5 percent.
+
+**Problem 12.7.** A long-short strategy has a gross expected return of 7.0 percent per year. Trading costs are 1.2 percent, short-borrowing fees are 2.5 percent, and price impact is 1.0 percent. Compute the net return and the share of the gross return consumed by costs.
+
+**Problem 12.8.** True project NPVs have a standard deviation of $10 million (mean zero), and the estimation error has a standard deviation of $8 million. A project is estimated to have an NPV of $15 million. Compute the shrinkage factor and the expected true NPV.
+
+### Answers to Selected Problems
+
+- **12.1.** Expected return = 0.03% + 1.25 × 1.2% = 0.03% + 1.50% = 1.53%. Abnormal return = 3.2% − 1.53% = +1.67%.
+- **12.2.** CAR = 0.8 + 1.9 − 0.5 = 2.2%. Standard deviation of the CAR = 1.1 × √3 = 1.905%. t = 2.2 / 1.905 = 1.155, not significant at 5 percent.
+- **12.3.** Standard error = 6.0 / √36 = 1.0%. t = 2.4 / 1.0 = 2.40, which exceeds 2.03, so the mean CAR is significant.
+- **12.4.** (a) 1 − 0.95^20 = 1 − 0.3585 = 64.2%. (b) 0.05 / 20 = 0.25% (0.0025) per test.
+- **12.5.** Shares retired = 200 / 40 = 5 million; remaining = 55 million. Intrinsic value per remaining share = (3,000 − 200) / 55 = $50.91. Gain = $0.91 per share, or about 55 × 0.909 = $50 million in total.
+- **12.6.** (a) g = 8.0% − 2.00 / 80 = 8.0% − 2.5% = 5.5%. (b) P = 2.00 / (0.08 − 0.035) = 2.00 / 0.045 = $44.44.
+- **12.7.** Net return = 7.0 − 1.2 − 2.5 − 1.0 = 2.3% per year. Costs consume 4.7 / 7.0 = 67% of the gross return.
+- **12.8.** Shrinkage factor = 100 / (100 + 64) = 0.610. Expected true NPV = 0.610 × 15 = $9.15 million.

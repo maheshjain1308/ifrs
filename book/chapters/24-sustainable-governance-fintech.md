@@ -266,9 +266,9 @@ Step 5: Rate sensitivity. If yields fall to 2.0 percent, gross income = $200m, d
 
 The issuer's profit is therefore essentially a leveraged bet on short-term interest rates, with fixed operating costs and distribution-sharing, and it carries run risk on a balance sheet whose liabilities are redeemable at par on demand. Anyone assessing such a business, or considering using its tokens in payments, should evaluate the reserve composition and liquidity, redemption mechanics, regulatory status and the cyclical sensitivity of earnings.
 
-### 24.5.5 Cyber, operational and model risk
+### 24.5.5 Operational and cyber risk
 
-Fintech increases dependence on software, data and third parties. Operational resilience (cloud outages, vendor failure), cybersecurity (fraud, ransomware, account takeover), data privacy and algorithmic bias in credit models are core risks that sit in the finance function's remit. Controls include concentration limits on critical vendors, tested contingency arrangements, segregation of duties for payment authorization, multi-factor authentication, and model governance with independent validation and monitoring for drift.
+Fintech increases dependence on software, data and third parties. Vendor concentration, cybersecurity, data privacy and algorithmic bias in credit models are core risks in the finance function's remit. Controls include concentration limits on critical vendors, tested contingency arrangements, segregation of duties for payment authorization and independent validation of models.
 
 ## 24.6 International Capital Budgeting
 
@@ -351,18 +351,9 @@ Neither lever is free: a lower WACC from "ESG" labels is hard to prove and may b
 | Will separation or combination create value after costs? | SOTP, synergy valuation, tax analysis | Counting gross benefits without dis-synergies |
 | What is the right response if things go wrong? | Contingent plans, liquidity runway, restructuring options | Late action |
 
-### 24.7.3 Trends that will shape the profession
+### 24.7.3 The enduring skill
 
-Several developments are likely to change what finance leaders do, though their timing and form are uncertain.
-
-- **Disclosure convergence.** Sustainability reporting standards are being developed and adopted in many jurisdictions, moving ESG data toward audited, comparable information. This should reduce rating disagreement and greenwashing, and increase the finance function's responsibility for non-financial data.
-- **Data and automation.** Machine learning in forecasting, credit decisions, fraud detection and treasury operations is raising the productivity of finance teams. It also creates model risk: the controller's job increasingly includes validating algorithms.
-- **Real-time and tokenized settlement.** Faster payment rails and tokenized assets may compress working capital cycles and reduce settlement risk, shifting the focus of treasury from float management to liquidity and counterparty risk across many rails.
-- **Private capital.** The growth of private equity and private credit has expanded financing options for firms that avoid public markets, and shifted some corporate governance and restructuring dynamics to negotiated, less transparent settings.
-- **Geopolitics and supply-chain fragmentation.** Tariffs, sanctions and reshoring raise the importance of scenario-based international budgeting and structural hedges.
-- **Climate and energy transition.** Capital intensity, carbon prices, and the physical risk of assets will increasingly be reflected in costs of capital, insurance and asset values.
-
-The core skill remains judgment under uncertainty. Models quantify, but the quality of assumptions, the incentives of those who produce the forecasts, and the willingness to act on unwelcome results determine whether a firm creates value.
+Disclosure standards, automation, tokenized settlement, private capital and geopolitical fragmentation will keep changing the tools and the data available to finance leaders. The core skill remains judgment under uncertainty. Models quantify, but the quality of assumptions, the incentives of those who produce the forecasts, and the willingness to act on unwelcome results determine whether a firm creates value.
 
 ## Case Study: Verdane Materials and the Sustainable Expansion Decision
 
@@ -370,7 +361,7 @@ The core skill remains judgment under uncertainty. Models quantify, but the qual
 
 Verdane Materials is a listed specialty-chemicals and building-materials group with $4.5 billion revenue, EBITDA of $720 million, net debt of $1.8 billion (2.5 times EBITDA) and an investment-grade rating one notch above the cut-off. The company has a market capitalization of $5.4 billion and a dual-class structure in which the founding family holds 9 percent of the capital but 31 percent of the votes. The board has eleven directors, of whom six are independent; the CEO is also the chair. The long-term incentive plan pays out 70 percent on three-year EPS growth, which has been supported by $600 million of buybacks in two years.
 
-Verdane's largest plant, in a coastal region, emits 1.2 million tons of CO2 a year, accounting for 40 percent of group emissions. The management team proposes an $800 million conversion to low-carbon heat and an electric kiln, financed with a $600 million green bond and $200 million of internal cash. The conversion will lower annual energy and carbon cost by an estimated $58 million after tax at a carbon price of $70 per ton rising 5 percent a year; at a carbon price of zero the saving is only $14 million a year, because electricity costs more than gas. The plant is expected to operate for 20 years. Verdane's WACC is 8.5 percent. The sustainability team argues that two of its largest customers have indicated a preference for low-carbon inputs and may switch within three years if no progress is made; the sales team estimates the value at risk at $25 million a year of EBITDA contribution.
+Verdane's largest plant, in a coastal region, emits 1.2 million tons of CO2 a year, accounting for 40 percent of group emissions. The management team proposes an $800 million conversion to low-carbon heat and an electric kiln, financed with a $600 million green bond and $200 million of internal cash. The conversion would raise efficiency and lower other operating costs by an estimated $14 million a year after tax, but electricity costs more than gas, so that is the entire saving if carbon is free. It would also eliminate about 0.96 million tons of CO2 a year; treat the avoided carbon cost, at $70 per ton in year 1 rising 5 percent a year, as an after-tax saving. The plant is expected to operate for 20 years. Verdane's WACC is 8.5 percent. The sustainability team argues that two of its largest customers have indicated a preference for low-carbon inputs and may switch within three years if no progress is made; the sales team estimates the value at risk at $25 million a year of EBITDA contribution.
 
 Meanwhile the company is considering a plant of similar scale in an emerging market where it would serve rapidly growing construction demand. The plant would cost the equivalent of $500 million and would generate local-currency cash flows. The local currency has depreciated about 4 percent annually against the dollar over the past decade, and local inflation runs 3 percentage points above US inflation. The government has twice delayed dividend payments abroad. A local partner proposes a joint venture with 40 percent ownership.
 
@@ -380,7 +371,7 @@ The board is divided. Some directors favor accelerating the low-carbon conversio
 
 **Discussion questions**
 
-1. Evaluate the $800 million conversion. Compute the NPV of the savings with and without a carbon price (using the data provided, approximate the annual after-tax saving at 20-year horizon, ignoring customer effects) and then add the value of the customer risk. What break-even carbon price or customer retention probability does the decision require? How should the green bond be assessed independently of the project?
+1. Evaluate the $800 million conversion. Compute the 20-year NPV at 8.5 percent with and without the carbon price (ignoring customer effects), then add the value of the customer risk avoided, treated as a level $25 million a year. What break-even carbon price or customer retention probability does the decision require? How should the green bond be assessed independently of the project?
 2. Design a revised long-term incentive plan for the CEO. Which metrics and weights would you propose, what vesting period and clawback provisions, and how would you deal with the risk that a ROIC target discourages the conversion project?
 3. Assess the emerging-market plant. Explain how to value it in USD using parity relationships, how to adjust for dividend repatriation risk, and what role the joint venture should play. How would you check that the local discount rate you use is consistent with inflation forecasts?
 4. Evaluate the governance structure, including the dual-class shares, the combined CEO/chair role and the buyback-heavy EPS plan. What changes would you recommend, and how would you sequence them given the pension investor's threat? Should Verdane adopt the fintech platform or the stablecoin proposal, and what questions would you require answered first?
@@ -389,8 +380,7 @@ The board is divided. Some directors favor accelerating the low-carbon conversio
 
 - ESG matters to valuation through identifiable channels: cash flows, risk and discount rates, financing access and franchise value. Begin with financial materiality by industry.
 - An internal carbon price turns a regulatory risk into a cash-flow assumption; it can reverse project rankings, and break-even carbon prices are more useful than point forecasts.
-- Green bonds are ordinary credit obligations with earmarked proceeds; any greenium is typically small and must be weighed against reporting and verification costs.
-- Sustainability-linked bonds rely on ambitious targets and meaningful step-ups; weak targets and small penalties turn them into labels.
+- Green bonds are ordinary credit obligations with earmarked proceeds and, at best, a small greenium that must be weighed against reporting costs; sustainability-linked bonds need ambitious targets and meaningful step-ups, or they become labels.
 - Governance mechanisms respond to agency problems between managers and shareholders, and between controlling and minority shareholders; stronger takeover defenses and control enhancements require stronger independent oversight.
 - Executive pay should link to long-run, hard-to-manipulate measures such as ROIC and relative TSR, with long vesting, shareholding requirements and clawbacks; options reward volatility.
 - Black-Scholes values an at-the-money five-year option at roughly 30 percent of the share price at typical parameters, but executives value options at less than fair value because they cannot diversify.
@@ -425,11 +415,11 @@ The board is divided. Some directors favor accelerating the low-carbon conversio
 
 ### Answers to Selected Problems
 
-1. Annual saving = 300 × 0.0008 = $0.24m; annuity factor (7 years, 4.5%) = 6.0021... let us compute: (1 − 1.045^−7)/0.045 = 5.8927. PV savings = 0.24 × 5.8927 = $1.414m; PV reporting = 0.10 × 5.8927 = $0.589m; NPV = 1.414 − 0.589 − 0.12 = **$0.705m**.
+1. Annual saving = 300 × 0.0008 = $0.24m; annuity factor (7 years, 4.5%) = (1 − 1.045^−7) / 0.045 = 5.8927. PV savings = 0.24 × 5.8927 = $1.414m; PV reporting = 0.10 × 5.8927 = $0.589m; NPV = 1.414 − 0.589 − 0.12 = **$0.705m**.
 2. Annual step-up = 1,000 × 0.002 = $2.0m, paid in years 4 to 8. Value at end of year 3 = 2.0 × 4.3295 = $8.659m; discount to today: 8.659 / 1.05³ = 8.659 / 1.157625 = $7.480m; expected cost = 0.5 × 7.480 = **$3.74m**.
 3. Annuity factor (8 years, 10%) = 5.3349. NPV before carbon = −20 + 4.5 × 5.3349 = **$4.007m**. Carbon charge = 25,000 × 80 = $2.0m a year; PV = 2.0 × 5.3349 = $10.670m. NPV after = 4.007 − 10.670 = **−$6.66m**.
-4. d1 = [0 + (0.03 + 0.06125) × 4] / (0.35 × 2) = 0.365 / 0.70 = 0.5214; d2 = −0.1786; N(d1) = 0.6990, N(d2) = 0.4291 (approximately); C = 40 × 0.6990 − 40 × e^(−0.12) × 0.4291 = 27.96 − 15.22 = **about $12.73** (precise computation gives 12.73).
+4. d1 = [0 + (0.03 + 0.35²/2) × 4] / (0.35 × 2) = (0.03 + 0.06125) × 4 / 0.70 = 0.5214; d2 = 0.5214 − 0.70 = −0.1786; N(d1) = 0.6990, N(d2) = 0.4291; C = 40 × 0.6990 − 40 × e^(−0.12) × 0.4291 = 27.96 − 40 × 0.88692 × 0.4291 = 27.96 − 15.22 = **about $12.73 per option**.
 5. Interpolation: 50 + (40 − 25)/(50 − 25) × 50 = 50 + 30 = **80 percent**; shares = 24,000; value = 24,000 × 45 = **$1,080,000**.
-6. F1 = 1.10 × 1.05 / 1.03 = 1.1214; F2 = 1.10 × (1.05/1.03)² = 1.1431. USD rate = 1.08 × 1.05 / 1.03 − 1 = 10.10 percent. NPV in EUR = −100 + 60/1.08 + 70/1.08² = −100 + 55.556 + 60.014 = 15.570, or **$17.13m** at spot. In USD: −110 + 67.28/1.1010 + 80.02/1.1010² = −110 + 61.11 + 66.02 = **$17.13m** (approximately, same to rounding).
+6. F1 = 1.10 × 1.05 / 1.03 = 1.1214; F2 = 1.10 × (1.05/1.03)² = 1.1431. USD rate = 1.08 × 1.05 / 1.03 − 1 = 10.10 percent. NPV in EUR = −100 + 60/1.08 + 70/1.08² = −100 + 55.56 + 60.01 = 15.57, or **$17.13m** at spot. In USD: cash flows −110.00, 60 × 1.1214 = 67.28, 70 × 1.1431 = 80.02; NPV = −110 + 67.28/1.1010 + 80.02/1.1010² = −110 + 61.11 + 66.02 = **$17.13m**, the same.
 7. Revenue = 0.026 × 80 + 0.25 = $2.33; cost = 1.24 + 0.096 + 0.09 + 0.056 + 0.04 = $1.522; contribution = **$0.808** (1.01 percent of ticket); break-even = 30,000,000 / 0.808 = **37.1 million transactions**.
 8. Gross income = 5,000 × 3.5% = $175m; distribution = $35m; profit = 175 − 35 − 40 = **$100m**. Break-even yield y: 0.8 × 5,000 × y = 40, so y = **1.0 percent**.

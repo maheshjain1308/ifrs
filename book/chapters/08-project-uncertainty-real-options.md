@@ -335,12 +335,12 @@ Expected payoff at year 1 = 0.40 × 6.0 + 0.60 × 0 = 2.40. Present value = 2.40
 
 | Probability of success | Pilot strategy NPV ($m) | Immediate launch NPV ($m) |
 |---|---|---|
-| 0.20 | 0.09 | −4.36 |
-| 0.30 | 0.64 | −2.82 |
+| 0.20 | 0.09 | −3.27 |
+| 0.30 | 0.64 | −2.27 |
 | 0.40 | 1.18 | −1.27 |
-| 0.50 | 1.73 | +0.27 |
+| 0.50 | 1.73 | −0.27 |
 
-(Immediate-launch NPV = −8.0 + [p × 14.0 + (1 − p) × 3.0] / 1.10; for p = 0.50 this is −8.0 + 8.5/1.10 = −0.273... computed exactly, the value is −8.0 + 7.727 = −0.273.) At p = 0.50 immediate launch is therefore still negative, and the pilot continues to dominate. In every row the staged approach is better than going all in, an illustration of a general principle: when a large irreversible commitment can be preceded by a cheap test, the test is valuable in proportion to the uncertainty it resolves and the loss it avoids.
+(Immediate-launch NPV = −8.0 + [p × 14.0 + (1 − p) × 3.0] / 1.10. For p = 0.50 this is −8.0 + 8.5 / 1.10 = −8.0 + 7.727 = −0.273.) Even at a 50% chance of success, immediate launch is still slightly negative, and the pilot strategy continues to dominate. In every row the staged approach is better than going all in, an illustration of a general principle: when a large irreversible commitment can be preceded by a cheap test, the test is valuable in proportion to the uncertainty it resolves and the loss it avoids.
 
 ## 8.7 Real Options
 
