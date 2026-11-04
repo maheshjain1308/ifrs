@@ -439,7 +439,7 @@ The transaction multiples applied to Adjusted EBITDA overlap the management-case
 
 *Step 6: reconciliation with market prices.* The market value of the funded debt is $156.5 million (Table 4); net of cash of $14.2 million, the market-implied enterprise value is $142.3 million, which is $63 million below the base case. This is not necessarily a market error. First, the debt prices embed the cost of getting through a restructuring: after $90.0 million of DIP, ABL and administrative claims that rank ahead of them (Question 7), the Term Loan lenders are in line for about $108.8 million at the base case, or 60.1 cents per dollar of claim, against a market price of 62. Second, some holders are forced sellers and the price includes some probability of a worse outcome. The right comparison is between the market price and the net recovery, not the gross EV; a student who revises the DCF down to $142 million has confused what the debt is worth with what the business is worth.
 
- #### Question 4: Liquidation analysis and waterfall
+#### Question 4: Liquidation analysis and waterfall
 
 *Step 1: gross proceeds (Table 8).*
 
@@ -707,9 +707,9 @@ The expected recoveries are very close: 59.6, 58.3 and 57.7 percent. The ranking
 
 ### Sensitivity Discussion
 
-*Enterprise value.* Each $10 million of enterprise value moves Term Loan recovery by 5.4 points ($10.0 million / $181.0 million) in a prepack, because senior claims are fixed at $90.0 million and the Term Loan is the fulcrum. A value below $188.6 million fails the best-interests test. The 3 percent filing haircut costs the Term Loan about $6.2 million of value, or 3.4 points.
+*Enterprise value.* Each $10 million of enterprise value moves Term Loan recovery by 5.4 points ($10.0 million x 0.97 / $181.0 million) in a prepack, because senior claims are fixed at $90.0 million and the Term Loan is the fulcrum. A value below $188.6 million fails the best-interests test. The 3 percent filing haircut costs the Term Loan about $6.2 million of value, or 3.4 points.
 
-*The probability of an out-of-court deal.* Option A breaks even with the prepack at 36.1 percent. If the probability is 20 percent the exchange yields 54.9 percent; at 50 percent it yields 61.4 percent. A 10-point change in probability moves recovery by 2.2 points; but the failure path matters as much: if failing costs only 2 percent of EV rather than 5 percent, the break-even drops substantially.
+*The probability of an out-of-court deal.* Option A breaks even with the prepack at 36.1 percent. If the probability is 20 percent the exchange yields 54.9 percent; at 50 percent it yields 61.4 percent. A 10-point change in probability moves recovery by 2.2 points; but the failure path matters as much: if failing costs only 2 percent of EV rather than 5 percent, the failure recovery rises to 53.7 percent and the break-even probability falls to about 25 percent.
 
 *Roll-up and DIP.* The roll-up's transfer between lenders ($6.1 million at the base case) depends on who participates: with 100 percent participation it is zero. The DIP's effective cost of about 31 percent is almost irrelevant to the decision compared with a 3 percent change in EV ($6.2 million).
 

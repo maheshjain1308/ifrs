@@ -22,9 +22,9 @@ The board had to answer three connected questions: whether to commit to Phase 1 
 
 ## Industry Context
 
-**Demand.** Cell demand is driven by the shift of road vehicles to electric drive, now spreading from cars to buses and trucks, and by stationary storage used by grids to absorb solar and wind output. Both are growing quickly and both are policy-sensitive. The consultants Helios hired (a fictional firm, Calder & Voss) gave a low, central and high demand view, and the gap between low and high was larger than the central growth rate. A model that treats demand as known misleads.
+**Demand.** Cell demand comes from the shift of road vehicles to electric drive, now spreading from cars to buses and trucks, and from grid storage that absorbs solar and wind output. Both are growing fast and both are policy-sensitive. The consultants Helios hired (a fictional firm, Calder & Voss) gave low, central and high views, and the gap between low and high exceeded the central growth rate.
 
-**Price.** Cell prices have fallen for a decade because of lower raw-material prices, process improvement, larger plants and new capacity. Declines arrive in steps, when a capacity surplus coincides with a fall in metal prices, and pause in shortages. A manufacturer's margin is the gap between a falling price and a falling cost, and survivors are those whose costs fall faster. Brightwater earned a high margin in its third year and a modest one in its eighth.
+**Price.** Cell prices have fallen for a decade as raw-material prices dropped, processes improved and capacity arrived. Declines come in steps when a capacity surplus coincides with falling metal prices. Margin is the gap between a falling price and a falling cost, and survivors are those whose costs fall faster. Brightwater earned a high margin in its third year and a modest one in its eighth.
 
 **Costs and learning.** A cell plant has three cost layers. Materials (active materials, electrolyte, separators, foils) are about half the early selling price and largely pass through from commodity markets. Conversion costs (labour, energy, consumables, scrap) fall as operators learn. Fixed cash costs (supervision, engineering, insurance) do not vary with volume, which is why utilisation matters so much. The manufacturing literature describes conversion cost with an experience curve: each doubling of cumulative output cuts unit cost by a fixed fraction. A learning rate of 85% means cost after a doubling is 85% of cost before. The curve runs on cumulative output across the site, so Phase 2 would inherit Phase 1's experience.
 
@@ -121,7 +121,7 @@ Capacity is 15 GWh a year, so output equals 15 times utilisation. Cell price sta
 | Target debt/(debt + equity) for the project | 30% |
 | Corporate tax rate | 25% |
 
-Debt betas may be assumed to be zero. The corporate hurdle rate Helios used in the past was 10%, a number nobody could trace to a calculation.
+Debt betas may be assumed to be zero. The hurdle rate Helios used in the past was 10%, which nobody could trace to a calculation.
 
 ### Table 6: Provincial support and financing terms
 
@@ -354,7 +354,7 @@ Year 0 shows 940 (900 plant + 40 land). In Year 15 the FCF includes the $120M sa
 
 | Measure | Result |
 | :--- | ---: |
-| NPV | $(537)M |
+| NPV | −$537M |
 | IRR | 4.60% |
 | Modified IRR (finance and reinvest at 10.2%) | 7.16% |
 | Payback (undiscounted) | 10.89 years after Year 0 |
@@ -405,7 +405,7 @@ The average cost falls from $31.88 in Year 2 to $21.34 in Year 3 and $14.75 in Y
 | 95% | 0.07 | 34.4 | 27.2 | 24.7 | (1,342) | (660) |
 | 100% | 0.00 | 36.0 | 36.0 | 36.0 | (1,987) | (1,305) |
 
-At the base rate of 85%, NPV with subsidies is $115M. Each one-point worsening of the learning rate removes about $(52)M of NPV (reading the sign as a loss). At the regression estimate of 86.3% the NPV is $45M, and at 87.1% the NPV is about $1M, so the subsidised project breaks even at a learning rate of roughly 87%. Without subsidies, even an 80% learning rate leaves NPV at $(537)M less than zero.
+At the base rate of 85%, NPV with subsidies is $115M. Each one-point worsening of the learning rate removes about $52M of NPV. At the regression estimate of 86.3% the NPV is $45M, and at 87.1% the NPV is about $1M, so the subsidised project breaks even at a learning rate of roughly 87%. Without subsidies, even an 80% learning rate leaves NPV at −$315M.
 
 **(d) Overstatement and use.** Sponsors own their assumptions, and a faster learning rate is the cheapest way to improve the numbers. The estimate comes from one plant, an earlier technology and a period when yields improved for other reasons; a change of chemistry would reset the curve. The board should treat 85% as the optimistic end of a range of 85% to 90% and tie management incentives to yield and conversion-cost milestones at fixed cumulative volumes.
 
@@ -427,7 +427,7 @@ The grant adds $143M, the production credit $475M (equal to its present value of
 
 **(b) Tax ambiguities.** If the credit is taxable, NPV falls from $115M to $2M, a loss of $113M: one line of tax law separates value creation from break-even. If the grant does not reduce depreciable basis, NPV rises to $136M. The board should require tax counsel's resolution of the credit question, ideally an advance ruling, before approval.
 
-**(c) Repeal risk.** If the credit is lost from Year 5, NPV is $(185)M, $300M lower. The expected NPV at 30% is
+**(c) Repeal risk.** If the credit is lost from Year 5, NPV is −$185M, $300M lower. The expected NPV at 30% is
 
 ```
 E[NPV] = 0.70 × 114.7 + 0.30 × (−185.3) = 80.3 − 55.6 = $24.7M
@@ -500,9 +500,6 @@ The probability-weighted NPV is $60M (0.25 × 776 + 0.50 × 115 + 0.25 × (−76
 
 | Year | Incremental volume | Incr. EBITDA | Incr. cash tax | Incr. capex | Incr. FCF | Discount factor | PV |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 0 | 0.0 | 0 | 0 | 0 | 0 | 1.0000 | 0 |
-| 1 | 0.0 | 0 | 0 | 0 | 0 | 0.9074 | 0 |
-| 2 | 0.0 | 0 | 0 | 0 | 0 | 0.8234 | 0 |
 | 3 | 0.0 | 0 | 0 | 1,300 | (1,300) | 0.7472 | (971) |
 | 4 | 7.5 | 35 | (3) | 0 | 37 | 0.6781 | 25 |
 | 5 | 11.2 | 113 | (1) | 0 | 185 | 0.6153 | 114 |
@@ -517,7 +514,7 @@ The probability-weighted NPV is $60M (0.25 × 776 + 0.50 × 115 + 0.25 × (−76
 | 14 | 12.8 | 137 | 34 | 0 | 106 | 0.2567 | 27 |
 | 15 | 12.8 | 132 | 59 | 0 | 265 | 0.2330 | 62 |
 
-The PV of the post-capex flows is **$949M** and the PV of the $1,300M capex at 10.2% is $971M, so static NPV is $(23)M.
+The PV of the post-capex flows is **$949M** and the PV of the $1,300M capex at 10.2% is $971M, so static NPV is −$23M.
 
 **(b) Valuation.** The option is a European call on an asset worth S = $949M today with strike X = $1,300M in three years, r = 4% and σ = 35%. PV(X) = 1,300 × e^(−0.12) = $1,153M, and σ√T = 0.6062.
 
@@ -611,13 +608,13 @@ The unlevered NPV is slightly below the WACC figure because the unlevered rate (
 | Base | 115 | (185) |
 | Downside | (765) | (1,041) |
 
-The probability-weighted NPV is $60M with the credit intact and $(238)M with it repealed, so with a 30% chance of repeal it is 0.70 × 60.1 + 0.30 × (−237.7) = **$(29)M**, about zero. As an operating investment Meridian is a coin flip. Its value lies in what sits outside the operating DCF: the Phase 2 option (+$161M) and the subsidised loan (+$168M), together $329M, provided both are secured.
+The probability-weighted NPV is $60M with the credit intact and −$238M with it repealed, so with a 30% chance of repeal it is 0.70 × 60.1 + 0.30 × (−237.7) = **−$29M**, about zero. As an operating investment Meridian is a coin flip. Its value lies in what sits outside the operating DCF: the Phase 2 option (+$161M) and the subsidised loan (+$168M), together $329M, provided both are secured.
 
 **(b) Anchor customer.** The letter is non-binding, so its $90 floor is not a hedge. The base price reaches $91 in Year 4, so the floor bites only after that. Helios should convert it to a take-or-pay contract with a floor: 4 GWh is 31% of the 12.75 GWh plateau output, which would remove part of the price risk the tornado ranked second. Its value is the risk it removes, not the average price.
 
 ### Sensitivity discussion
 
-Three results organise the discussion. First, value is concentrated in a few drivers: a 2.5% price shortfall or a learning rate of 87% instead of 85% erases the subsidised NPV, and a 30% repeal probability brings the expected value to about zero. Second, the drivers are correlated in practice: a price collapse driven by oversupply also tends to coincide with weak utilisation and slower learning, so the downside scenario is more plausible than independent one-at-a-time swings suggest. Third, flexibility is worth most when value is near the strike: Phase 2 is almost at the money, so its option value responds strongly to volatility, which is the one input that cannot be observed. Instructors should push students to say which of the 25%, 35% and 45% estimates they trust and why.
+Value is concentrated in a few drivers: a 2.5% price shortfall or a learning rate of 87% erases the subsidised NPV, and a 30% repeal probability brings expected value to about zero. The drivers are also correlated: an oversupply that cuts price tends to coincide with weak utilisation and slower learning, so the downside scenario is more plausible than one-at-a-time swings suggest. And flexibility is worth most near the strike: Phase 2 is almost at the money, so its value responds strongly to volatility, the one input nobody can observe. Instructors should ask which of 25%, 35% and 45% students trust, and why.
 
 ### Common student errors
 
@@ -627,13 +624,13 @@ Three results organise the discussion. First, value is concentrated in a few dri
 4. **Ignoring the tax-loss mechanics,** either giving the project an immediate tax refund or forgetting that salvage is taxed in full.
 5. **Treating subsidies as certain,** or as additive without checking taxability; presenting the subsidised NPV without the unsubsidised one.
 6. **Reporting payback as evidence of value** when discounted payback never occurs.
-7. **Discounting Phase 2 capex at the risk-free rate in the DCF but at the project rate in the option,** or computing the option on the NPV (−23) instead of on the PV of the operating flows (949).
+7. **Computing the option on the static NPV (−23)** instead of on the PV of the operating flows (949).
 8. **Counting the loan twice,** once through a lower WACC and again as a subsidy.
-9. **Choosing between phasing and building now by comparing NPVs alone,** ignoring the covenant.
+9. **Choosing between phasing and building now on NPV alone,** ignoring the covenant.
 
 ### Alternative defensible answers
 
-The model solution recommends Phase 1 with an option, but a well-argued case can be made for other answers. **Build all 30 GWh now** is defensible on pure value (it exceeds phasing by $27M to $42M at 35% volatility and by more if volatility is below 39%), but only if the covenant can be amended and about $874M of equity found. **Decline** is defensible if the board regards the 30% repeal probability as too low, since at 38% the expected NPV is negative, or if it will not rely on a learning rate that sits at the edge of the confidence interval. **Use a different discount rate**: a student who removes Tamsin from the comparables obtains an asset beta near 1.19 and a WACC near 10.5%, which lowers NPV by about $60M but does not change the ranking of alternatives. A student who treats the credit as taxable (the 40% case in counsel's opinion) finds a project worth about $2M, so the decision becomes one of negotiation, not valuation. Another defensible route values Phase 2 with a decision tree and scenario probabilities instead of option pricing; this gives similar answers when probabilities are calibrated to the lattice. The grading standard should reward a clear decision rule, correct mechanics and honest treatment of what is uncertain, not agreement with any single figure.
+The model solution recommends Phase 1 with an option, but a well-argued case can be made for other answers. **Build all 30 GWh now** is defensible on pure value (it exceeds phasing by $27M to $42M at 35% volatility and by more if volatility is below 39%), but only if the covenant can be amended and about $874M of equity found. **Decline** is defensible if the board regards the 30% repeal probability as too low, since at 38% the expected NPV is negative, or if it will not rely on a learning rate that sits at the edge of the confidence interval. **Use a different discount rate**: a student who removes Tamsin from the comparables obtains an asset beta near 1.19 and a WACC near 10.4%, which lowers NPV by about $24M but does not change the ranking of alternatives. A student who treats the credit as taxable (the 40% case in counsel's opinion) finds a project worth about $2M, so the decision becomes one of negotiation, not valuation. The grading standard should reward a clear decision rule, correct mechanics and honest treatment of what is uncertain, not agreement with any single figure.
 
 ### Board recommendation memo
 
@@ -644,7 +641,7 @@ The model solution recommends Phase 1 with an option, but a well-argued case can
 
 **Recommendation.** Approve Phase 1 (15 GWh, $1,500M plus $40M of land) subject to the five conditions below. Do not approve Phase 2 now; reserve the land, power connection and permits for it and review the decision at the end of Year 3.
 
-**Basis.** At a project discount rate of 10.2% (comparable-company WACC), Phase 1 has an NPV of $115M and an IRR of 11.5% with the Province's support. **Without it the NPV is −$537M and the IRR 4.6%**, so all of the value, and more, is subsidy: $652M in total, of which $475M is the production credit that is reviewed in 2031. If the credit is lost from Year 5 NPV falls to −$185M, and the expected NPV with a 30% chance of repeal is about −$29M across scenarios. The project loses its subsidised value with a 2.5% price shortfall, a learning rate of 87% or steady-state utilisation of 80%. Against that, two items outside the operating forecast are worth more: the option to build Phase 2 (about $161M at 35% volatility) and the development loan ($168M, as a 7% market-rate comparison). Building all 30 GWh now is worth about $27M to $42M more than phasing, but would take net debt to 5.35 times EBITDA against a 3.75 covenant.
+**Basis.** At a project discount rate of 10.2% (comparable-company WACC), Phase 1 has an NPV of $115M and an IRR of 11.5% with the Province's support. **Without it the NPV is −$537M and the IRR 4.6%**, so all of the value, and more, is subsidy: $652M in total, of which $475M is the production credit that is reviewed in 2031. If the credit is lost from Year 5 NPV falls to −$185M, and the expected NPV with a 30% chance of repeal is about −$29M across scenarios. The project loses its subsidised value with a 2.5% price shortfall, a learning rate of 87% or steady-state utilisation of 80%. Against that, two items outside the operating forecast are worth more: the option to build Phase 2 (about $161M at 35% volatility) and the development loan ($168M against a 7% market rate). Building all 30 GWh now is worth about $27M to $42M more than phasing, but would take net debt to 5.35 times EBITDA against a 3.75 covenant.
 
 **Conditions precedent.**
 1. A binding provincial agreement that makes the production credit contractual for eight years or compensates Helios for repeal.
@@ -655,5 +652,5 @@ The model solution recommends Phase 1 with an option, but a well-argued case can
 
 **Next sixty days.** Obtain the Class 3 cost estimate and a fixed-price contract for at least 70% of plant cost to address overrun risk. Complete the covenant negotiation. Secure the Phase 2 land and permit reservation at no more than the holding cost assumed here.
 
-**Risks not captured.** Construction delay and overrun (each year of delay costs roughly the Year 2 contribution plus a year of credit life), chemistry change, rival capacity and the political cycle. The board should regard the recommended structure as buying a position in a business that may be worth building, at a cost that is partly paid by the Province, not as a project that pays for itself.
+**Risks not captured.** Construction delay and overrun, chemistry change, rival capacity and the political cycle. The board should regard the recommended structure as buying a position in a business that may be worth building, at a cost that is partly paid by the Province, not as a project that pays for itself.
 
