@@ -292,7 +292,7 @@ Other covenants restrict additional debt, change of control and amendments to pr
 
 ### 15.5.1 Why the model is the centrepiece
 
-In a project financing, the financial model is not an analytical aid but a contractual and structural document. Lenders size debt from it, test covenants against it, and often attach it to the financing documents as the "base case" against which ratios are measured. A **model audit** by an independent firm is routinely required before financial close. The model must therefore be transparent, accurate, flexible enough to run sensitivities, and rigorously structured.
+In a project financing the model is a contractual document: lenders size debt from it, test covenants against it, and attach it to the loan agreement as the base case, usually after an independent model audit.
 
 ### 15.5.2 Standard architecture
 
@@ -414,7 +414,7 @@ A 20-year PPA may be shorter than the asset's 30-year life. Lenders give the mer
 
 ### 15.7.1 Public-private partnerships
 
-A **public-private partnership (PPP)**, in the form common for social infrastructure and roads, is a long-term contract under which a private consortium designs, builds, finances, operates and maintains an asset and is paid over 20 to 30 years. Variants go under acronyms such as DBFOM (design, build, finance, operate, maintain) and BOT (build, operate, transfer). The SPV is the contracting entity, and the project finance structure described above applies, with the public authority as the offtaker.
+A **public-private partnership (PPP)** is a long-term contract under which a private consortium designs, builds, finances, operates and maintains an asset (a DBFOM structure) and is paid over 20 to 30 years. The SPV is the contracting entity, the structure of this chapter applies, and the public authority is the offtaker.
 
 The central choice is the **payment mechanism**:
 

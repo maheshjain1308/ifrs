@@ -37,9 +37,9 @@ Drug development is a sequence of experiments that mostly fail. A compound enter
 
 **Probability of success is the dominant driver.** Practitioners estimate the probability that a program clears each gate, often by therapeutic area, and multiply the cash flows that depend on clearing a gate by the cumulative probability of reaching it. The result is a risk-adjusted net present value, written rNPV. Estimates of phase-transition probabilities differ by area. In this case we use an illustrative benchmark panel (see Financial Data) in which oncology Phase III success is lower than immunology or rare-disease Phase III success, and Phase II is the steepest gate everywhere. These benchmarks are fictional teaching inputs. In practice analysts calibrate to the company's own history and to published industry studies, and they should expect the answer to be sensitive to the choice.
 
-**Two ways to price risk, and why mixing them is a mistake.** An asset can be valued by discounting its success-case cash flows at a very high venture-style rate that implicitly absorbs the failure risk, or by explicitly probability-weighting cash flows and discounting at a rate that reflects only the systematic risk of the cash flows. Volume 1, Chapter 8 argued for explicitness: technical failure of a single compound is largely diversifiable, so it belongs in the cash flows, not in the discount rate. Using a 25 percent rate and explicit probabilities counts the same risk twice. This case asks you to make that argument with numbers.
+**Two ways to price risk.** An asset can be valued by discounting success-case cash flows at a high venture rate that implicitly absorbs failure risk, or by probability-weighting cash flows and discounting at a rate that reflects only systematic risk. Volume 1, Chapter 8 argued for explicitness: technical failure of one compound is diversifiable and belongs in the cash flows. A 25 percent rate combined with explicit probabilities counts the same risk twice.
 
-**Partnering is the industry's financing and risk-sharing technology.** Small companies rarely have the capital to run global Phase III programs and build global commercial organizations. They license regional or global rights to larger partners in exchange for a package: an upfront payment (certain), development, regulatory and sales milestones (contingent), royalties on partner sales (contingent and long-dated), and sometimes a share of development cost. The seller gives up upside in the successful state in return for cash and risk transfer in every state. Whether that trade is attractive depends on the probability of success, on the company's cost of external capital, and on whether the alternative to the deal is a dilutive equity raise at a depressed price. Terms are complicated by upstream obligations: academic licensors usually hold a right to a share of sublicense income, and the exact wording of that share can matter.
+**Partnering is the industry's financing and risk-sharing technology.** Small companies license regional or global rights in exchange for an upfront payment (certain), milestones (contingent), royalties (contingent and long-dated) and sometimes a share of development cost. The seller gives up upside in the success state in return for cash and risk transfer in every state. Whether that is attractive depends on the probability of success, on the cost of external capital, and on whether the alternative is a dilutive raise at a depressed price. Upstream academic licensors usually take a share of sublicense income, and the wording can matter.
 
 **Market valuation of clinical-stage companies.** Clinical-stage equities often trade far from the rNPV of their pipelines. The gap reflects more conservative probabilities, higher discount rates and anticipated dilution when a company must raise money before its data arrive. A good analyst asks what probability or rate the price implies. Under both US GAAP and IFRS research costs are expensed, so the balance sheet shows almost nothing for the pipeline and the whole valuation must be forward-looking.
 
@@ -180,16 +180,15 @@ Operating profit equals sales times (1 - COGS and royalty % - lifecycle R&D %) l
 
 **Table 3.8: Comparable clinical-stage companies (fictional, 3 November 2026, US$ millions)**
 
-| Company | Lead asset stage | Market capitalization | Net cash | Enterprise value | Programs |
-|---|---|---:|---:|---:|---:|
-| Kestrel Oncology | Phase III | 1,240 | 310 | 930 | 4 |
-| Brightwell Therapeutics | Phase III | 760 | 285 | 475 | 3 |
-| Norvale Immunology | Phase II | 540 | 190 | 350 | 3 |
-| Tessaly Rare Disease | Phase II | 410 | 120 | 290 | 2 |
-| Piedmont Biologics | Phase III | 1,020 | 150 | 870 | 5 |
-| Mean | | | | 583 | |
-| Median | | | | 475 | |
-| **Lumen Therapeutics** | **Phase III** | **899** | **337** | **562** | **3** |
+| Measure (US$ millions) | Enterprise value |
+|---|---:|
+| Kestrel Oncology (Phase III; market cap 1,240, net cash 310) | 930 |
+| Brightwell Therapeutics (Phase III; 760, 285) | 475 |
+| Norvale Immunology (Phase II; 540, 190) | 350 |
+| Tessaly Rare Disease (Phase II; 410, 120) | 290 |
+| Piedmont Biologics (Phase III; 1,020, 150) | 870 |
+| Peer mean / median | 583 / 475 |
+| **Lumen Therapeutics (Phase III; 899, 337)** | **562** |
 
 **Table 3.9: Base cash plan with no new financing (US$ millions)**
 
@@ -221,23 +220,23 @@ For the valuation in this chapter, ex-US sales equal 40 percent of the global sa
 
 ## Complications and Exhibits
 
-**Exhibit 1: The University of Calder sublicense clause.** Lumen's license from the University of Calder (paraphrased here for the case) entitles the University to (a) a royalty of 3 percent of net sales of any licensed product sold by Lumen or its sublicensees, and (b) 18 percent of "Sublicense Income," defined as "all consideration received by Licensee from a sublicensee in connection with the grant of rights, other than payments for research and development services at cost and royalties on net sales that are subject to the royalty in clause (a)." Counsel's first reading is that the 18 percent applies to upfront payments and milestones, and that royalties received from a partner on ex-US sales are covered by the 3 percent sales royalty (which Lumen must therefore fund, since the partner will not pay it on Lumen's behalf). A second reading, which the University's technology-transfer office has hinted at, is that royalties received by Lumen are Sublicense Income and subject to 18 percent in place of the 3 percent sales royalty. The base case in this chapter uses the first reading. Cost reimbursements are treated as outside Sublicense Income. A third, aggressive reading would also apply the 18 percent to cost reimbursements.
+**Exhibit 1: The University of Calder sublicense clause.** Lumen's license entitles the University to (a) 3 percent of net sales of any licensed product sold by Lumen or its sublicensees and (b) 18 percent of "Sublicense Income," defined as all consideration received from a sublicensee other than payments for research and development at cost and royalties on net sales subject to clause (a). Counsel's first reading is that the 18 percent applies to upfronts and milestones, and that royalties Lumen receives are covered by the 3 percent sales royalty, which Lumen must fund. A second reading, hinted at by the University, is that royalties received are Sublicense Income subject to 18 percent in place of the 3 percent. A third, aggressive reading would also apply 18 percent to cost reimbursements. The base case uses the first reading.
 
-**Exhibit 2: The LUM-205 Phase IIa data.** The Phase IIa study enrolled 38 patients. The clinical remission rate at week 12 was 41 percent on drug and 23 percent on placebo, a difference with a p-value of 0.07 on the original primary endpoint. The statistical analysis plan was amended before unblinding to add a second, stricter remission definition, on which the difference was larger. The independent science adviser describes the result as "encouraging but exactly the sort of signal that shrinks at scale." The 34 percent Phase IIb success probability in Table 3.4 is the benchmark value, not an upgraded estimate.
+**Exhibit 2: The LUM-205 Phase IIa data.** The Phase IIa study enrolled 38 patients; week-12 clinical remission was 41 percent on drug and 23 percent on placebo (p = 0.07 on the original primary endpoint). The analysis plan was amended before unblinding to add a stricter second definition on which the difference was larger. The science adviser calls it "encouraging but exactly the sort of signal that shrinks at scale." The 34 percent Phase IIb probability is the benchmark value, not an upgrade.
 
-**Exhibit 3: A competing readout.** A rival company's compound against the same genetic subtype as LUM-101 will read out its own pivotal trial in the second half of 2027, a year before Lumen's. A positive and clearly superior rival result would, in management's view, cut LUM-101 peak sales to about $1,000 million. A positive but similar result would leave peak sales unchanged but make the launch ramp slower. A negative rival result would raise confidence in the target biology and in management's view lift peak sales to $1,800 million. The base forecast of $1,400 million sits between these cases and is not formally probability-weighted.
+**Exhibit 3: A competing readout.** A rival compound against the same genetic subtype reads out a pivotal trial in the second half of 2027. A positive, clearly superior result would cut LUM-101 peak sales to about $1,000 million; a negative result would lift them to $1,800 million. The $1,400 million base sits between and is not formally probability-weighted.
 
 **Exhibit 4: Pricing policy.** In the fictional jurisdiction in which Lumen sells, small-molecule drugs become eligible for government price negotiation nine years after approval, and biologics thirteen years after approval. Management's estimate is that this would reduce net price on LUM-101 by 15 percent from 2039, the ninth year after its 2030 launch, until generic entry. The base forecast in Table 3.7 does not include this effect. LUM-205 is a biologic and LUM-310 is protected by orphan-product exclusivity, so neither is assumed to be affected.
 
 **Exhibit 5: A potential priority review voucher.** If LUM-310 is approved, management believes there is a 40 percent chance that Lumen is awarded a transferable priority review voucher for rare pediatric disease. Vouchers have been sold privately; management assumes a sale price of $100 million at the end of 2034, taxable at 21 percent. The base case excludes it.
 
-**Exhibit 6: Corvane's competing asset.** Corvane has a Phase II compound aimed at the same genetic subtype, acquired two years ago. The term sheet obliges Corvane to use "commercially reasonable efforts" to commercialize LUM-101 ex-US but contains no non-compete and no minimum-sales or reversion right. Mr. Beringer believes a reversion right would be worth more to Lumen than a point of royalty but has not priced it.
+**Exhibit 6: Corvane's competing asset.** Corvane owns a Phase II compound aimed at the same subtype. The term sheet requires only "commercially reasonable efforts" and contains no non-compete, minimum-sales or reversion right. Mr. Beringer believes a reversion right is worth more than a point of royalty but has not priced it.
 
 **Exhibit 7: Tax losses.** Lumen has about $780 million of accumulated tax losses. The models here ignore their timing benefit and apply a 21 percent rate to operating profit, with a 21 percent shield on development spending, as if losses in one program offset profits in another.
 
 **Exhibit 8: Equity market access.** The company's bankers advise that an underwritten follow-on of $250 million could be priced at $12.00 per share, a discount of about 17 percent to the last close, with gross underwriting spread and costs of 5.5 percent. They caution that a larger raise, or a raise priced after the market learns of a covenant problem, would price lower.
 
-**Exhibit 9: Structure of the deal cases.** In Deal A and Deal B, ex-US sales are 40 percent of global sales and are booked by the partner. Lumen's retained US business is 60 percent of global LUM-101 sales. Lumen bears the 14 percent of US sales as cost of goods and royalty, the 4 percent lifecycle R&D charge on US sales, and sales and marketing at the same percentages as in Table 3.6, but with the first-four-years floor reduced from $70 million to $55 million because Lumen no longer needs an ex-US commercial team. Under a deal Lumen continues to bear 3 percent of ex-US net sales as licensor royalty to the University of Calder.
+**Exhibit 9: Structure of the deal cases.** Under either deal, ex-US sales are 40 percent of global LUM-101 sales and are booked by the partner. Lumen keeps the 60 percent US business, with the same cost percentages as Table 3.6 but a first-four-years sales and marketing floor of $55 million instead of $70 million, and continues to owe the University 3 percent of ex-US net sales.
 
 ## Assignment Questions
 
@@ -269,25 +268,21 @@ Use the 11 percent discount rate, end-of-year timing and a 21 percent tax rate t
 
 After this case, students should be able to:
 
-1. Convert stage-by-stage clinical and regulatory success probabilities into cumulative probabilities and probability-weighted development spending.
-2. Build a risk-adjusted NPV (rNPV) for a pipeline asset and aggregate several assets into a sum-of-the-parts equity value per share.
-3. Explain why technical risk belongs in the cash flows and why a high venture discount rate on top of explicit probabilities double counts.
-4. Reverse-engineer the probability, scaling or discount rate that a market price implies.
-5. Value a licensing deal (upfront, cost share, milestones, royalties, upstream sublicense share) on a risk-adjusted basis and compare it with retention, and recognize when financing risk, not rNPV, drives the decision.
-6. Use state-contingent analysis (success, failure, rejection) to communicate an expected value that no one will ever observe.
+1. Convert stage success probabilities into cumulative probabilities and probability-weighted development spending, and build an rNPV and sum-of-the-parts equity value.
+2. Explain why technical risk belongs in cash flows and why a high venture rate on top of explicit probabilities double counts, and reverse-engineer what a market price implies.
+3. Value a licensing deal (upfront, cost share, milestones, royalties, upstream share) against retention, and recognize when financing risk drives the decision.
+4. Use state-contingent analysis to communicate an expected value that no one will ever observe.
 
 ### Suggested Class Plan (120 minutes)
 
 | Minutes | Segment | Activity |
 |---|---|---|
-| 0-10 | Opening | Cold-call the CFO's question: what is each program worth and why does the stock trade at $14.50? Show the covenant timeline (Table 3.9). |
-| 10-25 | Probabilities | Questions 1 and 5 in pairs: cumulative probability, expected spend, and the double-counting argument. |
-| 25-55 | rNPV build | Question 2 in three groups (one per program); a spreadsheet is projected and filled live. Reconcile to $698.0M, $139.8M and $52.6M. |
-| 55-70 | Sum of the parts | Questions 3 and 4: equity per share, market-implied inputs. Poll the class: is $14.50 cheap? |
-| 70-80 | Sensitivity and states | Question 6: tornado, break-even probability, three outcomes. Ask Ellen Okafor-Lang's question. |
-| 80-85 | Option value | Question 7, short. |
-| 85-105 | The deals | Questions 8 and 9: Deal A versus retention, versus Deal B, versus the equity raise. Split the room by role (CEO, CFO, BD, chair). |
-| 105-120 | Decision | Question 10: vote, then compare with the board memo at the end of this note. |
+| 0-10 | Opening | Cold-call the CFO's question and show the covenant timeline (Table 3.9). |
+| 10-25 | Probabilities | Questions 1 and 5 in pairs. |
+| 25-55 | rNPV build | Question 2 in three groups, one per program; reconcile to $698.0M, $139.8M, $52.6M. |
+| 55-80 | Parts and sensitivity | Questions 3, 4 and 6; poll: is $14.50 cheap? Ask Ms. Okafor-Lang's question. |
+| 80-105 | Staging and the deals | Questions 7 to 9, split by role (CEO, CFO, BD, chair). |
+| 105-120 | Decision | Question 10: vote, then compare with the memo below. |
 
 ### Solutions
 
@@ -415,7 +410,7 @@ Corporate G&A: $28.0 million x 0.79 = $22.12 million a year; the ten-year annuit
 | LUM-310 rNPV | 52.6 | 0.85 |
 | Discovery platform | 45.0 | 0.73 |
 | Corporate G&A (after tax, present value) | (130.3) | (2.10) |
-| **Net operating value** | **805.1** | **12.98** |
+| **Net operating value** | **805.1** | **12.99** |
 | Cash and marketable securities | 412.0 | 6.65 |
 | Term loan | (75.0) | (1.21) |
 | **Equity value** | **1,142.1** | **18.42** |
@@ -572,7 +567,7 @@ Value per share is most exposed to peak sales and Phase III probability (about $
 
 ### Alternative Defensible Answers
 
-A class may reasonably use the benchmark probabilities (LUM-101 falls to $607.7 million and equity to $16.97 per share), a rate of 10 or 12 percent, mid-year discounting, or explicit use of the tax-loss carry-forward, which raises every value. A risk-averse board may prefer Deal B for its larger certain cash ($213.2 million against $180.8 million for Deal A before tax) if it believes the Phase III probability is below about 29 percent. A board that believes the stock is cheap might raise a smaller amount and keep global rights; even at a no-discount issue price of $14.50 the raise yields $17.39 per share, below Deal A's $17.66, so the case for retention rests on a belief that rNPV is materially understated. A CEO may reasonably choose retention with a staged raise after the 2027 LUM-205 readout, but must accept a covenant waiver conversation.
+A class may reasonably use the benchmark probabilities (LUM-101 falls to $607.7 million and equity to $16.96 per share), a rate of 10 or 12 percent, mid-year discounting, or explicit use of the tax-loss carry-forward, which raises every value. A risk-averse board may prefer Deal B for its larger certain cash ($213.2 million against $180.8 million for Deal A before tax) if it believes the Phase III probability is below about 29 percent. A board that believes the stock is cheap might raise a smaller amount and keep global rights; even at a no-discount issue price of $14.50 the raise yields $17.39 per share, below Deal A's $17.66, so the case for retention rests on a belief that rNPV is materially understated. A CEO may reasonably choose retention with a staged raise after the 2027 LUM-205 readout, but must accept a covenant waiver conversation.
 
 ### Board Recommendation Memo
 

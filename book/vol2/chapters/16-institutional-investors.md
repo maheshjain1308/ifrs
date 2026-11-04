@@ -300,7 +300,7 @@ Closed-form formulas can only go so far, because liabilities, rates and equities
 
 ### 16.5.4 Alternatives, illiquidity and diversification
 
-Most large plans also hold private equity, real estate, infrastructure (Chapter 15), private credit and hedge funds. The case for them is diversification and a possible illiquidity premium; the concerns are fees, valuation lags (reported volatility understates true risk), **illiquidity at precisely the time collateral or benefit payments are needed**, and the difficulty of rebalancing. A plan that is a long way from maturity can bear illiquidity; a plan with growing cash outflow and an LDI overlay cannot hold unlimited illiquid assets. A useful discipline is to classify assets by *liquidity under stress* and to ensure the liquid portion can cover collateral and benefit needs for a defined period under a severe scenario.
+Large plans also hold private equity, real estate, infrastructure (Chapter 15), private credit and hedge funds, for diversification and a possible illiquidity premium. The concerns are fees, valuation lags that understate true risk, and illiquidity when collateral or benefit payments fall due. A useful discipline is to classify assets by liquidity under stress and ensure the liquid portion covers collateral and benefit needs for a defined period in a severe scenario.
 
 ## 16.6 Endowments and Foundations
 
@@ -403,6 +403,76 @@ A sponsor facing a large DB exposure has a menu of options, whose costs and bene
 
 In valuation (Volume 1, Chapter 21) the pension deficit should be treated as a debt-like item in the bridge from enterprise value to equity value, after tax, with careful attention to the discount rate used and to whether the deficit is calculated on a market-consistent basis. In M&A and LBO transactions (Volume 1, Chapters 22 and 23), the pension plan can be a deal issue: buyers will demand a price adjustment, or a funding commitment, and will examine the trustees' power to demand additional contributions on a change of control. Because leveraged buyers cannot support highly volatile liabilities, an LBO often leads to a rapid de-risking or insurance transaction. Finally, **ratings and covenants**: sponsors should check how the lender treats pension deficits in covenant definitions, since an unexpected fall in rates can trigger a technical breach.
 
-### 16.8.4 What managers should ask
 
-Managers should ask five questions about any DB exposure: what is the funding ratio on a market-consistent basis; what is the interest-rate, inflation and longevity sensitivity of the deficit; what is the distribution of the deficit over the next three to five years (not only the expected level); what contributions might be required under adverse outcomes and can the firm afford them; and which risk-transfer or de-risking options are available and at what price. These questions make the pension plan a managed risk instead of a surprise.
+## Case Study
+
+### Norwood Rail Pension Plan: De-Risk Now or Wait for Rates?
+
+*Illustrative case; the firm, the plan and all figures are fictional.*
+
+Norwood Rail Holdings is a regional rail and freight operator with annual EBITDA of 420 million and net financial debt of 1.05 billion. It sponsors the Norwood Staff Pension Scheme, a final-salary DB plan closed to new members eight years ago and to future accrual two years ago, when management replaced it with a DC plan for active employees. The legacy plan has 14,000 members: about 40 percent pensioners, 45 percent deferred members and 15 percent still working for the firm with frozen benefits.
+
+On the trustees' latest valuation, using a discount rate based on high-quality corporate bond yields, liabilities are 2.4 billion and assets are 2.0 billion, a funding ratio of 83 percent and a deficit of 400 million. The liability has a modified duration of about 13 years and is largely inflation-linked. The asset portfolio is 55 percent equities and private markets, 15 percent credit, and 30 percent government bonds and cash, with a modest swap overlay that hedges about 35 percent of the interest-rate sensitivity of the liabilities. The sponsor currently contributes 45 million a year toward the deficit under an agreed recovery plan that runs ten years.
+
+The chief financial officer, Amara Bello, faces three pressures. First, the company's main lender has told her that it adds 100 percent of the pension deficit, after tax, to net debt in its leverage covenant, which has a ceiling of 3.5 times. At a 25 percent tax rate, the adjusted leverage is already above 3.2 times, and the lender has noted that a further fall in discount rates could breach the covenant. Second, the trustees want a "journey plan" to full funding on a conservative basis within ten years, and want a hedge ratio of 80 percent as soon as possible. They also want the sponsor to give security over a property portfolio as a contingent asset. Third, the board wants to resume dividends and to fund a fleet replacement programme of 600 million, and sees the pension contributions as competing with those priorities.
+
+An insurer has offered an indicative quote to buy in the pensioner liabilities, about 960 million on a reported basis, at a price of roughly 1.07 billion. The price exceeds the accounting liability because the insurer prices on a lower discount rate and includes a capital and profit margin. The trustees are interested but note that using plan assets to pay the premium would leave the remaining plan with a higher proportion of deferred members, whose liabilities are longer and more uncertain, and with less liquid assets.
+
+Amara has also been approached by the chair of the trustees about an alternative: the sponsor could issue a 300 million bond and make a one-off contribution to the plan, in return for a reduction in the annual recovery contributions and a more flexible investment strategy. Her treasury team notes that the bond would raise reported financial debt, but would reduce the after-tax pension deficit by the same amount (before any tax effects), so adjusted leverage would be unchanged on day one. It would, however, replace an uncertain, contractually soft obligation with hard debt that carries covenants and has to be refinanced.
+
+Her analysts have run a simulation. With the current allocation and a 35 percent hedge, the one-year 5th-percentile fall in the funding ratio is about 11 points, and the 5th percentile of the deficit in five years is about 800 million. At an 80 percent hedge ratio with 40 percent in return-seeking assets, the one-year 5th-percentile fall narrows to about 5 points, but the expected funding ratio in five years falls by about 4 points and the plan's liquidity needs for swap collateral rise to roughly 12 percent of assets in a 100 basis point shock.
+
+### Discussion Questions
+
+1. Estimate the after-tax pension deficit and Norwood's adjusted leverage using the figures given. Explain why the lender's treatment is economically defensible, and what the sponsor can and cannot do to influence it.
+2. Evaluate the trustees' proposal to raise the hedge ratio to 80 percent. What does it do to the distribution of the deficit, to expected funding and to liquidity? What preparations (collateral buffer, rebalancing rules) would you require before agreeing?
+3. Compare the insurer buy-in at 1.07 billion with the alternative of keeping the pensioner liabilities. Under what circumstances is the premium over the accounting liability justified, and what happens to the residual plan's risk?
+4. Assess the bond-financed contribution proposal. Is it value-neutral? Consider tax, covenants, the sponsor's credit rating, the trustees' security demands, and the competing demands of the dividend and fleet programme, and recommend a sequenced strategy.
+
+## Key Takeaways
+
+- For any institution with liabilities or a spending objective, the relevant risk is the risk to the surplus or funding ratio, not the volatility of assets in isolation.
+- DB plans place investment, longevity and inflation risk on the sponsor; DC plans place them on members; the shift to DC moves risk rather than removing it, and fees and contribution persistence dominate DC outcomes.
+- The PBO depends heavily on salary projection and the discount rate; the half-point to one-point discount-rate sensitivity of a long-duration plan is typically 5 to 10 percent of the liability.
+- The funding ratio depends on the discount-rate convention: the same plan can appear 83 percent or 112 percent funded; a market-consistent rate separates the value of the promise from the risk of the assets chosen to fund it.
+- Liability-driven investing reduces unrewarded interest-rate and inflation risk by matching DV01, freeing the risk budget for return-seeking assets, but it requires liquidity to meet collateral calls and removes upside from rate rises.
+- A hedge ratio is a ratio of DV01s, so an underfunded plan with a percentage duration match is still unhedged in money terms.
+- Asset allocation for plans is a trade-off between expected funding and tail risk; simulations make this explicit but depend on assumed correlations and premia.
+- The endowment model exploits a long horizon through equities and illiquid assets, but its success depends on manager access and liquidity discipline, and smoothing spending rules protect budgets at some cost to capital in downturns.
+- Sovereign wealth funds differ by purpose (stabilisation, savings, development, pension reserve); governance, spending rules and transparency matter as much as asset allocation.
+- For sponsors, an after-tax pension deficit is a debt-like claim that reduces equity value and raises adjusted leverage; the options (faster funding, de-risking, closure, risk transfer) should be evaluated together with capital structure and dividend policy.
+
+## Review Questions
+
+1. Why does the liability or spending objective, rather than the asset volatility, define the risk of an institutional investor? Illustrate with a pension fund and an endowment.
+2. Compare DB and DC plans in terms of who bears investment, longevity and inflation risk, and explain why a sponsor might close a DB plan but still have large obligations for decades.
+3. Distinguish the ABO, PBO, service cost and interest cost. Why is the PBO larger than the ABO for a final-salary plan?
+4. Explain why funding ratios computed with different discount rates are not comparable. What are the main arguments for and against discounting at the expected return on assets?
+5. Using the Sharpe pension-put idea, explain why increasing the riskiness of plan assets can transfer value to shareholders at the expense of members or a pension guarantee fund.
+6. What is DV01, and why is the hedge ratio expressed as a ratio of DV01s rather than durations? Why can an underfunded plan with matched durations still be exposed to interest-rate changes?
+7. Describe the benefits and risks of using swaps for LDI, with particular attention to collateral and liquidity risk.
+8. Why is the minimum-risk portfolio for a pension plan the liability-matching portfolio, and how should a plan decide how much surplus risk to take?
+9. Describe the main features and the main criticisms of the endowment model. What did the 2008 crisis reveal about illiquid commitments?
+10. Why do corporate lenders and rating agencies add the pension deficit to debt, and what options does a sponsor have for managing the exposure?
+
+## Problems
+
+1. A plan will pay 30 million at the end of each year for 20 years. Assets are 330 million. Compute the funding ratio when liabilities are discounted at (a) 4 percent and (b) 6 percent.
+2. A plan has liabilities of 800 million with modified duration 12, and assets of 700 million with modified duration 6. (a) Compute the DV01 of each, and the hedge ratio. (b) Estimate the funding ratio after a 50 bp fall in rates, using linear duration approximations.
+3. A 40-year-old member has 10 years of service and a salary of 50,000, growing 2.5 percent a year. The plan pays 1/60th of final salary per year of service from age 65, level for 18 years. The discount rate is 4.5 percent. Compute the projected final salary, the accrued pension and the PBO (ignore mortality and indexation).
+4. A DC member earns 50,000, receives 2 percent annual raises for 30 years, and contributes 10 percent of salary at each year end. The account earns 6 percent net. The balance at retirement buys a 20-year level annuity at 5 percent. Compute the balance, annual income and replacement ratio against final-year salary.
+5. An endowment's previous-year spending was 22 million, inflation is 3 percent, the opening market value is 480 million, the smoothing weight is 0.7 and the long-run spending rate is 5 percent. Compute this year's spending and its percentage of market value.
+6. A plan has liability DV01 of 0.80 million and asset DV01 of 0.35 million. A receiver swap has modified duration 15. What swap notional hedges the remaining DV01? What notional would achieve a 60 percent hedge ratio?
+7. A sponsor has EBITDA 120 million, net debt 360 million, pension deficit 150 million before tax, tax rate 21 percent and operating EV 1,000 million. Compute adjusted leverage with the after-tax deficit and the equity value after deducting net debt and the after-tax deficit.
+8. A plan with funding ratio 0.90 has asset volatility 10 percent and liability volatility 9 percent. Compute the standard deviation of the one-year change in the funding ratio (approximate formula FR × √(σ_A² + σ_L² − 2ρσ_Aσ_L)) when ρ = 0.60 and when ρ = 0.95. Interpret.
+
+### Answers to Selected Problems
+
+1. Annuity factors: 13.5903 at 4 percent and 11.4699 at 6 percent. PV of liabilities: 407.71 and 344.10. Funding ratios: (a) 80.9 percent; (b) 95.9 percent.
+2. (a) Liability DV01 = 800 × 12 × 0.0001 = 0.96; asset DV01 = 700 × 6 × 0.0001 = 0.42; hedge ratio = 0.42 / 0.96 = 43.75 percent. (b) Liabilities rise by about 800 × 12 × 0.005 = 48 to 848; assets rise by 700 × 6 × 0.005 = 21 to 721; funding ratio falls from 87.5 percent to 85.0 percent.
+3. Final salary = 50,000 × 1.025²⁵ = 92,697. Accrued pension = 10/60 × 92,697 = 15,450. Annuity factor (18 years, 4.5 percent) = 12.160, so value at 65 = 187,874; PBO = 187,874 / 1.045²⁵ ≈ 62,509.
+4. Final salary = 50,000 × 1.02²⁹ = 88,792. Balance = 491,516. Annuity factor (20 years, 5 percent) = 12.4622; income = 39,441; replacement ratio = 44.4 percent.
+5. Spending = 0.7 × 22 × 1.03 + 0.3 × 0.05 × 480 = 15.862 + 7.200 = 23.06 million, which is 4.80 percent of market value.
+6. Remaining DV01 = 0.45; notional = 0.45 / (15 × 0.0001) = 300 million. For a 60 percent hedge ratio, total DV01 needed is 0.48, so swap DV01 = 0.13 and notional = 86.7 million.
+7. After-tax deficit = 150 × 0.79 = 118.5. Adjusted leverage = (360 + 118.5) / 120 = 3.99x (versus 3.0x reported). Equity value = 1,000 − 360 − 118.5 = 521.5 million (versus 640 before the deficit).
+8. For ρ = 0.60: 0.90 × √(0.0100 + 0.0081 − 0.0108) = 0.90 × √0.0073 = 7.69 percent. For ρ = 0.95: 0.90 × √(0.0100 + 0.0081 − 0.0171) = 0.90 × √0.0010 = 2.85 percent. The higher the correlation between assets and liabilities (that is, the better the hedge), the lower the surplus volatility.

@@ -27,16 +27,16 @@ Both situations raise the questions of this chapter. What does a separation do t
 
 ### 20.1.1 Why firms separate
 
-Volume 1, Chapter 22 treated acquisitions as a way to create value through synergy. Separations are the mirror image. They are justified when a business is worth more to someone else, or on its own, than inside the current parent. The standard motivations are:
+Volume 1, Chapter 22 treated acquisitions as a way to create value through synergy. Separations are the mirror image: they are justified when a business is worth more to someone else, or on its own, than inside the parent. Standard motivations are:
 
-- **Focus.** Management attention, capital allocation and incentive pay can be tailored to a single business. Diversification discount research, associated with Lang and Stulz and with Berger and Ofek, found that diversified firms tended on average to trade at a discount to the sum of their stand-alone parts, though later work has debated how much of this is a measurement artifact or reflects the selection of firms that diversify when their opportunities are poor.
-- **Investor clienteles and transparency.** A pure-play firm is easier to value, to cover by analysts and to compare with peers, and can attract investors who would not hold the conglomerate.
-- **Capital allocation.** Internal capital markets may cross-subsidize weak divisions (the "socialism" critique of Scharfstein and Stein). Separation forces each business to compete for capital at its own cost.
-- **Incentives and currency.** A separately listed business can grant equity compensation tied to its own performance and can use its own shares for acquisitions.
-- **Strategic fit and regulation.** The business may be a drag on the parent's credit rating, face antitrust constraints, or need a different capital structure (a high-growth unit needs equity, a cash-generating unit supports debt).
-- **Monetization.** The parent may simply need cash, to repay debt or fund a better opportunity.
+- **Focus.** Attention, capital allocation and incentive pay can be tailored to one business. Research by Lang and Stulz and by Berger and Ofek found that diversified firms tended on average to trade at a discount to the sum of their parts, though later work debates how much is measurement artifact or selection.
+- **Investor clienteles and transparency.** Pure plays are easier to value, cover and compare.
+- **Capital allocation.** Internal capital markets may cross-subsidize weak divisions (Scharfstein and Stein); separation makes each business compete for capital at its own cost.
+- **Incentives and currency.** A listed business can grant equity pay tied to its own performance and use its shares for acquisitions.
+- **Fit and regulation.** The business may drag on the parent's rating, face antitrust limits or need a different capital structure.
+- **Monetization.** The parent may need cash to repay debt or fund a better opportunity.
 
-Against these must be set the costs: lost synergies (shared procurement, shared overhead, cross-selling), **dis-synergies** from duplicated corporate functions, one-time separation costs (IT systems, legal entities, stranded costs), loss of diversification of cash flows (which may raise the cost of debt of each part), and, in a taxable transaction, tax.
+Against these stand lost synergies, **dis-synergies** from duplicated functions, one-time separation costs (IT, legal entities, stranded costs), loss of cash flow diversification (which may raise each part's cost of debt) and, in a taxable transaction, tax.
 
 ### 20.1.2 The menu
 
@@ -53,7 +53,7 @@ The tax column is a generalization. Tax-free treatment depends on detailed statu
 
 ### 20.1.3 Evidence in brief
 
-Empirical studies of spin-offs, associated with Schipper and Smith, Hite and Owers, Cusatis, Miles and Woolridge, and others, have generally reported positive announcement-period returns on average, and some have found positive subsequent performance of both parent and spun-off firm, particularly where the separation increases focus. Studies of asset sales have also tended to find positive average announcement returns for sellers, in line with the view that sales redeploy assets to higher-valued uses. Later research has documented that some of the post-spin gains are associated with the spun-off company or the parent being acquired. These are statements about averages across samples; individual transactions vary widely, and no manager should assume that a separation creates value merely because it is a separation. The remainder of this chapter shows how to test whether a specific one does.
+Studies of spin-offs (Schipper and Smith, Cusatis, Miles and Woolridge, and others) and of asset sales generally report positive average announcement returns, and some find positive subsequent performance where separation increases focus. These are averages; individual transactions vary widely, and some of the post-spin gains are associated with takeovers of either company. A separation is not valuable merely because it is a separation, and the rest of this chapter shows how to test a specific one.
 
 ## 20.2 Divestitures: Selling a Business
 
@@ -71,7 +71,7 @@ Two points deserve emphasis. First, **tax basis** matters. A business bought lon
 
 ### 20.2.2 Consideration and structure
 
-A buyer may pay in cash, stock, or both. Cash gives the seller certainty but crystallizes the tax; stock can sometimes defer tax but exposes the seller to the buyer's performance. Common contract elements include earn-outs (deferred contingent consideration tied to performance, discussed in Volume 1, Chapter 22 as a real option), transition services agreements (the seller supplies IT, payroll or logistics for a limited period), indemnities and escrows, and non-compete clauses. In a **carve-out sale** to a private equity buyer (Volume 1, Chapter 23), financing is usually largely debt, so the parent's price depends on credit market conditions.
+Cash gives certainty but crystallizes tax; stock can sometimes defer tax but exposes the seller to the buyer's performance. Common contract elements include earn-outs (Volume 1, Chapter 22), transition services agreements, indemnities and escrows, and non-compete clauses. In a sale to a private equity buyer (Volume 1, Chapter 23) financing is largely debt, so the price depends on credit conditions.
 
 ### 20.2.3 Worked comparison: sell or spin
 
@@ -99,11 +99,10 @@ In a spin-off, the parent distributes shares of a subsidiary pro rata to its own
 
 Several decisions deserve care:
 
-- **Capital structure of each entity.** Parents frequently have the spun entity borrow and pay a *cash dividend to the parent* just before the spin. This lets the parent reduce its own leverage while delivering a stand-alone capital structure to the new firm. Each entity's leverage should be set for its own business risk, which is where the Volume 1, Chapter 15 trade-off theory applies.
-- **Governance.** Each firm needs its own board, management, and incentive plans. Antitakeover provisions of the spun-off firm are a common subject of criticism.
-- **Commercial arrangements.** Transition services, supply agreements and shared intellectual property agreements govern the relationship after the spin. A poorly designed agreement can destroy value through conflict.
-- **Employee and pension allocation.** Pension liabilities need to be allocated with an actuarial view.
-- **Index and shareholder base effects.** After a spin, the new company may be too small, or in the wrong sector, for the funds that hold the parent, and these funds may sell. This *flowback* selling often creates temporary downward price pressure on the new shares, a source of the short-term underperformance and of the opportunities that spin-off specialists look for.
+- **Capital structure.** Parents often have the spun entity borrow and pay a *cash dividend to the parent* just before the spin, reducing the parent's leverage while giving the new firm a stand-alone structure; each entity's leverage should reflect its own business risk (Volume 1, Chapter 15).
+- **Governance and commercial arrangements.** Each firm needs its own board, management and incentive plans; transition services, supply and intellectual property agreements govern the relationship afterward, and a poorly designed agreement can destroy value through conflict.
+- **Pensions.** Pension liabilities must be allocated with an actuarial view.
+- **Flowback.** The new company may be too small, or in the wrong sector, for funds that hold the parent, and their selling often creates temporary price pressure, a source of the short-term underperformance that spin-off specialists exploit.
 
 ### 20.3.2 Tax-free logic, described generally
 
@@ -178,7 +177,7 @@ If the shareholder later sells the Consumer share at 15.00, the gain is 15.00 âˆ
 
 ### 20.3.5 What goes wrong
 
-The common failures are: separating businesses that are interdependent (shared plants, customers or technology) so that dis-synergies exceed the multiple arbitrage; loading the spun-off company with too much debt, leaving it unable to invest (a form of "dumping"); weak governance of the spun company; underestimating stranded costs at the parent, leaving RemainCo with an overhead too large for its size; and *pricing pressure from flowback selling* in the first months, mistaken by management for a verdict on the strategy. Creditors may also object: a spin that transfers value away from the borrowing entity can raise fraudulent transfer concerns if the parent is or becomes insolvent (Chapter 19), and bondholders sometimes seek protection through covenants on asset sales and distributions.
+Common failures: separating interdependent businesses so that dis-synergies exceed the multiple arbitrage; overloading the spun company with debt; weak governance at the spun company; stranded costs that leave RemainCo with overhead too large for its size; and misreading flowback selling as a verdict on the strategy. Creditors may also object if value is transferred away from a borrowing entity, which can raise fraudulent transfer concerns if the parent later becomes insolvent (Chapter 19).
 
 ## 20.4 Carve-Outs, Split-Offs, Tracking Stocks and Related Structures
 
@@ -202,29 +201,23 @@ Cost of the carve-out     = 1,204 âˆ’ 1,169.1        =  34.9 (2.9% of Consumer e
 
 The transaction costs 34.9 million, equal to 14.5 percent of the 240.8 million of fair value sold. The 24.1 million discount is a transfer to new investors that may or may not be recovered through re-rating of the retained stake, while the 10.8 million spread is permanent. Carve-outs are therefore most valuable when there is a specific reason to sell now: to fund a high-return investment, to retire costly debt, or to create the price discovery needed for a later spin.
 
-### 20.4.2 Split-offs
+### 20.4.2 Split-offs, tracking stocks and Reverse Morris Trusts
 
-In a **split-off**, parent shareholders are offered the chance to *exchange* parent shares for subsidiary shares, typically at a premium. Because tendering shareholders give up parent stock, the parent's share count falls, so a split-off is similar to a share repurchase paid in subsidiary stock (Volume 1, Chapter 16). It can be tax-efficient for the same reasons a spin-off is, and it is attractive when the parent wants to reduce its share count while separating a business, but it requires shareholders to choose, and it typically leaves a share structure in which each participating investor ends up with one company or the other.
+In a **split-off**, parent shareholders may *exchange* parent shares for subsidiary shares, typically at a premium. Because the parent's share count falls, it resembles a repurchase paid in subsidiary stock (Volume 1, Chapter 16), with similar tax logic to a spin-off, but each participant ends up with one company or the other.
 
-### 20.4.3 Tracking stocks
+A **tracking stock** is a class of parent equity whose dividends and price are meant to track a division. It gives a market price and tracking-linked compensation without legal separation, preserving synergies, but boards owe duties to all classes, resources can be shifted between divisions, and creditors have recourse to all of the parent's assets. Many have been unwound, suggesting the structure is often a half-measure.
 
-A **tracking stock** is a class of parent equity whose dividends and market price are intended to track the performance of a division. The parent retains legal ownership; the tracking shareholders have claims on the parent, not on the division. Advantages include a market price for the division and equity compensation tied to its performance without legal separation, which avoids tax and preserves synergies. Disadvantages are that governance conflicts between the classes are real: the board owes duties to all shareholders of the company, resources can be shifted between divisions, and creditors have recourse to all of the parent's assets. Many tracking stock structures have been unwound, which suggests that the structure has often been a half-measure.
-
-### 20.4.4 Reverse Morris Trust
-
-In a **Reverse Morris Trust**, the parent spins off a subsidiary and the subsidiary immediately merges with a third party, such that the parent's shareholders own a substantial minority stake in the combined business. Provided that ownership thresholds are met and that the spin otherwise qualifies, the parent can in effect sell a business to a third party in a transaction that is tax-free at the corporate level, and it can extract cash through debt raised by the subsidiary before the merger. The requirement that the old shareholders retain a minimum ownership stake in the combined company limits the size of the third party relative to the subsidiary, which is why such deals typically involve a partner smaller than, or of similar size to, the spun business.
+In a **Reverse Morris Trust**, a parent spins off a subsidiary that immediately merges with a third party, with the parent's old shareholders keeping a substantial minority of the combined business. If the ownership thresholds are met and the spin otherwise qualifies, the parent can effectively sell a business tax-free at the corporate level and extract cash through debt raised by the subsidiary. The ownership requirement limits how large the partner can be relative to the spun business.
 
 ## 20.5 Going Public: IPOs, Direct Listings and Their Costs
 
 ### 20.5.1 The traditional IPO
 
-In a firm-commitment IPO, underwriters buy the shares from the issuer and resell them to investors, run a bookbuilding process to find the price, and receive a gross spread. Direct costs are the gross spread (often in the mid-single-digit percent range for mid-sized offerings, lower for very large ones) and other expenses (legal, accounting, listing fees). The *indirect* cost is **underpricing**: shares are on average priced below their first-day closing price, so existing shareholders sell shares at a discount. Explanations, from Volume 1, Chapter 13, include the winner's curse of uninformed investors (Rock), information production by underwriters through bookbuilding (Benveniste and Spindt), and the use of underpricing as a reward for investors who reveal information. Ritter's long-run data on US IPOs show average first-day returns that have varied substantially across periods. The key conceptual point for the issuer is that money left on the table is a real cost, equal to the first-day gain on the shares *sold by the company and by selling shareholders*, though the cost to *existing* holders is limited to shares sold, because retained shares benefit from the pop.
-
-The IPO also brings **lock-up agreements** (typically restricting insiders from selling for a period such as 180 days), a stabilization mechanism (the "greenshoe" over-allotment option, normally up to 15 percent of the base deal), analyst coverage and a defined price discovery event.
+In a firm-commitment IPO, underwriters buy the shares, run a bookbuilding process to find the price, and resell to investors for a gross spread (often in the mid-single-digit percent range for mid-sized offerings). The *indirect* cost is **underpricing**: shares are on average priced below their first-day close. Explanations from Volume 1, Chapter 13 include Rock's winner's curse, Benveniste and Spindt's information production through bookbuilding, and rewards to investors who reveal information; Ritter's data show that average first-day returns have varied substantially across periods. For the issuer, money left on the table is a real cost equal to the first-day gain on the shares *sold*; retained shares benefit from the pop. The IPO also brings lock-ups (often 180 days), stabilization through a greenshoe over-allotment option (normally up to 15 percent of the base deal), analyst coverage and a defined price discovery event.
 
 ### 20.5.2 Direct listings
 
-In a **direct listing**, the company lists its shares on an exchange without a traditional underwritten offering. Existing holders may sell into the opening auction, the exchange publishes a reference price based on private-market information, and the opening price is set by the exchange's auction according to orders. No gross spread is paid to underwriters (financial advisers are paid advisory fees), there is typically no mandatory lock-up, and no underpricing in the sense of a discount set by bookbuilders, although the opening price can differ from fundamental value, up or down. Rules on whether a direct listing may include a primary capital raise have been developed by exchanges and regulators over time and vary, so a company should check current rules. The principal disadvantages are that there is no guaranteed capital or committed buyer base, that there may be greater price volatility at the start, and that there is no stabilization or marketing process by underwriters. It suits well-known firms with a broad base of investors who already know them and that have no immediate capital need.
+In a **direct listing**, shares are listed without a traditional underwritten offering. Existing holders may sell into the opening auction, the exchange publishes a reference price, and the opening price is set by the auction. No underwriting spread is paid (advisers charge fees), there is typically no mandatory lock-up, and there is no bookbuilding discount, although the opening price can differ from fundamental value in either direction. Rules on whether a direct listing may include a primary capital raise have developed over time and vary, so check current rules. The disadvantages are no committed capital or buyer base, potentially greater early volatility, and no stabilization. It suits well-known firms with no immediate capital need.
 
 ### 20.5.3 Cost comparison
 
@@ -338,12 +331,11 @@ The sponsor profits at every price shown, even at 4.00, a 60 percent decline fro
 
 ### 20.6.4 The redemption option as a free put
 
-Redemption gives each holder a put option on the stock at the trust value, and the warrants are kept. For a holder who buys a unit at 10.00 and redeems at about 10.00 plus interest, the return is the interest earned on the trust (at a short-term rate of about 4 percent, roughly 6 percent over 18 months) plus the value retained in the warrants, a nearly risk-free profit. Large investors specializing in this strategy were prominent in the SPAC market, and their selling of the shares or redemption depresses the cash delivered. The sponsor's *response* has been to compensate the remaining holders through PIPE inducements, forward purchase agreements or extension fees, each of which adds to dilution. This is why *the stated redemption-free case is the exception, not the rule*, and the planning assumption for an operating company evaluating a SPAC should be a high redemption rate with committed cash (PIPE or forward purchase) to cover the minimum cash it requires.
+Redemption gives each holder a put at trust value while keeping the warrants. A holder who buys a unit at 10.00 and redeems at about 10.00 plus interest earns the trust yield plus the retained warrant value, a nearly risk-free profit, and specialist investors used the strategy extensively. Sponsors responded with PIPE inducements, forward purchase agreements and extension fees, each adding dilution. An operating company evaluating a SPAC should therefore plan for high redemptions, with committed cash to cover its minimum requirement.
 
 ### 20.6.5 Regulation and the post-boom market
 
-After a surge in 2020 and 2021, the SPAC market contracted sharply, with many mergers completed at prices that later fell well below 10.00 and many SPACs liquidating without a deal. Regulators in the United States responded with an accounting statement in 2021 that led many SPACs to treat their warrants as liabilities measured at fair value, and with rules adopted later that sought to align disclosure and liability for SPAC mergers more closely with those of IPOs, including provisions on projections and on the sponsor's compensation and conflicts. The market continues to evolve, and specific provisions should be checked against current rules. The managerial lesson is general: any structure that gives a party a valuable option at negligible cost produces an investor base that exercises the option, and the cost falls on whoever supplies the cash.
-
+After a surge in 2020 and 2021 the SPAC market contracted sharply, with many mergers trading well below 10.00 and many SPACs liquidating without a deal. US regulators issued a 2021 accounting statement that led many SPACs to treat warrants as liabilities at fair value, and later adopted rules aligning disclosure and liability for SPAC mergers more closely with IPOs, including projections and sponsor conflicts. Details should be checked against current rules. The general lesson: a structure that hands a party a valuable option at negligible cost attracts investors who exercise it, and the cost falls on whoever supplies the cash.
 ## 20.7 Dual-Class Share Structures
 
 ### 20.7.1 The structure and the wedge
@@ -391,12 +383,10 @@ At f = 15 percent (a 15 million Class B stake) her threshold is 1 / 0.15 = 6.67.
 
 ### 20.7.3 Design features that matter
 
-- **Sunset clauses.** A *time-based* sunset converts high-vote shares to ordinary shares after a set number of years; an *event-based* sunset converts them when the founder leaves, dies, becomes incapacitated, or falls below a minimum economic stake; a *transfer-based* provision converts shares on sale or gift (other than to permitted family vehicles).
-- **Minimum economic ownership.** High-vote shares convert automatically if the holder's economic stake falls below a threshold (say 10 percent), limiting the wedge.
-- **Coattail provisions.** In a takeover, all classes must receive equal consideration, preventing a control premium for the high-vote class only.
-- **Independent directors and approval rights.** Class A shareholders elect a minimum number of directors, or related-party transactions need a majority-of-the-minority vote.
-- **Limits on voting rights.** Some exchanges and regulators permit weighted voting rights only subject to conditions on the ratio, on eligible holders and on sunset or independent governance rules. Several Asian exchanges began permitting weighted voting rights in the late 2010s, subject to such conditions, and rules in other markets have evolved as well, so conditions should be checked locally.
-- **Non-voting shares.** A class with no vote at all raises the wedge even higher and is controversial among institutional investors.
+- **Sunset clauses.** A *time-based* sunset converts high-vote shares after a set number of years; an *event-based* sunset converts them when the founder leaves, dies or falls below a minimum economic stake (say 10 percent); a *transfer-based* provision converts them on sale or gift.
+- **Coattail provisions.** In a takeover all classes receive equal consideration.
+- **Director and approval rights.** Class A holders elect a minimum number of directors, or related-party transactions need a majority-of-the-minority vote.
+- **Regulatory conditions.** Several Asian exchanges began permitting weighted voting rights in the late 2010s subject to conditions on ratios, eligible holders and governance, and other markets' rules have evolved, so check locally. Non-voting classes raise the wedge further and are controversial among institutions.
 
 ### 20.7.4 Valuing the vote
 
@@ -421,7 +411,7 @@ A practical sequence for a CFO is: (1) establish the *objective* (raise cash, cr
 
 *(Illustrative scenario. Halvorsen Mobility and all people and figures are fictional.)*
 
-Halvorsen Mobility is a privately held developer of electric delivery vehicles and charging software, founded eight years ago by Ingrid Halvorsen, who owns 62 percent of the shares. The remaining shares are held by employees (10 percent) and three venture investors (28 percent). The company has revenue of 420 million, growing 40 percent per year, negative free cash flow of 90 million, and cash of 130 million, enough for about 18 months. It needs 350 million of new capital over the next two years to build a second plant and scale software.
+Halvorsen Mobility is a privately held developer of electric delivery vehicles and charging software, founded eight years ago by Ingrid Halvorsen, who owns 62 percent of the shares. The remaining shares are held by employees (10 percent) and three venture investors (28 percent), a total of 100 million shares before any offering. The company has revenue of 420 million, growing 40 percent per year, negative free cash flow of 90 million, and cash of 130 million, enough for about 18 months. It needs 350 million of new capital over the next two years to build a second plant and scale software.
 
 Three routes are on the table. Bankers propose an IPO of 17.5 million shares at 20 (350 million primary), with a gross spread of 6 percent, other costs of 7 million and, based on comparable recent IPOs, an expected first-day return of 18 percent. A SPAC sponsor offers a merger at an agreed pre-money equity value of 1.6 billion (160 million shares at 10.00) in a SPAC with 25 million public shares and a 250 million trust, founder shares of 6.25 million, 8.33 million public warrants and 7 million private warrants (strike 11.50), a deferred underwriting fee of 8.75 million, and expected transaction costs of 18 million. The sponsor will arrange a PIPE of 100 million at 10.00 per share, but has warned that redemptions in recent comparable deals have exceeded 70 percent. A third adviser proposes a direct listing, which would raise no primary capital unless the exchange permits it, but would cost about 20 million in fees.
 

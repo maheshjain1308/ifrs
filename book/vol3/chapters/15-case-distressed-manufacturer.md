@@ -47,11 +47,7 @@ Several features of the industry shape the restructuring analysis.
 
 **Switching costs protect the franchise.** A gearbox specified into a haul truck or a baler is qualified over twelve to twenty-four months. OEMs rarely change suppliers mid-programme. That gives a distressed supplier a degree of franchise protection, but only as long as customers believe the supplier will survive to deliver warranty parts for fifteen years. A court filing can therefore damage revenue even where it improves the balance sheet. This is the central trade-off between the out-of-court and court-supervised options.
 
-**Supplier concentration.** The company buys specialty steel forgings from a small number of mills. One sole-source forging supplier, Harlan Forge, is owed $6.5 million and has threatened to move to cash-in-advance terms. Credit insurers that previously covered Rollan's suppliers have cut or withdrawn limits. Trade terms have therefore been shortening, which is the main driver of the rising vendor payments in the thirteen-week forecast.
-
-**The restructuring market.** Distressed industrial credits with a viable core business tend to be restructured through debt-for-equity exchanges: lenders who hold first-lien paper end up owning the reorganised business. Strategic buyers appear opportunistically when assets are cheap. Sponsors who are deeply out of the money typically retain nothing unless they contribute new money or the lenders agree to a negotiated "gift".
-
-With that background, the next section sets out the numbers.
+**Supplier concentration.** Rollan buys specialty forgings from a few mills. Harlan Forge, a sole-source supplier, is owed $6.5 million and has threatened cash-in-advance terms; credit insurers have cut limits, so trade terms are shortening. That is the main driver of the rising vendor payments in the thirteen-week forecast.
 
 ## Financial Data
 
@@ -253,12 +249,7 @@ The following facts surfaced in the two weeks before the board meeting. Some sha
 
 **Exhibit I: Management incentives.** The compensation committee proposes a $1.5 million key employee retention plan and a management incentive plan of 8 percent of new equity, granted after emergence. Both are likely to be challenged by an unsecured creditors' committee.
 
-**Ambiguities students must handle.**
-
-- Whether the mid-point of the valuation range is a fair basis for negotiation when the Term Loan trades at 62, which, together with the other debt prices in Table 4, implies about $142 million of enterprise value net of cash.
-- Whether the pension deficit is a financial liability or a quasi-operating one.
-- Whether the sponsor's equity has option value that justifies a gift.
-- Whether a prepackaged case can achieve a three-month timetable when the unsecured creditors' committee has not yet been formed.
+**Ambiguities students must handle.** Whether the Term Loan price of 62 says anything about enterprise value; whether the pension deficit is a financial or an operating liability; whether the sponsor's equity has option value that justifies a gift; and whether a prepackaged case can run to a three-month timetable before a creditors' committee has been formed.
 
 ## Assignment Questions
 
@@ -428,7 +419,7 @@ The management case is computed the same way: free cash flow of 16.4, 15.9, 19.3
 | 12.5% | 208.5 | 222.7 | 240.0 |
 | 13.5% | 191.3 | 202.9 | 216.7 |
 
-A one-point rise in WACC reduces enterprise value by about 9 to 10 percent; a one-point fall in terminal growth reduces it by about 7 to 8 percent. The range between the lender case at 13.5 percent WACC and 1 percent growth ($157.5 million) and the management case at 10.5 percent WACC and 3 percent growth ($305.4 million) is nearly a factor of two, which is exactly why the negotiating parties disagree.
+A one-point rise in WACC reduces value by about 9 to 10 percent and a one-point fall in terminal growth by about 7 to 8 percent. The range from $157.5 million to $305.4 million is nearly a factor of two, which is why the parties disagree.
 
 *Step 4: multiples cross-check.*
 
@@ -446,9 +437,9 @@ The transaction multiples applied to Adjusted EBITDA overlap the management-case
 
 *Step 5: recommended range.* We recommend a range of **$175 million to $245 million** with a base case of **$205 million**. The base case is close to the lender-case DCF ($201.8 million) and the lender-case comps cross-check at the upper end ($199.4 million at 7.2 times), and it sits between the 75 percent lender / 25 percent management blend ($213.1 million) and the pure lender case. The low case ($175 million) approximates the lender-case DCF at a 12.5 to 13.5 percent WACC and the trading multiple at 6.3 times; the high case ($245 million) approximates the management-case DCF. A range is the honest answer; the board should regard the base case as the centre of a distribution, not as a point estimate.
 
-*Step 6: reconciliation with market prices.* The market value of the funded debt is $156.5 million (Table 4); net of cash of $14.2 million, the market-implied enterprise value is $142.3 million, which is $63 million below the base case. This is not necessarily a market error. First, the debt prices embed the cost of getting through a restructuring: after $90.0 million of DIP, ABL and administrative claims that rank ahead of them (Question 7), the Term Loan lenders are in line for about $108.8 million at the base case, or 60.1 cents per dollar of claim, against a market price of 62. Second, some holders are forced sellers (the CLOs), liquidity in the Term Loan is poor, and the Term Loan price includes some probability of a worse outcome. The right comparison is therefore between the market price and the net recovery, not between the market price and the gross EV. A student who concludes that the market says the business is worth $142 million and so revises the DCF downward has confused what the debt is worth with what the business is worth.
+*Step 6: reconciliation with market prices.* The market value of the funded debt is $156.5 million (Table 4); net of cash of $14.2 million, the market-implied enterprise value is $142.3 million, which is $63 million below the base case. This is not necessarily a market error. First, the debt prices embed the cost of getting through a restructuring: after $90.0 million of DIP, ABL and administrative claims that rank ahead of them (Question 7), the Term Loan lenders are in line for about $108.8 million at the base case, or 60.1 cents per dollar of claim, against a market price of 62. Second, some holders are forced sellers and the price includes some probability of a worse outcome. The right comparison is between the market price and the net recovery, not the gross EV; a student who revises the DCF down to $142 million has confused what the debt is worth with what the business is worth.
 
-#### Question 4: Liquidation analysis and waterfall
+ #### Question 4: Liquidation analysis and waterfall
 
 *Step 1: gross proceeds (Table 8).*
 
@@ -525,7 +516,7 @@ Sponsor:            5% x 34.9 = 1.7
 
 1. **Unanimity for principal.** A reduction of Term Loan principal requires every affected lender. Two CLOs holding $25.0 million (14.0 percent) cannot take equity. One or both can block the deal by simply saying no, and the ad hoc group of 58 percent cannot overrule them. Any attempt to engineer around them (for example, an "uptier" transaction that primes non-participants) invites litigation, and the economics of the transaction are then hostage to the outcome of that litigation.
 2. **Holdout dynamics among noteholders.** The exchange is a voluntary offer with a 95 percent participation condition. A noteholder who does not tender keeps a full-priced claim on a company whose other creditors have taken equity: the more others exchange, the better the holdout's credit. Exit consents can strip covenants but cannot reduce principal or interest. If 20 percent of the Notes ($24.0 million) hold out, the company continues to owe cash interest of 24.0 x 9.5% = **$2.3 million a year**, equal to 8.2 percent of lender-case 2027E EBITDA and 14.3 percent of 2027E free cash flow, and a $24.0 million claim remains due in 2028.
-3. **Coordination and time.** The cash runway is about six weeks. An exchange needs documentation, a disclosure statement-like offering memorandum, Term Loan consent solicitations and a 20-business-day tender period. Failure carries the cost shown in Question 9: filing later, with less cash, more customer loss and a larger DIP.
+3. **Coordination and time.** The runway is about six weeks; an exchange needs an offering memorandum, consent solicitations and a 20-business-day tender. Failure carries the cost shown in Question 9.
 
 In Chapter 11 a plan binds dissenting holders if each impaired class votes in favour by two-thirds in amount and a majority in number of those voting, or if the plan can be "crammed down" over a dissenting class. The CLOs can vote no and still be bound by the class vote. That is the reason a prepackaged Chapter 11 is the usual tool for a balance-sheet restructuring with fragmented holders.
 
@@ -628,15 +619,15 @@ The plan therefore transfers $3.2 million of value from the Term Loan lenders to
 | Unsecured value (5% equity) | 1.7 | 3.2 | 5.1 |
 | Unsecured recovery | 1.0% | 1.8% | 2.9% |
 
-*Step 4: feasibility.* Exit debt of $135.0 million is 4.87 times 2027E lender-case EBITDA, 3.89 times 2028E and 4.17 times 2027E management-case EBITDA. Interest at the stated rates is 50.0 x 7.7% + 40.0 x 12.3% + 45.0 x 9.8% = 3.85 + 4.92 + 4.41 = **$13.2 million**.
+*Step 4: feasibility.* Exit debt of $135.0 million is 4.87 times 2027E lender-case EBITDA, 3.89 times 2028E and 4.17 times 2027E management-case EBITDA. Interest at the stated rates is 50.0 x 7.6% + 40.0 x 12.3% + 45.0 x 9.8% = 3.80 + 4.92 + 4.41 = **$13.1 million**.
 
 ```
-EBITDA / interest, 2027E lender case          = 27.7 / 13.2 = 2.10x
-(EBITDA - capex) / interest                   = 13.7 / 13.2 = 1.04x
-FCF before interest / interest                = 15.9 / 13.2 = 1.21x
+EBITDA / interest, 2027E lender case          = 27.7 / 13.1 = 2.11x
+(EBITDA - capex) / interest                   = 13.7 / 13.1 = 1.04x
+FCF before interest / interest                = 15.9 / 13.1 = 1.21x
 ```
 
-The structure is feasible but tight in the lender case in the first year; it improves as margins recover (2028E lender free cash flow before interest is $13.9 million, a coverage of 1.05 times, so the plan should allow a PIK election on the takeback loan for the first two years). Contrast Option A, where leverage was 6.1 times and interest coverage 0.97 times.
+The structure is feasible but tight in the lender case in the first year; it improves as margins recover (2028E lender free cash flow before interest is $13.9 million, a coverage of 1.06 times, so the plan should allow a PIK election on the takeback loan for the first two years). Contrast Option A, where leverage was 6.1 times and interest coverage 0.97 times.
 
 *Step 5: best-interests test.* Each holder in an impaired class who does not vote for the plan must receive at least what it would receive in a liquidation. Term Loan liquidation recovery is 51.3 percent (Question 4). Setting the plan's pre-gift Term Loan recovery equal to that: (EV x 0.97 - 90.0) / 181.0 = 0.513, so EV x 0.97 = 92.9 + 90.0 = 182.9 and **EV = $188.6 million**. Below that value, a dissenting Term Loan lender could argue that the plan fails the test. At $175 million, the Term Loan recovers 43.1 to 44.1 percent, below 51.3 percent: the low case fails the best-interests test. This is an important finding: the low end of the valuation range is not a feasible plan value at all, because lenders would rather liquidate (or sell) than take it. That leads directly to Question 9's option-value point.
 
@@ -652,7 +643,7 @@ at 8%: 6.0 x [1 - 1.08^-7] / 0.08 = 31.2
 
 These are below the $45.0 million accounting deficit because the plan's assets are expected to earn a return, and below the $62.0 million termination-basis claim. If the plan were terminated, the insurer's claim of $62.0 million would join an unsecured pool of 175.2 + 62.0 = $237.2 million and would recover 62.0 x 3.19 / 237.2 = about **$0.8 million**, or 1.3 percent. Retention thus preserves roughly $32 million of present-value funding commitment (plus the associated benefits to 1,100 participants) at the price of about $6 million a year of cash, which is already inside the forecast EBITDA. Termination would not save the company anything near $62 million of cash: it would trigger a union grievance, risk strikes and customer concerns, and the claim itself recovers almost nothing. The correct recommendation is to retain the plan and negotiate a funding schedule.
 
-*Critical vendors.* The $18.0 million owed to critical vendors is general unsecured debt that would recover about 1.8 percent. Paying 100 percent costs $10.0 million in cash during the case and $8.0 million through reinstated terms. The test is whether the cost is smaller than the value lost if supply stopped. Harlan Forge is sole-source, qualification of an alternative takes 9 to 12 months, and Table 5 already shows the company being squeezed. A week of lost forging deliveries stops the Dunmere line, which is about $7.9 million of weekly revenue. Paying the critical vendors is clearly worth it, provided the payment is conditioned on customary trade terms for the period of the case and limited to those who are truly critical. Students often over-allocate: a vendor is critical only if it cannot be replaced at a lower cost than the claim.
+*Critical vendors.* The $18.0 million owed to critical vendors is general unsecured debt that would recover about 1.8 percent. Paying 100 percent costs $10.0 million in cash during the case and $8.0 million through reinstated terms. The test is whether the cost is smaller than the value lost if supply stopped. Harlan Forge is sole-source, qualification of an alternative takes 9 to 12 months, and Table 5 already shows the company being squeezed. A week of lost forging deliveries stops the Dunmere line, which is part of about $7.9 million of weekly company revenue. Paying the critical vendors is clearly worth it, provided the payment is conditioned on customary trade terms for the period of the case and limited to those who are truly critical. Students often over-allocate: a vendor is critical only if it cannot be replaced at a lower cost than the claim.
 
 *Sponsor.* Under absolute priority the equity gets nothing, because even at $245 million the Term Loan is not paid in full once costs are deducted. The sponsor's only legitimate levers are (a) new money, (b) the threat of delay and litigation and (c) the possibility that the lenders prefer an out-of-court deal that avoids cost. The $15 million of new equity requested for 15 percent of the equity in Exhibit E values the equity at $100 million post-money, but the base-case equity value after debt is $34.9 million (Option A) or $63.8 million (Option B). The sponsor is thus asking to buy at a price far above intrinsic value; the lenders' 5 percent offer for $15 million is not crazy either, because the sponsor receives 5 percent of $34.9 million, about $1.7 million, without investing. The right conclusion is that the sponsor should receive a small consensual gift (up to 5 percent) in return for a support agreement, and no more.
 
@@ -679,7 +670,7 @@ C, expected (60/40): 0.6 x 53.9 + 0.4 x 63.3 = 57.7%
 ```
 p x 72.2 + (1 - p) x 50.5 = 58.4
 p x (72.2 - 50.5) = 58.4 - 50.5
-p = 7.9 / 21.7 = 36.1%
+p = 0.0784 / 0.2171 = 36.1%   (36.4% using the rounded percentages)
 ```
 
 Management's honest estimate of the probability of unanimous Term Loan consent plus a 95 percent noteholder tender is 25 to 35 percent given the CLO constraint. Expected recovery at p = 30 percent is 0.30 x 72.2 + 0.70 x 50.5 = **57.0 percent**, below Option B's 58.4 percent. Break-even is therefore above management's own estimate: the out-of-court path is not worth attempting alone.
@@ -688,11 +679,11 @@ Management's honest estimate of the probability of unanimous Term Loan consent p
 
 ```
 Option B:  0.25 x 43.1 + 0.50 x 58.4 + 0.25 x 78.7 = 10.8 + 29.2 + 19.7 = 59.6%
-Option A (p = 30%): 0.25 x 0.3(57.8) + ... = 58.3%
+Option A (p = 30%): 58.3% (see note)
 Option C:  57.7% (price does not depend on the EV scenario)
 ```
 
-(For Option A the three values are 0.3 x 57.8 + 0.7 x 36.0 = 42.5; 57.0; and 0.3 x 91.5 + 0.7 x 69.9 = 76.4; weighted 0.25 x 42.5 + 0.5 x 57.0 + 0.25 x 76.4 = 58.3.)
+(Note for Option A, with p = 30 percent: at the three values 0.3 x 57.8 + 0.7 x 36.0 = 42.5, 0.3 x 72.2 + 0.7 x 50.5 = 57.0 and 0.3 x 91.5 + 0.7 x 69.9 = 76.4; weighted 0.25 x 42.5 + 0.5 x 57.0 + 0.25 x 76.4 = 58.3.)
 
 The expected recoveries are very close: 59.6, 58.3 and 57.7 percent. The ranking is therefore decided by variance, speed and optionality rather than by the mean. Option B has the widest spread (43.1 to 78.7 percent); Option C has the narrowest (53.9 to 63.3 percent), because the price is set by the market.
 
@@ -700,5 +691,48 @@ The expected recoveries are very close: 59.6, 58.3 and 57.7 percent. The ranking
 
 #### Question 10: Recommendation
 
-The recommended memorandum follows the sections on sensitivity and common errors below.
+**Board memorandum (answer to Question 10).**
+
+*To:* Board of Directors, Rollan Industrial Holdings, Inc. *From:* Fenwick Alder Advisors. *Date:* 20 November 2026. *Re:* Restructuring path.
+
+**Recommendation.** Authorise management to pursue a prepackaged Chapter 11 (Option B) on a dual track: negotiate with the Term Loan ad hoc group and the noteholders for three weeks toward a consensual out-of-court exchange (Option A) while preparing the prepack, the $40.0 million DIP and a stalking-horse sale process with Brannoch as a floor. Set a drop-dead date of 4 December, the forbearance expiry, after which the company files on or about 7 December unless a fully documented, unanimous out-of-court agreement has been signed.
+
+**Why.** (1) The company has about six weeks of runway and is below its $8.0 million minimum by 11 December; 97.9 percent of the 13-week burn is debt service, pension and advisers, so a restructuring cures the liquidity problem. (2) The business is worth more alive ($205 million base case) than in liquidation ($140.9 million net; Term Loan recovery 51.3 percent). (3) Out-of-court success needs every Term Loan lender and 95 percent of the Notes; break-even probability is 36.1 percent against our estimate of 25 to 35 percent, and a failed attempt costs about 8 points of Term Loan recovery. (4) The prepack gives expected Term Loan recovery of 59.6 percent against 58.3 percent for the exchange and 57.7 percent for a sale. (5) The Brannoch bid is a put worth about $4.9 million to the lenders: it removes the low-value outcome and should be kept alive.
+
+**What we say to each constituency.** *Term Loan lenders:* you are the fulcrum; you receive the takeback loan and 95 percent of the equity; the DIP and roll-up are offered pro rata to all lenders. *Noteholders:* absolute priority gives nothing; a 5 percent gift is available for support. *Sponsor:* up to 5 percent for a support agreement; no new-money deal is needed. *Union and pension trustee:* the pension is retained and the collective agreement is assumed. *Customers and critical vendors:* a short case, committed financing and payment of critical vendors on normal terms.
+
+**Triggers to change course.** (a) Cash below $8.0 million before the DIP is committed: file immediately. (b) A DIP commitment is not signed by 30 November: move to a sale case with Brannoch's bid. (c) Customer terminations that cut lender-case revenue by more than 5 percent: reduce the plan value to the low case and prefer the sale floor. (d) The CLOs or a holdout group convert to a signed support agreement: accept Option A.
+
+**Next three weeks.** Weeks 1 to 2 (to 4 December): term sheets exchanged with both ad hoc groups; DIP commitment letters signed; plan and disclosure statement drafted; customer and union communications; critical vendor list agreed. Week 3: solicitation of votes; decision on the filing by 4 December; first-day motions ready. Risks: the lender case may be right (EV $175 million, plan fails the best-interests test and a sale takes over); the DIP is thin without ABL availability; customer losses could exceed our 3 percent haircut.
+
+### Sensitivity Discussion
+
+*Enterprise value.* Each $10 million of enterprise value moves Term Loan recovery by 5.4 points ($10.0 million / $181.0 million) in a prepack, because senior claims are fixed at $90.0 million and the Term Loan is the fulcrum. A value below $188.6 million fails the best-interests test. The 3 percent filing haircut costs the Term Loan about $6.2 million of value, or 3.4 points.
+
+*The probability of an out-of-court deal.* Option A breaks even with the prepack at 36.1 percent. If the probability is 20 percent the exchange yields 54.9 percent; at 50 percent it yields 61.4 percent. A 10-point change in probability moves recovery by 2.2 points; but the failure path matters as much: if failing costs only 2 percent of EV rather than 5 percent, the break-even drops substantially.
+
+*Roll-up and DIP.* The roll-up's transfer between lenders ($6.1 million at the base case) depends on who participates: with 100 percent participation it is zero. The DIP's effective cost of about 31 percent is almost irrelevant to the decision compared with a 3 percent change in EV ($6.2 million).
+
+*Pension.* Whether the deficit is treated as debt-like changes recoveries materially: deducting the full $45.0 million accounting deficit from the base-case equity would cut the equity value to $18.8 million and the Term Loan recovery from 58.4 percent to about 35 percent. This is a weakness in the treatment above, which treats contributions as an operating cost; a court-appointed valuation expert could choose the other convention. Students should flag this explicitly.
+
+### Common Student Errors
+
+1. **Using the market price of the debt as the enterprise value** instead of comparing it to a net recovery after priming claims (Question 3).
+2. **Ignoring that the ABL is blocked by the default.** Students count the $24.0 million of availability as liquidity and conclude there is no crisis (Question 2).
+3. **Running a waterfall without process costs.** The simple waterfall puts the Notes in the money at $245 million; the realistic one does not (Question 4).
+4. **Treating accrued interest as optional.** The claims at filing are $181.0 million and $125.2 million, not $178.5 million and $120.0 million.
+5. **Forgetting unanimity for sacred rights.** Concluding that "50.1 percent of lenders can agree" a principal exchange (Question 5).
+6. **Assuming a roll-up changes the class's total recovery** instead of how it is distributed (Question 6).
+7. **Mixing the failure path of Option A with the success path** when computing expected values, or comparing percentages of different claim bases.
+8. **Treating the pension deficit as a priority claim or as irrelevant,** rather than choosing a convention and defending it (Question 8).
+9. **Recommending liquidation because book equity is negative.** Book equity is irrelevant to the reorganisation versus liquidation decision; going-concern value ($205 million) exceeds liquidation value ($140.9 million).
+10. **Giving a point estimate of value** without a range.
+
+### Alternative Defensible Answers
+
+- **Pure Option C (sale).** Some groups will prefer the sale for its certainty: the floor recovery of 53.9 percent, narrower spread and no plan-confirmation risk. This is defensible if the board is risk-averse about customer reaction or believes the lender case is the better forecast. It is less attractive because it leaves behind the pension and the unsecured claims and is likely to face union and customer concerns about the buyer's intentions.
+- **Option A with a prepack fallback only.** A group may argue for starting with Option A and filing only if it fails. That is defensible if the cash runway is extended, for example if the ABL lender funds under a standstill, but the 13-week forecast leaves little time, and failure costs about 8 points.
+- **A higher or lower base value.** A team that uses the management case ($246.8 million) will conclude that the Notes should receive more than a 5 percent gift and that the sponsor deserves more; a team using the lender case at a higher WACC will conclude that the Term Loan is impaired even in the sale. Both can be defended; what cannot be defended is not showing the sensitivity.
+- **Pension as debt.** See the Sensitivity Discussion.
+- **A different DIP.** Some will propose that the ABL lender provide the entire DIP in a traditional creeping roll-up, which reduces the dispute among Term Loan lenders but gives the ABL a greater role in the case.
 

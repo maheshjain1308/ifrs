@@ -20,7 +20,7 @@ Nimbus was therefore not negotiating from a position of strength. It was, howeve
 
 **Dana Whitfield**, partner at Crestline Ventures, which led the $13 million Series A in 2024. Holds a board seat. Crestline would like to put money into the Series B to maintain its position (its pro rata right) but has told Priya that it will not lead.
 
-**Marcus Oyelaran**, managing director at Lantern Seed Fund, lead of the $3 million seed round in 2022. Lantern has a board observer, not a seat, and is the smallest and most price-sensitive holder.
+**Marcus Oyelaran**, managing director at Lantern Seed Fund, lead of the 2022 seed round. Lantern has a board observer, not a seat.
 
 **Erik Lindqvist**, independent director, a former operating executive in industrial automation. Priya trusts his judgment on commercial questions and has asked him to review the legal terms with the company's counsel.
 
@@ -246,13 +246,13 @@ If the plan is met, the board expects to raise a $30.0 million Series C in 2028 
 
 **Crestline's position.** Under the Series A documents, issuing a new senior security requires Crestline's consent. Dana Whitfield has told Priya that Crestline will support whichever offer the board prefers but has noted that Brightwater's 1.5x participating preference reduces the proceeds of Series A in modest exits. Crestline also wants to exercise its pro rata right, which on a fully diluted basis is 22.41 percent of any new round; if it does, Aldergate or Brightwater will lead for a smaller dollar amount unless the round is upsized.
 
-**Lantern's position.** Marcus Oyelaran has noted, politely, that Lantern's seed investment at $2.50 per share looks very good at either price, and that Lantern's main concern is that the company survive. Lantern would prefer the simpler terms.
+**Lantern's position.** Marcus Oyelaran says Lantern's $2.50 seed price looks excellent at either valuation; its concern is survival, and it prefers simpler terms.
 
-**Brightwater's secondary suggestion.** In a phone call, Rosalind Teague suggested that Brightwater might buy up to $4.0 million of founder common stock at the Series B price alongside the primary investment. This is not in the term sheet and has not been modeled. Priya and Tomás would each have to decide whether to sell, and a secondary at the Series B price would be a taxable event for them. Students should treat it as an unsettled side proposal.
+**Brightwater's secondary suggestion.** Rosalind Teague mentioned by phone that Brightwater might buy up to $4.0 million of founder common at the Series B price. It is not in the term sheet and is not modeled; a sale would be taxable to the founders.
 
 **Brightwater's commercial introduction.** The Brightwater affiliate operates warehouses that could become Nimbus customers. Rosalind has suggested that deployments could generate $6.0 million of RaaS annualized revenue by the end of 2028, but this is non-binding, not in the term sheet, and creates a related-party relationship that the board would have to monitor.
 
-**Diligence speed.** Brightwater has said it can close in four weeks. Aldergate has said six to seven weeks, citing a full customer-reference program. Priya's target close is mid-December, about six weeks from now. A Brightwater close by mid-December is easier to achieve than an Aldergate close.
+**Diligence speed.** Brightwater can close in four weeks; Aldergate needs six to seven for its customer-reference program. Priya's target close is mid-December.
 
 **Ambiguity in the pool language.** Both term sheets require an "unallocated" pool equal to a stated percentage of post-money fully diluted shares. Aldergate's counsel confirmed that the 600,000 existing unallocated shares count toward the target. Brightwater's term sheet is silent. Students should use the interpretation that the existing unallocated shares count toward the target in both cases, and discuss the other interpretation in class.
 
@@ -260,7 +260,7 @@ If the plan is met, the board expects to raise a $30.0 million Series C in 2028 
 
 **Venture debt.** Harbor Lending must consent in a sale; management assumes it will, and Exhibit 9 values are net of debt.
 
-**The founders' personal position.** Priya and Tomás have each taken salaries well below market for five years. Priya has said that a clearly profitable outcome of at least $10 million for each of them in a modest sale would change her willingness to take risk. Tomás is more focused on keeping control of the product roadmap.
+**The founders' personal position.** Priya has said that at least $10 million for each founder in a modest sale would change her willingness to take risk. Tomás is more focused on keeping control of the product roadmap.
 
 ## Assignment Questions
 
@@ -511,9 +511,9 @@ Moving linearly from the board distribution toward the bull distribution, the tw
 
 ### Solution to Question 6: the counters
 
-**Counter C1 (Aldergate structure, $112 million pre-money, 8 percent pool).** s = 40 / 152 = 26.3158 percent; p = 8 percent. T = 11,000,000 / (1 - 0.08 - 0.263158) = 11,000,000 / 0.656842 = 16,746,795. Price = $152,000,000 / 16,746,795 = $9.0764. Series B shares = 4,407,051; pool = 1,339,744 (top-up 739,744). Founders hold 5,800,000 / 16,746,795 = 34.63 percent. Effective pre-money = $9.0764 × 11,600,000 = $105.29 million.
+**Counter C1 (Aldergate structure, $112 million pre-money, 8 percent pool).** s = 40 / 152 = 26.3158 percent, so T = 11,000,000 / (1 - 0.08 - 0.263158) = 16,746,795 and the price is $152,000,000 / 16,746,795 = $9.0764. Series B shares = 4,407,051; pool = 1,339,744. Founders hold 34.63 percent; effective pre-money is $9.0764 x 11,600,000 = $105.29 million.
 
-**Counter C2 (Brightwater, $115 million pre-money, non-participating, 12 percent pool).** s = 40 / 155 = 25.8065 percent; T = 11,000,000 / (1 - 0.12 - 0.258065) = 11,000,000 / 0.621935 = 17,686,722. Price = $155,000,000 / 17,686,722 = $8.7636. Series B shares = 4,564,315; pool = 2,122,407. Founders hold 32.79 percent. Effective pre-money = $101.66 million.
+**Counter C2 (Brightwater, $115 million pre-money, non-participating, 12 percent pool).** s = 40 / 155 = 25.8065 percent, so T = 11,000,000 / (1 - 0.12 - 0.258065) = 17,686,722 and the price is $8.7636. Series B shares = 4,564,315; pool = 2,122,407. Founders hold 32.79 percent; effective pre-money is $101.66 million.
 
 Because both counters use a 1.0x non-participating senior Series B, founder proceeds follow the Aldergate pattern, with the Series B converting at its own conversion price. The comparison ($ millions, combined founders):
 
@@ -581,7 +581,7 @@ Before the Series C, the founders held 32.39 percent under Aldergate and 32.79 p
 
 ### Solution to Question 9: runway and the next round
 
-**Plan case.** Verify the arithmetic: FY2027 free cash flow before financing is -9,400 + 2,100 + 900 - 1,375 - 2,300 - 3,600 = -13,675; after the 2,000 debt repayment the net change is -15,675, and cash falls from 43,050 to 27,375. FY2028: -6,600 + 3,000 + 1,200 - 1,155 - 3,000 - 4,600 = -11,155; net -13,155; cash 14,220. FY2029: -1,620 + 3,900 + 1,600 - 935 - 3,400 - 5,200 = -5,655; net -7,655; cash 6,565. FY2030: 8,700 + 4,800 + 2,000 - 715 - 3,600 - 5,800 = 5,385; net 3,385; cash 9,950. The plan funds itself, with a low point of $6.6 million at the end of FY2029, which is only about 2.2 times the $3.0 million covenant minimum.
+**Plan case.** FY2027 free cash flow before financing is -9,400 + 2,100 + 900 - 1,375 - 2,300 - 3,600 = -13,675; less the 2,000 debt repayment, cash falls from 43,050 to 27,375. FY2028: -11,155 and -2,000 give 14,220. FY2029: -5,655 and -2,000 give 6,565. FY2030: +5,385 and -2,000 give 9,950. The plan funds itself, with a low point of $6.6 million at the end of FY2029, only about 2.2 times the $3.0 million covenant minimum.
 
 **Slippage case** (revenue 20 percent below plan in FY2027 to FY2029, gross margin and opex unchanged, working capital 20 percent lower and capex 10 percent lower than plan):
 
@@ -618,27 +618,27 @@ Pursue the Aldergate structure, using Brightwater's offer as leverage, and open 
 
 Each $10 million of pre-money adds about $2.5 to $4 million of expected founder value, with diminishing returns. Brightwater's package is worth to the founders what Aldergate's structure would be worth at a pre-money of only $87.8 million (Question 6).
 
-**Pool sensitivity (Aldergate, $100 million pre-money).** Pool of 6, 8, 10, 12, 14, and 16 percent gives founders' ownership of 34.50, 33.44, 32.39, 31.34, 30.28, and 29.23 percent and effective pre-money of $96.6, $93.6, $90.7, $87.7, $84.8, and $81.8 million. Each additional point of pool costs the founders roughly 0.5 ownership points and $1.5 million of effective valuation.
+**Pool sensitivity (Aldergate, $100 million pre-money).** Pools of 6, 8, 10, 12, 14, and 16 percent give founders' ownership of 34.50, 33.44, 32.39, 31.34, 30.28, and 29.23 percent. Each additional point of pool costs the founders about 0.5 ownership points and $1.5 million of effective valuation. The Aldergate-versus-Brightwater decision reverses only if the chance of plan-or-better is about 47.5 percent or more (Question 5).
 
 ### Common student errors
 
-1. **Comparing headline pre-money valuations** and concluding that Brightwater is 28 percent better. The effective premium is 21.5 percent before considering the structure, and negative in expectation after.
-2. **Computing the pool dilution on the wrong base.** The pool percentage is a share of the post-money fully diluted count, so the algebra must be solved simultaneously (T = base / (1 - p - s)). Applying 10 percent to the pre-round shares gives an incorrect price.
-3. **Forgetting to count the existing unallocated pool** toward the target, and adding a full new pool on top.
-4. **Treating the Series B as always converting** in the waterfall. Conversion is a choice that depends on exit value and is determined jointly for all series.
-5. **Ignoring the participation cap**, or applying the cap to the participation amount rather than total proceeds ($120.0 million in total, not $120.0 million of participation).
-6. **Mishandling options**: omitting the strike or the exercise proceeds, or forgetting that the unissued pool is cancelled at exit.
-7. **Averaging founder proceeds across exits** instead of weighting by probability.
-8. **Applying the ratchet price to the wrong share base.**
-9. **Declaring a winner without a recommendation.** The case asks for a negotiation plan, not only a ranking.
+1. Comparing headline pre-money valuations and concluding that Brightwater is 28 percent better.
+2. Applying the pool percentage to the pre-round shares instead of solving T = base / (1 - p - s) simultaneously.
+3. Forgetting that the existing unallocated pool counts toward the target.
+4. Treating the Series B as always converting; conversion is a choice that depends on exit value.
+5. Applying the participation cap to the participation amount rather than to total proceeds ($120.0 million in total).
+6. Omitting option strikes or exercise proceeds, or letting the unissued pool share in exit proceeds.
+7. Averaging founder proceeds across exits instead of weighting by probability.
+8. Applying the ratchet price to the wrong share base.
+9. Declaring a winner without a negotiation plan.
 
 ### Alternative defensible answers
 
-*Take Brightwater, with changes.* A group that gives weight to the affiliate's customer opportunity ($6.0 million of ARR, if real, would make the plan case more likely) can defend Brightwater, but only with the 1.5x participation removed or the cap reduced, the ratchet removed, and the board rebalanced. At 47.5 percent plan-or-better probability the two term sheets are equal; a team that believes in the plan could take Brightwater's structure at a price at a materially higher price than Brightwater has offered.
+*Take Brightwater, with changes.* Teams that value the affiliate's customer opportunity ($6.0 million of ARR, if real) can defend Brightwater, but only with the participation removed or the cap lowered, the ratchet removed, and the board rebalanced. At a 47.5 percent chance of plan-or-better the term sheets are equal, so a team that believes in the plan could accept a structured deal at a materially higher price.
 
-*Take Aldergate as offered.* Because the deadline of February is firm and Brightwater's 4-week close is not available from Aldergate, some groups will argue for speed. The case does not support that view: Aldergate's six to seven weeks still closes in mid-December or early January, before the covenant date, if signed within the week. The risk should be addressed by asking Harbor Lending for a short covenant waiver or an extension.
+*Take Aldergate as offered.* Speed matters, but Aldergate's six to seven weeks still closes by early January if signed this week; ask Harbor Lending for a short covenant waiver to cover the gap.
 
-*Raise less or run a three-way process.* A $30 million round cuts dilution but the plan has only $6.6 million of low-point cushion, so it would require cutting about $10 million from the plan or accepting an earlier Series C. A third bidder, such as Corvane Industrial, is difficult under no-shop terms but might be feasible with a short extension.
+*Raise less, or run a three-way process.* A $30 million round cuts dilution but leaves only about $6.6 million of low-point cushion and would require cutting roughly $10 million from the plan or accepting an earlier Series C. A third bidder such as Corvane Industrial is hard under no-shop terms but might be feasible with a short extension.
 
 ### Board-style recommendation memo
 
@@ -647,12 +647,12 @@ Each $10 million of pre-money adds about $2.5 to $4 million of expected founder 
 **Date:** November 4, 2026
 **Re:** Series B financing: recommendation for the November 9 meeting
 
-**Recommendation.** We recommend that the board authorize management to negotiate and sign Aldergate Ventures' term sheet, using Counter C1 ($112.0 million pre-money, an 8 percent pool, otherwise Aldergate's terms) as the opening position, and to decline Brightwater Partners' term sheet as written. If Brightwater is prepared to offer Counter C2 (1.0x non-participating, no full ratchet, $115.0 million pre-money, a 12 percent pool, and a five-seat board with one Brightwater seat), we should consider it on equal terms and ask for a binding commercial commitment from its affiliate.
+**Recommendation.** Authorize management to negotiate and sign Aldergate Ventures' term sheet, opening with Counter C1 ($112.0 million pre-money, 8 percent pool, otherwise Aldergate's terms), and to decline Brightwater Partners' term sheet as written. If Brightwater offers Counter C2 (1.0x non-participating, no full ratchet, $115.0 million pre-money, 12 percent pool, a five-seat board with one Brightwater seat), we will consider it on equal terms and ask for a binding commercial commitment from its affiliate. Aldergate's original terms are the walk-away position.
 
-**Why.** At the headline level Brightwater's term sheet offers a $128.0 million pre-money valuation and Aldergate offers $100.0 million. After the option pool, the effective valuations are $110.2 million and $90.7 million, and after the structure, the picture reverses. The founders' combined proceeds are higher under Aldergate in every exit below about $377 million, by up to $21.0 million at an exit near $125 million. Using the board's own scenarios, expected founder proceeds are $113.4 million under Aldergate and $108.5 million under Brightwater; Priya's certainty equivalent is $31.5 million versus $26.3 million. Brightwater's term sheet is better only if the probability of achieving the plan or better is nearly 48 percent, against the board's 30 percent. In the distress and underperform scenarios, the Series A and Seed investors receive less under Brightwater (for example, nothing at a $45 million exit versus $5.0 million under Aldergate), which affects Crestline and Lantern as well as the founders.
+**Why.** Brightwater's headline pre-money is $128.0 million against Aldergate's $100.0 million, but after the option pool the effective valuations are $110.2 million and $90.7 million, and after the structure the picture reverses. Founders' combined proceeds are higher under Aldergate in every exit below about $377 million, by up to $21.0 million near $125 million. On the board's own scenarios, expected founder proceeds are $113.4 million under Aldergate and $108.5 million under Brightwater, and Priya's certainty equivalent is $31.5 million versus $26.3 million. Brightwater is better only if the chance of plan-or-better approaches 48 percent, against the board's 30 percent. In weak outcomes the Series A and Seed also fare worse under Brightwater (nothing at a $45 million exit versus $5.0 million).
 
-**Risks of the recommendation.** (1) Aldergate may not move on price or pool, in which case we accept its original term sheet; its expected value to the founders is higher than Brightwater's. (2) The six-to-seven-week diligence timeline could slip past the February covenant date; we will ask Harbor Lending now for a 60-day waiver. (3) Our exit scenarios and probabilities are judgments, and the Brightwater affiliate's customer introductions could raise the probability of the plan. We should ask Brightwater for a binding letter of intent on at least $3.0 million of ARR before reconsidering. (4) The plan leaves little cushion; a Series C of $25 to $30 million should be launched by early 2028, and the slippage case shows that a delay would put the company below its covenant in early 2029.
+**Risks.** (1) Aldergate may not move on price or pool; we would then accept its original term sheet. (2) Aldergate's six-to-seven-week diligence could slip past the February covenant date; we will ask Harbor Lending now for a 60-day waiver. (3) Our scenarios are judgments, and the affiliate's customer introductions could raise the plan probability; we would reconsider only against a binding commitment of at least $3.0 million of ARR. (4) The plan has little cushion; a $25 to $30 million Series C should be launched by early 2028, because the slippage case breaches the covenant in early 2029.
 
-**Information requested before November 9.** Aldergate's flexibility on price and pool (a call between Priya and Julian Sato scheduled for November 5); Crestline's and Lantern's views; and Harbor Lending's willingness to waive the covenant.
+**Information requested before November 9.** Aldergate's flexibility on price and pool (a call between Priya and Julian Sato scheduled for November 5), Crestline's and Lantern's views, and Harbor Lending's willingness to waive the covenant.
 
 **Decision requested.** Authority to sign Aldergate's term sheet on or before November 13 on terms no less favorable to common holders than the original, and to continue discussions with Brightwater only on the basis of Counter C2.
