@@ -211,68 +211,53 @@ For the Phase 2 option the consultants offered volatility of 25% (long-run pack-
 
 ## Assignment Questions
 
-Answer all ten questions. Use year-end cash flows, the data in the tables and the treatment of ambiguous items you can defend. State every assumption you add. Where a question asks for a number, give the calculation, not only the result. Use the project discount rate you compute in Question 1 (rounded to one decimal place) in all later questions unless a question says otherwise.
+Answer all ten questions. Use year-end cash flows, defend your treatment of ambiguous items and state every added assumption. Show calculations, not only results. Use the discount rate from Question 1 (rounded to one decimal) throughout.
 
-**Question 1: Cost of capital.** Unlever each comparable company's equity beta using its own debt/equity ratio and tax rate. Take the average as the asset beta of a cell manufacturer, relever it at the target capital structure, and estimate the project's cost of equity and its weighted average cost of capital. Explain why Helios's own beta and its current capital structure are not the right inputs, and why the unexplained 10% hurdle rate should be retired.
+**Question 1: Cost of capital.** Unlever each comparable's beta, average the results, relever at the target structure, and estimate the project's cost of equity and WACC. Explain why Helios's own beta and capital structure are the wrong inputs and why the untraced 10% hurdle should be retired.
 
-**Question 2: Base-case free cash flows without subsidies.** Build the Phase 1 free cash flows for Years 0 to 15 with no grant, no production credit and no abatement, including the land at Port Alder and the tax-loss carry-forward. Identify which costs in Exhibit A you include and which you exclude, and why. Compute NPV, IRR, modified IRR (reinvesting at the project rate), payback, discounted payback and profitability index. What does the answer say about the project as an unsubsidised business?
+**Question 2: Base case without subsidies.** Build Phase 1 free cash flows for Years 0 to 15 with no grant, credit or abatement, including land and the tax-loss carry-forward. Say which Exhibit A items you include and why. Compute NPV, IRR, modified IRR, payback, discounted payback and profitability index, and say what they imply for the unsubsidised business.
 
-**Question 3: The learning curve.** (a) Using the five observations in Exhibit B, estimate the learning rate by regressing the log of cost on the log of cumulative output. How precise is the estimate, and how does it compare with management's 85%? (b) Show how the average conversion cost for Years 2 and 3 is derived from the experience curve for an 85% rate and a first-GWh cost of $36 per kWh. (c) Tabulate project NPV (with and without subsidies) for learning rates from 80% to 100%. (d) Explain why a manager might be tempted to overstate the learning rate, and how the board should use the sensitivity.
+**Question 3: Learning curve.** (a) Estimate the learning rate from Exhibit B by log-log regression and judge its precision against management's 85%. (b) Derive the average conversion cost for Years 2 and 3 from an 85% curve with a $36 first-GWh cost. (c) Tabulate NPV, with and without subsidies, for learning rates from 80% to 100%. (d) Why might a sponsor overstate the rate, and how should the board use the sensitivity?
 
-**Question 4: Subsidies.** (a) Value the capital grant, the production credit and the abatement individually and together, as increments to the unsubsidised NPV. Why do the individual values not sum exactly to the total? (b) Compute the NPV if the production credit is taxable and, separately, if the grant does not reduce the depreciable basis. (c) Compute the NPV if the credit is lost for production from Year 5 onward, and the expected NPV using the 30% probability of repeal. At what probability of repeal does the expected NPV become zero? (d) What is the share of the project's total value, relative to the unsubsidised result, that comes from subsidies?
+**Question 4: Subsidies.** (a) Value the grant, credit and abatement separately and together; explain why the parts do not sum to the whole. (b) Compute NPV if the credit is taxable and, separately, if the grant does not reduce depreciable basis. (c) Compute NPV if the credit is lost from Year 5 on, the expected NPV at 30% probability, and the break-even probability. (d) What share of the project's value comes from subsidies?
 
-**Question 5: Tax effects.** (a) Show the tax-loss schedule for the first six years of operations. (b) Compare NPV under tax depreciation over 5, 10 and 15 years and under immediate expensing, and explain why immediate expensing is worth almost nothing relative to five-year depreciation for this project. (c) How much would the NPV change if the loss carry-forward were not limited to 80% of taxable income?
+**Question 5: Tax.** (a) Show the loss schedule for Years 2 to 7. (b) Compare NPV under 5-, 10- and 15-year depreciation and immediate expensing, and explain why expensing helps so little. (c) How much would NPV change without the 80% limit on loss use?
 
-**Question 6: Sensitivity and scenarios.** (a) Produce a one-variable-at-a-time sensitivity table (a tornado) for eight inputs: initial price, price decline, utilisation, learning rate, Phase 1 capex, materials cost, fixed operating cost and discount rate. (b) Compute break-even values for the initial price and for steady-state utilisation. (c) Compute the NPV in each of the three scenarios in Table 8 and the probability-weighted NPV and standard deviation. Which inputs should the board worry most about, and which can be managed?
+**Question 6: Sensitivity and scenarios.** (a) Prepare a tornado for eight inputs: initial price, price decline, utilisation, learning rate, Phase 1 capex, materials cost, fixed cost and discount rate. (b) Find break-even values for initial price and utilisation. (c) Compute NPV in each Table 8 scenario, the probability-weighted NPV and the standard deviation.
 
-**Question 7: The Phase 2 option.** (a) Compute the incremental cash flows of Phase 2 if it is committed at the end of Year 3, and its static NPV. (b) Value the option to build Phase 2 using the Black–Scholes formula with the inputs in Table 9, and with a three-step binomial lattice. (c) Show how the option value changes with volatility. (d) Interpret: why can an option be valuable when the static NPV is negative?
+**Question 7: The Phase 2 option.** (a) Compute the incremental cash flows and static NPV of Phase 2 committed at the end of Year 3. (b) Value the option by Black–Scholes and by a three-step binomial lattice. (c) Show sensitivity to volatility. (d) Explain how an option can be valuable when static NPV is negative.
 
-**Question 8: Phase it or build it all now?** (a) Compute the NPV of building both phases immediately (with the 4% discount on Phase 2). (b) Compare it with Phase 1 plus the Phase 2 option, and find the volatility at which the two are equal. (c) Compute pro forma leverage under both plans against the 3.75x covenant. (d) Compare the plans under four price outcomes and say what you would recommend, and under what circumstances your recommendation would change.
+**Question 8: Phase or build all now?** (a) Compute the NPV of building both phases now. (b) Compare it with Phase 1 plus the option and find the volatility at which they are equal. (c) Compute pro forma leverage under both plans against the 3.75x covenant. (d) Compare the plans under four price outcomes and recommend.
 
-**Question 9: Financing and adjusted present value.** (a) Value the provincial development loan: what is the NPV of borrowing $500M at 2.5% when the market rate is 7%? Use Myers's method, discounting after-tax payments at the pre-tax market rate. (b) Compute the base-case NPV at the unlevered cost of capital, add the value of the loan, and report the adjusted present value. (c) Should the loan be counted in the investment decision? Discuss the conditions attached to it.
+**Question 9: Financing and APV.** (a) Value the $500M development loan by Myers's method, discounting after-tax payments at the 7% market rate. (b) Compute base-case NPV at the unlevered cost of capital, add the loan and report the APV. (c) Should the loan count in the investment decision?
 
-**Question 10: Recommendation.** Integrate your results. (a) Compute the probability-weighted NPV across the three scenarios including the 30% risk of credit repeal. (b) Evaluate Exhibit E: how should Helios use the anchor customer letter? (c) Draft the recommendation to the board: commit or not, Phase 2 structure, conditions precedent, and the three things management should do in the next sixty days to reduce risk.
+**Question 10: Recommendation.** (a) Compute the probability-weighted NPV across scenarios including the 30% repeal risk. (b) Say how Helios should use the anchor-customer letter. (c) Draft the board recommendation: decision, Phase 2 structure, conditions precedent, and three actions for the next sixty days.
 
 ## Teaching Note and Full Solutions
 
-### Case synopsis and positioning
+### Case synopsis
 
-Helios Cell is a capital-budgeting case in which the arithmetic of discounted cash flow is straightforward and the judgement is not. A cell plant has a deep early cash dip, a long plateau, a falling price, an experience curve that rewards volume, and a package of government support worth more than the project's unsubsidised value. The interesting questions are how to value each of these features, how to keep subsidy value separate from operating value, and how to decide whether to buy flexibility by phasing. The case is best used after students have studied net present value, project cash flows and the basics of real options (Volume 1, Chapters 6 to 8), and it works well as a capstone to a capital-budgeting module. The numerical results below were produced by a single spreadsheet-style model written in Python and checked by hand on selected years.
-
-All solution figures use year-end cash flows, the Table 3 timing, a project discount rate of 10.2% (from Question 1) and the base-case inputs. Where a result is described as "rounded", the underlying calculation used unrounded inputs, so students replicating with rounded intermediate numbers may differ by a unit or two.
+Helios Cell is a capital-budgeting case in which the arithmetic is straightforward and the judgement is not. A cell plant has a deep early cash dip, a long plateau, a falling price, an experience curve that rewards volume, and a subsidy package worth more than the project's unsubsidised value. The questions are how to value each feature, how to separate subsidy value from operating value, and whether to pay for flexibility by phasing. It works best after Volume 1, Chapters 6 to 8. All results below come from one Python model of the cash flows, checked by hand on selected years. They use year-end flows, a 10.2% discount rate (Question 1) and the base-case inputs; students working with rounded intermediate numbers may differ by a unit or two.
 
 ### Learning objectives
 
-After working through the case, students should be able to:
-
-1. Estimate a project cost of capital from comparable companies by unlevering and relevering betas, and explain why the project's risk and financing, not the sponsor's, set the discount rate.
-2. Build incremental after-tax free cash flows for a long-lived industrial investment, including working capital, salvage, land, and a tax-loss carry-forward, and decide which costs are relevant.
-3. Model a learning (experience) curve correctly, using cumulative output, and assess how sensitive value is to the learning rate.
-4. Separate and value government support instruments, treat ambiguity in their tax treatment, and price political risk into an expected NPV.
-5. Run and interpret sensitivity, break-even and scenario analyses, and identify the few variables that dominate the decision.
-6. Value a staged-investment option with the Black–Scholes formula and a binomial lattice, and weigh the value of flexibility against the cost of delay.
-7. Use adjusted present value to value a subsidised loan, and recognise when financing side effects should and should not drive an investment decision.
-8. Write a board recommendation that states a decision, the conditions attached to it and the evidence for it.
+Students should be able to (1) estimate a project cost of capital by unlevering and relevering comparable betas; (2) build incremental after-tax cash flows including working capital, land, salvage and a loss carry-forward; (3) model a learning curve on cumulative output; (4) separate and value subsidies and price political risk; (5) run sensitivity, break-even and scenario analysis; (6) value a staged-investment option by Black-Scholes and a lattice and weigh it against the cost of delay; (7) use APV for a subsidised loan; and (8) write a board recommendation with conditions.
 
 ### Suggested class plan
 
-The case supports a single 120-minute session for instructors who assign Questions 1 to 6 as preparation and spend class time on Questions 4 and 6 to 10, or a pair of 90-minute sessions for the full set. The plan below is for the two-session format.
+Two 90-minute sessions. Preparation: Questions 1 to 3.
 
-| Time | Activity | Questions | Purpose |
-| :--- | :--- | :--- | :--- |
-| Session 1, 0 to 10 min | Cold open: poll the class on "commit, delay or decline" before any analysis | – | Record priors; return to them at the end |
-| 10 to 25 min | Discount rate and cost of capital; beta unlevering | 1 | Establish 10.2% and why 10% was wrong |
-| 25 to 50 min | Cash flow construction; which Exhibit A items count; NOLs | 2, 5 | Show the unsubsidised project loses money |
-| 50 to 70 min | Learning curve: regression, average cost, sensitivity | 3 | Show the biggest single driver |
-| 70 to 90 min | Subsidies: decomposition, taxability, repeal risk | 4 | Separate operating value from policy value |
-| Session 2, 0 to 15 min | Tornado and scenarios, with students at the whiteboard | 6 | Identify what matters |
-| 15 to 40 min | Real option on Phase 2: static NPV, then Black–Scholes and lattice | 7 | Value flexibility |
-| 40 to 60 min | Phase versus all-now: NPV, covenant, price outcomes | 8 | Weigh value against risk and constraints |
-| 60 to 70 min | Financing, APV, and the subsidised loan | 9 | Keep financing separate from investment |
-| 70 to 85 min | Recommendation and conditions; compare with opening poll | 10 | Judgement and communication |
-| 85 to 90 min | Debrief on what the numbers could not tell us | – | Close |
-
-Instructors who want a shorter session may drop Questions 5 and 9 and assign them as written exercises.
+| Time | Activity | Questions |
+| :--- | :--- | :--- |
+| S1, 0 to 10 | Cold poll: commit, delay or decline | – |
+| 10 to 30 | Discount rate; cash flow construction; relevant costs | 1, 2 |
+| 30 to 50 | Learning curve and its sensitivity | 3 |
+| 50 to 75 | Subsidies, tax and repeal risk | 4, 5 |
+| 75 to 90 | Tornado and scenarios at the whiteboard | 6 |
+| S2, 0 to 30 | Phase 2 option: static NPV, Black-Scholes, lattice | 7 |
+| 30 to 55 | Phase versus all now; covenant | 8 |
+| 55 to 70 | Financing and APV | 9 |
+| 70 to 90 | Recommendation; revisit the opening poll | 10 |
 
 ### Question 1 solution: Cost of capital
 

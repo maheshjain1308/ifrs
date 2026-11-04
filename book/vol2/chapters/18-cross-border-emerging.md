@@ -419,3 +419,75 @@ Step 4 – Interpretation. A 60 percent depreciation, comparable to the largest 
 - **Multilateral and development institutions.** Development finance institutions provide long-tenor loans and equity, often at better terms than commercial markets, and provide a degree of political protection. They require compliance with environmental and social standards.
 - **Equity issuance and listing.** A local listing can improve valuation and provide an exit route but exposes the firm to local market volatility; an international listing signals governance quality at the cost of compliance.
 - **Target leverage.** Higher volatility, higher cost of distress and more difficult refinancing all argue for lower target leverage than for a comparable developed-market firm; stress tests should include a currency shock, an interest-rate shock and a revenue shock simultaneously.
+
+## Case Study: Danube Grid Services in Karvania
+
+*Illustrative case; the company, country and figures are fictional.*
+
+Danube Grid Services (DGS) is a European provider of metering and grid-management services with a home-market WACC of 7 percent. It is bidding to acquire 70 percent of Karvania Metering, the leading supplier of smart meters to the national electricity distributors of Karvania, a middle-income country of 45 million people. The remaining 30 percent would stay with the Rostov family, the founders, who have excellent relationships with the energy ministry.
+
+*The numbers.* Karvania Metering's free cash flow is expected to be KC 900 million (Karvanian crowns) in year 1, growing at 12 percent a year for four years and then at 5 percent in nominal terms. Spot is KC 36 per euro. Expected inflation is 8 percent in Karvania and 2 percent in the euro area. Karvania's euro-denominated sovereign bonds yield 4.5 percentage points over euro swaps; the volatility ratio of equities to bonds is 1.5. The euro risk-free rate is 3 percent, the mature-market equity risk premium 5.5 percent, the target's beta 0.9, and target debt-to-capital 30 percent. The pre-tax cost of euro-denominated debt for the company would be the risk-free rate plus the sovereign spread plus 1.5 percent; tax rate 20 percent. DGS estimates that about 60 percent of the target's profits depends on the domestic distribution companies, the remainder on exports of components.
+
+*Complications.*
+
+- The distribution companies are state-controlled, and payments have lagged by up to nine months during budget stress. A change of government in eighteen months could renegotiate meter tariffs. The finance ministry has twice imposed temporary limits on dividend transfers during currency stress, once for six months and once for fourteen months.
+- The Rostov family has proposed a shareholders' agreement in which it holds a veto over budget, any new debt and the appointment of the CEO, and receives a put option at 6 times EBITDA exercisable from year 4. It has also asked that DGS provide a EUR 60 million parent guarantee for local bank loans in Karvanian crowns at 16 percent.
+- A bank offers a EUR 80 million loan at 5.5 percent, which DGS finds attractive compared with a crown loan at 16 percent, and proposes that the target service it from crown revenues.
+- DGS's chief executive has been told that one of the family's companies supplies components to the target at prices above those of independent suppliers.
+
+*Task.* The DGS board has asked for a recommendation on whether to proceed, on what terms and at what price. The finance team has been asked to produce a valuation in euros, a risk assessment and a proposal on governance and financing.
+
+**Discussion Questions**
+
+1. Estimate DGS's cost of capital for the investment under the additive, beta-scaled and lambda approaches (using λ = 0.8 for the exporter share and domestic exposure as given), and recommend one. Explain which risks you would deal with through scenario analysis instead of the discount rate, and why.
+2. Describe the method you would use to value the cash flows, in crowns or in euros. Compute the local-currency WACC for the case and the forecast exchange rate path implied by parity. What would happen to value if DGS discounted crown cash flows at the euro WACC?
+3. Evaluate the proposed euro loan versus a crown loan, the parent guarantee, and the put option. What is the break-even depreciation for the loan, and how would you protect DGS against wrong-way risk from the put?
+4. Design the governance and protective structure of the investment: reserved matters, related-party transaction rules (including the component supplier), dividend policy, exit and deadlock provisions, and measures to mitigate payment delay, dividend-transfer restrictions and tariff renegotiation. What conditions would make you walk away?
+
+## Key Takeaways
+
+- Cross-border risk comprises country, currency, political, transfer, legal and liquidity risks; each should be placed once, in either the discount rate or the cash flows, and not both.
+- Country risk premiums are usually built from sovereign spreads scaled by the equity-to-bond volatility ratio; the additive, beta-scaled and lambda approaches differ by about a percentage point, less than the difference from ignoring the premium.
+- Lambda, the exposure of a firm's cash flows to the country, matters: exporters and multinationals with diversified revenue deserve a smaller premium than domestically dependent firms.
+- Currency consistency is the central rule: local cash flows with local-currency discount rates, or hard-currency flows at forecast exchange rates with hard-currency rates; mixing the two can overstate value by 30 percent or more.
+- Purchasing power parity and interest-rate parity give a neutral base-case forecast; real exchange-rate views should be explicit scenarios.
+- Discrete political events such as expropriation are best modeled with probabilities, recovery rates and scenarios, and then mitigated through treaties, insurance, financing structure and relationships.
+- Cash that reaches the parent is what has value; repatriation channels, withholding taxes and controls create leakage, and trapped funds should be discounted for delay and risk.
+- Joint ventures need governance designed for the eventual conflict: reserved matters, related-party rules, funding obligations, deadlock mechanisms and exit options.
+- Floor-priced put options and fee arrangements are contingent claims and value transfers that belong in valuation; wrong-way risk arises when the option is exercised just when the writer cannot pay.
+- Match the currency of debt to the currency of cash flows; hard-currency borrowing looks cheaper only because the market already prices expected depreciation, and the risk concentrates in crises.
+
+## Review Questions
+
+1. Why might a global-CAPM investor argue that a country risk premium is unnecessary, and why do practitioners nevertheless include one?
+2. Explain how the country risk premium is derived from a sovereign spread, and why the spread is multiplied by an equity-to-bond volatility ratio.
+3. Compare the additive, beta-scaled and lambda approaches. In what circumstances would you prefer each?
+4. Explain why discounting local-currency cash flows at a hard-currency rate overstates value. What is the relationship between the local and hard-currency costs of capital?
+5. What role does purchasing power parity play in valuation, and what are its limits?
+6. How should expropriation risk be handled: in the discount rate, in the cash flows or through insurance? What are the advantages and weaknesses of each?
+7. What is creeping expropriation and why is it harder to insure than outright seizure?
+8. List the channels for repatriating cash from a subsidiary and explain how tax and legal features affect the choice.
+9. Why is trapped cash worth less than its face value, and how would you value it?
+10. Describe three ways a local partner can extract value from a joint venture, and how contracts can limit each.
+
+## Problems
+
+1. **CRP.** The sovereign spread of a country is 4.2 percent and the equity-to-bond volatility ratio is 1.3. The risk-free rate is 3.5 percent, mature-market ERP 5.5 percent, and beta 0.9. Compute the CRP and the cost of equity under the additive, beta-scaled and lambda (λ = 0.7) approaches.
+2. **Exchange-rate forecast.** Spot is LC 40 per dollar; inflation is 12 percent locally and 3 percent in the United States. Forecast the exchange rate for years 1 to 3 under relative PPP.
+3. **Local WACC.** A project has a dollar WACC of 10 percent. With local inflation of 12 percent and US inflation of 3 percent, compute the local-currency WACC.
+4. **Political risk.** A project yields $50 million in years 1 and 2 and $550 million in year 3 (including terminal value). The discount rate is 11 percent. There is a 5 percent annual probability of loss with no compensation. Compute the unadjusted PV, the survival-weighted PV, and the equivalent discount rate.
+5. **Repatriation.** A subsidiary earns 200 of pre-tax profit; local tax is 30 percent, dividend withholding tax is 15 percent, and the home country exempts foreign dividends. How much reaches the parent and what is the total leakage rate?
+6. **Blocked funds.** 150 of funds are released in three equal annual installments. The discount rate is 18 percent. Compute the PV and the haircut.
+7. **Debt currency.** Dollar debt costs 6.5 percent and local debt 12.5 percent. Compute the break-even depreciation. If the currency depreciates 8 percent a year, compute the local-currency cost of the dollar loan.
+8. **JV fee.** A JV with pre-tax profit before fee of 100 is owned 40 percent by the foreign partner and 60 percent by the local partner. Local tax is 30 percent. The foreign partner charges a fee of 10, taxed at 20 percent in its hands. Compute each partner's income with and without the fee.
+
+### Answers to Selected Problems
+
+1. CRP = 4.2% × 1.3 = **5.46%**. Mature cost of equity = 3.5% + 0.9 × 5.5% = 8.45%. Additive: **13.91%**. Beta-scaled: 3.5% + 0.9 × (5.5% + 5.46%) = **13.36%**. Lambda: 8.45% + 0.7 × 5.46% = **12.27%**.
+2. 40 × (1.12 ÷ 1.03)^t: year 1 **43.50**, year 2 **47.30**, year 3 **51.43** LC per dollar.
+3. 1.10 × (1.12 ÷ 1.03) − 1 = **19.61%**.
+4. Unadjusted PV = 50 ÷ 1.11 + 50 ÷ 1.2321 + 550 ÷ 1.3676 = 45.05 + 40.58 + 402.16 = **$487.78 million**. Survival-weighted PV = **$424.22 million** (13.0 percent lower). Equivalent discount rate = 1.11 ÷ 0.95 − 1 = **16.84%**.
+5. After local tax: 140; after withholding: 119 = **119** reaches the parent; leakage = 81 ÷ 200 = **40.5%**.
+6. PV = 50 × (0.8475 + 0.7182 + 0.6086) = **$108.71**; haircut = 1 − 108.71 ÷ 150 = **27.5%**.
+7. Break-even = 1.125 ÷ 1.065 − 1 = **5.63%**. Cost at 8% depreciation: 1.065 × 1.08 − 1 = **15.02%**, higher than the 12.5% local loan.
+8. Without fee: JV net income 70; foreign partner **28.0**, local partner **42.0**. With fee: JV net income = 90 × 0.7 = 63; foreign partner = 0.4 × 63 + 10 × 0.8 = 25.2 + 8.0 = **33.2**; local partner = 0.6 × 63 = **37.8**. The foreign partner gains 5.2; the local partner loses 4.2.

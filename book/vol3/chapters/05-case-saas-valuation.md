@@ -467,5 +467,126 @@ Table S9. Scenario valuation summary ($ millions except per share; shares in mil
 | Downside | 20% | 1,706.4 | 684.3 | 1,832.5 | 2,516.8 | 2,831.6 | 109.05 | $25.97 |
 | Base | 55% | 2,548.2 | 1,501.9 | 4,276.5 | 5,778.4 | 6,093.2 | 112.66 | $54.08 |
 | Management | 25% | 2,933.5 | 1,908.7 | 5,721.0 | 7,629.7 | 7,944.5 | 113.42 | $70.04 |
-The probability-weighted value is 0.20 times $25.97 plus 0.55 times $54.08 plus 0.25 times $70.04, or **$52.45 per share**. The management case yields $70.04, which is 4.4 percent above the offer, and the base case is 18.7 percent below it. Note the asymmetry: the downside is $28 below base but the management upside is only $16 above it, so the probability-weighted value sits below the base.
+The probability-weighted value is 0.20 times $25.97 plus 0.55 times $54.08 plus 0.25 times $70.04, or **$52.45 per share**. The management case yields $70.04, which is 5.3 percent above the offer, and the base case is 18.7 percent below it. Note the asymmetry: the downside is $28 below base but the management upside is only $16 above it, so the probability-weighted value sits below the base.
 
+#### Solution 8: Terminal value and SBC treatment
+
+In the base case, terminal value is 74.0 percent of enterprise value (4,276.5 of 5,778.4); in the management case 75.0 percent, and in the downside 72.8 percent. The Gordon terminal value of 9,876.1 is 3.88 times FY2036 revenue (4.05 times when restated to the end of FY2036) and 17.5 times FY2037 FCFF, with a terminal FCFF margin of 21.4 percent. These multiples are well below the current 8.4 times NTM revenue because the business is assumed to be mature by then, with growth of 3.5 percent. The exit-multiple cross-check discounts a multiple of FY2036 revenue by ten full years:
+
+Table S12. Exit-multiple cross-check, base case (multiple of FY2036 revenue, discounted ten years)
+
+| Exit EV / revenue | PV of terminal value | Enterprise value | Value per share | Terminal value share of EV |
+|:---|---:|---:|---:|---:|
+| 3.0x | 3,167.5 | 4,669.4 | $44.52 | 67.8% |
+| 4.0x | 4,223.4 | 5,725.3 | $53.63 | 73.8% |
+| 5.0x | 5,279.2 | 6,781.1 | $62.73 | 77.9% |
+| 6.0x | 6,335.1 | 7,837.0 | $71.83 | 80.8% |
+An exit multiple of 4.0 times gives $53.63, nearly identical to the Gordon result of $54.08 and implies terminal growth of 3.4 percent. A 5.0 times exit multiple would require 4.5 percent perpetual growth, above any plausible long-run nominal growth rate for the economy, so the market-style multiples of 5 to 6 times revenue embed assumptions about permanent growth that the Gordon model makes explicit.
+
+Table S10. Base-case value per share: WACC (rows) against terminal growth (columns)
+
+| WACC | 2.5% | 3.0% | 3.5% | 4.0% | 4.5% |
+|:---|---:|---:|---:|---:|---:|
+| 8.25% | $57.13 | $61.22 | $66.16 | $72.27 | $80.00 |
+| 8.75% | $52.06 | $55.37 | $59.31 | $64.07 | $69.96 |
+| 9.21% | $48.08 | $50.84 | $54.08 | $57.95 | $62.64 |
+| 9.75% | $44.08 | $46.34 | $48.96 | $52.04 | $55.70 |
+| 10.25% | $40.89 | $42.79 | $44.97 | $47.50 | $50.47 |
+Table S11. Base-case value per share: terminal non-GAAP margin shift (rows) against terminal growth (columns) at WACC 9.21%
+
+| Margin shift | 2.5% | 3.0% | 3.5% | 4.0% | 4.5% |
+|:---|---:|---:|---:|---:|---:|
+| -6 pts | $41.37 | $43.55 | $46.12 | $49.18 | $52.89 |
+| -3 pts | $44.73 | $47.20 | $50.10 | $53.56 | $57.76 |
+| +0 pts | $48.08 | $50.84 | $54.08 | $57.95 | $62.64 |
+| +3 pts | $51.44 | $54.49 | $58.07 | $62.34 | $67.51 |
+| +6 pts | $54.79 | $58.13 | $62.05 | $66.72 | $72.39 |
+Each 50 basis points of WACC moves value by about $5 to $6 per share, and each 50 basis points of terminal growth by about $3.5 to $4. A three-point change in terminal margin moves value by about $4. Only the combination of a WACC of about 8.25 percent with terminal growth of 3.5 percent or more, or a 4.5 percent terminal growth rate with a 8.75 percent WACC, brings the base case to the offer.
+
+Adding back SBC. If SBC is added back to free cash flow in every year and the terminal value, and the share count is not adjusted for future issuance:
+
+Table S5. Effect of treating SBC as an expense versus adding it back ($ millions except per share)
+
+| Case | EV, SBC expensed | Per share | EV, SBC added back | Per share | PV of SBC | PV of SBC as % of added-back EV |
+|:---|---:|---:|---:|---:|---:|---:|
+| Base | 5,778.4 | $54.08 | 8,883.3 | $80.85 | 3,104.9 | 35.0% |
+| Management | 7,629.7 | $70.04 | 10,965.8 | $98.69 | 3,336.1 | 30.4% |
+The base case jumps from $54.08 to $80.85 per share, an increase of $26.77 or 49.5 percent, and in the management case from $70.04 to $98.69. The present value of the SBC stream is $3,104.9 million in the base case: $1,204.8 million from the explicit period and $1,900.0 million from the terminal value. This is 35 percent of the added-back enterprise value. The add-back is wrong unless the share count rises to reflect the shares that will be issued. Employees will receive shares worth this much; those shares are a claim on the same cash flows. If they are neither deducted as a cost nor counted as future dilution, the value is overstated by exactly this amount. The expense approach is correct and self-contained, while the add-back approach requires a forecast of future share issuance and its price. Note that the offer of $66.50 sits between the expensed values and the added-back values, so a buyer who ignores SBC could justify more than $66.50, and the committee should know that.
+
+#### Solution 9: Multiples
+
+NTM revenue is $710.6 million (management plan; using the base case's $705.0 million changes values by under 1 percent). Regression of EV/NTM revenue on each measure across the six peers:
+
+| Method | Fit | R-squared | Cirrus input | Multiple | EV | Per share |
+|:---|:---|---:|---:|---:|---:|---:|
+| Mean multiple | n/a | n/a | n/a | 8.50x | 6,039.8 | $56.34 |
+| Median multiple | n/a | n/a | n/a | 9.00x | 6,395.1 | $59.40 |
+| Regression on growth | 4.00 + 0.170 x growth | 0.52 | 27 | 8.58x | 6,100.1 | $56.86 |
+| **Regression on Rule of 40 (FCF)** | -3.53 + 0.262 x score | 0.81 | 49 | 9.28x | 6,597.2 | $61.14 |
+| Regression on Rule of 40 less SBC | 5.72 + 0.103 x score | 0.19 | 31 | 8.89x | 6,319.0 | $58.74 |
+| Growth-adjusted (mean EV/revenue per point of growth, 0.336) | n/a | n/a | 27 | 9.07x | 6,446.1 | $59.84 |
+| Precedent mean | n/a | n/a | n/a | 9.23x | 6,555.0 | $60.78 |
+| Precedent low to high | n/a | n/a | n/a | 8.1x to 10.4x | 5,755.6 to 7,389.9 | $53.89 to $67.98 |
+
+Equity per share from EV follows the same bridge as Solution 7 (plus cash, less $175.0 million of notes, with iterated treasury-method dilution). With six data points, the regression's apparent precision is deceptive: the standard error on a slope estimated from six observations is large, and a single outlier (Bramble Analytics) moves the R-squared of the SBC-adjusted measure materially. The regressions are best read as saying that peer multiples cluster around 8.5 to 9.3 times for a company with Cirrus's profile. The premium evidence conflicts with the multiple evidence. Applying the mean take-over premium of 34.3 percent to $56.00 gives $75.18, while the mean precedent multiple gives $60.78. The two reconcile once it is recognized that Cirrus already trades at 8.4 times NTM revenue, inside the precedents' range of 8.1 to 10.4 times, so the "premium" the market already pays is high. Premium evidence should therefore be given less weight than multiple evidence here.
+
+Football field (value per share):
+
+| Method | Low | High | Midpoint or point |
+|:---|---:|---:|---:|
+| DCF, SBC expensed: downside to management | $25.97 | $70.04 | Base $54.08; weighted $52.45 |
+| DCF base, WACC 8.75% to 9.75%, growth 3.5% | $48.96 | $59.31 | $54.08 |
+| DCF base, SBC added back (not recommended) | | | $80.85 |
+| Public comparables (mean, regressions) | $56.34 | $61.14 | $58.74 |
+| Precedent transactions | $53.89 | $67.98 | $60.78 |
+| Undisturbed price | | | $56.00 |
+| 52-week trading range | $41.00 | $63.00 | |
+| **Tessara offer** | | | **$66.50** |
+
+The reconciliation: the DCF base case ($54.08) sits about 4 percent below the comparables because the market paid for SBC-heavy growth as if SBC were free and because it values the company's growth optimistically; the DCF's probability-weighted value is lower still. The market approach is a measure of what other investors pay today, not of intrinsic value, and the committee should treat it as an upper cross-check on the base case, not as independent confirmation of the offer.
+
+#### Solution 10: Recommendation
+
+Reverse DCF. The undisturbed price of $56.00 implies a plan that sits 13 percent of the way from the base case to the management case, or in other words, the market is pricing close to the base case with a small upside tilt. At $66.50, the offer implies a plan 79 percent of the way to management's. Holding the base case constant, the offer requires a WACC of 8.23 percent (versus 9.21), or perpetual growth of 4.85 percent (versus 3.5). Holding management's case constant, the offer implies a WACC of 9.48 percent: Tessara is paying roughly the value of a plan that has essentially no execution haircut, discounted at a slightly higher rate than ours.
+
+Implied multiples at $66.50: equity value $7,533.4 million; enterprise value $7,218.6 million; 10.2 times NTM revenue, 12.9 times FY2026 revenue, and 12.3 times ending ARR. At $56.00 they are 8.4, 10.7, and 10.2 times. The offer is above every peer multiple in Table 10 except Halcyon Cloud at 11.2 times, and above all but the highest precedent (10.4 times). The 18.8 percent premium is below the 34.3 percent mean premium, but the multiple evidence, as noted, says the premium evidence overstates what is fair. Tessara's potential synergy is unquantified; Exhibits A and B argue against walking away from an offer that exceeds the base case by 23 percent, and Exhibit G shows the nearest alternative bid is $62 to $64 and unfinanced.
+
+Recommendation: **counter at $72.00 and authorize acceptance at not less than $68.50.** At $72.00, EV is $7,856.6 million, 11.1 times NTM revenue, a 28.6 percent premium, and just above the management-case DCF value of $70.04, which asks Tessara to pay for the whole plan and to share the synergies. At $68.50, EV is $7,450.6 million, 10.5 times NTM revenue (just above the highest precedent of 10.4 times), and a 22.3 percent premium. That floor is 27 percent above the base-case value, 31 percent above the probability-weighted value, and above the sponsor indication by $4.50 to $6.50. Additional protections: a go-shop period, a reverse termination fee, no financing condition, and treatment of the converts at par plus make-whole.
+
+### Sensitivity Discussion
+
+Four variables dominate the valuation. The first is the discount rate: 9.21 percent is an estimate, and a 0.5-point change moves the base case by $5 to $6. The second is the terminal growth rate and, jointly, the terminal margin. The sensitivity tables show that the full plausible range, from $41 to $80 on the base case, spans both the undisturbed price and the offer. The third is the treatment of SBC, which moves value by about $27 per share and is a choice rather than an estimate. The fourth is the plan path: management versus base is worth $16 per share. The marginal analysis suggests the most defensible negotiating position is to concede that the base case is below the offer and to argue that Tessara is purchasing optionality on the management plan and on its own synergies.
+
+### Common Student Errors
+
+1. Computing NRR from blended totals and missing the cohort-by-cohort deterioration. Students who report "NRR of about 110 percent, stable" have not read the cohort triangle.
+2. Computing LTV with the textbook formula, margin divided by churn, or with net retention above 100 percent for ten years, producing LTV/CAC above 5 without noting that expansion is not free.
+3. Using the rule of 40 on one definition and calling Cirrus "best in class."
+4. Adding SBC back in the DCF and then also using the diluted share count at today's price. This is the double standard in reverse: no cost in cash flows and no cost in shares.
+5. Counting SBC as an expense and also increasing the share count for future grants. This double counts. Only existing options and RSUs should be added to the share count.
+6. Applying the treasury stock method at the offer price in one place and at the DCF value in another, or counting all 8.4 million options as shares.
+7. Treating the convertible as converted at a price below $92.00.
+8. Discounting the Gordon terminal value at the full ten years while using mid-year discounting for the cash flows, which understates value by about 4.5 percent.
+9. Forgetting the NOL, or applying the tax rate to a negative EBIT.
+10. Using the average of the football field as "the answer," or applying the take-over premium to a price that already contains a premium multiple.
+
+### Alternative Defensible Answers
+
+Several different recommendations can be defended. A student who accepts management's plan, perhaps because of the March offsite model or because the held-out upside is large, can argue for rejecting $66.50 and countering above $75, relying on the management DCF of $70.04, the 34 percent mean premium, and the holders who see "north of $70." Anselm Okafor's position is a variant of this. A student who stresses the first-quarter flash, Ostrava, and the cohort deterioration can reasonably recommend accepting the offer now, on the grounds that a certain $66.50 is well above any risk-adjusted standalone value and that Tessara might withdraw. A third answer is to run a short, limited market check with Redcliff and others before responding. The grade should reward the quality of the reasoning: whether SBC is treated consistently, whether the terminal value is tested, and whether the recommendation follows from the evidence rather than from the first number computed.
+
+### Board-Style Recommendation Memorandum
+
+**To:** Special Committee of the Board of Directors, Cirrus Ledger, Inc.
+**From:** Kessler Dunmore & Co.
+**Date:** 19 November 2026
+**Re:** Response to Tessara Systems' proposal of $66.50 per share in cash
+
+**Recommendation.** We recommend that the committee decline the proposal as submitted, counter at $72.00 per share in cash, and authorize management and advisers to accept a price of not less than $68.50 per share on customary terms. We recommend that the committee not enter exclusivity until the price is agreed.
+
+**Basis.** Treating stock-based compensation as the operating cost it is, we value Cirrus at $54.08 per share in our base case, $70.04 in management's plan, and $25.97 in a downside case, a probability-weighted $52.45. Public comparables and precedent transactions suggest $56 to $61, with a precedent range of $54 to $68. The offer is 18.8 percent above the undisturbed price and 23 percent above our base case, and at 10.2 times next-twelve-month revenue it is above every precedent but one. It is nearly equal to the management plan's value, which requires reacceleration of growth that the cohort data do not support.
+
+**Risks to standalone value.** New-customer cohorts retain less than earlier cohorts (first-year net retention 120, 117, 113 percent); acquisition cost has risen 23 percent in two years; first-quarter net new ARR fell about 6 percent; and the largest customer, 6.4 percent of ARR, is evaluating alternatives. Free cash flow of $134.9 million includes about $17 million of non-repeating billing-term benefit and costs $179 million in dilution at today's price.
+
+**Why counter.** A price of $72.00 values the entire management plan at our cost of capital and allocates some of Tessara's synergy to our shareholders. The 34 percent mean premium of recent transactions is not a good guide here, because Cirrus already trades at a multiple within the precedent range. The floor of $68.50 equals 10.5 times revenue, above the highest precedent, and is 27 percent above our base case.
+
+**Process protections.** We recommend a go-shop period of at least 30 days, a reverse termination fee, no financing condition, treatment of the convertible notes at par plus make-whole, and confirmation of the committee's authority over any change in management arrangements. We recommend that the committee also invite a written proposal from Redcliff Partners. Our fairness opinion will be delivered separately and will rest on the same analysis.

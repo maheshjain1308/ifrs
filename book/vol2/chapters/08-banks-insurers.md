@@ -295,7 +295,7 @@ The same calculation for other PDs, using the same LGD and correlation:
 | 0.50% | 6.74% | 2.81% | 35.1% |
 | 1.00% | 11.03% | 4.51% | 56.4% |
 | 2.00% | 17.63% | 7.03% | 87.9% |
-| 5.00% | 31.48% (approx.) | 11.86% | 148.2% |
+| 5.00% | 31.35% | 11.86% | 148.2% |
 
 Observe that the capital charge is *concave* in PD: doubling PD from 1 to 2 percent raises K by about 56 percent, not 100 percent, because expected loss is excluded and because the conditional PD increases less than proportionally. At 5 percent PD, the risk weight exceeds 100 percent and a corporate loan consumes substantially more capital than a loan at 100 percent standardized weight.
 
@@ -326,3 +326,205 @@ Three debates are worth knowing. First, *procyclicality*: risk-sensitive require
 - *Treating the CET1 ratio as the only constraint.* Leverage ratio, TLAC, liquidity ratios, and stress-test buffers can each bind.
 - *Optimizing RWA without regard to risk.* Reducing RWA by reclassification does not reduce the underlying loss potential.
 - *Ignoring that provisions already cover expected loss.* Capital is for unexpected loss; double counting EL and UL overstates the capital need.
+
+## 8.5 Stress Testing
+
+### 8.5.1 Purpose and design
+
+Capital ratios computed from current balance sheets answer "are we compliant today?" Stress tests answer "would we remain adequately capitalized after a severe but plausible shock?" Supervisors run *top-down* tests, imposing scenarios on all large banks and comparing results against hurdle rates, and banks run *bottom-up* internal tests tailored to their portfolios. After the 2008 crisis, stress tests became a central instrument of prudential supervision and now directly influence permitted dividends and buybacks.
+
+A stress test has five components:
+
+1. **Scenario.** A path for macroeconomic and financial variables over, typically, three years: GDP, unemployment, house prices, interest rates, equity prices, credit spreads. A *severely adverse* scenario is generally calibrated to be at least as severe as a deep post-war recession. *Reverse stress tests* ask the opposite question: what scenario would make the bank fail?
+2. **Translation to risk parameters.** Models map macro variables to PD, LGD, prepayment, deposit outflows, and fee income. This step is where most model risk lies, because the relationships are estimated from limited historical data.
+3. **Projection of pre-provision net revenue (PPNR).** Revenue and expenses under stress: NII falls if margins compress, fees fall with activity, costs are sticky.
+4. **Balance-sheet dynamics.** RWA typically *rise* in stress because rating migration raises risk weights and because drawn credit lines increase; assumptions about whether the bank can shrink its balance sheet matter.
+5. **Capital roll-forward and comparison to hurdle.** Start CET1 + stressed net income (PPNR − losses − taxes) − dividends = ending CET1; ratio = ending CET1 / stressed RWA.
+
+### 8.5.2 A worked stress test
+
+**Example 8.8 – A three-year stress test for Lakeshore Bank.**
+Starting point: CET1 of 7,200 and RWA of 60,000 (Example 8.5), ratio 12.0 percent. Baseline pre-provision net revenue is NII 2,844 + non-interest income 900 − operating expense 2,400 = 1,344 per year. The severely adverse scenario implies:
+
+- PPNR falls by 30 percent to 940.8 per year (lower fees, margin compression, sticky costs).
+- Default and loss parameters rise as follows (annual PD × LGD × EAD, applied to the loan book of Section 8.1.2):
+
+| Segment | EAD | Baseline PD / LGD | Stressed PD / LGD | Stressed annual loss |
+|---|---|---|---|---|
+| Corporate loans | 30,000 | 1.2% / 50% | 8.0% / 55% | 1,320.0 |
+| Residential mortgages | 25,000 | 0.3% / 15% | 3.0% / 35% | 262.5 |
+| Retail unsecured | 5,000 | 2.0% / 80% | 10.0% / 85% | 425.0 |
+| **Total** | **60,000** | Baseline loss 271.3 | | **2,007.5** |
+
+- Stressed loss intensity is 100 percent of the annual figure in years 1 and 2, and 60 percent in year 3 as the scenario eases.
+- RWA rises 7, 12, and 15 percent over the baseline in years 1, 2, and 3 because of rating migration.
+- The tax rate is 25 percent, losses generate a tax credit (assume it is recognized), and dividends are suspended.
+
+Step 1. Corporate loss: 30,000 × 8.0% × 55% = 1,320.0. Mortgage loss: 25,000 × 3.0% × 35% = 262.5. Retail loss: 5,000 × 10.0% × 85% = 425.0. Total 2,007.5.
+
+Step 2. Year 1: Pre-tax result = 940.8 − 2,007.5 = −1,066.7; tax credit 266.7; net result = −800.0. CET1 = 7,200 − 800.0 = 6,400.0. RWA = 60,000 × 1.07 = 64,200. Ratio = **9.97 percent**.
+
+Step 3. Year 2: same loss rate; result = −800.0; CET1 = 5,600.0; RWA = 60,000 × 1.12 = 67,200; ratio = **8.33 percent**.
+
+Step 4. Year 3: loss = 0.60 × 2,007.5 = 1,204.5; pre-tax = 940.8 − 1,204.5 = −263.7; net = −197.8; CET1 = 5,402.2; RWA = 69,000; ratio = **7.83 percent**.
+
+| Year | PPNR | Credit losses | Net result | CET1 | RWA | CET1 ratio |
+|---|---|---|---|---|---|---|
+| Start | | | | 7,200.0 | 60,000 | 12.00% |
+| 1 | 940.8 | 2,007.5 | −800.0 | 6,400.0 | 64,200 | 9.97% |
+| 2 | 940.8 | 2,007.5 | −800.0 | 5,600.0 | 67,200 | 8.33% |
+| 3 | 940.8 | 1,204.5 | −197.8 | 5,402.2 | 69,000 | 7.83% |
+
+Interpretation. The CET1 ratio falls 4.2 percentage points, to 7.83 percent. This remains above the 4.5 percent regulatory minimum, so the bank does not fail. But it falls *below* the 8.0 percent combined requirement including buffers, which in practice means distribution restrictions and a supervisory dialogue about a capital plan. The stress consumes 1,798 of capital in absolute terms, but RWA inflation accounts for a large part of the ratio decline: with RWA held constant at 60,000, ending CET1 would give 9.0 percent. A bank can therefore improve its stress performance both by raising CET1 and by reducing RWA sensitivity, for example by shortening loan maturities or by holding collateralized exposures.
+
+How should management respond? Three options: build capital by retaining earnings now (cutting buybacks), hold more capital against the most loss-intensive segment (corporate loans contribute 66 percent of the stressed loss), or purchase credit protection or securitize part of the portfolio. Each has a cost, and the stress test makes the cost-benefit trade-off explicit.
+
+### 8.5.3 Limits and good practice
+
+Stress tests are as good as their scenarios and models. Weaknesses include: reliance on historical correlations that break down in unprecedented episodes; omission of liquidity feedback loops (a bank that passes the capital test can still fail on liquidity); static assumptions about management actions; and the risk that all banks use similar scenarios and thus converge on similar mitigations, which makes the system more homogeneous and therefore more vulnerable. Good practice includes reverse stress tests, multiple scenario narratives (rates up with inflation, rates down with deflation), integrating liquidity, and explicit "management action" assumptions that are documented and credible.
+
+## 8.6 Insurance Company Finance
+
+### 8.6.1 The insurance business model
+
+An insurer sells promises: if an insured event occurs, it will pay a claim. Premiums are collected up front; claims are paid later, sometimes decades later. In the interval the insurer invests the premium, a pool of funds known as the *float*. Insurers earn money in two ways: *underwriting profit* (premiums less claims and expenses) and *investment income* on the float and on capital. The distinctive feature is that the *cost of goods sold is unknown at the time of sale*: the insurer must estimate the claims it will pay.
+
+The two main lines are different in financial structure:
+
+| Feature | Property and casualty (non-life) | Life and annuity |
+|---|---|---|
+| Liability horizon | Short to medium (1 to 10+ years; long tail for liability lines) | Long (10 to 50+ years) |
+| Main liability risk | Claims frequency, severity, inflation, catastrophes | Mortality, longevity, lapse, guaranteed rates |
+| Typical profit sources | Underwriting margin plus investment income | Investment spread, loadings, fees |
+| Key estimate | Loss reserves | Actuarial reserves and discount rates |
+| Principal financial risk | Reserve inadequacy, catastrophe, reinsurance credit | Interest-rate mismatch, longevity, lapse, credit |
+
+*Reinsurance* transfers part of the risk to other insurers, trading premium for protection and reducing capital need, but introducing counterparty credit risk.
+
+### 8.6.2 Underwriting performance: the combined ratio
+
+For non-life insurers, the central measure is the *combined ratio*:
+
+```
+Combined ratio = Loss ratio + Expense ratio
+Loss ratio     = Incurred claims (incl. claim-handling costs) / Earned premium
+Expense ratio  = Acquisition costs and operating expenses / Earned premium
+```
+
+A combined ratio below 100 percent means an underwriting profit. Many insurers deliberately underwrite near or above 100 percent because investment income on the float makes the total business profitable. The return on equity is the sum of underwriting and investment contributions after tax.
+
+**Example 8.9 – Property-and-casualty ROE and the effect of reserve error.**
+An insurer has earned premium of 1,000 million, a loss ratio of 66 percent, an expense ratio of 29 percent, an investment portfolio of 3,000 million yielding 4.0 percent, a tax rate of 21 percent, and equity of 900 million.
+
+Step 1. Combined ratio = 66% + 29% = **95 percent**. Underwriting profit = 1,000 × (1 − 0.95) = **50 million**.
+
+Step 2. Investment income = 3,000 × 4.0% = **120 million**.
+
+Step 3. Pre-tax income = 50 + 120 = 170. Tax at 21 percent = 35.7. Net income = **134.3 million**. ROE = 134.3 / 900 = **14.9 percent**.
+
+Step 4. Suppose the company later discovers adverse development of prior-year claims totalling 75 million (the reserves were inadequate). This is charged to current-year underwriting: underwriting result = 50 − 75 = −25. Pre-tax income = −25 + 120 = 95; after-tax income = 95 × 0.79 = **75.05 million**; ROE = **8.3 percent**.
+
+Step 5. The reserve error of 75 million is only 3 percent of loss reserves of 2,500 million, yet it cuts ROE by nearly half. The leverage in the business is reserve-to-equity: reserves of 2,500 against equity of 900 means a 1 percent error in reserves equals 25 million, or 2.8 percent of equity.
+
+Interpretation. Reported underwriting results depend on reserve estimates, and small percentage errors translate into large equity impacts because reserves are a multiple of equity. Investors therefore scrutinize *prior-year reserve development* and the *quality of reserves* before trusting a low combined ratio. Moreover, investment income depends on interest rates: a decline of 100 basis points on the 3,000 million portfolio reduces income by 30 million pre-tax, as much as 3 points of loss ratio would.
+
+### 8.6.3 Loss reserving: the chain-ladder method
+
+Reserves are estimated from *loss development triangles*: cumulative paid (or incurred) claims by accident year (rows) and development year (columns). The *chain-ladder method* assumes that future development in each year follows the historical pattern: the ratio of cumulative claims at development year j+1 to those at year j, the *age-to-age factor*, is stable. Multiplying the latest observed cumulative claim by the product of the remaining factors gives the estimated *ultimate* loss; the *reserve* is ultimate minus paid to date.
+
+**Example 8.10 – Chain-ladder reserve estimate.**
+Cumulative paid claims by accident year (millions) after one to four years of development:
+
+| Accident year | Dev 1 | Dev 2 | Dev 3 | Dev 4 |
+|---|---|---|---|---|
+| 1 | 1,000 | 1,800 | 2,200 | 2,350 |
+| 2 | 1,100 | 2,000 | 2,450 | |
+| 3 | 1,250 | 2,250 | | |
+| 4 | 1,400 | | | |
+
+Step 1. Volume-weighted age-to-age factors:
+f₁ = (1,800 + 2,000 + 2,250) / (1,000 + 1,100 + 1,250) = 6,050 / 3,350 = **1.8060**;
+f₂ = (2,200 + 2,450) / (1,800 + 2,000) = 4,650 / 3,800 = **1.2237**;
+f₃ = 2,350 / 2,200 = **1.0682**.
+
+Step 2. Cumulative development factors to ultimate (assuming no development beyond year 4, a tail factor of 1.00): from Dev 3: 1.0682; from Dev 2: 1.2237 × 1.0682 = 1.3071; from Dev 1: 1.8060 × 1.2237 × 1.0682 = 2.3606.
+
+Step 3. Ultimates: accident year 1: 2,350 (fully developed). Year 2: 2,450 × 1.0682 = 2,617.0. Year 3: 2,250 × 1.3071 = 2,941.0. Year 4: 1,400 × 2.3606 = 3,304.9.
+
+Step 4. Reserves = ultimate − paid to date: year 1: 0; year 2: 2,617.0 − 2,450 = 167.0; year 3: 2,941.0 − 2,250 = 691.0; year 4: 3,304.9 − 1,400 = 1,904.9. **Total reserve = 2,762.9 million**.
+
+Step 5. Sensitivity to the tail. If claims continue to develop by 3 percent beyond year 4 (a tail factor of 1.03, plausible for a liability line with long-tailed claims), every ultimate rises by 3 percent: the sum of ultimates is 11,213, so reserves increase by 336 million to **3,099 million**, a 12 percent increase from the base estimate, for what looks like a small change in an assumption.
+
+Interpretation. Chain-ladder is simple and transparent, but it has weaknesses: (1) it assumes the future resembles the past, so changes in claims handling, inflation, or mix distort it; (2) it is highly leveraged on the most recent accident year, whose factor is the product of all remaining factors and so has the largest estimation error; (3) the tail factor is a judgment, not data. Actuaries cross-check with alternative methods (Bornhuetter-Ferguson, which blends the chain-ladder ultimate with an a priori loss ratio; frequency-severity models) and report a *range*, with management choosing a point within it. This is exactly the kind of choice where governance matters: an insurer under earnings pressure has an incentive to select the low end.
+
+### 8.6.4 Catastrophe risk, reinsurance, and capital
+
+Property insurers face *catastrophe* losses (hurricanes, earthquakes, floods) that are highly correlated across policies in a region. These cannot be diversified by writing more policies in the same area. Insurers use probabilistic *catastrophe models* to estimate the distribution of annual losses and their tail, then buy *reinsurance*: quota-share (proportional), excess-of-loss (non-proportional, paying losses above an attachment point), and *catastrophe bonds* (securitization that transfers peak risk to capital markets). The reinsurance decision is a capital-structure decision: it reduces required capital and earnings volatility at the cost of ceded premium and counterparty risk. A rule of thumb is that insurers buy more reinsurance when capital is scarce and less when it is abundant, so reinsurance pricing is cyclical, hardening after large losses.
+
+## 8.7 Insurer Asset-Liability Management and Solvency Regimes
+
+### 8.7.1 Life insurers and the duration mismatch
+
+A life insurer with guaranteed long-term payouts faces a *reinvestment and discounting* problem similar to the bank's, but with longer horizons and less ability to reprice liabilities. If assets are shorter than liabilities, falling rates raise the present value of liabilities more than they raise assets, which reduces surplus. The problem became acute in low-rate environments for insurers that sold long-dated guarantees.
+
+**Example 8.11 – Duration mismatch in a life insurer.**
+A life insurer owes a single payment of 100 million in 10 years and discounts at 3.00 percent. It holds assets with value equal to the liability today, in a six-year zero-coupon bond.
+
+Step 1. Liability PV = 100 / 1.03¹⁰ = 100 / 1.34392 = **74.409 million**. Asset: a six-year zero with face value F such that F / 1.03⁶ = 74.409; F = 74.409 × 1.19405 = 88.849 million.
+
+Step 2. Modified durations: liability 10 / 1.03 = **9.709** years; assets 6 / 1.03 = **5.825** years. Duration gap = 5.825 − 9.709 = −3.884 years: assets are shorter than liabilities.
+
+Step 3. Rate scenarios (a parallel shift of all yields):
+
+| Yield | Asset value | Liability value | Surplus change |
+|---|---|---|---|
+| 2.00% | 78.895 | 82.035 | −3.140 |
+| 3.00% | 74.409 | 74.409 | 0.000 |
+| 4.00% | 70.218 | 67.556 | +2.662 |
+
+A fall of one percentage point in yields creates a **3.14 million** deficit (4.2 percent of the initial liability value) from a position that was exactly matched in value.
+
+Step 4. Hedge with a receive-fixed swap. DV01 of the liability = 74.409 × 9.709 × 0.0001 = 0.07224 million; DV01 of assets = 74.409 × 5.825 × 0.0001 = 0.04335 million; the gap is 0.02889 million per basis point. A 10-year receive-fixed swap at 3.00 percent has an annuity of (1 − 1.03⁻¹⁰) / 0.03 = 8.530, so its DV01 per unit notional is 8.530 × 0.0001. Required notional = 0.02889 / (8.530 × 0.0001) = **33.9 million**. This closes the first-order gap; convexity differences remain, and the swap introduces collateral requirements, which are a liquidity risk if rates rise.
+
+Alternatively, the insurer could extend the duration of its assets by purchasing long government bonds or infrastructure debt, or lessen its liability exposure by changing guarantee terms in new products. The point matches Chapter 7's treatment: *hedge ratios are first-order; convexity, basis risk, and collateral are the residual risks that actually hurt*. In a prolonged episode of falling rates, the insurer's real problem is *reinvestment risk* on the shorter assets, as the cash flows from maturing bonds must be reinvested at lower yields to meet fixed guarantees.
+
+### 8.7.2 Solvency regimes in general terms
+
+Insurers are regulated to protect policyholders. Two broad approaches exist. *Factor-based* regimes (for example, risk-based capital in the United States) compute required capital by applying factors to asset and liability categories. *Economic* or *market-consistent* regimes (Solvency II in the European Union, the Swiss Solvency Test, and similar frameworks elsewhere) value assets and liabilities at market-consistent values, define *own funds* as the excess, and require own funds to exceed a *solvency capital requirement (SCR)* calibrated to a 99.5 percent one-year value-at-risk. A smaller *minimum capital requirement* triggers harsher intervention. The principles are similar to Basel's: risk-sensitive requirements, supervisory review, and disclosure, with an emphasis on technical provisions and long-term guarantees.
+
+The SCR is built bottom-up from *risk modules*: market risk (interest rates, equity, credit spread, property, currency), underwriting risk (non-life, life, health: premium, reserve, catastrophe, mortality, longevity, lapse), counterparty default risk, and operational risk. Module capital charges are aggregated with a *correlation matrix* to recognize diversification:
+
+```
+BSCR = √( Σᵢ Σⱼ ρᵢⱼ × SCRᵢ × SCRⱼ )
+SCR  = BSCR + Operational risk charge (+/− adjustments)
+Solvency ratio = Own funds / SCR
+```
+
+**Example 8.12 – Aggregating an insurer's SCR.**
+Module charges are market 400, insurance 300, and counterparty credit 120 (millions); each pair has a correlation of 0.25; operational risk is 60 (added without diversification). Own funds are 900.
+
+Step 1. Sum of squares: 400² + 300² + 120² = 160,000 + 90,000 + 14,400 = 264,400.
+
+Step 2. Cross terms: 2 × 0.25 × (400 × 300 + 400 × 120 + 300 × 120) = 0.5 × (120,000 + 48,000 + 36,000) = 0.5 × 204,000 = 102,000.
+
+Step 3. BSCR = √(264,400 + 102,000) = √366,400 = **605.3**. The simple sum of modules is 820, so diversification benefit is 214.7 (26.2 percent).
+
+Step 4. SCR = 605.3 + 60 = **665.3**. Solvency ratio = 900 / 665.3 = **135.3 percent**. Surplus above the requirement = 234.7.
+
+Step 5. Sensitivity: a 100 basis point fall in rates that reduces own funds by 150 (the life book of this insurer is larger than the stylized single payment of Example 8.11) leaves 750 of own funds, and the ratio falls to 750 / 665.3 = **112.7 percent**; if it also raises the market-risk module because of lower rates, say to 440, the SCR rises and the ratio falls further. Insurers often set an internal target ratio well above 100 percent, such as 150 to 200 percent, because the regulatory minimum triggers supervisory intervention and market confidence erodes before it is reached.
+
+Interpretation. The square-root aggregation says that diversification is powerful when correlations are low and vanishes when they approach 1. Correlation assumptions are set by regulators and are heavily debated, since in crises correlations between market and insurance risks may be higher than the standard formula assumes. The *own funds* side also matters: it depends on the discount curve (including the treatment of any "volatility adjustment" or matching adjustment, which allows some credit-spread movements to be excluded from liabilities), which means regulatory design affects measured solvency and, indirectly, investment strategy.
+
+### 8.7.3 What banks and insurers share, and where they differ
+
+| Dimension | Banks | Insurers |
+|---|---|---|
+| Main liability | Deposits and wholesale funding, callable | Policy liabilities, contingent on events |
+| Run risk | High (liquidity-driven) | Lower (except lapse in life products; cat events) |
+| Dominant balance-sheet risk | Credit and interest-rate | Underwriting, reserving, interest-rate (life) |
+| Key capital constraint | CET1/RWA, leverage ratio, liquidity ratios | SCR or RBC ratio, own funds quality |
+| Profit driver | Net interest margin, fees | Underwriting margin, investment spread |
+| Key estimate in earnings | Loan-loss provisions | Loss reserves, actuarial assumptions |
+| Typical hedging tools | Swaps, caps, floors, securitization | Swaps, reinsurance, cat bonds |
+
+A financial conglomerate (like Lakeshore Financial) must also manage *double leverage* (debt raised at the holding company and injected as equity into subsidiaries) and *contagion* between subsidiaries, and regulators often impose group-level supervision for that reason.

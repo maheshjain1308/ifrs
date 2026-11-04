@@ -179,3 +179,167 @@ If the shareholder later sells the Consumer share at 15.00, the gain is 15.00 �
 ### 20.3.5 What goes wrong
 
 The common failures are: separating businesses that are interdependent (shared plants, customers or technology) so that dis-synergies exceed the multiple arbitrage; loading the spun-off company with too much debt, leaving it unable to invest (a form of "dumping"); weak governance of the spun company; underestimating stranded costs at the parent, leaving RemainCo with an overhead too large for its size; and *pricing pressure from flowback selling* in the first months, mistaken by management for a verdict on the strategy. Creditors may also object: a spin that transfers value away from the borrowing entity can raise fraudulent transfer concerns if the parent is or becomes insolvent (Chapter 19), and bondholders sometimes seek protection through covenants on asset sales and distributions.
+
+## 20.4 Carve-Outs, Split-Offs, Tracking Stocks and Related Structures
+
+### 20.4.1 Equity carve-outs
+
+In an **equity carve-out**, the parent sells a minority stake (typically 10 to 30 percent) in a subsidiary to public investors, often through an IPO, and keeps control. The proceeds may go to the subsidiary (a primary offering, funding growth) or to the parent (a secondary offering, a monetization). Carve-outs create a market price for the subsidiary, which can reveal value and permit equity-linked compensation. They have two natural uses: as a *stage* before a full separation (the parent sells a stake now and distributes the rest later), and as a way to raise capital against a business the market values more highly than the parent. Empirical evidence, associated with Schipper and Smith and with Allen and McConnell, finds positive average announcement returns on average, particularly where proceeds are used to reduce debt.
+
+The costs are the IPO costs discussed in Section 20.5, plus the *governance conflicts* of a controlled company: minority shareholders of the subsidiary depend on a parent that may favor its own interests in transfer pricing, shared services and capital allocation. The parent also gives up part of the cash flows of a business without receiving the full price of control.
+
+**Example 20.4 – Cost of carving out 20 percent of Consumer.** Calder considers listing 20 percent of Consumer in an IPO instead of a spin. Consumer's equity is worth 1,204 million at fair value (Example 20.2). Investors require a 10 percent IPO discount to the fair price, and the gross spread is 5 percent of proceeds.
+
+```
+Fair value of 20% stake   = 0.20 × 1,204          = 240.8
+Offer price discount 10%  → gross proceeds         = 216.7
+Gross spread 5%           = 0.05 × 216.7           =  10.8
+Net proceeds to Calder    = 216.7 − 10.8           = 205.9
+Retained 80% (fair value) = 0.80 × 1,204           = 963.2
+Value to Calder           = 205.9 + 963.2          = 1,169.1
+Cost of the carve-out     = 1,204 − 1,169.1        =  34.9 (2.9% of Consumer equity)
+```
+
+The transaction costs 34.9 million, equal to 14.5 percent of the 240.8 million of fair value sold. If the discount closes after listing, as the market learns about the company, the retained stake could re-rate and recover the 24.1 million discount on the retained shares' mark; the gross spread of 10.8 is a permanent cost. This is why carve-outs are most valuable when there is a specific reason to sell now: to fund a high-return investment, to reduce a costly debt load, or to create the price discovery needed for a later spin.
+
+### 20.4.2 Split-offs
+
+In a **split-off**, parent shareholders are offered the chance to *exchange* parent shares for subsidiary shares, typically at a premium. Because tendering shareholders give up parent stock, the parent's share count falls, so a split-off is similar to a share repurchase paid in subsidiary stock (Volume 1, Chapter 16). It can be tax-efficient for the same reasons a spin-off is, and it is attractive when the parent wants to reduce its share count while separating a business, but it requires shareholders to choose, and it typically leaves a share structure in which each participating investor ends up with one company or the other.
+
+### 20.4.3 Tracking stocks
+
+A **tracking stock** is a class of parent equity whose dividends and market price are intended to track the performance of a division. The parent retains legal ownership; the tracking shareholders have claims on the parent, not on the division. Advantages include a market price for the division and equity compensation tied to its performance without legal separation, which avoids tax and preserves synergies. Disadvantages are that governance conflicts between the classes are real: the board owes duties to all shareholders of the company, resources can be shifted between divisions, and creditors have recourse to all of the parent's assets. Many tracking stock structures have been unwound, which suggests that the structure has often been a half-measure.
+
+### 20.4.4 Reverse Morris Trust
+
+In a **Reverse Morris Trust**, the parent spins off a subsidiary and the subsidiary immediately merges with a third party, such that the parent's shareholders own a substantial minority stake in the combined business. Provided that ownership thresholds are met and that the spin otherwise qualifies, the parent can in effect sell a business to a third party in a transaction that is tax-free at the corporate level, and it can extract cash through debt raised by the subsidiary before the merger. The requirement that the old shareholders retain a minimum ownership stake in the combined company limits the size of the third party relative to the subsidiary, which is why such deals typically involve a partner smaller than, or of similar size to, the spun business.
+
+## 20.5 Going Public: IPOs, Direct Listings and Their Costs
+
+### 20.5.1 The traditional IPO
+
+In a firm-commitment IPO, underwriters buy the shares from the issuer and resell them to investors, run a bookbuilding process to find the price, and receive a gross spread. Direct costs are the gross spread (often in the mid-single-digit percent range for mid-sized offerings, lower for very large ones) and other expenses (legal, accounting, listing fees). The *indirect* cost is **underpricing**: shares are on average priced below their first-day closing price, so existing shareholders sell shares at a discount. Explanations, from Volume 1, Chapter 13, include the winner's curse of uninformed investors (Rock), information production by underwriters through bookbuilding (Benveniste and Spindt), and the use of underpricing as a reward for investors who reveal information. Ritter's long-run data on US IPOs show average first-day returns that have varied substantially across periods. The key conceptual point for the issuer is that money left on the table is a real cost, equal to the first-day gain on the shares *sold by the company and by selling shareholders*, though the cost to *existing* holders is limited to shares sold, because retained shares benefit from the pop.
+
+The IPO also brings **lock-up agreements** (typically restricting insiders from selling for a period such as 180 days), a stabilization mechanism (the "greenshoe" over-allotment option, normally up to 15 percent of the base deal), analyst coverage and a defined price discovery event.
+
+### 20.5.2 Direct listings
+
+In a **direct listing**, the company lists its shares on an exchange without a traditional underwritten offering. Existing holders may sell into the opening auction, the exchange publishes a reference price based on private-market information, and the opening price is set by the exchange's auction according to orders. No gross spread is paid to underwriters (financial advisers are paid advisory fees), there is typically no mandatory lock-up, and no underpricing in the sense of a discount set by bookbuilders, although the opening price can differ from fundamental value, up or down. Rules on whether a direct listing may include a primary capital raise have been developed by exchanges and regulators over time and vary, so a company should check current rules. The principal disadvantages are that there is no guaranteed capital or committed buyer base, that there may be greater price volatility at the start, and that there is no stabilization or marketing process by underwriters. It suits well-known firms with a broad base of investors who already know them and that have no immediate capital need.
+
+### 20.5.3 Cost comparison
+
+**Example 20.5 – IPO versus direct listing for the founder's company.** The company wants to raise 300 million of primary capital. In an IPO it would sell 15 million shares at 20. Gross spread is 6 percent, other expenses are 6 million, and the first-day return is 15 percent. A direct listing costs 18 million in advisory, legal and listing fees and raises capital by selling shares in the opening auction (assume a primary-capable listing is available) at an opening price assumed equal to fair value, then adjusted in a sensitivity.
+
+IPO route:
+
+```
+Gross proceeds        = 15M × 20            = 300.0
+Gross spread          = 6% × 300            =  18.0
+Other expenses                              =   6.0
+Money left on table   = 15% × 300           =  45.0   (shares sold at 20, worth 23)
+Total economic cost   = 18.0 + 6.0 + 45.0   =  69.0   (23.0% of the 300 raised)
+```
+
+Direct listing route:
+
+```
+Fees                                         =  18.0
+Pricing error (if opening price is 10% below fair value): 0.10 × 300 = 30.0
+Total, base (no pricing error)               =  18.0  (6.0% of 300)
+Total, 10% below fair value                  =  48.0  (16.0% of 300)
+Total, 10% above fair value                  = −12.0  (a gain)
+```
+
+In the base case the direct listing saves 51.0 million (69.0 − 18.0). The direct listing wins as long as the opening price is not more than about 17 percent below fair value: 18 + x × 300 = 69, x = 17.0 percent. The comparison depends on two things: whether an expected 15 percent first-day return is representative (the IPO's underpricing is a *systematic* expected cost), and whether the direct listing brings pricing *risk* both ways. The main benefit of the IPO is not captured in the numbers: certainty of capital raised and a book of long-term investors. A risk-averse founder who needs the money may rationally pay for it.
+
+### 20.5.4 Dual-track and other alternatives
+
+Many companies run a **dual-track** process, preparing for an IPO while soliciting private buyers; the credible IPO alternative disciplines bidders, and the sale alternative provides a floor. Other routes include a growth-equity or crossover round, a sale to a private equity sponsor (Volume 1, Chapter 23), listing on a smaller exchange or tier, reduced-disclosure regimes for small offerings (whose thresholds vary by country), and the SPAC merger, to which we now turn.
+
+## 20.6 Special Purpose Acquisition Companies
+
+### 20.6.1 How a SPAC works
+
+A **special purpose acquisition company (SPAC)** is a shell company that raises cash in an IPO with the purpose of merging with a private operating company, which thereby becomes public. The standard structure, which dominated the market in 2020 and 2021 and has since evolved, has these features:
+
+- **IPO of units.** Investors buy units, typically at 10.00, each consisting of one share and a fraction of a warrant to buy a share at a strike such as 11.50.
+- **Trust account.** The proceeds are placed in a trust account invested in short-term government securities. They can be released only to fund the merger, to redeem public shareholders, or on liquidation.
+- **Sponsor and founder shares.** The sponsor pays a nominal amount (such as 25,000) for *founder shares*, typically equal to 20 percent of the post-IPO shares (25 percent of the public shares). This is the **promote**. The sponsor often also buys *private placement warrants* to fund the IPO costs and working capital.
+- **Deadline.** The SPAC usually has 18 to 24 months to complete a merger, after which it must liquidate and return the trust to public holders (the sponsor's founder shares and warrants then expire worthless).
+- **Vote and redemption right.** Public shareholders can vote on the merger and, *whether they vote for or against it*, can redeem their shares for a pro rata share of the trust (typically about 10.00 plus interest). They keep their warrants.
+- **PIPE and other financing.** To fill the gap left by redemptions and to demonstrate demand, SPACs often arrange a private investment in public equity (PIPE) at 10.00 per share.
+- **Underwriting fees.** A part of the fee (often about 2 percent of the IPO) is paid at the IPO, and a deferred portion (often 3.5 percent) is paid at the merger.
+
+In the merger the target's holders typically receive shares valued at 10.00, and the combined company lists in the SPAC's place. Seen from the target, the SPAC is a way to obtain a *negotiated price*, a faster timeline, and the ability to market a forward-looking story (historically, projections in merger materials faced a different liability regime than in an IPO prospectus, which regulators have since sought to narrow), and possibly more cash via the trust and the PIPE. From the SPAC investor's perspective, the structure offers a free put at the trust value plus a free option (the warrant) on the merged firm.
+
+### 20.6.2 The dilution and the cost of capital
+
+The headline price of 10.00 per share is misleading as a measure of value delivered, because several claims share in the combined company without contributing cash equal to their stake: the sponsor's founder shares, the warrants (public and private), the deferred underwriting fee, and transaction expenses. Moreover, redemptions reduce the trust, so the *cash delivered per share* falls while the *dilution is fixed*. The result is that the effective cost of the cash raised can be very high, especially in a high-redemption deal.
+
+A convenient way to think about it is the **net cash per share**:
+
+```
+Net cash delivered = Trust remaining after redemptions + PIPE − deferred fee − transaction costs
+Shares outstanding after merger = Public non-redeeming + PIPE shares + Founder shares + Target holders' shares
+Net cash per share = Net cash delivered / Shares outstanding after merger
+Value per share ≈ (Target standalone equity value + Net cash − Value of warrants) / Shares outstanding
+```
+
+The warrant value should come from an option model (Volume 1, Chapter 18), with the caveat that standard Black-Scholes ignores the redemption feature, early-exercise and redemption provisions of warrants, and the dilution effect of exercise.
+
+**Example 20.6 – SPAC dilution under different redemption levels.** A SPAC raised 200 million with 20 million public shares at 10.00, founder shares of 5 million (20 percent of the post-IPO total of 25 million shares), 6.67 million public warrants (one-third of a warrant per unit) and 6 million private placement warrants (12.67 million warrants in all, strike 11.50, five-year life). The target's agreed pre-money equity value is 800 million (80 million shares at 10.00). A PIPE of 50 million (5 million shares at 10.00) is arranged. The deferred underwriting fee is 7 million and other transaction costs are 15 million (assume the initial IPO costs were paid from the private placement). The risk-free rate is 4 percent and volatility 40 percent for the warrant valuation.
+
+Net cash and share count by redemption level:
+
+| Redemptions | Public shares left | Trust cash | Net cash (trust + 50 PIPE − 22) | Total shares after merger | Net cash per share |
+|---|---|---|---|---|---|
+| 0% | 20.0M | 200.0 | 228.0 | 110.0M | 2.07 |
+| 50% | 10.0M | 100.0 | 128.0 | 100.0M | 1.28 |
+| 90% | 2.0M | 20.0 | 48.0 | 92.0M | 0.52 |
+
+Total shares = public left + 5 PIPE + 5 founder + 80 target. For 50 percent: 10 + 5 + 5 + 80 = 100 million. Net cash is 100 + 50 − 7 − 15 = 128.
+
+The headline price is 10.00, but only 1.28 of cash per share arrives when half the trust is redeemed. Now estimate value per share. Let the post-merger share value be S, solved with the warrant value w(S) from a Black-Scholes call (K = 11.50, T = 5, r = 4%, σ = 40%):
+
+```
+S = (800 + Net cash − 12.67 × w(S)) / Shares
+```
+
+Iterating, with w(S) from the call formula (for example, w(10) = 3.65, w(9) = 3.0), the solution at 50% redemption is S ≈ 8.91, with w ≈ 2.92 and warrant dilution of 12.67 × 2.92 = 36.9 million. Results:
+
+| Redemptions | Share value S | Warrant value w | Value of warrants (12.67M) | Shortfall vs 10.00 |
+|---|---|---|---|---|
+| 0% | 9.00 | 2.98 | 37.7 | 10.0% |
+| 50% | 8.91 | 2.92 | 36.9 | 10.9% |
+| 90% | 8.82 | 2.86 | 36.2 | 11.8% |
+
+The true value per share is about 11 percent below the 10.00 reference price because the target is valued at 800 (its actual worth, assumed) while shares are issued at 10.00 to the sponsor (5 million shares for nearly nothing), and to warrant holders. The *cost of capital* perspective is clearer still. With 50 percent redemptions, the target receives 128 million of net cash from 150 million of gross cash (100 trust plus 50 PIPE), and gives to the sponsor 5 million founder shares worth 5 × 8.91 = 44.6 million and to warrant holders 36.9 million: total non-cash and cash costs of 22 + 44.6 + 36.9 = 103.5 million, or 69 percent of the 150 million of gross cash raised and 81 percent of the 128 million of net cash received. (Part of the cost of the warrants is compensation for the redemption put that public holders were granted.) By comparison, the IPO in Example 20.5 cost 23 percent of proceeds. High redemptions make the SPAC an expensive source of cash, which is why targets increasingly demand minimum cash conditions, and why sponsors forfeit or restructure part of their promote in difficult deals.
+
+The result is not an indictment of the SPAC route in all conditions: for a target that does not need the cash and primarily values a negotiated price, speed or the ability to market its projections, the *promote and warrants* are a price paid for a service. The point of the analysis is that the 10.00 headline and the 800 million valuation are not comparable to an IPO valuation until the dilution is stated.
+
+### 20.6.3 Incentives: sponsor versus public shareholder
+
+The founder shares are valuable even if the merged company performs poorly, because the sponsor paid almost nothing for them. This creates an incentive to complete *any* deal before the deadline, including deals that destroy value for public shareholders who do not redeem. The public shareholder can protect himself by redeeming, but then he forgoes the upside, so those who remain are exposed to the weakest incentives. This is a textbook agency problem, discussed in Volume 1, Chapter 24.
+
+**Example 20.7 – Sponsor versus public shareholder payoffs.** Using the data of Example 20.6 (5 million founder shares, 6 million private warrants bought for 1.00 each, so the sponsor invests 6.025 million including the 25,000 for founder shares), compute payoffs at different post-merger share prices P. Warrant values w come from the Black-Scholes call (K = 11.50, T = 5, r = 4%, σ = 40%).
+
+| Post-merger price P | Warrant value w | Sponsor value 5P + 6w | Sponsor profit (value − 6.025) | Public non-redeemer profit per unit (P + w/3 − 10) | Public return |
+|---|---|---|---|---|---|
+| 4 | 0.47 | 22.8 | +16.8 | −5.84 | −58% |
+| 6 | 1.26 | 37.5 | +31.5 | −3.58 | −36% |
+| 8 | 2.35 | 54.1 | +48.0 | −1.22 | −12% |
+| 10 | 3.65 | 71.9 | +65.9 | +1.22 | +12% |
+| 12 | 5.12 | 90.7 | +84.7 | +3.71 | +37% |
+| 15 | 7.52 | 120.1 | +114.1 | +7.51 | +75% |
+
+For example at P = 8: sponsor value = 5 × 8 + 6 × 2.35 = 40 + 14.1 = 54.1 million; profit = 54.1 − 6.025 = 48.0 million; the public holder who held a unit (one share plus one-third of a warrant) has 8 + 2.35/3 − 10 = −1.22.
+
+The sponsor profits at every price shown, even at 4.00, a 60 percent decline from the reference price. The sponsor's founder shares alone break even at a price of 6.025 / 5 = 1.21. The public shareholder breaks even only at a price a little below 10.00 (about 9.0, where the warrant's contribution of w/3 makes up for the shortfall). The asymmetry shows why sponsors are accused of favoring completion over quality, and why changes to the structure (partial forfeiture of the promote, performance-based vesting of founder shares at higher prices, and tighter disclosure) have been proposed and adopted in various forms. It also explains why the public shareholder's redemption right, which converts him into a holder of a risk-free bond plus a free warrant, has been so heavily used.
+
+### 20.6.4 The redemption option as a free put
+
+Redemption gives each holder a put option on the stock at the trust value, and the warrants are kept. For a holder who buys a unit at 10.00 and redeems at about 10.00 plus interest, the return is the interest earned on the trust (at a short-term rate of about 4 percent, roughly 6 percent over 18 months) plus the value retained in the warrants, a nearly risk-free profit. Large investors specializing in this strategy were prominent in the SPAC market, and their selling of the shares or redemption depresses the cash delivered. The sponsor's *response* has been to compensate the remaining holders through PIPE inducements, forward purchase agreements or extension fees, each of which adds to dilution. This is why *the stated redemption-free case is the exception, not the rule*, and the planning assumption for an operating company evaluating a SPAC should be a high redemption rate with committed cash (PIPE or forward purchase) to cover the minimum cash it requires.
+
+### 20.6.5 Regulation and the post-boom market
+
+After a surge in 2020 and 2021, the SPAC market contracted sharply, with many mergers completed at prices that later fell well below 10.00 and many SPACs liquidating without a deal. Regulators in the United States responded with an accounting statement in 2021 that led many SPACs to treat their warrants as liabilities measured at fair value, and with rules adopted later that sought to align disclosure and liability for SPAC mergers more closely with those of IPOs, including provisions on projections and on the sponsor's compensation and conflicts. The market continues to evolve, and specific provisions should be checked against current rules. The managerial lesson is general: any structure that gives a party a valuable option at negligible cost produces an investor base that exercises the option, and the cost falls on whoever supplies the cash.

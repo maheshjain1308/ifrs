@@ -317,17 +317,6 @@ Step 5 – Accounting. The $90.7 million is recognized at the acquisition date a
 
 *Managerial implication:* the headline price for the target is "$30 plus a CVR worth up to $5", but its economic price is $31.51, 5 percent higher than the cash-only price; the board should compare offers on the basis of fair value, not maximum value. A bidder who offers a large nominal CVR with a low probability of triggering is offering less than it seems, and a target board that accepts such a CVR should demand covenants on efforts and, ideally, a minimum milestone payment.
 
-### Table 17.3 – Contingent Payment Instruments Compared
-
-| Instrument | Payoff linked to | Holder | Option analogy | Principal conflict |
-|---|---|---|---|---|
-| Earnout | Target's post-closing revenue, EBITDA or milestones | Selling shareholders and managers | Call spread on performance metric | Buyer manipulation of measured results |
-| Event-driven CVR | Regulatory or commercial event | Public target shareholders | Digital option on event | Buyer's efforts after closing |
-| Price-protection CVR | Acquirer's future share price | Target shareholders receiving stock | Put option on acquirer's stock | Acquirer's price manipulation or buybacks |
-| Collar | Acquirer's price between signing and closing | Both | Call spread / put spread on acquirer's stock | Walk-away right and top-up disputes |
-| Seller note | Seller's credit exposure to buyer | Seller | Debt with possible subordination | Subordination to senior lenders |
-| Escrow / holdback | Indemnity claims | Buyer holds funds from seller | Security for contingent claims | Delayed release, disputed claims |
-
 ## 17.6 Representations, Warranties and Risk Allocation
 
 ### The Architecture of Risk Allocation
@@ -345,10 +334,6 @@ Several terms define the economics:
 - **Disclosure schedules.** Exceptions to the reps; the more the seller discloses, the less the reps protect the buyer. Disclosure is how the real negotiation over risk takes place.
 
 Rep-and-warranty provisions determine where the *unknown unknowns* fall. The principle that the party best able to know or control a risk should bear it suggests that reps about the business's historical operations belong with the sellers, while risks created by the buyer's own post-closing actions belong with the buyer.
-
-### Why Escrows and Founder Indemnities Are Costly
-
-For sellers, a traditional 10 percent escrow held for 18 months is a significant economic cost: capital is trapped, earning at most a low return. For private equity sellers, it breaks the logic of a fund that wants to distribute proceeds and wind up. Individual founders face personal exposure and fear litigation against themselves after cashing out. For buyers, the indemnity is only as good as the seller's willingness and ability to pay: a founder family that has spent its proceeds or a fund that has been liquidated is a poor counterparty, and the buyer's recovery against the escrow is limited.
 
 ### Representations and Warranties Insurance
 
@@ -401,22 +386,6 @@ Regulatory approval is usually the most material risk in strategic deals. The ag
 
 Fiduciary duties add a further structure for public-company targets: **no-shop** clauses restrict solicitation of rival bids, but a **fiduciary out** lets the board consider an unsolicited superior proposal. The target's **break-up fee** (a termination fee payable to the first bidder if the target takes a superior offer) compensates the first buyer for costs and lost opportunity but must be small enough not to coerce the board.
 
-### Reading Deal Risk from Prices: Merger Arbitrage
-
-Once a deal is announced, the target's stock trades at a discount (the **spread**) to the offer price. The spread is the market's price for the time value of money and the risk of failure, and it can be decoded into an implied probability of completion. If the market price is P, the offer is O, the price without the deal (unaffected or downside price) is D, and T is time to close, then, ignoring the discount rate:
-
-```
-Implied probability p = (P − D) ÷ (O − D)
-```
-
-Allowing for time value at risk-free rate r, replace O with its present value:
-
-```
-p = (P − D) ÷ (O ÷ (1 + r)^T − D)
-```
-
-The merger arbitrageur, who buys the target and holds to close, earns the spread if the deal completes and suffers the fall to D if it does not. The risk-arbitrage return profile resembles that of writing an out-of-the-money put: a high probability of a small gain and a small probability of a large loss. Because arbitrageurs have capital limits, spreads widen when markets are stressed even if deal probabilities have not changed.
-
 **Example 17.8 – Implied probability of completion.**
 Brandt Systems, a public target, has agreed to be acquired for $50 per share in cash, expected to close in six months. Brandt traded at $38 before the announcement and trades at $48.20 now. The risk-free rate is 4 percent.
 
@@ -446,19 +415,6 @@ Step 3 – RTF contribution (assuming the fee is payable on failure for financin
 Step 4 – Value of certainty to the seller: 394.24 − 388.0 = **$6.24 million**. The seller would therefore accept a price for Bidder B up to $6.24 million ÷ 0.88 ≈ $7.1 million below $400 million (about 1.8 percent less) and be no worse off, ignoring risk aversion. Because sellers are not risk-neutral (a private founder cannot diversify the deal), the true willingness to pay is higher.
 
 *Managerial implication:* the buyer who can offer certainty cheaply, through a strong balance sheet, committed financing, and a credible regulatory path, has a competitive advantage in auctions that is worth several percent of the price. Conversely, a buyer offering certainty it cannot honor has simply sold the sellers an unhedged put.
-
-## 17.8 Putting the Pieces Together
-
-A deal structuring decision can be organized as a sequence of questions:
-
-1. **What is the value gap between the parties and what causes it?** Disagreement on forecasts suggests earnouts or CVRs; different tax positions suggest structure and gross-ups; different risk tolerance suggests insurance and collars.
-2. **What is the tax-efficient legal form?** Estimate the step-up and the seller's incremental cost; find the form that maximizes joint surplus and agree how to split it.
-3. **What consideration mix balances the parties' needs?** Cash gives certainty, stock offers tax deferral and sharing of synergies, contingent consideration bridges disagreements, and each carries its own accounting treatment.
-4. **How will risk be allocated and priced?** Choose between escrow, RWI, specific indemnities and price adjustments.
-5. **What is the plan to close?** Financing, regulatory strategy, conditions and fees.
-6. **What will the financial statements say?** Model goodwill, intangibles, deferred taxes, contingent consideration remeasurement and EPS, and communicate cash earnings.
-
-Two integrating principles apply. First, **value-additive terms should be negotiated jointly, zero-sum terms separately**: a step-up creates surplus for both, but the price per share simply divides it. Second, **every term has a price**: certainty, tax deferral, price protection and indemnification are each purchased with a concession elsewhere. The best structure is the one where each concession is made by the party for which it is cheapest.
 
 ## Case Study: Meridian Orthopedics and Calder Biologics
 

@@ -243,3 +243,320 @@ Perceived value of portfolio = 103.44 − 2.5 × 3.44 = $94.84 million → accep
 ```
 Interpretation: The same manager who rejects each project in isolation would accept the ten as a bundle. Narrow framing costs the firm $100 million of expected value. The practical implication is to require that risky positive-NPV projects be evaluated against the firm's total portfolio (or at least a division-wide portfolio), to give division heads a hurdle rate based on systematic risk rather than total project variance, and to reward decisions by the quality of the process, not by the outcome of individual bets. A firm that punishes every failed project will end up with a pipeline of safe projects.
 
+
+## 12.5 Market Timing, Mispricing and Managerial Myopia
+
+### 12.5.1 Financing as a response to mispricing
+
+Under the first behavioral approach, managers are rational and markets are not. If the share price differs from intrinsic value, the firm can transfer wealth between groups of shareholders through its financing decisions. Stein's 1996 analysis, "Rational Capital Budgeting in an Irrational World," showed that a manager acting for long-term shareholders should base the investment decision on fundamental value (discounting at a rate that reflects risk, as in Volume 1, Chapter 11), but base the financing decision on the market price: issue shares when overpriced, and repurchase when underpriced. The two decisions are separable in principle.
+
+Baker and Wurgler (2002) documented that firms issue equity when their market-to-book ratios are high, and that the effects on capital structure are persistent: a firm's leverage today is correlated with the weighted average of its past market-to-book ratios. They interpreted capital structure as the cumulative result of past market timing, not the outcome of a target leverage ratio, which differs from the trade-off theory in Volume 1 (Chapter 15). Subsequent work has debated the persistence and the interpretation, but the central observation that equity issuance is concentrated after periods of high valuation is well established. Shleifer and Vishny (2003) extended the logic to mergers: overvalued acquirers use their stock as currency to buy less overvalued targets, and gain, at the expense of the long-term holders of the combined firm.
+
+### 12.5.2 Who wins and who loses
+
+The interests of three groups diverge when a firm times the market. Long-term shareholders (those who hold through the correction) gain when the firm issues overpriced shares. New shareholders who buy at the inflated price lose. Short-term holders who sell into the inflated market gain. Hence the meaning of "acting in the shareholders' interest" depends on whose interest is intended, a question the standard model avoids by assuming that price equals value.
+
+**Example 12.5 – Wealth transfers from issuing overvalued shares and repurchasing undervalued ones.**
+
+Brightwater has 100 million shares. Management's analysis puts the intrinsic value at $40 per share (equity value $4,000 million), but the market price is $60.
+
+*Issuance.* The firm issues 10 million new shares at $60, raising $600 million, and holds the cash. Assume intrinsic value of the existing business is unchanged.
+
+Step 1: new intrinsic value per share.
+```
+Intrinsic equity value after = 4,000 + 600 = $4,600 million
+Shares                       = 110 million
+Intrinsic value per share    = 4,600 / 110 = $41.82
+```
+Step 2: gain to existing holders and loss to new holders.
+```
+Gain per old share = 41.82 − 40.00 = $1.82
+Total gain         = 1.82 × 100 = $181.8 million
+New holders: paid 10 × 60 = $600 million for a claim worth 10 × 41.82 = $418.2 million → loss of $181.8 million
+```
+The gain to long-term holders exactly equals the loss to the new buyers.
+
+*Repurchase.* Alternatively, suppose the market price is $30 against an intrinsic value of $40, and the firm buys back 10 million shares.
+
+Step 3: value after repurchase.
+```
+Intrinsic equity value after = 4,000 − 300 = $3,700 million
+Shares                       = 90 million
+Intrinsic value per share    = 3,700 / 90 = $41.11
+Gain per remaining share     = 1.11;  total = 1.11 × 90 = $100.0 million
+Selling holders: received 10 × 30 = $300 million for a claim worth 10 × 40 = $400 million → loss of $100.0 million
+```
+Interpretation: Timing creates no value for the firm as a whole; it redistributes between continuing and exiting or entering shareholders. The gain depends entirely on the manager's judgment that the market is wrong, and managers are prone to overconfidence about mispricing. If the manager believes the stock is overvalued when it is fairly valued, the issuance is merely neutral; but if the manager believes the stock is undervalued and repurchases when it is fairly valued, or worse overvalued, the firm hands value to sellers and destroys liquidity. Managerial discipline requires an explicit valuation range, an estimate of the probability that the manager's valuation is wrong (borrowing the calibration approach in Section 12.7), and a comparison of the transfer against the cost of signaling (issuance usually lowers the price, as Volume 1, Chapter 15 explained under pecking-order theory).
+
+### 12.5.3 Catering and the reaction to sentiment
+
+Baker and Wurgler's catering theory of dividends (2004) proposes that managers initiate or omit dividends depending on whether investors currently put a premium on dividend payers. Similar logic applies to share splits, stock-based acquisitions, names (companies that adopted "dot-com" names around 1999) and, more recently, the framing of strategy in language that is currently fashionable. Catering is not irrational for a manager who maximizes the current price, but it is a form of short-horizon behavior if the price premium is transitory.
+
+### 12.5.4 Myopia and present bias
+
+Managers can have short horizons for rational reasons (compensation, job risk, takeover risk) and for behavioral ones. Stein's 1989 analysis of "efficient capital markets, inefficient firms" showed how managers who care about the current stock price may sacrifice long-term value if investors cannot observe the quality of investment. Graham, Harvey and Rajgopal's survey of chief financial officers found that a large majority were willing to give up economic value, for example by delaying a positive-NPV project, to meet an earnings target.
+
+Behavioral economics adds *present bias*. People weight the near future more heavily than exponential discounting would imply. A convenient model is quasi-hyperbolic (beta-delta) discounting: a payoff at time t ≥ 1 is valued at β × δ^t × payoff, where δ is the long-run discount factor and β < 1 an additional penalty on everything that is not immediate.
+
+**Example 12.6 – Present bias and the R&D that is never funded.**
+
+A division can spend $10 million on R&D now, with a payoff of $14 million in two years. The firm's cost of capital is 10%, so δ = 1/1.10 = 0.9091. The divisional manager's bonus is paid on this year's earnings, and the manager discounts with β = 0.6.
+
+Step 1: value to the firm.
+```
+PV = 14 / 1.10² = 14 / 1.21 = $11.57 million
+NPV = 11.57 − 10 = +$1.57 million → fund
+```
+Step 2: perceived value to the present-biased manager.
+```
+Perceived PV = β × δ² × 14 = 0.6 × 0.8264 × 14 = $6.94 million
+Perceived NPV = 6.94 − 10 = −$3.06 million → reject
+```
+Step 3: the critical β.
+```
+β* = 10 / (0.8264 × 14) = 10 / 11.57 = 0.864
+```
+Only a manager with β above 0.864 would fund the project.
+
+Interpretation: A small positive NPV is fragile against even a moderate present bias. With β = 0.6 the manager rejects the project, and a project with NPV three times larger would also fail if its payoffs were far enough in the future. Bonus structures tied to current accounting earnings reinforce the bias, because R&D is expensed. Companies reduce the problem with multi-year incentive plans, deferred and clawed-back compensation, stock holding requirements, and metrics that reflect long-term investment such as returns on capital and pipeline progress. A board that sees a pattern of delayed, small-NPV, long-payoff projects should suspect present bias before it concludes that opportunities have dried up.
+
+## 12.6 Behavioral Capital Budgeting
+
+### 12.6.1 The planning fallacy and the inside view
+
+Kahneman and Tversky introduced the *planning fallacy*: people underestimate the time, cost and risk of their own projects, even when they know that similar projects have overrun. Their explanation is that planners adopt an *inside view*, constructing a scenario from the specifics of the case, and ignore the *outside view*, the statistical distribution of outcomes in a reference class of similar projects. Lovallo and Kahneman argued that the inside view is a major cause of failure in large undertakings, and Flyvbjerg developed *reference-class forecasting* for infrastructure projects, which adjusts a forecast by the empirical distribution of overruns for comparable projects.
+
+Why does the inside view fail so reliably? Each project has a plan, and a plan describes a path in which things go right. Possible delays are numerous, specific and unforeseeable; individually each is improbable, so the planner does not include any. But the probability that *some* delay occurs is high. Moreover, the person who prepares the plan is typically the advocate who needs approval, and organizations rarely reward the planner who says, "this is probably a bad idea."
+
+### 12.6.2 The outside view in practice
+
+Reference-class forecasting follows three steps:
+
+1. **Identify the reference class.** Choose a set of past projects similar enough in type and scale. For a hub, this might be the firm's own last twenty projects plus industry data.
+2. **Obtain the distribution of the outcome of interest.** For example, the ratio of actual to budgeted cost, delay in months, and actual to forecast cash flow.
+3. **Position the current project within the distribution.** Start from the reference class median and adjust only for specific, documented differences. Set the budget at a chosen percentile (the 70th or 80th) according to the firm's tolerance for overruns.
+
+The result is typically a higher cost, a longer schedule and lower benefits than in the plan, and thus a lower NPV. Whether the project remains attractive after adjustment is exactly the information the board needs.
+
+### 12.6.3 Quantifying the planning fallacy
+
+**Example 12.7 – Inside versus outside view for the distribution hub.**
+
+Brightwater's plan for the hub (a simplified version of the vignette) has the following cash flows, in $ millions, at a 10% discount rate. Costs: $100 at t = 0, $60 at t = 1, $40 at t = 2. Inflows: $52 per year for ten years starting at t = 3 (t = 3 to t = 12).
+
+Step 1: inside-view NPV.
+```
+PV of costs   = 100 + 60/1.10 + 40/1.10² = 100 + 54.55 + 33.06 = $187.60 million
+Annuity factor (10 years, 10%) = 6.1446
+PV at t = 2 of inflows = 52 × 6.1446 = 319.52
+PV at t = 0           = 319.52 / 1.10² = 264.06
+NPV = 264.06 − 187.60 = +$76.46 million
+```
+Step 2: outside-view adjustment from the reference class: cost 30% higher in each period, a one-year delay in the start of inflows (first inflow at t = 4), and realized inflows 10% lower ($46.8 million a year, t = 4 to t = 13).
+```
+PV of costs   = 130 + 78/1.10 + 52/1.10² = 130 + 70.91 + 42.98 = $243.88 million
+PV of inflows = 46.8 × 6.1446 / 1.10³ = 287.57 / 1.3310 = $216.05 million
+NPV = 216.05 − 243.88 = −$27.83 million
+```
+Step 3: which adjustment matters most? Apply each alone.
+
+| Adjustment applied alone | NPV ($ million) | Change from +76.46 |
+|---|---|---|
+| None (inside view) | +76.46 | – |
+| 30% cost overrun only | +20.18 | −56.28 |
+| One-year delay only | +52.45 | −24.01 |
+| 10% lower inflows only | +50.05 | −26.41 |
+| All three (outside view) | −27.83 | −104.29 |
+
+Step 4: break-even inflows in the outside-view case. The annual inflow at which the adjusted NPV is zero is PV of costs divided by the PV factor of a ten-year annuity starting at t = 4:
+```
+Required inflow = 243.88 / (6.1446 / 1.10³) = 243.88 / 4.6165 = $52.83 million per year
+```
+That is more than the $52 million in the original plan.
+
+Interpretation: A project with a comfortable $76 million NPV on the inside view loses $28 million when the base rates of overruns, delays and shortfalls are applied. The cost overrun alone removes about three-quarters of the original NPV. In the adjusted case the project would need $52.83 million of annual inflows, above even the original forecast, merely to break even. The difference between +$76 million and −$28 million is not about the discount rate or the model's mathematics; it comes entirely from assumptions about execution. The cost of this adjustment is small compared with the cost of building a project that destroys value, and the technique forces the sponsor to explain why the project will beat its reference class.
+
+### 12.6.4 Hurdle rates, risk adjustment and optimism
+
+Some firms respond to optimism by raising the hurdle rate. This is a blunt tool. A uniform premium penalizes long-lived projects more than short ones (a point that follows from compounding), penalizes the honest sponsor as much as the optimistic one, and distorts the choice toward quick-payback projects. It also confuses two kinds of risk: systematic risk, which belongs in the discount rate (Volume 1, Chapters 10 and 11), and forecast bias, which belongs in the cash flows. The principled approach is to correct the cash flows for bias, using the outside view, and to keep the discount rate for risk. A related error is to discount optimistic expected cash flows at a high rate and call the result "conservative": it would be better to estimate honest expected cash flows and discount at the cost of capital, using scenario analysis or simulation to display the spread.
+
+### 12.6.5 Post-audits and learning
+
+Hindsight bias undermines learning. After the fact, people overestimate how predictable an outcome was and misremember their earlier forecasts. A post-audit that compares outcomes to the original plan is therefore only useful if the plan was recorded in a form that cannot be revised. Good practice involves a decision record at approval stating the key assumptions, the range of outcomes, the expected value and the criteria that would cause the project to be stopped. Reviews then compare the outcome to the record and identify the causes of variance as skill, luck, or bias.
+
+## 12.7 Debiasing and Decision Processes
+
+### 12.7.1 Individual and organizational debiasing
+
+Fischhoff and subsequent researchers have found that "debiasing" individuals by warning them is only modestly effective. Knowing about overconfidence does not make people less confident. More effective techniques change the decision *process*, so that the environment, not willpower, corrects the bias. Kahneman, Lovallo and Sibony have argued that organizations can review decisions for biases by checklists and structured questions, because it is easier to see bias in others' proposals than in one's own.
+
+### 12.7.2 The premortem
+
+Gary Klein's *premortem* is a simple technique. Before the decision is final, the team imagines that the project has failed completely, one or two years in the future, and each member writes down the reasons for the failure. The shift from "what might go wrong?" to "it did go wrong; why?" uses *prospective hindsight*, which research has shown to increase the number and specificity of reasons generated. It also licenses dissent: in a normal meeting, expressing doubts is disloyal; in a premortem, it is the task.
+
+A well-run premortem has these steps: (1) brief the team on the plan; (2) announce that the project has failed; (3) each person writes failure reasons independently (to avoid conformity); (4) collect and cluster the reasons; (5) assign each major risk an owner, a mitigation and, where possible, a measurable early-warning indicator; (6) revise the plan, or its funding, accordingly. For Brightwater's hub, a premortem might surface reasons such as "automation vendor delivers late," "anchor customer renegotiates volume," and "labor costs for installation rise," each of which could be priced into the base-rate adjustment of Example 12.7 and monitored.
+
+### 12.7.3 Other techniques
+
+- **Red teams and devil's advocates.** Assign a team to argue against the proposal, with access to the same data. The red team's incentives must be genuine; a token dissenter is ineffective, and an assigned dissenter can be dismissed as "just playing a role."
+- **Independent estimates before discussion.** Collect forecasts privately and then discuss. This reduces anchoring on the first speaker or the most senior person and exploits the average of independent estimates, which is usually more accurate than any individual (the wisdom-of-crowds effect, which depends on independence). The Delphi method formalizes this in rounds.
+- **Pre-commitment and kill criteria.** Decide in advance what evidence would cause the project to stop. Ulysses contracts, such as pre-agreed stage gates, remove the temptation to rationalize after the fact.
+- **Decision journals.** Record the decision, the reasoning, the probabilities and the expected outcomes in writing at the time, to defeat hindsight bias.
+- **Separate roles.** Separate the advocate, the evaluator and the decision-maker. The group that proposes the project should not evaluate it.
+- **Base-rate checklists.** Require every proposal to state the reference class, the base rate of success, and why this case is different.
+- **Anonymous voting and rotating dissent.** Reduces the effect of rank and conformity (groupthink, in Janis's terminology).
+- **Stage-gated funding.** Release money in tranches tied to milestones, which converts a single large commitment into a sequence of smaller decisions with options to abandon (Volume 1, Chapter 18, real options). Stage gates directly attack escalation, as each gate is a fresh decision on incremental value.
+
+### 12.7.4 Calibration training
+
+Overconfidence is one of the biases that responds to feedback. Forecasters who receive repeated, quantified feedback on their probability judgments, as in weather forecasting or tournaments of probabilistic forecasts studied by Tetlock, become better calibrated. The measures are simple. For *interval* forecasts, the hit rate (the proportion of outcomes inside the stated interval) should match the stated confidence. For *probability* forecasts, the Brier score, the mean squared difference between the forecast probability and the 0/1 outcome, measures accuracy, with lower being better.
+
+**Example 12.8 – Measuring calibration and correcting intervals.**
+
+Brightwater's treasury team has made twenty forecasts of quarterly cash balances, each with an 80% confidence interval. Eleven of the twenty actuals fell inside the interval.
+
+Step 1: the hit rate.
+```
+Hit rate = 11 / 20 = 55%   (target: 80%)
+```
+Step 2: statistical significance. If the intervals were truly 80%, the number of hits would be Binomial(20, 0.8).
+```
+P(X ≤ 11) = Σ(k = 0 to 11) C(20,k) × 0.8^k × 0.2^(20−k) = 0.0100  (about 1%)
+```
+The team's intervals are too narrow, and the shortfall is unlikely to be chance.
+
+Step 3: implied correction. For a normal error with the team's stated standard deviation σ_s, an 80% interval is ± 1.2816 σ_s. Suppose the actual standard deviation is σ_a, and the observed hit rate of 55% implies the interval covers ± 0.7554 σ_a (the z-value for a central 55% region).
+```
+1.2816 σ_s = 0.7554 σ_a   →   σ_a / σ_s = 1.2816 / 0.7554 = 1.70
+```
+The team should widen its intervals by about 70%.
+
+Step 4: a probability-forecast example. A manager gives probabilities that eight initiatives will meet their milestones:
+
+| Initiative | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| Forecast probability | 0.90 | 0.80 | 0.70 | 0.90 | 0.60 | 0.95 | 0.85 | 0.75 |
+| Outcome (1 = met) | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 1 |
+
+```
+Brier = [(0.1)² + (0.8)² + (0.3)² + (0.9)² + (0.4)² + (0.05)² + (0.85)² + (0.25)²] / 8
+      = (0.01 + 0.64 + 0.09 + 0.81 + 0.16 + 0.0025 + 0.7225 + 0.0625) / 8 = 2.4975 / 8 = 0.312
+Average forecast = 0.806;  realized frequency = 5/8 = 0.625
+Benchmarks: always forecasting 0.5 gives 0.250; always forecasting the base rate 0.625 gives 0.234
+```
+Interpretation: The manager's Brier score of 0.312 is worse than simply forecasting 50-50 or the base rate, and the average forecast of 80.6 percent exceeds the realized frequency of 62.5 percent. This is the signature of overconfidence. With only eight observations the evidence is weak, which is itself a lesson: calibration requires many forecasts and sustained tracking. A firm that records probabilities for every major milestone and scores them every quarter builds the data to correct itself. The interval example shows the remedy when the data are sufficient: widen the ranges and size contingency, hedges and capital buffers to the wider, honest distribution.
+
+## 12.8 Designing the Organization for Better Decisions
+
+### 12.8.1 Incentives and the interaction with bias
+
+Behavioral and agency problems interact. A manager with a career incentive to see a project through will rationalize escalation more readily. A compensation scheme with a payoff only for success encourages optimism, and one with a penalty for any failure encourages loss avoidance. The firm should reward the quality of forecasts as well as results: for example, recognizing managers whose forecasts are accurate, whose projects reach their milestones or are stopped early when evidence warrants. Gains from decision quality are typically larger than gains from marginal changes in incentive strength.
+
+### 12.8.2 Governance and the role of the board
+
+The board is an important debiasing mechanism because its members are not committed to the proposal. Effective boards require a standard decision template (reference class, base rates, premortem results, kill criteria) for major capital commitments, review post-audits with the same seriousness as approvals, and ensure that at least one director with relevant expertise is empowered to challenge the CEO. They also recognize that a charismatic and successful CEO is a risk factor for unchallenged proposals, because past success increases confidence in future judgment, a variant of the overconfidence finding in Section 12.2. A related caution is about overcorrection: a board that rejects every proposal with a positive probability of failure is displaying the same loss aversion it is trying to avoid.
+
+### 12.8.3 A decision-quality checklist
+
+| Question | Bias targeted |
+|---|---|
+| Who prepared the forecast, and what is their incentive? | Optimism; advocacy |
+| What is the reference class, and where does this project fall in its distribution? | Planning fallacy; inside view |
+| What range of outcomes did we estimate, and how often have our past ranges contained the outcome? | Overprecision |
+| Was the walk-away value set before seeing the counterparty's number? | Anchoring |
+| What would the decision be if the money already spent were zero? | Sunk cost |
+| Is this project evaluated alone or as part of a portfolio? | Narrow framing |
+| What did the premortem identify, and who owns each risk? | Confirmation; groupthink |
+| What evidence would cause us to stop, and who decides? | Escalation |
+| Are we financing based on a view of market mispricing, and how confident are we? | Overconfidence in timing |
+| Is the incentive horizon consistent with the investment horizon? | Myopia |
+
+### 12.8.4 Limits of debiasing
+
+Debiasing has costs. Procedures take time; a premortem for every minor decision would paralyze the firm. They should be proportional to the stakes and the irreversibility of the decision. Debiasing may also produce false confidence: a firm that has a checklist may believe it is immune. The disciplined view is that bias is a persistent feature of human judgment and the right response is to build processes, track the record, and keep measuring.
+
+There is a further caution about the evidence. Behavioral finance is sometimes criticized for providing a catalog of biases without a unified theory and for fitting each anomaly with a different explanation. Some findings, especially those from laboratory studies, do not always replicate in professional settings with feedback and incentives, and some documented patterns in market behavior have weakened over time. The conclusions of this chapter should be read in that light: the biases reviewed here are supported by multiple lines of evidence, and the procedures are inexpensive relative to the stakes, but the magnitudes in any given firm should be measured and not assumed.
+
+## Case Study: The Meridian Fuel-Cell Program
+
+*Illustrative case. All names and numbers are fictional.*
+
+Meridian Industrial is a fictional manufacturer of heavy equipment with $4.0 billion of revenue and a reputation for engineering excellence. Four years ago, under the leadership of its CEO, Daniel Okafor, Meridian launched a program to develop hydrogen fuel-cell power units for industrial vehicles. The original business case called for $180 million of development cost over three years, a commercial launch in year 4, and an NPV of $210 million at a 10 percent discount rate. The program was championed by Okafor himself, who had presented it to the board as "the next Meridian." Okafor's confidence was supported by a record: two earlier product launches had succeeded, and the company's stock had risen 70 percent during his tenure.
+
+Approval was swift. The board's capital committee reviewed a forty-page model; it asked about the discount rate and the terminal value but did not ask how long comparable programs had taken or what share of them reached commercial viability. A consultant's market study, commissioned by the program sponsor, projected volumes about double those in a competing analyst's note. Management's explanation was that analysts "did not understand the technology."
+
+The program has now spent $310 million, the launch has slipped two years, and cell durability remains below customer requirements. At the latest review, the program team asked for another $60 million to complete a "final" redesign. They estimated a 30 percent chance that the redesign would meet durability targets, in which case the program's value at launch would be about $190 million in present value. The team also noted that cancellation would require a $310 million write-off and might trigger a covenant discussion with lenders. Okafor argued that "we have come too far to stop" and that the engineering team would lose its best people if the program was canceled. Two directors privately doubted the program but did not speak, since the CEO was respected and the previous review had passed without objection.
+
+A newly appointed director with a background in private equity asked the finance team to compile a reference class. The finance team found that of eleven similar internal and industry development programs, three reached commercial viability within the original budget and schedule, five reached viability with budgets 50 to 120 percent higher and delays of two or more years, and three were abandoned. The median overrun in those that completed was 80 percent. Meridian's own last three major programs had finished with an average cost overrun of 45 percent.
+
+Meridian's CFO has been asked to prepare a recommendation. She is aware that approving the additional $60 million would be consistent with the sponsor's wishes, that rejecting it would be seen as a rebuke of the CEO, and that either decision will be examined in the light of what happens next. She has proposed a premortem, a review by a team that had no role in the original approval, and a stage-gated plan in which the $60 million would be released in three tranches, each tied to a specific durability test. The CEO has objected that this would "signal a lack of confidence" and delay the redesign by two months.
+
+**Discussion Questions**
+
+1. Compute the incremental NPV of the requested $60 million, treating the $310 million as sunk. What probability of success would make the request break even? How might the stage-gated structure change the economics (describe qualitatively, referring to real options)?
+2. Identify the biases visible in the original approval and in the current request. For each, state the evidence in the case and the process change that would address it.
+3. How should the reference-class data be used? Suggest how a board could translate the data into an adjusted forecast for the original business case, and what that adjustment implies about the quality of the original approval.
+4. The CEO objects to the premortem and the staged release. What are the organizational and incentive issues? How would you design the decision rights and incentives so that a director who doubts the program can say so, and so that the CEO is not penalized for stopping?
+
+## Key Takeaways
+
+- Behavioral corporate finance has two branches: rational managers exploiting irrational markets (timing, catering) and biased managers operating in rational markets (overconfidence, anchoring, escalation). Advice differs by branch.
+- Biases are systematic, not random. Because they push in a consistent direction, they can be measured, modeled and corrected, which is the purpose of the quantitative examples in this chapter.
+- Selecting the projects with the highest estimated NPV selects the largest forecast errors. Estimates should be shrunk toward the mean by a coefficient based on the firm's measured forecast error (Example 12.1).
+- Overprecision is the most robust form of overconfidence: stated ranges are too narrow. Calibration tracking and interval widening are practical corrections (Example 12.8).
+- Anchors, including the seller's ask, the budget, or last year's number, pull estimates toward themselves. A walk-away price set in advance is the best defense in negotiations (Example 12.2).
+- Sunk costs are irrelevant to the decision; the incremental NPV decides. Loss framing and self-justification pull managers toward escalation, so decision rights and kill criteria should be set in advance (Example 12.3).
+- Evaluating risky positive-NPV projects one at a time under loss aversion rejects value that the portfolio would accept. Aggregate decisions and judge managers on process as well as outcomes (Example 12.4).
+- Market timing transfers wealth between shareholder groups without creating firm value, and it depends on the manager's judgment that the market is wrong, which is itself subject to overconfidence (Example 12.5).
+- Present bias and earnings-based incentives make small, long-payoff projects fragile. Multi-year incentives and long-horizon metrics reduce myopia (Example 12.6).
+- The planning fallacy is corrected by the outside view: apply the reference class distribution of cost, schedule and benefit outcomes to the project, and put risk in the discount rate and bias in the cash flows (Example 12.7).
+- Process beats exhortation. Premortems, red teams, independent estimates, decision journals, stage gates and separation of advocate and decision-maker make decisions robust to individual bias, at proportionate cost.
+
+## Review Questions
+
+1. Distinguish the two approaches in behavioral corporate finance. Give one financing decision and one investment decision that each approach would analyze.
+2. Define overestimation, overplacement and overprecision. Which is most relevant to valuation, and why?
+3. Explain why selecting the highest-NPV projects produces a winner's curse even when forecasters are unbiased. What does the shrinkage coefficient depend on?
+4. Describe Malmendier and Tate's measure of CEO overconfidence and what it implies for acquisitions and financing.
+5. Explain the anchoring-and-adjustment model. How would you design a negotiation process to limit the effect of the counterparty's opening number?
+6. Why is the sunk-cost fallacy a fallacy? Give two psychological reasons that managers continue to fund failing projects.
+7. What is narrow framing, and how does it cause a loss-averse manager to reject positive-NPV projects? How would you fix it?
+8. Explain Stein's argument that investment decisions should be based on fundamental value while financing decisions respond to market price. What are the risks of acting on a perceived mispricing?
+9. What is the planning fallacy, and how does reference-class forecasting address it? Why is a uniformly higher hurdle rate an inferior fix?
+10. Describe a premortem, why prospective hindsight helps, and how to ensure the exercise yields action rather than ritual.
+
+## Problems
+
+**Problem 12.1.** True project NPVs are distributed N(0, 15²) and forecast errors N(0, 25²), independent. (a) Compute the shrinkage coefficient and the expected true NPV for a project estimated at +$36 million. (b) A team believes its error SD is only 10. What expected true NPV does it infer, and by how much does it overstate?
+
+**Problem 12.2.** A bidder's DCF value for a target is $120 per share, synergies are $15 per share, and the seller anchors at $160. The bidder's bid is 0.4 × 160 + 0.6 × 120. (a) Compute the bid. (b) Compare with the walk-away price and compute the overpayment on 50 million shares. (c) At what anchoring weight does the bid equal the walk-away price?
+
+**Problem 12.3.** A project has $80 million already spent. Completing it costs $25 million more, and there is a 40% chance of a $55 million payoff (present value) and a 60% chance of zero. (a) Compute the incremental NPV. (b) What probability of success breaks even? (c) What is the incremental NPV if the payoff is $70 million?
+
+**Problem 12.4.** A firm has 200 million shares with an intrinsic value of $25 per share and a market price of $35. It issues 20 million shares at $35 and keeps the cash. (a) Compute the new intrinsic value per share. (b) Compute the gain to existing holders and the loss to new holders. Then, in a different scenario with price $20 and intrinsic value $25, the firm repurchases 15 million shares. (c) Compute the intrinsic value per share afterward and the gain to the remaining holders.
+
+**Problem 12.5.** A project costs $50 million at t = 0 and $30 million at t = 1 and returns $28 million per year for seven years starting at t = 2. The discount rate is 12%. (a) Compute the inside-view NPV. (b) Apply a 40% cost overrun, a one-year delay and 15% lower inflows ($23.8 million per year, t = 3 to t = 9). Compute the outside-view NPV. (c) Compute the annual inflow required to break even in the adjusted case.
+
+**Problem 12.6.** A project pays +$40 million with probability 0.5 and −$25 million with probability 0.5. A manager has loss aversion λ = 2. (a) Compute the expected value and the manager's perceived value. (b) If eight independent copies are available, compute the number of successes needed for a positive total and the probability of this. (c) Compute the expected total.
+
+**Problem 12.7.** An R&D project costs $8 million now and returns $12 million in three years. The cost of capital is 9%. A manager has β = 0.7 and δ = 1/1.09. (a) Compute the NPV to the firm. (b) Compute the perceived value to the manager. (c) Compute the critical β.
+
+**Problem 12.8.** A manager makes 25 forecasts of costs, each with a 90% confidence interval. Fifteen actuals fall inside the intervals. (a) Compute the hit rate. (b) Compute the probability of observing 15 or fewer hits if the intervals were truly 90%. (c) By what factor should the intervals be widened, assuming normal errors?
+
+### Answers to Selected Problems
+
+**12.1.** (a) k = 225 / (225 + 625) = 0.2647; expected true NPV = 0.2647 × 36 = $9.53 million. (b) k = 225 / (225 + 100) = 0.6923; inferred = $24.92 million; overstatement = $15.39 million, about 2.6 times the correct value.
+
+**12.2.** (a) 0.4 × 160 + 0.6 × 120 = 64 + 72 = $136. (b) Walk-away = 120 + 15 = $135; overpayment $1 × 50 million = $50 million. (c) w* = (135 − 120) / (160 − 120) = 0.375.
+
+**12.3.** (a) 0.4 × 55 − 25 = 22 − 25 = −$3.0 million (stop). (b) p* = 25 / 55 = 45.5%. (c) 0.4 × 70 − 25 = +$3.0 million (continue).
+
+**12.4.** (a) (200 × 25 + 20 × 35) / 220 = 5,700 / 220 = $25.91. (b) Gain per share 0.909 × 200 = $181.8 million; new holders paid $700 million for a claim worth 20 × 25.909 = $518.2 million, a loss of $181.8 million. (c) (5,000 − 15 × 20) / 185 = 4,700 / 185 = $25.41; gain = 0.405 × 185 = $75.0 million, which equals the sellers' loss of 15 × 5 = $75 million.
+
+**12.5.** (a) PV of costs = 50 + 30/1.12 = 76.79; inflows: 28 × annuity factor for 7 years at 12% (4.5638) = 127.79 at t = 1, so PV = 127.79 / 1.12 = 114.10; NPV ≈ +$37.31 million. (b) Costs: 70 + 42/1.12 = 107.50; inflows 23.8 × 4.5638 = 108.62 at t = 2, PV = 108.62 / 1.12² = 86.59; NPV ≈ −$20.91 million. (c) Required inflow = 107.50 / (4.5638 / 1.2544) = 107.50 / 3.6382 = $29.55 million per year, above the original $28 million.
+
+**12.6.** (a) E = 0.5 × 40 − 0.5 × 25 = +$7.5 million; perceived = 20 − 2 × 12.5 = −$5.0 million (reject). (b) Total = 40k − 25(8 − k) = 65k − 200 > 0 requires k ≥ 4; P(k ≥ 4) = 163/256 = 63.7%. (c) 8 × 7.5 = $60 million.
+
+**12.7.** (a) PV = 12 / 1.09³ = 12 / 1.2950 = $9.27 million; NPV = +$1.27 million. (b) 0.7 × 9.27 = $6.49 million, below the $8 million cost (reject). (c) β* = 8 / 9.27 = 0.863.
+
+**12.8.** (a) 15 / 25 = 60%. (b) P(X ≤ 15 | n = 25, p = 0.9) ≈ 0.00008 (about 8 in 100,000). (c) The 90% interval is ± 1.645σ_s; a 60% hit rate corresponds to ± 0.8416σ_a; ratio 1.645 / 0.8416 = 1.95, so widen intervals by about 95%.

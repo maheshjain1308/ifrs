@@ -17,7 +17,6 @@ The balance sheet is the problem, or the opportunity. At the end of FY2024 Quant
 - **Harold Weiss-Banerjee, Chair of the Capital Committee.** A retired industrial finance executive and the board's most skeptical voice about buybacks: "Show me why paying $55 for something we say is worth $58 is a good use of money, and show me why it is better than giving the cash back evenly."
 - **Edmund Quantrell, Chair Emeritus.** His family trust has a tax basis of $1.50 per share. He dislikes dividends ("a dividend is the government's cut of my cash flow") but also dislikes selling, because the trust's long-term plan is to hold the stock until estate planning events.
 - **Tomas Eklund, Treasurer.** Responsible for liquidity, the rating agency relationship and the execution plan, whichever instrument is chosen.
-- **Lena Ostrowski, Head of Investor Relations.** Has just returned from a three-city roadshow and carries a mixed set of messages from shareholders.
 - **Meridian Capital Partners, activist fund.** On 14 October 2026 Meridian disclosed a 6.0 percent position (12.0 million shares, bought during the second and third quarters at an average of $41 per share). Its letter demands a $2.5 billion buyback within six months, funded by the cash plus $1.0 billion of new debt, and two board seats. It has said it is prepared to nominate directors at the 2027 annual meeting.
 
 ### The decision
@@ -33,7 +32,7 @@ Underneath those four choices sit the questions that Volume 1, Chapter 16 teache
 
 ### The deadline
 
-The committee meets on 9 December. Management's materials are due to directors one week earlier, on 2 December. The tender offer alternative requires filings roughly three weeks before launch, so a launch in the week of 11 January 2027 requires a decision in December. Any program must also avoid trading while the company is in possession of material non-public information; the fiscal-year close on 31 December begins the blackout period, so open-market purchases cannot start before the earnings release on 28 January. Ms. Raman-Duval has about three weeks to produce a recommendation. Her working title for the memo is: "Return the cash, but how, how much, and how fast?"
+The committee meets on 9 December, with materials due to directors on 2 December. Because the fiscal-year close on 31 December begins the blackout, open-market purchases cannot start before the 28 January earnings release, and a tender launched before then would have to be filed in December. Ms. Raman-Duval has about three weeks to produce a recommendation.
 
 ## Industry Context
 
@@ -46,8 +45,6 @@ Quantra operates in the industrial analytics and edge-computing segment, which s
 **Peer payout practice has diverged.** Among the five listed peers shown later in this chapter, one pays no dividend and relies exclusively on repurchases, two combine a low-yield dividend with continuous buybacks, and two pay a high-yield dividend with little or no repurchase. There is no single industry norm. Investors in the sector therefore sort themselves into clienteles: growth-oriented funds that prefer reinvestment and buybacks, income-oriented funds and retail holders that prefer dividends, and event-driven investors who want large, lumpy returns of capital.
 
 **Regulatory and tax environment (stylized).** For the purposes of this case, the jurisdiction taxes qualified dividends received by taxable individuals at 24 percent and long-term capital gains at 20 percent. Tax-exempt institutions and employee retirement plans pay neither tax. Foreign institutions suffer a 15 percent withholding tax on dividends and are not taxed on capital gains. Mutual funds and ETFs are tax-transparent, and their end-investors, a mix of taxable and tax-deferred accounts, face blended effective rates of 12 percent on dividends and 8 percent on gains. The corporate tax rate is 21 percent. The jurisdiction also levies a 1 percent excise tax on the value of net share repurchases, payable by the company, and a special-purpose "offshore cash" regime under which cash moved from foreign subsidiaries to the parent is subject to a 5 percent leakage cost. Dividends and repurchases are both permitted from retained earnings, and the company has ample distributable reserves.
-
-**Market backdrop.** Technology valuations have been volatile in 2026. Quantra has traded between $39.80 and $57.10 over the last twelve months, and the stock has lagged its peer median multiple by about two turns of earnings. Quantra's management believes the discount reflects the market's skepticism about the appliance business and the "lazy balance sheet." Sell-side analysts are divided: some argue that an aggressive buyback would force a re-rating by making the story one of capital discipline; others warn that cyclical earnings argue against any commitment that cannot be reversed.
 
 ## Financial Data
 
@@ -251,9 +248,7 @@ Meridian argues that Quantra is under-levered, that the share price is depressed
 
 5. **Excise tax on repurchases.** The 1 percent excise tax applies to the open-market program and the tender (net of any issuance by the company during the year). It does not apply to dividends. The Treasurer's EPS analysis ignores it. Employees' share issuance of about 1.2 million shares a year (worth roughly $58 million) would offset a small portion of the base.
 
-6. **Price pressure and execution.** Average daily volume is 1.9 million shares. A policy limiting the company to 15 percent of daily volume implies the open-market program would take about 100 trading days, and the Treasurer expects the market to learn about a program of this size quickly, so the assumed 10 percent premium is a judgment, not a measurement.
-
-7. **Intrinsic value.** The CEO's $58 estimate rests on a DCF with 6.5 percent terminal growth in the recurring segment. The sell-side median target is $54; the lowest is $44. Management's confidence interval is wide, and the downside case reflects a prolonged hardware refresh pause.
+6. **Price pressure and execution.** Average daily volume is 1.9 million shares. Limiting the company to 15 percent of daily volume implies the open-market program would take about 100 trading days, so the assumed 10 percent premium is a judgment, not a measurement.
 
 8. **Dividend history.** The company has raised its dividend every year since 2012, by 4 to 6 percent annually, and never cut it. A "dividend growth" investor mandate that two large fund holders follow requires uninterrupted increases.
 
@@ -291,16 +286,12 @@ Answer all ten questions. Use the stylized tax rates and the data in Exhibits 1 
 
 After working through this case, students should be able to:
 
-1. Distinguish genuinely excess cash from cash that is merely idle, by building a cash-need schedule that includes operating minimums, committed acquisitions, contingencies and the frictions of repatriation.
-2. State the Modigliani-Miller payout irrelevance proposition precisely, and identify which assumption each of taxes, information asymmetry, agency conflicts and transaction costs relaxes (Volume 1, Chapter 16).
-3. Compute EPS accretion from a repurchase, derive the break-even price, and explain why accretion is an accounting outcome, not a value outcome.
-4. Quantify the value transfer between selling and continuing shareholders as a function of intrinsic value and repurchase price.
-5. Analyze investor clienteles using after-tax cash computations, and see why a repurchase is usually tax-advantaged for taxable holders while being irrelevant for tax-exempt holders.
-6. Use the Lintner model to calibrate a regular dividend, and use signaling logic to compare special dividends, dividend increases and repurchases by the cost of mimicry.
-7. Design a tender offer, interpret a Dutch auction schedule, and anticipate its effect on ownership and activism.
-8. Recognize agency problems created by EPS-based compensation, and propose neutralization.
-9. Stress-test a payout and a leveraged recapitalization against covenants and rating guardrails.
-10. Write a defensible board-level recommendation that is robust to its largest uncertainty, the true intrinsic value of the shares.
+1. Distinguish genuinely excess cash from idle cash, using a cash-need schedule that includes operating minimums, committed acquisitions, contingencies and repatriation frictions.
+2. State the Modigliani-Miller payout irrelevance proposition and identify which assumption each of taxes, information, agency and transaction costs relaxes (Volume 1, Chapter 16).
+3. Compute EPS accretion, derive the break-even repurchase price, and explain why accretion is an accounting outcome and not a value outcome.
+4. Quantify the value transfer between selling and continuing shareholders, and analyze investor clienteles by after-tax cash.
+5. Calibrate a regular dividend with the Lintner model, compare signals by the cost of mimicry, and design a tender offer.
+6. Recognize the agency problem in EPS-based pay, stress-test a leveraged proposal against covenants, and write a board recommendation that is robust to uncertainty about intrinsic value.
 
 ### Suggested class plan (120 minutes)
 
