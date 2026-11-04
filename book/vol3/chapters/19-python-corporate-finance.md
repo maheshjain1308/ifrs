@@ -12,7 +12,7 @@ The case for Python is not that it replaces Excel. Excel remains the lingua fran
 
 The audience is the MBA student or finance leader who will manage analysts who code, review models, and occasionally want a quick answer without waiting. We teach a small, practical subset of the language and build a reusable toolkit: time-value functions, bond analytics and a project simulation engine.
 
-Every listing in this chapter was executed, and every block labelled "Output" is the genuine printed result, pasted without editing. If you type the listings into a file and run them with the library versions shown in the first listing, you should obtain identical numbers, down to the last digit printed. Where we describe a chart, we also executed the plotting code, and we report what the data in the chart shows, because a book cannot carry a live figure and because the numbers behind a picture are usually more useful than the picture.
+Every listing in this chapter was executed, and every block labelled "Output" is the genuine printed result, pasted without editing. Where we describe a chart, we also executed the plotting code, and we report what the data in the chart shows, because a book cannot carry a live figure.
 
 All companies and projects in this chapter are fictional and illustrative. Numbers are chosen to teach technique, not to describe any real business or market.
 
@@ -124,9 +124,9 @@ shape of grid: (7, 5)
 cumulative undiscounted: [-1000.  -750.  -450.  -100.   300.]
 ```
 
-Read the output carefully, because it contains the whole of capital budgeting in miniature. The undiscounted cash flows sum to 300, so a naive observer would call this a handsome project: pay 1,000, get 1,300 back. The NPV at 10 percent is only 11.37, positive but thin. At 15 percent it is negative 96.93. The NPV falls monotonically as the rate rises, because every inflow is in the future and is discounted more heavily, while the outlay is today and is not discounted at all. The point where the curve crosses zero is the internal rate of return, which lies between 10 and 15 percent. We will compute it exactly shortly; it is 10.48 percent.
+Read the output carefully, because it contains the whole of capital budgeting in miniature. The undiscounted cash flows sum to 300, so a naive observer would call this a handsome project: pay 1,000, get 1,300 back. The NPV at 10 percent is only 11.37, positive but thin. At 15 percent it is negative 96.93. The point where the curve crosses zero is the internal rate of return, which lies between 10 and 15 percent. We will compute it exactly shortly; it is 10.48 percent.
 
-The cumulative undiscounted line shows the project is still 100 short at the end of year three and recovers its outlay during year four. That is the simple payback, 3.25 years. We compute it, and the discounted payback, in the next section.
+The cumulative line shows the project still 100 short after year three, so simple payback is 3.25 years, computed in the next section.
 
 ## pandas Basics: The Project as a Table
 
@@ -184,13 +184,13 @@ Several details are worth studying.
 
 * **The index is the year.** Setting `year` as the index means `df.loc[5, "fcf"]` addresses year five directly, and `df.index.to_series()` lets us use the years in arithmetic. We adjust the final-year free cash flow by adding 200 of salvage and working-capital recovery with `df.loc[5, "fcf"] += 200.0`. In Excel, this is the cell that someone types over a formula and forgets about. In code, the adjustment is a visible, commented line.
 * **Tax uses `.clip(lower=0)`.** In year one, EBIT is 100 (EBITDA of 400 less depreciation of 300), so tax is 25. Had EBIT been negative the clip would have set tax to zero, which is the pandas equivalent of the numpy `maximum` above.
-* **Free cash flow here is EBITDA minus tax minus capital expenditure.** This is a simplification: it ignores working capital changes other than the terminal recovery. In a full model you would add a line for the change in net working capital (Volume 1, Chapter 7).
+* **Free cash flow here** is EBITDA minus tax minus capital expenditure, a simplification that ignores working capital changes other than the terminal recovery.
 * **The cumulative PV column tells the discounted payback story.** It turns positive during year five: after year four the project is still 80.65 short on a present-value basis, and year five's present value of 511.82 more than covers it.
-The NPV is 431.17 at a 9 percent discount rate. The first-year outlay is 1,500, so the project has a profitability index (Volume 1, Chapter 7) of about 1.29: each dollar invested creates 29 cents of value at the margin. A DataFrame also makes sensitivity analysis easy, because you can wrap the whole calculation in a function of the discount rate or the tax rate and call it repeatedly. We do exactly that later in this chapter.
+The NPV is 431.17 at a 9 percent discount rate. The first-year outlay is 1,500, so the project has a profitability index (Volume 1, Chapter 7) of about 1.29: each dollar invested creates 29 cents of value at the margin. A DataFrame also makes sensitivity analysis easy: wrap the calculation in a function of the discount rate and call it repeatedly.
 
 ### The Excel NPV trap
 
-A trap lurks in the spreadsheet function `NPV`. Excel's `=NPV(rate, values)` assumes the first value occurs at the end of period one, not today. To value a stream whose first element is the time-zero outlay, you write `=B5 + NPV(rate, C5:G5)`, or equivalently `=NPV(rate, B5:G5) * (1 + rate)`. Many an analyst has understated an NPV by discounting the initial outlay one year. The Python function we build in the next section takes the convention that element zero is at time zero and avoids the issue, but you must remember that the two conventions differ whenever you compare results.
+A trap lurks in the spreadsheet function `NPV`. Excel's `=NPV(rate, values)` assumes the first value occurs at the end of period one, not today. To value a stream whose first element is the time-zero outlay, you write `=B5 + NPV(rate, C5:G5)`, or equivalently `=NPV(rate, B5:G5) * (1 + rate)`. Many an analyst has understated an NPV by discounting the initial outlay one year. Our Python `npv` puts element zero at time zero, so remember the two conventions differ when you reconcile.
 
 ## Time-Value-of-Money Functions
 
@@ -428,7 +428,7 @@ Interest in year 30      : 571.17
 Balance after 5 years    : 232635.89
 ```
 
-The schedule shows the familiar front-loaded interest pattern. In month one, 1,250.00 of the 1,498.88 payment is interest; only 248.88 reduces principal. By month 120, interest has fallen to 1,048.32, and in the final month interest is only 7.46. Over the life of the 250,000 loan, the borrower pays 289,595.47 in interest, more than the amount borrowed. Interest in year one is 14,916.49 and in year 30 only 571.17. After five years the balance is still 232,635.89, so only 17,364.11 of principal (about 6.9 percent) has been repaid, a fact that surprises many first-time borrowers. The final balance of -0.00 is floating-point residue from the arithmetic and confirms the schedule closes to zero.
+The schedule shows the familiar front-loaded interest pattern. In month one, 1,250.00 of the 1,498.88 payment is interest; only 248.88 reduces principal. By month 120, interest has fallen to 1,048.32, and in the final month interest is only 7.46. Over the life of the 250,000 loan, the borrower pays 289,595.47 in interest, more than the amount borrowed. Interest in year one is 14,916.49 and in year 30 only 571.17. After five years the balance is still 232,635.89, so only 17,364.11 of principal (about 6.9 percent) has been repaid, a fact that surprises many first-time borrowers. The final balance of -0.00 is floating-point residue and confirms the schedule closes to zero.
 
 ## Bond Pricing, Yield, Duration and Convexity
 
@@ -560,7 +560,7 @@ The last table shows how duration behaves. A zero-coupon bond's modified duratio
 
 ### A bond portfolio
 
-Real bond books mix maturities and coupons, so we also need portfolio duration.
+Yields differ by maturity, so a spot curve gives the right discount rate for each cash flow. The listing bootstraps spot rates from par yields (s_n = [(1+y_n)/(1 - y_n·Σ 1/(1+s_k)^k)]^(1/n) - 1), derives one-year forwards, prices a 5-year 6 percent bond off the curve, and then computes the duration of a small bond book.
 
 ```python
 import numpy as np
@@ -628,7 +628,9 @@ Portfolio modified duration   : 5.8814
 Approx. loss for +50bp shift  : USD 4.981 m
 ```
 
-The table above shows portfolio duration. Our 169.397 million book has a modified duration of 5.8814, and a parallel upward shift of 50 basis points would cost roughly 4.981 million. That one number, the dollar value of a rate shock, is what a corporate treasurer with a bond portfolio or a pension fund trustee asks for first.
+The upward-sloping par curve implies a higher spot curve (4.1384 percent at five years) and a still higher forward curve (4.9964 percent for year five). The bond priced off the spot curve is worth 108.5047 and yields 4.0851 percent.
+
+Portfolio duration is the market-value-weighted average of component durations, exact for parallel shifts. Our 169.397 million book has a modified duration of 5.8814, and a parallel upward shift of 50 basis points would cost roughly 4.981 million.
 
 ## Project Simulation: Monte Carlo NPV
 

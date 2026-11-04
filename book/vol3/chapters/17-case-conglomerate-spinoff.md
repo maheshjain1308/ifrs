@@ -482,7 +482,7 @@ Ranking. On expected value, the sale ranks first, the breakup second at zero res
 
 Strategic effect. The sale and spin both simplify the group and focus it on three industrial businesses (the strongest case for a focused RemainCo). The carve-out leaves complexity unchanged. The breakup eliminates the diversified structure but destroys the shared services and purchasing scale and increases leverage constraints.
 
-Marlowe alternative. Marlowe earns 6.0 percent against 9.5 percent and destroys $76 million of economic profit a year. The restructuring plan in Exhibit L would add 150 basis points of margin on revenue of 1,700, or 25.5 of EBITDA; at the 8.0x peer multiple that is 204 of enterprise value, against after-tax plant-closure costs of 90 x 0.75 = 67.5, a net gain of 136.5 or $0.43 per share. That is modest compared with the Hearthstone transactions ($1.57 per share of difference between sale and spin, $3.99 of gain from the sale versus the price) and it does not address the strategic issue. A sale of Marlowe would be defensible only if the tax basis and a buyer's price justify it, and the case supplies neither; students who recommend it must say what data they would need (tax basis, buyer synergies, cyclical timing). The strongest answer treats the Marlowe plan as a complementary action alongside the Hearthstone exit, not a substitute.
+Marlowe alternative. Marlowe earns 6.0 percent against 9.5 percent and destroys $76 million of economic profit a year. The restructuring plan in Exhibit L would add 150 basis points of margin on revenue of 1,700, or 25.5 of EBITDA; at the 8.0x peer multiple that is 204 of enterprise value, against after-tax plant-closure costs of 90 x 0.75 = 67.5, a net gain of 136.5 or $0.43 per share. That is modest compared with the Hearthstone transactions ($1.57 per share of difference between sale and spin, $3.89 of gain from the sale versus the price) and it does not address the strategic issue. A sale of Marlowe would be defensible only if the tax basis and a buyer's price justify it, and the case supplies neither; students who recommend it must say what data they would need (tax basis, buyer synergies, cyclical timing). The strongest answer treats the Marlowe plan as a complementary action alongside the Hearthstone exit, not a substitute.
 
 Combinations. A dual-track process (negotiate with Larkin while preparing the registration for a spin-off) captures the sale's higher price while retaining a credible fallback and negotiating leverage. Preparing the spin in parallel costs perhaps $20 to $30 million of preparatory work (not in the case) but reduces the 30 percent failure risk's cost. A staged plan (exit Hearthstone in 2027, revisit Halvard in 2028 when Halvard has a longer record as a stand-alone division, and set a ROIC target for Marlowe) is a natural sequence.
 
@@ -497,3 +497,58 @@ The recommendation memo appears at the end of this note. The key elements are su
 5. Engage Redwater in a private meeting with the lead independent director before announcement; share the analysis (not the Larkin terms); offer a board refreshment discussion for two new independent directors with portfolio-management experience, chosen with the family trust's input; do not concede the four-way breakup.
 6. Define the evidence that would change the recommendation: Larkin's price below $2,230 million (7.15x), the existence of a bid for Halvard or Kestrel at a significant premium, evidence that peer conglomerates are rerating after separations, or a tax opinion that the spin would be taxable.
 
+Verification printout (Python replica of the central results):
+
+```
+SOTP EV 15445.0, corp 1260.8, equity 9474.2, per share 29.61, premium 39.0%
+EV discount 18.7%, equity discount 28.1%
+Breakup equity 7678.1, per share 23.99, gain 12.6%
+Spin equity 7561.1 per share 23.63; Sale net cash 2428.75 equity 8062.3 per share 25.19
+Prob-weighted sale 24.60
+Carve-out net cash 723.69 equity 7471.7 per share 23.35
+```
+
+### Sensitivity discussion
+
+Three parameters drive every answer. The first is the residual discount on whatever remains diversified. Each percentage point is worth about $0.37 per share in the spin and sale cases (11,754 x 1 percent / 320), so a 6-point error in the assumed 12 percent moves the value by $2.20, as much as the entire expected gain from the spin. Students should be pushed to ask what evidence supports 12 percent. The three listed diversified peers suggest that investors apply a discount that is not much lower than Sterling's own; a RemainCo that still holds three businesses is hardly a pure play. A skeptical analyst might prefer 15 to 18 percent, in which case the spin yields only +3 to +6 percent and the carve-out is near break-even.
+
+The second is the multiple. Every one-turn change in the peer multiples moves the four-way breakup by roughly $4 per share, and the selected ranges span more than three turns for Halvard. Breakup value is the most multiple-sensitive of the options because it depends on all four multiples, while the sale depends on a negotiated price that is partly fixed.
+
+The third is tax. The sale loses $1.33 per share to tax (426.25 / 320), while the spin loses nothing if the tests are met. The sale still wins because Larkin's price carries a synergy premium and avoids stand-alone costs; if the price fell below 7.15x EBITDA, the spin would win. Tax basis is the key hidden variable: had Hearthstone's basis been 500 rather than 1,150, the tax would be 0.25 x (2,855 - 500) = 588.75, an additional 162.5, which would reduce the sale's value by $0.51 per share and narrow its advantage over the spin from $1.57 to $1.06.
+
+Two further sensitivities deserve a mention. Debt: the value of the lost tax shield depends on the 25 percent rate and on the assumption that debt is permanent; with a lower rate the cost of deleveraging in a breakup is smaller. Timing: a 12-month spin has a longer exposure to market and execution risk than a six-month sale, and any comparison should compare prices on a like-for-like timing basis rather than discounting only the options.
+
+### Common student errors
+
+1. Applying the SOTP without capitalizing corporate costs, which overstates value by $1,261 million ($3.94 per share).
+2. Using the enterprise-value discount where Redwater quotes an equity discount (or the reverse), and then failing to reconcile 18.7 percent with 28.1 percent.
+3. Forgetting to subtract the after-tax pension deficit or treating it as already in net debt.
+4. Applying the 8.5x multiple to Hearthstone's EBITDA of 312 for SpinCo, ignoring the $20 million of extra stand-alone cost and $14 million of lost purchasing benefit.
+5. Treating the Larkin price of 2,900 as cash to shareholders without deducting 45 of costs and 426 of tax, or ignoring that the spin is tax-free.
+6. Allocating debt to the spin by the share of revenue or EBITDA without checking RemainCo's leverage and the agency trigger.
+7. Taking the carve-out proceeds at the IPO price without the IPO discount, fees and tax, or valuing the retained stake without any holding-company discount.
+8. Concluding that the breakup is best because its headline value is high, without testing the residual discount.
+9. Ranking by value per share alone, without probability weighting, timing or the fallback.
+10. Recommending the sale of Marlowe without noting that the data to value it (tax basis, buyer synergies) are missing.
+11. Discounting the options by the cost of equity for the time to completion while leaving the status-quo price undiscounted.
+
+### Alternative defensible answers
+
+*Spin first.* A board that is skeptical of Larkin's financing or that wants to retain the option of a later merger of Hearthstone may prefer the spin; it is defensible if the price offered falls below 7.15x EBITDA or if Larkin demands conditions on the Ohio plant that erode the price. *Full breakup, staged.* If students argue that a focused Kestrel and Halvard would not need the head office and that the residual discount would be lower than 12 percent, a staged breakup beginning with Hearthstone and ending with Marlowe is defensible, provided the student shows that the 6.7 percent break-even residual discount is credible. *Hold and fix.* Relying on the Marlowe plan, a tighter capital-allocation policy and a lower corporate cost base may deliver more than a separation if the market is already pricing Sterling in line with diversified peers (8.0x versus 7.6x). The student must then explain how to defend against the proxy contest. *Sale of Marlowe.* Defensible with data. *Other structures.* A tax-efficient sale of Hearthstone through a merger with a listed consumer company in which Sterling shareholders retain a majority (a "Reverse Morris Trust" type of structure, which in this stylized regime would be tax-free if the tests are met), or a sale of Halvard to an aerospace buyer at a strategic premium, are options that the case does not price; strong answers identify them as questions for the banker.
+
+### Recommendation memo to the board
+
+**To:** The Board of Directors, Sterling Allied Industries
+**From:** Victor Aldana, Chief Executive; Priya Natarajan, Chief Financial Officer
+**Date:** 19 November 2026
+**Subject:** Portfolio options and response to Redwater Partners
+
+**Recommendation.** We recommend that the board (1) authorize exclusive negotiations with Larkin Brands for the sale of Hearthstone Living at not less than $2,900 million enterprise value, with a price floor equal to 7.15x EBITDA ($2,230 million), a reverse break fee, and the supply agreement for the Ohio plant settled before signing; (2) authorize preparation of a tax-free spin-off of Hearthstone as a fallback, with a decision point at signing or 31 January 2027; (3) defer any four-way breakup and any Halvard carve-out; (4) approve the Marlowe improvement program with an ROIC milestone and a $20 million corporate cost reduction target; and (5) authorize the lead independent director to meet Redwater before the announcement.
+
+**Why.** On our analysis, a sum of the parts at median peer multiples gives $29.61 per share, 39 percent above the market price. That value is not available to shareholders. After stand-alone costs ($95 million a year), lost purchasing benefits ($38 million), separation costs, and the loss of debt capacity, a four-way breakup would deliver at most $23.99 per share (+12.6 percent), and would deliver less than the current price if the post-breakup companies trade at a discount of 7 percent or more to peers. A Hearthstone spin-off is worth $23.63 (+10.9 percent) in our base case, but it depends on the remaining group's discount falling from an implied 19 percent to 12 percent, and it pushes leverage toward the agency trigger. The sale to Larkin is worth $25.19 (+18.3 percent) if completed, $24.60 on a probability-weighted basis with the spin as fallback, reduces leverage from 3.0x to 1.6x, and can be announced before the nomination window. Its principal costs are $426 million of tax and a 9.5 percent reduction in EPS before any use of the proceeds.
+
+**Risks.** Buyer financing, antitrust and the Ohio contract; the residual discount on the three-division group; the tax test on the Brightline business (10 percent probability, $0.70 per share if it fails); execution risk at Marlowe; and the danger that an announced sale that fails weakens our position with Redwater.
+
+**What we would do differently if facts change.** If Larkin's price falls below $2,230 million, or if financing is not committed, we would proceed with the spin. If an unsolicited bidder emerges for Halvard or Kestrel at a significant premium, we would revisit the portfolio plan as a whole. If peer separations show that residual discounts fall to under 8 percent, we would accelerate a fuller separation.
+
+**Response to Redwater.** We recommend telling Redwater that the board takes its analysis seriously, agrees that Hearthstone does not belong in the portfolio and that the discount is a legitimate concern, and has a concrete plan with milestones; and that the board does not agree that a four-way breakup would deliver 35 percent, and is prepared to show the reconciliation. We recommend offering to discuss board refreshment and incentive design (relative total shareholder return and ROIC measured after a capital-allocation hurdle). We do not recommend sharing the identity or terms of the Larkin proposal.
