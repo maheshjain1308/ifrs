@@ -1,0 +1,39 @@
+@page{size:6in 9in;margin:0.8in 0.78in 0.85in 0.78in}
+@page{@bottom-center{content:counter(page);font-size:9pt;color:#777}}
+body{font-family:'DejaVu Serif',Georgia,serif;font-size:11.4pt;line-height:1.64;color:#1c1c1c;text-align:justify;hyphens:auto}
+h1{font-family:'DejaVu Sans',Arial,sans-serif;color:#7a3e12;font-size:21pt;line-height:1.2;margin:0 0 14pt;padding-bottom:6pt;border-bottom:3px solid #7a3e12;page-break-before:always;page-break-after:avoid}
+h1.part{font-size:30pt;text-align:center;border:none;margin-top:2.6in;page-break-before:always}
+h1.unnumbered{font-size:20pt}
+h2{font-family:'DejaVu Sans',Arial,sans-serif;color:#7a3e12;font-size:13.5pt;margin:20pt 0 6pt;page-break-after:avoid}
+h3{font-family:'DejaVu Sans',Arial,sans-serif;color:#9b5a22;font-size:11.2pt;margin:14pt 0 4pt;page-break-after:avoid}
+h4{font-family:'DejaVu Sans',Arial,sans-serif;color:#9b5a22;font-size:10.3pt;margin:10pt 0 3pt;page-break-after:avoid}
+p{margin:0 0 7pt;orphans:3;widows:3}
+table{border-collapse:collapse;width:100%;margin:9pt 0 12pt;font-family:'DejaVu Sans',Arial,sans-serif;font-size:8.4pt;line-height:1.35;text-align:left}
+tr{page-break-inside:avoid}
+th{background:#8b4f1f;color:#fff;padding:3.5pt 5pt;text-align:left}
+td{border-bottom:0.5pt solid #cdb89c;padding:3pt 5pt;vertical-align:top}
+tr:nth-child(even) td{background:#faf4ea}
+blockquote{background:#fbf1dc;border-left:4px solid #c9923a;margin:10pt 0;padding:6pt 11pt;font-size:9.8pt;page-break-inside:avoid}
+blockquote p{margin:0 0 4pt}
+ul,ol{margin:0 0 8pt;padding-left:18pt}li{margin-bottom:3pt}
+code{font-family:'DejaVu Sans Mono',monospace;font-size:8.6pt;background:#f0ebe3;padding:0 2pt}
+pre{font-family:'DejaVu Sans Mono',monospace;font-size:8pt;background:#f4efe6;padding:6pt;white-space:pre-wrap;page-break-inside:avoid}
+hr{border:0;border-top:1px solid #ccc;margin:12pt 0}
+.pagebreak{page-break-after:always;height:0}
+.titlepage{text-align:center;margin-top:1.7in}
+.tp-title{font-size:34pt!important;border:none!important;page-break-before:avoid!important;margin:10pt 0!important}
+.tp-sub{font-size:13pt;font-family:'DejaVu Sans',Arial,sans-serif;color:#444}
+.tp-small{font-size:9pt;letter-spacing:2pt;color:#8b4f1f;font-family:'DejaVu Sans',Arial,sans-serif}
+.tp-rule{border-top:3px solid #c9923a;width:40%;margin:26pt auto}
+.toc{font-family:'DejaVu Sans',Arial,sans-serif;font-size:8.6pt;line-height:1.35}
+.toc h1{page-break-before:avoid}
+.toc div{display:flex;justify-content:space-between;padding:1pt 0}
+.toc-part{font-weight:bold;color:#7a3e12;margin-top:8pt;font-size:9.4pt}
+.toc-ch .pg,.toc-part .pg{padding-left:6pt}
+
+.mk{font-size:1px;color:#fff;line-height:0}
+
+.index{font-family:'DejaVu Sans',Arial,sans-serif;font-size:8.6pt;column-count:2;column-gap:22pt;text-align:left;line-height:1.35}
+.idx{display:flex;justify-content:space-between;gap:6pt;break-inside:avoid;padding:0.5pt 0}
+.ipg{color:#555;text-align:right}
+.idx-letter{column-span:none;margin:9pt 0 2pt;color:#7a3e12;font-size:10pt;break-after:avoid}
