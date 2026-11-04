@@ -41,7 +41,7 @@ Your task is to produce the valuation and structuring analysis that the CFO will
 | Indicator | Value |
 |---|---:|
 | Real GDP growth (forecast average) | 2.5% to 3.0% |
-| Inflation, 2026 (forecast 2027: 8.0%) | 8.4% |
+| Inflation, latest 12 months (forecast 2027: 8.0%) | 7.6% |
 | Central bank policy rate | 11.0% |
 | Ten-year government bond yield (MRD) | 12.0% |
 | Sovereign rating | B+ |
@@ -96,8 +96,8 @@ Net debt is MRD 900 million (debt of 1,100 less cash of 200). Operating net work
 
 | MRD millions | 2026E | 2027E | 2028E | 2029E | 2030E | 2031E | 2032E | 2033E |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Inflation (MRD) | 8.0% (est.) | 8.0% | 7.0% | 6.0% | 5.5% | 5.0% | 5.0% | 5.0% |
-| Real growth | 3.0% (est.) | 3.0% | 3.0% | 2.5% | 2.5% | 2.0% | 2.0% | 2.0% |
+| Inflation (MRD) | n/a | 8.0% | 7.0% | 6.0% | 5.5% | 5.0% | 5.0% | 5.0% |
+| Real growth | n/a | 3.0% | 3.0% | 2.5% | 2.5% | 2.0% | 2.0% | 2.0% |
 | Revenue | 6,000.0 | 6,674.4 | 7,355.9 | 7,992.1 | 8,642.5 | 9,256.1 | 9,913.3 | 10,617.1 |
 | EBITDA margin | 16.0% | 16.0% | 16.3% | 16.6% | 17.0% | 17.3% | 17.5% | 17.5% |
 | EBITDA | 960.0 | 1,067.9 | 1,199.0 | 1,326.7 | 1,469.2 | 1,601.3 | 1,734.8 | 1,858.0 |
@@ -107,3 +107,77 @@ Net debt is MRD 900 million (debt of 1,100 less cash of 200). Operating net work
 | Capex (5.5% of revenue) |  | 367.1 | 404.6 | 439.6 | 475.3 | 509.1 | 545.2 | 583.9 |
 | Increase in NWC (16% of revenue change) |  | 107.9 | 109.0 | 101.8 | 104.1 | 98.2 | 105.1 | 112.6 |
 | Free cash flow to firm |  | 392.7 | 459.2 | 533.6 | 608.9 | 686.3 | 749.9 | 803.1 |
+
+Notes to Table 4. Revenue growth is (1 + real growth) x (1 + inflation) - 1, so 2027E nominal growth is 11.2 percent (3.0 percent real). The tax rate is 25 percent of EBIT (the target is valued debt-free). Cash flows are shown at year-end for simplicity. Long-run assumptions beyond 2033E: inflation 5.0 percent, real growth 2.0 percent, so nominal terminal growth of 7.1 percent in dinars; US inflation 2.5 percent. Zephyr's own estimate of dollar-equivalent terminal growth is therefore 1.02 x 1.025 - 1 = 4.55 percent. Management's original forecast had EBITDA margins reaching 19 percent; Zephyr has capped them at 17.5 percent.
+
+### Table 5: Cost of capital inputs
+
+| Input | Value | Source or comment |
+|---|---:|---|
+| US risk-free rate | 4.3% | Ten-year Treasury |
+| Mature-market equity risk premium | 5.0% | Zephyr house view |
+| Beta (unlevered peer drivetrain suppliers, relevered at target structure) | 1.10 | Peer regression |
+| Zephyr home-market WACC | 8.3% | Ke 9.8%, Kd 6.5% pre-tax, D/V 30%, tax 25% |
+| Marenta sovereign USD spread | 4.6% | Table 1 |
+| Equity-to-bond volatility ratio | 1.4 | Table 1 |
+| Rating-based country premium (alternative) | 5.2% | Third-party table, illustrative |
+| Exposure of Tavira's cash flows to Marenta (lambda) | 1.0 for revenue; 0.7 if only domestic-demand share counted | Debated |
+| Target capital structure | D/V 30% | Zephyr policy for acquisitions |
+| Pre-tax cost of USD debt for a Marenta business | 10.5% | Risk-free + sovereign spread + 1.6% corporate spread |
+
+### Table 6: Comparable companies and transactions (illustrative)
+
+| Company | Market | EV / NTM EBITDA | EBITDA margin |
+|---|---|---:|---:|
+| Halvard Drivetrain | Marenta (listed) | 5.1x | 15.8% |
+| Bellaro Brakes | Marenta (listed) | 5.6x | 14.2% |
+| Sundar Auto Components | Neighbouring Tessaly | 5.9x | 16.5% |
+| Nordal Castings | Neighbouring Tessaly | 4.6x | 12.9% |
+| Perun Fasteners | Regional peer | 6.4x | 17.0% |
+| **Median emerging-market peers** | | **5.6x** | **15.8%** |
+| Developed-market commercial-vehicle suppliers (median of six) | | 8.9x | 14.8% |
+| Precedent control transactions, emerging-market auto parts (median of four) | | 6.9x | |
+
+The seller's ask of 7.0 times is almost exactly the precedent control multiple. A buyer should still ask whether those precedents were struck in dinars or dollars, in which year, and with which buyer's discount rate.
+
+### Table 7: Repatriation rules and transaction costs
+
+| Mechanism | Rule |
+|---|---|
+| Dividends | 12% withholding tax; remittances above 60% of current-year net income require central-bank approval, which is granted discretionarily and slowly |
+| Conversion lag | Dinars paid as dividends convert into dollars about six months later, at the then-prevailing rate |
+| Retained (trapped) cash | May be held in dinar deposits at 8.0 percent pre-tax; released in later years |
+| Royalties | 3% of net sales is the maximum rate the tax authority accepts as arm's length; deductible locally; 10% withholding; no remittance cap; paid quarterly |
+| Shareholder loans | Interest deductible; 10% withholding; principal repayment subject to central-bank registration |
+| Sale of shares | No withholding tax; central-bank registration of the original investment guarantees conversion of sale proceeds |
+| Transaction costs | 2% of purchase price |
+
+### Table 8: Country stress events (Zephyr's risk team, illustrative)
+
+| Event | Share of stress events | Loss of value of the investment if the event occurs |
+|---|---:|---:|
+| Currency crisis (sharp devaluation; partly offset by pass-through) | 60% | 35% |
+| Capital controls (remittance freeze of several years, with erosion of trapped cash) | 25% | 50% |
+| Expropriation or forced sale at a discount | 15% | 100% |
+
+Zephyr's risk team converts the sovereign spread into an annual probability that some stress event occurs by dividing the spread by an assumed loss given default on sovereign debt of 60 percent. A joint-venture structure with a well-connected local partner is judged to reduce losses from capital controls (to 30 percent, because the partner can net dividends against its own local-currency needs) and from expropriation (to 50 percent, because a partner with political relationships and a share of the equity is a less attractive target), but not those from currency crisis.
+
+### Table 9: The two structures on offer
+
+| | Structure 1: acquire 100% | Structure 2: 49% joint venture with Orvane |
+|---|---|---|
+| Price | EV MRD 6,720m (7.0x); equity MRD 5,820m; net debt MRD 900m | Opening: 6.6x EV for 49% (about MRD 3,105m, $155.2m); Zephyr to negotiate |
+| Control | Full; consolidation; integration synergies | Joint control; board seats; vetoes on budget, dividends and related-party deals; Orvane keeps management |
+| Synergies | Procurement and cross-selling: 0.6% of revenue in 2028, 1.2% from 2029 (pre-tax); one-off integration cost of MRD 150m in 2027 | Zephyr assumed to capture half of its 49 percent share of the synergies |
+| Call option | Not applicable | Zephyr may buy a further 26% at the end of 2029 at 7.0x trailing 2029 EBITDA (about MRD 2,415m, $106.1m at the expected 2029 rate) |
+| Risk profile | Zephyr bears 100% of country risk | Country losses reduced as in Table 8; Zephyr exposed on 49% only |
+| Local partner role | None | Licences, relationships with assemblers and officials, local-currency liquidity |
+
+### Table 10: Financing quotes for $120 million of acquisition funding
+
+| Source | Rate | Comment |
+|---|---:|---|
+| USD loan from Zephyr (guaranteed, placed at Tavira) | 6.8% pre-tax | Principal repayable in USD in 2033 |
+| MRD loan from a Marentan bank | 14.0% pre-tax | MRD 2,400m at spot; bullet in 2033 |
+| One-year forward hedge on MRD | MRD 21.48 per USD | Forward premium implied by the rate differential; hedging beyond two years unavailable |
+

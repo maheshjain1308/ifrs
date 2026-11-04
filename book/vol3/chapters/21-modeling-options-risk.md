@@ -2,9 +2,9 @@
 
 ## Why This Chapter Exists
 
-Volume 1 introduced options (Chapter 18), derivatives (Chapter 19) and risk management with foreign exchange (Chapter 20) at the level of formulas, payoff diagrams and a few worked examples done by hand. That is the right level for learning the logic. It is the wrong level for doing the work. A treasurer deciding how much of a euro receivable to hedge, a risk officer reporting a ten-day value at risk to the board, or an analyst pricing an American-style option in a compensation plan will not use a pocket calculator. They will use a spreadsheet, a short program, or both, and they will be expected to know why the numbers come out as they do.
+Volume 1, Chapters 18 to 20 treated options, derivatives and FX risk management through formulas, payoff diagrams and hand-worked examples. Practitioners work in spreadsheets and short programs, and are expected to know why the numbers come out as they do.
 
-This chapter is a modeling workshop. Every listing is complete, runnable Python (version 3 with NumPy, SciPy and pandas), and every listing was executed while this chapter was written. The printed results beneath each listing are the actual output of that run, pasted in without editing. If you run the code yourself you should obtain identical numbers wherever a random seed is stated; where no random numbers are involved the results are deterministic. Where a listing uses simulated data, the data are synthetic and the companies named are fictional and illustrative. Nothing in this chapter is a statement about any real market, firm or security.
+This chapter is a modeling workshop. Every listing is complete, runnable Python 3 (NumPy, SciPy, pandas) and was executed while the chapter was written; the printed results are the actual output, and seeded random results are reproducible. Simulated data are synthetic, and the companies named are fictional and illustrative.
 
 The chapter proceeds from binomial trees and Black-Scholes (Sections 21.2 to 21.4), through value at risk (21.5 to 21.7), to hedge ratios and an FX hedge comparison (21.8 and 21.9), and ends with backtesting, exercises and solutions (21.10 to 21.13). Each section pairs the code with an Excel formula pattern.
 
@@ -616,7 +616,7 @@ The position is worth $46,952 with delta 0.5794. Delta-normal VaR of $40,275 is 
 
 ### The Cross-Hedging Problem
 
-A perfect hedge needs a traded instrument that moves one-for-one with the exposure. Often none exists. An airline buys jet fuel but futures trade in crude oil or heating oil. A haulage firm buys diesel at pump prices that follow, but are not identical to, a benchmark futures price. The hedger must decide how much of the available instrument to trade and must accept that residual, or basis, risk will remain.
+A perfect hedge needs a traded instrument that moves one-for-one with the exposure, and often none exists: a haulage firm buys diesel at pump prices that follow, but are not identical to, a benchmark futures price. The hedger must choose how much to trade and accept residual basis risk.
 
 Define the change in the spot price of the exposure over a hedging interval as ΔS and the change in the futures price as ΔF. A hedger with a position of one unit of the exposure who holds h units of futures against it has a hedged outcome of ΔS − h·ΔF. The variance of that outcome is minimised at:
 
@@ -625,7 +625,7 @@ h* = Cov(ΔS, ΔF) / Var(ΔF) = ρ · σ_S / σ_F
 Hedge effectiveness = 1 − Var(ΔS − h*·ΔF) / Var(ΔS) = ρ²
 ```
 
-Two facts follow. First, h* is the slope coefficient from an ordinary least squares regression of spot changes on futures changes, so any regression routine produces it, together with a standard error that tells you how well the ratio is estimated. Second, the fraction of risk the hedge removes is the regression R², the squared correlation. A correlation of 0.9 is a hedge that removes 81% of the variance. A correlation of 0.5 removes only 25%, which may not justify the transaction costs and accounting complexity.
+Two facts follow. h* is the slope of an OLS regression of spot changes on futures changes, which also supplies a standard error; and the fraction of variance removed is the regression R², the squared correlation (0.9 removes 81%, 0.5 only 25%).
 
 Volume 1, Chapter 20 showed hedge ratios computed from a handful of numbers. Here the ratio is estimated from three years of weekly data on a fictional haulage company, Calder Haulage Ltd, which burns 2.4 million litres of diesel a year, hedged with a heating-oil futures contract whose standard size is, for this illustration, 100,000 litres. The data are synthetic: futures returns have 3% weekly volatility, and diesel returns are generated as 0.82 times futures returns plus independent noise representing basis risk. The code does not know the true 0.82; it must recover it from data.
 
@@ -697,9 +697,9 @@ Contracts to sell/buy: h* x exposure / contract size = 18.22  -> round to 18
 
 ### Interpretation
 
-The correlation between diesel and futures changes is 0.8109. Multiplying by the ratio of standard deviations (0.02621/0.02799 = 0.9364) gives h* = 0.7592, and the OLS slope is the same number, as it must be. Its standard error is 0.0442, so a 95% confidence interval runs from about 0.67 to 0.85. The true value used to generate the data, 0.82, lies within this interval, comfortably less than two standard errors from the estimate. In real applications the true ratio is not known, and it is this estimation uncertainty that justifies some caution about hedging to the second decimal place.
+The correlation between diesel and futures changes is 0.8109. Multiplying by the ratio of standard deviations (0.02621/0.02799 = 0.9364) gives h* = 0.7592, and the OLS slope is the same number, as it must be. Its standard error is 0.0442, so a 95% confidence interval runs from about 0.67 to 0.85. The true value used to generate the data, 0.82, lies within this interval, comfortably less than two standard errors from the estimate. In practice the true ratio is unknown, which justifies caution about hedging to the second decimal.
 
-The R² of 0.6575 means the optimal hedge removes about two-thirds of the weekly variance. The unhedged variance of the weekly diesel return is 0.000687. A naive one-for-one hedge brings it down to 0.000281, a 59.1% reduction. The optimal ratio cuts it to 0.000235, 65.7%. The one-for-one hedge over-hedges, taking futures positions larger than the spot exposure warrants, and thereby adds futures noise that the diesel price does not share. The remaining 34% of the variance is basis risk, which no choice of h can eliminate in a cross hedge.
+The R² of 0.6575 means the optimal hedge removes about two-thirds of the weekly variance. The unhedged variance of the weekly diesel return is 0.000687. A naive one-for-one hedge brings it down to 0.000281, a 59.1% reduction. The optimal ratio cuts it to 0.000235, 65.7%. The one-for-one hedge over-hedges and adds futures noise the diesel price does not share. The remaining 34% of the variance is basis risk, which no choice of h can eliminate in a cross hedge.
 
 ### Sizing the Position
 
@@ -729,18 +729,7 @@ Ostrava Precision AB (fictional) is a manufacturer whose reporting currency is t
 3. **Currency option.** Buy a six-month euro put, dollar call, struck at 1.0900, paying the premium up front.
 4. **Remain unhedged.**
 
-The forward rate follows from covered interest parity:
-
-```
-F = S · e^((r_USD − r_EUR) · T) = 1.1000 · e^(0.015 · 0.5)
-```
-
-and the option is priced with the Garman-Kohlhagen version of Black-Scholes, in which the foreign interest rate plays the role of the dividend yield:
-
-```
-Put = K·e^(−r_d·T)·N(−d2) − S·e^(−r_f·T)·N(−d1)
-d1  = [ ln(S/K) + (r_d − r_f + σ²/2)·T ] / (σ·√T)
-```
+The forward follows from covered interest parity, F = S·e^((r_USD − r_EUR)·T), and the option is priced with the Garman-Kohlhagen formula, which is Black-Scholes with the foreign rate in the role of the dividend yield (put = K·e^(−r_d·T)·N(−d2) − S·e^(−r_f·T)·N(−d1)).
 
 **Listing 21.8: Forward, money-market, option and unhedged outcomes for a EUR 5 million receivable**
 
