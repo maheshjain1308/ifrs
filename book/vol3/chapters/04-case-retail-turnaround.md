@@ -289,7 +289,7 @@ Additions total 13.0 + 6.5 + 4.1 + 8.2 = 31.8; deductions total 9.0 + 3.5 + 2.2 
 | FY2032-FY2036 (126.0 a year) | 630.0 |  | 390.8 |
 | **Total** | **1,448.0** |  | **1,083.1** |
 
-The computed liability of $1,083.1M reconciles to the balance sheet (122.8 + 960.3). The eight-times rent shortcut gives 8 x 184.0 = $1,472.0M (36 percent above the liability), or 8 x 196.0 = $1,568.0M (45 percent above) if variable rent is included. The shortcut overstates because remaining committed terms average only 6.8 years and the discount rate is 6.2 percent, not the implicit rate behind eight times; it ignores renewals, which the liability excludes too, so neither captures the going-concern obligation.
+The computed liability of $1,083.1M reconciles to the balance sheet (122.8 + 960.3). The eight-times rent shortcut gives 8 x 184.0 = $1,472.0M (36 percent above the liability), or 8 x 196.0 = $1,568.0M (45 percent above) if variable rent is included. The shortcut overstates because remaining committed terms average only 6.8 years and the discount rate is 6.2 percent; neither measure captures renewals, so neither is the going-concern obligation.
 
 **Table 4.11: Lease-adjusted metrics**
 
@@ -418,4 +418,96 @@ The multiples are conservative: they assume a mature, slowly shrinking business 
 | Probabilities 30/40/20/10 (more Upside) | 10.40 | +1.33 |
 | No Distress (others rescaled) | 10.67 | +1.60 |
 
-The Plan probability at which the weighted value equals $9.40 is **47.7 percent**, with the other three scenarios scaled pro rata to 17.4, 21.8 and 13.1 percent. Alternatively, exit multiples about 0.2x higher, or EBITDAR margins about 20 basis points higher in every year of every scenario, or WACC of 9.6 percent, bring the weighted value to the bid. In other words, the bid is inside the noise of the valuation: nothing in the sensitivities says $9.40 is clearly cheap or clearly generous. The valuation is most sensitive to comparable-store sales and margins, which are what the turnaround must actually deliver, and to the terminal multiple, which is a market judgment.
+The Plan probability at which the weighted value equals $9.40 is **47.7 percent**, with the other three scenarios scaled pro rata to 17.4, 21.8 and 13.1 percent. Alternatively, exit multiples about 0.2x higher, or EBITDAR margins about 20 basis points higher in every year of every scenario, or a WACC of about 9.4 percent, bring the weighted value to the bid. In other words, the bid is inside the noise of the valuation: nothing in the sensitivities says $9.40 is clearly cheap or clearly generous. The valuation is most sensitive to comparable-store sales and margins, which are what the turnaround must actually deliver, and to the terminal multiple, which is a market judgment.
+
+#### Question 8: Real estate and a sale-leaseback
+
+**Proceeds.** Appraised value 354.0 less tax on the 116.0 gain (25 percent, 29.0) is 325.0, less transaction costs of 3.0, or 322.0 of cash. Initial rent is 7.0% x 354.0 = 24.8. The 20-year lease with 2.0 percent escalators, discounted at 6.2 percent, creates a lease liability of **326.8**. Cash repays the term loan (265.0) and the revolver (55.0), saving interest of 265.0 x 9.0% + 55.0 x 7.5% = 28.0.
+
+**Value effect (Plan scenario).** After-tax proceeds net of costs of +322.0; present value of the after-tax rent charged in FY2027 to FY2031 of -74.5; present value of the terminal value lost (5.75 x FY2031 rent of 24.8 x 1.02^5 = 27.4, so 157.3, discounted at 0.6209) of -97.7. Net uplift is 322.0 - 74.5 - 97.7 = **$149.8M, or $2.51 per share**. The mechanism: the base valuation capitalizes the property's rent-free earnings at an exit multiple of 5.75x, which values the real estate at about 157 million in FY2031, whereas an investor will pay 14.3 times rent (1 / 7.0%), and today's appraisal is 354.0.
+
+**Table 4.16: Value per share with and without a sale-leaseback**
+
+| Scenario | Base | With sale-leaseback | Uplift |
+|---|---:|---:|---:|
+| Upside | 15.80 | 18.16 | 2.36 |
+| Plan | 11.65 | 14.16 | 2.51 |
+| Muddle-through | 5.01 | 7.65 | 2.65 |
+| Distress | 0.00 (raw (0.12)) | 2.63 | 2.63 (raw 2.75) |
+| **Probability-weighted** | **9.07** | **11.60** | **2.53** |
+
+**Credit effect.** After the transaction, lease-adjusted net debt is 18.0 (finance leases) + 1,083.1 + 326.8 - 64.5 (cash after repaying 320.0 of debt) = 1,363.4, or 4.22x EBITDAR against 4.21x before. Fixed-charge coverage is 322.9 / (184.0 + 24.8 + 3.0) = 1.52x against 1.50x. A sale-leaseback does not de-lever a retailer once leases count as debt; it swaps 9 percent debt for a 7 percent lease. Its benefit is that the market pays more for the property than for the earnings it supports, not that risk falls. Because the simple multiples method hides this value, the pitfall is to value the operating business on EBITDA that includes rent-free real estate, then forget the real estate. A better method values the operating company after market rent on all properties and adds the property portfolio at appraised value, net of tax.
+
+#### Question 9: The sponsor's view
+
+**Sources and uses at $9.40.** Uses: equity purchase 562.1, repayment of term loan and revolver 320.0, fees 30.0, total 912.1. Sources: new term loan 400.0, balance-sheet cash 22.5 (leaving 40.0), sponsor equity 489.6. With a sale-leaseback: uses rise by 3.0 to 915.1; sources add 325.0 of after-tax proceeds, and sponsor equity falls to **167.6**. At close, without a sale-leaseback, lease-adjusted net debt is (400.0 + 18.0 + 1,083.1 - 40.0) = 1,461.1, or 4.52x EBITDAR, and fixed-charge coverage is 322.9 / (184.0 + 42.0 + 1.1) = 1.42x.
+
+**Mechanics.** Each year, interest of 10.5 percent on the opening term loan (plus 1.1 on finance leases) is paid, tax is 25 percent of positive pre-tax income, and remaining free cash flow repays the loan (or draws it if negative). At exit in FY2031, enterprise value is the scenario's exit multiple times EBITDA (less the new rent, in the sale-leaseback case); net debt includes finance leases less 40.0 of cash. Equity is floored at zero.
+
+**Table 4.17: Sponsor returns at $9.40 (five years)**
+
+| Scenario | Probability | No sale-leaseback: exit equity | Multiple | IRR | With sale-leaseback: exit equity | Multiple | IRR |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Upside | 20% | 1,383.7 | 2.83x | 23.1% | 1,097.6 | 6.55x | 45.6% |
+| Plan | 40% | 986.9 | 2.02x | 15.0% | 711.1 | 4.24x | 33.5% |
+| Muddle-through | 25% | 347.1 | 0.71x | (6.6%) | 74.0 | 0.44x | (15.1%) |
+| Distress | 15% | 0.0 | 0.00x | (100%) | 0.0 | 0.00x | (100%) |
+| **Probability-weighted multiple** | | | **1.55x** | **9.1%** | | **3.12x** | **25.5%** |
+
+Sponsor equity is 489.6 without and 167.6 with the sale-leaseback; multiples are exit equity divided by equity invested, and IRR is multiple^(1/5) - 1.
+
+**What the sponsor can pay for a 20 percent IRR.** Without a sale-leaseback, $7.84 on the Plan scenario and $6.31 on the probability-weighted multiple: the bid of $9.40 cannot be justified on operations alone. With a sale-leaseback, **$11.38** on the Plan and **$10.11** on the weighted multiple. The sponsor is evidently counting on the real estate (and probably on deeper cost cuts), and so it can afford to pay more than $9.40. The committee's room is the band of roughly $10.1 to $11.4, and the Calloway demand of $11.00 sits inside it.
+
+**Practical caution.** The sponsor's returns are highly sensitive to the exit multiple and to the Distress probability, and a 15 percent chance of total loss limits how much the sponsor will concede. The committee should expect a final price near the lower end of the band unless a competing bidder appears.
+
+#### Question 10: Recommendation
+
+See the memo below. A strong answer rejects $9.40 as inadequate without refusing to engage, anchors on three independent value indications, uses the sponsor's ability to pay as leverage, and treats the real estate as the key unvalued asset.
+
+### Sensitivity Discussion
+
+**Table 4.18: Ranking of drivers (probability-weighted value per share, base $9.07)**
+
+| Driver and range tested | Low | High | Swing |
+|---|---:|---:|---:|
+| Exit multiples (1.0x lower / 1.0x higher) | 7.46 | 10.77 | 3.31 |
+| EBITDAR margin (100bp lower / higher, every year) | 7.57 | 10.74 | 3.17 |
+| Sale-leaseback (excluded / included) | 9.07 | 11.60 | 2.53 |
+| Comparable-store sales (1 point lower / higher a year) | 7.91 | 10.36 | 2.45 |
+| Scenario probabilities (more Distress / more Upside) | 8.57 | 10.40 | 1.83 |
+| WACC (11.0% / 9.0%) | 8.55 | 9.64 | 1.09 |
+
+Four lessons. First, the largest swings come from operating outcomes and the terminal multiple, and the terminal value alone carries about 70 percent of enterprise value; the discount rate matters least, so debating 9.5 versus 10.5 percent wastes the committee's time. Second, the real estate decision is as large as any operating driver and is entirely within the board's control. Third, the bid sits within one standard swing of the weighted value, so a fairness opinion must be framed as a range. Fourth, probabilities are the least observable inputs, and the break-even Plan probability of 47.7 percent (against a 40 percent assumption) gives a more useful test than any point estimate: ask the committee whether it believes the Plan is more likely than not to work.
+
+### Teaching Tips
+
+Ask half the class to argue as the CEO, using the Plan, and half as the sponsor, using the Distress and Muddle scenarios; then reveal the sale-leaseback returns and ask who is better informed. Insist that every multiple on the board names its numerator and denominator ("EV with leases over EBITDAR" or "EV without leases over EBITDA"). Close by asking whether Ms. Oyelaran's question, "before rent or after rent?", has been answered for every number on the page.
+
+### Common Student Errors
+
+* Using raw EV/EBITDA from IFRS 16 and US GAAP peers without lease adjustment, and taking a tight raw median as confirmation.
+* Adding back stock compensation and all closure and inventory charges, which reproduces management's $175.6M and inflates every multiple-based value.
+* Forgetting to subtract lease liabilities when using a lease-adjusted EV, or subtracting them when valuing after-rent cash flows (a double count).
+* Discounting after-rent cash flows at a lease-inclusive WACC, producing an apparent $14.08.
+* Treating the Plan as the expected case, and ignoring that equity cannot be negative in the Distress case.
+* Valuing the business on EBITDA that includes rent-free owned stores, and never adding the property back.
+* Presenting a sale-leaseback as de-leveraging.
+* Forgetting that the 53rd week, vendor rebates and rent step-ups cut earnings.
+
+### Alternative Defensible Answers
+
+A class may reasonably (a) exclude Willow Row from the peer set (the median becomes about 6.7x on four peers, a higher value); (b) use a WACC of 9 or 11 percent; (c) probability-weight differently, for example giving Plan 30 percent (the Plan probability at which the bid equals weighted value is 47.7 percent, so a lower Plan probability argues for accepting the bid); (d) use a Gordon-growth terminal value of 1 percent, which raises values; (e) accept the bid because the committee is risk-averse about a 15 percent chance of equity loss and a September 2028 refinancing; or (f) reject outright and pursue the Plan with a sale-leaseback executed by management, which gives a weighted value of $11.60 before execution risk. The weakest answers ignore the real estate, or accept management's EBITDA without challenge.
+
+### Special Committee Recommendation Memo
+
+**To:** Special Committee of the Board, Harbor & Pine Holdings, Inc. **From:** Financial adviser. **Date:** 6 November 2026. **Re:** Granite Ridge proposal of $9.40 per share (illustrative).
+
+**Recommendation.** Do not accept $9.40. Engage with Granite Ridge, counter at $11.25, and authorize a 30-day market check. We would recommend a transaction at $10.75 or above if no better proposal emerges.
+
+**Why.** Four indications of value, on normalized EBITDA of $138.9 million (range $131M to $145M, not management's $175.6M): lease-adjusted peer multiples at 5.9x to 6.3x EBITDAR give $9.14 to $11.30; the probability-weighted turnaround value is $9.07 before real estate and $11.60 with a sale-leaseback; the Plan alone is $11.65 and the Upside $15.80; and the sponsor's own returns allow a price of $10.1 to $11.4 if it monetizes the owned property. The bid equals the bottom of the comps range and the probability-weighted value of an operation that has no real estate. It is a 38 percent premium to an unaffected price that equates to 5.5x EBITDAR, but it is not a full price for an asset whose owned property is worth $354.0 million.
+
+**Risks to our view.** Distress carries a 15 percent probability and wipes out equity; the term loan matures in September 2028; aged inventory may require a further $4.65 million; and 41 leases expire within three years. These support a negotiated outcome rather than a fight.
+
+**Diligence.** Verify (1) the property appraisal and a third-party sale-leaseback bid at or below a 7 percent capitalization rate; (2) inventory reserves and fourth-quarter trading; (3) landlord buyout costs for the 28 closure stores and the renewal terms of the 41 expiring leases; and obtain Granite Ridge's committed financing letter.
+
+**Message to Calloway.** The committee shares the view that $9.40 is inadequate, is testing the market, and will rely on evidence, not on any shareholder's number; $11.00 lies inside the range the committee's analysis considers achievable.

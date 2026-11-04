@@ -198,7 +198,7 @@ Table 9. Market and cost-of-capital data
 
 **Exhibit B: Stream offer.** Kestrel Royalty Partners has offered $400.0 million upfront, paid in the same 35/40/25 proportions as capital spending, in exchange for 15 percent of Ridge's payable copper for the life of the mine. Kestrel would pay Ironvale 20 percent of the spot price for each pound delivered. Kestrel's proposal would replace $400 million of the $500 million equity raise. Management describes it as "non-dilutive." The tax advisers believe the forgone revenue would be deductible when delivered.
 
-**Exhibit C: Grade reconciliation.** The Ridge reserve is 0.54 percent copper. A 12-hole infill program completed in October returned an average of 0.49 percent in the northeast corner of the pit, which represents about 15 percent of the first five years of ore. At Karsten, the actual grade has averaged 4 percent below the reserve model over the past six years, and management attributes this to dilution that the model does not capture. The reserve estimate has not been revised.
+**Exhibit C: Grade reconciliation.** The Ridge reserve is 0.54 percent copper. A 12-hole infill program completed in October returned an average of 0.49 percent in the northeast corner of the pit, which represents about 15 percent of the first five years of ore. At Karsten, the actual grade has averaged 4 percent below the reserve model over the past six years, and management attributes this to dilution that the model does not capture. The reserve estimate has not been revised. A further 120 million tonnes of Ridge material at a similar grade is classified as resource, not reserve, because drilling is too wide-spaced to support a mine plan.
 
 **Exhibit D: Fiscal risk.** The government has announced a consultation on a "windfall surcharge" of 20 percent of revenue from price above $4.50 per pound. The consultation paper does not say whether the threshold would be indexed to inflation. Legal advisers say that stabilization terms in Ironvale's mining agreement protect it only against increases in the general royalty, not against new instruments. The proposal is not law and may never be.
 
@@ -237,4 +237,136 @@ Answer all ten questions. State your assumptions. Unless told otherwise, value R
 9. **Optionality.** Value, using a binomial lattice, the option to delay FID by one, two, and three years. Value a staged FID with $180 million of early works. Value the option to extend the mine life by converting the 120 million tonne resource. Discuss the suspension option. State what costs of delay the lattice omits and whether you would act on the result.
 
 10. **Recommendation.** Recommend whether the board should approve FID on 10 December, delay it, or reject it. State the conditions you would attach, the walk-away points, and the monitoring metrics. Draft a board-style memorandum of about 500 words.
+
+
+## Teaching Note and Full Solutions
+
+### Learning Objectives
+
+After working through this case, students should be able to:
+
+1. Assess a mining company's cost position, leverage, and capacity to fund a transformational project.
+2. Distinguish price decks from forward curves, convert real decks to nominal prices, and explain why the choice of deck can change the sign of a project's NPV.
+3. Build a nominal after-tax project model for a mine, with ramp-up, escalation, working capital, depreciation, closure, and a mid-year discounting convention.
+4. Run scenario, break-even, grid, and tornado analyses, and identify which risks matter: price, grade, capital cost, or timing.
+5. Build a net asset value for a producer, interpret P/NAV, and back out the price deck implied by the market.
+6. Compare equity, project debt, and a stream as funding sources, and recognise that "non-dilutive" is not "free."
+7. Price a zero-cost collar with Black's model, simulate debt service cover with and without hedging, and judge whether hedging creates value or only manages financing risk.
+8. Value real options with a binomial lattice, interpret the results with humility about omitted costs of delay, and value a staged commitment.
+9. Weigh quantitative output against execution risk, and write a conditional recommendation.
+
+### Suggested Class Plan (90 minutes)
+
+| Minutes | Activity | Notes |
+|:---|:---|:---|
+| 0-10 | Cold open: poll the class. "Approve, delay, or reject?" Record the votes | Revisit at the end |
+| 10-20 | Position and decks: Questions 1 and 2. Draw the nominal deck against the forward curve on the board | The gap between deck and forward is the hidden story |
+| 20-40 | Project model and scenarios: Questions 3 to 5. Groups compute NPV on one deck each | Insist on mid-year discounting and the closure and working-capital release |
+| 40-55 | NAV and financing: Questions 6 and 7 | Why does the raise look accretive on the low deck? |
+| 55-70 | Hedging: Question 8. Walk through a collar price and the DSCR table | Hedging is a financing tool here, not a source of value |
+| 70-82 | Optionality: Question 9; ask students to attack the lattice | What is missing from the lattice? |
+| 82-90 | Recommendation and revisit the poll: Question 10 | Where did the class end up? |
+
+For a 75-minute version, assign Questions 1 to 3 as pre-work and give the Question 4 model to students as a template. A Python or Excel model of the Ridge cash flows should be available to students in the second hour.
+
+### Solutions
+
+All solutions were recomputed in Python from the data tables. Rounding in the tables is to one decimal. A student's Excel model with rounded intermediate values may differ by a few tenths of a million dollars.
+
+#### Solution 1: Position and performance
+
+| | 2024A | 2025A | 2026E |
+|:---|---:|---:|---:|
+| EBITDA margin | 41.0% | 40.6% | 40.8% |
+| EBITDA per pound sold ($) | 1.65 | 1.67 | 1.72 |
+| Net debt ($ millions) | n/a | 665.0 | 592.5 |
+| Net debt / EBITDA | n/a | 2.44x | 2.04x |
+| EBITDA / interest | 4.18x | 4.19x | 4.60x |
+| EBIT / interest | 2.27x | 2.28x | 2.55x |
+| Free cash flow after interest and tax | 113.7 | 113.7 | 112.5 |
+
+Worked example, 2026: EBITDA 289.9 divided by 168.4 million pounds is $1.72 per pound; net debt is 380.0 + 600.0 - 387.5 = 592.5, and 592.5/289.9 is 2.04 times; free cash flow is 289.9 - 26.4 (tax) - 63.0 (interest) - 88.0 (capex) = 112.5. Margins and per-pound EBITDA have been flat to slightly rising as higher prices have offset cost inflation. Free cash flow has been flat at about $113 million because capital expenditure has risen from $62 to $88 million, of which $28 million in 2026 is Ridge study cost.
+
+Against the peers, Ironvale's C1 cost of $2.15 equals the peer median, its production of 76 thousand tonnes is far below the median of 195, it is more leveraged than the median (2.0 versus 1.4 times), it trades at a slightly higher EV/EBITDA (8.0 versus 7.5 times), and it has no growth in the pipeline. The central observation concerns scale. Ridge's $1,900 million is 82 percent of the company's enterprise value of $2,309 million, 17 times its annual free cash flow, and 3.2 times its market capitalisation of $1,716 million. Internal cash flow cannot fund it. Ironvale is a mid-sized, mid-cost producer undertaking a project that more than doubles its size. The same facts imply that Ridge matters to the share price in both directions, which is why the funding, hedging, and cost-overrun risks deserve more attention than the headline NPV.
+
+#### Solution 2: Price decks and the forward curve
+
+The nominal price for year t equals the real price times 1.025 raised to the power (t - 2026). For the consensus deck, 2030 is 4.25 times 1.025^4 = 4.69; 2040 is 4.25 times 1.025^14 = 6.00; 2045 is 6.79. For the lenders' deck, $3.85 real is $4.25 nominal in 2030 and $5.44 in 2040. The forward curve is 4.30, 4.32, 4.34, 4.36, and 4.38 for 2027 to 2031, then rises at 2 percent a year: 4.47 (2032), 4.56, 4.65, 4.74, 4.84, 4.93, 5.03, 5.13, and 5.23 (2040), reaching 5.78 in 2045. The real-2026 equivalent of the 2031 forward price is 4.38/1.025^5 = $3.87, and of the extrapolated 2040 price is 5.23/1.025^14 = $3.70.
+
+Three conclusions follow. First, the lenders' deck is close to the forward curve in real terms ($3.85 versus $3.87 in 2031), so the lenders are, in effect, pricing at the market. Second, the consensus deck is 10.4 percent above the lenders' deck and about 10 percent above the forward curve in 2031, and the gap is larger (about 15 percent) by 2040, because the deck is flat in real terms while the extrapolated curve falls in real terms. Third, the decks differ because they answer different questions: the forward curve is a price at which cash can be locked in, an analyst's deck is an expectation about the price in a mean-reverting market that will, on average, eventually reflect the cost of marginal supply, and a lender's deck is a conservative case chosen to size debt. A board approving a $1.9 billion project should not rely on any one of them. A reasonable standard is that the project should be approved only if it earns its cost of capital on the market (forward) deck, or if the board is prepared to explain why it believes it knows the price of copper better than the market does. Rafael Quintero's position is therefore defensible: the case for approval should be tested at the forward-based NPV and at the lenders' deck. Management's position is defensible if the board accepts that approving a mine is a bet on mean reversion.
+
+#### Solution 3: Cost of capital
+
+The target debt to capital is 35 percent, so D/E is 0.35/0.65 = 0.5385. Relevered equity beta is 0.92 times (1 + (1 - 0.27) times 0.5385) = 0.92 times 1.3931 = 1.282. Cost of equity is 4.3% + 1.282 times 5.0% = 10.71 percent. The after-tax cost of debt is 7.25% times 0.73 = 5.29 percent. WACC is 0.65 times 10.71% + 0.35 times 5.29% = 6.96% + 1.85% = **8.81 percent, rounded to 8.8 percent**.
+
+The same rate is used for Ridge and Karsten. Karsten is a producing mine in the same jurisdiction, so no operating-risk premium is warranted, and it is a good practice for a NAV to apply one rate consistently so that differences in value reflect cash flows. For Ridge, a premium of 0.5 to 1.0 point during construction would be defensible, because completion, ramp-up, and cost-overrun risks are not diversifiable on a single-mine, single-commodity project, and 9.8 percent produces an NPV of $167.0 million (Solution 5), still positive. Using the cost of the financing package (the 7.25 percent facility rate) would be wrong: debt is not a cheaper source of capital in itself, because it raises the cost of equity. Using the rate on the stream as the discount rate would equally be wrong.
+
+#### Solution 4: Project valuation
+
+For the consensus deck the annual calculation is as follows, shown for 2031. Price is 4.25 times 1.025^5 = $4.81. Copper sold is 65.8 kt times 2.20462 = 145.0 million pounds. Revenue is 145.0 times 4.81 = 697.2. Mining and processing costs are 13.80 times 14.0 million tonnes times 1.025^5 = 218.6; TC/RC and freight are 0.38 times 145.0 times 1.1314 = 62.3; the royalty is 2.5 percent of revenue, or 17.4. EBITDA is 697.2 - 218.6 - 62.3 - 17.4 = 398.9. Depreciation is 1,900.0/14 = 135.7, sustaining capital is 30 times 1.1314 = 33.9, and taxable income is 398.9 - 135.7 - 33.9 = 229.3, so tax is 27 percent, or 61.9. The working-capital increase is 8 percent times (697.2 - 476.2) = 17.7. Free cash flow is 398.9 - 61.9 - 33.9 - 17.7 = 285.4. The discount factor for 2031 (4.5 years) is 1.088^4.5 = 1.4609, which gives a present value of 195.4.
+
+Table S1. Ridge base case: consensus deck ($4.25 real), nominal $ millions, WACC 8.8%
+
+| Year | Price ($/lb) | Copper sold (Mlb) | Revenue | Opex, TC/RC, royalty | EBITDA | Tax | Capex, sustaining, closure | Working capital | FCF | Discount factor | PV |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2027 | 4.36 | 0.0 | 0.0 | -0.0 | 0.0 | -0.0 | -665.0 | -0.0 | -665.0 | 1.0431 | -637.5 |
+| 2028 | 4.47 | 0.0 | 0.0 | -0.0 | 0.0 | -0.0 | -760.0 | -0.0 | -760.0 | 1.1349 | -669.7 |
+| 2029 | 4.58 | 0.0 | 0.0 | -0.0 | 0.0 | -0.0 | -475.0 | -0.0 | -475.0 | 1.2347 | -384.7 |
+| 2030 | 4.69 | 101.5 | 476.2 | -235.7 | 240.4 | -23.8 | -16.6 | -38.1 | 162.0 | 1.3434 | 120.6 |
+| 2031 | 4.81 | 145.0 | 697.2 | -298.4 | 398.9 | -61.9 | -33.9 | -17.7 | 285.4 | 1.4616 | 195.2 |
+| 2032 | 4.93 | 145.0 | 714.7 | -305.8 | 408.9 | -64.4 | -34.8 | -1.4 | 308.3 | 1.5902 | 193.9 |
+| 2033 | 5.05 | 145.0 | 732.5 | -313.5 | 419.1 | -66.9 | -35.7 | -1.4 | 315.1 | 1.7302 | 182.1 |
+| 2034 | 5.18 | 145.0 | 750.9 | -321.3 | 429.6 | -69.5 | -36.6 | -1.5 | 322.1 | 1.8824 | 171.1 |
+| 2035 | 5.31 | 145.0 | 769.6 | -329.3 | 440.3 | -72.1 | -37.5 | -1.5 | 329.2 | 2.0481 | 160.7 |
+| 2036 | 5.44 | 145.0 | 788.9 | -337.6 | 451.3 | -74.8 | -38.4 | -1.5 | 336.5 | 2.2283 | 151.0 |
+| 2037 | 5.58 | 145.0 | 808.6 | -346.0 | 462.6 | -77.6 | -39.4 | -1.6 | 344.0 | 2.4244 | 141.9 |
+| 2038 | 5.72 | 145.0 | 828.8 | -354.7 | 474.1 | -80.5 | -40.3 | -1.6 | 351.7 | 2.6377 | 133.3 |
+| 2039 | 5.86 | 145.0 | 849.5 | -363.5 | 486.0 | -83.4 | -41.4 | -1.7 | 359.6 | 2.8699 | 125.3 |
+| 2040 | 6.01 | 145.0 | 870.8 | -372.6 | 498.1 | -86.4 | -42.4 | -1.7 | 367.6 | 3.1224 | 117.7 |
+| 2041 | 6.16 | 145.0 | 892.5 | -381.9 | 510.6 | -89.5 | -43.4 | -1.7 | 375.9 | 3.3972 | 110.7 |
+| 2042 | 6.31 | 145.0 | 914.8 | -391.5 | 523.4 | -92.6 | -44.5 | -1.8 | 384.4 | 3.6961 | 104.0 |
+| 2043 | 6.47 | 145.0 | 937.7 | -401.3 | 536.4 | -95.9 | -45.6 | -1.8 | 393.1 | 4.0214 | 97.8 |
+| 2044 | 6.63 | 0.0 | 0.0 | -0.0 | 0.0 | 26.5 | -98.0 | 75.0 | 3.5 | 4.3753 | 0.8 |
+| 2045 | 6.79 | 0.0 | 0.0 | -0.0 | 0.0 | 11.3 | -42.0 | 0.0 | -30.7 | 4.7603 | -6.4 |
+| **NPV** |  |  |  |  |  |  |  |  |  |  | **307.8** |
+The NPV is **$307.8 million**. The IRR is 11.17 percent against a WACC of 8.8 percent. The profitability index, the ratio of the present value of inflows after the start of construction to the present value of the capital cost, is (307.8 + 1,691.9)/1,691.9 = 1.18. Cumulative undiscounted cash flow turns positive in 2036, seven years after first production. The project earns a modest spread over its cost of capital. Note three modelling points. Tax is computed at the group level, so depreciation shelters Karsten income immediately; a stand-alone calculation with loss carry-forwards would lower NPV. The 2044 closure cost is deducted for tax, and the release of working capital in 2044 offsets part of it. Revenue in the ramp year, 2030, is $476.2 million, and the 15 percent reduction of operating cost in the ramp year is a simplification, since in practice costs are largely fixed in the first year.
+
+#### Solution 5: Scenarios and sensitivities
+
+Table S2. Ridge scenario results (WACC 8.8%; capital cost $1,900.0m)
+
+| Scenario | NPV | IRR | Profitability index | Cumulative cash payback year |
+|:---|---:|---:|---:|---:|
+| Stress, $3.50 flat real | -289.5 | 6.30% | 0.83 | 2038 |
+| Lenders' deck, $3.85 real | -10.8 | 8.71% | 0.99 | 2037 |
+| Market forward to 2031, then +2% a year | -60.1 | 8.30% | 0.96 | 2037 |
+| Consensus deck, $4.25 real | 307.8 | 11.17% | 1.18 | 2036 |
+| Management deck, $4.60 real | 586.5 | 13.11% | 1.35 | 2035 |
+| Upside, $5.00 real | 905.1 | 15.16% | 1.53 | 2035 |
+The price at which the NPV is zero is **$3.86 per pound in real terms** (nominal $3.96 in 2027, rising 2.5 percent a year), which is 9.1 percent below the consensus deck and almost exactly the lenders' deck. The capital cost at which the NPV is zero is 1.211 times the estimate, or $2,301 million, a 21 percent overrun. Break-even operating cost is $17.61 per tonne, 28 percent above the estimate.
+
+Table S3. Ridge NPV ($ millions): capital cost overrun (rows) against real copper price (columns)
+
+| Capex overrun | $3.50 | $3.85 | $4.25 | $4.60 | $5.00 |
+|:---|---:|---:|---:|---:|---:|
+| +0% ($1,900m) | -289.5 | -10.8 | 307.8 | 586.5 | 905.1 |
+| +10% ($2,090m) | -435.3 | -156.6 | 161.9 | 440.7 | 759.2 |
+| +20% ($2,280m) | -581.2 | -302.4 | 16.1 | 294.9 | 613.4 |
+| +30% ($2,470m) | -727.0 | -448.3 | -129.7 | 149.0 | 467.6 |
+Table S4. One-at-a-time sensitivities around the base NPV of $307.8 million
+
+| Variable (downside / upside) | NPV, downside | NPV, upside | Change, downside | Change, upside |
+|:---|---:|---:|---:|---:|
+| Copper price -/+10% ($3.825 / $4.675) | -30.7 | 646.2 | -338.5 | 338.5 |
+| Head grade 0.49% / 0.59% | 23.4 | 592.2 | -284.4 | 284.4 |
+| Capital cost +/-10% | 161.9 | 453.6 | -145.8 | 145.8 |
+| Discount rate 9.8% / 7.8% | 167.0 | 466.6 | -140.8 | 158.8 |
+| Opex per tonne +/-10% | 196.2 | 419.3 | -111.6 | 111.6 |
+| Recovery 84% / 90% | 201.9 | 413.7 | -105.9 | 105.9 |
+| TC/RC $0.46 / $0.30 | 241.8 | 373.7 | -65.9 | 65.9 |
+The tornado shows that copper price and head grade are equally important, each moving NPV by about $285 to $340 million for a roughly ten percent change. Capital cost and discount rate follow at about $145 million. Grade is the underrated variable, because it is under the company's partial control: a 0.05 percentage-point shortfall (Exhibit C describes both a 0.49 percent infill result and a history of 4 percent reconciliation shortfalls) removes as much value as an 8 percent price fall. Because a head-grade shortfall reduces revenue without reducing the cost of mining, it is operationally leveraged.
+
+A one-year delay in first production, with $60 million of additional owner's costs and operating flows shifted one year later, reduces NPV from $307.8 to $147.3 million, a loss of $160.5 million. The extra owner's costs account for about $45 million of the loss and the deferral of the operating flows for the rest. This is the figure to hold in mind when Exhibit F's six-month permit slippage is discussed.
+
+The windfall surcharge, at 20 percent of revenue from price above $4.50 per pound, is worth nothing on the consensus deck if the threshold is indexed to inflation, since the real price is $4.25. If the threshold is a fixed nominal $4.50, it applies in every producing year, because the consensus deck is above $4.50 in nominal terms from 2030, and it costs $114.4 million of present value after tax, cutting the NPV to $193.4 million. The ambiguity in the consultation paper is therefore worth up to $114 million, more than a ten percent capital cost overrun, and the board paper should mention it as a risk that is binary and political, not as an estimate to be averaged.
 

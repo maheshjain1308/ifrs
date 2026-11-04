@@ -455,3 +455,137 @@ Worked example, Option B, year 2 in the stress case: debt = 5,000 + 250 x 28.35 
 A fully hedged Eurobond has the same debt in sols as Option A, so its gross and net leverage are identical to A's.
 
 **(c) Which covenant binds.** Leverage never approaches the 3.5x maintenance level: the worst net figure is 2.25x (B, stress year 2), and the existing bank covenant of 3.0x at spot passes as well (25 percent headroom). The **interest-cover covenant of 2.5x is the binding test**: in the stress year it is breached by every structure except B, which passes only because its cash interest is low. The 3.0x gross-leverage rating guardrail is closest for B (2.86x, 4.7 percent headroom); with the agency's own stress of dollar debt at 30 percent weaker than spot, B's gross leverage at close would be (5,000 + 250 x 26) / 4,140 = 2.78x, versus 2.42x at spot. The surprising lesson is that hedging reduces covenant headroom in good times and bad: hedged structures carry higher cash interest (a 17.60 percent coupon versus 9.25 percent), so the structure that is safest against devaluation is the one that breaches a cover test first.
+
+### Solution to Question 7: Covenant design
+
+**(a) Critique of Exhibit 9.**
+
+| Element | Problem | Fix |
+|---|---|---|
+| Net debt at spot on the test date | Devaluation raises dollar debt in sols instantly, so the covenant measures the exchange rate, not credit quality; the same shock that cuts EBITDA also inflates debt | Translate at a constant (budget) rate, or hedged debt at the swap rate and unhedged debt at spot |
+| Interest cover of 2.5x | At a 15 to 17 percent cost of sol debt, cover is structurally low: a stable Andara with 2.1x gross leverage already has cover near 3.0x. The test is breached in the stress year by every structure except the unhedged bond | Lower to 2.0x, define on cash interest including net swap payments, add an equity cure |
+| Debt includes derivative mark-to-market | In an appreciation the swap value to Andara turns negative and inflates debt; the test is asymmetric and creates a perverse incentive not to hedge | Exclude mark-to-market except termination amounts due and unpaid |
+| EBITDA as reported | Unrealized translation losses of the sort in FY2025 (ORS 310 million) flow through earnings | Exclude unrealized foreign-exchange gains and losses from EBITDA |
+| Maintenance tests in a Eurobond | International investors usually accept incurrence tests only; a technical default on a maintenance test hands lenders leverage that does not match the risk | Keep one maintenance test (leverage) and make the rest incurrence-based |
+| Cross-acceleration of US$25 million | Andara's ORS bank covenants at 3.0x at spot could trigger a cross-default through a definitional mismatch | Align definitions across all documents; amend the bank covenant to the same constant-currency basis |
+| No transfer-risk protection | A convertibility event can cause a payment default with no credit deterioration | Offshore export-proceeds account and a twelve-month debt-service reserve |
+
+**(b) Proposed package.**
+
+| Covenant | Proposed term | Test result |
+|---|---|---|
+| Maintenance net debt / EBITDA | 3.5x or less at constant currency | Worst case 2.25x (B, stress Y2): EBITDA could fall a further 36 percent before breach |
+| Maintenance interest cover | 2.0x or more, cash basis, two equity cures permitted | Worst stress-year cover 2.28x (fully hedged), 2.36x (C), 2.40x (D), 2.41x (A), 2.59x (B) |
+| Incurrence net debt / EBITDA | 3.0x or less pro forma | Stress-year net leverage of 1.75x to 2.25x leaves ample headroom |
+| Restricted payments | Dividends up to 50 percent of net income; blocked above 2.5x | Current payout is 30 percent |
+| Reserves and structure | Offshore collection account; reserve of US$23 million | Addresses convertibility |
+| Definitions | Exclude unrealized FX and derivative MTM | Removes artificial breaches |
+
+Headroom at the 2.0x interest cover test, as the fraction of EBITDA that can still fall in the stress year (1 - 2.0 / cover): A 17.0 percent, B 22.8 percent, C 15.3 percent, D 16.7 percent, fully hedged 12.3 percent. A fully hedged structure with 12 percent headroom is thin, which is another reason to keep equity-cure rights.
+
+**(c) Currency definitions.** Three options. *Spot* is volatile and confuses currency and credit. A *budget (constant) rate* is stable but lets lenders ignore real devaluation. A *hedged-rate* translation, with swapped debt at the swap rate and unhedged debt at spot, is the most faithful to economic exposure. Illustration, Option B in stress year 2: net debt / EBITDA is 2.25x at spot (28.35), 1.87x at the budget rate (22.05: debt 5,000 + 250 x 22.05 = 10,512.5, net 7,912.5, divided by 4,222), and 2.25x on a hedged basis (nothing is hedged). For Option C on a hedged basis: debt = 5,000 + 3,500 + 75 x 28.35 = 10,626, net 8,026, so 1.90x. The right choice depends on who bears the risk the covenant protects; a constant-rate test with a spot "long-stop" at a higher level (for example 4.5x) is a common compromise.
+
+### Solution to Question 8: Taxes and issuance frictions
+
+**(a) Withholding gross-up.** Without the vehicle, the coupon becomes 9.25 / 0.85 = 10.88 percent. The cash flows of Option B with a flat exchange rate give an all-in cost of **11.22 percent** (against 9.57 percent), an extra 165 basis points. The break-even depreciation versus A falls to (1.1574 / 1.1122) - 1 = **4.06 percent**, below the inflation-differential rate of 5.3 percent. Without the vehicle, the Eurobond is not attractive even to a forecaster who believes PPP. The vehicle (about four months) is therefore a gating item for any dollar option.
+
+**(b) After-tax costs.** The tax rate is 25 percent. Interest in sols is deductible as paid. Swap payments are deductible. For the unhedged bond, the realized FX loss on principal is deductible in year 7 (probable but not certain).
+
+| Structure | Pre-tax cost | After-tax cost | After-tax cost if principal FX loss not deductible |
+|---|---|---|---|
+| A, five-year local | 15.74% | 11.85% | 11.85% |
+| Fully hedged Eurobond | 18.13% | 13.66% | 13.66% |
+| B unhedged in S3 (7.0% a year) | 17.24% | 13.53% | 14.74% |
+| B unhedged in S5 (shock) | 20.08% | 15.88% | 17.32% |
+
+For example, A: coupon of 775 after tax is 581.25; net proceeds 4,960; the IRR of those flows is 11.85 percent. Non-deductibility of the principal loss raises the cost of the unhedged bond by 1.2 points in S3 and 1.4 points in S5. The asymmetry matters: the tax authority shares part of a gain and none, or only part, of an unrealized loss.
+
+**(c) Implications.** All the frictions cut against the dollar bond: a possible 165-point withholding penalty, uncertain deductibility, and a four-month lead time. Each one is invisible in the headline coupon.
+
+### Solution to Question 9: Tenor, refinancing risk and a combined structure
+
+**(a) Refinancing a five-year bullet.** Issue ORS 5,000 million at 15.50 percent for five years, then refinance at year 5 for two more years at 15.50 percent plus a spread shock s, paying a 0.8 percent fee on the refinancing. The all-in cost over seven years is:
+
+| Rate shock at refinancing | All-in cost over seven years |
+|---|---|
+| 0 bp | 15.79% |
+| +200 bp | 16.17% |
+| +400 bp | 16.54% |
+
+The seven-year local bond costs 16.45 percent, so locking tenor is cheaper than rolling only if the refinancing shock exceeds about 350 basis points. Refinancing risk is real but modest in expectation: a 400-point shock on ORS 3,000 million raises annual interest by ORS 120 million.
+
+**(b) Option D.** ORS 2,000 million local five-year at 14.75 percent plus US$150 million Eurobond at 9.75 percent, 60 percent hedged (US$90 million, ORS 1,800 million at 18.14 percent; the quote scales with the coupon: 17.60 + 2 x 0.27 = 18.14). The swap line used is US$90 million, within the US$175 million limit. Unhedged exposure is US$60 million, close to the guideline of Question 4.
+
+| Scenario | S1 | S2 | S3 | S4 | S5 | S6 |
+|---|---|---|---|---|---|---|
+| D all-in cost | 15.67% | 16.63% | 17.17% | 17.33% | 18.04% | 14.66% |
+
+Probability-weighted cost 16.79 percent; standard deviation 0.95 points; credit metrics in Question 6 (stress year 2: gross 2.49x, net 1.87x, cover 2.40x).
+
+**(c) Comparison.**
+
+| Option | Expected cost | Standard deviation | Worst case | Stress Y2 cover | Stress Y2 gross leverage |
+|---|---|---|---|---|---|
+| A, five-year local | 15.74% | 0.00 | 15.74% | 2.41x | 2.37x |
+| A2: ORS 3,000 million 5-year at 14.75% plus ORS 2,000 million 7-year at 16.25% | 15.65% | 0.00 | 15.65% | 2.42x | 2.37x |
+| B, unhedged | 15.75% | 3.55 | 20.08% | 2.59x | 2.86x |
+| C, 70% hedged | 17.40% | 1.07 | 18.80% | 2.36x | 2.52x |
+| D, combination | 16.79% | 0.95 | 18.04% | 2.40x | 2.49x |
+| Fully hedged Eurobond | 18.13% | 0.00 | 18.13% | 2.28x | 2.37x |
+
+Splitting the local issue (A2) is cheaper than the single ORS 5,000 million bond (15.65 versus 15.74 percent) because the first ORS 3,000 million prices at 14.75 percent, and it also reduces the size of the record issue and adds a seven-year piece; the assumption that the 16.25 percent quote applies to a smaller tranche should be confirmed with the bookrunner. Option D costs 1.14 points more than A2 (about ORS 57 million a year on ORS 5,000 million) and Option C costs 1.75 points more (ORS 87.5 million a year). The price of a dollar tranche is therefore about 1 to 2 points of annual cost, paid for diversification and tenor.
+
+### Solution to Question 10: Recommendation
+
+**Recommended structure.** (1) Issue **ORS 5,000 million in the local market in two tranches**: ORS 3,000 million for five years at 14.75 percent and ORS 2,000 million for seven years at 16.25 percent, all-in cost **15.65 percent**, with no dollar debt. (2) Prepare, but do not execute, a dollar financing: complete the treaty-eligible financing vehicle and establish hedging lines so that a hedged Eurobond can be issued from FY2029, when the net dollar operating position approaches neutral (-US$1 million in FY2030, +US$52 million in FY2031), sized to the net long position plus a hedged remainder. (3) Adopt the covenant package of Question 7 for the local bond and the bank amendments. (4) **Fallback:** if the local book is below ORS 3,500 million, switch to Option D.
+
+**Why.** Every comparison favors the local bond: it is the cheapest in expected cost, ties with the unhedged bond on expected cost while carrying no dispersion, has the best stress metrics apart from the unhedged bond's cash cover, carries no convertibility or withholding risk, and does not add to an operating dollar short. The Eurobond's headline coupon is lower, but the all-in cost depends on a depreciation view that history and the forward market contradict. Its advantage is tenor and diversification, which D delivers at a premium of about 1.1 points.
+
+### Sensitivity discussion
+
+**Break-even depreciation** (versus the unhedged Eurobond) depends on the local all-in cost and the dollar all-in cost:
+
+| Local all-in cost | Dollar 9.57% | Dollar 10.57% (+100 bp) | Dollar 11.22% (withholding) |
+|---|---|---|---|
+| 14.99% (ORS 3,000 million) | 4.95% | 4.00% | 3.39% |
+| 15.74% (ORS 5,000 million) | 5.63% | 4.68% | 4.06% |
+| 16.45% (seven-year) | 6.28% | 5.32% | 4.70% |
+| 17.00% | 6.78% | 5.82% | 5.20% |
+
+Each 100 basis points on either rate moves the break-even by about 0.9 points. The hedged cost moves one for one with the swap rate: 16.6, 17.6 and 18.6 percent give all-in costs of 17.11, 18.13 and 19.14 percent. *Probabilities:* shifting 10 points of probability from S6 to S5 raises the expected cost of the unhedged bond from 15.75 to 17.02 percent; a more benign set of weights (20, 30, 20, 10, 5, 15) lowers it to 14.31 percent. The recommendation therefore holds for a wide range of probabilities, but the unhedged bond wins in a benign set; this is what the committee is betting on.
+
+### Common student errors
+
+1. Comparing 9.25 and 15.50 percent as if they were in one currency.
+2. Computing the hedge cost as the swap fee, rather than the interest differential.
+3. Treating the forward rate as a forecast with a premium rather than the price of the hedge.
+4. Forgetting that dollar debt adds to an operating short.
+5. Testing covenants in the base case only, or only on leverage and never on interest cover.
+6. Assuming hedging makes covenants safer in every respect.
+7. Ignoring withholding tax, deductibility and issuance costs.
+8. Ignoring convertibility, and assuming a swap protects against a transfer block.
+
+### Alternative defensible answers
+
+*Option C (70 percent hedged Eurobond)* is defensible if the board values investor diversification and the company wants to build an international franchise before the dollar earnings arrive; it costs 1.75 points more than A2. *Option D* is the natural fallback and arguably the best balance if the local market cannot absorb the size. *Option B* is defensible only with a documented view that depreciation will be below about 5.6 percent a year and a plan for the operating short; the evidence does not support it. *Hedging more with cash collateral* beyond the swap limit is defensible but expensive: US$50 million idle at about 4 percent while borrowing at 15 percent or more.
+
+### Board-style recommendation memorandum
+
+**To:** Board of Directors, Andara Foods S.A.
+**From:** Anneliese Dragomir-Sato, Chief Financial Officer
+**Date:** 8 December 2026
+**Subject:** Financing of Port Calvera and the refinancing of bank debt; recommendation for decision on 14 December
+
+**Recommendation.** Issue ORS 5,000 million of sol-denominated bonds in two tranches (ORS 3,000 million for five years at 14.75 percent and ORS 2,000 million for seven years at 16.25 percent), adopt a revised covenant package, and defer any dollar issue until the plant's dollar earnings arrive in FY2029. If the local book is short, issue Option D (ORS 2,000 million local plus a US$150 million Eurobond, 60 percent hedged).
+
+**The CEO's question.** The 9.25 percent coupon buys dollars and the 15.50 percent buys sols; the gap is the market's estimate of the sol's decline. The dollar bond costs less only if the sol falls by less than about 5.6 percent a year. History has been 7.4 percent, inflation parity implies 5.3 percent, and the forward market prices 7.5 percent.
+
+**The Chairman's question: the worst case.** An unhedged Eurobond in the shock scenario costs 20.1 percent, raises our sol debt by ORS 2,088 million within two years (US$250 million times a move of 8.35) while our EBITDA falls by up to 543 million. The recommended local bond has none of that exposure: its worst case is a refinancing of ORS 3,000 million in 2031 at up to 400 basis points higher, an additional ORS 120 million a year.
+
+**The Audit Chair's question: convertibility.** The local bond is unaffected by transfer restrictions. Any dollar issue will have an offshore export account and a twelve-month reserve of US$23 million.
+
+**Covenants.** Constant-currency net leverage of 3.5x, cash interest cover of 2.0x with an equity cure, exclusion of unrealized FX and derivative mark-to-market, and alignment of the bank covenants. Under the stress case, the tightest cover is 2.42x, a margin of 17 percent against the 2.0x test and a breach of the lenders' draft 2.5x.
+
+**Cost.** All-in cost 15.65 percent; no dispersion. A hedged Eurobond would cost 1.1 to 1.75 points more (ORS 57 to 87 million a year).
+
+**Decision requested.** Approve the local issue, the covenant package and a mandate to the Treasurer to prepare the dollar financing vehicle for FY2029.

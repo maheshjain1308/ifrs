@@ -399,7 +399,7 @@ Error (i) mixes a nominal-dinar cash flow with a dollar discount rate and ignore
 | 2033 | 803.1 | 1075.0 | 645.0 | 645.0 | 839.2 | 22.3 | 8.5 | 13.0 |
 | Total | | | | | | | 72.9 | 106.1 |
 
-Free cash flow exceeds the allowed dividend only in the early years, and by 2033 the cap is the binding constraint: MRD 839.2 million (about $33.3 million at the 2033 rate) of cash is trapped. Assume it is released at the 2033 exit, with 12 percent withholding tax and a six-month lag: its present value is 839.2 x 0.88 / 25.17 x 0.3828 (the discount factor for 7.5 years), or **$11.2 million**. The terminal value ($147.6 million, assuming a share sale with no withholding tax and guaranteed conversion under Table 7) is unaffected.
+Free cash flow exceeds the allowed dividend in every year, so the cap binds throughout and the trapped balance grows each year to MRD 839.2 million (about $33.3 million at the 2033 rate) of cash is trapped. Assume it is released at the 2033 exit, with 12 percent withholding tax and a six-month lag: its present value is 839.2 x 0.88 / 25.17 x 0.3809 (the discount factor for 7.5 years), or **$11.2 million**. The terminal value ($147.6 million, assuming a share sale with no withholding tax and guaranteed conversion under Table 7) is unaffected.
 
 *Step 2: decomposition of the leakage.*
 
@@ -483,8 +483,7 @@ NPV before option                                       (12.6)
 
 ```
 d1 = [ln(74.3 / 106.1) + (0.043 + 0.5 x 0.35^2) x 3] / (0.35 x sqrt(3))
-   = [-0.3564 + 0.3263] / 0.6062 = -0.0722 ... wait: ln(74.3/106.1) = -0.3564 ; (0.043 + 0.06125) x 3 = 0.3128
-   = (-0.3564 + 0.3128) / 0.6062 = -0.0722
+   = [-0.3566 + 0.3128] / 0.6062 = -0.0722
 d2 = -0.0722 - 0.6062 = -0.6784
 N(d1) = 0.4712 ; N(d2) = 0.2487
 C = 74.3 x 0.4712 - 106.1 x e^(-0.043 x 3) x 0.2487 = 35.0 - 106.1 x 0.8790 x 0.2487 = 35.0 - 23.2 = 11.8
@@ -496,3 +495,63 @@ The option is worth about **$11.8 million**; at volatilities of 25 percent and 4
 
 *Step 5: comparison.* The 100 percent acquisition is worth less per dollar of price because Zephyr bears all the country risk (discount rate 13.73 percent against 12.48 percent) and pays a control premium; its synergy advantage ($23.2 million) is smaller than the extra country risk. A joint venture priced at or below about 6.3 times creates value and keeps an option on control. The military contract (Exhibit B) and the Alvara Coach terms (Exhibit A) point the same way: they are protected by Orvane remaining an owner.
 
+#### Question 9: Financing currency
+
+*Step 1: expected dollar cost of the dinar loan.* A dinar loan of MRD 2,400 million (equal to $120 million at spot) at 14.0 percent pays MRD 336 million a year and repays MRD 2,400 million in 2033. Converting each payment at the PPP rate and finding the dollar internal rate of return:
+
+```
+Dollar flows (PPP path): +120.0, -15.9, -15.3, -14.8, -14.3, -14.0, -13.7, -(13.3 + 95.4) = -108.7
+IRR under PPP                          = 10.04%
+IRR under covered-interest-parity path  =  6.16%
+One-year hedged cost: 1.14 / (1.12 / 1.043) - 1 = 6.16%
+USD loan                                =  6.80%
+```
+
+If the dinar depreciates as purchasing-power parity says, the dinar loan costs 10.0 percent in dollars, 3.2 points more than the dollar loan. It is cheaper than the dollar loan (6.2 percent against 6.8 percent) only if the dinar depreciates as fast as the forward curve implies, or if the loan can be hedged, which Table 10 says is not possible beyond two years.
+
+*Step 2: risk.* The dollar loan creates a currency mismatch: dinar EBITDA services dollar debt. In 2028, interest on $120 million at 6.8 percent is $8.16 million, which is MRD 179.5 million at the PPP rate of 22.00 against EBITDA of MRD 1,199.0 million (coverage 6.7 times). After a further 35 percent devaluation the interest is MRD 242.3 million; if EBITDA also falls (volume down 8 percent, margin down 3 points: 7,355.9 x 0.92 x 13.3% = MRD 900.1 million), coverage is **3.7 times**, still comfortable. The principal of $120 million is MRD 3,020 million at the 2033 PPP rate (1.6 times 2033E EBITDA) or MRD 4,078 million after the shock (2.2 times). The dinar loan has coverage of only 3.2 times in 2027 (1,067.9 / 336.0) and 3.6 times in 2028 at 14.0 percent, but it has no currency mismatch.
+
+*Step 3: recommendation.* Fund most of the debt in dollars, because it is cheaper in expectation and coverage remains adequate in the stress case; keep a modest dinar loan sized to Tavira's working capital (which is matched to dinar receivables and inventory). A 75 percent dollar, 25 percent dinar mix ($90 million and MRD 600 million) has a blended expected dollar pre-tax cost of 0.75 x 6.8% + 0.25 x 10.04% = 7.6 percent. Hedge the first twelve to twenty-four months of dividends and royalties with forwards, not the whole stream.
+
+#### Question 10: Recommendation
+
+**Board memorandum.** *To:* Board of Directors, Zephyr Components, Inc. *From:* Lukas Brandt, CFO. *Date:* 10 December 2026. *Re:* Tavira Drive Components.
+
+**Recommendation.** Do not accept the 100 percent acquisition at 7.0 times. Counter with a **49 percent joint venture**, opening at 5.8 times 2026E EBITDA (about $136 million for the stake) and with a ceiling of **6.3 times** (about $151 million with costs), together with a call option on a further 26 percent. If Orvane insists on selling 100 percent, our ceiling is **5.5 times ($264 million)**. Walk away above these prices.
+
+**Why.** (1) Tavira is worth $254 million to $299 million on a standalone, hard-currency basis (5.3 to 6.2 times); the ask of $336 million exceeds the top of that range, and even with synergies and an efficient royalty structure, 100 percent at the ask has an NPV of minus $74 million. At the lowest country premium we consider defensible (12.4 percent), the NPV is still about minus $24 million. (2) Dinar growth of 15 percent over two years is flat in dollars; the business grows in dollars only if it outpaces depreciation. (3) Country risk is the largest driver of value: the expected loss is 3.7 percent a year, there is a 43 percent chance of at least one stress event in seven years, and an expropriation outcome would leave us with almost nothing. (4) A joint venture reduces the value at risk (whole-company value rises 14.7 percent at the JV discount rate), keeps the military contract and the Alvara Coach terms intact, and gives us an option worth about $12 million on control. At 6.3 times it has an NPV of plus $6 million; it breaks even at 6.6 times.
+
+**Conditions.** (a) Registration of the investment with the central bank before closing, and a written confirmation that registered dividends are eligible for conversion; (b) a written waiver from the ministry on the military contract; (c) a five-year supply agreement with Alvara Coach on current terms; (d) a 3 percent royalty and technical-assistance agreement approved by the tax authority; (e) political risk insurance on the investment, with the premium (about $1.4 million a year on $140 million) built into the price; (f) a minimum dividend policy and vetoes on related-party transactions; (g) funding mainly in dollars at the parent, with a modest dinar working-capital line; (h) forward hedges for twelve to twenty-four months of cash flows.
+
+**Triggers to walk away.** The price exceeds 6.3 times for the JV or 5.5 times for 100 percent; Orvane refuses the central-bank registration condition or the Alvara Coach agreement; the sovereign spread rises above 7 percent or reserves fall below 2.5 months of imports before signing; the ministry signals that it will re-tender the military contract.
+
+**Risks.** The dinar may fall faster than purchasing-power parity (a 35 percent devaluation in 2028 cuts value by about 20 percent); we depend on a local partner whose interests diverge from ours; the call option's price is fixed and may not be exercisable if the government objects; insurance does not cover devaluation.
+
+### Sensitivity Discussion
+
+*Price versus country premium.* At the lowest country premium (12.38 percent, lambda 0.7), standalone enterprise value is $299.4 million; with a 3.2 percent leakage and $28.6 million of synergies the value is $318 million against a total cost at the ask of $342.7 million (NPV -$24 million). The ask breaks even only at a WACC of about 11.85 percent, which implies a cost of equity of 13.55 percent and a country premium of about 3.75 percent, below even the 4.6 percent sovereign spread. Justifying the ask requires believing that equity in Marenta is less risky than Marenta's own government bonds.
+
+*Exchange-rate path.* Value falls 18.6 percent if the dinar follows the forward curve, and 19.6 percent after a 35 percent devaluation. The dinar loan, a royalty route or a JV do nothing about a real devaluation of the operating business; only price and cost pass-through and insurance help.
+
+*Joint venture parameters.* The break-even multiple moves from 6.0 to 6.6 as option volatility rises from 25 to 45 percent (the option is worth $6.8 million to $16.9 million). If the call strike were 8.0 times rather than 7.0 times, the option would be worth less; if the partner's expropriation and controls loss reductions were smaller, the JV discount rate would rise toward 13 percent and break-even would fall.
+
+### Common Student Errors
+
+1. **Discounting dinar cash flows at a dollar rate** (or the reverse), the 52 percent error in Question 4.
+2. **Converting at the spot rate for every year** and ignoring depreciation.
+3. **Using a forward rate as a forecast** and comparing it with an inflation-based cash-flow forecast.
+4. **Adding a country premium and subtracting expected loss in cash flows** (double counting), or adding nothing at all.
+5. **Applying the sovereign spread alone to equity**, ignoring that equity is riskier than the bond.
+6. **Treating free cash flow as cash in the parent's hands**; ignoring withholding tax, the cap and the lag.
+7. **Paying the control premium without pricing the synergies,** or pricing synergies at 100 percent with the standalone country premium and no integration cost.
+8. **Forgetting the terminal-value growth consistency check:** dinar growth of 7.1 percent equals dollar growth of 4.55 percent only with depreciation of 2.4 percent.
+9. **Reading the option value from a formula without noting the linked strike**; or ignoring the option altogether.
+10. **Choosing the loan currency by headline rate** (14.0 versus 6.8 percent) without computing the expected dollar cost.
+
+### Alternative Defensible Answers
+
+- **Buy 100 percent at a lower price.** A team that values the synergies and control highly (the military contract, integration, a platform for regional expansion) can defend a bid of up to $264 million for 100 percent, which is 5.5 times, with a seller note and insurance. It must explain why Orvane would accept a price that is 21 percent below its ask.
+- **Walk away.** A risk-averse board could decide that no price compensates for the exposure; this is defensible if Zephyr's hurdle rate for Marenta is higher than ours and if alternative uses of $150 to $260 million in safer markets exist.
+- **A different country premium.** Using the rating-based premium (5.2 percent, WACC 12.86 percent) gives $281 million and a higher ceiling; using lambda 0.7 gives $299 million. Both are defensible provided the team states why.
+- **Cash-flow haircuts instead of a premium.** A team may value the base case at the home-market WACC and apply the scenario weights; it must reach about the same value (Question 7) and must avoid double counting.
+- **Dinar-only valuation.** A team can complete the entire analysis in dinars if it uses a dinar discount rate consistent with the dollar rate, as in Question 3; it must still translate the result into dollars to compare with the price.
