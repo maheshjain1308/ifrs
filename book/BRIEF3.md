@@ -1,0 +1,13 @@
+# Style brief for "Corporate Finance Casebook and Companion" — Volume 3 (all chapter authors)
+
+Audience: MBA students and instructors who have Volumes 1 and 2 ("Corporate Finance for MBA Leaders"; "Advanced Corporate Finance for MBA Leaders"). Refer to them as "Volume 1, Chapter X" / "Volume 2, Chapter X". Volume 1 chapters: 1 corporation; 2 statements/ratios; 3 TVM; 4 bonds; 5 equity valuation; 6 NPV; 7 capital budgeting; 8 uncertainty/real options; 9 risk-return; 10 CAPM; 11 WACC; 12 market efficiency/behavioral; 13 raising equity; 14 debt; 15 capital structure; 16 payout; 17 working capital; 18 options; 19 derivatives; 20 risk mgmt/FX; 21 enterprise valuation; 22 M&A; 23 LBO/PE/restructuring; 24 sustainable/governance/fintech.
+
+Each chapter is ONE markdown file at /home/user/ifrs/book/vol3/chapters/NN-slug.md (NN two-digit). First line `# Chapter N: Title` (pandoc markdown, no YAML). Use `##`/`###` headings. Length: 8,000-9,500 words per chapter (essential: the volume must reach ~500 pages). Fictional companies only, labelled illustrative; no real statistics or fabricated quotes. No images, no LaTeX (plain-Unicode formulas in code blocks), no TODO/placeholders. Use markdown pipe tables for all data.
+
+CASE chapters (type "Case"): sections = `## The Situation` (company background, people, decision, deadline), `## Industry Context`, `## Financial Data` (at least 5 tables: income statement and balance sheet extracts, forecasts, market data, comps, deal terms as relevant; numbers internally consistent), `## Complications and Exhibits` (additional facts, side-issues, ambiguous data), `## Assignment Questions` (10 questions), then `## Teaching Note and Full Solutions` containing: learning objectives, suggested class plan with timings, complete numerical solutions for every question with every calculation step shown (recompute with Python via Bash; report correct results), sensitivity discussion, common student errors, discussion of alternative defensible answers, and a board-style recommendation memo.
+
+MODELING chapters: explain step by step with real, runnable code and Excel formula patterns. Every Python listing MUST be executed by you via Bash and the actual printed output pasted in. Put code in fenced ```python blocks and outputs in plain fenced blocks. Include exercises with solutions.
+
+PROBLEM/INSTRUCTOR chapters: as specified in the assignment prompt; all numeric answers recomputed with Python.
+
+Workflow: write in chunks (cat >> with heredoc <<'EOF') of ~1,500-2,500 words so no single write is huge. Finish with `wc -w` and confirm >= 8,000 words per chapter; extend if short. Reply with one line per chapter: path and word count. Do not commit or touch git.

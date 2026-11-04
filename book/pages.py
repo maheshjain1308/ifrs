@@ -1,5 +1,5 @@
 import json,re
-B='/home/user/ifrs/book/build'
+import sys; B='/home/user/ifrs/book/build/v'+(sys.argv[1] if len(sys.argv)>1 else '1')
 titles=json.load(open(B+'/titles.json'))
 from pypdf import PdfReader
 r=PdfReader(B+'/book.pdf'); n=len(r.pages)
