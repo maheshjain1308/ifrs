@@ -426,3 +426,191 @@ Closing cash                              35.6     30.0     30.0     30.0     30
 
 Iterations to converge each year: [6, 7, 7, 7, 7]
 ```
+
+### Reading the output
+
+Verify FY2026E by hand, as you should whenever you build a model, before trusting any later year. Revenue is 800.0 x 1.08 = 864.0. Cost of goods sold is 864.0 x 0.640 = 553.0 (553.0 to one decimal; the exact figure is 552.96) and SG&A is 864.0 x 0.190 = 164.2, so EBITDA is 146.9, a margin of 17.0 percent. Depreciation is 10 percent of opening net PP&E: 0.10 x 400.0 = 40.0, giving EBIT of 106.9. Term loan interest is 6.5 percent of the average of 200.0 and 170.0: 0.065 x 185.0 = 12.0. Interest income is 2 percent of the average of 60.0 and 35.6, which is 1.0. Pre-tax income is 95.8, tax is 24.0 and net income is 71.9.
+
+Working capital: receivables are 864.0 x 55 / 365 = 130.2; inventory 553.0 x 80 / 365 = 121.2; payables 553.0 x 45 / 365 = 68.2. Net working capital is 130.2 + 121.2 - 68.2 = 183.2, up 14.2 from 169.0. Cash from operations is therefore 71.9 + 40.0 - 14.2 = 97.6. Capex is 6.5 percent of revenue, 56.2. After the 30.0 term loan repayment and dividends of 35.9 (half of net income), cash falls by 24.4, from 60.0 to 35.6, above the 30.0 minimum, so no revolver is needed in FY2026E.
+
+From FY2027E the revolver is needed: the company is profitable and growing, yet distributes half its earnings and repays 30.0 of the term loan a year while investing in growth, so it borrows on the revolver (14.9 in FY2027E, rising to 52.3 by FY2030E) to meet the amortization. Total debt falls from 200.0 to 102.3 over the five years, but the mix shifts toward the more expensive revolver. That is a real finding that the model produces and that a three-line "free cash flow minus dividends" calculation would miss. The balance check row is zero in every year, and the cash flow statement's closing cash equals the balance sheet's cash by construction.
+
+## Part III: Integrity checks and circularity
+
+### What to check, and how
+
+A check is a formula that returns pass or fail, written so that it fails when the model is wrong in a way that matters. The balance sheet check is necessary and not sufficient: a model can balance and still be wrong (a mislinked growth rate does not unbalance anything). A good suite therefore tests identities from several directions.
+
+| # | Check | What it catches | Excel pattern (column F, 0 = pass) |
+|---|---|---|---|
+| 1 | Assets equal liabilities plus equity | Unlinked or mislinked balance sheet items; sign errors | `=IF(ABS(Model!F81)<Tol,0,1)` |
+| 2 | Cash flow closing cash equals balance sheet cash | Cash flow statement built independently of the balance sheet | `=IF(ABS(Model!E70+Model!F68-Model!F70)<Tol,0,1)` |
+| 3 | Equity roll-forward | Dividends or net income omitted from equity | `=IF(ABS(Model!E79+Model!F22+Model!F64-Model!F79)<Tol,0,1)` |
+| 4 | PP&E roll-forward | Capex or depreciation mislinked | `=IF(ABS(Model!E73+Model!F34+Model!F15-Model!F73)<Tol,0,1)` |
+| 5 | Cash at least the minimum, unless the revolver is at its limit | Revolver logic failure | `=IF(OR(Model!F70>=MinCash-Tol,Model!F77>=RevLimit-Tol),0,1)` |
+| 6 | Revolver within its limit | Liquidity shortfall (a business finding, not a modeling error) | `=IF(Model!F77<=RevLimit+Tol,0,1)` |
+| 7 | No negative debt balances | Over-repayment | `=IF(MIN(Model!F41,Model!F77)>=-Tol,0,1)` |
+| 8 | Circularity converged | Stale iteration values | `=IF(ABS(Model!F17+TermRate*IF(CircSwitch=1,AVERAGE(Model!E41,Model!F41),Model!E41))<Tol,0,1)` |
+| 9 | Subtotals recompute | Overwritten subtotals | `=IF(ABS(Model!F12-(Model!F10+Model!F11))<Tol,0,1)` |
+| 10 | No error values anywhere | `#REF!`, `#DIV/0!` propagating | `=IF(SUMPRODUCT(--ISERROR(Model!F10:F81))>0,1,0)` |
+
+The tolerance `Tol` is a named input, 0.000001. The Checks sheet puts each check in its own row, with the five forecast years across; a column at the right sums each row; a cell at the top, `=IF(SUM(F5:J14)=0,"OK","ERROR")`, is the master flag, and the Cover sheet links to it so that it is visible everywhere. Conditional formatting turns the flag green or red. Two refinements: check 6 is a business flag (the model is right, the company is short of liquidity) and deserves a different color from the pure integrity checks; and each check should have a "last tested" note.
+
+The Python equivalent follows. It takes a model result and returns a dictionary of named pass/fail results and a master flag.
+
+```python
+# checks.py -- integrity checks that feed one master flag
+from model_core import *
+
+TOL = 1e-6
+
+def run_checks(r, a=COMMON):
+    out = {}
+    out["1 Balance sheet balances"] = max(abs(x) for x in r["check"]) < TOL
+    # cash flow statement ties to balance sheet cash
+    prev = OPEN["cash"]; ok = True
+    for i in range(N):
+        ok &= abs(prev + r["netchg"][i] - r["cash"][i]) < TOL
+        prev = r["cash"][i]
+    out["2 Cash flow ties to balance sheet cash"] = ok
+    # equity roll-forward
+    prev = OPEN["equity"]; ok = True
+    for i in range(N):
+        ok &= abs(prev + r["ni"][i] - r["div"][i] - r["equity"][i]) < TOL
+        prev = r["equity"][i]
+    out["3 Equity roll-forward"] = ok
+    # PP&E roll-forward
+    prev = OPEN["ppe"]; ok = True
+    for i in range(N):
+        ok &= abs(prev + r["capex"][i] - r["dep"][i] - r["ppe"][i]) < TOL
+        prev = r["ppe"][i]
+    out["4 PP&E roll-forward"] = ok
+    out["5 Cash never below minimum"] = min(r["cash"]) >= a["min_cash"] - TOL or \
+        all(r["cash"][i] >= a["min_cash"] - TOL or r["revolver"][i] >= a["revolver_limit"] - TOL for i in range(N))
+    out["6 Revolver within limit"] = max(r["revolver"]) <= a["revolver_limit"] + TOL
+    out["7 No negative debt balances"] = min(min(r["revolver"]), min(r["term"])) >= -TOL
+    out["8 Circularity converged"] = max(r["iters"]) < 200
+    out["9 Gross profit = revenue - COGS"] = all(abs(r["gross"][i] - (r["revenue"][i] - r["cogs"][i])) < TOL for i in range(N))
+    return out
+
+def master(r, a=COMMON):
+    c = run_checks(r, a)
+    return all(c.values()), c
+```
+
+A test suite is only trustworthy if it has been shown to fail. The next listing runs the checks on the correct model, then deliberately injects two classic errors using the `bug` argument, one at a time: forgetting to add depreciation back in the cash flow statement, and forgetting to deduct dividends from equity. It also cuts the revolver limit to $40 million to show a business flag.
+
+```python
+from checks import *
+ok, c = master(build("Base"))
+print("BASE CASE: master check =", "OK" if ok else "ERROR")
+for k, v in c.items(): print(f"  {k:<42}{'pass' if v else 'FAIL'}")
+for bug in ["no_dep_addback", "div_not_in_equity"]:
+    r = build("Base", bug=bug)
+    ok, c = master(r)
+    print(f"\nINJECTED BUG '{bug}': master check =", "OK" if ok else "ERROR")
+    print("  balance check by year:", [round(x, 2) for x in r["check"]])
+    print("  failing tests:", [k for k, v in c.items() if not v])
+r = build("Base", revolver_limit=40.0)
+ok, c = master(r, {**COMMON, "revolver_limit": 40.0})
+print("\nRevolver limit cut to 40: master check =", "OK" if ok else "ERROR", "| failing:", [k for k, v in c.items() if not v])
+print("  revolver balances:", [round(x, 1) for x in r["revolver"]])
+```
+
+```
+BASE CASE: master check = OK
+  1 Balance sheet balances                  pass
+  2 Cash flow ties to balance sheet cash    pass
+  3 Equity roll-forward                     pass
+  4 PP&E roll-forward                       pass
+  5 Cash never below minimum                pass
+  6 Revolver within limit                   pass
+  7 No negative debt balances               pass
+  8 Circularity converged                   pass
+  9 Gross profit = revenue - COGS           pass
+
+INJECTED BUG 'no_dep_addback': master check = ERROR
+  balance check by year: [-40.0, -81.62, -125.08, -170.57, -218.19]
+  failing tests: ['1 Balance sheet balances', '6 Revolver within limit']
+
+INJECTED BUG 'div_not_in_equity': master check = ERROR
+  balance check by year: [-35.93, -76.57, -121.51, -170.43, -222.98]
+  failing tests: ['1 Balance sheet balances', '3 Equity roll-forward']
+
+Revolver limit cut to 40: master check = ERROR | failing: ['6 Revolver within limit']
+  revolver balances: [0.0, 14.9, 31.8, 44.4, 52.3]
+```
+
+Three lessons. First, only the balance check caught the missing depreciation add-back: the cash flow statement still tied to the balance sheet because both were wrong in the same way. The balance sheet was out by exactly 40.0 in FY2026E, the amount of the omitted depreciation, and the gap compounds (81.62 after two years), which is itself diagnostic: an error equal to a line item points to that line item. Second, the second bug was caught by two separate checks (balance and equity roll-forward), and the failing test names tell you where to look: a failure in 3 but not in 2 suggests the problem is in equity, not in cash. Third, cutting the revolver limit does not unbalance anything, but check 6 flags that the plan is infeasible with the committed facility. A model that never says "no" is not being tested.
+
+An extra practice used by professional auditors is the "stress test": set growth to 0 percent, or set capex to zero, or set the tax rate to 100 percent, and confirm that the checks still pass and that the result is what a calculation by hand predicts. Errors hide in the corners.
+
+### Circular references
+
+The circularity in this model is not an accident. Interest expense on the revolver depends on the average of the opening and closing revolver balances; the closing balance depends on the cash flow; the cash flow depends on net income; and net income depends on interest expense. The same loop exists through interest income on cash and through dividends, which depend on net income. Using average balances is more accurate than using opening balances (a company that borrows during the year pays interest on the borrowing for part of it) and is the standard choice in lending and valuation models. The cost is a loop that Excel will refuse to calculate unless iterative calculation is enabled.
+
+**Excel settings.** Enable iterative calculation under File, Options, Formulas. Set maximum iterations to 100 and maximum change to 0.000001 (Excel's default of 0.001 is coarse). This is an application-level setting that is stored with the first workbook opened in a session, so a model that depends on it should say so prominently on the Cover sheet, and check 8 above detects a stale loop.
+
+**The circuit breaker.** If an error value (such as `#DIV/0!` or `#VALUE!`) enters a circular loop it feeds itself and never clears, even after the cause is fixed. The remedy is a switch: the formulas in rows 17 to 19 use `IF(CircSwitch=1, AVERAGE(opening, closing), opening)`, so that setting the switch to 0 breaks the loop, flushes the error, and allows the switch to be turned back on. The Python code uses the same switch (`circ`). Do not wrap the whole loop in `IFERROR(..., 0)`: that hides the symptom and can leave the model calculating nonsense.
+
+**Why the loop converges.** Each pass is a contraction. If the revolver balance is changed by a small amount x, interest changes by (rate / 2) x, after-tax income by (rate / 2)(1 - tax) x, and, since half of any change in income is paid out as dividends, cash before the revolver by (rate / 2)(1 - tax)(1 - payout) x, which is the change in the next pass. The factor is 0.07 / 2 x 0.75 x 0.50 = 0.0131, so each pass reduces the error by a factor of about 76, and a tolerance of 10 to the minus 9 is reached in six or seven passes. The next listing prints the iteration for FY2027E, starting from the opening balances (as Excel does) and shows the ratio of successive changes. It then compares the model with the loop on and off.
+
+```python
+from model_core import *
+
+r = build("Base")
+i = 1                                         # FY2027: first year the revolver is drawn
+p = dict(cash=r["cash"][i-1], revolver=r["revolver"][i-1], term=r["term"][i-1])
+term = r["term"][i]
+ebit, dnwc, capex = r["ebit"][i], r["dnwc"][i], r["capex"][i]
+a = COMMON
+revolver, cash = p["revolver"], p["cash"]     # starting guess = opening balances
+print(f"{'iter':>4}{'interest':>10}{'net income':>12}{'revolver':>10}{'cash':>8}{'change':>12}")
+for it in range(1, 9):
+    int_term = a["term_rate"] * (p["term"] + term) / 2
+    int_rev = a["rev_rate"] * (p["revolver"] + revolver) / 2
+    int_inc = a["cash_rate"] * (p["cash"] + cash) / 2
+    ebt = ebit - int_term - int_rev + int_inc
+    ni = ebt * (1 - a["tax"])
+    div = a["payout"] * ni
+    cash_pre = p["cash"] + ni + r["dep"][i] - dnwc - capex - a["term_amort"] - div
+    draw = max(-p["revolver"], a["min_cash"] - cash_pre)
+    new_rev = p["revolver"] + draw
+    change = abs(new_rev - revolver)
+    revolver, cash = new_rev, cash_pre + draw
+    print(f"{it:>4}{int_term + int_rev - int_inc:>10.5f}{ni:>12.5f}{revolver:>10.5f}{cash:>8.2f}{change:>12.7f}")
+
+print()
+on, off = build("Base", circ=1), build("Base", circ=0)
+print(f"{'':<28}{'circ ON':>10}{'circ OFF':>10}{'difference':>12}")
+for lab, k in [("FY2027 net interest cost", None), ("FY2030 revolver", "revolver"), ("FY2030 net income", "ni"), ("FY2030 equity", "equity")]:
+    if k is None:
+        f = lambda x: x["int_term"][1] + x["int_rev"][1] - x["int_inc"][1]
+        a_, b_ = f(on), f(off)
+    else:
+        a_, b_ = on[k][-1], off[k][-1]
+    print(f"{lab:<28}{a_:>10.3f}{b_:>10.3f}{a_ - b_:>12.3f}")
+```
+
+```
+iter  interest  net income  revolver    cash      change
+   1   9.36393    81.71633  14.71120   30.00  14.7112008
+   2   9.93436    81.28851  14.92511   30.00   0.2139105
+   3   9.94184    81.28290  14.92792   30.00   0.0028076
+   4   9.94194    81.28282  14.92796   30.00   0.0000368
+   5   9.94194    81.28282  14.92796   30.00   0.0000005
+   6   9.94194    81.28282  14.92796   30.00   0.0000000
+   7   9.94194    81.28282  14.92796   30.00   0.0000000
+   8   9.94194    81.28282  14.92796   30.00   0.0000000
+
+                               circ ON  circ OFF  difference
+FY2027 net interest cost         9.942    10.344      -0.402
+FY2030 revolver                 52.315    53.393      -1.078
+FY2030 net income              105.091   104.525       0.566
+FY2030 equity                  651.978   650.900       1.078
+```
+
+The successive changes (14.71, 0.2139, 0.0028, 0.000037) shrink by a factor of 70 to 77 per pass, matching the theoretical 1 / 0.0131 = 76. The comparison shows the cost of the shortcut: using opening balances overstates FY2027E net interest cost by 0.402 (4.0 percent) because it ignores the average revolver balance and the fact that the term loan is repaid during the year, and it puts FY2030E equity out by 1.078. Small in a base case; larger when debt is a bigger share of the capital structure, as in leveraged buyouts (Volume 1, Chapter 23).
+
+Alternatives to iteration, for completeness: (i) calculate interest on opening balances (no loop, but less accurate); (ii) solve the loop algebraically (possible for a single revolver but cumbersome with several tranches); (iii) a macro that copies the interest values and pastes them as constants until they stop changing (robust but requires macros and leaves stale values if someone forgets to run it). For models that will be handed to others, a switch and clear documentation are usually the best compromise.
+
