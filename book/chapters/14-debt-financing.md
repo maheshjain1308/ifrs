@@ -478,4 +478,81 @@ For a corporate CFO, securitization is most often relevant for trade receivables
 
 ### 14.8.4 Choosing among sources: a synthesis
 
-Returning to Kestrel: the $180 million expansion has an average asset life of 20 years for the quarry and rail, and 7 to 10 years for the trucks. A sensible package might combine (i) a $100 million ten-year senior note, matching the long-lived assets and fixing most of the cost; (ii) a $60 million amortizing bank term loan with a covenant-light structure for the equipment, repayable as the assets earn; (iii) a lease for the trucks if the NAL is positive after residual-value risk; and (iv) an undrawn revolver of $75 million for liquidity. A convertible might make sense only if management believes the shares are undervalued and the firm has a clear case for dilution tolerance. Securitization of receivables could be held in reserve as a contingent source of funding. The total should fit inside the lowest constraint from Example 14.9, with a buffer.
+Returning to Kestrel: the $180 million expansion has an average asset life of 20 years for the quarry and rail, and 7 to 10 years for the trucks. A sensible package might combine (i) a $100 million ten-year senior note, matching the long-lived assets and fixing most of the cost; (ii) a $60 million amortizing bank term loan with a covenant-light structure for the equipment, repayable as the assets earn; (iii) a lease for roughly $20 million of trucks if the NAL is positive after residual-value risk; and (iv) an undrawn revolver of $75 million for liquidity. A convertible might make sense only if management believes the shares are undervalued and the firm has a clear case for dilution tolerance. Securitization of receivables could be held in reserve as a contingent source of funding. The total should fit inside the lowest constraint from Example 14.9, with a buffer.
+
+## Case Study: Harbourline Foods and the Refinancing Wall
+
+*Illustrative case; Harbourline Foods and all figures are fictional.*
+
+Harbourline Foods is a mid-sized packaged-food manufacturer with sales of $900 million, EBITDA of $135 million and a loyal base of supermarket customers. Over the past four years it has grown by acquisition, funding purchases with a mix of bank debt and bonds. The new CFO, Priya Raman, joined six months ago and has just completed a review of the debt stack.
+
+Harbourline's debt totals $540 million: a $200 million term loan A maturing in 22 months at a floating rate of the benchmark plus 2.25%; $250 million of 5.75% senior notes due in 30 months, with an incurrence covenant limiting debt/EBITDA to 4.5x for new borrowing; and a $90 million revolver, fully drawn, which matures in 22 months. The credit agreement contains maintenance covenants: debt/EBITDA no higher than 4.25x (stepping down to 4.00x in 12 months) and EBITDA/interest of at least 3.0x. Leverage is currently 4.0x. Interest expense is $39 million, and coverage is therefore 3.46x. Cash on hand is $25 million. Free cash flow after capex and dividends is about $30 million a year. Harbourline also leases its distribution centers and a fleet of delivery vehicles under operating leases with total annual payments of $22 million, now recorded on the balance sheet as lease liabilities of $140 million that the credit agreement excludes from "Debt."
+
+The problem is clear to Raman. In 22 months Harbourline faces $290 million of maturities in a single wall, and the leverage covenant steps down in 12 months, at which point headroom will be nearly gone unless EBITDA grows or debt falls. A bad commodity year would trigger a breach. Rating agencies have placed the company on negative outlook, and a downgrade to the single-B category would raise the cost of any new bond by about 150 basis points and shut some investors out.
+
+The CEO wants to buy a regional competitor for $150 million, which would add $25 million of EBITDA but would lift leverage to about 4.6x on a pro forma basis before synergies. The board is divided. The finance team has sketched four options: (a) issue $150 million of new senior notes and refinance the term loan with a new five-year term loan, extending maturities but increasing leverage; (b) issue $100 million of convertible notes at a 3.5% coupon with a 30% conversion premium to fund the acquisition, while keeping the existing debt in place; (c) sell and lease back two distribution centers for $120 million, using the proceeds to repay the term loan; (d) abandon the acquisition, suspend the dividend and use free cash flow to repay debt, accepting slower growth.
+
+Raman knows that the lenders will want to see a credible plan before negotiating the refinancing. She has asked her team to prepare covenant forecasts under a downside scenario with 15% lower EBITDA, a lease-adjusted leverage computation, and a comparison of the all-in cost and dilution of each option.
+
+**Discussion questions**
+
+1. Compute Harbourline's current covenant headroom for leverage (at the current 4.25x limit and the stepped-down 4.00x limit) and for coverage. By what percentage can EBITDA fall before each covenant is breached? What does the 15% downside scenario imply?
+2. Evaluate option (a) in terms of pro forma leverage, coverage and maturity profile. How would you structure maturities to avoid a new wall, and what covenant package would you negotiate?
+3. Compare option (b) with a straight bond for the acquisition. What are the advantages (coupon, covenant headroom, effective issue price for equity) and disadvantages (dilution, share-price pressure, complexity)? Under what share-price paths does the convertible prove expensive?
+4. Assess option (c). How do the sale-and-leaseback and the lease accounting alter reported leverage, EBITDA and the covenant tests, given that lease liabilities are excluded from "Debt" in the credit agreement but are considered by rating agencies? Which option or combination would you recommend, and what sequencing would you propose in discussions with lenders?
+
+## Key Takeaways
+
+- Debt contracts are bundles of choices on maturity, rate basis, currency, seniority, security, amortization, optionality and covenants; the right bundle matches the funding to the asset's cash-flow profile and the firm's risk.
+- The cost of debt is the current market yield on comparable debt, not the historical coupon; the tax-deductibility of interest lowers the after-tax cost only to the extent the firm can use the deduction.
+- Level-payment loans front-load interest, so the tax shield and the lender's risk decline over time; bullet structures concentrate refinancing risk at maturity.
+- Covenants address agency conflicts between shareholders and creditors; measure headroom against a downside scenario, and negotiate definitions (EBITDA, Debt) as carefully as the ratio levels.
+- Bond prices move inversely with yields; duration summarizes interest-rate sensitivity and convexity explains why duration alone overstates the loss of a rate rise and understates the gain from a fall.
+- Credit spreads reflect expected loss (PD × LGD), a risk premium and liquidity; a market spread can be translated into an implied default probability, with caution about the premium embedded in it.
+- Leases are a financing choice: evaluate with the net advantage to leasing at the after-tax cost of debt, with careful attention to residual value; IFRS 16 puts most leases on the balance sheet and raises reported EBITDA and debt.
+- A convertible bond is straight debt plus a call option; its lower coupon is the price paid by investors for the option, and the real cost is the combination of interest and expected dilution.
+- Credit analysis combines cash-flow ratios, liquidity, collateral, management quality and industry cycle; scoring models such as the Altman Z-score are screening aids.
+- Debt capacity is the minimum across leverage, coverage and cash-flow constraints, tested under stress; treat it as a ceiling, hold slack and stagger maturities.
+- Securitization allocates pool losses through tranching and credit enhancement; the senior tranche's safety depends on correlation assumptions, structure and incentives, as the 2007-2009 crisis showed.
+
+## Review Questions
+
+1. Explain the principle of matching in debt financing. Give an example of a mismatch and the risks it creates.
+2. Why is the after-tax cost of debt not always equal to the pre-tax yield times one minus the tax rate? In which circumstances is the tax benefit reduced?
+3. What are the main agency conflicts between shareholders and lenders that covenants are designed to address? Give one example of each type of covenant (affirmative, negative, financial maintenance and incurrence).
+4. Why might a borrower prefer a bond to a bank loan, and vice versa?
+5. A bond with a modified duration of 6 is held by an investor. What is the approximate percentage price change if yields rise by 50 basis points? Why is this an approximation?
+6. Describe how the credit spread of a bond is related to the default probability and the recovery rate. Why does the market-implied probability usually exceed the historical default rate?
+7. Under IFRS 16, how does a lease change the lessee's financial statements compared with the previous operating lease treatment? What should a lender consider when its covenants define "Debt"?
+8. Why does a convertible bond carry a lower coupon than a straight bond? Who bears the cost, and when?
+9. Define debt capacity. Why should a firm test it under downside scenarios, and why might a firm choose to borrow less than its capacity?
+10. Describe how tranching and subordination create a senior security of higher credit quality than the underlying pool. What can cause that quality to fail?
+
+## Problems
+
+1. **Amortizing loan.** A company borrows $5,000,000 for five years at 6.0%, repayable in equal annual installments. Compute the annual payment, the first-year interest and principal, and the balance after year 1.
+
+2. **Bond pricing.** A 10-year bond with a face value of $1,000 pays a 5.0% annual coupon in semiannual installments. Compute the price when the yield to maturity is (a) 6.0%, (b) 5.0% and (c) 4.0%.
+
+3. **Covenant headroom.** A borrower has debt of $360 million, EBITDA of $100 million and interest expense of $28.8 million. Its covenants require Debt/EBITDA ≤ 4.00x and EBITDA/interest ≥ 3.25x. Compute both ratios, the EBITDA at which each covenant would be breached, and the percentage headroom of each. Which binds?
+
+4. **Lease versus buy.** A firm can buy equipment for $500,000 (four-year life, straight line to zero, no residual) or lease it for $150,000 a year, paid at year end. The tax rate is 30% and the pre-tax borrowing rate is 10%. Compute the net advantage to leasing.
+
+5. **Convertible bond.** A $1,000 convertible bond has an 8-year maturity, a 4.0% annual coupon and a conversion ratio of 25. The share price is $30, and the issuer's straight-debt yield is 8.0%. Compute the conversion price, conversion premium over the share price, conversion value (parity), straight-bond value, and the implied value of the option if the bond sells at par.
+
+6. **Expected loss.** A bank lends $80 million to a borrower with a one-year PD of 2.5% and LGD of 45%. Compute the expected loss in dollars and as a percentage of exposure. If funding cost is 0.35%, operating cost 0.25% and risk-premium/return requirement is 0.60%, what margin is required?
+
+7. **Debt capacity.** A firm has EBITDA of $90 million, borrows at 9.0%, and uses these limits: Debt/EBITDA ≤ 3.5x; EBITDA/interest ≥ 3.5x; DSCR ≥ 1.4x with CFADS of $60 million and level repayment over five years. Compute the debt capacity under each test and the overall capacity.
+
+8. **Securitization.** A pool of $300 million of receivables backs a Senior tranche of $240 million, a Mezzanine tranche of $36 million and an Equity tranche of $24 million. Pool losses are 15%. Compute the loss and percentage loss for each tranche. At what pool loss percentage does the senior tranche first suffer a loss?
+
+### Answers to Selected Problems
+
+1. Payment = 5,000,000 × 0.06 / (1 − 1.06^(−5)) = **$1,186,982**. First-year interest = $300,000; principal = $886,982; balance after year 1 = **$4,113,018**.
+2. (a) $925.61; (b) $1,000.00; (c) $1,081.76.
+3. Leverage = 3.60x; coverage = 100 / 28.8 = 3.47x. EBITDA floors: leverage test 360 / 4.00 = $90.0 million (headroom 10.0%); coverage test 3.25 × 28.8 = $93.6 million (headroom 6.4%). The coverage covenant binds.
+4. After-tax rate = 7.0%; annuity factor (4 years) = 3.3872. PV of after-tax lease payments = 150,000 × 0.70 × 3.3872 = $355,657. PV of depreciation tax shields forgone = (500,000 / 4) × 0.30 × 3.3872 = $127,020. NAL = 500,000 − 355,657 − 127,020 = **+$17,322** (leasing is slightly cheaper).
+5. Conversion price = $40.00; premium = 40 / 30 − 1 = 33.3%; parity = 25 × 30 = $750; straight value = 40 × 5.7466 + 1,000 / 1.08^8 = 229.86 + 540.27 = $770.13 (rounded); option value if sold at par = 1,000 − 770.13 = **$229.87**.
+6. EL = 0.025 × 0.45 × 80 = **$0.90 million**, or 1.125% of exposure. Required margin = 1.125% + 0.35% + 0.25% + 0.60% = **2.325%**.
+7. Leverage: 3.5 × 90 = $315.0 million. Coverage: maximum interest = 90 / 3.5 = $25.71 million, so debt = 25.71 / 0.09 = $285.7 million. DSCR: maximum debt service = 60 / 1.4 = $42.86 million; PV over five years at 9.0% = 42.86 × 3.8897 = **$166.7 million**. The DSCR test binds; overall capacity is about $166.7 million.
+8. Loss = 0.15 × 300 = $45 million. Equity loses its full $24 million (100%); Mezzanine loses $21 million (58.3% of $36 million); Senior loses $0. The senior tranche first suffers a loss when pool losses exceed the 60 million junior tranches (24 + 36), i.e., 60 / 300 = **20%**.

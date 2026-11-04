@@ -338,8 +338,8 @@ and the forward rate for a multi-period loan starting at date a and ending at da
 *Step 2 – one-year forward rates.*
 - f₁,₂ = 1.035² / 1.03 − 1 = 1.071225 / 1.03 − 1 = **4.002%**.
 - f₂,₃ = 1.04³ / 1.035² − 1 = 1.124864 / 1.071225 − 1 = **5.007%**.
-- f₃,₄ = 1.044⁴ / 1.04³ − 1 = 1.188023 / 1.124864 − 1 = **5.609%**.
-- Three-year forward rate starting in one year: [(1.044⁴) / 1.03]^(1/3) − 1 = (1.153420)^(1/3) − 1 = **4.871%**.
+- f₃,₄ = 1.044⁴ / 1.04³ − 1 = 1.187960 / 1.124864 − 1 = **5.609%**.
+- Three-year forward rate starting in one year: [(1.044⁴) / 1.03]^(1/3) − 1 = (1.153360)^(1/3) − 1 = **4.871%**.
 
 *Step 3 – price a 4-year 5% annual-coupon bond off the curve.* P = 50 × 0.970874 + 50 × 0.933511 + 50 × 0.888996 + 1,050 × 0.841779 = 48.54 + 46.68 + 44.45 + 883.87 = **$1,023.54**.
 
@@ -429,7 +429,7 @@ Spreads change over time, typically widening in recessions and narrowing in expa
 
 **Example 4.10 – Spread widening.** Tessellate has a 7-year bond with a 5% annual coupon. The government 7-year yield is 4.0% and the bond's spread is 250 bp, giving a yield of 6.5%. The market becomes nervous about the sector, and the spread widens by 100 bp to 350 bp while government yields are unchanged.
 
-*Step 1 – price at 6.5%.* Annuity factor = (1 − 1.065⁻⁷) / 0.065 = (1 − 0.643506) / 0.065 = 5.484; PV of coupons = $50 × 5.484 = $274.20; PV of principal = $1,000 × 0.643506 = $643.51. Price = **$917.73**.
+*Step 1 – price at 6.5%.* Annuity factor = (1 − 1.065⁻⁷) / 0.065 = (1 − 0.643506) / 0.065 = 5.4845; PV of coupons = $50 × 5.4845 = $274.23; PV of principal = $1,000 × 0.643506 = $643.51. Price = **$917.73** (computed from unrounded factors).
 *Step 2 – price at 7.5%.* Price = **$867.58**.
 *Step 3 – change.* −$50.15, or −5.46%.
 *Step 4 – check against duration.* Modified duration at 6.5% = 5.66, so the approximate change is −5.66% × 1 = −5.66%, or −$51.9 (convexity makes the actual loss slightly smaller).
@@ -478,7 +478,7 @@ Comparing a conventional government bond with an indexed bond of the same maturi
 Breakeven inflation = (1 + nominal yield) / (1 + real yield) − 1  ≈  nominal yield − real yield
 ```
 
-This is the Fisher equation (Chapter 3) applied to market yields. If the 10-year nominal yield is 4.5% and the 10-year real yield is 1.8%, breakeven inflation is 1.045 / 1.018 − 1 = **2.652%** (the simple difference gives 2.7%). An investor who believes inflation will average more than 2.65% should prefer the indexed bond; one who thinks it will be lower should hold the nominal bond. The breakeven rate is not a pure inflation forecast. It also includes an *inflation risk premium* (compensation to nominal bondholders for inflation uncertainty), which raises it, and a *liquidity premium* on indexed bonds, which depresses the real-yield side of the comparison and thereby raises the breakeven again. Interpreting breakeven rates as forecasts therefore requires caution.
+This is the Fisher equation (Chapter 3) applied to market yields. If the 10-year nominal yield is 4.5% and the 10-year real yield is 1.8%, breakeven inflation is 1.045 / 1.018 − 1 = **2.652%** (the simple difference gives 2.7%). An investor who believes inflation will average more than 2.65% should prefer the indexed bond; one who thinks it will be lower should hold the nominal bond. The breakeven rate is not a pure inflation forecast. It also includes an *inflation risk premium* (compensation to nominal bondholders for inflation uncertainty), which raises it, and the lower liquidity of indexed bonds, which raises their real yield and thereby pushes the breakeven down. Interpreting breakeven rates as forecasts therefore requires caution.
 
 The price of an indexed bond is the present value of its real cash flows at the real yield, multiplied by the index ratio. For a five-year bond with a 1.5% real coupon and a real yield of 1.2%, the real price per $1,000 of original principal is $1,014.47 per unit of index ratio. The bond trades above par because its coupon exceeds the real yield.
 
@@ -535,7 +535,7 @@ Anil gathers more information. Tessellate's cash flows are expected to be flat i
 
 The bankers' view is that the 5-year bond is cheapest now, but they warn that refinancing the whole $400 million in five years would coincide with the $600 million maturity wall, so that $1 billion would need to be refinanced in one year. The chief executive prefers Option B because "we can fix the cost for 15 years and forget about it." The head of risk argues for Option C, noting that regulated revenues are indexed, and that Option C reduces the interest-rate mismatch. But the chief financial officer fears that inflation, which averaged 2.5% in the recent past, could be volatile and that a serious spike would raise the nominal burden on the 30% of cash flow that is not indexed.
 
-Anil's analysts also compute that, at a 6.4% yield, a 15-year 6.4% bond would have a modified duration of about 9.4, whereas the 5-year bond at 5.3% would have a duration of about 4.3. A 100 bp rise in market yields would lower the market value of the 15-year bond by roughly 9.4%, but, because Tessellate intends to hold the debt to maturity and not mark it to market, the effect would show up only in disclosures and in the opportunity cost of having locked in the rate. The analysts also point out that the all-in cost of Option C is 5.7% in nominal terms if inflation averages 2.5%, and exceeds 6.4% if inflation averages more than 3.2%.
+Anil's analysts also compute that, at a 6.4% yield, a 15-year 6.4% bond would have a modified duration of about 9.5, whereas the 5-year bond at 5.3% would have a duration of about 4.3. A 100 bp rise in market yields would lower the market value of the 15-year bond by roughly 9.5%, but, because Tessellate intends to hold the debt to maturity and not mark it to market, the effect would show up only in disclosures and in the opportunity cost of having locked in the rate. The analysts also point out that the all-in cost of Option C is 5.7% in nominal terms if inflation averages 2.5%, and exceeds 6.4% if inflation averages more than 3.2%.
 
 **Discussion questions**
 

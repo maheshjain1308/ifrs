@@ -486,7 +486,7 @@ S_T = 1.15:  5,000,000 × 1.12 = 5,600,000   (call exercised against the firm)
 S_T = 1.20:  5,000,000 × 1.12 = 5,600,000
 ```
 
-Proceeds are constrained to the band 5,300,000 to 5,600,000, a range of 300,000 compared with 1,000,000 for the unhedged position over the same scenarios. The collar costs nothing up front, and gives a floor (5,300,000) only slightly below the net floor of the single put (5,297,500), but surrenders gains above 1.12. The sold call is an obligation that could lose money for the firm in a rising euro scenario, though it is offset by the gain on the underlying receivable. Because sold options can be considered speculative, policy must permit them only when matched against an underlying exposure.
+Proceeds are constrained to the band 5,300,000 to 5,600,000, a range of 300,000 compared with 1,000,000 for the unhedged position over the same scenarios. The collar costs nothing up front, and gives a floor (5,300,000) slightly above the net floor of the single put (5,297,500), but surrenders gains above 1.12. The sold call is an obligation that could lose money for the firm in a rising euro scenario, though it is offset by the gain on the underlying receivable. Because sold options can be considered speculative, policy must permit them only when matched against an underlying exposure.
 
 ### 20.6.4 Choosing among hedges
 
@@ -519,3 +519,77 @@ An integrated approach has four steps. First, build a *map of exposures* by curr
 
 Reporting should answer simple questions: What is our net exposure by currency this quarter and next year? What portion is hedged and at what average rate? What would a 10 percent move in each currency do to EBIT and to net debt to EBITDA? How much cash might we need to post if rates move adversely by a given stress amount? And how does our actual hedged result compare with the benchmarks decided in advance? When Marcus Lindqvist presents answers to these questions to the audit and risk committee, risk management becomes a management discipline rather than a collection of trades.
 
+## Case Study: Northfield Agricultural Machinery
+
+*(Illustrative case; the company and all figures are fictional.)*
+
+Northfield Agricultural Machinery builds tractors and harvesting equipment at two plants in the Midwest of the United States and one plant in Poland. Annual revenue is 1.2 billion dollars: 50 percent from North America, 28 percent from Europe (invoiced mainly in euros) and 22 percent from Brazil and Argentina (invoiced in local currencies). Major cost lines are steel and components bought in dollars, hydraulic systems from a Japanese supplier invoiced in yen, and labor in dollars, euros and Polish zloty. Net debt is 480 million, 60 percent floating-rate. The covenant package requires net debt to EBITDA below 3.5 times.
+
+For many years Northfield had no formal risk policy. Regional finance directors hedged invoices on request, sometimes with forwards and sometimes with sold options sold to generate premium income; the group treasurer in Chicago recorded the results at year-end. After a currency shock in which the real and the peso fell roughly 25 percent in one year while the euro weakened modestly, group EBITDA fell 18 percent. Reported net debt to EBITDA rose from 2.6 to 3.4 times, just inside the covenant. In the same year the Brazilian subsidiary received a large government-linked receivable in reais that had been hedged with a sold-option structure; the structure paid out a loss of 14 million when the real appreciated sharply in the following quarter, which the Brazilian director described as "lost premium income."
+
+The board asked the new chief risk officer, Adaeze Mbeki, to produce an enterprise-wide analysis. Her team found the following.
+
+First, the largest exposures were not in the hedged transactions. Economic exposure to the euro was significant: the Polish plant produced in zloty and sold in euros, while competitors' costs in Turkey and Italy moved in other directions. Brazil and Argentina were a large unhedged exposure in revenues, with local-currency sales and dollar-denominated component costs. The yen exposure was small and partially hedged, but a single supplier relationship made the company dependent on that currency in the medium term.
+
+Second, correlations among exposures were not stable. In the stress period the real, peso and euro all fell against the dollar, and commodity prices declined at the same time, depressing farm incomes and equipment demand. The firm's market risk, credit risk (dealer receivables) and liquidity risk (dealer financing lines) all worsened together. A parametric VaR of the treasury's derivative book was 3.1 million at 99 percent, but the earnings-at-risk from the operating exposures, estimated by scenario analysis, was about 95 million for a one-in-twenty year event.
+
+Third, instrument use violated no formal rule because none existed. The sold-option structures were used in several subsidiaries to reduce the cost of hedging. None was designated for hedge accounting, so mark-to-market swings flowed through profit and loss, obscuring operating performance.
+
+Adaeze proposed a policy with the following features. Exposures will be netted by currency at group level and hedged centrally by the treasury using forwards and purchased options; sold options are allowed only in collars matched with an underlying exposure and approved by the risk committee. Forecast sales in euros will be hedged using a layered program of 80 percent for months 1 to 3, 60 percent for months 4 to 6, 40 percent for months 7 to 12 and 20 percent for months 13 to 18. Local-currency sales in Brazil and Argentina will be partially hedged where deliverable markets exist; elsewhere the company will adjust pricing clauses and shift more component sourcing to local suppliers. The Polish plant will gradually source in euros. A committed 150-million liquidity facility will be arranged against stress margin outflows. The group will adopt hedge accounting for forecast euro sales and for the net investment in the Polish subsidiary. A quarterly risk dashboard reports exposures, hedge ratios, average hedge rates, VaR, earnings-at-risk and liquidity headroom, and compares results with two benchmarks set in advance: the unhedged position and a static 50 percent hedge.
+
+The sales director objected that hedging reduces the ability of regional managers to price flexibly, and that centralization will slow responses to customers. The Brazilian director argued that premium income from selling options was a legitimate source of financial return. The chief financial officer, while supportive, worried about the cost of purchased options and the accounting resources required.
+
+### Discussion Questions
+
+1. Classify Northfield's exposures into transaction, translation and economic exposure. Which are the most material to the firm's value and covenant position, and what evidence in the case supports your view?
+2. Evaluate the argument that selling options to earn premium income is a legitimate source of return for a corporate treasury. Use payoffs to explain what risk the Brazilian structure created.
+3. Explain why a VaR of 3.1 million and an earnings-at-risk of 95 million can both be correct. Which better informs the decision about the liquidity facility and the hedging ratios?
+4. Critique the proposed layered hedge ratios and the centralization of hedging. What operational hedges would you recommend alongside, and how should hedge outcomes be judged against the benchmarks?
+
+## Key Takeaways
+
+- Hedging creates value only through frictions such as financial distress costs, convex taxes, underinvestment and covenants; firms should hedge large, non-core, cheaply transferable risks and retain those where they hold an advantage.
+- Corporate risks span market, credit, liquidity, operational, strategic, legal and reputational categories; they interact, and a margin call turns a market-risk event into a liquidity event.
+- Enterprise risk management integrates risks into one framework tied to strategy and risk appetite, using governance, assessment, response and monitoring, with three lines of accountability.
+- VaR states the loss not exceeded with a given confidence over a horizon: `VaR = z · σ · V`, scaled by √T for longer horizons; expected shortfall and stress tests are essential complements because VaR ignores the tail beyond the threshold.
+- Portfolio VaR reflects correlations; diversification benefits shrink in crises when correlations rise.
+- A hedging policy defines objectives, scope, hedge ratios by horizon, permitted instruments, limits, counterparty rules, segregation of duties, liquidity planning and review, and judges outcomes against benchmarks set in advance.
+- Transaction, translation and economic exposure differ in horizon, measurement and cash effect; economic exposure is the most important and the hardest to hedge, and is managed mainly by operational and strategic means.
+- Covered interest parity `F = S(1 + i_d t)/(1 + i_f t)` prices forwards, makes the money market hedge equal to the forward hedge, and the forward rate is not a forecast of the spot rate.
+- Relative PPP is a long-run benchmark rather than a short-run predictor; uncovered interest parity performs poorly, so hedging policy should not rely on currency forecasts.
+- Forwards give certainty, options retain upside at the price of a premium, collars trade upside for lower cost; the instrument should match the certainty of the exposure and the objective of the firm.
+
+## Review Questions
+
+1. Explain, using Modigliani and Miller's irrelevance argument, why risk management might still create value for a corporation. Name three frictions and how each justifies hedging.
+2. Give two examples showing how a risk in one category (market, credit, liquidity, operational) can become a risk in another category.
+3. What are risk appetite and risk tolerance? Provide an example of each for a manufacturing company with foreign sales.
+4. Define VaR in words and state its three parameters. Why is the ten-day VaR not ten times the one-day VaR?
+5. Why is expected shortfall considered superior to VaR in describing tail risk? What do stress tests add?
+6. List five elements that a corporate hedging policy should contain and explain why segregation of duties is critical.
+7. Distinguish transaction, translation and economic exposure with an example of each for a US exporter with a German subsidiary.
+8. Why is it usually better to address economic exposure by operational means than by financial derivatives?
+9. State covered interest parity. Why does the forward rate not forecast the future spot rate? Why is the money market hedge equivalent to the forward hedge?
+10. When would a firm prefer a purchased option to a forward contract for a foreign-currency exposure? What is the trade-off of a zero-cost collar?
+
+## Problems
+
+1. **VaR scaling.** A portfolio worth 250 million has daily volatility of 0.8 percent. Compute the one-day 99 percent VaR, the ten-day 99 percent VaR and the one-day 95 percent VaR (z = 2.326 and 1.645).
+2. **Two-asset VaR.** A firm has exposures of 30 million (daily volatility 2.0 percent) and 70 million (daily volatility 1.0 percent), with correlation −0.2. Compute the one-day 95 percent VaR, the sum of stand-alone VaRs and the diversification benefit.
+3. **Forward rate.** The spot is 1.2500 USD per GBP. One-year interest rates are 4.5 percent in USD and 3.0 percent in GBP (annual compounding). Compute the one-year forward rate and state whether sterling is at a premium or discount.
+4. **PPP.** The USD/JPY spot is 150 yen per dollar. Expected annual inflation is 2.5 percent in the US and 0.5 percent in Japan. Use relative PPP to find the expected rate after four years.
+5. **Money market hedge.** A US importer owes GBP 2,000,000 in six months. Spot is 1.2500 USD per GBP; the six-month USD rate is 4 percent per year and the GBP rate is 3 percent per year (simple interest). Describe a money market hedge and compute the dollar cost at maturity. Verify that it equals the forward cost.
+6. **Option hedge.** For the importer in Problem 5, a six-month call on GBP 2,000,000 with strike 1.2600 costs 0.0150 USD per GBP. Financing at 4 percent per year (simple) for six months, compute the total dollar cost at maturity if the spot rate is 1.20 and if it is 1.35, and the maximum cost per pound.
+7. **Translation exposure.** A subsidiary has net assets of EUR 25 million. The euro falls from 1.10 to 1.04 USD per EUR. Compute the translation loss, and the gain on a EUR 25 million forward sale at 1.10 designated as a net investment hedge.
+8. **Economic exposure.** A regression gives quarterly cash flow (USD millions) = 30 + 55 × S, where S is USD per GBP. Compute the predicted change in cash flow if S rises from 1.20 to 1.32, and the GBP notional per quarter that would hedge the exposure.
+
+### Answers to Selected Problems
+
+1. 1-day 99%: 2.326 × 0.008 × 250,000,000 = 4.65 million (4,652,696 using unrounded z). 10-day: 4.65 × √10 = 14.71 million. 1-day 95%: 1.645 × 0.008 × 250,000,000 = 3.29 million.
+2. a = 30,000,000 × 0.02 = 600,000; b = 70,000,000 × 0.01 = 700,000. σP = √(600,000² + 700,000² + 2 × (−0.2) × 600,000 × 700,000) = √(360,000,000,000 + 490,000,000,000 − 168,000,000,000) = √682,000,000,000 = 825,833. VaR(95%) = 1.645 × 825,833 = 1.358 million. Sum of stand-alone = 1.645 × 1,300,000 = 2.138 million. Diversification benefit about 0.78 million.
+3. F = 1.2500 × 1.045 / 1.03 = 1.2682. Sterling is at a forward premium (USD rates are higher).
+4. S₄ = 150 × (1.005 / 1.025)⁴ = 150 × 0.924 = 138.6 yen per dollar (the dollar is expected to depreciate against the yen, since US inflation is higher).
+5. Buy the PV of GBP 2,000,000 at 3 percent for six months: 2,000,000 / 1.015 = GBP 1,970,443; its dollar cost today is 1,970,443 × 1.25 = USD 2,463,054, financed by borrowing at 4 percent for six months, so the repayment is 2,463,054 × 1.02 = USD 2,512,315. The forward rate is 1.25 × 1.02 / 1.015 = 1.25616, giving 2,000,000 × 1.25616 = USD 2,512,315, which is identical.
+6. Premium 0.0150 × 1.02 = 0.0153 per GBP. If S = 1.20 the call is not exercised: cost = 2,000,000 × (1.20 + 0.0153) = USD 2,430,600. If S = 1.35 the call is exercised at 1.26: cost = 2,000,000 × (1.26 + 0.0153) = USD 2,550,600. Maximum cost per pound = 1.2753.
+7. Loss: 25,000,000 × (1.10 − 1.04) = USD 1,500,000 (translation reserve). The forward gain is also 25,000,000 × (1.10 − 1.04) = USD 1,500,000, fully offsetting in OCI.
+8. Change = 55 × (1.32 − 1.20) = 55 × 0.12 = USD 6.6 million per quarter. The cash flow behaves as if long GBP 55 million per quarter, so that is the hedge notional (before considering the appropriate hedge ratio).
