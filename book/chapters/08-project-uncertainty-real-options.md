@@ -520,3 +520,87 @@ The purpose of risk analysis is not to produce numbers for their own sake; it is
 - **Anchoring on the base case.** Decision-makers tend to treat the base case as the expected outcome. Show the whole distribution.
 - **Option inflation.** Claims of "strategic option value" can justify any project. Require an explicit exercise condition and a numerical estimate.
 - **Neglect of correlation with the firm's other businesses.** A project that is risky stand-alone may reduce the firm's overall risk if its returns offset those of existing units; the reverse also holds. Portfolio effects are treated in the chapters on risk and return.
+
+## Case Study
+
+### Tidewater Water Technologies: The Desalination Module Decision
+
+*(Fictional company; all figures illustrative.)*
+
+Tidewater Water Technologies designs and operates small desalination plants for island resorts and coastal municipalities. Its board is considering whether to build a manufacturing facility for a standardised, containerised reverse-osmosis module that could be sold into several regional markets. The facility would cost $60 million, depreciated straight-line over ten years, and the company's cost of capital for this kind of risk is 10%.
+
+The planning team's base case assumes that Tidewater sells 90 modules a year at an average price of $1.2 million, with variable cost of $0.75 million per module and fixed cash operating costs of $14 million per year. At a 25% tax rate, the model yields an NPV of roughly $11 million over a ten-year life. The chief financial officer, Imani Okafor, is not satisfied with a single number. She asks the team to explore the risks and to say what the company could do about them.
+
+The team's first finding is that the forecast is far more sensitive to price than to anything else. Module prices are set in competitive tenders, and two Asian manufacturers have announced capacity expansions. A one-at-a-time analysis shows that a 5% reduction in price eliminates more than half the NPV, while a 5% reduction in volume reduces it by about a fifth. The team then builds three scenarios. In the "price war" scenario, new capacity floods the market: volume stays at 90 but price falls to $1.0 million and the plant's costs do not change; in this case the NPV is substantially negative. In the "steady growth" scenario, the base case holds. In the "water stress" scenario, droughts and rising tourist demand lift demand to 130 modules at $1.3 million. The team assigns probabilities of 30%, 45% and 25%. The probability-weighted NPV is positive but the standard deviation is about twice the expected value.
+
+A Monte Carlo simulation, in which price, volume and unit cost are drawn from skewed distributions and price and volume are positively correlated (both fall in downturns), puts the probability of a negative NPV at roughly 35%. The board's risk committee notes that Tidewater's loan covenants limit the company's ability to absorb a loss of more than about $30 million.
+
+Imani then raises several design alternatives. The first is to build the facility in two phases: a $35 million first phase with capacity for 60 modules a year, and a second phase costing $30 million, to be decided two years later, which would raise capacity to 140. The site's permits and utility connections would be sized for the larger plant at a premium of $2 million up front. The static NPV of phase one alone is only marginally positive, about $3 million, and the extra $2 million of permits does not appear in the base case. The operations director argues that the phased design is "obviously better," but the finance team points out that the second phase would be built only if prices hold above $1.1 million, and they want to know what the right to make that decision is worth.
+
+A second alternative is to lease, rather than own, the production equipment, with a termination clause that allows Tidewater to return the equipment after year four on payment of a fee. This would raise annual costs but cap the downside. A third is to delay the whole project for 18 months until the outcome of a regulatory review of desalination subsidies in two major markets is known. The delay would cost Tidewater the first-mover relationship with two buyers that have signalled willingness to sign framework agreements, but it would resolve the largest uncertainty about price support.
+
+Finally, the head of strategy points out that the facility's modules are standardised and could be sold into the used-equipment market at perhaps 40% of cost, which provides a floor. The operations director disagrees: used modules already circulate at discounts of more than 50%, and sales volume would be thin in a downturn, precisely when Tidewater would need to sell.
+
+**Discussion Questions**
+
+1. Using the evidence in the case, rank the sources of uncertainty. What would you want the sensitivity analysis to show, and what additional scenarios or simulation features (such as correlation) matter, and why?
+2. Describe how you would value the two-phase design. Which real option does it contain, what are its inputs, and how would you decide whether the $2 million permit premium is justified?
+3. Evaluate the lease-with-termination alternative and the claim that used-equipment values provide an abandonment floor. What are the conditions under which an abandonment option is genuinely valuable?
+4. How would you advise the board on the 18-month delay? State the trade-off, the information you would want, and the threshold at which you would recommend investing now.
+
+## Key Takeaways
+
+- A single NPV is a point estimate; managers need to know how it could be wrong, which assumptions drive it, and what can be done about the risk.
+- Use the discount rate for systematic risk and use sensitivity, scenario, simulation and option analysis for project-specific uncertainty; do not inflate the discount rate to cover every doubt.
+- Sensitivity analysis ranks inputs by their effect on NPV, but ignores correlation and depends on the ranges chosen; it directs research effort rather than measuring risk.
+- Scenario analysis varies several inputs together in coherent stories and can attach probabilities to give an expected NPV and dispersion, at the cost of covering only a few outcomes.
+- Accounting break-even (EBIT = 0) is below financial break-even (NPV = 0); a project can be accounting-profitable and still destroy value, so the financial break-even and its margin of safety are what matter.
+- Operating leverage amplifies the effect of sales changes on profit; high fixed costs push break-even closer to the base case.
+- Monte Carlo simulation turns input distributions into a distribution of NPV and probabilities of loss, but depends critically on the distributions and the correlations assumed.
+- Decision trees value sequential decisions by backward induction and show the value of information; a cheap test before a large commitment can turn a rejected project into an accepted one.
+- Real options (to expand, abandon, delay) are embedded rights whose value rises with uncertainty; project value is static NPV plus option value.
+- The hurdle for an irreversible investment that can be postponed exceeds zero NPV, and option claims must be tested for a defined right, cost and time of exercise.
+
+## Review Questions
+
+1. Why can two projects with the same expected NPV be very different investments? Illustrate with the measures introduced in this chapter.
+2. Distinguish forecasting risk, market risk and project-specific risk. Which should be reflected in the discount rate?
+3. Explain how a tornado diagram is built and why its ranking depends on the ranges assumed for each input.
+4. What are the limitations of one-at-a-time sensitivity analysis? How does scenario analysis address one of them, and what new weakness does it introduce?
+5. Define accounting, cash and financial break-even. Why is the financial break-even the relevant one for an investment decision?
+6. What does the degree of operating leverage measure, and how does it affect the margin of safety?
+7. Outline the steps in a Monte Carlo simulation. Why does omitting correlation among inputs usually understate risk?
+8. Why can the mean of a simulated NPV distribution differ from the NPV computed at the expected values of the inputs?
+9. Explain backward induction in a decision tree and how a tree can be used to value information such as a pilot study.
+10. Why does greater uncertainty increase the value of a real option? Identify one condition under which an option to wait is worth little.
+
+## Problems
+
+Unless stated otherwise, use the Cirrus-style model of this chapter: operating cash flow = (Units × (Price − Variable cost) − Fixed cash costs − Depreciation) × (1 − T) + Depreciation, with no working capital or salvage.
+
+**Problem 8.1 (Sensitivity).** A project costs $2,000,000 (straight-line over 5 years, no salvage) and sells 50,000 units a year at $80, with variable cost $50 per unit and fixed cash costs $600,000 per year. The tax rate is 30% and the required return is 10% (annuity factor for 5 years = 3.790787). Compute the base-case NPV and the NPV when (a) price is 10% lower and 10% higher, and (b) variable cost is 10% higher and 10% lower. Which variable is the NPV more sensitive to?
+
+**Problem 8.2 (Scenarios).** For the project in Problem 8.1, define three scenarios. Pessimistic (probability 30%): 35,000 units, price $74, variable cost $54, fixed costs $650,000. Base (50%): as above. Optimistic (20%): 60,000 units, price $84, variable cost $48, fixed costs $580,000. Compute the NPV in each scenario, the expected NPV, the standard deviation and the probability of a negative NPV (assume losses generate tax credits).
+
+**Problem 8.3 (Break-even).** For the project in Problem 8.1, compute (a) the accounting break-even volume, (b) the cash break-even volume (assuming no tax credit on losses, so OCF = EBITDA), (c) the financial break-even volume and the margin of safety relative to 50,000 units, and (d) the NPV at the accounting break-even volume.
+
+**Problem 8.4 (Decision tree, $ millions).** A firm can spend $0.6 million on a test market now. With probability 0.50 the test succeeds; then at year 1 the firm invests $5.0 million in a launch whose year-1 value is $9.0 million. If the test fails, the launch would be worth $2.0 million, so the firm would not invest. The alternative is to launch immediately (investing $5.0 million now) with the same year-1 values and probabilities. The discount rate is 8%. Find the NPV of each strategy and the value of the test relative to immediate launch.
+
+**Problem 8.5 (Expansion option, $ millions).** A project costs $20.0 million and has a present value of cash flows of $18.0 million. After one year it will have gone up by a factor of 1.5 or down by 0.7. At that time the firm can pay $8.0 million to add capacity equal to 50% of the project's then-current value. The risk-free rate is 4%. Compute the risk-neutral probability, the value of the expansion option and the total value of the project including the option.
+
+**Problem 8.6 (Abandonment option, $ millions).** A project costs $14.0 million and has a present value of $15.0 million. After one year its value will have risen by a factor of 1.4 or fallen to 0.6. At that time the firm can sell the project for $11.0 million. The risk-free rate is 5%. Compute the value of the abandonment option and the total project value.
+
+**Problem 8.7 (Delay option, $ millions).** A firm may build a plant costing $100.0 million. Its present value of cash flows is $105.0 million. In a year the value will be 1.25 or 0.80 times its present level. Waiting forgoes a payout equal to 3% of value; the risk-free rate is 5%. Compute the value of waiting, compare it with investing now, and state your recommendation.
+
+**Problem 8.8 (Simulation output).** A simulation shows that a project's NPV is approximately normally distributed with mean $800,000 and standard deviation $500,000. Estimate (a) the probability that NPV is negative, (b) the probability that NPV exceeds $1,000,000, and (c) the 5th percentile of NPV. (Use the standard normal cumulative probabilities: Φ(−1.60) = 0.0548; Φ(0.40) = 0.6554; z at 5% = −1.645.)
+
+### Answers to Selected Problems
+
+- **8.1.** Base: contribution 50,000 × 30 = 1,500,000; EBIT = 1,500,000 − 600,000 − 400,000 = 500,000; after-tax 350,000; OCF = 750,000; NPV = −2,000,000 + 750,000 × 3.790787 = **$843,090**. (a) Price $72: contribution 1,100,000, EBIT 100,000, OCF 470,000, NPV = **−$218,330**; price $88: NPV = **$1,904,510**. (b) Variable cost $55: contribution 1,250,000, EBIT 250,000, OCF 575,000, NPV = **$179,702**; $45: NPV = **$1,506,478**. The swing from price (±10%) is about $2.12 million versus about $1.33 million from variable cost, so NPV is more sensitive to price.
+- **8.2.** Pessimistic: contribution 35,000 × 20 = 700,000; EBIT = 700,000 − 650,000 − 400,000 = −350,000; after-tax −245,000; OCF = 155,000; NPV = **−$1,412,428**. Base: **$843,090**. Optimistic: contribution 60,000 × 36 = 2,160,000; EBIT = 1,180,000; after-tax 826,000; OCF 1,226,000; NPV = **$2,647,505**. Expected NPV = 0.3 × (−1,412,428) + 0.5 × 843,090 + 0.2 × 2,647,505 = **$527,318**. σ ≈ **$1,441,416**. Probability of negative NPV = **30%** (the pessimistic scenario only).
+- **8.3.** (a) (600,000 + 400,000) / 30 = **33,333 units**. (b) 600,000 / 30 = **20,000 units**. (c) Required OCF = 2,000,000 / 3.790787 = 527,595; EBIT = (527,595 − 400,000) / 0.70 = 182,279; contribution = 182,279 + 1,000,000 = 1,182,279; Q = **39,409 units**; margin of safety = (50,000 − 39,409) / 50,000 = **21.2%**. (d) At 33,333 units OCF = 400,000, NPV = −2,000,000 + 400,000 × 3.790787 = **−$483,685**.
+- **8.4.** Test strategy: −0.6 + 0.5 × (9.0 − 5.0) / 1.08 = −0.6 + 1.852 = **+$1.252 million**. Immediate launch: −5.0 + (0.5 × 9.0 + 0.5 × 2.0) / 1.08 = −5.0 + 5.093 = **+$0.093 million**. The test adds about **$1.159 million** relative to immediate launch.
+- **8.5.** q = (1.04 − 0.70) / (1.50 − 0.70) = **0.425**. Up: V = 27.0, expansion payoff = 0.5 × 27.0 − 8.0 = 5.5. Down: V = 12.6, expansion payoff = 6.3 − 8.0 < 0, so 0. Option = 0.425 × 5.5 / 1.04 = **$2.248 million**. Static NPV = −2.0; total = **+$0.248 million**.
+- **8.6.** q = (1.05 − 0.60) / (1.40 − 0.60) = 0.5625. Down value = 9.0, payoff = 11.0 − 9.0 = 2.0; up value 21.0, payoff 0. Option = (1 − 0.5625) × 2.0 / 1.05 = **$0.833 million**. Static NPV = +1.0; total = **+$1.833 million**.
+- **8.7.** q = (1.05 − 0.03 − 0.80) / (1.25 − 0.80) = 0.4889. Up: 131.25, payoff 31.25; down: 84.0, no investment. Waiting = 0.4889 × 31.25 / 1.05 = **$14.55 million** versus an NPV of **$5.0 million** now. Wait: investing now sacrifices about $9.55 million of option value.
+- **8.8.** (a) z = (0 − 800,000) / 500,000 = −1.60, probability ≈ **5.5%**. (b) z = 0.40, so P(NPV > 1,000,000) = 1 − 0.6554 = **34.5%**. (c) 800,000 − 1.645 × 500,000 = **−$22,500**.

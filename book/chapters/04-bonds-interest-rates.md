@@ -6,7 +6,7 @@ After studying this chapter you should be able to:
 
 - Price a fixed-rate bond as the present value of its coupons and principal, and explain the inverse relationship between bond prices and yields, including the pull-to-par effect and the difference between clean and dirty prices.
 - Compute and interpret yield to maturity (YTM), current yield and realised return, and explain the assumptions embedded in YTM.
-- Measure interest-rate risk with Macaulay duration, modified duration and convexity, and use them to estimate price changes and to build an immunised portfolio.
+- Measure interest-rate risk with Macaulay duration, modified duration and convexity, and use them to estimate price changes and to build an immunized portfolio.
 - Derive spot rates and forward rates from a term structure, and explain the main theories (expectations, liquidity preference, market segmentation) of why yield curves slope as they do.
 - Decompose a corporate bond yield into a risk-free component and a credit spread, interpret credit ratings, and distinguish expected loss from the risk premium priced into spreads.
 - Explain how inflation-linked bonds work, compute real yields and breakeven inflation, and assess when they are the right funding or investment instrument.
@@ -103,7 +103,7 @@ Bond prices are *quoted* clean, so that quoted prices do not jump by the amount 
 
 ### 4.1.5 Pull to par
 
-If a bond's yield stays constant, its price drifts toward par as maturity approaches, because the discount (or premium) is amortised away. A 10-year 5% bond priced at $926.40 at a 6% yield will be priced at $931.98 after one year (nine years remaining), $944.18 after three years, $957.88 after five years and $981.67 after eight years, reaching $1,000 at maturity. The increase is the **accretion** that partly compensates the investor for the below-market coupon. This steady drift is the reason why a bond's total return over a holding period is not simply the coupon: it is coupon plus price change, even if market yields do not move.
+If a bond's yield stays constant, its price drifts toward par as maturity approaches, because the discount (or premium) is amortized away. A 10-year 5% bond priced at $926.40 at a 6% yield will be priced at $931.98 after one year (nine years remaining), $944.18 after three years, $957.88 after five years and $981.67 after eight years, reaching $1,000 at maturity. The increase is the **accretion** that partly compensates the investor for the below-market coupon. This steady drift is the reason why a bond's total return over a holding period is not simply the coupon: it is coupon plus price change, even if market yields do not move.
 
 ### 4.1.6 Common mistakes in bond pricing
 
@@ -128,7 +128,7 @@ A useful approximation for a quick check is
 YTM ≈ [C + (F − P)/n] / [(F + P)/2]
 ```
 
-which averages the annual coupon income and the annual amortisation of the discount, divided by the average investment.
+which averages the annual coupon income and the annual amortization of the discount, divided by the average investment.
 
 **Example 4.3 – Solving for YTM.** A bond with a 4% annual coupon, eight years to maturity and a face value of $1,000 trades at $950. Find its YTM.
 
@@ -145,7 +145,7 @@ YTM is a convenient single number, but it relies on three assumptions that manag
 
 1. **The bond is held to maturity.** If sold earlier, the return depends on the price at the sale date, which depends on yields then.
 2. **The issuer pays all promised cash flows in full and on time.** For risky bonds, the promised yield overstates the expected yield. The gap is discussed in Section 4.6.
-3. **Coupons are reinvested at the YTM itself.** If market rates fall, the coupons are reinvested at lower rates and the realised return falls short of the YTM; if rates rise, reinvestment is more rewarding but the bond's price has fallen. This is the **reinvestment risk** that offsets **price risk**; we exploit the offset when we immunise a portfolio.
+3. **Coupons are reinvested at the YTM itself.** If market rates fall, the coupons are reinvested at lower rates and the realised return falls short of the YTM; if rates rise, reinvestment is more rewarding but the bond's price has fallen. This is the **reinvestment risk** that offsets **price risk**; we exploit the offset when we immunize a portfolio.
 
 **Example 4.4 – Realised compound yield.** An investor buys a five-year, 5% annual-coupon bond at a 6% yield and holds it to maturity, reinvesting every coupon at 4%.
 
@@ -274,7 +274,7 @@ Adding the convexity term cuts the error by an order of magnitude. For large mov
 
 ### 4.4.2 Immunisation
 
-An investor or firm with a known future liability can use duration to lock in the ability to meet it, a technique called **immunisation**. The idea is to offset price risk and reinvestment risk. If yields rise, the bonds lose market value but reinvested coupons earn more; if yields fall, the opposite occurs. Choosing a portfolio whose duration equals the liability's horizon makes the two effects cancel for small, parallel shifts in the yield curve.
+An investor or firm with a known future liability can use duration to lock in the ability to meet it, a technique called **immunization**. The idea is to offset price risk and reinvestment risk. If yields rise, the bonds lose market value but reinvested coupons earn more; if yields fall, the opposite occurs. Choosing a portfolio whose duration equals the liability's horizon makes the two effects cancel for small, parallel shifts in the yield curve.
 
 Two conditions are required:
 
@@ -521,7 +521,7 @@ Bond markets are not just a source of funds. They are a source of information an
 
 *Illustrative case. Tessellate Power is a fictional company.*
 
-Tessellate Power generates and sells electricity to about 900,000 customers under a regulatory framework in which tariffs are reset annually to reflect a measure of consumer-price inflation, with a lag of one year. The company has $2.1 billion of debt outstanding, with a weighted average maturity of 6.5 years and a weighted average coupon of 4.8%. It is rated BBB by one agency and Baa2 by another. The company's principal covenant is a limit on net debt to earnings before interest, tax, depreciation and amortisation (EBITDA).
+Tessellate Power generates and sells electricity to about 900,000 customers under a regulatory framework in which tariffs are reset annually to reflect a measure of consumer-price inflation, with a lag of one year. The company has $2.1 billion of debt outstanding, with a weighted average maturity of 6.5 years and a weighted average coupon of 4.8%. It is rated BBB by one agency and Baa2 by another. The company's principal covenant is a limit on net debt to earnings before interest, tax, depreciation and amortization (EBITDA).
 
 The board has approved a $400 million wind and storage project. The treasurer, Anil Desmarais, must choose between three structures that investment bankers have priced on the same day.
 
@@ -565,7 +565,7 @@ Anil's analysts also compute that, at a 6.4% yield, a 15-year 6.4% bond would ha
 4. List the three assumptions underlying the YTM calculation. Which is most likely to be violated, and what is the consequence for a long-dated, high-coupon bond?
 5. Why is duration a better measure of interest-rate risk than maturity? Under what conditions does duration equal maturity?
 6. Explain why convexity is valuable to a bondholder. Why can a callable bond exhibit negative convexity?
-7. Describe how a company with a known future liability could immunise it. What are the limitations of the technique?
+7. Describe how a company with a known future liability could immunize it. What are the limitations of the technique?
 8. Define a forward rate and explain how it is derived from spot rates. What does it mean if the forward rate is above the expected future spot rate?
 9. Distinguish expected loss from the credit spread. Why is the risk-neutral default probability higher than the real-world default probability?
 10. Explain how breakeven inflation is calculated from nominal and real yields, and why it should not be read as a pure forecast of inflation.
@@ -578,7 +578,7 @@ Anil's analysts also compute that, at a 6.4% yield, a 15-year 6.4% bond would ha
 4. **Spot and forward rates.** The zero-coupon spot rates are 2.0% (1 year), 2.8% (2 years) and 3.4% (3 years). Compute (a) the price of a three-year zero-coupon bond with face value $1,000, (b) the forward rates f₁,₂ and f₂,₃, and (c) the price of a three-year 4% annual-coupon bond.
 5. **Credit spread.** A one-year government zero yields 3.5%, and a one-year corporate zero yields 5.9%. If recovery in default is 50%, compute the risk-neutral default probability. What is the spread, and how does it compare with PD × LGD?
 6. **Inflation-linked bond.** The 10-year nominal yield is 5.2% and the 10-year real yield is 2.1%. (a) Compute breakeven inflation. (b) An inflation-linked bond has an original principal of $1,000 and a 2.0% real annual coupon; if inflation is 2.5% each year, what is the principal and coupon in year 2?
-7. **Immunisation.** A firm owes $2,000,000 in five years. The yield is 6% for all maturities. Design a portfolio of 2-year and 8-year zero-coupon bonds that is immunised: compute the present value of the liability and the amount to invest in each bond.
+7. **Immunisation.** A firm owes $2,000,000 in five years. The yield is 6% for all maturities. Design a portfolio of 2-year and 8-year zero-coupon bonds that is immunized: compute the present value of the liability and the amount to invest in each bond.
 8. **Portfolio and zero-coupon duration.** A portfolio holds 40% of its value in a bond with a modified duration of 3.2 and 60% in a bond with a modified duration of 7.5. (a) Compute the portfolio modified duration. (b) Estimate the percentage change in portfolio value if yields rise by 75 basis points. (c) Compute the price of a 10-year zero-coupon bond at a 5% yield, and the percentage change if the yield rises to 5.5%.
 
 ### Answers to Selected Problems

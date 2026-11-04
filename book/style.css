@@ -1,5 +1,5 @@
 @page { size: A4; margin: 0; }
-html { font-family: "Liberation Serif","DejaVu Serif",serif; font-size: 11pt; line-height: 1.45; color:#1b1b1b; }
+html { font-family: "Liberation Serif","DejaVu Serif",serif; font-size: 12pt; line-height: 1.65; color:#1b1b1b; }
 body { margin:0; }
 h1,h2,h3,h4 { font-family:"Liberation Sans","DejaVu Sans",sans-serif; color:#12304f; line-height:1.2; }
 h1 { font-size:26pt; page-break-before:always; margin:0 0 1.2em; padding-bottom:.3em; border-bottom:3px solid #12304f; }
