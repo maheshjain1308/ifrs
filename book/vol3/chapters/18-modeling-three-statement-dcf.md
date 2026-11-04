@@ -610,7 +610,410 @@ FY2030 net income              105.091   104.525       0.566
 FY2030 equity                  651.978   650.900       1.078
 ```
 
-The successive changes (14.71, 0.2139, 0.0028, 0.000037) shrink by a factor of 70 to 77 per pass, matching the theoretical 1 / 0.0131 = 76. The comparison shows the cost of the shortcut: using opening balances overstates FY2027E net interest cost by 0.402 (4.0 percent) because it ignores the average revolver balance and the fact that the term loan is repaid during the year, and it puts FY2030E equity out by 1.078. Small in a base case; larger when debt is a bigger share of the capital structure, as in leveraged buyouts (Volume 1, Chapter 23).
+The successive changes (14.71, 0.2139, 0.0028, 0.000037) shrink by a factor of 69 to 76 per pass, matching the theoretical 1 / 0.0131 = 76. The comparison shows the cost of the shortcut: using opening balances overstates FY2027E net interest cost by 0.402 (4.0 percent) mainly because it charges interest on the full opening term loan even though 30.0 of it is repaid during the year, and it puts FY2030E equity out by 1.078. Small in a base case; larger when debt is a bigger share of the capital structure, as in leveraged buyouts (Volume 1, Chapter 23).
 
 Alternatives to iteration, for completeness: (i) calculate interest on opening balances (no loop, but less accurate); (ii) solve the loop algebraically (possible for a single revolver but cumbersome with several tranches); (iii) a macro that copies the interest values and pastes them as constants until they stop changing (robust but requires macros and leaves stale values if someone forgets to run it). For models that will be handed to others, a switch and clear documentation are usually the best compromise.
 
+## Part IV: The discounted cash flow valuation
+
+### From statements to unlevered free cash flow
+
+A DCF values the operations of the business, independent of how they are financed (Volume 1, Chapter 21). The cash flow to be discounted is therefore unlevered free cash flow:
+
+```
+UFCF = EBIT x (1 - tax rate) + Depreciation - Capex - Increase in net working capital
+```
+
+Notice what is absent: interest, interest income, dividends, the revolver, the term loan. Financing enters the valuation in two places only: the discount rate (through the weighted average cost of capital, which reflects the interest tax shield) and the bridge from enterprise value to equity value (through net debt). A valuation that changes when you change the dividend payout is wrong; Exercise 2 demonstrates that this model passes that test.
+
+**Excel layout, DCF sheet (columns F to J, as always).**
+
+| Row | Line | Formula in F |
+|---|---|---|
+| 10 | EBIT | `=Model!F16` |
+| 11 | Tax on EBIT | `=-F10*Tax` |
+| 12 | NOPAT | `=F10+F11` |
+| 13 | Add: depreciation | `=-Model!F15` |
+| 14 | Less: capex | `=Model!F61` |
+| 15 | Less: increase in NWC | `=-Model!F30` |
+| 16 | Unlevered free cash flow | `=SUM(F12:F15)` |
+| 17 | Discount period (years) | `=F$6-IF(MidYear=1,0.5,0)` |
+| 18 | Discount factor | `=1/(1+WACC)^F17` |
+| 19 | Present value of UFCF | `=F16*F18` |
+
+WACC inputs sit on the Inputs sheet: risk-free rate 4.0 percent, equity beta 1.10, equity risk premium 5.0 percent, pre-tax cost of debt 6.5 percent, target debt-to-value 25 percent. The cost of equity is `=Rf+Beta*ERP` = 9.5 percent and WACC is `=(1-DV)*Ke+DV*Kd*(1-Tax)` = 0.75 x 9.5 percent + 0.25 x 6.5 percent x 0.75 = 8.34 percent (Volume 1, Chapter 11). Note that the WACC uses a target capital structure, not the model's own forecast leverage, which falls over the period.
+
+Terminal value and the bridge:
+
+| Item | Formula |
+|---|---|
+| Terminal value, Gordon growth | `=J16*(1+TermG)/(WACC-TermG)` |
+| PV of terminal value | `=TV/(1+WACC)^J17` |
+| Terminal value, exit multiple (cross-check) | `=ExitMult*Model!J14` |
+| PV of exit-multiple terminal value | `=TVexit/(1+WACC)^J6` |
+| Enterprise value | `=SUM(F19:J19)+PVTV` |
+| Less: net debt at valuation date | `=Inputs!TermLoan+Inputs!Revolver-Inputs!Cash` |
+| Equity value | `=EV-NetDebt` |
+| Value per share | `=Equity/Shares` |
+| Implied terminal EV/EBITDA | `=TV/Model!J14` |
+
+Do not use Excel's NPV function with the mid-year convention (it assumes end-of-period flows and equally spaced periods starting one period out) and be careful with XNPV (it discounts on actual dates using a 365-day year). `SUMPRODUCT` over the discount-factor row, or the explicit PV row above, is transparent and auditable.
+
+Two conventions need explaining. The **mid-year convention** discounts each year's cash flow at t - 0.5 years, on the logic that cash arrives through the year and not on the last day. It raises value by roughly half a year of discounting (about WACC / 2, here 4 percent). With a Gordon growth terminal value computed on mid-year flows, the terminal value is also discounted at N - 0.5 (the formula above uses the same J17 period); an exit-multiple terminal value, which represents a sale price at the end of year N, is discounted at N. The **valuation date** is 31 December 2025, so the net debt used is the opening balance sheet's: 200.0 + 0.0 - 60.0 = 140.0.
+
+### The DCF in Python
+
+```python
+# dcf.py -- WACC and DCF layered on model_core
+from model_core import *
+
+def wacc(rf=0.04, erp=0.05, beta=1.10, kd=0.065, tax=0.25, dv=0.25):
+    ke = rf + beta * erp
+    return (1 - dv) * ke + dv * kd * (1 - tax), ke
+
+def ufcf(r, tax=COMMON["tax"]):
+    return [r["ebit"][i] * (1 - tax) + r["dep"][i] - r["capex"][i] - r["dnwc"][i]
+            for i in range(N)]
+
+def dcf(r, w, g, midyear=True, exit_mult=None, tax=COMMON["tax"],
+        net_debt=OPEN["term"] + OPEN["revolver"] - OPEN["cash"], shares=COMMON["shares"]):
+    f = ufcf(r, tax)
+    t = [i + 1 - (0.5 if midyear else 0.0) for i in range(N)]
+    pv = [f[i] / (1 + w) ** t[i] for i in range(N)]
+    if exit_mult is None:                      # Gordon growth on final-year FCF
+        tv = f[-1] * (1 + g) / (w - g)
+        pv_tv = tv / (1 + w) ** (N - (0.5 if midyear else 0.0))
+    else:                                      # exit multiple on final-year EBITDA
+        tv = exit_mult * r["ebitda"][-1]
+        pv_tv = tv / (1 + w) ** N
+    ev = sum(pv) + pv_tv
+    eq = ev - net_debt
+    return dict(fcf=f, t=t, pv=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq,
+                price=eq / shares, tv_share=pv_tv / ev,
+                implied_mult=tv / r["ebitda"][-1])
+```
+
+```python
+from dcf import *
+r = build("Base")
+w, ke = wacc()
+print(f"Cost of equity {ke:.4%}; after-tax cost of debt {0.065*(1-0.25):.4%}; WACC {w:.4%}")
+d = dcf(r, w, 0.025, midyear=True)
+print(f"\n{'':<22}" + "".join(f"{'FY'+str(y)+'E':>10}" for y in YEARS))
+print(f"{'EBIT':<22}" + "".join(f"{x:>10.1f}" for x in r["ebit"]))
+print(f"{'NOPAT (EBIT x 0.75)':<22}" + "".join(f"{x*0.75:>10.1f}" for x in r["ebit"]))
+print(f"{'+ Depreciation':<22}" + "".join(f"{x:>10.1f}" for x in r["dep"]))
+print(f"{'- Capex':<22}" + "".join(f"{-x:>10.1f}" for x in r["capex"]))
+print(f"{'- Increase in NWC':<22}" + "".join(f"{-x:>10.1f}" for x in r["dnwc"]))
+print(f"{'Unlevered FCF':<22}" + "".join(f"{x:>10.2f}" for x in d["fcf"]))
+print(f"{'Discount period (yrs)':<22}" + "".join(f"{x:>10.1f}" for x in d["t"]))
+print(f"{'Discount factor':<22}" + "".join(f"{1/(1+w)**x:>10.4f}" for x in d["t"]))
+print(f"{'PV of FCF':<22}" + "".join(f"{x:>10.2f}" for x in d["pv"]))
+print(f"\nSum of PV of FCF        {sum(d['pv']):>10.2f}")
+print(f"Terminal value (Gordon) {d['tv']:>10.2f}   implied EV/EBITDA {d['implied_mult']:.2f}x")
+print(f"PV of terminal value    {d['pv_tv']:>10.2f}   ({d['tv_share']:.1%} of EV)")
+print(f"Enterprise value        {d['ev']:>10.2f}")
+print(f"Less net debt (200 - 60){140:>10.2f}")
+print(f"Equity value            {d['equity']:>10.2f}")
+print(f"Value per share ($)     {d['price']:>10.2f}")
+print()
+for mid in (True, False):
+    x = dcf(r, w, 0.025, midyear=mid)
+    print(f"{'Mid-year' if mid else 'End-year'} convention: EV {x['ev']:.1f}, price {x['price']:.2f}")
+m = dcf(r, w, 0.025, exit_mult=9.0)
+f5 = d["fcf"][-1]
+g_impl = (m["tv"] * w - f5) / (m["tv"] + f5)
+print(f"Exit multiple 9.0x: TV {m['tv']:.1f}, EV {m['ev']:.1f}, price {m['price']:.2f}, implied perpetual growth {g_impl:.2%}")
+```
+
+```
+Cost of equity 9.5000%; after-tax cost of debt 4.8750%; WACC 8.3438%
+
+                         FY2026E   FY2027E   FY2028E   FY2029E   FY2030E
+EBIT                       106.9     118.3     129.0     138.7     147.1
+NOPAT (EBIT x 0.75)         80.2      88.7      96.8     104.0     110.3
++ Depreciation              40.0      41.6      43.5      45.5      47.6
+- Capex                    -56.2     -60.1     -63.7     -66.9     -69.6
+- Increase in NWC          -14.2     -12.6     -11.6     -10.2      -8.5
+Unlevered FCF              49.78     57.62     64.96     72.45     79.92
+Discount period (yrs)        0.5       1.5       2.5       3.5       4.5
+Discount factor           0.9607    0.8867    0.8184    0.7554    0.6972
+PV of FCF                  47.83     51.09     53.17     54.73     55.72
+
+Sum of PV of FCF            262.54
+Terminal value (Gordon)    1401.81   implied EV/EBITDA 7.20x
+PV of terminal value        977.40   (78.8% of EV)
+Enterprise value           1239.94
+Less net debt (200 - 60)    140.00
+Equity value               1099.94
+Value per share ($)          22.00
+
+Mid-year convention: EV 1239.9, price 22.00
+End-year convention: EV 1191.2, price 21.02
+Exit multiple 9.0x: TV 1752.8, EV 1436.7, price 25.93, implied perpetual growth 3.62%
+```
+
+### Interpreting the valuation
+
+The base case value is $22.00 per share on an enterprise value of $1,239.9 million, which is 8.4 times FY2026E EBITDA of 146.9 and 6.4 times FY2030E EBITDA. Several features deserve scrutiny, because they are the questions an investment committee would ask.
+
+**Terminal value dominates.** The present value of the terminal value is 977.4, or 78.8 percent of enterprise value, so the five forecast years explain only about a fifth of the value. This is normal for a growing business with a short explicit forecast, but it means the answer is mainly a statement about the terminal growth rate and WACC. The sensitivity tables in Part V quantify this.
+
+**The implied exit multiple.** The Gordon growth terminal value of 1,401.8 equals 7.20 times FY2030E EBITDA. If peers trade at 9.0 times, the exit-multiple method gives a terminal value of 1,752.8 and a value of $25.93, $3.93 per share higher. The two methods answer different questions: Gordon growth asks what the cash flows are worth if growth fades to 2.5 percent, while the multiple asks what a buyer would pay. When they diverge, one of the assumptions (growth, WACC, the multiple) is out of line. Here, a 9.0 times exit multiple implies perpetual growth of 3.62 percent on end-year timing (3.43 percent on the mid-year Gordon convention used in the model, see Exercise 3), which is above any reasonable long-run nominal growth rate for a mature fastener business. The sensible reading is that the 9.0 times multiple would be paid for a business with better returns on incremental capital, or in a more favorable credit market, than Meridian's.
+
+**Terminal cash flow quality.** The model's terminal cash flow is simply FY2030E UFCF grown at 2.5 percent. But FY2030E reflects 4.0 percent growth, so its working-capital investment (8.5) and capex (69.6, versus depreciation of 47.6) support faster growth than the terminal period assumes. A more careful method normalizes the terminal year with the value-driver formula: reinvestment equals growth divided by the return on new invested capital (RONIC). Exercise 6 does this: if new investment only earns the cost of capital (RONIC equal to WACC), the value falls to $21.35; if it earns 12 percent, it rises to $23.82. The as-built $22.00 lies between, which is reassuring but not a substitute for stating the assumption.
+
+**Mid-year versus end-year.** The end-year convention gives $21.02 against $22.00. The difference, 4.7 percent, is mechanical and should be a visible switch, not a buried assumption.
+
+## Part V: Scenarios, data tables and sensitivity
+
+### Scenario switch
+
+The scenario selector is one input cell, `Scen`, restricted by data validation to 1, 2 or 3. On the Scenarios sheet, each driver has three input rows (Base, Upside, Downside) and one live row that feeds the Model sheet:
+
+| Row | Content | Formula in F |
+|---|---|---|
+| 8 to 10 | Base: growth, COGS %, SG&A % | Inputs (blue) |
+| 14 to 16 | Upside: growth, COGS %, SG&A % | Inputs (blue) |
+| 20 to 22 | Downside: growth, COGS %, SG&A % | Inputs (blue) |
+| 30 | Live revenue growth | `=CHOOSE(Scen,F8,F14,F20)` |
+| 31 | Live COGS % | `=CHOOSE(Scen,F9,F15,F21)` |
+| 32 | Live SG&A % | `=CHOOSE(Scen,F10,F16,F22)` |
+
+`CHOOSE` is transparent and fast. `INDEX(F8:F20, ...)` with computed offsets or `OFFSET` are more compact but harder to audit (S8). The key discipline is that every scenario-dependent driver goes through a live row; a scenario that changes revenue but not margins, because one driver was hard-wired, is a common error. The Python equivalent is the `SCEN` dictionary and the `scn` argument.
+
+### Data tables
+
+A one- or two-variable **data table** (Data, What-If Analysis, Data Table) recalculates the whole workbook for each combination of input values and records one output. For the two-way table of value per share against WACC and terminal growth: put the output reference (`=DCF!price`) in the top-left corner cell, the growth values across the top row, the WACC values down the left column, select the block, and specify the row input cell (`TermG`) and the column input cell (`WACC`). Excel fills the interior with `{=TABLE(TermG,WACC)}`.
+
+Three limitations matter. The input cells must be on the same sheet as the table (so, in practice, put the table on the sheet holding the inputs, or put copies of the inputs on the Sens sheet and make the model read them). Data tables slow a workbook sharply and interact badly with iterative calculation, since every cell of the table triggers a full iterative recalculation; set Calculation to "Automatic except data tables" and press F9 when you want the table refreshed. And a table that varies WACC must vary the cell the DCF actually reads: if WACC is a formula (as above), you must overwrite it with an input-driven override, or the table will vary nothing.
+
+For these reasons many practitioners prefer **direct-formula grids** for DCF sensitivity. Because UFCF does not depend on WACC or growth, value per share can be written as one formula in each grid cell, using the UFCF and discount-period rows already computed:
+
+```
+=( SUMPRODUCT(DCF!$F$16:$J$16 / (1+$B20)^DCF!$F$17:$J$17)
+   + DCF!$J$16*(1+C$19)/($B20-C$19) / (1+$B20)^DCF!$J$17
+   - NetDebt ) / Shares
+```
+
+with WACC values in column B and growth values in row 19. This recalculates instantly, has no iterative-calculation problem and can be audited like any other formula. It cannot, of course, vary operating assumptions that change UFCF itself; for those (a margin sensitivity, for example) a data table, or repeated runs of a macro, is required. The Python replica handles both uniformly because it simply calls the model again.
+
+The listing below produces the two sensitivity grids, the scenario summary, a probability-weighted value, and a one-at-a-time sensitivity (sometimes called a tornado analysis) around the base case.
+
+```python
+import copy
+from dcf import *
+from checks import master
+import model_core
+
+w0, _ = wacc()
+base = build("Base")
+
+# ---- 1. Two-way data table: value per share, WACC x terminal growth --------
+waccs = [w0 - 0.01, w0 - 0.005, w0, w0 + 0.005, w0 + 0.01]
+gs = [0.015, 0.020, 0.025, 0.030, 0.035]
+print("Value per share ($): rows = WACC, columns = terminal growth")
+print(f"{'WACC':>8}" + "".join(f"{g:>9.1%}" for g in gs))
+for w in waccs:
+    print(f"{w:>8.2%}" + "".join(f"{dcf(base, w, g)['price']:>9.2f}" for g in gs))
+
+print("\nValue per share ($): rows = WACC, columns = exit EV/EBITDA multiple")
+ms = [7.0, 8.0, 9.0, 10.0, 11.0]
+print(f"{'WACC':>8}" + "".join(f"{m:>9.1f}x" for m in ms))
+for w in waccs:
+    print(f"{w:>8.2%}" + "".join(f"{dcf(base, w, 0.025, exit_mult=m)['price']:>10.2f}" for m in ms))
+
+# ---- 2. Scenario summary ---------------------------------------------------
+print("\nScenario summary (WACC 8.34%, g 2.5%, mid-year)")
+hdr = f"{'':<26}" + "".join(f"{s:>11}" for s in SCEN)
+print(hdr)
+res = {s: build(s) for s in SCEN}
+dd = {s: dcf(res[s], w0, 0.025) for s in SCEN}
+def line(lab, f, fmt="{:>11.1f}"):
+    print(f"{lab:<26}" + "".join(fmt.format(f(s)) for s in SCEN))
+line("FY2030 revenue", lambda s: res[s]["revenue"][-1])
+line("FY2030 EBITDA", lambda s: res[s]["ebitda"][-1])
+line("FY2030 EBITDA margin %", lambda s: 100 * res[s]["ebitda"][-1] / res[s]["revenue"][-1])
+line("FY2030 net income", lambda s: res[s]["ni"][-1])
+line("Peak revolver", lambda s: max(res[s]["revolver"]))
+line("Enterprise value", lambda s: dd[s]["ev"])
+line("Value per share ($)", lambda s: dd[s]["price"], "{:>11.2f}")
+line("Implied TV EV/EBITDA (x)", lambda s: dd[s]["implied_mult"], "{:>11.2f}")
+print(f"{'Master check':<26}" + "".join(f"{('OK' if master(res[s])[0] else 'ERROR'):>11}" for s in SCEN))
+pw = {"Base": 0.5, "Upside": 0.25, "Downside": 0.25}
+ev_pw = sum(pw[s] * dd[s]["price"] for s in SCEN)
+print(f"\nProbability-weighted value per share (25/50/25): {ev_pw:.2f}")
+
+# ---- 3. One-at-a-time shocks around the base case (tornado) ---------------
+def price_with(mod=None, w=w0, g=0.025):
+    saved = copy.deepcopy(model_core.SCEN)
+    try:
+        if mod: mod(model_core.SCEN["Base"])
+        return dcf(build("Base"), w, g)["price"]
+    finally:
+        model_core.SCEN.clear(); model_core.SCEN.update(saved)
+b = price_with()
+shocks = [("COGS % of revenue +1 pt, every year", lambda s: s.update(cogs=[x + 0.01 for x in s["cogs"]])),
+          ("Revenue growth -1 pt, every year",   lambda s: s.update(g=[x - 0.01 for x in s["g"]])),
+          ("SG&A % of revenue +1 pt",             lambda s: s.update(sga=[x + 0.01 for x in s["sga"]]))]
+print(f"\nBase value per share {b:.2f}")
+for lab, m in shocks:
+    v = price_with(m); print(f"  {lab:<38}{v:>7.2f}  ({v - b:+.2f})")
+v = price_with(w=w0 + 0.01); print(f"  {'WACC +1 pt':<38}{v:>7.2f}  ({v - b:+.2f})")
+v = price_with(g=0.015);     print(f"  {'Terminal growth -1 pt':<38}{v:>7.2f}  ({v - b:+.2f})")
+```
+
+```
+Value per share ($): rows = WACC, columns = terminal growth
+    WACC     1.5%     2.0%     2.5%     3.0%     3.5%
+   7.34%    22.76    24.76    27.17    30.13    33.87
+   7.84%    20.72    22.38    24.34    26.71    29.63
+   8.34%    18.98    20.37    22.00    23.93    26.26
+   8.84%    17.48    18.66    20.03    21.63    23.53
+   9.34%    16.17    17.18    18.34    19.69    21.27
+
+Value per share ($): rows = WACC, columns = exit EV/EBITDA multiple
+    WACC      7.0x      8.0x      9.0x     10.0x     11.0x
+   7.34%     21.71     24.44     27.18     29.91     32.64
+   7.84%     21.21     23.88     26.55     29.22     31.89
+   8.34%     20.72     23.32     25.93     28.54     31.15
+   8.84%     20.24     22.79     25.34     27.89     30.44
+   9.34%     19.77     22.26     24.76     27.25     29.74
+
+Scenario summary (WACC 8.34%, g 2.5%, mid-year)
+                                 Base     Upside   Downside
+FY2030 revenue                 1070.1     1175.0      849.0
+FY2030 EBITDA                   194.8      233.8      117.2
+FY2030 EBITDA margin %           18.2       19.9       13.8
+FY2030 net income               105.1      133.6       48.6
+Peak revolver                    52.3       49.2       65.1
+Enterprise value               1239.9     1489.9      693.3
+Value per share ($)             22.00      27.00      11.07
+Implied TV EV/EBITDA (x)         7.20       7.32       6.30
+Master check                       OK         OK         OK
+
+Probability-weighted value per share (25/50/25): 20.52
+
+Base value per share 22.00
+  COGS % of revenue +1 pt, every year     19.41  (-2.59)
+  Revenue growth -1 pt, every year        21.71  (-0.29)
+  SG&A % of revenue +1 pt                 19.44  (-2.56)
+  WACC +1 pt                              18.34  (-3.65)
+  Terminal growth -1 pt                   18.98  (-3.02)
+```
+
+### What the sensitivities say
+
+**WACC and growth.** Value per share ranges from $16.17 (WACC 9.34 percent, growth 1.5 percent) to $33.87 (7.34 percent, 3.5 percent), a factor of two. A 50 basis point change in WACC moves value by about $2.0 to $2.8 around the base case and a 50 basis point change in terminal growth by about $1.6 to $1.9. Because the two interact (the growth effect is larger when WACC is lower), a table is the right display and a single number is not.
+
+**Exit multiple.** At the base WACC, the value ranges from $20.72 at 7.0 times to $31.15 at 11.0 times, about $2.60 per turn. The base-case Gordon value of $22.00 corresponds to an exit multiple of roughly 7.5 times on the exit-multiple method's timing (the Gordon terminal value itself is 7.2 times): one reason to be cautious about quoting a DCF value alongside a peer multiple without reconciling them.
+
+**Scenarios.** Value per share is $22.00 in the base case, $27.00 in the upside and $11.07 in the downside. The downside value is half the base value although revenue in FY2030E is only 21 percent lower (849.0 against 1,070.1), because the margin squeeze (EBITDA margin 13.8 percent against 18.2 percent) flows entirely to profit and the lower growth releases less value. Operating leverage, in other words, is doing the work. The weights of 25, 50 and 25 percent give a probability-weighted value of $20.52, below the base case, because the downside is further from the base than the upside. A model whose "base case" is also its expected case is rare.
+
+**Drivers.** One percentage point on the COGS ratio is worth $2.59 per share and one on SG&A $2.56, very similar and close to the effect of a 1 point rise in WACC ($3.65) or a 1 point fall in terminal growth ($3.02). The surprise is revenue growth: cutting growth by 1 point in every year costs only $0.29 per share. The reason is economic: with a return on new capital close to the cost of capital, growth consumes about as much cash (capex and working capital) as it creates, so more growth adds little value. This is the intuition of Volume 1, Chapter 21 and of the value-driver formula in Exercise 6, and it is a useful reminder that a model that shows revenue growth as its main lever may be disguising what actually matters.
+
+## Part VI: Exercises with solutions
+
+Each exercise can be done in the Python model by changing one argument, and in Excel by changing one input; the Excel result must match the Python result. The output of the program that solves Exercises 1 to 5 is shown after the exercises.
+
+**Exercise 1 (liquidity policy).** The treasurer wants a minimum cash balance of $50 million instead of $30 million. What happens to the revolver? Does the model still pass its checks?
+
+**Exercise 2 (financing neutrality).** Cut the payout ratio from 50 to 30 percent. What happens to the FY2030E revolver and equity? What happens to the DCF value?
+
+**Exercise 3 (goal seek).** What terminal growth rate makes the Gordon-growth value per share equal to the value obtained from a 9.0 times exit multiple? Why does it differ from the 3.62 percent computed in Part IV?
+
+**Exercise 4 (working capital).** Receivable days rise from 55 to 65 as the company extends terms to win share. What is the effect on cash, on the peak revolver and on value per share?
+
+**Exercise 5 (tax linkage).** The tax rate falls from 25 to 21 percent. What is the new value per share? What mistake would a modeler make if the tax rate in the DCF were typed as a constant?
+
+**Exercise 6 (normalized terminal year).** Replace the terminal cash flow with a value-driver version, FCF = NOPAT x (1 - g / RONIC), where NOPAT is FY2030E NOPAT grown at g. Compute value per share with RONIC equal to WACC and with RONIC of 12 percent.
+
+**Exercise 7 (Excel only).** Make the revolver limit a hard constraint rather than a check: rewrite row 67. What happens to the balance sheet when the constraint binds, and what must you add to keep the model balanced?
+
+```python
+from dcf import *
+from checks import master
+w0, _ = wacc()
+base = build("Base"); p0 = dcf(base, w0, 0.025)["price"]
+
+# Exercise 1: raise minimum cash from 30 to 50
+r1 = build("Base", min_cash=50.0)
+print("Ex1 min cash 50: closing cash", [round(x, 1) for x in r1["cash"]], "| revolver", [round(x, 1) for x in r1["revolver"]],
+      "| master", "OK" if master(r1, {**COMMON, "min_cash": 50.0})[0] else "ERROR")
+print("    value per share", round(dcf(r1, w0, 0.025)["price"], 2), "(unchanged: financing does not enter UFCF)")
+
+# Exercise 2: payout 30% instead of 50%
+r2 = build("Base", payout=0.30)
+print("Ex2 payout 30%: FY2030 revolver", round(r2["revolver"][-1], 1), "equity", round(r2["equity"][-1], 1),
+      "| value per share", round(dcf(r2, w0, 0.025)["price"], 2))
+
+# Exercise 3: goal seek - terminal growth that equates Gordon value with the 9.0x exit-multiple value
+target = dcf(base, w0, 0.025, exit_mult=9.0)["price"]
+lo, hi = 0.0, 0.06
+for _ in range(60):
+    mid = (lo + hi) / 2
+    if dcf(base, w0, mid)["price"] < target: lo = mid
+    else: hi = mid
+print(f"Ex3 target price {target:.2f}; goal-seek terminal growth = {mid:.4%}")
+
+# Exercise 4: receivable days from 55 to 65
+r4 = build("Base", ar_days=65)
+print("Ex4 AR days 65: FY2026 cash", round(r4["cash"][0], 1), "peak revolver", round(max(r4["revolver"]), 1),
+      "value per share", round(dcf(r4, w0, 0.025)["price"], 2), f"({dcf(r4, w0, 0.025)['price'] - p0:+.2f})")
+
+# Exercise 5: tax rate sensitivity (must change both the statements and the DCF)
+r5 = build("Base", tax=0.21)
+print("Ex5 tax 21%: FY2030 net income", round(r5["ni"][-1], 1), "value per share", round(dcf(r5, w0, 0.025, tax=0.21)["price"], 2))
+```
+
+```
+Ex1 min cash 50: closing cash [50.0, 50.0, 50.0, 50.0, 50.0] | revolver [14.6, 35.4, 52.6, 65.7, 74.0] | master OK
+    value per share 22.0 (unchanged: financing does not enter UFCF)
+Ex2 payout 30%: FY2030 revolver 0.0 equity 746.5 | value per share 22.0
+Ex3 target price 25.93; goal-seek terminal growth = 3.4348%
+Ex4 AR days 65: FY2026 cash 30.0 peak revolver 84.8 value per share 21.18 (-0.82)
+Ex5 tax 21%: FY2030 net income 111.3 value per share 23.85
+```
+
+```python
+from dcf import *
+w, _ = wacc(); g = 0.025
+r = build("Base"); d = dcf(r, w, g)
+# Normalized terminal-year free cash flow: reinvestment = g / RONIC, with RONIC = WACC (growth adds no value)
+nopat_T = r["ebit"][-1] * (1 + g) * (1 - COMMON["tax"])
+for ronic, lab in [(w, "RONIC = WACC"), (0.12, "RONIC = 12%")]:
+    f_T = nopat_T * (1 - g / ronic)
+    tv = f_T / (w - g)
+    pv_tv = tv / (1 + w) ** (N - 0.5)
+    ev = sum(d["pv"]) + pv_tv
+    print(f"{lab:<14} terminal FCF {f_T:7.2f}  TV {tv:8.1f}  EV {ev:8.1f}  price {(ev - 140) / 50:6.2f}  implied TV/EBITDA {tv / r['ebitda'][-1]:.2f}x")
+print(f"{'Model as built':<14} terminal FCF {d['fcf'][-1] * (1 + g):7.2f}  TV {d['tv']:8.1f}  EV {d['ev']:8.1f}  price {d['price']:6.2f}  implied TV/EBITDA {d['implied_mult']:.2f}x")
+```
+
+```
+RONIC = WACC   terminal FCF   79.22  TV   1355.6  EV   1207.7  price  21.35  implied TV/EBITDA 6.96x
+RONIC = 12%    terminal FCF   89.54  TV   1532.3  EV   1330.9  price  23.82  implied TV/EBITDA 7.87x
+Model as built terminal FCF   81.92  TV   1401.8  EV   1239.9  price  22.00  implied TV/EBITDA 7.20x
+```
+
+### Solutions
+
+**Solution 1.** Raising the minimum cash to 50.0 means the company must borrow earlier and more: the revolver is 14.6 in FY2026E (previously nothing), 35.4 in FY2027E and 74.0 by FY2030E, against 52.3. All checks pass, including the limit check (74.0 is below 100.0), but headroom is thinner: 26.0 undrawn at the end against 47.7 before. The value per share is unchanged at $22.00, since financing policy does not enter unlevered free cash flow. The extra 20.0 of cash is financed by revolver debt costing 7 percent while earning 2 percent, a negative carry of about 1.0 a year before tax; the valuation attributes that cost to the financing choice, not to operations. (In a more refined DCF, excess cash is deducted in net debt and valued at par.)
+
+**Solution 2.** With a 30 percent payout the company retains more, so the revolver is not needed (FY2030E revolver 0.0) and equity at FY2030E is 746.5 against 652.0. Value per share is unchanged at $22.00 for the same reason as in Exercise 1. If your spreadsheet shows a different value, the DCF is picking up a financing item, most likely interest, through a mislinked row; this is the quickest test of the DCF's construction.
+
+**Solution 3.** The target price is the exit-multiple value of $25.93. Bisection on the terminal growth rate gives 3.4348 percent. The earlier figure of 3.62 percent solves the end-of-year Gordon relation TV = FCF x (1 + g) / (WACC - g) against the exit-multiple terminal value discounted at N years; in the model the Gordon terminal value is discounted at N - 0.5 under the mid-year convention, which makes each dollar of terminal value worth more, so a lower growth rate reaches the same present value. The lesson is that an "implied growth rate" is only meaningful relative to a timing convention.
+
+**Solution 4.** Receivables rise by 864.0 x 10 / 365 = 23.7 in FY2026E alone. FY2026E cash falls to the 30.0 minimum (a revolver draw is now needed in the first year), the peak revolver rises from 52.3 to 84.8 (still within the 100.0 limit, with headroom of 15.2) and value per share falls by $0.82 to $21.18. The sign of the effect on value is clear; the size depends on the timing and permanence of the change. A one-off 10 day increase is a permanent investment of about 24 growing with sales.
+
+**Solution 5.** With a 21 percent tax rate FY2030E net income rises from 105.1 to 111.3 and value per share from $22.00 to $23.85. The statement and the DCF must both use the tax input: in the Python call the DCF receives `tax=0.21` as an argument. If the DCF had a typed 25 percent (a violation of S5), the net income would have risen but the valuation would have been unchanged, and the model would be internally inconsistent without any check noticing. The remedy is the named range `Tax` used everywhere, and a test: change the rate and confirm both NOPAT and net income move.
+
+**Solution 6.** With RONIC equal to WACC (8.34 percent), terminal reinvestment is g / RONIC = 0.025 / 0.0834 = 30.0 percent of NOPAT, so terminal FCF is 79.22 (NOPAT of 113.1 less reinvestment of 33.9), terminal value 1,355.6 and value per share $21.35, an implied exit multiple of 6.96 times. With RONIC of 12 percent, reinvestment is 20.8 percent of NOPAT, terminal FCF 89.54, terminal value 1,532.3 and value $23.82, a multiple of 7.87 times. The as-built terminal FCF of 81.92 corresponds to a RONIC of about 9 percent: slightly above WACC. A reviewer would accept the as-built number if the business is believed to earn modest excess returns and would ask for the normalized method if the terminal value were a large part of a deal price, which it generally is.
+
+**Solution 7.** A hard limit changes row 67 to `=MIN(MAX(-E77,MinCash-F66),RevLimit-E77)`: the draw cannot take the revolver above its limit. When the constraint binds, cash falls below the minimum, and, if cash before the revolver is negative, closing cash becomes negative: the balance sheet still balances (cash is simply negative, which is an implicit overdraft) but the model is describing something that cannot happen. The modeler must therefore add either a "funding shortfall" row (a plug of last resort, clearly labelled, with its own check that it is zero) or an explicit equity issuance or dividend cut. The shortfall row is preferable because it makes the infeasibility visible instead of curing it. Check 5 (cash at least the minimum unless the revolver is at its limit) is written to be compatible with this design.
+
+## Chapter summary
+
+A good model is an argument that survives audit. It separates inputs from formulas, uses one formula per row on a consistent time axis, marks inputs in blue and formulas in black, and checks itself from several directions through a master flag that has been proven to fail when the model is broken. Its balance sheet balances because the cash flow statement is built from changes in the balance sheet, never through a plug. Circularity from average-balance interest is handled with iterative calculation and a circuit breaker, and converges rapidly because each pass shrinks the error by about 76-fold in this model. The DCF discounts unlevered cash flow, is insensitive to financing choices, and reports its terminal value share and implied multiples so that a reader can judge its credibility. Sensitivities are produced by data tables or direct-formula grids, and scenarios through a single switch feeding live driver rows. For Meridian Fastener Co. these tools produced a base value of $22.00 per share, a range of $11.07 to $27.00 across scenarios and a probability-weighted $20.52, with margins and the discount rate mattering far more than revenue growth.
+
+The Python replica in this chapter is the answer key for a spreadsheet build. When your Excel model reproduces FY2026E net income of 71.9, FY2030E revolver of 52.3, enterprise value of 1,239.9 and value per share of $22.00 to the displayed precision, with the master check showing OK, you will have built the model correctly, and you will have the tools to extend it: to leases and deferred taxes, to multiple debt tranches, to a monthly timeline, or to the transaction structures of Chapters 13 to 17.

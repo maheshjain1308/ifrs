@@ -27,7 +27,7 @@ for f in files:
         seen_app=True; body+='\n\n<div class="part-page"><h1>Appendices</h1></div>\n\n'; titles.append(('partapp','Appendices'))
     titles.append(('ch',title)); body+='\n\n'+t+'\n'
 open(BD+'/body.md','w').write(body)
-subprocess.run(['pandoc','-f','markdown+pipe_tables+smart','-t','html',BD+'/body.md','-o',BD+'/body.html'],check=True)
+subprocess.run(['pandoc','-f','markdown+pipe_tables+smart-tex_math_dollars','-t','html',BD+'/body.md','-o',BD+'/body.html'],check=True)
 bodyhtml=open(BD+'/body.html').read()
 pages=json.load(open(BD+'/pages.json')) if os.path.exists(BD+'/pages.json') else {}
 def toc():

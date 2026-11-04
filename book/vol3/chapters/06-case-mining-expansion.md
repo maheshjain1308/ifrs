@@ -303,7 +303,7 @@ The same rate is used for Ridge and Karsten. Karsten is a producing mine in the 
 
 #### Solution 4: Project valuation
 
-For the consensus deck the annual calculation is as follows, shown for 2031. Price is 4.25 times 1.025^5 = $4.81. Copper sold is 65.8 kt times 2.20462 = 145.0 million pounds. Revenue is 145.0 times 4.81 = 697.2. Mining and processing costs are 13.80 times 14.0 million tonnes times 1.025^5 = 218.6; TC/RC and freight are 0.38 times 145.0 times 1.1314 = 62.3; the royalty is 2.5 percent of revenue, or 17.4. EBITDA is 697.2 - 218.6 - 62.3 - 17.4 = 398.9. Depreciation is 1,900.0/14 = 135.7, sustaining capital is 30 times 1.1314 = 33.9, and taxable income is 398.9 - 135.7 - 33.9 = 229.3, so tax is 27 percent, or 61.9. The working-capital increase is 8 percent times (697.2 - 476.2) = 17.7. Free cash flow is 398.9 - 61.9 - 33.9 - 17.7 = 285.4. The discount factor for 2031 (4.5 years) is 1.088^4.5 = 1.4609, which gives a present value of 195.4.
+For the consensus deck the annual calculation is as follows, shown for 2031. Price is 4.25 times 1.025^5 = $4.81. Copper sold is 65.8 kt times 2.20462 = 145.0 million pounds. Revenue is 145.0 times 4.81 = 697.2. Mining and processing costs are 13.80 times 14.0 million tonnes times 1.025^5 = 218.6; TC/RC and freight are 0.38 times 145.0 times 1.1314 = 62.3; the royalty is 2.5 percent of revenue, or 17.4. EBITDA is 697.2 - 218.6 - 62.3 - 17.4 = 398.9. Depreciation is 1,900.0/14 = 135.7, sustaining capital is 30 times 1.1314 = 33.9, and taxable income is 398.9 - 135.7 - 33.9 = 229.3, so tax is 27 percent, or 61.9. The working-capital increase is 8 percent times (697.2 - 476.2) = 17.7. Free cash flow is 398.9 - 61.9 - 33.9 - 17.7 = 285.4. The discount factor for 2031 (4.5 years) is 1.088^4.5 = 1.4616, which gives a present value of 195.2.
 
 Table S1. Ridge base case: consensus deck ($4.25 real), nominal $ millions, WACC 8.8%
 
@@ -370,3 +370,157 @@ A one-year delay in first production, with $60 million of additional owner's cos
 
 The windfall surcharge, at 20 percent of revenue from price above $4.50 per pound, is worth nothing on the consensus deck if the threshold is indexed to inflation, since the real price is $4.25. If the threshold is a fixed nominal $4.50, it applies in every producing year, because the consensus deck is above $4.50 in nominal terms from 2030, and it costs $114.4 million of present value after tax, cutting the NPV to $193.4 million. The ambiguity in the consultation paper is therefore worth up to $114 million, more than a ten percent capital cost overrun, and the board paper should mention it as a risk that is binary and political, not as an estimate to be averaged.
 
+#### Solution 6: Net asset value
+
+Karsten's after-tax cash flow in each year is revenue (78.0 kt, or 171.96 million pounds, times the nominal price), less C1 cost (2.15 per pound escalated), less the 2.5 percent royalty, less sustaining capital of $55 million escalated, less tax at 27 percent of EBITDA after depreciation (the $620 million tax base over ten years) and sustaining capital, with closure of $95 million escalated in 2046. For 2027 on the consensus deck: price 4.25 times 1.025 = $4.356; revenue is 171.96 times 4.356 = 749.1; C1 cost is 2.15 times 1.025 times 171.96 = 378.9; royalty is 18.7; EBITDA is 351.5; sustaining capital is 56.4; depreciation is 62.0; tax is 0.27 times (351.5 - 62.0 - 56.4) = 62.9; free cash flow is 351.5 - 62.9 - 56.4 = 232.2. Discounting the 20 years at 8.8 percent mid-year gives the Karsten values below. Corporate overhead of $36.0 million (2026 dollars), after tax at 27 percent and escalated, has a present value of $310.7 million.
+
+Table S5. Net asset value of Ironvale at three price decks ($ millions except per share; 262.0 million diluted shares)
+
+| Deck | Karsten NPV | Resources | Corporate G&A | Hedge book | Net debt | NAV before Ridge | NAV per share | P/NAV at $6.55 | Ridge NPV | NAV per share with Ridge, before raise |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Lenders' deck ($3.85) | 1,996.6 | 110.0 | -310.7 | -5.3 | -592.5 | 1,198.1 | $4.57 | 1.43x | -10.8 | $4.53 |
+| Consensus deck ($4.25) | 2,575.5 | 110.0 | -310.7 | -5.3 | -592.5 | 1,777.0 | $6.78 | 0.97x | 307.8 | $7.96 |
+| Management deck ($4.60) | 3,081.9 | 110.0 | -310.7 | -5.3 | -592.5 | 2,283.4 | $8.72 | 0.75x | 586.5 | $10.95 |
+The market price of $6.55 equals 0.97 times NAV on the consensus deck, 1.43 times on the lenders' deck, and 0.75 times on the management deck. P/NAV of 1.00 requires a deck of $4.21 real, and the peer-median P/NAV of 0.99 requires $4.23. The market is therefore pricing Ironvale at roughly the consensus deck, in line with its peers, and has not given credit for a Ridge premium, nor discounted for it. A corollary: the market's implied real price, $4.21, is above the forward-based real equivalent of $3.87 in 2031, so the share price already embeds a belief that copper will do better than the futures curve.
+
+The equity raise issues 500.0/6.30 = 79.4 million shares, raising the count from 262.0 to 341.4 million. Pro forma equity value on the consensus deck is 1,777.0 (NAV before Ridge) + 307.8 (Ridge NPV) + 500.0 (cash raised) = 2,584.8, divided by 341.4 million shares, or $7.57 per share. This is a gain of 11.6 percent over $6.78. The decomposition is instructive: Ridge alone, before the raise, lifts NAV per share to $7.96, a 17.3 percent gain; issuing shares at $6.30, below the $6.78 NAV per share, dilutes this by 4.9 percent. On the lenders' deck, Ridge destroys $10.8 million, and yet the raise appears accretive (NAV per share rises from $4.57 to $4.94, or 8.1 percent) because the company sells shares at $6.30 against an NAV of $4.57. That accretion is created by selling overvalued paper and should not be credited to the project. If the market price is right and the lenders' deck wrong, it is a mirage; if the lenders' deck is right, it is a transfer from new to old shareholders and a reason for caution about the placement's price. The only fair way to judge Ridge is the NPV; the equity raise is a separate decision.
+
+#### Solution 7: Financing
+
+The raise of $500 million at $6.30 issues 79.4 million shares, 30.3 percent of the existing count and 23.3 percent of the pro forma count. At the 8 percent discount at the top of Exhibit G's range ($6.03), the issue would be 83.0 million shares, and at the market price of $6.55, 76.3 million. Total uses of $2,090.7 million include $102.7 million of capitalised interest, $28.0 million of fees, and a $60.0 million reserve. The balance sheet at the end of 2029, before Ridge earns anything, would carry bank debt of $260.0 million, notes of $600.0 million, and project debt of $952.7 million, a total of $1,812.7 million less cash of $181.5 million (including the reserve), so net debt of $1,631.2 million. Against Karsten's 2029 EBITDA after overhead of $330.4 million on the consensus deck, consolidated leverage peaks at 4.9 times; on the lenders' deck it is 6.3 times ($258.2 million). The project debt is non-recourse to the extent of the completion support, so the notes' covenants may not be tested against it, but rating agencies and equity investors will look through. This concentration of leverage at the moment of maximum technical risk is the most important financing risk in the case.
+
+The stream. Kestrel pays $400 million in 35/40/25 proportions and receives 15 percent of payable copper (21.75 million pounds a year at full rate, 70 percent in 2030) and pays 20 percent of the spot price. Ironvale's cost of the stream is the forgone 80 percent of the revenue, 0.8 times price times volume. The internal rate of return that equates the upfront payments to those forgone flows is:
+
+| Deck | Pre-tax IRR | After-tax IRR | PV of the stream at 8.8%, after tax |
+|:---|---:|---:|---:|
+| Lenders' ($3.85) | 14.5% | 9.7% | -24.6 |
+| Consensus ($4.25) | 16.1% | 11.2% | -64.2 |
+| Management ($4.60) | 17.4% | 12.4% | -98.8 |
+
+The stream is not cheap capital. Its after-tax cost at the consensus deck, 11.2 percent, exceeds the 10.7 percent cost of equity and is double the 5.3 percent after-tax cost of project debt. It is, however, equity-like in a useful way: the cost rises with price, so it transfers upside to Kestrel and gives Ironvale some protection on the downside (the cost falls to 9.7 percent on the lenders' deck). That is a form of hedge, though one with no floor and no cap. The claim that it is "non-dilutive" is accurate only in the sense that share count is unchanged; it dilutes the owners of the Ridge cash flows by 15 percent of the copper forever, and on the management deck costs $99 million in present value after tax. The recommendation is to proceed with the base plan (project finance of $850 million plus capitalised interest, equity of $500 million) and to hold the stream as a contingency, to be activated only if the equity window is shut in January or the placement price falls below about $5.50. A hybrid of $150 to 200 million of stream and a smaller equity issue is defensible if the board values the downside protection. The hybrid reduces dilution to 18 to 20 percent but surrenders more of the upside that the shareholders are being asked to underwrite.
+
+#### Solution 8: Hedging
+
+Black's model for a European put on a forward price F with strike K, volatility sigma, time T, and discount rate r gives P = e^(-rT) times [K N(-d2) - F N(-d1)], where d1 = [ln(F/K) + 0.5 sigma^2 T]/(sigma sqrt(T)) and d2 = d1 - sigma sqrt(T). For 2030: F = 4.36, K = 3.80, T = 3.5, sigma = 24 percent. Then d1 = [ln(1.1474) + 0.5 times 0.0576 times 3.5]/(0.24 times 1.8708) = (0.1375 + 0.1008)/0.4490 = 0.5307; d2 = 0.0817; N(-d1) = 0.2978; N(-d2) = 0.4674; and the discount factor is e^(-0.14) = 0.8694. The put is 0.8694 times (3.80 times 0.4674 - 4.36 times 0.2978) = 0.8694 times (1.7761 - 1.2984) = $0.4153 per pound. The zero-cost cap K_c solves the call price = 0.4153, which gives $5.255.
+
+Table S6. Zero-cost collar pricing, floor $3.80 (Black's model, volatility 24%, risk-free 4.0%)
+
+| Delivery year | Forward ($/lb) | Years T | Discount factor | Put value ($/lb) | Zero-cost cap ($/lb) |
+|:---|---:|---:|---:|---:|---:|
+| 2027 | 4.30 | 0.5 | 0.9802 | 0.0913 | 4.928 |
+| 2028 | 4.32 | 1.5 | 0.9418 | 0.2434 | 5.045 |
+| 2029 | 4.34 | 2.5 | 0.9048 | 0.3430 | 5.151 |
+| 2030 | 4.36 | 3.5 | 0.8694 | 0.4154 | 5.255 |
+| 2031 | 4.38 | 4.5 | 0.8353 | 0.4701 | 5.359 |
+| 2032 | 4.40 | 5.5 | 0.8025 | 0.5123 | 5.464 |
+| 2033 | 4.42 | 6.5 | 0.7711 | 0.5450 | 5.572 |
+The existing hedge book, with puts at $3.80 and calls at $4.75 (2027, 30 kt) and $4.80 (2028, 20 kt), is worth (put - call) times pounds: 2027, (0.0913 - 0.1294) times 66.1 million pounds = -2.5; 2028, (0.2434 - 0.3074) times 44.1 million pounds = -2.8; a total mark-to-market of **-$5.3 million**, which is the hedge-book figure in the NAV. The company has sold calls that are worth more than the puts it bought, because the caps were set below the zero-cost levels. Over 2024-2026 the realised hedge losses of $3.4, $4.8, and $6.0 million were a similar story.
+
+The deterministic debt-service cover for Ridge is:
+
+Table S8. Deterministic CFADS ($ millions) and DSCR, 2030 to 2033, no hedge
+
+| Real price | CFADS 2030 | 2031 | 2032 | 2033 | DSCR 2030 | 2031 | 2032 | 2033 |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|
+| $3.85 | 133.7 | 240.3 | 260.6 | 266.2 | 1.94x | 1.62x | 1.83x | 1.94x |
+| $4.25 | 162.0 | 285.4 | 308.3 | 315.1 | 2.35x | 1.92x | 2.16x | 2.30x |
+| $4.60 | 186.7 | 324.8 | 350.1 | 357.9 | 2.70x | 2.19x | 2.45x | 2.61x |
+Debt service is interest only in 2030 ($69.1 million on $952.7 million at 7.25 percent), then $148.5 million (2031), $142.7 million (2032), and $136.9 million (2033), consisting of interest plus an equal principal instalment of $79.4 million. On the lenders' deck the minimum DSCR is 1.62 times in 2031, which passes the 1.35 times sizing test with room to spare. Deterministic cover looks comfortable, but the cash flows are highly leveraged to price: a 10 percent price fall reduces 2031 CFADS by about 17 percent.
+
+The simulation uses a mean-reverting log price, calibrated so that short-run volatility is 22 percent and mean reversion is 0.40 a year, centred on each deck. CFADS is EBITDA less tax, sustaining capital, and working capital, with hedge payoffs added after tax.
+
+Table S7. Simulated minimum DSCR, 2030 to 2033 (200,000 paths; mean-reverting price, 22% short-run volatility; PV of hedge payoffs after tax at 8.8%, $ millions)
+
+| Price deck (centre of distribution) | Program | Mean of minimum DSCR | 5th percentile | 10th percentile | P(min DSCR < 1.20x) | P(min DSCR < 1.00x) | Expected PV of hedge payoff |
+|:---|---:|---:|---:|---:|---:|---:|---:|
+| Lenders' deck | No hedge | 1.24 | 0.10 | 0.35 | 47.3% | 35.2% | 0.0 |
+| Lenders' deck | Collars, floor $3.80, 50% | 1.39 | 0.66 | 0.81 | 37.5% | 20.2% | 4.1 |
+| Lenders' deck | Swaps, 50% | 1.50 | 0.90 | 1.04 | 18.3% | 8.2% | -8.6 |
+| Consensus deck | No hedge | 1.57 | 0.41 | 0.68 | 29.7% | 20.0% | 0.0 |
+| Consensus deck | Collars, floor $3.80, 50% | 1.64 | 0.84 | 1.00 | 21.7% | 9.9% | -24.1 |
+| Consensus deck | Swaps, 50% | 1.66 | 1.08 | 1.23 | 8.8% | 3.3% | -67.3 |
+Three results matter. First, an unhedged, geared single-mine structure is fragile: even if the consensus deck is correct, there is a 20 percent chance that cover falls below 1.0 times at some point in the first four years and a 30 percent chance it falls below the 1.20 times lock-up. A prudent lender could not accept this without protection, which explains the condition. Second, swaps reduce the probability of a sub-1.0 outcome to 3 percent (consensus) or 8 percent (lenders), and collars to 10 or 20 percent. Collars leave more upside, but they leave the tail unprotected between the floor and the level at which cover fails. Third, the expected cost depends on whose deck is right. If the consensus deck is right, the collars give up $24 million of present value and the swaps $67 million, because the forward price is below the deck; if the lenders' deck is right, the collars are worth $4 million and the swaps cost $9 million. That cost is not a loss in the sense of a fair-value shortfall: at forward prices both hedges are worth about zero, so the cost is the price of disagreeing with the market.
+
+Does hedging create value? In the Modigliani-Miller sense, not directly. The expected payoff of a zero-cost hedge at forward prices is zero. Value creation, if any, comes through (a) making the financing possible, since without it the project cannot be debt-funded at 50 percent gearing; (b) lowering the probability of financial distress during the years of maximum debt; and (c) protecting the investment plan. The recommendation is to adopt the lenders' requirement in its cheapest form: 50 percent of Ridge volumes for 2030 to 2033 hedged with zero-cost collars with a $3.80 nominal floor (caps of $5.26, $5.36, and so on), placed progressively rather than all on the day of financial close, to avoid locking in a single price. A swap is not recommended, because the protective benefit above that of the collar is smaller than its expected cost on the board's own deck. Note also that the $3.80 nominal floor is 13 percent below the 2030 forward and 11 percent below the lenders' 2030 nominal price of $4.25, so it works as insurance and not as a price view.
+
+#### Solution 9: Optionality
+
+The valuation uses a binomial lattice for the project's gross present value V, defined as the PV of post-construction cash flows at the WACC, with V0 = 307.8 + 1,691.9 = $1,999.7 million; the exercise price X is the PV of the capital spending, $1,691.9 million, escalating at 6 percent a year if FID is deferred. The volatility of V equals the long-run effective copper volatility of 18 percent times the elasticity of V to price, 1.69 (computed from NPV at $4.24 and $4.26), or 30.5 percent, so each annual step multiplies V by u = 1.356 or d = 0.737. The risk-neutral drift is the risk-free rate less the project's cash yield: V grows at 2.5 percent (inflation) in expectation, and its required return is 8.8 percent, so the cash yield forgone by waiting is 6.3 percent and the risk-neutral growth rate is 4.0% - 6.3% = -2.3 percent. The probability of an up-move is p = (0.977 - 0.737)/(1.356 - 0.737) = 0.387. Option values are discounted at 4.0 percent, and the option can be exercised at each year-end.
+
+| Right | Value ($ millions) | Gain over investing now ($307.8m) |
+|:---|---:|---:|
+| Invest now | 307.8 | 0.0 |
+| Defer up to one year | 342.0 | 34.2 |
+| Defer up to two years | 363.6 | 55.9 |
+| Defer up to three years | 398.9 | 91.2 |
+| Defer up to three years, volatility 12% | 307.8 | 0.0 |
+| Defer up to three years, volatility 26% | 544.6 | 236.8 |
+| Defer up to one year at lenders' deck (NPV -10.8) | 181.1 | 191.9 |
+| Defer up to one year at management deck (NPV 586.5) | 586.5 | 0.0 |
+
+For the one-year option, at t = 1 the project value is $2,711.9 million (up) or $1,474.5 million (down), against a strike of 1,691.9 times 1.06 = $1,793.4 million; the up state pays 918.5 and the down state is out of the money, so the option is worth 0.387 times 918.5/1.04 = $342.0 million, which exceeds the intrinsic value of $307.8 million by $34.2 million. The option to delay is worth something, but on the consensus deck it is worth only about 11 percent of the NPV for one year, because the project's NPV is a substantial fraction of V and the cost of waiting, 6.3 percent a year of forgone cash yield plus capital escalation, is high. The option value is sensitive to volatility: at 12 percent the project should be built now; at 26 percent, waiting three years is worth $237 million more. On the lenders' deck the project is just out of the money and the option to wait is worth $181 million, which is a measure of what flexibility offers a marginal project.
+
+The lattice omits costs of delay that are material here. The fixed-price contract and the banks' commitments lapse, so a deferral must be re-priced (Exhibits A and E); Ironvale's brokers' equity window may close; bonuses are tied to FID (Exhibit H); the construction schedule and the pit sequence would slip; competitors could secure contractors or power. Any deferral cost over about $34 million (for a one-year delay) erases the option value on the consensus deck. Thus the lattice says that waiting is not clearly better than proceeding if the base case is credible, and that waiting is valuable only if the project is marginal and volatile. Students who answer "wait" on the strength of the lattice should be asked what they would pay to keep the contractor's price.
+
+Staged FID. Spend $180 million now on early works and long-lead items (a part of the $1,900 million), with a 12-month gate, with the remaining capital cost fixed, and a salvage value of 25 percent of the early works if abandoned. The value is -180 + [p times max(V_u - (X0 - 180), 45) + (1 - p) times max(V_d - (X0 - 180), 45)]/1.04. Up: 2,711.9 - 1,511.9 = 1,200.0; down: 1,474.5 - 1,511.9 < 0, so the abandon value of 45 applies. The value is -180 + [0.387 times 1,200.0 + 0.613 times 45.0]/1.04 = $293.3 million, slightly below the value of investing now ($307.8 million). The staged option is valuable only in worse states of the world: at the lenders' deck it is worth $132.5 million (against -10.8 now), and at the management deck it costs $80 million relative to proceeding. So staging is insurance whose premium (about $14 million on the consensus deck) is small relative to the protection it gives against a bad outcome, which is a reasonable bargain if the board thinks the lenders' deck is plausible, but it is not a free lunch.
+
+Resource conversion. The 120 million tonnes of resource could add eight to nine years of production after 2043 if it converts to reserve and $250 million of stripping capital is spent in 2042 and 2043. On the consensus deck, the present value of the extension today is about $548 million (the cash flows are far in the future, but the nominal margins are large), $446 million on the lenders' deck, and $638 million on the management deck. At a 35 percent probability of conversion, the expected value is $192 million on the consensus deck, less roughly $30 million of present-value drilling and study cost, about $162 million, equal to half of Ridge's NPV. This is the largest single source of optionality, and it is exercised, if at all, in 2040, after the project has been paid for. It is not in the NAV, the banks do not credit it, and the market probably does not either. It deserves a place in the memo as qualitative support, with the caveat that its value depends on prices fifteen years out and that it should not be added to the NPV in the base case.
+
+Suspension. Ridge's cash cost, including TC/RC, is about $1.71 per pound in 2026 dollars, and Karsten's is $2.15, plus the royalty. Under the mean-reverting price model, the probability that the annual average price in 2030 falls below $2.30 (the point at which Karsten would lose cash) is below one percent, so the option to suspend is worth little and should be excluded from the valuation. Its value would rise only if costs were higher or the price much more volatile. The low-cost position of the new pit is itself a protection.
+
+#### Solution 10: Recommendation
+
+The evidence can be summarised in five numbers. Ridge has an NPV of $307.8 million on the consensus deck (IRR 11.2 percent), about zero on the lenders' deck (-$10.8 million), and negative on the market forward curve (-$60.1 million, IRR 8.3 percent). The project's break-even price is $3.86 real, and its break-even capital cost is $2,301 million, 21 percent above the estimate. NAV per share rises from $6.78 to $7.57 on the consensus deck after the raise. The probability of a covenant-level cash shortfall is 22 to 30 percent without full hedging if the consensus deck holds. And the company has a record of 14 percent overrun on its last project.
+
+The project clears its hurdle on the consensus deck by a margin that is thinner than the uncertainty in the estimate: the NPV equals about 16 percent of the capital cost, a 10 percent overrun removes 47 percent of it, and a 9 percent shortfall in grade removes 92 percent. The market-forward NPV is negative by a small amount ($60 million is 3 percent of capital), and the deck-versus-forward gap is the single most important judgment. The forward curve is not a forecast of the price in 2035; copper is mean-reverting and the curve is flat in nominal terms, which understates the long-run price if the real price recovers. But a project that is valuable only if the board knows better than the market has not been shown to be good. The real-options analysis says delay has modest value ($34 million for one year) and the lattice omits the costs of delay, which here are large: the lapse of contract and finance terms, and the cost of a one-year delay in first production, about $160 million. Approving the project is therefore preferable to delaying or rejecting it, provided that the board is protected against the cases in which it is wrong.
+
+**Recommendation: approve FID on 10 December 2026, subject to conditions precedent, with delegated authority to withdraw if any condition fails.** The conditions are:
+
+1. A fixed-price or capped-price contract covering at least 80 percent of the capital cost (up from 62 percent), or a contingency increased to at least 15 percent of the estimate, so that the break-even overrun of 21 percent is not consumed by expected overrun.
+2. Satisfactory completion of the water permit before first drawdown, as in the facility agreement, and a sponsor completion guarantee limited to the 10 percent cost-overrun facility.
+3. The hedging program recommended in Solution 8: zero-cost collars with a $3.80 floor on 50 percent of 2030-2033 Ridge volumes, layered over the first six months after financial close.
+4. An equity raise of $500 million, with a minimum price of $5.50 per share, and a fallback to a part-stream hybrid if the minimum cannot be met.
+5. Resolution of the head-grade question: a revised reserve reconciliation, including the 12-hole infill program, before the first drawdown. If the revised grade is 0.49 percent, the NPV on the consensus deck falls to $23 million, and the board should treat that as a stop condition.
+6. An incentive structure for the executive team amended so that part of the long-term award depends on return on capital or NAV per share, not just production (Exhibit H).
+
+**Walk-away points.** The board should not proceed if the lenders' revised deck falls below $3.60 real, since the project's NPV is then about -$210 million and DSCR cover will be too thin; if the capital cost, after contracts are signed, exceeds $2,100 million (about a 10 percent overrun, at which NPV on the consensus deck is $162 million but on the lenders' deck is -$157 million); if the revised grade is below 0.50 percent; or if the windfall surcharge becomes law with a fixed nominal threshold, which would cut NPV by $114 million on the consensus deck. **Monitoring metrics:** monthly spend against the control budget with a 5 percent trigger for board review, drilled grade against the model, the forward curve against the lenders' deck, hedge coverage, DSCR forecast against 1.35 times, and NAV per share.
+
+### Sensitivity Discussion
+
+The valuation has four dominant sensitivities. Price matters most: the NPV falls by $338 million for a 10 percent fall in the real price, and the sign flips at $3.86. The deck-versus-forward gap is, in practice, a 10 percent price difference. Head grade is nearly as large as price, and it is the variable the company can most influence. Capital cost matters less than the other two in a symmetric sense, but its distribution is skewed: overruns are common and underruns rare, so the expected loss from capex is larger than the table suggests. The discount rate matters at about $140 to $160 million per point, so the choice between a development-stage rate and the corporate rate is worth about half the NPV. Timing risk (the one-year slip) costs $160 million, mostly from the deferral of cash flows. The windfall surcharge ambiguity is worth $114 million. Hedging and funding structure do not change NPV materially but determine whether the project can be financed and whether the company survives the downside, which is why they take priority in the recommendation.
+
+### Common Student Errors
+
+1. Using the real price deck without escalating it, while escalating costs, or the reverse. This changes NPV by hundreds of millions.
+2. Discounting nominal cash flows at a real rate, or the reverse.
+3. Forgetting working capital, or forgetting its release at closure, or omitting closure costs.
+4. Treating the 2026 C1 cost of $2.15 as the Ridge cost. Ridge's cost is $1.71 per pound in real terms.
+5. Using end-year discounting for a mid-year deck and cost profile and then comparing with a mid-year model.
+6. Comparing the NPV on the consensus deck with the market capitalisation, or adding the NPV to the share price. NPV is value added to NAV, not value per share, and must be divided by the diluted shares after the issue.
+7. Crediting the project with the accretion that arises from selling shares above NAV.
+8. Believing that a hedge creates value because it "reduces risk." Zero-cost collars at forward prices have zero expected value.
+9. Pricing options on the spot price instead of the forward price, or using a call price that does not equal the put price in a zero-cost collar.
+10. Reading the lattice's value of waiting as a recommendation to wait, without considering the costs of delay.
+11. Treating the stream as free because it is "non-dilutive."
+12. Forgetting the tax shield on depreciation in the project calculation, or taking tax on negative taxable income as zero when the group can use the loss.
+
+### Alternative Defensible Answers
+
+The case has no unique answer. A student who weights the forward-based NPV heavily can defend deferral or rejection: the project has a negative NPV at market prices, the margin of safety on cost is thin, and the company has a poor delivery record. Such a student should still address the one-year delay cost of about $160 million and the lapse of the lenders' approvals. A student who trusts management's deck can recommend approval without conditions, on a $586 million NPV, and argue that hedging destroys $24 to $67 million of expected value; that student should be pressed on whether the project can be financed. A third defensible answer is the staged approach: authorize $180 million of early works and defer full FID to the second quarter of 2027, when the permit, the lenders' May deck review, and the grade reconciliation are known. The lattice values this at $293 million against $308 million for immediate approval on the base deck, and at $133 million against -$11 million on the lenders' deck, so it is a sound choice for a board that puts more weight on the downside than the consensus deck implies. The lapse of the contractor's fixed-price offer on 31 January weakens the case for staging. Credit should go to answers that identify which assumption their recommendation depends on and state the evidence that would change their mind.
+
+### Board-Style Recommendation Memorandum
+
+**To:** Board of Directors, Ironvale Copper Corp.
+**From:** Corporate Development (reporting to the Chief Financial Officer)
+**Date:** 10 December 2026
+**Re:** Final investment decision on the Ridge expansion
+
+**Recommendation.** We recommend that the board approve the Ridge expansion at a capital cost of $1,900 million, subject to the six conditions below, and delegate authority to the chair and the chief financial officer to withdraw if any condition is not met before first drawdown.
+
+**Value.** On the consensus price deck of $4.25 per pound (real), Ridge has a net present value of $308 million and an internal rate of return of 11.2 percent against a cost of capital of 8.8 percent. On the lenders' deck of $3.85 the NPV is approximately zero, and on the market forward curve it is minus $60 million. The break-even price is $3.86 and the break-even capital cost is $2,301 million. A one-year delay costs about $160 million. Our NAV for the company is $6.78 per share before Ridge and $7.57 after Ridge and the equity raise, against a share price of $6.55.
+
+**Why proceed.** The project is worth building if the price is at or above the lenders' deck, it has low operating cost ($1.71 per pound), and the cost of delay is high. A real-options analysis puts the value of waiting at no more than $34 million for one year, which is less than the likely cost of re-pricing the contractor and the financing. The 120 million tonne resource adjacent to the pit offers further value that is not in our numbers.
+
+**Why conditions.** The margin of safety is thin. A 21 percent capital overrun, or a head grade of 0.49 percent, would remove the project's value on our base deck. Ironvale's last project overran by 14 percent. The company would be levered at about 4.9 times EBITDA at the end of 2029. We therefore require: (1) fixed or capped pricing on at least 80 percent of capital cost; (2) the water permit and a limited sponsor completion guarantee; (3) zero-cost collars with a $3.80 floor on 50 percent of 2030 to 2033 volumes; (4) a $500 million equity raise at no less than $5.50 per share, with a hybrid stream fallback; (5) a revised grade reconciliation before first drawdown; and (6) a change to management incentives to include return on capital.
+
+**What would change our view.** A lenders' deck below $3.60, a capital cost above $2,100 million after contracting, a reserve grade below 0.50 percent, or a windfall surcharge with a fixed nominal threshold would each cause us to recommend withdrawal. The board should receive a monthly report on spend, grade, hedge coverage, and forecast debt-service cover.
