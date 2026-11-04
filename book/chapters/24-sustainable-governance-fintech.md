@@ -54,11 +54,11 @@ Step 2: Conventional NPV. A: −40 + 9.5 × 6.4177 = −40 + 60.968 = **$20.97m*
 
 Step 3: Carbon cost in year 1. A: 60,000 × $60 = $3.60m. B: 10,000 × $60 = $0.60m. Each later year grows by 6 percent.
 
-Step 4: PV of carbon costs. For a growing annuity, PV = C1 / (r − g) × [1 − ((1 + g)/(1 + r))^n] = C1 / 0.03 × [1 − (1.06/1.09)^10]. The ratio 1.06/1.09 = 0.97248; to the 10th power = 0.75812; so the bracket = 0.24188 and the multiplier is 8.0627. A: 3.60 × 8.0627 = **$29.02m**... (rounded; the exact sum is $29.22m using year-by-year discounting, a difference arising from rounding of the ratio). B: 0.60 × 8.0627 = $4.84m (exact: $4.87m).
+Step 4: PV of carbon costs. For a growing annuity, PV = C1 / (r − g) × [1 − ((1 + g)/(1 + r))^n] = C1 / 0.03 × [1 − (1.06/1.09)^10]. The ratio 1.06/1.09 = 0.97248, and raised to the 10th power it is 0.7565, so the bracket is 0.2435 and the multiplier is 0.2435 / 0.03 = 8.118. A: 3.60 × 8.118 = **$29.22m**. B: 0.60 × 8.118 = **$4.87m**.
 
-Step 5: Using the year-by-year exact figures, A's carbon-adjusted NPV = 20.97 − 29.22 = **−$8.26m**; B's = 10.89 − 4.87 = **+$6.02m**.
+Step 5: Carbon-adjusted NPV. A = 20.97 − 29.22 = **−$8.26m**; B = 10.89 − 4.87 = **+$6.02m**.
 
-The ranking reverses. The conventional analysis favors the gas upgrade by $10.1m; a carbon price of $60 growing 6 percent makes the electrified foundry better by $14.3m. The break-even initial carbon price at which the two NPVs equalize is approximately $60 × (10.1 / 24.35) = $25 per ton in year 1 (the difference in carbon PV is linear in the starting price: 24.35m per $60). Managers should also test the cost of electricity and the reliability of supply, since B's advantage depends on the power price assumption. The method is only as good as the carbon-price forecast; the right use is to show what carbon price makes the decision change.
+The ranking reverses. The conventional analysis favors the gas upgrade by $10.1m; a carbon price of $60 growing 6 percent makes the electrified foundry better by $14.3m. The break-even initial carbon price at which the two NPVs equalize is approximately $60 × (10.08 / 24.35) = $25 per ton in year 1 (the difference in carbon PV, 29.22 − 4.87 = $24.35m at a $60 starting price, is linear in that price). Managers should also test the cost of electricity and the reliability of supply, since B's advantage depends on the power price assumption. The method is only as good as the carbon-price forecast; the right use is to show what carbon price makes the decision change.
 
 **Common mistakes.** Using a carbon price only as a tie-breaker; applying it to project emissions but not to the firm's competitors, so the strategic effect is lost; and double counting if tax and permit costs are already in cash flows.
 
@@ -114,3 +114,96 @@ If the issuer is confident of meeting the target (probability 10 percent), the e
 ### 24.2.3 Greenwashing and the discipline of credibility
 
 Greenwashing is the gap between claims and outcomes. For a financial manager, the risk shows up as regulatory enforcement and litigation, investor mistrust and exclusion from indices, and reputational damage. Controls include a documented framework approved by the board, auditable tracking of proceeds, independent verification, a clear and measurable KPI baseline, and alignment of the labeled financing with the strategic decarbonization plan, which should itself be credible enough to survive a skeptical read. Transition finance, funding to help high-emission businesses decarbonize, is an emerging category with high demand for credibility because it carries the greatest risk of being a label rather than a plan.
+
+## 24.3 Corporate Governance
+
+### 24.3.1 Governance as the management of agency conflicts
+
+Governance is the set of mechanisms by which suppliers of capital ensure that managers act in their interests. It is needed because ownership is separated from control (Berle and Means; Jensen and Meckling), managers have private information and private benefits (empire building, perquisites, entrenchment), and contracts are incomplete. Governance exists at several levels.
+
+- **Board of directors.** The board hires, fires and pays the CEO, approves strategy and capital allocation, and oversees risk and audit. Effectiveness depends less on formal independence than on information, expertise, time, and the willingness to dissent. Common practices include a majority of independent directors, a separate chair and CEO or a strong lead independent director, fully independent audit, compensation and nomination committees, regular executive sessions, and director refreshment. Evidence on the link between board features and performance is mixed because boards are endogenous: troubled firms change their boards.
+- **Ownership structure.** Dispersed ownership creates free-riding by small holders; large blockholders can monitor but may extract private benefits at the expense of minorities. In many countries, controlling families or the state are the main agency issue, and the conflict is between controlling and minority shareholders (tunneling, related-party transactions).
+- **Control enhancements.** Dual-class shares, pyramids, cross-holdings and golden shares separate voting rights from cash-flow rights. Founders may argue that they protect long-term vision; critics say they entrench management and allow control with little capital at risk. Sunset provisions, which end the dual-class structure after a period, are a compromise.
+- **Market discipline.** Product market competition, the market for corporate control (takeovers), analysts, creditors and the legal system impose discipline.
+- **Disclosure and audit.** Accurate financial reporting, independent audits and effective internal controls are prerequisites for any monitoring.
+
+### 24.3.2 Shareholder rights, activism and takeover defenses
+
+Shareholders influence firms through voting (director elections, say-on-pay, mergers), engagement with management, proposals, and, if all else fails, selling. Activist investors take a stake, publicly push for change (divestitures, capital return, board seats, leadership change) and benefit if the share price rises. Research suggests that targets of activism often show operating improvements and positive average announcement returns, although the long-run effects are debated and activists may favor short-term payouts over long-term investment.
+
+Takeover defenses include staggered boards, poison pills (rights plans that dilute a hostile acquirer), supermajority requirements, and restrictions on written consent. These protect the board's ability to negotiate a better price but also insulate poorly performing managers. A reasonable rule: the stronger the defenses, the more important independent oversight becomes. Proxy advisers and institutional investors generally favor annual director elections and the removal of pills unless approved by shareholders; no universal best practice exists because the right level of protection depends on ownership, the strategic position of the firm and its need for patient capital.
+
+### 24.3.3 Stakeholders and purpose
+
+A long-running debate concerns whether firms should maximize shareholder value or balance the interests of stakeholders. The disciplined position, consistent with the rest of this book, is that long-run shareholder value cannot be created by ignoring customers, employees, suppliers and regulators, and that stakeholder choices that are costly in the short run can be justified when they preserve long-run cash flows. The danger of an unlimited multi-stakeholder mandate is that managers become unaccountable: with no single metric, almost any decision can be defended. Practical governance responses include clear articulation of purpose, board oversight of material ESG risks, linking compensation to a small number of measurable outcomes and transparent reporting of trade-offs.
+
+## 24.4 Executive Compensation
+
+### 24.4.1 The design problem
+
+Compensation is a contract designed to induce effort and appropriate risk-taking when the principal cannot observe effort. Standard components are base salary, annual bonus, long-term incentives (LTIs: stock options, restricted stock units, performance shares) and benefits and retirement plans. A well-designed package has the following characteristics.
+
+- **Pay for performance.** A material share of pay is variable and linked to measures the executive can influence.
+- **Long-term orientation.** Vesting periods of three to five years, holding requirements after vesting and minimum shareholding guidelines align the executive with long-term holders.
+- **Risk calibration.** Pure option plans reward volatility because option value rises with volatility; plans with leverage in the payoff encourage risk-taking beyond what shareholders want. Debt-like instruments (pensions, deferred compensation) align executives with creditors, which is relevant for banks.
+- **Relative measurement.** Relative total shareholder return (TSR) against peers filters out industry and market movements that executives do not control, reducing windfall gains.
+- **Clawbacks and malus.** Provisions to recover or withhold pay after misstatements or misconduct strengthen accountability.
+- **Transparency and simplicity.** Complex plans with many metrics blur incentives.
+
+Typical pitfalls include metrics that can be manipulated (EPS through buybacks, adjusted EBITDA that excludes recurring costs), payouts for mediocre results because thresholds are low, repricing of underwater options, and benchmarking against peers' median or upper quartile, which ratchets pay up over time.
+
+### 24.4.2 Choosing metrics
+
+| Metric | Strength | Weakness | Best used for |
+|---|---|---|---|
+| Earnings per share growth | Simple, observable | Manipulable via buybacks, accounting, leverage | Annual bonus with caution |
+| ROIC or ROCE | Ties to value creation relative to capital | Can discourage good investments when measured on book value | Mature, capital-intensive firms |
+| Relative TSR | Market-based, filters market effects | Noisy, short-term sentiment, peers selection | LTI plans, 3-year horizon |
+| Free cash flow | Hard to manipulate | Can be boosted by underinvestment | Cash-generative businesses |
+| Strategic or ESG KPIs | Links to long-run drivers | Measurement ambiguity, risk of box-ticking | Small weight, quantified targets |
+
+Many firms combine two or three metrics to balance their weaknesses, for example 50 percent relative TSR, 30 percent ROIC and 20 percent a quantified emissions or safety target.
+
+### 24.4.3 Valuing options with Black-Scholes
+
+The grant-date fair value of stock options is estimated with an option pricing model, typically Black-Scholes, adjusted for dividends. For a European call on a stock with spot S, strike K, time T, risk-free rate r, continuous dividend yield q and volatility σ:
+
+```
+C = S·e^(−qT)·N(d1) − K·e^(−rT)·N(d2)
+d1 = [ln(S/K) + (r − q + σ²/2)·T] / (σ·√T)
+d2 = d1 − σ·√T
+```
+
+Executive options are long-dated, subject to vesting and forfeiture, and often exercised early, so the model overstates value if applied naively; companies reduce the expected term to reflect early exercise behavior. We nevertheless use the formula to show the economics.
+
+**Example 24.4 – Valuing an at-the-money option grant.** A CEO is granted 200,000 options with a 5-year term, struck at the current price of $50. Volatility is 30 percent, the risk-free rate is 4 percent and the dividend yield is 1 percent.
+
+Step 1: d1 = [ln(50/50) + (0.04 − 0.01 + 0.30²/2) × 5] / (0.30 × √5) = [0 + (0.03 + 0.045) × 5] / 0.6708 = 0.375 / 0.6708 = **0.5590**.
+
+Step 2: d2 = 0.5590 − 0.6708 = **−0.1118**.
+
+Step 3: N(d1) = 0.7119; N(d2) = 0.4555.
+
+Step 4: Discount factors: e^(−0.01×5) = 0.95123; e^(−0.04×5) = 0.81873.
+
+Step 5: C = 50 × 0.95123 × 0.7119 − 50 × 0.81873 × 0.4555 = 33.86 − 18.65 = **$15.21 per option**.
+
+Step 6: Grant value = 200,000 × 15.21 = **$3.04m**.
+
+An equivalent economic grant in restricted stock units would be 3.04m / 50 = 60,800 units, ignoring the dividend (RSUs receive or accrue dividends; the option does not). The key managerial insights: an at-the-money option is worth about 30 percent of the share price at these parameters, so it is a levered bet on the share price; the value rises with volatility (at σ = 40 percent it is worth more), which means options reward risk-taking and are not neutral about strategic choices such as leverage or an acquisition that raises volatility; and they pay nothing if the share price falls, so they do not protect shareholders against poor performance in a falling market for the shares but do provide upside if the entire market rises. Executives compare an option's *value to them*, which is lower than the Black-Scholes fair value because they are undiversified and cannot hedge, with the *cost to the company*.
+
+**Example 24.5 – A relative TSR performance share plan.** The CEO receives a target grant of 40,000 performance shares vesting after three years. The payout is 0 percent below the 25th percentile of peer TSR, 50 percent at the 25th percentile, 100 percent at the median, 150 percent at the 75th percentile and 200 percent at or above the 90th; payout is interpolated linearly between points. The company finishes at the 62nd percentile and the share price at vesting is $58.
+
+Step 1: The 62nd percentile lies between the median (100 percent) and the 75th (150 percent). Interpolation fraction = (62 − 50) / (75 − 50) = 12 / 25 = 0.48.
+
+Step 2: Payout % = 100 + 0.48 × 50 = **124 percent**.
+
+Step 3: Shares earned = 40,000 × 1.24 = **49,600**.
+
+Step 4: Value at vesting = 49,600 × $58 = **$2,876,800**.
+
+The grant-date target value (40,000 × $50 = $2.0m) rose to $2.88m because of the above-median ranking and the 16 percent share price increase. If TSR had ranked at the 40th percentile, payout would be 50 + (15/25) × 50 = 80 percent. The shape of the payout curve matters: a payout at the 25th percentile rewards below-median performance, and a steep slope between the 50th and 75th percentiles raises the incentive for improvement but also the risk of paying for luck, since a three-year TSR rank is noisy. Some committees add a cap when absolute TSR is negative.
+
+### 24.4.4 Say-on-pay, ratios and the political context
+
+Many jurisdictions give shareholders an advisory or binding vote on pay. CEO-to-median-worker pay ratios are disclosed in some regimes. These measures create transparency but not necessarily moderation; they have been accused of encouraging benchmarking that increases pay. A defensible committee process includes using independent consultants, tying pay to a clear strategy, testing payout under multiple scenarios (including the worst case) before approval, and explaining outcomes to shareholders in plain language.

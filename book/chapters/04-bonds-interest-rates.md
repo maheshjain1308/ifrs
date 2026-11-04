@@ -62,7 +62,7 @@ Three relationships follow directly from the formula and should be internalised.
 
 *Step 2 – at y = 5%.* Because the coupon equals the yield, price = **$1,000.00** exactly (par).
 
-*Step 3 – at y = 4%.* Annuity factor = (1 − 1.04⁻¹⁰) / 0.04 = (1 − 0.675564) / 0.04 = 8.110896. PV of coupons = $50 × 8.110896 = $405.54. PV of principal = $1,000 × 0.675564 = $675.56. Price = **$1,081.11** (a premium).
+*Step 3 – at y = 4%.* Annuity factor = (1 − 1.04⁻¹⁰) / 0.04 = (1 − 0.675564) / 0.04 = 8.110896. PV of coupons = $50 × 8.110896 = $405.54. PV of principal = $1,000 × 0.675564 = $675.56. Price = **$1,081.11** (a premium). (The rounded components sum to a cent less; the prices quoted are computed from unrounded factors.)
 
 A 1-percentage-point rise in the yield (5% → 6%) cut the price by $73.60 (7.36%), while a 1-point fall (5% → 4%) raised it by $81.11 (8.11%). The asymmetry is convexity.
 
@@ -111,4 +111,193 @@ If a bond's yield stays constant, its price drifts toward par as maturity approa
 - Forgetting to halve the rate and double the periods for semi-annual bonds.
 - Confusing clean and dirty prices, particularly when settling trades or recording a bond in the accounts.
 - Treating the maturity yield as a guaranteed return, which we examine next.
+
+## 4.2 Yield to Maturity and Measures of Return
+
+### 4.2.1 Definition of YTM
+
+The **yield to maturity** is the single discount rate that equates the present value of a bond's promised cash flows to its current market price. It is the bond's internal rate of return if held to maturity. Unlike the pricing problem, there is no closed-form solution for y; it must be found by trial and error, interpolation, or a calculator or spreadsheet (the IRR or RATE functions).
+
+```
+Price = Σ Cₜ/(1+YTM)ᵗ + F/(1+YTM)ⁿ      (solve for YTM)
+```
+
+A useful approximation for a quick check is
+
+```
+YTM ≈ [C + (F − P)/n] / [(F + P)/2]
+```
+
+which averages the annual coupon income and the annual amortisation of the discount, divided by the average investment.
+
+**Example 4.3 – Solving for YTM.** A bond with a 4% annual coupon, eight years to maturity and a face value of $1,000 trades at $950. Find its YTM.
+
+*Step 1 – approximation.* [40 + (1,000 − 950)/8] / [(1,000 + 950)/2] = [40 + 6.25] / 975 = 46.25 / 975 = **4.744%**.
+*Step 2 – refine by pricing at trial yields.* At y = 4.75%: price = $951.03. At y = 4.77%: price = $949.77.
+*Step 3 – interpolate.* The target price of $950.00 lies 1.03/1.26 = 0.82 of the way from 4.75% to 4.77%, so YTM = 4.75% + 0.82 × 0.02% = **4.766%**.
+*Step 4 – check.* At y = 4.766%, price = $950.02. ✓
+
+The bond trades at a discount because its 4% coupon is below the 4.77% the market demands. The investor earns 4% in coupons plus a capital gain of $50 over eight years.
+
+### 4.2.2 Hidden assumptions of YTM
+
+YTM is a convenient single number, but it relies on three assumptions that managers should be able to name.
+
+1. **The bond is held to maturity.** If sold earlier, the return depends on the price at the sale date, which depends on yields then.
+2. **The issuer pays all promised cash flows in full and on time.** For risky bonds, the promised yield overstates the expected yield. The gap is discussed in Section 4.6.
+3. **Coupons are reinvested at the YTM itself.** If market rates fall, the coupons are reinvested at lower rates and the realised return falls short of the YTM; if rates rise, reinvestment is more rewarding but the bond's price has fallen. This is the **reinvestment risk** that offsets **price risk**; we exploit the offset when we immunise a portfolio.
+
+**Example 4.4 – Realised compound yield.** An investor buys a five-year, 5% annual-coupon bond at a 6% yield and holds it to maturity, reinvesting every coupon at 4%.
+
+*Step 1 – purchase price.* Price at 6% = $957.88.
+*Step 2 – terminal wealth.* Coupons reinvested at 4%: 50 × (1.04⁴ + 1.04³ + 1.04² + 1.04 + 1) = 50 × 5.416323 = $270.82. Add the principal: $1,000 + $270.82 = $1,270.82.
+*Step 3 – realised yield.* (1,270.82 / 957.88)^(1/5) − 1 = 1.326706^0.2 − 1 = **5.817%**.
+
+The realised return of 5.82% falls short of the 6% YTM because coupons were reinvested at 4% rather than at 6%. The shortfall of 18 basis points is small for a five-year bond with a modest coupon, but it widens with maturity and coupon size; for a 30-year high-coupon bond, reinvestment income can be most of the total return.
+
+### 4.2.3 Other yield measures
+
+- **Current yield** = annual coupon / current price. For the bond in Example 4.1 at a 6% yield, 50 / 926.40 = 5.397%. It ignores capital gain or loss, so it is useful for income comparisons only.
+- **Yield to call (YTC)** is calculated like YTM but to the first call date at the call price. For a callable bond selling at a premium, the lower of YTM and YTC (the **yield to worst**) is the more realistic return measure.
+- **Holding-period return** over a specific horizon = (coupons + ending price − beginning price) / beginning price. It depends on yields at the end of the horizon.
+
+A manager issuing debt should note an asymmetry: the YTM that investors demand is the issuer's pre-tax cost of borrowing (before fees and ignoring default risk). This is the correct input for the cost of debt in the weighted-average cost of capital (discussed in a later chapter), not the coupon on existing debt.
+
+## 4.3 Interest-Rate Risk and Duration
+
+### 4.3.1 Why maturity alone is not enough
+
+All fixed-rate bonds fall in price when yields rise, but not by the same amount. A 30-year zero-coupon bond falls much more than a 2-year bond for the same change in yield. Maturity is a rough guide, but it ignores the timing of coupons. A 10-year bond paying a 12% coupon returns much of its value early, and is less sensitive than a 10-year zero-coupon bond. We need a measure that takes the whole cash-flow profile into account. This is **duration**.
+
+### 4.3.2 Macaulay duration
+
+**Macaulay duration** (named for Frederick Macaulay) is the present-value-weighted average time to receipt of a bond's cash flows:
+
+```
+D = Σ [ t × PV(CFₜ) ] / P
+```
+
+where PV(CFₜ) = CFₜ / (1 + y)ᵗ and P is the bond's price. It is measured in years. Properties:
+
+- A zero-coupon bond's duration equals its maturity.
+- A coupon bond's duration is less than its maturity, because early coupons pull the average forward.
+- Duration falls as the coupon rate rises, and falls as the yield rises (higher yield means the distant cash flows are discounted more heavily).
+- Duration generally rises with maturity, though at a decreasing rate; for a perpetuity it is (1 + y)/y, a finite number (17.67 years at 6%).
+
+### 4.3.3 Modified duration and the price approximation
+
+Differentiating the price formula with respect to the yield gives the key practical result. **Modified duration** is
+
+```
+D_mod = D / (1 + y/m)           (m = coupons per year; m = 1 for annual)
+```
+
+and for a small change in yield Δy:
+
+```
+ΔP / P ≈ − D_mod × Δy
+```
+
+Modified duration is therefore the percentage price change for a one-unit (100%) change in yield, which we normally read as the percentage change in price for a one-percentage-point change in yield. A bond with a modified duration of 7.57 loses about 7.57% of its price if yields rise by 1 percentage point. A related measure is **dollar duration** (or the DV01, "dollar value of an 01"), the dollar change in price for a one-basis-point change in yield: DV01 = D_mod × P × 0.0001.
+
+**Example 4.5 – Computing duration.** Compute the Macaulay duration, modified duration and approximate price change for a three-year bond with a 6% annual coupon, face value $1,000, priced at a 5% yield.
+
+*Step 1 – cash flows and present values.*
+
+| Year t | Cash flow | PV at 5% | t × PV |
+|---|---|---|---|
+| 1 | $60 | $57.14 | $57.14 |
+| 2 | $60 | $54.42 | $108.84 |
+| 3 | $1,060 | $915.67 | $2,747.01 |
+| **Sum** | | **$1,027.23** | **$2,913.00** |
+
+*Step 2 – Macaulay duration.* D = 2,913.00 / 1,027.23 = **2.836 years**.
+*Step 3 – modified duration.* D_mod = 2.836 / 1.05 = **2.701**.
+*Step 4 – price change for a +1 percentage point move.* ΔP ≈ −2.701 × 0.01 × $1,027.23 = **−$27.74**. For a −1 point move: +$27.74.
+*Step 5 – exact.* At 6%, the price is $1,000.00 (a change of −$27.23); at 4% the price is $1,055.50 (a change of +$28.27).
+
+The approximation is close but overstates the decline and understates the gain; the missing second-order effect is convexity.
+
+**Table 4.2 – Duration depends on maturity and coupon (5% yield, annual coupons)**
+
+| Maturity | Macaulay duration, 5% coupon bond | Macaulay duration, zero-coupon bond | Modified duration, 5% coupon | Modified duration, zero |
+|---|---|---|---|---|
+| 2 years | 1.95 | 2.00 | 1.86 | 1.90 |
+| 5 years | 4.55 | 5.00 | 4.33 | 4.76 |
+| 10 years | 8.11 | 10.00 | 7.72 | 9.52 |
+| 20 years | 13.09 | 20.00 | 12.46 | 19.05 |
+| 30 years | 16.14 | 30.00 | 15.37 | 28.57 |
+
+The table shows two effects. The coupon bond's duration grows far more slowly than its maturity, and the gap between a 5% coupon bond and a zero-coupon bond widens with maturity. A 30-year zero-coupon bond has a modified duration nearly double that of a 30-year coupon bond, and consequently is much more volatile.
+
+### 4.3.4 Portfolio duration and managerial use
+
+The duration of a portfolio is the market-value-weighted average of the durations of its holdings. Likewise, a firm can compute the duration of its assets and of its liabilities. A firm with a long-lived asset base funded by short-term debt has a **duration gap**: a rise in rates reduces the value of assets by more than liabilities, or raises the cost of rolling over debt. Banks and insurers manage duration gaps formally; non-financial firms with large pension liabilities or long-dated receivables should do the same.
+
+Duration is also a risk-budgeting tool. A treasury policy might limit the portfolio's DV01 to a given dollar amount, or require that the weighted-average duration of debt remain within a range.
+
+## 4.4 Convexity and Immunisation
+
+### 4.4.1 The curvature of the price–yield relationship
+
+Modified duration is the slope of the price–yield curve at the current yield; it is a linear approximation to a curved relationship. The price–yield relationship is convex: the curve lies above its tangent line. **Convexity** measures this curvature. For annual cash flows:
+
+```
+Convexity = [ Σ t(t+1) × CFₜ/(1+y)^(t+2) ] / P
+```
+
+and the price change including the second-order term is
+
+```
+ΔP / P ≈ − D_mod × Δy + ½ × Convexity × (Δy)²
+```
+
+Because the second term is positive whatever the sign of Δy, convexity helps the holder: a bond gains more when yields fall than it loses when yields rise. All else equal, investors prefer higher convexity and will pay for it; this is why two bonds with identical durations can have different yields. Zero-coupon bonds have the highest convexity for a given maturity; callable bonds can have *negative* convexity in some yield ranges, because the issuer's right to call caps the price gain when rates fall.
+
+**Example 4.6 – Duration and convexity together.** Consider the 10-year, 5% annual-coupon bond of Example 4.1, priced at a 6% yield: P = $926.40, Macaulay duration = 8.0225 years, modified duration = 7.5684, convexity = 72.57. Estimate and compare the price change for yield shifts of ±1 and ±2 percentage points.
+
+*Step 1 – duration-only estimate.* For Δy = +1%: −7.5684 × 0.01 × 926.40 = −$70.11. For Δy = +2%: −$140.23. For Δy = −1%: +$70.11; for −2%: +$140.23.
+*Step 2 – convexity term.* ½ × 72.57 × (0.01)² × 926.40 = $3.36 for ±1%; ½ × 72.57 × (0.02)² × 926.40 = $13.45 for ±2%.
+*Step 3 – combine.* For +1%: −70.11 + 3.36 = **−$66.75**; for −1%: 70.11 + 3.36 = **+$73.48**; for +2%: −140.23 + 13.45 = **−$126.78**; for −2%: 140.23 + 13.45 = **+$153.67**.
+*Step 4 – compare with exact repricing.* The actual changes are −$66.87, +$73.60, −$127.70 and +$154.71.
+
+**Table 4.3 – Duration and convexity approximations versus exact price changes (10-year, 5% bond at a 6% yield; P = $926.40)**
+
+| Yield change | Exact ΔP | Duration only | Duration + convexity | Error, duration only (approx. − exact) | Error, duration + convexity (approx. − exact) |
+|---|---|---|---|---|---|
+| +2% | −$127.70 | −$140.23 | −$126.78 | −$12.53 | +$0.92 |
+| +1% | −$66.87 | −$70.11 | −$66.75 | −$3.24 | +$0.12 |
+| −1% | +$73.60 | +$70.11 | +$73.48 | −$3.49 | −$0.12 |
+| −2% | +$154.71 | +$140.23 | +$153.67 | −$14.48 | −$1.04 |
+
+Adding the convexity term cuts the error by an order of magnitude. For large moves, such as the 200-basis-point shifts seen during rate cycles, ignoring convexity is a material mistake.
+
+### 4.4.2 Immunisation
+
+An investor or firm with a known future liability can use duration to lock in the ability to meet it, a technique called **immunisation**. The idea is to offset price risk and reinvestment risk. If yields rise, the bonds lose market value but reinvested coupons earn more; if yields fall, the opposite occurs. Choosing a portfolio whose duration equals the liability's horizon makes the two effects cancel for small, parallel shifts in the yield curve.
+
+Two conditions are required:
+
+1. The present value of assets equals the present value of liabilities.
+2. The duration of assets equals the duration of liabilities.
+
+A third condition, that asset convexity exceed liability convexity, guarantees that the portfolio remains ahead for large shifts in either direction.
+
+**Example 4.7 – Immunising a single liability.** A company must pay $1,000,000 in six years (for example, a legal settlement). The market yield is 5% for all maturities. The treasurer will invest in two zero-coupon bonds, maturing in 3 and 10 years. How should she split the funds?
+
+*Step 1 – present value of the liability.* $1,000,000 / 1.05⁶ = **$746,215.40**. The liability has a duration of 6 years because it is a single payment.
+*Step 2 – solve for weights.* Let w be the weight in the 3-year bond: 3w + 10(1 − w) = 6, so 10 − 7w = 6, giving w = 4/7 = 0.5714.
+*Step 3 – dollar amounts.* 3-year zero: 0.5714 × $746,215.40 = **$426,408.80**. 10-year zero: 0.4286 × $746,215.40 = **$319,806.60**.
+*Step 4 – face values purchased.* 3-year: $426,408.80 × 1.05³ = $493,621.48. 10-year: $319,806.60 × 1.05¹⁰ = $520,931.25.
+*Step 5 – test with immediate parallel shifts.*
+
+| Yield | Asset value | Liability value | Surplus |
+|---|---|---|---|
+| 3% | $839,355 | $837,484 | +$1,871 |
+| 4% | $790,750 | $790,315 | +$436 |
+| 5% | $746,215 | $746,215 | $0 |
+| 6% | $705,339 | $704,961 | +$379 |
+| 7% | $667,757 | $666,342 | +$1,415 |
+
+In every scenario the surplus is non-negative: the barbell portfolio has higher convexity than the single-maturity liability, so it is ahead after any parallel shift. The portfolio must be rebalanced as time passes and yields change, since durations drift. Immunisation also fails when the yield curve changes shape rather than moving in parallel, which is why practitioners use key-rate durations or cash-flow matching (a **dedicated portfolio** whose coupons and maturities match the liability schedule) when exactness is needed.
 

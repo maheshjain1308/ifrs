@@ -191,3 +191,255 @@ Although the idea of a single optimal risky portfolio is a theoretical simplific
 - **Asset-allocation policy.** A pension fund's primary decision is the risk-level mix between a diversified risky portfolio and low-risk assets, not the selection of individual securities. Differences in strategic allocation typically explain most of the variation in fund returns.
 - **Constraints.** Many investors cannot borrow at the risk-free rate, which flattens the upper part of the line and gives high-beta assets an extra attraction; this is one explanation (discussed in Section 10.8) for empirical deviations from the CAPM.
 
+## 10.3 The Capital Asset Pricing Model
+
+### 10.3.1 Assumptions
+
+The CAPM, developed independently by Sharpe, Lintner, and Mossin in the 1960s, derives equilibrium prices from the portfolio theory above. It rests on a set of idealized assumptions:
+
+1. Investors are risk-averse, care only about the mean and variance of portfolio returns over a single period, and maximize expected utility.
+2. All investors have identical (homogeneous) expectations about returns, variances, and covariances.
+3. There is a risk-free asset at which all investors can lend and borrow without limit.
+4. Markets are frictionless: no taxes, no transaction costs, and all assets are infinitely divisible and tradable.
+5. Investors are price takers, and the information is costlessly available to all.
+
+These assumptions are obviously unrealistic. The model is valuable not because they are true but because the structure that results is simple, testable, and a useful first approximation. The relaxation of each assumption has been studied, and generally the central message (priced risk is market-related risk) survives in modified form.
+
+### 10.3.2 Deriving the Security Market Line
+
+Under the assumptions, every investor holds the market portfolio M, plus or minus cash. In equilibrium, M is the tangency portfolio and the expected return of every asset must be consistent with its contribution to the risk of M. The marginal contribution of asset i to the variance of the market portfolio is proportional to its covariance with the market, σ_iM. In equilibrium the ratio of an asset's risk premium to its marginal risk contribution must be the same for all assets, including M itself:
+
+```
+[E(R_i) − r_f] / σ_iM  =  [E(R_M) − r_f] / σ_M²
+```
+
+Rearranging gives the **Security Market Line** (SML):
+
+```
+E(R_i) = r_f + β_i [E(R_M) − r_f]
+β_i = σ_iM / σ_M² = Cov(R_i, R_M) / Var(R_M)
+```
+
+The **beta** of a security is the ratio of its covariance with the market to the variance of the market. It measures how many percentage points the security's return tends to move per one-point move in the market. The market portfolio has beta 1 by construction; the risk-free asset has beta 0. A portfolio's beta is the weighted average of the betas of its constituents.
+
+The SML is the central empirical and practical implication of the CAPM:
+
+> The expected return on any asset equals the risk-free rate plus beta times the market risk premium.
+
+Two points deserve emphasis. First, **only beta matters**: an asset's own standard deviation and its idiosyncratic risk do not enter the required return. Second, the **SML is not the CML**. The CML plots *efficient portfolios* with standard deviation on the horizontal axis; the SML plots *any asset or portfolio* with beta on the horizontal axis. For a fully diversified portfolio, the two coincide in the sense that its standard deviation equals β_p σ_M.
+
+### 10.3.3 The SML as a hurdle rate and a pricing benchmark
+
+An asset's SML return is the return required by diversified investors for its systematic risk. It plays two roles.
+
+1. **Cost of equity.** For a firm, the required return on its equity is r_E = r_f + β_E × MRP. This is the discount rate for equity cash flows and a component of the weighted average cost of capital (WACC).
+2. **A benchmark for pricing.** An asset whose expected return (given by the analyst's forecasts) lies above the SML is underpriced: it offers a positive **alpha**, α = E(R_i) − [r_f + β_i(E(R_M) − r_f)]. An asset below the line is overpriced and has negative alpha. If prices are in equilibrium, all alphas are zero.
+
+**Example 10.3 – Required returns on the SML and alpha.** The risk-free rate is 3 percent and the market risk premium is 6 percent.
+
+*Required returns:*
+
+| Stock | Beta | Required return = 3% + β × 6% |
+|---|---|---|
+| Utility U | 0.60 | 3% + 3.6% = 6.6% |
+| Market index | 1.00 | 3% + 6.0% = 9.0% |
+| Cyclical manufacturer C | 1.40 | 3% + 8.4% = 11.4% |
+
+*Alpha screening.* An analyst forecasts the following expected returns for two other stocks:
+
+| Stock | Beta | Analyst's expected return | SML required return | Alpha |
+|---|---|---|---|---|
+| Q | 1.30 | 12.0% | 3% + 1.3 × 6% = 10.8% | +1.2% |
+| R | 0.80 | 7.0% | 3% + 0.8 × 6% = 7.8% | −0.8% |
+
+*Interpretation.* Q plots above the SML: it offers 1.2 percentage points more than its beta justifies, so it appears underpriced and attractive. R plots below the line and appears overpriced. The analyst should ask what could be wrong with the forecasts before acting, since the typical difference between forecast and equilibrium return is dominated by forecasting error, and a modest alpha can vanish with a small change in beta or in the market risk premium. If Q's beta were 1.5 instead of 1.3, its required return would be 12.0% and its alpha would be zero.
+
+### 10.3.4 Using the CAPM in corporate finance
+
+For a firm with a well-estimated equity beta of 1.15, a risk-free rate of 4 percent, and a market risk premium of 5.5 percent, the cost of equity is 4% + 1.15 × 5.5% = 10.325%. Inputs deserve careful choice.
+
+- **Risk-free rate.** Use a government yield whose maturity matches the horizon of the cash flows being valued, typically a long-term bond yield for long-lived projects. The currency must match the currency of the cash flows.
+- **Market risk premium.** Use a forward-looking, defensible estimate (Chapter 9), consistently applied across the firm's valuations.
+- **Beta.** Estimated from historical regression or from comparable firms, with the adjustments in Section 10.4.
+
+The CAPM's resulting discount rate applies to the *systematic* risk of cash flows. Idiosyncratic risk should be incorporated in the expected cash flows and scenario analysis, not by raising the discount rate. A common error is to add a "company-specific premium" to compensate for an uncertain forecast: this double-counts risk if the cash flows are already probability-weighted and penalizes smaller or less-diversified firms arbitrarily. (There are legitimate reasons for adjustments, such as illiquidity in a private-company valuation, but they should be explicit and justified.)
+
+## 10.4 Estimating Beta
+
+### 10.4.1 The characteristic line
+
+In practice, beta is estimated by regressing the excess returns of a security on the excess returns of a market index:
+
+```
+R_i,t − r_f,t = α_i + β_i (R_M,t − r_f,t) + ε_i,t
+```
+
+This regression line is called the **characteristic line**. The slope coefficient is the estimate of beta; it equals the sample covariance of the security's and the market's returns divided by the sample variance of the market's returns:
+
+```
+β̂ = Σ (R_M,t − R̄_M)(R_i,t − R̄_i) / Σ (R_M,t − R̄_M)²
+```
+
+The intercept is the estimate of Jensen's alpha, and the R² of the regression is the proportion of variance that is systematic (Chapter 9). The standard error of the slope tells us how precisely beta is measured.
+
+**Example 10.4 – Estimating beta by regression.** To keep the arithmetic visible we use eight quarterly observations (real applications use at least 60 monthly or 100 weekly observations). Returns are in excess of the risk-free rate, so the market return below is already a market excess return.
+
+| Quarter | Market excess return R_M | Stock excess return R_i |
+|---|---|---|
+| 1 | 4% | 8% |
+| 2 | −2% | −5% |
+| 3 | 6% | 5% |
+| 4 | 1% | 4% |
+| 5 | −5% | −7% |
+| 6 | 8% | 13% |
+| 7 | 3% | 1% |
+| 8 | −1% | 2% |
+
+*Step 1 – Means.* R̄_M = 14 / 8 = 1.75%. R̄_i = 21 / 8 = 2.625%.
+
+*Step 2 – Deviations and sums.* Market deviations: 2.25, −3.75, 4.25, −0.75, −6.75, 6.25, 1.25, −2.75 (in %). Stock deviations: 5.375, −7.625, 2.375, 1.375, −9.625, 10.375, −1.625, −0.625 (in %).
+
+```
+Σ (dev_M)²           = 0.013150      (in decimal units)
+Σ (dev_M)(dev_i)     = 0.017925
+Σ (dev_i)²           = 0.029788
+```
+
+*Step 3 – Beta and alpha.*
+
+```
+β̂ = 0.017925 / 0.013150 = 1.363
+α̂ = R̄_i − β̂ R̄_M = 2.625% − 1.363 × 1.75% = 2.625% − 2.386% = 0.24% per quarter
+```
+
+*Step 4 – Fit and precision.* Computing each residual as R_i − α̂ − β̂ R_M gives +2.31%, −2.51%, −3.42%, +2.40%, −0.42%, +1.86%, −3.33%, +3.12%. The residual sum of squares (RSS) is 0.005354 in decimal units.
+
+```
+R² = 1 − RSS/TSS = 1 − 0.005354 / 0.029788 = 0.820
+Correlation = 0.906
+Residual standard deviation = √(0.005354 / 6) = 2.99% per quarter
+SE(β̂) = √[ (RSS/(n−2)) / Σ(dev_M)² ] = √[ (0.005354/6) / 0.013150 ] = 0.260
+t-statistic = 1.363 / 0.260 = 5.23
+95% confidence interval (t₆ = 2.447): 1.363 ± 2.447 × 0.260 = 0.73 to 2.00
+```
+
+*Interpretation.* The point estimate suggests a stock that is 36 percent more sensitive than the market, and 82 percent of its variance is systematic. But the confidence interval is wide: the true beta could plausibly lie anywhere from 0.73 to 2.00. Even with 60 observations and a better fit, beta intervals of ±0.3 are typical for individual stocks. A manager who plans to use this beta to price a project should treat it as an estimate, not a fact.
+
+### 10.4.2 Statistical and practical issues
+
+Estimating beta involves many choices, and they matter.
+
+- **Return interval and window.** Monthly returns over five years are the most common convention; weekly returns over two years are another. Shorter intervals produce more observations but increase bias for thinly traded stocks, whose prices adjust to market moves with a lag. The choice can move beta by 0.1 to 0.3.
+- **Market index.** The CAPM market portfolio includes all risky assets (equities, bonds, real estate, human capital), but the available proxy is an equity index. This is the foundation of Roll's critique (Section 10.8).
+- **Thin trading.** Stocks that trade infrequently have betas biased downward because their recorded prices do not reflect market movements on the same day.
+- **Structural change.** A firm's beta changes when it changes its business mix or leverage, and a historical regression reflects the *past* firm.
+- **Estimation error and mean reversion.** Betas estimated from a historical regression regress toward 1 over time: extreme high betas tend to be overestimates, and extreme low betas underestimates. Practitioners therefore commonly use an **adjusted beta**, often the Blume adjustment:
+
+```
+Adjusted β = (2/3) × raw β + (1/3) × 1.0
+```
+
+For the raw beta of 1.363 in Example 10.4, the adjusted beta is 0.667 × 1.363 + 0.333 = 1.243. Vendors differ in their weights and methods, and the analyst should know which version is being used.
+
+### 10.4.3 Betas from comparable firms: unlevering and relevering
+
+A single firm's regression beta is often too noisy to use. A better estimate of a business's risk is the average beta across a group of **pure-play** comparable firms, adjusted for their capital structures. Equity beta reflects two kinds of risk: the risk of the business assets, and the extra risk of financial leverage. The **asset (unlevered) beta**, β_U, isolates business risk. Under the common assumptions that debt is risk-free and the debt-to-equity ratio is held constant (the Hamada relation):
+
+```
+β_E = β_U × [1 + (1 − T)(D/E)]        β_U = β_E / [1 + (1 − T)(D/E)]
+```
+
+where T is the corporate tax rate. The procedure is to (1) unlever each comparable's equity beta using its own D/E and tax rate, (2) average the asset betas, and (3) relever at the target firm's (or project's) intended capital structure.
+
+**Example 10.5 – Unlevering and relevering a comparable's beta.** A listed pure-play comparable to Brightline's cold-storage project has an equity beta of 1.40, a debt-to-equity ratio of 0.50, and faces a 25 percent tax rate. Brightline plans to finance the project with a debt-to-equity ratio of 0.25.
+
+*Unlever:*
+
+```
+β_U = 1.40 / [1 + (1 − 0.25)(0.50)] = 1.40 / 1.375 = 1.018
+```
+
+*Relever at D/E = 0.25:*
+
+```
+β_E = 1.018 × [1 + 0.75 × 0.25] = 1.018 × 1.1875 = 1.209
+```
+
+*Cost of equity* (r_f = 3%, MRP = 6%): 3% + 1.209 × 6% = **10.25%**. Had the manager used the comparable's raw equity beta of 1.40, the cost of equity would have been 11.4%, a difference of 1.15 percentage points arising purely from the capital-structure mismatch. Using Brightline's company-wide beta rather than the project's business beta would introduce a different error, as the next section discusses.
+
+*Interpretation.* Asset betas strip out financing choices so that business risk can be transferred across firms. A real application should also consider that debt has some beta, so the simple formula tends to overstate the leverage effect when debt is risky; practitioners with highly leveraged comparables use extended versions of the formula that allow a positive debt beta.
+
+### 10.4.4 Project and divisional betas
+
+The discount rate should reflect the risk of the *project*, not the firm that undertakes it. A company whose average beta is 1.1 may have a trucking division with a beta of 1.3, a cold-storage division with 0.85, and a technology investment with 1.8. Discounting all three at the same rate causes the firm to accept too many high-risk projects, which have a positive NPV only because their risk is understated, and to reject too many safe ones. Over time the firm drifts toward higher risk without earning compensating returns. The solution is to estimate the beta of each business line from pure-play comparables, as in Example 10.5, or to use a risk-adjusted hurdle rate scheme with several risk categories.
+
+## 10.5 Performance Measurement
+
+The CAPM supplies benchmarks for evaluating portfolios, since raw returns cannot be compared without adjusting for risk. Three standard measures differ in the risk concept they use.
+
+**Sharpe ratio** (reward-to-variability): total excess return per unit of total risk.
+
+```
+Sharpe = (R̄_p − r_f) / σ_p
+```
+
+It is appropriate for evaluating a portfolio that represents an investor's entire risky holdings, because total risk is what that investor bears.
+
+**Treynor ratio** (reward-to-volatility): excess return per unit of systematic risk.
+
+```
+Treynor = (R̄_p − r_f) / β_p
+```
+
+It is appropriate for evaluating a portfolio as one component of a larger diversified portfolio, where idiosyncratic risk is diversified away by other holdings.
+
+**Jensen's alpha**: the difference between the portfolio's average return and what the SML predicts for its beta.
+
+```
+α_p = R̄_p − [r_f + β_p (R̄_M − r_f)]
+```
+
+Alpha is a measure in return units, directly interpretable as "excess return after adjusting for beta."
+
+**Example 10.6 – Three performance measures can disagree.** The risk-free rate is 3 percent. The market return is 9 percent with a standard deviation of 15 percent (so the market's Sharpe ratio is 0.40 and its Treynor ratio is 6 percent). Over the same period, three funds report:
+
+| Fund | Average return | Standard deviation | Beta |
+|---|---|---|---|
+| A | 14% | 22% | 1.30 |
+| B | 11% | 12% | 0.80 |
+| C | 9% | 9% | 0.50 |
+
+*Sharpe ratios.*
+
+```
+A: (14 − 3) / 22 = 0.500
+B: (11 − 3) / 12 = 0.667
+C: (9 − 3) / 9   = 0.667
+```
+
+*Treynor ratios.*
+
+```
+A: (14 − 3) / 1.30 = 8.46%
+B: (11 − 3) / 0.80 = 10.00%
+C: (9 − 3) / 0.50  = 12.00%
+```
+
+*Jensen's alphas.*
+
+```
+A: 14 − [3 + 1.30 × 6] = 14 − 10.8 = +3.2%
+B: 11 − [3 + 0.80 × 6] = 11 − 7.8  = +3.2%
+C: 9  − [3 + 0.50 × 6] = 9  − 6.0  = +3.0%
+```
+
+*Rankings.*
+
+| Measure | Ranking (best to worst) |
+|---|---|
+| Sharpe | B = C, then A |
+| Treynor | C, then B, then A |
+| Jensen's alpha | A = B, then C |
+
+*Interpretation.* All three funds beat the market on every measure (Sharpe above 0.40, Treynor above 6 percent, positive alpha), but they rank differently. Fund A has the highest absolute return and the highest alpha, but it earns the least per unit of total risk, indicating that it bears considerable idiosyncratic risk. If A were the investor's only holding, the Sharpe ratio would be the relevant statistic and A would rank last. If A were one of many funds in a large diversified portfolio, the idiosyncratic risk would be diversified and alpha would be the relevant statistic, and A would rank at the top. The right measure depends on the role the fund plays in the investor's portfolio. Note, finally, that a few years of results rarely distinguish skill from luck: for a fund with 5 percent tracking error, an annual alpha of 3 percent measured over five years has a t-statistic of only 3 / (5 / √5) = 1.34.
+

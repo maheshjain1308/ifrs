@@ -154,7 +154,7 @@ Price drop = D × (1 − τ_D) / (1 − τ_G)
 
 *Step 3: Ex-dividend price.* 50 − 1.647 = $48.35.
 
-*Interpretation.* The price falls by 82 percent of the dividend, not 100 percent. If the tax rates were equal, the drop would be $2.00. A drop that is smaller than the dividend is consistent with dividend-taxed investors being the marginal price setters, but the empirical evidence is mixed because transaction costs, short-term traders, and tax-exempt arbitrageurs also influence prices around the ex-date. The key lesson is that an investor in a high bracket does not gain from buying a stock just before the dividend: the tax on the dividend is not offset by a correspondingly large price drop, so he or she is better off waiting.
+*Interpretation.* The price falls by 82 percent of the dividend, not 100 percent. If the tax rates were equal, the drop would be $2.00. A drop that is smaller than the dividend is consistent with dividend-taxed investors being the marginal price setters, but the empirical evidence is mixed because transaction costs, short-term traders, and tax-exempt arbitrageurs also influence prices around the ex-date. The key lesson is that the ex-dividend price drop and the after-tax value of the dividend are linked through the tax rates of the marginal investor, so the drop is a way of reading what that investor thinks of dividends.
 
 ### Clienteles
 
@@ -171,3 +171,234 @@ If investors differ in their tax rates and preferences, they will sort into grou
 
 Many retirees say they prefer "living off the dividends." In the perfect market this is a psychological preference rather than an economic one, since selling a bit of stock produces the same cash. Behavioral explanations (self-control, mental accounting) and institutional rules (trusts that may spend income but not principal) give the preference some force in practice.
 
+## 16.5 Signaling, Agency Costs, and Dividend Smoothing
+
+Taxes explain why payout might be undesirable. Other theories explain why firms pay anyway, and why they pay in the particular patterns we observe.
+
+### Signaling
+
+Managers know more about the firm's prospects than outsiders do. A dividend increase is a costly commitment: if future earnings disappoint, the firm must either cut the dividend (which is punished) or find external funds. Only firms confident in future cash flow can afford to raise the dividend, so an increase *signals* good news, and the stock tends to rise at announcement. Cuts and omissions generally signal the opposite and are accompanied by price declines. The classic models of Bhattacharya, and of Miller and Rock, formalize this idea. The implication for managers is that the signal depends on the *surprise* relative to expectations, and that dividend policy has an informational role that extends beyond the cash itself.
+
+Repurchases also carry information. An open-market program is a weaker commitment than a dividend and so a weaker signal. Tender offers at a premium, which require the firm to buy a fixed number of shares, are stronger signals of management's belief that the stock is undervalued. Because signaling requires cost to be credible, there is also a limit: if every firm announced buybacks as signals without following through, the signal would lose meaning, and investors have learned to look at actual completion rates.
+
+### Agency Costs of Free Cash Flow
+
+Jensen's free cash flow argument, introduced in Chapter 15, applies equally to payout. When managers retain cash that exceeds profitable investment opportunities, they may spend it on pet projects, empire-building acquisitions, or perquisites. Paying cash out reduces the resources under management's control and forces the firm to return to capital markets when it needs funds, subjecting its plans to external scrutiny. Seen this way, a commitment to pay dividends is a bonding device, and the predicted gains are largest for mature firms with few growth options and substantial surplus cash. Evidence suggests that the market responds more positively to payout increases by firms with poor investment opportunities, consistent with this theory, and that firms with weak governance hold cash that is valued at a discount by investors.
+
+There is a conflict on the other side as well. Shareholders can use high payouts to transfer wealth from creditors: paying a large dividend reduces the assets backing the debt. Bondholders protect themselves with covenants, and aggressive payouts by highly leveraged firms can raise borrowing costs. Managers therefore balance the demands of shareholders for cash against the claims of lenders.
+
+### Lintner's Model of Dividend Smoothing
+
+Lintner's 1956 survey of managers found that:
+
+- Firms think about dividends in terms of a long-run target payout ratio.
+- Managers are reluctant to cut dividends and raise them only when they believe the increase is sustainable.
+- As a consequence, dividends adjust only partially toward the target, and are much smoother than earnings.
+
+This is summarized by a partial adjustment model:
+
+```
+D_t = D_{t−1} + s × (p × E_t − D_{t−1})
+```
+
+where D_t is the dividend this period, E_t is earnings (or EPS), p is the target payout ratio, and s is the speed of adjustment (0 < s ≤ 1). A smaller s implies a smoother policy. Despite decades of structural change in how firms pay out, smoothing remains a robust feature of dividend behavior, particularly among mature firms.
+
+**Example 16.5 – Lintner smoothing.** A firm has a target payout ratio of 40 percent, an adjustment speed s = 0.30, and last year's dividend of $1.60 per share, which corresponded to EPS of $4.00 (a 40 percent payout). This year EPS jumps to $5.00; next year it rises to $5.50 and then $6.00.
+
+*Year 1.* Target dividend = 0.40 × 5.00 = $2.00. Adjustment = 0.30 × (2.00 − 1.60) = $0.12. D_1 = 1.60 + 0.12 = $1.72. Actual payout = 1.72 / 5.00 = 34.4%.
+
+*Year 2.* Target = 0.40 × 5.50 = $2.20. Adjustment = 0.30 × (2.20 − 1.72) = 0.144. D_2 = 1.72 + 0.144 = $1.864. Payout = 1.864 / 5.50 = 33.9%.
+
+*Year 3.* Target = 0.40 × 6.00 = $2.40. Adjustment = 0.30 × (2.40 − 1.864) = 0.1608. D_3 = 1.864 + 0.1608 = $2.0248. Payout = 33.7%.
+
+*Interpretation.* Over three years, EPS rises 50 percent (from $4.00 to $6.00) while the dividend rises 26.5 percent (from $1.60 to $2.02). The payout ratio falls below the target of 40 percent because the dividend lags the earnings growth. Conversely, if earnings fell, the dividend would stay high and the payout ratio would exceed the target temporarily. The smoothing explains why payout ratios swing more than dividends and why a dividend cut is so informative: management would only make it when the earnings shortfall appears permanent.
+
+## 16.6 Stock Splits and Stock Dividends
+
+*Stock splits* and *stock dividends* distribute additional shares to existing holders in proportion to their holdings. No cash leaves the firm, and the company's assets and earnings power are unchanged, so in a frictionless market the total value of a shareholder's position does not change.
+
+### Mechanics and Accounting
+
+In a *stock split* (for example, 2-for-1), the number of shares doubles and the par value (if any) per share halves; the equity accounts are unchanged. In a *stock dividend* (for example, 10 percent), the firm issues new shares worth 10 percent of the outstanding amount, and under conventional accounting treatment for small stock dividends (usually below about 20 to 25 percent of shares outstanding) transfers the market value of the new shares from retained earnings to common stock and paid-in capital. Larger distributions are treated like splits and only change the par value and share count. Local accounting rules vary, and managers should check the applicable standard.
+
+**Example 16.6 – Split and stock dividend.** Pendleton Holdings has 100 million shares trading at $80 (market capitalization $8,000 million), common stock at $1 par.
+
+*(a) 2-for-1 split.* Shares become 200 million, par becomes $0.50, and the price should fall to 8,000 / 200 = $40. A holder of 1,000 shares ($80,000) now owns 2,000 shares worth $40 each, still $80,000. Total equity on the balance sheet is unchanged.
+
+*(b) 10% stock dividend (instead of the split).* New shares = 10 million. At a market price of $80, the accounting transfer is 10 million × $80 = $800 million from retained earnings: $10 million to common stock (par $1) and $790 million to additional paid-in capital. Shares become 110 million, and the price should be about 8,000 / 110 = $72.73. A holder of 1,000 shares now has 1,100 shares at $72.73 = $80,000.
+
+*(c) Reverse split.* A 1-for-4 reverse split on a $4 stock reduces the share count by four and raises the price to $16, with no change in total value.
+
+### Why Do Firms Split Shares?
+
+Since splits create no cash and change no cash flow, they should not matter in theory. Three explanations are offered for why firms do them:
+
+- *Trading range.* Managers believe there is an optimal price range for the shares, which makes them accessible to small investors and increases liquidity. Evidence on liquidity is mixed: splits often reduce price but increase the proportional bid-ask spread, in some markets.
+- *Signaling.* Splits are costly in terms of fees and typically are done by firms whose stock has risen strongly, so they are taken to signal confidence about future earnings. Announcement returns are positive on average, but much of this reflects the earnings and dividend information accompanying the split.
+- *Dividend commitments.* A split often accompanies a promise to maintain the per-share dividend, which implicitly increases the total dividend.
+
+Stock dividends and splits are not cash payouts and are not substitutes for them. A stock dividend leaves shareholders with the same economic stake, whereas a cash dividend or repurchase returns value. Managers sometimes announce stock dividends as a way of "rewarding shareholders" without cash; the right response is to ask what they actually accomplish.
+
+## 16.7 Payout Decisions in Practice
+
+### Surveys of Managers
+
+Surveys of financial executives consistently report a set of priorities. Managers say that maintaining the existing dividend per share is a very high priority, that they are reluctant to cut it, and that they would forego positive-NPV investments before cutting it in extreme cases. They say repurchase decisions are made after investment needs are met and are treated as more flexible, and that the level of payout is influenced by the stability of earnings, the firm's desire to preserve financial flexibility, and market conditions. Few managers cite tax considerations as the dominant factor, which is notable given how large they loom in theory. The practical consequence is that dividends are treated like fixed charges and repurchases like a residual.
+
+### The Residual Dividend Approach
+
+The *residual dividend policy* treats dividends as what is left after the firm has funded all positive-NPV investments while maintaining its target capital structure. The steps:
+
+1. Determine the capital budget (the set of positive-NPV projects).
+2. Choose the equity portion of that budget using the target capital structure.
+3. Fund that equity portion with retained earnings.
+4. Pay out any remaining earnings as dividends (or repurchases).
+
+**Example 16.7 – Residual dividend.** Marlowe Industries has a target capital structure of one-third debt and two-thirds equity (D/V = 1/3). In Year 1, planned capital spending is $300 million and net income is $260 million.
+
+*Year 1.* Equity needed = 300 × (2/3) = $200 million. Dividend = 260 − 200 = $60 million (payout ratio 60 / 260 = 23.1%). The remaining $100 million of investment is financed with new debt.
+
+*Year 2.* Capital spending rises to $450 million with net income still $260 million. Equity needed = 450 × (2/3) = $300 million. Retained earnings of $260 million fall short by $40 million. Dividend = 0, and the firm must either issue $40 million of new equity or let leverage rise temporarily above target (with more borrowing).
+
+*Interpretation.* A strict residual policy produces dividends that vary wildly from year to year (60 and then 0), which conflicts with managers' strong preference for smoothness and with the signaling consequences of cuts. In practice, firms use the residual idea over a multi-year horizon: they plan average investment and average earnings and set a *sustainable* dividend that they can maintain through the cycle, with repurchases or special dividends absorbing the surplus in good years. Repurchases fit the residual role well.
+
+### Payout and Growth: Sustainable Growth and Value
+
+Payout policy also determines growth, because retained earnings fund reinvestment. With ROE constant and no external equity, the *sustainable growth rate* is:
+
+```
+g = ROE × (1 − payout ratio) = ROE × b
+```
+
+where b is the retention ratio. Value depends on whether the reinvested funds earn more than the cost of equity.
+
+**Example 16.8 – When retention creates value.** A firm expects next-year EPS of $4.00 and has a cost of equity of 11 percent. Compare two payout ratios under two different returns on equity, using the constant-growth model P = D_1 / (r − g).
+
+*Case 1: ROE = 15%.*
+
+```
+Payout 40%: g = 0.15 × 0.60 = 9.0%;  D_1 = 1.60;  P = 1.60 / (0.11 − 0.09) = $80.00
+Payout 70%: g = 0.15 × 0.30 = 4.5%;  D_1 = 2.80;  P = 2.80 / (0.11 − 0.045) = $43.08
+```
+
+*Case 2: ROE = 11% (equal to the cost of equity).*
+
+```
+Payout 40%: g = 0.11 × 0.60 = 6.6%;  D_1 = 1.60;  P = 1.60 / (0.11 − 0.066) = $36.36
+Payout 70%: g = 0.11 × 0.30 = 3.3%;  D_1 = 2.80;  P = 2.80 / (0.11 − 0.033) = $36.36
+```
+
+*Interpretation.* When the firm earns more than the cost of equity on retained funds (Case 1), retention is worth more to shareholders than payout: price falls from $80 to $43 when payout is raised, because the firm would be forced to give up growth that creates value. When ROE equals the cost of equity (Case 2), payout is irrelevant, exactly as MM predicts: both policies give $36.36. If ROE were below 11 percent, higher payout would raise value. The message: *the payout decision is an investment decision in disguise.* Whether to pay out depends on the firm's marginal return on reinvestment, not on how investors feel about dividends.
+
+### A Life-Cycle View
+
+| Stage | Investment opportunities | Cash generation | Typical payout approach |
+|---|---|---|---|
+| Start-up / early growth | Abundant | Negative or low | No payout; external financing |
+| High growth | Strong | Moderate | Little or no dividend; retain for expansion |
+| Maturity | Moderate | Strong | Regular dividend, plus repurchases |
+| Decline | Scarce | Strong but shrinking | High payout, special dividends, liquidation of assets |
+
+Calder, in the opening vignette, sits between the high-growth and maturity stages, with a cyclical business and large cash balance. Such firms often choose a moderate regular dividend, covered comfortably even in a downturn, and a flexible repurchase program.
+
+### Measuring Total Shareholder Yield
+
+Because dividends and repurchases are substitutes, analysis should use total payout. The *total shareholder yield* adds the dividend yield to the net buyback yield:
+
+```
+Total yield = (Dividends + Net repurchases) / Market capitalization
+```
+
+A firm with a market capitalization of $4,000 million, dividends of $60 million, and net repurchases of $140 million has a total yield of (60 + 140) / 4,000 = 5.0%. The dividend yield alone, 1.5 percent, understates the cash returned to shareholders. A related measure, the *payout ratio relative to free cash flow*, indicates sustainability: a company distributing more than its free cash flow for several years is borrowing, depleting cash, or issuing shares to pay.
+
+### A Practical Framework for Setting Policy
+
+1. *Identify surplus capital.* After the capital budget, the strategic reserve (for acquisitions, a downturn buffer), and the target capital structure, how much cash is truly surplus, both now and on average over the cycle?
+2. *Decide the base dividend.* Set a regular dividend that can be maintained through a severe downturn from internally generated cash. Express as a payout ratio range and per-share growth aspiration, and treat as a commitment.
+3. *Use repurchases for the variable component.* Authorize programs sized to surplus cash, with discretion on timing. Net out issuance, and publish the logic.
+4. *Use special dividends for one-time windfalls* (an asset sale, a settlement) that are not expected to recur.
+5. *Check the constraints.* Covenants, legal distributable reserves, rating agency tolerance, and the liquidity position under stress.
+6. *Communicate.* State the principles (priorities for cash, the dividend's coverage, how buybacks are decided) so that investors do not over-read individual announcements.
+7. *Review annually and after major events.*
+
+### Common Mistakes
+
+- Funding buybacks with debt at the top of the cycle and then cutting them when credit conditions tighten, effectively buying high and selling low through issuance.
+- Setting a dividend based on peak earnings and then cutting it in the downturn, with a double penalty of lower payout and negative signal.
+- Using repurchases only to offset dilution and calling it a return of capital.
+- Treating EPS accretion as the justification for a buyback.
+- Paying out cash while ignoring positive-NPV opportunities; or hoarding cash with no plan, which erodes value through agency costs and invites activist pressure.
+- Announcing large authorizations that are never executed, thereby damaging credibility.
+
+## Case Study: Calder Semiconductor Equipment Sets a Payout Policy
+
+*Illustrative case; the company and all figures are fictional.*
+
+Calder Semiconductor Equipment has 200 million shares trading at $60 (market capitalization $12 billion), $1.2 billion of cash, $300 million of debt, and annual free cash flow before payouts that has averaged $600 million over the cycle but ranged from $150 million in the last trough to $900 million at the peak. The firm has never paid a dividend, and earlier in its life it funded growth by retaining all earnings. Its investment plan calls for around $350 million per year in capital and research (already counted in free cash flow) plus $200 million of possible bolt-on acquisitions that management considers attractive but uncertain.
+
+The board has before it three proposals.
+
+**Proposal A (the activist).** A $1 billion accelerated share repurchase this year, financed from cash and $400 million of new debt, followed by a regular dividend of $0.50 per share ($100 million per year). The activist argues that the cash is idle, that the stock trades at a discount to peers (a P/E of 14 compared with 18), and that management's earlier acquisitions have destroyed value. An accelerated repurchase at $60 would retire about 16.7 million shares, 8.3 percent of the total.
+
+**Proposal B (the pension fund).** A regular dividend equal to 40 percent of average-cycle earnings, about $240 million a year or $1.20 per share, with no buybacks. The fund argues that a dividend is a firm commitment and provides discipline against empire-building.
+
+**Proposal C (management).** A modest regular dividend of $0.25 per share ($50 million a year), covered more than three times by even the trough free cash flow of $150 million, together with a flexible repurchase program of up to $300 million a year, executed when the stock trades below management's estimate of intrinsic value and when cash exceeds a minimum liquidity reserve of $800 million. A further special dividend would be considered following major asset sales.
+
+Elena Park, the CFO, notes several facts. First, in the last downturn, two competitors that had committed to large dividends were forced to cut them within a year and saw their share prices fall by more than their peers. Second, repurchase programs in the industry have been poorly timed: the sector's largest buybacks took place near the peak of the cycle. Third, her tax advisors say that a large fraction of Calder's shareholders (taxable individuals) are subject to a higher rate on dividends than on long-term capital gains, while the pension holders are untaxed. Fourth, Calder's research budget gets cut during downturns, which costs the firm its technological lead; a liquidity buffer therefore has strategic value beyond covering fixed charges. Finally, an internal analysis suggests that the average return on the recent acquisitions has been below the firm's cost of capital, supporting the activist's critique.
+
+Elena believes that Proposal A takes on debt at the wrong point in the cycle and that the dividend of $100 million combined with a large buyback leaves too little in a trough: free cash flow of $150 million in the trough would barely cover the dividend and interest on $700 million of debt. Proposal B places too much weight on the dividend. But she sees merit in the activist's governance argument and wants some mechanism of accountability for acquisitions and a public statement of how the buyback will be sized.
+
+**Discussion Questions**
+
+1. Using MM dividend irrelevance, what assumptions would have to hold for Calder's choice among Proposals A, B, and C to not affect firm value? Which of those assumptions fail in this case?
+2. Compute the dividend coverage under the trough free cash flow of $150 million for Proposals B and C. What does this imply about their relative risk of a future cut, and how would a cut be interpreted by the market?
+3. A taxable shareholder faces a 30 percent tax on dividends and a 15 percent tax on gains. A pension fund pays no tax. Compare the after-tax value to each of $100 of dividends and $100 of repurchase proceeds that is 60 percent gain, and discuss how clienteles influence the choice.
+4. Evaluate management's rule of buying back only when the stock is below intrinsic value. What are the risks of this rule, and what governance devices could make it credible to investors?
+
+## Key Takeaways
+
+- In a perfect market, the value of the firm depends on its investment policy, not its payout policy; shareholders can create any payout pattern by trading (homemade dividends).
+- Payout is tied to the cash flow identity: paying more means investing less, borrowing more, or issuing shares, so the right question is the return on retained cash compared with shareholders' alternatives.
+- Dividends and repurchases are close substitutes; a buyback raises EPS mechanically, but value per share changes only through mispricing or taxes, so EPS accretion is not a justification.
+- Repurchases transfer value between sellers and continuing holders when the price differs from intrinsic value; the amounts are modest for small programs.
+- Where dividends are taxed more heavily than gains, the ex-dividend drop is smaller than the dividend: price drop = D(1 − τ_D)/(1 − τ_G); clienteles sort investors into firms whose policies suit their tax status.
+- Dividend increases signal confidence and cuts signal trouble; Lintner's model shows managers smooth dividends and adjust only partially to earnings changes.
+- Payout can discipline managers by reducing free cash flow they might misuse, with the greatest value in mature firms with few opportunities.
+- Splits and stock dividends redistribute no value; they change the share count and the price, with accounting differences between splits and small stock dividends.
+- A residual policy applied strictly yields volatile dividends, so firms smooth: a sustainable base dividend plus flexible repurchases and occasional specials.
+- Total shareholder yield, free cash flow coverage, and the liquidity position under stress are the measures that matter more than headline announcements.
+
+## Review Questions
+
+1. State the Miller-Modigliani dividend irrelevance proposition and the conditions under which it holds. Why must the investment policy be held fixed?
+2. Explain homemade dividends with an example of an investor who wants cash when the firm pays none, and one who wants no cash when the firm pays a dividend.
+3. Why does a share repurchase increase EPS? Under what condition would it also increase the share price?
+4. Describe how a repurchase at a price below intrinsic value transfers wealth among shareholders. Why is the effect small for a modest program?
+5. What is the relationship between the ex-dividend price drop and shareholders' tax rates? What does a drop of less than the dividend suggest?
+6. What is a dividend clientele? Does the existence of clienteles imply that a firm should never change its payout policy?
+7. Explain the signaling interpretation of dividend increases and cuts. Why might repurchases be a weaker signal?
+8. How does the free cash flow hypothesis relate to payout policy? In what kind of firm is it most relevant?
+9. Summarize Lintner's model. If earnings fall temporarily, what happens to the dividend and the payout ratio?
+10. Why would a firm announce a stock split? Does a split create value? What other effects might make it appear to do so?
+
+## Problems
+
+1. A firm has 2 million shares at $30 and will pay a $3.00 dividend. An investor owning 1,000 shares wants no cash. After the dividend, how many shares must the investor buy with the proceeds, and what is the investor's total position value? Assume no taxes or costs.
+2. A firm has 60 million shares at $36, net income of $120 million, and distributes $90 million. (a) Compute dividend per share if paid as a dividend. (b) Compute shares retired and EPS after a repurchase at $36, ignoring foregone interest. (c) Recompute EPS if the $90 million was earning 4% pre-tax, with a 25% tax rate. (d) Compute the P/E after the buyback for part (c) at a price of $36.
+3. The firm in Problem 2 has intrinsic value of $45 per share (total $2,700 million) while the market price is $36. It repurchases $90 million. Compute intrinsic value per remaining share. Then suppose instead intrinsic value is $30 per share ($1,800 million) with the market price still $36 and compute the new intrinsic value per remaining share.
+4. A stock trades at $60 cum-dividend and pays a $3.00 dividend. The marginal investor's tax rates are 35% on dividends and 15% on capital gains. Compute the ex-dividend price.
+5. A firm's last dividend was $1.00 per share, its target payout is 50%, and its adjustment speed is 0.25. EPS this year is $3.00 and next year it is $3.60. Compute the dividend in each year under Lintner's model.
+6. A firm with 40 million shares at $90 announces a 3-for-2 split. (a) Compute the new share count and price. (b) Instead of the split, it declares a 5% stock dividend when the price is $60 and 60 million shares are outstanding. Compute new shares, the amount transferred from retained earnings, and the expected ex-price.
+7. A firm targets a capital structure with 40 percent debt (D/V = 0.40) and net income of $400 million. (a) Under a residual policy with capital spending of $540 million, compute the dividend and payout ratio. (b) If capital spending rises to $700 million, compute the dividend or the external equity needed.
+8. A firm expects EPS of $4.00 next year, ROE of 12%, and has a cost of equity of 11%. Using the constant-growth model, compute the price at payout ratios of 25% and 60%. Interpret the result.
+
+### Answers to Selected Problems
+
+1. Ex-dividend price = $27. Dividends received = 1,000 × $3 = $3,000; shares purchased = 3,000 / 27 = 111.11. Total shares = 1,111.11; value = 1,111.11 × $27 = $30,000, the same as before.
+2. (a) $90m / 60m = $1.50 per share. (b) Shares retired = 90 / 36 = 2.5 million; remaining 57.5 million; EPS = 120 / 57.5 = $2.087 (from $2.00). (c) Lost after-tax interest = 90 × 0.04 × 0.75 = $2.7 million; net income = $117.3 million; EPS = 117.3 / 57.5 = $2.04. (d) P/E = 36 / 2.04 = 17.65 (versus 18.0 initially).
+3. At intrinsic $45: (2,700 − 90) / 57.5 = $45.39, a gain of $0.39 per continuing share. At intrinsic $30: (1,800 − 90) / 57.5 = $29.74, a loss of $0.26.
+4. Price drop = 3.00 × 0.65 / 0.85 = $2.294; ex-dividend price = 60 − 2.294 = $57.71.
+5. Year 1 target = 0.5 × 3.00 = 1.50; D_1 = 1.00 + 0.25 × (1.50 − 1.00) = $1.125. Year 2 target = 0.5 × 3.60 = 1.80; D_2 = 1.125 + 0.25 × (1.80 − 1.125) = $1.29375, about $1.29.
+6. (a) New shares = 60 million; price = 90 × 40 / 60 = $60. (b) New shares = 3 million; transfer = 3 × $60 = $180 million; ex-price ≈ 60 × 60 / 63 = $57.14.
+7. (a) Equity needed = 540 × 0.60 = $324 million; dividend = 400 − 324 = $76 million; payout = 19%. (b) Equity needed = 700 × 0.60 = $420 million; shortfall = $20 million, so the dividend is zero and the firm needs $20 million of external equity (or more debt).
+8. Payout 25%: g = 0.12 × 0.75 = 9%; D_1 = 1.00; P = 1.00 / (0.11 − 0.09) = $50.00. Payout 60%: g = 0.12 × 0.40 = 4.8%; D_1 = 2.40; P = 2.40 / (0.11 − 0.048) = $38.71. Because ROE (12%) exceeds the cost of equity (11%), retention creates value and the lower payout gives the higher price.
