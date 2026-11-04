@@ -615,3 +615,45 @@ The probability-weighted NPV is $60M with the credit intact and $(238)M with it 
 
 **(b) Anchor customer.** The letter is non-binding, so its $90 floor is not a hedge. The base price reaches $91 in Year 4, so the floor bites only after that. Helios should convert it to a take-or-pay contract with a floor: 4 GWh is 31% of the 12.75 GWh plateau output, which would remove part of the price risk the tornado ranked second. Its value is the risk it removes, not the average price.
 
+### Sensitivity discussion
+
+Three results organise the discussion. First, value is concentrated in a few drivers: a 2.5% price shortfall or a learning rate of 87% instead of 85% erases the subsidised NPV, and a 30% repeal probability brings the expected value to about zero. Second, the drivers are correlated in practice: a price collapse driven by oversupply also tends to coincide with weak utilisation and slower learning, so the downside scenario is more plausible than independent one-at-a-time swings suggest. Third, flexibility is worth most when value is near the strike: Phase 2 is almost at the money, so its option value responds strongly to volatility, which is the one input that cannot be observed. Instructors should push students to say which of the 25%, 35% and 45% estimates they trust and why.
+
+### Common student errors
+
+1. **Applying the learning curve to each year's output** instead of cumulative output, which resets cost every year (Question 3).
+2. **Using Helios's capital structure or beta,** or leaving the 10% hurdle in place (Question 1).
+3. **Including sunk, allocated or cannibalisation costs** (Exhibit A), or omitting land and working capital recovery.
+4. **Ignoring the tax-loss mechanics,** either giving the project an immediate tax refund or forgetting that salvage is taxed in full.
+5. **Treating subsidies as certain,** or as additive without checking taxability; presenting the subsidised NPV without the unsubsidised one.
+6. **Reporting payback as evidence of value** when discounted payback never occurs.
+7. **Discounting Phase 2 capex at the risk-free rate in the DCF but at the project rate in the option,** or computing the option on the NPV (−23) instead of on the PV of the operating flows (949).
+8. **Counting the loan twice,** once through a lower WACC and again as a subsidy.
+9. **Choosing between phasing and building now by comparing NPVs alone,** ignoring the covenant.
+
+### Alternative defensible answers
+
+The model solution recommends Phase 1 with an option, but a well-argued case can be made for other answers. **Build all 30 GWh now** is defensible on pure value (it exceeds phasing by $27M to $42M at 35% volatility and by more if volatility is below 39%), but only if the covenant can be amended and about $874M of equity found. **Decline** is defensible if the board regards the 30% repeal probability as too low, since at 38% the expected NPV is negative, or if it will not rely on a learning rate that sits at the edge of the confidence interval. **Use a different discount rate**: a student who removes Tamsin from the comparables obtains an asset beta near 1.19 and a WACC near 10.5%, which lowers NPV by about $60M but does not change the ranking of alternatives. A student who treats the credit as taxable (the 40% case in counsel's opinion) finds a project worth about $2M, so the decision becomes one of negotiation, not valuation. Another defensible route values Phase 2 with a decision tree and scenario probabilities instead of option pricing; this gives similar answers when probabilities are calibrated to the lattice. The grading standard should reward a clear decision rule, correct mechanics and honest treatment of what is uncertain, not agreement with any single figure.
+
+### Board recommendation memo
+
+**To:** The Board of Directors, Helios Cell Technologies Inc.
+**From:** Dev Raman, Chief Financial Officer
+**Date:** 1 December 2026
+**Re:** Project Meridian, Port Alder: recommendation to proceed with Phase 1 on conditions
+
+**Recommendation.** Approve Phase 1 (15 GWh, $1,500M plus $40M of land) subject to the five conditions below. Do not approve Phase 2 now; reserve the land, power connection and permits for it and review the decision at the end of Year 3.
+
+**Basis.** At a project discount rate of 10.2% (comparable-company WACC), Phase 1 has an NPV of $115M and an IRR of 11.5% with the Province's support. **Without it the NPV is −$537M and the IRR 4.6%**, so all of the value, and more, is subsidy: $652M in total, of which $475M is the production credit that is reviewed in 2031. If the credit is lost from Year 5 NPV falls to −$185M, and the expected NPV with a 30% chance of repeal is about −$29M across scenarios. The project loses its subsidised value with a 2.5% price shortfall, a learning rate of 87% or steady-state utilisation of 80%. Against that, two items outside the operating forecast are worth more: the option to build Phase 2 (about $161M at 35% volatility) and the development loan ($168M, as a 7% market-rate comparison). Building all 30 GWh now is worth about $27M to $42M more than phasing, but would take net debt to 5.35 times EBITDA against a 3.75 covenant.
+
+**Conditions precedent.**
+1. A binding provincial agreement that makes the production credit contractual for eight years or compensates Helios for repeal.
+2. Tax counsel's written opinion, or an advance ruling, that the credit is not taxable income.
+3. Written covenant relief from the banks (a construction holiday or project-level debt outside the covenant), and a signed funding plan including the equity placement.
+4. A take-or-pay offtake contract with Northgate Coachworks for at least 4 GWh a year with a price floor.
+5. Learning and ramp milestones (conversion cost, yield and utilisation at fixed cumulative volumes) reported quarterly and linked to management incentives, with a stage-gate review before the second construction payment.
+
+**Next sixty days.** Obtain the Class 3 cost estimate and a fixed-price contract for at least 70% of plant cost to address overrun risk. Complete the covenant negotiation. Secure the Phase 2 land and permit reservation at no more than the holding cost assumed here.
+
+**Risks not captured.** Construction delay and overrun (each year of delay costs roughly the Year 2 contribution plus a year of credit life), chemistry change, rival capacity and the political cycle. The board should regard the recommended structure as buying a position in a business that may be worth building, at a cost that is partly paid by the Province, not as a project that pays for itself.
+
