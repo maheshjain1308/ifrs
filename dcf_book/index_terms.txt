@@ -1,0 +1,106 @@
+Adjusted present value (APV)|adjusted present value; apv
+Arbitrage pricing theory (APT)|arbitrage pricing
+Asset beta|asset beta; unlevered beta
+Asset approach|asset approach; asset-based
+Balance sheet, integrated|three-statement; integrated model
+Berkus method|berkus
+Beta|beta
+Beta, bottom-up|bottom-up beta; bottom-up
+Beta, regression|regression beta
+Black–Scholes|black–scholes; black-scholes
+Blume adjustment|blume
+Bridge, equity|equity bridge
+Capex|capex
+CAPM|capm
+Cap rate|cap rate; capitalisation rate
+Cash conversion cycle|cash conversion
+Cement industry|cement
+Circularity|circularity
+Control premium|control premium
+Cost of debt|cost of debt
+Cost of equity|cost of equity
+Country risk premium|country risk
+Cyclical businesses|cyclical
+Debt-like items|debt-like
+Deferred tax|deferred tax
+Depreciation tax shield|depreciation tax shield
+Discount factor|discount factor
+Discount for lack of control (DLOC)|dloc; lack of control
+Discount for lack of marketability (DLOM)|dlom; lack of marketability
+Distressed companies|distress
+Dividend discount model|dividend discount model; ddm
+EBITDA|ebitda
+Economic value added (EVA)|eva
+Embedded value|embedded value
+Enterprise value|enterprise value
+Equity risk premium|equity risk premium; erp
+ESG|esg
+ESOPs and options|esop; employee stock option; employee options
+Exit multiple|exit multiple; exit-multiple
+Fair market value|fair market value
+Fair value (Ind AS 113)|ind as 113
+FCFE|fcfe
+FCFF|fcff
+First Chicago method|first chicago
+Football field|football field
+Gordon growth model|gordon
+Goodwill|goodwill
+Growth identity|growth identity; reinvestment rate × roic
+Hamada equation|hamada
+Holding company discount|holding-company discount; holding company discount
+Ind AS 116 and leases|ind as 116
+Ind AS 36 (value in use)|ind as 36; value in use
+Ind AS 103 (PPA)|ind as 103; purchase price allocation
+Insolvency and Bankruptcy Code|insolvency and bankruptcy; ibc
+Intangible assets|intangible
+Interest tax shield|tax shield
+Invested capital|invested capital
+IRR|internal rate of return; irr
+Key-person risk|key-person; key person
+Leases|lease
+Leveraged buy-out (LBO)|lbo; leveraged buy
+Liquidation value|liquidation value
+Marginal tax rate|marginal tax; marginal rate
+Market value added (MVA)|mva; market value added
+Mid-year convention|mid-year
+Minority interest (NCI)|non-controlling; minorit
+Modigliani–Miller|modigliani
+Monte Carlo simulation|monte carlo
+Net working capital|working capital
+NOPAT|nopat
+NPV|net present value; npv
+NOL (tax losses)|nol; tax loss
+Normalisation|normalis
+Perpetuity|perpetuity
+PEG ratio|peg
+P/B ratio|p/b
+P/E ratio|p/e
+Pension deficit|pension
+Pre-money and post-money|post-money; pre-money
+Present value|present value
+Real options|real option
+Registered valuer|registered valuer
+Relative valuation|relative valuation
+Reinvestment rate|reinvestment rate
+Reverse DCF|reverse dcf
+Risk-free rate|risk-free
+ROE|roe
+ROIC|roic
+Sales-to-capital ratio|sales-to-capital
+Scenario analysis|scenario
+Sensitivity analysis|sensitivity
+Size premium|size premium
+Start-ups|start-up
+Stock-based compensation|stock-based compensation; sbc
+Stub period|stub
+Sum-of-the-parts|sum-of-the-parts; sotp
+Sustainable growth|sustainable growth
+Synergies|synerg
+Terminal value|terminal value
+Treasury-stock method|treasury-stock
+Unit economics|unit economics
+Value driver|value driver
+Value in use|value in use
+VC method|venture-capital method; vc method
+WACC|wacc
+Working-capital days|receivable days; payable days
