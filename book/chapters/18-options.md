@@ -320,14 +320,14 @@ A market maker who sells a call can hedge by buying Δ shares per option. The po
 
 *Step 2: price.* N(d₁) = 0.5886, N(d₂) = 0.5047. Ke^(−rT) = 97.531. C = 100 × 0.5886 − 97.531 × 0.5047 = 58.86 − 49.22 = **$9.63**.
 
-*Step 3: Greeks.* φ(0.2239) = 0.3894 (the standard normal density at 0.2239).
+*Step 3: Greeks.* φ(0.2239) = 0.3891 (the standard normal density at 0.2239).
 - Delta = N(d₁) = **0.5886**.
-- Gamma = 0.3894 / (100 × 0.30 × 0.7071) = 0.3894 / 21.213 = **0.01834** per $1.
-- Vega = 100 × 0.3894 × 0.7071 = **27.54** per 1.00 of volatility, or $0.275 per vol point (the exact computation gives 27.51 and 0.2751).
+- Gamma = 0.3891 / (100 × 0.30 × 0.7071) = 0.3891 / 21.213 = **0.01834** per $1.
+- Vega = 100 × 0.3891 × 0.7071 = **27.51** per 1.00 of volatility, or $0.275 per volatility point.
 - Theta ≈ **−$10.71 per year**, or about −$0.0294 per calendar day.
 - Rho = K T e^(−rT) N(d₂) = 100 × 0.5 × 0.9753 × 0.5047 = **24.61** per 1.00, or $0.246 per percentage point of rate.
 
-*Step 4: hedging a short position.* A bank sells 10,000 calls on 100 shares... for simplicity treat each as one share. It sells 10,000 calls (10,000 shares of exposure), and buys 10,000 × 0.5886 = **5,886 shares** to be delta neutral.
+*Step 4: hedging a short position.* Treat each call as covering one share. A bank sells 10,000 calls and buys 10,000 × 0.5886 = **5,886 shares** to be delta neutral.
 
 *Step 5: a $2 move.* Suppose the stock rises to $102. The call reprices to $10.848 (a rise of $1.213 per call), so the loss on 10,000 short calls is $12,133. The 5,886 shares gain 5,886 × 2 = $11,772. Net loss: **$361**. A delta-only estimate of the call change is 0.5886 × 2 = 1.177. The delta-gamma estimate adds ½ × 0.01834 × 2² = 0.0367, giving 1.214, close to the actual 1.213. The residual loss of $361 is gamma: a short-gamma position loses whichever way the stock moves.
 
@@ -397,7 +397,7 @@ The question asked by the compensation committee is whether the cost to sharehol
 | 35% | 5 years | $13.61 |
 | 40% | 5 years | $15.03 |
 
-An error of ten volatility points shifts the expense by more than 20 percent, so documentation of how volatility and life were chosen is part of good governance and audit readiness. Note also that the expense is fixed at grant date: if the stock later falls and the options go underwater, the expense is not reversed (unless the performance or service conditions fail), which has led some boards to reprice options, a controversial act because it rewards failure.
+An error of ten volatility points (20 versus 30 percent) shifts the value by about 30 percent, so documentation of how volatility and life were chosen is part of good governance and audit readiness. Note also that the expense is fixed at grant date: if the stock later falls and the options go underwater, the expense is not reversed (unless the performance or service conditions fail), which has led some boards to reprice options, a controversial act because it rewards failure.
 
 ### 18.6.3 Design issues and the tax and governance context
 
@@ -466,9 +466,7 @@ The conversion option lets issuers pay a lower coupon (the buyer is paid partly 
 
 *Step 4: convertible value.* 873.63 + 203.36 = **$1,076.99**, about 107.7 percent of par.
 
-*Interpretation.* The issuer pays 3 percent instead of 6 percent. The 3-percent coupon saving on a $1,000 bond has a present value of $126.37 (the difference between the straight bond at a 6 percent coupon, $1,000, and its value here, $873.63), and investors pay $203.36 for the option: the market value of the conversion right exceeds the "interest saving" because the convertible's price is $1,077 and not $1,000. Issuers should note that the apparent cheapness of convertible financing is the cost of giving up upside; the "true" cost of the bond includes the option's value.
-
-(Technical note: the five-year straight bond at 6 percent with a 3 percent coupon is worth $873.63; if it had paid a 6 percent coupon, it would have been worth $1,000.)
+*Interpretation.* Investors accept a 3 percent coupon instead of 6 percent because they receive a conversion option. Relative to a 6 percent coupon, the 3 percent coupon is worth $126.37 less in present value (30 × 4.21236); the option is worth $203.36. Because the package is worth $1,077 against a $1,000 issue price, the issuer is underpricing it: in practice it would raise the conversion price, cut the conversion ratio, or lower the coupon until the value equals par. The lesson for issuers is that convertible financing is not cheap debt; its low coupon is paid for with an option on the upside, and the true cost of the bond includes the option's value.
 
 ### 18.7.3 Other embedded options
 
@@ -483,3 +481,73 @@ Many corporate instruments embed options: **callable bonds** (the issuer holds a
 5. **Hedge with understanding.** Know the delta, gamma, and vega of any option position, and the accounting implications (hedge accounting, fair-value changes, and disclosure requirements).
 6. **Do not mistake the model for the market.** Black-Scholes is a quoting convention and an approximation; model risk is real, particularly for long maturities, thinly traded underlyings, and exotic features.
 
+## Case Study
+
+*Illustrative case: Halden Marine Technologies is a fictional company.*
+
+Halden Marine Technologies designs and builds autonomous survey vessels for offshore wind developers and port authorities. Listed on a mid-cap exchange for four years, it has 80 million shares outstanding trading at $25, a market capitalization of $2.0 billion, and net debt of $400 million, of which $300 million is a single five-year bond with a 4.5 percent coupon issued three years ago. The chief financial officer, Ingrid Solberg, is preparing three decisions for the March board meeting, each of which turns out to be about options.
+
+*Decision one: the management incentive plan.* The compensation committee, chaired by independent director Hassan Idris, wants to replace the existing restricted-share awards with a grant of 2.4 million at-the-money options (3 percent of shares) to 40 senior employees, with a 10-year term and cliff vesting after three years. The human resources director, Camille Dubois, argues that options are "free" because no cash leaves the company. A shareholder representative has written to the board objecting that the grants reward managers for volatility rather than performance. The company's historical annualized volatility is 38 percent, but the implied volatility on listed options with a one-year maturity is 31 percent, and the average of peers' five-year volatilities is 34 percent. The risk-free rate is 4 percent and Halden pays no dividend. Employee surveys suggest that executives typically exercise about five years after grant, if vested, unless the stock has doubled, in which case they exercise sooner. Solberg estimates the expected forfeiture rate at 10 percent.
+
+*Decision two: the convertible.* Halden needs $250 million to fund a new shipyard. Bankers propose a seven-year convertible bond with a 2 percent coupon and a 40 percent conversion premium (a conversion price of $35). A straight seven-year bond would cost Halden about 6.5 percent. The treasury director, Pieter Van Dijk, notes that the convertible's coupon saving is $11.25 million a year and that the shares reserved for conversion would amount to 7.1 million (about 8.9 percent of the current share count). Board member Elena Rossi wants to know if the company is being given "something for nothing" and whether a lower conversion premium would change the economics. The rating agency has said that the equity component of a convertible does not receive full equity credit.
+
+*Decision three: the hedge and the bank's request.* Halden has a euro-denominated contract, due for payment in nine months, which will deliver EUR 60 million. Solberg could sell the euros forward, but she dislikes locking in a rate if the euro rallies. She is considering a put option on the euro (the right to sell euros at a floor rate), which costs a premium of about 2.1 percent of the notional at the current forward rate. The bank has also asked whether Halden would accept a *zero-cost collar* in which it buys the put and sells a call on the euro at a higher strike. The bank's hedging desk will delta hedge the position and has warned that during the contract period, gamma risk could cause the bank to widen the price. Solberg must decide whether the collar's loss of upside is worth saving the premium.
+
+*Other considerations.* The stock has recently been volatile because of a contested bid for one of Halden's competitors. A share buyback is on the agenda as well, funded from the proceeds of the convertible; Dubois remarks that buybacks might be used to offset the dilution from the option grant. Meanwhile, the auditors have asked for documentation of how the volatility and expected life assumptions will be selected, noting that they will test the valuation for reasonableness and consistency with prior grants.
+
+Solberg realizes that she needs a consistent framework: a way to value the incentive grant and understand its cost to shareholders, a way to unbundle the convertible into bond and option, and a way to compare the put with the collar. She also needs to explain to the board that "free" is the wrong word for any of these instruments.
+
+**Discussion questions**
+
+1. For decision one, explain which volatility and expected life you would use to value the option grant and why. Describe qualitatively how the value per option and the accounting expense change if the committee moves to a four-year vesting cliff or an exercise price 10 percent above market. Is Dubois correct that options are free?
+2. For decision two, decompose the convertible into a straight bond and a call option. Using the information in the case, estimate whether the convertible is likely to be priced fairly and discuss how a lower conversion premium would change the coupon needed. What are the costs of the convertible that the coupon saving fails to capture?
+3. For decision three, compare a forward sale, a purchased put, and a zero-cost collar in terms of payoffs, cost, and the retained upside. When would the collar be preferable? How does put-call parity relate the put and call prices in structuring the zero-cost collar?
+4. The shareholder representative argues that options encourage excessive risk taking. Use the idea of equity as a call option on firm assets to explain the argument, and propose two design features that reduce the problem.
+
+## Key Takeaways
+
+- An option gives a right without an obligation; its payoff is max(S − K, 0) for a call and max(K − S, 0) for a put, and the asymmetry makes options valuable even when at the money.
+- Combinations of options and the underlying (protective puts, covered calls, straddles, collars) shape the distribution of outcomes; each has a clear cost, breakeven, and set of bets embedded within it.
+- Put-call parity, C + Ke^(−rT) = P + S, follows from no-arbitrage alone and holds regardless of any model of the stock price; violations signal an arbitrage or an error in the inputs.
+- In the binomial model an option is priced by building a replicating portfolio of stock and borrowing, equivalent to discounting expected payoffs under risk-neutral probabilities at the risk-free rate; true probabilities and risk preferences are irrelevant.
+- American options can be valued on a tree by comparing at each node the continuation value with exercise value; early exercise is never optimal for American calls on non-dividend-paying stocks but can be for puts.
+- The Black-Scholes-Merton formula depends on five inputs; volatility is the only unobservable, and the expected return on the stock does not appear.
+- Delta is the hedge ratio, gamma the curvature, vega the volatility sensitivity, theta the time decay, and rho the rate sensitivity; a delta-hedged option seller earns theta in return for bearing gamma and vega risk.
+- Employee stock options are valued at grant date using an option model with expected life, expected volatility, and forfeiture adjustments; the expense is a real cost to shareholders, even though no cash is paid at grant.
+- Equity in a levered firm is a call option on the firm's assets with strike equal to the debt; risky debt is risk-free debt minus a put, which explains risk shifting, credit spreads, and the equity value of distressed firms.
+- Convertibles, callable bonds, warrants, and many contract clauses embed options; unbundling a hybrid security into its components is the first step in pricing it correctly.
+
+## Review Questions
+
+1. Define in-the-money, at-the-money, and out-of-the-money for calls and puts. Why does an at-the-money option still have value?
+2. Compare the profit profiles of a protective put and a covered call. In what market views and risk positions would an investor choose each?
+3. Derive put-call parity using two portfolios. How does the relationship change if the stock pays a dividend, or if the options are American?
+4. Explain why the value of a European call on a non-dividend-paying stock is bounded below by max(0, S − Ke^(−rT)). Why should such a call not be exercised early?
+5. In the binomial model, why do the true probabilities of an up- or down-move not appear in the option price? What do the risk-neutral probabilities represent?
+6. What makes early exercise attractive for an American put? What features of the parameters increase the early exercise premium?
+7. List the inputs of the Black-Scholes-Merton formula and explain how each affects a call's value. Why does the expected return on the stock not appear?
+8. What is implied volatility, and what does a volatility smile tell us about the limitations of the model?
+9. Describe delta, gamma, vega, and theta. Explain why a delta-hedged option seller has positive theta and negative gamma.
+10. Explain, using the option view of the firm, why shareholders of a highly levered company may favor risky projects even if they have negative NPV. What contractual devices mitigate the problem?
+
+## Problems
+
+1. **Protective put.** An investor owns a stock bought at $42 and buys a put with strike $40 for a premium of $2.50. Compute the profit at expiry if the stock finishes at $30, $40, and $50, and find the maximum loss and the breakeven stock price.
+2. **Put-call parity.** A non-dividend stock trades at $50. A one-year European call with strike $50 costs $6.20. The continuously compounded risk-free rate is 4 percent. What is the no-arbitrage price of the put with the same strike and maturity?
+3. **One-period binomial.** A stock is at $80 and will be either $100 (u = 1.25) or $64 (d = 0.80) after one year. The gross risk-free rate is 1.03. Find the risk-neutral probability and the value of a European call with strike $85.
+4. **Black-Scholes.** A non-dividend stock trades at $50, strike $50, one year to expiry, r = 5 percent, σ = 20 percent. Compute d₁, d₂, the call and put values, and verify parity.
+5. **Delta hedge.** A trader has sold 5,000 calls (each on one share) with delta 0.55 and gamma 0.04. How many shares should be held to be delta neutral? If the stock then rises by $1.50, estimate the new delta and the share purchase needed to rebalance.
+6. **Employee options.** A company grants 500,000 at-the-money options on stock worth $25 with an expected life of 4 years, expected volatility 40 percent, risk-free rate 3.5 percent, no dividends. Compute the value per option and, with 10 percent expected forfeitures and three-year straight-line vesting, the annual expense.
+7. **Option view of equity.** A firm has assets of $200 million, zero-coupon debt with a face value of $150 million due in one year, asset volatility of 25 percent, and risk-free rate 3 percent. Compute the equity value, the value of the debt, and the debt's yield and credit spread.
+8. **Straddle.** A trader buys a straddle on a stock with both strike $60, paying $3.50 for the call and $2.80 for the put. Find the breakeven prices and the profit if the stock finishes at $72 and $58.
+
+### Answers to Selected Problems
+
+1. Profit = (S_T − 42) + max(40 − S_T, 0) − 2.50. At $30: −12 + 10 − 2.50 = −4.50. At $40: −2 + 0 − 2.50 = −4.50. At $50: 8 − 2.50 = +5.50. Maximum loss $4.50 (for any S_T ≤ $40); breakeven S_T = 42 + 2.50 = $44.50.
+2. Ke^(−rT) = 50 × e^(−0.04) = 50 × 0.960789 = 48.039. P = C − S + Ke^(−rT) = 6.20 − 50 + 48.039 = **$4.24**.
+3. p = (1.03 − 0.80) / (1.25 − 0.80) = 0.23 / 0.45 = 0.5111. C_u = 100 − 85 = 15, C_d = 0. C = 0.5111 × 15 / 1.03 = **$7.44**. (Equivalent hedge ratio: Δ = 15 / (100 − 64) = 0.4167.)
+4. d₁ = [0 + (0.05 + 0.02) × 1] / 0.20 = **0.35**; d₂ = **0.15**. N(0.35) = 0.6368, N(0.15) = 0.5596. PV of strike = 50 × e^(−0.05) = 47.561. C = 50 × 0.6368 − 47.561 × 0.5596 = 31.84 − 26.62 = **$5.23**. P = 47.561 × (1 − 0.5596) − 50 × (1 − 0.6368) = 20.95 − 18.16 = **$2.79**. Parity: C − P = 2.44 = 50 − 47.56 = 2.44 ✓.
+5. Shares = 5,000 × 0.55 = 2,750. New delta ≈ 0.55 + 0.04 × 1.50 = 0.61; shares needed 5,000 × 0.61 = 3,050; buy **300** more.
+6. d₁ = (0.035 + 0.08) × 4 / (0.40 × 2) = 0.46 / 0.80 = 0.575; d₂ = −0.225. N(d₁) = 0.7173, N(d₂) = 0.4110. PV of strike = 25 × e^(−0.14) = 21.735. C = 25 × 0.7173 − 21.735 × 0.4110 = 17.93 − 8.93 = **about $9.00**. Vesting options 450,000 × 9.00 = $4.05 million; expense **$1.35 million per year** for three years.
+7. d₁ = [ln(200/150) + (0.03 + 0.03125)] / 0.25 = (0.287682 + 0.06125) / 0.25 = 1.3957; d₂ = 1.1457. N(d₁) = 0.9186, N(d₂) = 0.8741. PV of debt face = 150 × e^(−0.03) = 145.57. E = 200 × 0.9186 − 145.57 × 0.8741 = 183.72 − 127.24 = **about $56.5 million**. Debt value = **$143.5 million**; yield = ln(150 / 143.5) = 4.42 percent; spread ≈ **1.42 percent**.
+8. Cost = 6.30, so breakeven prices are 60 − 6.30 = **$53.70** and 60 + 6.30 = **$66.30**. At $72: call 12 − 3.50 = 8.50, put −2.80, profit **$5.70**. At $58: put 2 − 2.80 = −0.80, call −3.50, loss **$1.60**.
